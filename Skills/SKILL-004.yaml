@@ -1,0 +1,63 @@
+id: SKILL-004
+
+name: Product Management
+
+category: Product
+
+importance: 10
+
+level: Advanced
+
+summary: >
+  Zarządzanie rozwojem produktów technicznych,
+  koordynacja wdrożeń, tworzenie dokumentacji,
+  współpraca międzydziałowa oraz budowa procesów
+  wspierających sprzedaż, serwis i obsługę klienta.
+
+capabilities:
+  - product-development
+  - product-introduction
+  - stakeholder-management
+  - product-documentation
+  - warranty-management
+  - partner-enablement
+  - product-lifecycle-management
+
+methods:
+  - Product Discovery
+  - Product Lifecycle Management
+  - Continuous Improvement
+
+tools:
+  - Bitrix24
+  - Excel
+  - PowerPoint
+
+evidence:
+  - ACH-005
+  - ACH-006
+  - ACH-008
+  - ACH-014
+
+experience:
+  first_used: 2022
+  years: 3
+
+career_relevance:
+    product_manager: 10
+    operations_manager: 8
+    process_manager: 7
+    service_manager: 7
+
+keywords:
+  - product management
+  - product development
+  - product launch
+  - warranty systems
+  - technical products
+  - stakeholder management
+
+related_skills:
+  - SKILL-001
+  - SKILL-006
+  - SKILL-011
