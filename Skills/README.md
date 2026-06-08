@@ -2,11 +2,11 @@
 
 ## Cel
 
-Folder **Skills** zawiera kompetencje zidentyfikowane na podstawie doświadczenia, osiągnięć i projektów opisanych w Career Vault.
+Folder **Skills** zawiera kompetencje zidentyfikowane na podstawie doświadczenia, osiągnięć oraz projektów zgromadzonych w Career Vault.
 
 Skills nie są listą deklarowanych umiejętności.
 
-Każda kompetencja powinna być poparta konkretnymi dowodami znajdującymi się w Achievementach.
+Każda kompetencja powinna być poparta konkretnymi achievementami, które stanowią dowód jej praktycznego wykorzystania.
 
 ---
 
@@ -36,7 +36,7 @@ Stories
 Jak o tym opowiadać?
 ```
 
-Skills stanowią warstwę pośrednią pomiędzy osiągnięciami a dokumentami końcowymi takimi jak CV, profile zawodowe czy przygotowanie do rozmów kwalifikacyjnych.
+Skills stanowią warstwę pośrednią pomiędzy osiągnięciami a dokumentami końcowymi takimi jak CV, profile zawodowe, analizy kompetencji czy przygotowanie do rozmów kwalifikacyjnych.
 
 ---
 
@@ -48,9 +48,9 @@ Przykład:
 
 ❌ „Znam BPMN”
 
-To wiedza o narzędziu.
+To znajomość metody.
 
-✅ „Projektowanie procesów”
+✅ „Process Design”
 
 To kompetencja.
 
@@ -60,7 +60,7 @@ Przykład:
 
 ❌ „Umiem Bitrix24”
 
-To znajomość systemu.
+To znajomość narzędzia.
 
 ✅ „Workflow Automation”
 
@@ -68,9 +68,21 @@ To kompetencja.
 
 ---
 
+Przykład:
+
+❌ „Znam Excel”
+
+To znajomość narzędzia.
+
+✅ „Data Analysis”
+
+To kompetencja.
+
+---
+
 # Fakty ponad deklaracje
 
-Każdy skill powinien posiadać powiązane achievementy potwierdzające jego istnienie.
+Każdy Skill powinien posiadać powiązane achievementy potwierdzające jego wykorzystanie.
 
 Przykład:
 
@@ -87,122 +99,294 @@ Jeżeli nie istnieją achievementy potwierdzające daną kompetencję, prawdopod
 
 ---
 
-# Struktura pliku
+# Schemat rekordu
 
-Każdy skill powinien być zapisany jako osobny plik YAML.
-
-Przykład:
+Każdy Skill powinien być zapisany jako osobny plik YAML.
 
 ```yaml
-id: SKILL-001
+id:
 
-name: Process Design
+name:
 
-category: Operations
+category:
 
-importance: 10
+importance:
 
-level: Expert
+level:
 
-summary: >
-  Krótki opis kompetencji.
+summary:
 
 capabilities:
-  - capability-1
-  - capability-2
 
 methods:
-  - method-1
-  - method-2
 
 tools:
-  - tool-1
-  - tool-2
 
 evidence:
-  - ACH-001
-  - ACH-003
 
 experience:
-  first_used: 2020
-  years: 5
+  first_used:
+  years:
 
 career_relevance:
-  product_manager: 8
-  operations_manager: 10
 
 keywords:
-  - process design
 
 related_skills:
-  - SKILL-002
 ```
 
 ---
 
-# Poziomy kompetencji
+# Opis pól
 
-## Expert
+## id
 
-Kompetencja regularnie wykorzystywana w praktyce, potwierdzona wieloma achievementami i wieloletnim doświadczeniem.
+Unikalny identyfikator kompetencji.
 
----
+Przykłady:
 
-## Advanced
+```text
+SKILL-001
+SKILL-010
+SKILL-018
+```
 
-Kompetencja wykorzystywana samodzielnie w złożonych sytuacjach i potwierdzona kilkoma achievementami.
-
----
-
-## Intermediate
-
-Kompetencja wykorzystywana okazjonalnie lub w ograniczonym zakresie.
+Identyfikator powinien pozostać niezmienny przez cały czas życia repozytorium.
 
 ---
 
-## Basic
+## name
 
-Podstawowa znajomość obszaru bez istotnych dowodów doświadczenia.
+Nazwa kompetencji.
+
+Przykłady:
+
+```text
+Process Design
+Product Management
+Leadership
+Knowledge Management
+```
 
 ---
 
-# Importance
+## category
 
-Pole `importance` określa, jak bardzo dana kompetencja definiuje profil zawodowy.
+Główna kategoria kompetencji.
+
+Przykłady:
+
+```text
+Operations
+Product
+Management
+Knowledge
+Systems
+Analytics
+Communication
+```
+
+---
+
+## importance
+
+Określa, jak bardzo dana kompetencja definiuje profil zawodowy.
 
 Nie określa poziomu umiejętności.
 
-Przykład:
-
-Można posiadać kompetencję na poziomie Expert, która nie jest kluczowa dla kariery zawodowej.
-
----
-
-## 10
+### 10
 
 Kompetencja rdzeniowa.
 
 Definiuje profil zawodowy.
 
----
-
-## 8–9
+### 8–9
 
 Bardzo ważna kompetencja wspierająca.
 
-Regularnie wykorzystywana w pracy.
+### 6–7
 
----
+Kompetencja specjalistyczna.
 
-## 6–7
-
-Kompetencja specjalistyczna lub sytuacyjna.
-
----
-
-## 1–5
+### 1–5
 
 Kompetencja pomocnicza.
+
+---
+
+## level
+
+Poziom kompetencji.
+
+Dopuszczalne wartości:
+
+```text
+Expert
+Advanced
+Intermediate
+Basic
+```
+
+### Expert
+
+Kompetencja wykorzystywana regularnie przez wiele lat i potwierdzona licznymi achievementami.
+
+### Advanced
+
+Kompetencja wykorzystywana samodzielnie w praktyce i potwierdzona wieloma przykładami.
+
+### Intermediate
+
+Kompetencja wykorzystywana okazjonalnie lub w ograniczonym zakresie.
+
+### Basic
+
+Podstawowa znajomość obszaru.
+
+---
+
+## summary
+
+Krótki opis kompetencji.
+
+Powinien odpowiadać na pytanie:
+
+> Na czym polega ta kompetencja?
+
+---
+
+## capabilities
+
+Lista umiejętności składających się na daną kompetencję.
+
+Przykład:
+
+```yaml
+capabilities:
+  - workflow-design
+  - process-mapping
+  - process-optimization
+```
+
+---
+
+## methods
+
+Metody wykorzystywane podczas pracy.
+
+Przykład:
+
+```yaml
+methods:
+  - BPMN 2.0
+  - Root Cause Analysis
+  - Continuous Improvement
+```
+
+---
+
+## tools
+
+Narzędzia wykorzystywane podczas pracy.
+
+Przykład:
+
+```yaml
+tools:
+  - Bitrix24
+  - Excel
+  - Wiki.js
+```
+
+---
+
+## evidence
+
+Achievementy potwierdzające kompetencję.
+
+Przykład:
+
+```yaml
+evidence:
+  - ACH-001
+  - ACH-003
+  - ACH-005
+```
+
+To najważniejsze pole całego rekordu.
+
+---
+
+## experience
+
+Opis historii wykorzystania kompetencji.
+
+Przykład:
+
+```yaml
+experience:
+  first_used: 2020
+  years: 5
+```
+
+### first_used
+
+Pierwszy znany moment praktycznego wykorzystania kompetencji.
+
+### years
+
+Przybliżona liczba lat praktycznego doświadczenia.
+
+---
+
+## career_relevance
+
+Ocena przydatności kompetencji dla określonych ścieżek zawodowych.
+
+Przykład:
+
+```yaml
+career_relevance:
+  product_manager: 8
+  operations_manager: 10
+  process_manager: 10
+```
+
+Skala:
+
+```text
+1 = niska przydatność
+10 = kluczowa kompetencja
+```
+
+---
+
+## keywords
+
+Słowa kluczowe wspierające wyszukiwanie.
+
+Przykład:
+
+```yaml
+keywords:
+  - process design
+  - workflow
+  - operations
+```
+
+---
+
+## related_skills
+
+Powiązane kompetencje.
+
+Przykład:
+
+```yaml
+related_skills:
+  - SKILL-002
+  - SKILL-012
+```
 
 ---
 
@@ -215,15 +399,15 @@ Opisują kompetencje.
 Przykłady:
 
 * Process Design
-* Product Management
 * Leadership
+* Product Management
 * Knowledge Management
 
 ---
 
 ## Methods
 
-Opisują metody pracy.
+Opisują sposoby pracy.
 
 Przykłady:
 
@@ -268,7 +452,7 @@ Dostarczają dowodów.
 
 ## Skills
 
-Grupują dowody w kompetencje.
+Grupują osiągnięcia w kompetencje.
 
 ## Stories
 
@@ -278,13 +462,14 @@ Pokazują wykorzystanie kompetencji w praktyce.
 
 # Zasady utrzymania
 
-1. Każdy skill powinien posiadać achievementy potwierdzające jego istnienie.
-2. Nie twórz skilli dla pojedynczych narzędzi.
-3. Nie twórz skilli dla pojedynczych technologii.
+1. Każdy Skill powinien posiadać achievementy potwierdzające jego wykorzystanie.
+2. Nie twórz Skilli dla pojedynczych narzędzi.
+3. Nie twórz Skilli dla pojedynczych technologii.
 4. Preferuj kompetencje zamiast technologii.
-5. Łącz skille z achievementami.
-6. Łącz skille z innymi skillami.
+5. Łącz Skills z Achievementami.
+6. Łącz Skills z innymi Skills.
 7. Aktualizuj kompetencje wraz z rozwojem Career Vault.
+8. Dodawaj nowe Skills dopiero wtedy, gdy istnieją dowody ich praktycznego wykorzystania.
 
 ---
 
@@ -292,4 +477,4 @@ Pokazują wykorzystanie kompetencji w praktyce.
 
 Skill nie opisuje tego, czego się nauczyłem.
 
-Skill opisuje to, co potrafię udowodnić.
+Skill opisuje to, co potrafię udowodnić poprzez osiągnięcia.
