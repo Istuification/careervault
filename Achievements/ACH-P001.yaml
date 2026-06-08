@@ -1,0 +1,69 @@
+id: ACH-P001
+
+title: Regularne prowadzenie wystąpień publicznych i koordynacja społeczności
+
+category: personal
+
+period:
+  start: 2019
+  end: current
+
+skills:
+  - public-speaking
+  - communication
+  - facilitation
+  - presentation-design
+  - event-coordination
+  - stakeholder-management
+
+themes:
+  - communication
+  - leadership
+  - education
+  - community-building
+  - facilitation
+
+situation: >
+  Od ponad sześciu lat regularnie angażuję się
+  w działalność społecznościową wymagającą
+  prowadzenia wystąpień publicznych, przygotowywania
+  materiałów edukacyjnych oraz wspierania organizacji
+  wydarzeń dla większych grup uczestników.
+
+actions:
+  - przygotowywanie prezentacji i materiałów
+  - prowadzenie wystąpień publicznych
+  - prowadzenie spotkań grupowych
+  - organizacja harmonogramów wydarzeń
+  - koordynacja działań społecznościowych
+  - wsparcie organizacyjne i logistyczne wydarzeń
+  - wsparcie techniczne AV podczas wydarzeń
+
+impact:
+  - regularne wystąpienia dla grup około 60-120 osób
+  - rozwój umiejętności prezentacyjnych i komunikacyjnych
+  - wsparcie organizacji licznych wydarzeń społecznościowych
+  - budowanie zaangażowania i przepływu informacji w społeczności
+
+importance: 8
+
+evidence:
+  - ponad 6 lat aktywności
+  - audytorium 60-120 osób
+  - prezentacje 10-30 minut
+  - organizacja wydarzeń
+  - wsparcie AV
+
+metrics:
+  audience_size:
+    min: 60
+    max: 120
+
+  years_active: 6
+
+star_candidates:
+  - public-speaking
+  - communication
+  - facilitation
+  - leadership-without-authority
+  - community-coordination
