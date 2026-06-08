@@ -1,0 +1,75 @@
+id: ACH-003
+
+title: Stworzenie bazy wiedzy serwisowej BPMN 2.0
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - knowledge-management
+  - bpm
+  - bpmn-2.0
+  - process-design
+  - documentation
+  - onboarding
+  - systems-thinking
+  - wiki-management
+
+themes:
+  - knowledge-management
+  - process-standardization
+  - expert-knowledge-extraction
+  - onboarding
+  - organizational-scaling
+
+situation: >
+  Dział serwisu posiadał dużą ilość wiedzy eksperckiej
+  rozproszonej pomiędzy pracownikami. Brakowało
+  spójnej dokumentacji diagnostycznej oraz
+  standaryzacji procesu wdrażania nowych osób.
+
+actions:
+  - pozyskiwanie wiedzy od ekspertów serwisowych
+  - modelowanie procedur diagnostycznych w BPMN 2.0
+  - współtworzenie około 120 procedur serwisowych
+  - organizacja struktury wiedzy technicznej
+  - wdrożenie interaktywnej wiki serwisowej
+  - opracowanie materiałów onboardingowych
+  - standaryzacja procesów diagnostycznych
+
+impact:
+  - utworzenie około 120 procedur diagnostycznych
+  - stworzenie centralnej bazy wiedzy serwisowej
+  - standaryzacja procesu diagnostyki
+  - usprawnienie onboardingu nowych pracowników
+  - ograniczenie zależności od wiedzy pojedynczych ekspertów
+  - stworzenie skalowalnego systemu transferu wiedzy
+
+importance: 10
+
+evidence:
+  - BPMN 2.0
+  - około 120 procedur diagnostycznych
+  - Wiki.js
+  - onboarding serwisowy
+  - procedury serwisowe
+
+related_tools:
+  - BPMN 2.0
+  - Wiki.js
+  - diagrams.net
+
+metrics:
+  procedures_created: 120
+
+star_candidates:
+  - knowledge-management
+  - process-design
+  - documentation
+  - organizational-scaling
