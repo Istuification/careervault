@@ -1,0 +1,72 @@
+id: ACH-004
+
+title: Restrukturyzacja i stabilizacja działu serwisu
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - operations-management
+  - service-management
+  - process-design
+  - workflow-automation
+  - organizational-design
+  - leadership
+  - team-coordination
+
+themes:
+  - turnaround
+  - leadership
+  - change-management
+  - organizational-scaling
+  - process-transformation
+
+situation: >
+  Dział serwisu wymagał uporządkowania procesów,
+  organizacji przepływu informacji oraz stworzenia
+  spójnego modelu pracy umożliwiającego dalszy rozwój
+  i przekazanie odpowiedzialności nowemu kierownikowi.
+
+actions:
+  - zaprojektowanie workflow obsługi zgłoszeń
+  - stworzenie lejków procesowych
+  - automatyzacja procesów serwisowych
+  - standaryzacja komunikacji
+  - organizacja pracy zespołu
+  - wdrożenie onboardingu
+  - delegowanie zadań i harmonogramowanie pracy
+  - analiza obciążenia działu i potrzeb kadrowych
+
+impact:
+  - uporządkowanie procesów serwisowych
+  - poprawa organizacji pracy działu
+  - stworzenie skalowalnej struktury operacyjnej
+  - usprawnienie wdrażania nowych pracowników
+  - skuteczne przekazanie działu nowemu kierownikowi
+
+importance: 10
+
+evidence:
+  - workflow serwisowe
+  - onboarding
+  - organizacja zespołu do 5 osób
+  - analiza danych serwisowych
+  - przekazanie działu nowemu kierownikowi
+
+related_tools:
+  - Bitrix24
+  - Wiki.js
+  - BPMN 2.0
+
+star_candidates:
+  - leadership
+  - organizational-change
+  - turnaround
+  - team-management
+  - service-operations
