@@ -257,7 +257,7 @@ Dla okresów należy stosować format:
 
 ```yaml
 period:
-  start: 2023
+  start: 2023-09
   end: current
 ```
 
@@ -265,8 +265,8 @@ lub
 
 ```yaml
 period:
-  start: 2020
-  end: 2023
+  start: 2020-02
+  end: 2023-04
 ```
 
 Career Vault przechowuje daty domyślnie na poziomie lat.
