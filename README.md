@@ -251,6 +251,18 @@ Przykładowe zastosowania:
 
 # Konwencje danych
 
+## Struktura rekordów
+
+Career Vault wykorzystuje wspólną filozofię:
+
+- pola obowiązkowe zawierają informacje niezbędne do zrozumienia rekordu,
+- pola opcjonalne służą do przechowywania dodatkowego kontekstu,
+- brak pola oznacza brak dostępnych informacji, a nie błąd.
+
+Szczegółowe schematy znajdują się w README poszczególnych folderów.
+
+---
+
 ## Daty w Experience, Achievements i Stories
 
 Dla okresów należy stosować format:
