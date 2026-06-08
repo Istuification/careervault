@@ -1,0 +1,60 @@
+id: SKILL-013
+
+name: Public Speaking
+
+category: Communication
+
+importance: 8
+
+level: Advanced
+
+summary: >
+  Przygotowywanie i prowadzenie wystąpień publicznych,
+  prezentacji oraz spotkań dla większych grup odbiorców.
+  Obejmuje budowanie przekazu, utrzymywanie uwagi
+  uczestników oraz skuteczne przekazywanie wiedzy.
+
+capabilities:
+  - public-speaking
+  - presentation-design
+  - audience-engagement
+  - facilitation
+  - verbal-communication
+  - knowledge-sharing
+  - event-speaking
+
+methods:
+  - Storytelling
+  - Audience Adaptation
+  - Structured Presentation Design
+
+tools:
+  - PowerPoint
+  - Canva
+  - Microphone Systems
+
+evidence:
+  - ACH-P001
+  - ACH-006
+
+experience:
+  first_used: 2019
+  years: 6
+
+career_relevance:
+    product_manager: 8
+    operations_manager: 7
+    process_manager: 6
+    service_manager: 8
+
+keywords:
+  - public speaking
+  - presentations
+  - communication
+  - facilitation
+  - training
+  - audience engagement
+
+related_skills:
+  - SKILL-007
+  - SKILL-011
