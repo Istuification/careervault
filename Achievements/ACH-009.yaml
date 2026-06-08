@@ -1,0 +1,57 @@
+id: ACH-009
+
+title: Reorganizacja infrastruktury magazynowej
+
+company: KIPI
+
+period:
+  start: 2020
+  end: 2023
+
+roles:
+  - installation-coordinator
+
+skills:
+  - warehouse-management
+  - process-design
+  - operational-organization
+  - logistics
+  - standardization
+
+themes:
+  - operational-excellence
+  - organization
+  - process-improvement
+  - logistics
+
+situation: >
+  Magazyn rozwijał się wraz ze wzrostem skali
+  działalności działu Instal/Solar. Brakowało
+  spójnego systemu oznaczeń oraz standardów
+  organizacji przestrzeni magazynowej.
+
+actions:
+  - uporządkowanie magazynu
+  - stworzenie systemu oznaczeń
+  - wdrożenie kodów kreskowych
+  - opisanie regałów
+  - standaryzacja organizacji magazynowej
+
+impact:
+  - poprawa identyfikacji materiałów
+  - skrócenie czasu wyszukiwania komponentów
+  - zwiększenie przejrzystości organizacji magazynu
+  - ograniczenie błędów logistycznych
+
+importance: 6
+
+evidence:
+  - system oznaczeń
+  - kody kreskowe
+  - opisane regały
+  - standardy magazynowe
+
+star_candidates:
+  - process-improvement
+  - operational-organization
+  - logistics
