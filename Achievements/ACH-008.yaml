@@ -1,0 +1,70 @@
+id: ACH-008
+
+title: Koordynacja wdrożenia produktu PV Stand
+
+company: KIPI
+
+period:
+  start: 2022
+  end: 2023
+
+roles:
+  - project-manager
+
+skills:
+  - product-introduction
+  - project-management
+  - stakeholder-management
+  - technical-documentation
+  - cross-functional-collaboration
+  - process-design
+
+themes:
+  - product-launch
+  - coordination
+  - communication
+  - execution
+  - product-management
+
+situation: >
+  Firma przygotowywała wdrożenie nowego produktu
+  typu DIY przeznaczonego dla rynku fotowoltaicznego.
+  Konieczne było skoordynowanie działań wielu działów
+  oraz przygotowanie kompletnej dokumentacji
+  wspierającej wdrożenie.
+
+actions:
+  - koordynacja procesu wdrożenia produktu
+  - organizacja współpracy między działami
+  - monitorowanie przepływu informacji
+  - standaryzacja procesu wdrożeniowego
+  - przygotowanie dokumentacji technicznej
+  - przygotowanie instrukcji montażu
+  - przygotowanie dokumentacji jakościowej
+  - przygotowanie dokumentacji DTR
+
+impact:
+  - przygotowanie organizacji do wdrożenia nowego produktu
+  - zapewnienie kompletnej dokumentacji wdrożeniowej
+  - usprawnienie komunikacji między działami
+  - standaryzacja procesu wprowadzania produktu
+
+importance: 7
+
+evidence:
+  - instrukcja montażu
+  - dokumentacja jakościowa
+  - dokumentacja DTR
+  - workflow wdrożeniowy
+  - koordynacja międzydziałowa
+
+related_tools:
+  - Bitrix24
+  - Microsoft Office
+  - Google Workspace
+
+star_candidates:
+  - product-management
+  - project-management
+  - stakeholder-management
+  - cross-functional-collaboration
