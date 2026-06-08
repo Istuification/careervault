@@ -1,0 +1,61 @@
+id: SKILL-016
+
+name: Data Analysis
+
+category: Analytics
+
+importance: 7
+
+level: Advanced
+
+summary: >
+  Analiza danych operacyjnych i organizacyjnych
+  w celu identyfikacji problemów, podejmowania
+  decyzji oraz projektowania usprawnień procesowych
+  i organizacyjnych.
+
+capabilities:
+  - operational-analysis
+  - trend-analysis
+  - root-cause-analysis
+  - reporting
+  - decision-support
+  - process-metrics
+  - workforce-analysis
+
+methods:
+  - Root Cause Analysis
+  - KPI Analysis
+  - Data-Driven Decision Making
+
+tools:
+  - Excel
+  - Google Sheets
+
+evidence:
+  - ACH-010
+  - ACH-011
+  - ACH-P004
+
+experience:
+  first_used: 2020
+  years: 5
+
+career_relevance:
+    product_manager: 7
+    operations_manager: 8
+    process_manager: 8
+    service_manager: 7
+
+keywords:
+  - data analysis
+  - analytics
+  - reporting
+  - kpi
+  - root cause analysis
+  - decision making
+
+related_skills:
+  - SKILL-001
+  - SKILL-002
+  - SKILL-015
