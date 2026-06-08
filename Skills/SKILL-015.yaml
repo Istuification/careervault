@@ -1,0 +1,62 @@
+id: SKILL-015
+
+name: Organizational Design
+
+category: Operations
+
+importance: 8
+
+level: Advanced
+
+summary: >
+  Analiza oraz projektowanie struktur organizacyjnych,
+  podziału odpowiedzialności, przepływu informacji
+  i współpracy pomiędzy ludźmi oraz zespołami.
+
+capabilities:
+  - organizational-analysis
+  - role-design
+  - responsibility-mapping
+  - information-flow-design
+  - workforce-planning
+  - organizational-scaling
+  - governance-design
+
+methods:
+  - Organizational Diagnostics
+  - Systems Thinking
+  - Responsibility Mapping
+
+tools:
+  - BPMN 2.0
+  - Excel
+  - diagrams.net
+
+evidence:
+  - ACH-001
+  - ACH-010
+  - ACH-012
+  - ACH-P004
+
+experience:
+  first_used: 2020
+  years: 5
+
+career_relevance:
+    product_manager: 7
+    operations_manager: 10
+    process_manager: 9
+    service_manager: 9
+
+keywords:
+  - organizational design
+  - organizational development
+  - workforce planning
+  - organizational structure
+  - governance
+  - scaling
+
+related_skills:
+  - SKILL-002
+  - SKILL-005
+  - SKILL-012
