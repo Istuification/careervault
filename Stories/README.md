@@ -4,13 +4,19 @@
 
 Folder **Stories** zawiera historie przygotowane według modelu STAR (Situation, Task, Action, Result).
 
-Stories służą do przekształcania osiągnięć zapisanych w Career Vault w spójną narrację, którą można wykorzystać podczas rozmów kwalifikacyjnych, ocen okresowych, rozmów rozwojowych oraz współpracy z systemami AI.
+Stories służą do przekształcania osiągnięć zapisanych w Career Vault w gotowe narracje, które mogą zostać wykorzystane podczas:
+
+* rozmów kwalifikacyjnych,
+* rozmów rozwojowych,
+* ocen okresowych,
+* prezentacji doświadczenia zawodowego,
+* pracy z systemami AI.
 
 Stories nie są źródłem prawdy.
 
 Źródłem prawdy pozostają Achievementy.
 
-Stories są sposobem przedstawiania osiągnięć w formie historii.
+Stories są sposobem przedstawiania osiągnięć w formie narracji.
 
 ---
 
@@ -40,9 +46,9 @@ Stories
 Jak o tym opowiadać?
 ```
 
-Stories są ostatnią warstwą.
+Stories są ostatnią warstwą systemu.
 
-Ich zadaniem jest zamiana faktów i rezultatów na zrozumiałą narrację.
+Ich zadaniem jest zamiana faktów, działań i rezultatów na spójną historię pokazującą sposób myślenia, podejmowania decyzji i rozwiązywania problemów.
 
 ---
 
@@ -62,7 +68,7 @@ Odpowiada na pytanie:
 
 ## Task
 
-Opis odpowiedzialności lub celu.
+Opis celu, odpowiedzialności lub wyzwania.
 
 Odpowiada na pytanie:
 
@@ -72,11 +78,15 @@ Odpowiada na pytanie:
 
 ## Action
 
-Opis podjętych działań.
+Opis konkretnych działań.
 
 Odpowiada na pytanie:
 
-> Co konkretnie zrobiłem?
+> Co zrobiłem?
+
+Sekcja Action jest najważniejszą częścią Story.
+
+To właśnie ona pokazuje kompetencje oraz sposób działania.
 
 ---
 
@@ -89,6 +99,205 @@ Odpowiada na pytanie:
 > Jaki był efekt?
 
 Preferowane są rezultaty mierzalne.
+
+---
+
+# Schemat rekordu
+
+Każda Story powinna być zapisana jako osobny plik YAML.
+
+```yaml
+id:
+
+title:
+
+achievement:
+
+skills:
+
+themes:
+
+period:
+  start:
+  end:
+
+situation:
+
+task:
+
+actions:
+
+result:
+
+key_takeaway:
+```
+
+---
+
+# Opis pól
+
+## id
+
+Unikalny identyfikator historii.
+
+Przykłady:
+
+```text
+STAR-001
+STAR-002
+STAR-015
+```
+
+Identyfikator powinien pozostać niezmienny przez cały czas życia repozytorium.
+
+---
+
+## title
+
+Krótka nazwa historii.
+
+Powinna jednoznacznie wskazywać, czego dotyczy Story.
+
+Przykład:
+
+```text
+Transformacja działu Instal/Solar
+```
+
+---
+
+## achievement
+
+Powiązane achievementy stanowiące źródło faktów.
+
+Przykład:
+
+```yaml
+achievement:
+  - ACH-001
+```
+
+lub
+
+```yaml
+achievement:
+  - ACH-003
+  - ACH-014
+```
+
+Każda Story musi być powiązana z co najmniej jednym Achievementem.
+
+---
+
+## skills
+
+Kompetencje wykorzystywane w historii.
+
+Przykład:
+
+```yaml
+skills:
+  - SKILL-001
+  - SKILL-002
+  - SKILL-012
+```
+
+---
+
+## themes
+
+Tematy przewodnie historii.
+
+Przykład:
+
+```yaml
+themes:
+  - leadership
+  - change-management
+  - transformation
+```
+
+Themes pomagają wyszukiwać historie odpowiadające konkretnym pytaniom.
+
+---
+
+## period
+
+Okres, którego dotyczy historia.
+
+Przykład:
+
+```yaml
+period:
+  start: 2023
+  end: 2025
+```
+
+lub
+
+```yaml
+period:
+  start: 2025
+  end: current
+```
+
+Career Vault przechowuje daty domyślnie na poziomie lat.
+
+---
+
+## situation
+
+Opis sytuacji wyjściowej.
+
+Powinien być krótki i skupiony na kontekście.
+
+---
+
+## task
+
+Opis celu lub problemu do rozwiązania.
+
+Powinien jasno wskazywać odpowiedzialność.
+
+---
+
+## actions
+
+Lista najważniejszych działań.
+
+Przykład:
+
+```yaml
+actions:
+  - przeanalizowanie procesu
+  - stworzenie dokumentacji BPMN
+  - wdrożenie nowego workflow
+```
+
+---
+
+## result
+
+Rezultaty osiągnięte dzięki działaniom.
+
+Przykład:
+
+```yaml
+result:
+  - skrócenie czasu realizacji
+  - poprawa jakości danych
+  - standaryzacja procesu
+```
+
+---
+
+## key_takeaway
+
+Najważniejszy wniosek płynący z historii.
+
+Powinien odpowiadać na pytanie:
+
+> Czego nauczyła mnie ta sytuacja?
 
 ---
 
@@ -111,22 +320,7 @@ Nie należy łączyć wielu niezależnych sytuacji w jedną historię.
 
 ## Story musi mieć źródło
 
-Każda Story powinna być powiązana z co najmniej jednym Achievementem.
-
-Przykład:
-
-```yaml
-achievement:
-  - ACH-003
-```
-
-lub
-
-```yaml
-achievement:
-  - ACH-003
-  - ACH-014
-```
+Każda Story musi być powiązana z co najmniej jednym Achievementem.
 
 Story nie może zawierać informacji, których nie da się potwierdzić w Achievementach.
 
@@ -153,55 +347,10 @@ Preferowane są:
 
 * liczby,
 * oszczędności,
-* usprawnienia,
 * skrócenie czasu,
-* wzrost jakości,
+* poprawa jakości,
+* wzrost efektywności,
 * poprawa organizacji.
-
----
-
-# Struktura pliku
-
-Każda Story powinna być zapisana jako osobny plik YAML.
-
-Przykład:
-
-```yaml
-id: STAR-001
-
-title: Transformacja działu Instal/Solar
-
-achievement:
-  - ACH-001
-
-skills:
-  - SKILL-001
-  - SKILL-002
-  - SKILL-012
-
-themes:
-  - leadership
-  - change-management
-  - operations
-
-situation: >
-  Opis sytuacji.
-
-task: >
-  Opis celu.
-
-actions:
-  - działanie 1
-  - działanie 2
-  - działanie 3
-
-result:
-  - rezultat 1
-  - rezultat 2
-
-key_takeaway: >
-  Najważniejszy wniosek płynący z historii.
-```
 
 ---
 
@@ -216,6 +365,7 @@ Stories powinny umożliwiać szybkie przygotowanie odpowiedzi na pytania takie j
 * Opowiedz o konflikcie w zespole.
 * Opowiedz o błędzie, który popełniłeś.
 * Opowiedz o wdrożeniu nowego rozwiązania.
+* Opowiedz o sytuacji wymagającej przywództwa.
 
 Jedna Story może odpowiadać na wiele różnych pytań.
 
@@ -223,36 +373,43 @@ Jedna Story może odpowiadać na wiele różnych pytań.
 
 # Relacja do pozostałych elementów Career Vault
 
-## Achievement
+## Identity
 
-Źródło faktów.
+Opisuje profil zawodowy.
 
-## Skill
+## Experience
 
-Źródło kompetencji.
+Dostarcza kontekstu.
 
-## Story
+## Achievements
 
-Źródło narracji.
+Stanowią źródło faktów.
 
-Najpierw powstaje Achievement.
+## Skills
 
-Następnie na jego podstawie tworzony jest Skill.
+Opisują kompetencje wykorzystane w historii.
 
-Dopiero później tworzona jest Story.
+## Stories
+
+Przekształcają osiągnięcia w narrację STAR.
 
 ---
 
 # Zasady utrzymania
 
-1. Każda Story musi mieć powiązanie z Achievementem.
+1. Każda Story musi być powiązana z Achievementem.
 2. Nie twórz Story bez dowodów.
 3. Nie duplikuj treści Achievementów.
-4. Skupiaj się na decyzjach i działaniach.
+4. Skupiaj się na działaniach i decyzjach.
 5. Pokazuj rezultaty.
-6. Aktualizuj Stories, gdy pojawią się nowe informacje.
-7. Preferuj jakość nad liczbę historii.
+6. Łącz Stories ze Skills.
+7. Aktualizuj Stories wraz z rozwojem Career Vault.
+8. Preferuj jakość nad liczbę historii.
 
-Celem nie jest stworzenie dużej liczby Stories.
+---
 
-Celem jest stworzenie zestawu historii, które najlepiej pokazują doświadczenie, kompetencje i sposób działania.
+# Najważniejsza zasada
+
+Achievement opisuje fakty.
+
+Story opisuje te same fakty w formie historii, którą można opowiedzieć drugiej osobie.
