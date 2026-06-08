@@ -1,0 +1,65 @@
+id: SKILL-008
+
+name: Business Systems
+
+category: Systems
+
+importance: 9
+
+level: Advanced
+
+summary: >
+  Projektowanie, rozwój i administracja systemów
+  wspierających działalność organizacji. Obejmuje
+  analizę procesów biznesowych, konfigurację narzędzi,
+  integrację systemów oraz rozwój środowisk wspierających
+  codzienną pracę wielu działów.
+
+capabilities:
+  - business-systems-design
+  - crm-management
+  - systems-integration
+  - systems-administration
+  - requirements-analysis
+  - digitalization
+  - operational-systems
+
+methods:
+  - Business Process Analysis
+  - Systems Thinking
+  - Continuous Improvement
+
+tools:
+  - Bitrix24
+  - Zadarma
+  - Wiki.js
+  - Excel
+
+evidence:
+  - ACH-001
+  - ACH-005
+  - ACH-007
+  - ACH-013
+
+experience:
+  first_used: 2020
+  years: 5
+
+career_relevance:
+  product_manager: 8
+  operations_manager: 10
+  process_manager: 9
+  service_manager: 9
+
+keywords:
+  - business systems
+  - crm
+  - systems integration
+  - digital transformation
+  - operations systems
+  - process support
+
+related_skills:
+  - SKILL-001
+  - SKILL-009
+  - SKILL-010
