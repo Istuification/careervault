@@ -1,0 +1,65 @@
+id: SKILL-007
+
+name: Training & Enablement
+
+category: Knowledge
+
+importance: 9
+
+level: Advanced
+
+summary: >
+  Projektowanie i realizacja programów szkoleniowych,
+  onboardingów oraz działań umożliwiających skuteczne
+  przekazywanie wiedzy pracownikom, partnerom i klientom.
+  Obejmuje tworzenie materiałów edukacyjnych,
+  prowadzenie szkoleń oraz budowę procesów transferu wiedzy.
+
+capabilities:
+  - training-design
+  - onboarding-design
+  - knowledge-transfer
+  - workshop-facilitation
+  - partner-enablement
+  - technical-training
+  - curriculum-development
+
+methods:
+  - Adult Learning Principles
+  - Documentation Driven Training
+  - Knowledge Transfer Frameworks
+
+tools:
+  - PowerPoint
+  - Bitrix24
+  - Wiki.js
+  - Zoom
+
+evidence:
+  - ACH-003
+  - ACH-005
+  - ACH-006
+  - ACH-P001
+
+experience:
+  first_used: 2023
+  years: 3
+
+career_relevance:
+  product_manager: 9
+  operations_manager: 8
+  process_manager: 8
+  service_manager: 9
+
+keywords:
+  - training
+  - onboarding
+  - enablement
+  - knowledge transfer
+  - technical training
+  - partner education
+
+related_skills:
+  - SKILL-003
+  - SKILL-006
+  - SKILL-013
