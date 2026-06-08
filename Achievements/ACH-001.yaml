@@ -1,0 +1,22 @@
+id: ACH-001
+
+title: Transformacja działu Instal/Solar
+
+company: KIPI
+
+period:
+  start: 2020
+  end: 2023
+
+skills:
+  - operations-management
+  - workflow-design
+  - process-design
+  - logistics
+
+impact:
+  - organizacja montażu skrócona z 1-2 dni do 2-3 godzin
+  - redukcja błędów o około 70%
+  - skalowanie do około 30 montaży miesięcznie
+
+importance: 10
