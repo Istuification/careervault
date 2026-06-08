@@ -1,0 +1,59 @@
+id: ACH-010
+
+title: Projektowanie organizacji na podstawie analizy danych operacyjnych
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - operational-analysis
+  - organizational-design
+  - data-analysis
+  - workforce-planning
+  - systems-thinking
+
+themes:
+  - data-driven-decisions
+  - organizational-design
+  - scaling
+  - leadership
+
+situation: >
+  Wraz ze wzrostem liczby zgłoszeń serwisowych
+  konieczne było określenie rzeczywistego
+  obciążenia działu oraz przygotowanie podstaw
+  do dalszego rozwoju organizacyjnego.
+
+actions:
+  - analiza danych serwisowych
+  - identyfikacja najczęstszych problemów
+  - analiza obciążenia zespołu
+  - określanie potrzeb personalnych
+  - projektowanie struktury organizacyjnej
+  - definiowanie kompetencji stanowisk
+
+impact:
+  - lepsze zrozumienie obciążenia działu
+  - wsparcie decyzji kadrowych
+  - przygotowanie skalowalnej struktury organizacyjnej
+  - identyfikacja kluczowych wąskich gardeł
+
+importance: 8
+
+evidence:
+  - analizy obciążenia
+  - rekomendacje kadrowe
+  - projekt struktury działu
+  - mapowanie kompetencji
+
+star_candidates:
+  - analytical-thinking
+  - organizational-design
+  - scaling
+  - decision-making
