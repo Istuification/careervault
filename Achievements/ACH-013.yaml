@@ -1,0 +1,70 @@
+id: ACH-013
+
+title: Rozwój i administracja ekosystemu systemów operacyjnych organizacji
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: current
+
+roles:
+  - installation-coordinator
+  - acting-service-manager
+  - product-manager
+
+skills:
+  - systems-administration
+  - crm-management
+  - workflow-design
+  - automation
+  - business-systems
+  - process-management
+
+themes:
+  - digitalization
+  - systems-thinking
+  - automation
+  - operational-excellence
+  - ownership
+
+situation: >
+  Wraz ze wzrostem organizacji rosła liczba procesów
+  wymagających wsparcia systemowego oraz standaryzacji
+  sposobu pracy pomiędzy działami.
+
+actions:
+  - administracja Bitrix24
+  - projektowanie workflow operacyjnych
+  - rozwój automatyzacji CRM
+  - onboarding systemowy pracowników
+  - wsparcie wdrożeń międzydziałowych
+  - administracja systemów wspierających działalność firmy
+  - rozwój procesów opartych o systemy operacyjne
+
+impact:
+  - zwiększenie standaryzacji procesów
+  - ograniczenie pracy wykonywanej ręcznie
+  - poprawa przepływu informacji między działami
+  - rozwój skalowalnego środowiska operacyjnego
+  - wsparcie wielu obszarów organizacji jednym ekosystemem systemów
+
+importance: 8
+
+evidence:
+  - Bitrix24
+  - workflow
+  - automatyzacje CRM
+  - onboarding systemowy
+  - administracja sklepu internetowego
+
+related_tools:
+  - Bitrix24
+  - Zadarma
+  - Wiki.js
+
+star_candidates:
+  - systems-thinking
+  - automation
+  - ownership
+  - digital-transformation
