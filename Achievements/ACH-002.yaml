@@ -1,0 +1,52 @@
+id: ACH-002
+
+title: Wdrożenie workflow operacyjnych w Bitrix24
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: 2023-09
+
+roles:
+  - installation-coordinator
+
+skills:
+  - bitrix24
+  - crm
+  - workflow-design
+  - automation
+  - process-management
+
+themes:
+  - digitalization
+  - automation
+  - process-design
+  - systems-thinking
+
+situation: >
+  Rosnąca liczba realizacji wymagała odejścia od
+  zarządzania zadaniami przez komunikację ad-hoc.
+
+actions:
+  - wdrożenie CRM Bitrix24
+  - budowa lejków procesowych
+  - stworzenie szablonów zadań
+  - wdrożenie Smart Process Automation (SPA)
+  - automatyzacja przepływu informacji
+  - wdrożenie formularzy komunikacyjnych
+
+impact:
+  - standaryzacja procesów operacyjnych
+  - zwiększenie przejrzystości realizacji
+  - ograniczenie ręcznego zarządzania informacją
+  - stworzenie podstaw do dalszego skalowania działu
+
+importance: 9
+
+evidence:
+  - CRM
+  - SPA
+  - workflow
+  - formularze CRM
+  - automatyzacje
