@@ -1,0 +1,62 @@
+id: ACH-012
+
+title: Stabilizacja działu serwisu w okresie zmian organizacyjnych
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - leadership
+  - service-management
+  - team-coordination
+  - organizational-design
+  - change-management
+  - stakeholder-management
+
+themes:
+  - leadership
+  - ownership
+  - organizational-stability
+  - succession
+  - crisis-management
+
+situation: >
+  W związku z brakami kadrowymi i potrzebą uporządkowania
+  organizacji pracy powierzono mi odpowiedzialność za dział
+  serwisu funkcjonujący bez stabilnego modelu operacyjnego.
+
+actions:
+  - przejęcie odpowiedzialności za dział
+  - organizacja pracy zespołu
+  - wdrożenie procesów operacyjnych
+  - uporządkowanie przepływu informacji
+  - rozwój onboardingu
+  - wsparcie rekrutacji i rozwoju kompetencji
+  - przygotowanie działu do przekazania nowemu kierownikowi
+
+impact:
+  - ustabilizowanie pracy działu
+  - poprawa organizacji operacyjnej
+  - usprawnienie wdrażania nowych pracowników
+  - skuteczne przekazanie odpowiedzialności nowemu kierownikowi
+  - ograniczenie ryzyka operacyjnego
+
+importance: 9
+
+evidence:
+  - koordynacja zespołu
+  - onboarding
+  - workflow serwisowe
+  - przekazanie działu nowemu kierownikowi
+
+star_candidates:
+  - leadership
+  - ownership
+  - organizational-change
+  - succession-planning
