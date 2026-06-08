@@ -1,0 +1,61 @@
+id: SKILL-014
+
+name: Project Management
+
+category: Management
+
+importance: 8
+
+level: Advanced
+
+summary: >
+  Planowanie, organizacja i koordynacja projektów
+  obejmujących wiele osób, zależności, terminów
+  oraz zasobów. Obejmuje zarządzanie harmonogramem,
+  ryzykiem, komunikacją i realizacją celów.
+
+capabilities:
+  - project-planning
+  - scheduling
+  - risk-management
+  - resource-coordination
+  - project-execution
+  - milestone-management
+  - project-documentation
+
+methods:
+  - Work Breakdown Structure
+  - Critical Path Thinking
+  - Risk Management
+
+tools:
+  - Excel
+  - Google Sheets
+
+evidence:
+  - ACH-008
+  - ACH-P002
+  - ACH-P003
+
+experience:
+  first_used: 2019
+  years: 6
+
+career_relevance:
+    product_manager: 8
+    operations_manager: 8
+    process_manager: 7
+    service_manager: 6
+
+keywords:
+  - project management
+  - planning
+  - execution
+  - coordination
+  - scheduling
+  - risk management
+
+related_skills:
+  - SKILL-005
+  - SKILL-011
+  - SKILL-012
