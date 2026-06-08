@@ -1,0 +1,75 @@
+id: ACH-006
+
+title: Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów
+
+company: KIPI
+
+period:
+  start: 2025-01
+  end: 2025-12
+
+roles:
+  - product-manager
+
+skills:
+  - training
+  - public-speaking
+  - stakeholder-management
+  - onboarding
+  - technical-communication
+  - product-management
+  - enablement
+
+themes:
+  - education
+  - communication
+  - change-management
+  - partner-enablement
+  - knowledge-transfer
+
+situation: >
+  Wdrożenie nowego systemu gwarancyjnego oraz
+  standaryzacja zasad współpracy wymagały
+  skutecznego przekazania wiedzy partnerom,
+  instalatorom oraz klientom.
+
+actions:
+  - opracowanie programu szkoleniowego
+  - przygotowanie materiałów edukacyjnych
+  - prowadzenie szkoleń operacyjnych
+  - prowadzenie szkoleń produktowych
+  - prowadzenie szkoleń gwarancyjnych
+  - odpowiadanie na pytania uczestników
+  - wsparcie partnerów podczas wdrożeń
+
+impact:
+  - przeszkolenie około 250 osób
+  - realizacja około 20-30 segmentów szkoleniowych
+  - zwiększenie znajomości procedur gwarancyjnych
+  - ujednolicenie zasad współpracy z partnerami
+  - ograniczenie błędów wynikających z nieznajomości procedur
+
+importance: 9
+
+evidence:
+  - około 250 przeszkolonych osób
+  - około 20-30 przeprowadzonych szkoleń
+  - materiały szkoleniowe
+  - szkolenia gwarancyjne
+  - szkolenia produktowe
+
+related_tools:
+  - PowerPoint
+  - Bitrix24
+  - Google Workspace
+
+metrics:
+  people_trained: 250
+  training_sessions: 20-30
+
+star_candidates:
+  - public-speaking
+  - stakeholder-management
+  - education
+  - communication
+  - knowledge-transfer
