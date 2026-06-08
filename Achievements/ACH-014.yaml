@@ -1,0 +1,66 @@
+id: ACH-014
+
+title: Standaryzacja dokumentacji technicznej i operacyjnej
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: current
+
+roles:
+  - installation-coordinator
+  - acting-service-manager
+  - product-manager
+
+skills:
+  - technical-documentation
+  - process-design
+  - compliance
+  - knowledge-management
+  - product-support
+
+themes:
+  - standardization
+  - documentation
+  - quality
+  - compliance
+  - operational-excellence
+
+situation: >
+  Dynamiczny rozwój organizacji powodował powstawanie
+  dokumentacji w różnych formatach i standardach.
+  Konieczne było uporządkowanie dokumentów wspierających
+  sprzedaż, serwis, gwarancję oraz rozwój produktów.
+
+actions:
+  - przygotowanie dokumentacji technicznej
+  - tworzenie dokumentacji DTR
+  - standaryzacja warunków gwarancyjnych
+  - opracowanie protokołów serwisowych
+  - opracowanie protokołów montażowych
+  - przygotowanie regulaminów i umów
+  - współpraca z działami technicznymi i prawnikami
+
+impact:
+  - zwiększenie spójności dokumentacji
+  - ujednolicenie standardów organizacyjnych
+  - poprawa jakości materiałów dla klientów i partnerów
+  - ograniczenie niejednoznaczności proceduralnych
+  - wsparcie wdrożeń nowych produktów i procesów
+
+importance: 8
+
+evidence:
+  - DTR
+  - warunki gwarancyjne
+  - regulaminy
+  - umowy
+  - protokoły serwisowe
+  - protokoły montażowe
+
+star_candidates:
+  - documentation
+  - quality-management
+  - compliance
+  - process-design
