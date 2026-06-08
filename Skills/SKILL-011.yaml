@@ -1,0 +1,65 @@
+id: SKILL-011
+
+name: Stakeholder Management
+
+category: Management
+
+importance: 9
+
+level: Advanced
+
+summary: >
+  Budowanie i utrzymywanie skutecznej współpracy
+  pomiędzy osobami, zespołami oraz organizacjami
+  posiadającymi różne cele, potrzeby i oczekiwania.
+  Obejmuje komunikację, negocjacje, uzgadnianie
+  priorytetów oraz koordynację działań.
+
+capabilities:
+  - stakeholder-alignment
+  - cross-functional-coordination
+  - partner-management
+  - customer-communication
+  - conflict-resolution
+  - expectation-management
+  - relationship-building
+
+methods:
+  - Active Listening
+  - Consensus Building
+  - Stakeholder Mapping
+
+tools:
+  - Bitrix24
+  - PowerPoint
+  - Excel
+
+evidence:
+  - ACH-005
+  - ACH-006
+  - ACH-008
+  - ACH-P002
+  - ACH-P003
+
+experience:
+  first_used: 2020
+  years: 5
+
+career_relevance:
+  product_manager: 10
+  operations_manager: 9
+  process_manager: 8
+  service_manager: 8
+
+keywords:
+  - stakeholder management
+  - communication
+  - partner management
+  - cross-functional collaboration
+  - coordination
+  - relationship management
+
+related_skills:
+  - SKILL-004
+  - SKILL-005
+  - SKILL-007
