@@ -1,0 +1,64 @@
+id: SKILL-003
+
+name: Knowledge Management
+
+category: Knowledge
+
+level: Expert
+
+summary: >
+  Pozyskiwanie, organizowanie, dokumentowanie
+  i udostępnianie wiedzy w organizacji.
+  Obejmuje tworzenie baz wiedzy, procedur,
+  materiałów szkoleniowych oraz systemów
+  wspierających transfer wiedzy.
+
+capabilities:
+  - knowledge-capture
+  - knowledge-organization
+  - documentation-design
+  - onboarding-design
+  - knowledge-transfer
+  - information-architecture
+  - technical-documentation
+
+methods:
+  - BPMN 2.0
+  - Documentation Driven Development
+  - Knowledge Base Design
+
+tools:
+  - Wiki.js
+  - Bitrix24
+  - diagrams.net
+  - Markdown
+
+evidence:
+  - ACH-003
+  - ACH-006
+  - ACH-014
+  - ACH-P001
+  - ACH-P004
+
+experience:
+  first_used: 2023
+  years: 2
+
+career_relevance:
+  product_manager: 8
+  operations_manager: 9
+  process_manager: 10
+  knowledge_manager: 10
+
+keywords:
+  - knowledge management
+  - documentation
+  - onboarding
+  - knowledge base
+  - information architecture
+  - knowledge transfer
+
+related_skills:
+  - SKILL-001
+  - SKILL-006
+  - SKILL-007
