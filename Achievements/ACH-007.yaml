@@ -1,0 +1,69 @@
+id: ACH-007
+
+title: Samodzielne wdrożenie systemu VOIP i infolinii
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - systems-integration
+  - technical-implementation
+  - process-design
+  - self-learning
+  - systems-administration
+
+themes:
+  - ownership
+  - technical-problem-solving
+  - systems-implementation
+  - self-learning
+  - operational-improvement
+
+situation: >
+  Dział serwisu potrzebował uporządkowanego systemu
+  obsługi połączeń telefonicznych oraz lepszego
+  kierowania zgłoszeń do właściwych osób.
+  W organizacji brakowało spójnego rozwiązania
+  zintegrowanego z istniejącymi procesami.
+
+actions:
+  - samodzielne poznanie technologii VOIP
+  - wybór rozwiązania Zadarma
+  - konfiguracja centrali telefonicznej
+  - projektowanie routingu połączeń
+  - integracja systemu z Bitrix24
+  - wdrożenie workflow obsługi zgłoszeń telefonicznych
+  - konfiguracja komunikacji między działami
+  - uruchomienie rozwiązania produkcyjnego
+
+impact:
+  - uporządkowanie obsługi połączeń przychodzących
+  - usprawnienie kierowania zgłoszeń do właściwych osób
+  - integracja komunikacji telefonicznej z procesami operacyjnymi
+  - stworzenie rozwiązania możliwego do skalowania w organizacji
+  - wdrożenie rozwiązania również w BOK i dziale Instal
+
+importance: 8
+
+evidence:
+  - Zadarma VOIP
+  - integracja z Bitrix24
+  - routing połączeń
+  - infolinia serwisowa
+  - wdrożenie w wielu działach
+
+related_tools:
+  - Zadarma
+  - Bitrix24
+
+star_candidates:
+  - ownership
+  - self-learning
+  - technical-problem-solving
+  - systems-integration
