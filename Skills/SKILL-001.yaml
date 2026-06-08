@@ -1,0 +1,64 @@
+id: SKILL-001
+
+name: Process Design
+
+category: Operations
+
+level: Expert
+
+summary: >
+  Projektowanie, dokumentowanie, wdrażanie
+  oraz optymalizacja procesów organizacyjnych
+  i operacyjnych. Obejmuje analizę obecnego
+  stanu, identyfikację problemów, projektowanie
+  docelowego workflow oraz wdrażanie zmian.
+
+capabilities:
+  - process-mapping
+  - workflow-design
+  - process-optimization
+  - process-standardization
+  - process-documentation
+  - bpm
+  - organizational-workflows
+
+methods:
+  - BPMN 2.0
+  - Root Cause Analysis
+  - Continuous Improvement
+
+tools:
+  - Bitrix24
+  - diagrams.net
+  - Wiki.js
+
+evidence:
+  - ACH-001
+  - ACH-003
+  - ACH-004
+  - ACH-005
+  - ACH-013
+  - ACH-014
+
+experience:
+  first_used: 2020
+  years: 5
+
+career_relevance:
+  product_manager: 8
+  operations_manager: 10
+  process_manager: 10
+  service_manager: 9
+
+keywords:
+  - process design
+  - workflow design
+  - process optimization
+  - business process management
+  - bpm
+  - workflow
+
+related_skills:
+  - SKILL-002
+  - SKILL-003
+  - SKILL-005
