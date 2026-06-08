@@ -5,18 +5,45 @@ title: Transformacja działu Instal/Solar
 company: KIPI
 
 period:
-  start: 2020
-  end: 2023
+  start: 2020-09
+  end: 2023-09
+
+roles:
+  - installation-coordinator
 
 skills:
   - operations-management
-  - workflow-design
   - process-design
+  - workflow-automation
   - logistics
+  - crm
+
+themes:
+  - scaling
+  - workflow
+  - operations
+  - change-management
+
+situation: >
+  Dział opierał się głównie na komunikacji ad-hoc,
+  ręcznym przekazywaniu informacji oraz braku
+  standaryzacji procesów.
+
+actions:
+  - wdrożenie Bitrix24
+  - stworzenie workflow operacyjnych
+  - automatyzacja procesów
+  - standaryzacja przepływu informacji
+  - budowa szablonów zadań
 
 impact:
   - organizacja montażu skrócona z 1-2 dni do 2-3 godzin
-  - redukcja błędów o około 70%
-  - skalowanie do około 30 montaży miesięcznie
+  - redukcja błędów operacyjnych o około 70%
+  - skalowanie działu do około 30 montaży miesięcznie
 
 importance: 10
+
+evidence:
+  - wdrożone workflow CRM
+  - szablony zadań
+  - automatyzacje Bitrix24
