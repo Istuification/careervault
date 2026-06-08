@@ -1,0 +1,65 @@
+id: SKILL-012
+
+name: Change Management
+
+category: Management
+
+importance: 10
+
+level: Advanced
+
+summary: >
+  Planowanie, wdrażanie i utrwalanie zmian
+  organizacyjnych, procesowych oraz systemowych.
+  Obejmuje analizę obecnego stanu, projektowanie
+  zmian, komunikację, wdrożenie oraz wsparcie
+  organizacji w adaptacji do nowych sposobów pracy.
+
+capabilities:
+  - organizational-transformation
+  - process-transformation
+  - change-planning
+  - communication-planning
+  - adoption-support
+  - organizational-stabilization
+  - change-implementation
+
+methods:
+  - Continuous Improvement
+  - Incremental Change
+  - Organizational Diagnostics
+
+tools:
+  - BPMN 2.0
+  - Bitrix24
+  - Wiki.js
+
+evidence:
+  - ACH-001
+  - ACH-004
+  - ACH-005
+  - ACH-012
+
+experience:
+  first_used: 2020
+  years: 5
+
+career_relevance:
+  product_manager: 8
+  operations_manager: 10
+  process_manager: 10
+  service_manager: 9
+
+keywords:
+  - change management
+  - transformation
+  - organizational change
+  - process transformation
+  - organizational development
+  - change leadership
+
+related_skills:
+  - SKILL-001
+  - SKILL-002
+  - SKILL-005
+  - SKILL-015
