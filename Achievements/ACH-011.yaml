@@ -1,0 +1,60 @@
+id: ACH-011
+
+title: Stworzenie systemu kalkulacji komponentów dla działu handlowego
+
+company: KIPI
+
+period:
+  start: 2020
+  end: 2023
+
+roles:
+  - installation-coordinator
+
+skills:
+  - process-automation
+  - excel
+  - operational-analysis
+  - sales-support
+  - systems-design
+
+themes:
+  - automation
+  - productivity
+  - process-improvement
+  - operational-support
+
+situation: >
+  Przygotowanie ofert wymagało ręcznego
+  wyliczania komponentów oraz weryfikacji cen,
+  co było czasochłonne i podatne na błędy.
+
+actions:
+  - analiza procesu ofertowania
+  - opracowanie logiki kalkulacji
+  - stworzenie narzędzia Excel
+  - integracja z aktualnym cennikiem
+  - wdrożenie rozwiązania dla handlowców
+
+impact:
+  - przyspieszenie przygotowywania ofert
+  - ograniczenie ręcznych obliczeń
+  - zmniejszenie ryzyka błędów kalkulacyjnych
+  - standaryzacja procesu doboru komponentów
+
+importance: 7
+
+evidence:
+  - narzędzie Excel
+  - automatyczne kalkulacje
+  - integracja z cennikiem
+  - wykorzystanie przez dział handlowy
+
+related_tools:
+  - Microsoft Excel
+
+star_candidates:
+  - automation
+  - problem-solving
+  - process-improvement
+  - analytical-thinking
