@@ -1,0 +1,70 @@
+id: ACH-005
+
+title: Zaprojektowanie i wdrożenie systemu gwarancyjnego
+
+company: KIPI
+
+period:
+  start: 2025-01
+  end: current
+
+roles:
+  - product-manager
+
+skills:
+  - product-management
+  - process-design
+  - crm-automation
+  - stakeholder-management
+  - documentation
+  - training
+  - compliance
+
+themes:
+  - business-process-design
+  - change-management
+  - customer-experience
+  - partner-enablement
+  - operational-excellence
+
+situation: >
+  Organizacja potrzebowała spójnego systemu
+  gwarancyjnego obejmującego dokumentację,
+  workflow operacyjne, obsługę zgłoszeń oraz
+  jednolite zasady współpracy z partnerami
+  i klientami.
+
+actions:
+  - współtworzenie polityki gwarancyjnej
+  - projektowanie workflow gwarancyjnych
+  - automatyzacja procesów w CRM
+  - standaryzacja dokumentacji
+  - współpraca z działem handlowym
+  - współpraca z prawnikami
+  - przygotowanie materiałów szkoleniowych
+  - wdrożenie systemu u partnerów i klientów
+
+impact:
+  - stworzenie spójnego systemu gwarancyjnego
+  - standaryzacja procesu obsługi gwarancji
+  - automatyzacja obsługi zgłoszeń
+  - ujednolicenie dokumentacji gwarancyjnej
+  - wdrożenie procesu u partnerów handlowych
+
+importance: 10
+
+evidence:
+  - workflow gwarancyjne
+  - polityka gwarancyjna
+  - automatyzacje CRM
+  - dokumentacja DTR
+  - warunki gwarancyjne
+
+related_tools:
+  - Bitrix24
+
+star_candidates:
+  - stakeholder-management
+  - process-design
+  - product-management
+  - change-management
