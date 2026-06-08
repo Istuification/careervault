@@ -87,6 +87,7 @@ CareerVault/
 │   └── ...
 │
 ├── Skills/
+│   ├── README.md
 │   ├── SKILL-001.yaml
 │   └── ...
 │
@@ -248,6 +249,71 @@ Przykładowe zastosowania:
 
 ---
 
+# Konwencje danych
+
+## Daty w Experience, Achievements i Stories
+
+Dla okresów należy stosować format:
+
+```yaml
+period:
+  start: 2023
+  end: current
+```
+
+lub
+
+```yaml
+period:
+  start: 2020
+  end: 2023
+```
+
+Career Vault przechowuje daty domyślnie na poziomie lat.
+
+Dokładne miesiące powinny być używane wyłącznie wtedy, gdy mają istotne znaczenie.
+
+---
+
+## Doświadczenie w Skills
+
+Dla opisu doświadczenia należy stosować format:
+
+```yaml
+experience:
+  first_used: 2020
+  years: 5
+```
+
+### first_used
+
+Pierwszy znany moment praktycznego wykorzystania kompetencji.
+
+### years
+
+Przybliżona liczba lat praktycznego doświadczenia.
+
+---
+
+## Identyfikatory
+
+Każdy rekord powinien posiadać unikalny identyfikator.
+
+Przykłady:
+
+```text
+ACH-001
+ACH-P001
+
+SKILL-001
+
+STAR-001
+```
+
+Identyfikatory powinny być niezmienne w czasie.
+
+---
+
 # Zasady utrzymania
 
 Podczas dodawania nowych informacji:
@@ -269,5 +335,9 @@ Career Vault powinien z czasem stawać się coraz bardziej wartościowy, a nie c
 Stanowiska opisują, gdzie pracowałem.
 
 Achievements opisują, co osiągnąłem.
+
+Skills opisują, jakie kompetencje potwierdzają osiągnięcia.
+
+Stories opisują, jak o tych osiągnięciach opowiadać.
 
 To osiągnięcia są podstawowym źródłem wartości Career Vault.
