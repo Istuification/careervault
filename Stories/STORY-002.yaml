@@ -1,164 +1,123 @@
 ```yaml
 id: STORY-002
 
-title: Restrukturyzacja działu serwisu i zbudowanie skalowalnego modelu obsługi zgłoszeń
+title: Restrukturyzacja i stabilizacja działu serwisu
 
 summary: >
-  Przejąłem chaotyczny dział serwisu w momencie braków kadrowych i
-  zaprojektowałem od podstaw nowy model pracy obejmujący workflow
-  zgłoszeń, podział kompetencji, bazę wiedzy, system ticketowy,
-  nagrywanie i analizę infolinii oraz uporządkowany onboarding.
-  Dzięki temu dział zyskał przewidywalność, lepszą przepustowość i
-  możliwość szkolenia osób z zewnątrz bez wcześniejszego doświadczenia
-  w produkcie.
+  Przejąłem odpowiedzialność za chaotycznie funkcjonujący dział serwisu
+  i zorganizowałem jego codzienną pracę. Wdrożyłem podstawowe workflow,
+  uporządkowałem podział odpowiedzialności, przeprowadziłem onboarding
+  pracowników oraz przygotowałem dział do dalszego funkcjonowania pod
+  kierownictwem nowego managera.
 
 competencies:
-  - Service Process Design
-  - Knowledge Management
-  - Operational Analysis
-  - Workforce Planning
-  - Change Management
-  - Training & Enablement
-  - Team Coordination
-  - Systems Thinking
   - Leadership
-  - Stakeholder Management
+  - Team Coordination
+  - Service Operations
+  - Workflow Design
+  - Operational Training
+  - Onboarding
+  - Stakeholder Communication
+  - Organizational Scaling
+  - Process Improvement
 
 situation: >
-  Miałem objąć stanowisko Project Managera, ale w tym samym czasie
-  zwolnił się kierownik serwisu oraz dwóch pracowników. Zostałem więc
-  poproszony o objęcie roli pełniącej obowiązki kierownika serwisu.
-  Zgodziłem się, ponieważ byłem znany jako osoba chętna do pomocy i
-  „ogarnięta”, a wcześniej prowadziłem mini-serwis w dziale Instal/Solar,
-  gdzie miałem do dyspozycji jedynie pojedynczy szablon zadania,
-  dwa protokoły oraz cennik z regulaminem serwisu.
-
-  Po mojej stronie nie było jeszcze doświadczenia w prowadzeniu serwisu
-  tej skali ani znajomości całego produktu, zależności między klientami
-  i pełnego kontekstu operacyjnego. Zespół był mocno przetrzebiony:
-  zostałem z dwoma doświadczonymi pracownikami oraz dwoma świeżymi,
-  którzy ostatecznie nie sprawdzili się w tej roli.
+  W związku z brakami kadrowymi i problemami organizacyjnymi zostałem
+  poproszony o przejęcie odpowiedzialności za dział serwisu.
+  Organizacja nie posiadała spójnego modelu pracy, obowiązki nie były
+  jasno zdefiniowane, a wiele działań opierało się na indywidualnej
+  wiedzy pracowników.
 
 problem: >
-  Serwis działał w modelu ad hoc i praktycznie nie prowadził zapisu swojej
-  pracy. Nie było historii rozmów, bo infolinia nie była nagrywana, nie
-  było bazy wiedzy produktowej ani diagnostycznej, a diagnoza problemów
-  opierała się głównie na doświadczeniu konkretnych osób.
-
-  Nie dało się rzetelnie wyciągać danych o tym, czego naprawdę potrzebują
-  klienci, ponieważ większość wiedzy była ukryta w głowach pracowników.
-  Dodatkowo nie było wiadomo, jaka wersja produktu znajduje się u klienta,
-  nie było zarządzania zmianą, a sezon od października do marca okazał się
-  wyjątkowo intensywny przy zbyt małej liczbie osób z wiedzą specjalistyczną.
-
-  Największym problemem okazało się to, że większość zgłoszeń dotyczyła
-  użytkowników końcowych, a nie instalatorów. Instalatorzy stanowili
-  maksymalnie około 30% telefonów, a mimo tego często musieli długo czekać
-  w kolejce na połączenie, co dodatkowo obniżało przepustowość działu.
+  Dział wymagał uporządkowania codziennej pracy, poprawy przepływu
+  informacji oraz stworzenia struktury umożliwiającej skuteczne
+  wdrażanie nowych pracowników i dalsze funkcjonowanie organizacji.
 
 constraints:
-  - Braki kadrowe w dziale serwisu
-  - Nagłe przejęcie odpowiedzialności za dział w trakcie zmiany personalnej
-  - Brak doświadczenia w prowadzeniu serwisu na taką skalę
-  - Brak pisemnej bazy wiedzy produktowej i diagnostycznej
-  - Brak nagrań rozmów i systematycznego zapisu wiedzy
-  - Wysoki sezonowy wolumen zgłoszeń
-  - Trudność w pozyskaniu doświadczonych specjalistów z rynku
-  - Konieczność zbudowania systemu przy jednoczesnej bieżącej obsłudze klientów
+  - Ograniczone zasoby kadrowe
+  - Rosnąca liczba zgłoszeń
+  - Braki kompetencyjne części zespołu
+  - Konieczność utrzymania ciągłości pracy działu
+  - Brak formalnie zdefiniowanych procesów
 
 goal: >
-  Uporządkować dział serwisu tak, aby mógł działać przewidywalnie mimo
-  braków kadrowych, obsługiwać większy wolumen połączeń i zgłoszeń,
-  pozwalać na szybkie wdrażanie osób z zewnątrz oraz umożliwiać
-  podejmowanie decyzji kadrowych i operacyjnych na podstawie danych.
+  Ustabilizować funkcjonowanie działu serwisu, uporządkować organizację
+  pracy oraz stworzyć podstawy pozwalające na dalszy rozwój zespołu.
 
 actions:
-  - Przejąłem odpowiedzialność za organizację działu serwisu jako PO kierownika.
-  - Zdiagnozowałem, że głównym źródłem problemów jest brak systemu wiedzy i brak standaryzacji obsługi zgłoszeń.
-  - Zaprojektowałem model pracy oparty na podziale kompetencji na centralę, tier 1 i tier 2.
-  - Wprowadziłem osobę na centrali odpowiedzialną wyłącznie za odbieranie telefonów i zbieranie podstawowych informacji.
-  - Uporządkowałem pracę serwisantów tier 1 i tier 2 tak, aby odciążyć specjalistów od prostych spraw i ograniczyć ich wypalenie w sezonie.
-  - Wdrożyłem nagrywanie infolinii jako podstawę do analizy jakości rozmów i potrzeb klientów.
-  - Uruchomiłem system ticketowy w Bitrix24, dzięki czemu zgłoszenia nie gubiły się i można było śledzić ich historię.
-  - Skonfigurowałem workflow zgłoszeń i filtrację informacji z bieżącego dnia, aby lepiej planować obłożenie zespołu.
-  - Wykorzystałem analizę danych i prognozy temperatur do oceny spodziewanego ruchu w serwisie.
-  - Opracowałem sposób zbierania i porządkowania wiedzy produktowej oraz diagnostycznej w formie przyswajalnej dla nowych osób.
-  - Tworzyłem własne prezentacje, handouty i materiały dydaktyczne, ponieważ brakowało gotowej dokumentacji produktowej.
-  - Zaprojektowałem 18-dniowy cykl onboardingowy z buddy systemem dla nowych pracowników.
-  - Przygotowałem system szkoleniowy obejmujący 10 prezentacji oraz materiały pomocnicze.
-  - Stworzyłem narzędzia do analizy ticketów i telefonów, w tym arkusz Excel do bieżącej oceny obciążenia.
-  - Wdrożyłem narzędzie monitoringu pracy zdalnej, które miało wspierać ciągłość pracy przy ograniczonym składzie zespołu.
-  - Przygotowałem listę 46 zadań rozwojowych jako plan dalszego porządkowania działu.
-  - Przekazałem dział nowemu kierownikowi w ramach trzy miesięcy wdrożenia, pozostając dodatkowo przez miesiąc w roli wsparcia doradczego.
+  - Przejąłem odpowiedzialność za bieżące funkcjonowanie działu serwisu.
+
+  - Uporządkowałem podział obowiązków pomiędzy pracowników
+    oraz zdefiniowałem podstawowe role w zespole.
+
+  - Zaprojektowałem i wdrożyłem workflow obsługi zgłoszeń
+    oraz przepływu informacji wewnątrz działu.
+
+  - Ustandaryzowałem komunikację pomiędzy serwisem,
+    klientami i pozostałymi działami organizacji.
+
+  - Koordynowałem pracę zespołu liczącego do 5 osób.
+
+  - Wdrażałem nowych pracowników oraz wspierałem ich
+    w osiąganiu samodzielności operacyjnej.
+
+  - Organizowałem harmonogramy pracy oraz priorytetyzację zadań.
+
+  - Prowadziłem szkolenia wewnętrzne dotyczące procedur,
+    narzędzi i organizacji pracy.
+
+  - Przygotowałem dział do przejęcia przez nowego kierownika
+    oraz aktywnie wspierałem proces przekazania obowiązków.
 
 challenges:
-  - Bardzo krótki czas na wejście w rolę i zrozumienie obszaru.
-  - Brak formalnego doświadczenia w zarządzaniu serwisem tej skali.
-  - Praca na wiedzy rozproszonej w głowach specjalistów.
-  - Konieczność projektowania systemu bez gotowej bazy wiedzy.
-  - Wysoki sezonowy ruch przy ograniczonej liczbie osób.
-  - Potrzeba szybkiego nauczenia osób z zewnątrz pracy na słuchawce i w diagnostyce.
-  - Zbudowanie jednocześnie procesu, wiedzy, narzędzi i struktury zespołu.
-  - Presja, żeby zachować jakość obsługi mimo redukcji godzin pracy infolinii.
+  - Przejęcie odpowiedzialności za dział bez wcześniejszego przygotowania
+  - Organizacja pracy podczas niedoborów kadrowych
+  - Wdrażanie nowych pracowników przy utrzymaniu ciągłości działania
+  - Budowanie spójnego sposobu pracy w zespole o zróżnicowanych kompetencjach
+  - Konieczność jednoczesnego zarządzania operacjami i rozwojem działu
 
 results:
   quantitative:
-    - Mediana połączeń dziennie wzrosła do 74, przy pikach sięgających prawie 200.
-    - Przed zmianami mediana wynosiła około 45 połączeń dziennie, przy pikach około 120.
-    - Dziennie otwierano średnio około 20 spraw i zamykano około 20 spraw, a w pikach odpowiednio do 48 otwieranych i 51 zamykanych.
-    - Opracowano 18-dniowy cykl onboardingowy.
-    - Przygotowano 10 prezentacji i handoutów szkoleniowych.
-    - Zebrano i ustrukturyzowano 46 zadań rozwojowych.
-    - Dział został przekazany nowemu kierownikowi po około 3 miesiącach wdrożenia, z dodatkowym miesiącem wsparcia doradczego.
+    - Koordynacja zespołu liczącego do 5 osób
+    - Wdrożenie nowych pracowników i nowego kierownika działu
+    - Utrzymanie ciągłości działania serwisu podczas okresu transformacji
 
   qualitative:
-    - Serwis przestał działać wyłącznie reaktywnie i zaczął pracować w oparciu o strukturę.
-    - Zgłoszenia instalatorów przestały się gubić dzięki systemowi ticketowemu.
-    - Wprowadzono jasny podział kompetencji, który odciążył specjalistów od prostych telefonów.
-    - Możliwe stało się zatrudnianie osób z kompetencjami ogólnymi i szkolenie ich wewnętrznie.
-    - Uporządkowano wiedzę produktową, diagnostyczną i onboardingową.
-    - Powstał model, który później zasilił także obszar szkoleń i materiałów edukacyjnych.
-    - Zespół mógł lepiej planować obciążenie i podejmować decyzje operacyjne na podstawie danych.
-    - Nowi pracownicy szybciej osiągali użyteczność operacyjną niż osoby wdrażane bez struktury.
+    - Uporządkowano organizację pracy działu
+    - Poprawiono przepływ informacji
+    - Skrócono czas wdrażania nowych pracowników
+    - Zmniejszono zależność od pojedynczych osób
+    - Stworzono podstawy pod dalszy rozwój organizacji serwisowej
+    - Zapewniono płynne przekazanie odpowiedzialności nowemu kierownikowi
 
 evidence:
   achievement_ids:
     - ACH-004
 
   supporting_materials:
-    - System ticketowy w Bitrix24
-    - Nagrania infolinii
-    - 18-dniowy cykl onboardingowy
-    - 10 prezentacji i handoutów
-    - Arkusz analizy ticketów i telefonów w Excelu
-    - Narzędzie do monitoringu pracy zdalnej
-    - Lista 46 zadań rozwojowych
-    - Baza wiedzy produktowej i diagnostycznej
-    - Materiały szkoleniowe tworzone wewnętrznie
+    - Workflow serwisowe
+    - Harmonogramy pracy
+    - Materiały onboardingowe
+    - Dokumentacja organizacyjna
 
 lessons_learned:
-  - Serwis bez systemu wiedzy zawsze wraca do pracy opartej na pamięci pojedynczych osób.
-  - Największą wartością w serwisie jest umiejętność zbierania, klasyfikowania i przekazywania informacji.
-  - Warto budować strukturę zespołu według poziomu kompetencji, a nie tylko stanowiska.
-  - Jeśli specjalistów z rynku jest mało, trzeba projektować procesy tak, aby można było szkolić ludzi z potencjałem.
-  - Dane o ruchu, obłożeniu i typie zgłoszeń są podstawą do podejmowania decyzji kadrowych.
-  - Onboarding powinien łączyć teorię, praktykę i buddy system, bo sama wiedza produktowa nie wystarcza.
-  - Dobrze przygotowane materiały szkoleniowe mogą później stać się fundamentem całego działu edukacji.
-  - Systemowe podejście pozwala uporządkować nawet bardzo chaotyczny obszar operacyjny.
+  - Nawet niewielki zespół wymaga jasno określonych ról i odpowiedzialności
+  - Stabilizacja organizacji jest często ważniejsza niż szybkie zmiany
+  - Dobrze przygotowany onboarding znacząco skraca czas osiągania samodzielności
+  - Przekazywanie odpowiedzialności powinno być planowane równie starannie jak jej przejmowanie
 
 interview_angles:
   - Leadership
-  - Crisis Management
-  - Service Process Design
-  - Knowledge Management
+  - Team Management
+  - Organizational Change
   - Onboarding
-  - Workforce Planning
-  - Change Management
-  - Operational Analysis
-  - Training & Enablement
+  - Operational Excellence
+  - People Development
+  - Service Operations
 
 cv_bullets:
-  - Przejąłem i zrestrukturyzowałem dział serwisu w warunkach braków kadrowych, budując model pracy oparty o tiering kompetencji, workflow zgłoszeń i system ticketowy.
-  - Wdrożyłem 18-dniowy onboarding, 10 materiałów szkoleniowych oraz bazę wiedzy produktowej i diagnostycznej, umożliwiając zatrudnianie i szkolenie osób z zewnątrz.
-  - Uporządkowałem obsługę infolinii i zgłoszeń, zwiększając przepustowość działu przy zachowaniu jakości obsługi w sezonie.
+  - Przejąłem odpowiedzialność za dział serwisu i przeprowadziłem jego stabilizację organizacyjną.
+  - Zaprojektowałem workflow oraz model pracy wspierający codzienną obsługę klientów.
+  - Koordynowałem zespół serwisowy i wdrażałem nowych pracowników.
+  - Przygotowałem dział do płynnego przekazania nowemu kierownikowi.
 ```
