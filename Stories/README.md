@@ -108,196 +108,429 @@ Każda Story powinna być zapisana jako osobny plik YAML.
 
 ```yaml
 id:
-
 title:
 
-achievement:
+summary:
 
-skills:
-
-themes:
-
-period:
-  start:
-  end:
+competencies:
+  -
+  -
+  -
 
 situation:
+problem:
+constraints:
 
-task:
+goal:
 
 actions:
+  -
+  -
+  -
+  -
 
-result:
+challenges:
+  -
+  -
 
-key_takeaway:
+results:
+  quantitative:
+    -
+    -
+  qualitative:
+    -
+    -
+
+evidence:
+  achievement_ids:
+    -
+  supporting_materials:
+    -
+
+lessons_learned:
+  -
+  -
+
+interview_angles:
+  -
+  -
+  -
+
+cv_bullets:
+  -
+  -
 ```
 
 ---
 
 # Opis pól
 
-## id
+## Metadata
+
+### `id`
 
 Unikalny identyfikator historii.
 
-Przykłady:
+Format:
 
-```text
-STAR-001
-STAR-002
-STAR-015
+```yaml
+id: STORY-001
 ```
 
-Identyfikator powinien pozostać niezmienny przez cały czas życia repozytorium.
+Powinien być stabilny i niezmienny po utworzeniu dokumentu.
 
 ---
 
-## title
+### `title`
 
 Krótka nazwa historii.
 
-Powinna jednoznacznie wskazywać, czego dotyczy Story.
+Powinna opisywać osiągnięty rezultat lub główny temat projektu.
 
-Przykład:
+Przykłady:
 
-```text
-Transformacja działu Instal/Solar
+```yaml
+title: Process Documentation System Implementation
+title: Customer Support Reorganization
+title: Product Launch Coordination
 ```
+
+Unikaj nazw stanowisk i nazw firm.
 
 ---
 
-## achievement
+## Overview
 
-Powiązane achievementy stanowiące źródło faktów.
+### `summary`
 
-Przykład:
+Jedno- lub dwuzdaniowe streszczenie historii.
 
-```yaml
-achievement:
-  - ACH-001
-```
+Powinno odpowiadać na pytanie:
 
-lub
-
-```yaml
-achievement:
-  - ACH-003
-  - ACH-014
-```
-
-Każda Story musi być powiązana z co najmniej jednym Achievementem.
-
----
-
-## skills
-
-Kompetencje wykorzystywane w historii.
+> Co zostało osiągnięte i dlaczego było istotne?
 
 Przykład:
 
 ```yaml
-skills:
-  - SKILL-001
-  - SKILL-002
-  - SKILL-012
+summary: >
+  Designed and implemented a centralized process documentation system
+  that standardized operational knowledge across multiple departments.
 ```
+
+Powinno być możliwe do wykorzystania jako skrót historii w wyszukiwaniu lub RAG.
 
 ---
 
-## themes
+## Competencies
 
-Tematy przewodnie historii.
+### `competencies`
+
+Lista kompetencji zaprezentowanych podczas realizacji historii.
 
 Przykład:
 
 ```yaml
-themes:
-  - leadership
-  - change-management
-  - transformation
+competencies:
+  - Process Improvement
+  - Stakeholder Management
+  - Documentation
 ```
 
-Themes pomagają wyszukiwać historie odpowiadające konkretnym pytaniom.
+Powinny opisywać umiejętności wykazane w praktyce, a nie deklarowane przez autora.
+
+Dobre źródła kompetencji:
+
+* działania opisane w `actions`
+* wyzwania opisane w `challenges`
+* osiągnięte rezultaty
 
 ---
 
-## period
+## Context
 
-Okres, którego dotyczy historia.
+### `situation`
+
+Opis sytuacji początkowej.
+
+Powinien odpowiadać na pytania:
+
+* W jakim środowisku działała organizacja?
+* Co było stanem wyjściowym?
+* Dlaczego temat był ważny?
 
 Przykład:
 
 ```yaml
-period:
-  start: 2023
-  end: 2025
+situation: >
+  Operational knowledge was distributed across departments and largely
+  undocumented, making onboarding and delegation difficult.
 ```
 
-lub
+---
+
+### `problem`
+
+Precyzyjne określenie problemu biznesowego.
+
+Powinien odpowiadać na pytanie:
+
+> Co konkretnie wymagało rozwiązania?
+
+Przykład:
 
 ```yaml
-period:
-  start: 2025
-  end: current
+problem: >
+  The organization lacked standardized documentation, creating risks
+  related to employee turnover and inconsistent execution of processes.
 ```
 
-Career Vault przechowuje daty domyślnie na poziomie lat.
+Jeden problem może wynikać z szerszej sytuacji opisanej w `situation`.
 
 ---
 
-## situation
+### `constraints`
 
-Opis sytuacji wyjściowej.
+Ograniczenia wpływające na realizację projektu.
 
-Powinien być krótki i skupiony na kontekście.
+Mogą obejmować:
+
+* ograniczenia czasowe
+* ograniczenia budżetowe
+* brak zasobów
+* zależności między działami
+* wymagania prawne
+* ograniczenia technologiczne
+
+Przykład:
+
+```yaml
+constraints:
+  - No dedicated project team
+  - Limited availability of subject matter experts
+  - Tight implementation deadline
+```
 
 ---
 
-## task
+### `goal`
 
-Opis celu lub problemu do rozwiązania.
+Cel biznesowy projektu.
 
-Powinien jasno wskazywać odpowiedzialność.
+Powinien odpowiadać na pytanie:
+
+> Co miało zostać osiągnięte?
+
+Przykład:
+
+```yaml
+goal: >
+  Create a scalable documentation framework that improves operational
+  consistency and supports employee onboarding.
+```
+
+Cel powinien być możliwie konkretny.
 
 ---
 
-## actions
+## Execution
 
-Lista najważniejszych działań.
+### `actions`
+
+Najważniejsze działania wykonane przez autora.
+
+To kluczowa sekcja całej historii.
+
+Każdy punkt powinien opisywać:
+
+* decyzję
+* inicjatywę
+* działanie
+* wdrożenie
+* koordynację
 
 Przykład:
 
 ```yaml
 actions:
-  - przeanalizowanie procesu
-  - stworzenie dokumentacji BPMN
-  - wdrożenie nowego workflow
+  - Conducted process discovery interviews
+  - Designed a documentation standard
+  - Built a centralized repository
+  - Coordinated reviews with stakeholders
 ```
+
+Opisuj własny wkład, a nie działania całego zespołu.
 
 ---
 
-## result
+### `challenges`
 
-Rezultaty osiągnięte dzięki działaniom.
+Najważniejsze trudności napotkane podczas realizacji.
+
+Powinny odpowiadać na pytania:
+
+* Co utrudniało realizację?
+* Jakie ryzyko występowało?
+* Co wymagało dodatkowego wysiłku?
 
 Przykład:
 
 ```yaml
-result:
-  - skrócenie czasu realizacji
-  - poprawa jakości danych
-  - standaryzacja procesu
+challenges:
+  - Resistance from process owners
+  - Incomplete documentation sources
 ```
+
+Sekcja szczególnie przydatna podczas generowania odpowiedzi STAR.
 
 ---
 
-## key_takeaway
+## Results
 
-Najważniejszy wniosek płynący z historii.
+### `results.quantitative`
 
-Powinien odpowiadać na pytanie:
+Mierzalne rezultaty projektu.
 
-> Czego nauczyła mnie ta sytuacja?
+Preferowane dane:
+
+* liczby
+* procenty
+* kwoty
+* czasy
+* wielkość zespołów
+* liczba użytkowników
+* liczba klientów
+
+Przykład:
+
+```yaml
+quantitative:
+  - Created 50 procedures
+  - Covered 6 departments
+  - Supported 70 employees
+```
+
+Jeżeli istnieją wiarygodne liczby, powinny znaleźć się właśnie tutaj.
+
+---
+
+### `results.qualitative`
+
+Rezultaty niemierzalne lub trudne do zmierzenia.
+
+Przykład:
+
+```yaml
+qualitative:
+  - Improved process consistency
+  - Reduced dependency on key employees
+  - Increased organizational transparency
+```
+
+Opisują wartość biznesową, której nie da się łatwo wyrazić liczbami.
+
+---
+
+## Evidence
+
+### `evidence.achievement_ids`
+
+Lista Achievementów, na których opiera się historia.
+
+Przykład:
+
+```yaml
+achievement_ids:
+  - ACH-001
+  - ACH-004
+```
+
+Story powinno być możliwe do zweryfikowania poprzez powiązane Achievementy.
+
+---
+
+### `evidence.supporting_materials`
+
+Materiały wspierające historię.
+
+Przykłady:
+
+```yaml
+supporting_materials:
+  - onboarding-guide.pdf
+  - process-template.docx
+  - project-plan.xlsx
+```
+
+Mogą to być dokumenty, prezentacje, procedury, raporty lub inne artefakty.
+
+---
+
+## Reflection
+
+### `lessons_learned`
+
+Najważniejsze wnioski wyniesione z projektu.
+
+Powinny odpowiadać na pytanie:
+
+> Czego nauczyłem się dzięki tej sytuacji?
+
+Przykład:
+
+```yaml
+lessons_learned:
+  - Early stakeholder involvement reduces resistance
+  - Documentation requires clear ownership
+```
+
+Sekcja szczególnie przydatna podczas rozmów kwalifikacyjnych.
+
+---
+
+## Interview Preparation
+
+### `interview_angles`
+
+Kategorie pytań rekrutacyjnych, do których historia może zostać wykorzystana.
+
+Przykład:
+
+```yaml
+interview_angles:
+  - Leadership
+  - Stakeholder Management
+  - Change Management
+```
+
+Pozwala AI szybko dopasować historię do pytania rekrutacyjnego.
+
+---
+
+## CV Generation
+
+### `cv_bullets`
+
+Najkrótsze możliwe podsumowania historii.
+
+Powinny być gotowe do użycia w CV.
+
+Przykład:
+
+```yaml
+cv_bullets:
+  - Designed and implemented a process documentation framework covering six departments.
+  - Created over 50 procedures and work instructions supporting operational standardization.
+```
+
+Każdy punkt powinien:
+
+* zaczynać się od czasownika działania,
+* opisywać rezultat,
+* być możliwy do wykorzystania bez dodatkowej edycji.
+
+```
+```
+
 
 ---
 
