@@ -237,6 +237,7 @@ competencies:
 ```
 
 Powinny opisywać umiejętności wykazane w praktyce, a nie deklarowane przez autora.
+Preferowane jest używanie kompetencji występujących w katalogu Skills.
 
 Dobre źródła kompetencji:
 
@@ -409,8 +410,8 @@ quantitative:
   - Supported 70 employees
 ```
 
-Jeżeli istnieją wiarygodne liczby, powinny znaleźć się właśnie tutaj.
-
+Jeżeli istnieją wiarygodne liczby, powinny znaleźć się właśnie tutaj. 
+Jeżeli autor pamięta istnienie mierzalnego rezultatu, ale nie zna dokładnej wartości, należy oznaczyć potencjalną lukę informacyjną do późniejszego uzupełnienia.
 ---
 
 ### `results.qualitative`
@@ -527,9 +528,6 @@ Każdy punkt powinien:
 * zaczynać się od czasownika działania,
 * opisywać rezultat,
 * być możliwy do wykorzystania bez dodatkowej edycji.
-
-```
-```
 
 
 ---
