@@ -1,0 +1,173 @@
+```yaml
+id: STORY-004
+
+title: Diagnostyka organizacyjna serwisu i projektowanie modelu działania na podstawie niepełnych danych
+
+summary: >
+  Zbudowałem system analizy operacyjnej dla działu serwisu działającego
+  praktycznie bez danych historycznych. Dzięki analizie połączeń,
+  zgłoszeń i zachowań klientów zidentyfikowałem rzeczywiste źródła
+  przeciążenia serwisu, obaliłem kluczowe założenia funkcjonujące
+  w organizacji oraz zaprojektowałem model działania, który jest
+  wykorzystywany przez kolejne lata.
+
+competencies:
+  - Analiza Operacyjna
+  - Diagnostyka Organizacyjna
+  - Data-Driven Improvements
+  - Systems Thinking
+  - Capacity Planning
+  - Service Process Design
+  - Knowledge Management
+  - Komunikacja z Interesariuszami
+  - Optymalizacja Procesów
+  - Podejmowanie Decyzji Przy Niepełnych Danych
+
+situation: >
+  Po objęciu odpowiedzialności za dział serwisu przejąłem organizację
+  obsługującą około 50 000 urządzeń pracujących na rynku. Firma
+  otrzymywała sygnały o problemach z dostępnością wsparcia technicznego,
+  a w organizacji funkcjonowało przekonanie, że serwis nie odbiera
+  telefonów i nie zapewnia odpowiedniego poziomu obsługi klienta.
+  Jednocześnie liczba urządzeń rosła średnio o około 20% rok do roku,
+  a dział nie posiadał praktycznie żadnych wiarygodnych danych
+  pozwalających określić skalę problemu ani jego rzeczywiste przyczyny.
+
+problem: >
+  Organizacja musiała podjąć decyzje dotyczące struktury zespołu,
+  dostępności serwisu i przyszłych inwestycji kadrowych, jednak nie
+  posiadała systemu pomiarowego pozwalającego podejmować decyzje
+  na podstawie danych. Istniało ryzyko zarówno pogorszenia jakości
+  obsługi klienta, jak i utraty najbardziej doświadczonych
+  serwisantów wskutek przeciążenia pracą.
+
+constraints:
+  - Brak historycznych danych operacyjnych
+  - Brak nagrań rozmów telefonicznych
+  - Brak ustrukturyzowanego systemu ticketowego
+  - Ograniczone zasoby kadrowe
+  - Dynamicznie rosnąca liczba urządzeń na rynku
+  - Duża sezonowość obciążenia
+  - Presja biznesowa na zwiększanie dostępności serwisu
+
+goal: >
+  Zrozumieć rzeczywiste źródła przeciążenia serwisu, określić
+  przyszłe potrzeby organizacyjne, zweryfikować funkcjonujące
+  w firmie założenia oraz zaprojektować model działania pozwalający
+  skalować dział wraz ze wzrostem liczby urządzeń.
+
+actions:
+  - Zdefiniowałem pierwszy system pomiarowy dla działu serwisu oparty
+    na liczbie połączeń, długości rozmów, typie dzwoniącego,
+    częstotliwości kontaktów oraz danych ticketowych.
+
+  - Wprowadziłem obowiązek rejestrowania każdego zgłoszenia,
+    niezależnie od tego, czy problem został rozwiązany podczas
+    pierwszej rozmowy, czy wymagał dalszej obsługi.
+
+  - Przeanalizowałem dane z poprzedniego sezonu obejmujące 5 361
+    połączeń telefonicznych oraz średni czas rozmowy wynoszący
+    4 minuty i 1 sekundę.
+
+  - Połączyłem dane telefoniczne z informacjami CRM w celu
+    identyfikacji klientów końcowych, instalatorów i partnerów
+    handlowych.
+
+  - Przeanalizowałem zależności pomiędzy liczbą zgłoszeń,
+    sezonowością, temperaturą zewnętrzną, dniem tygodnia
+    oraz godziną kontaktu.
+
+  - Udowodniłem na podstawie danych, że mniej niż 5% całego
+    ruchu przypadało na godziny po 15:00 oraz weekendy.
+
+  - Zarekomendowałem ograniczenie dostępności serwisu poza
+    standardowymi godzinami pracy mimo sprzeciwu części działu
+    handlowego i kierownictwa, argumentując konieczność ochrony
+    kluczowych kompetencji technicznych organizacji.
+
+  - Zweryfikowałem funkcjonujące w organizacji założenia dotyczące
+    źródeł zgłoszeń i sposobu obsługi klientów.
+
+  - Ustaliłem, że 80–90% kontaktów pochodziło od klientów końcowych,
+    a nie od instalatorów, jak wcześniej zakładano.
+
+  - Wykazałem, że wielu instalatorów kierowało klientów bezpośrednio
+    do producenta zamiast samodzielnie zapewniać wsparcie
+    posprzedażowe.
+
+  - Wykorzystałem dane ticketowe do identyfikacji najczęściej
+    występujących problemów oraz określenia, które zgłoszenia
+    wymagają eksperckiej wiedzy, a które mogą być obsługiwane
+    przez mniej doświadczonych pracowników.
+
+  - Opracowałem podział zgłoszeń na szybkie wsparcie telefoniczne
+    oraz zaawansowane przypadki wymagające udziału ekspertów
+    lub wizyty serwisowej.
+
+  - Prowadziłem comiesięczną analizę danych operacyjnych
+    w celu weryfikacji założeń i bieżącego dostosowywania
+    organizacji pracy działu.
+
+challenges:
+  - Podejmowanie decyzji strategicznych przy niemal całkowitym braku danych historycznych
+  - Oddzielenie faktów od opinii funkcjonujących w organizacji
+  - Przekonanie interesariuszy do ograniczenia dostępności serwisu
+  - Ochrona kluczowych ekspertów przed przeciążeniem i wypaleniem
+  - Projektowanie przyszłej struktury organizacyjnej bez możliwości tworzenia wiarygodnych prognoz
+
+results:
+  quantitative:
+    - Przeanalizowano wzrost liczby połączeń z 5 361 w sezonie 2022/23 do 11 101 w sezonie 2023/24
+    - Wsparto wzrost liczby urządzeń na rynku z około 50 000 do około 70 000
+    - Wykazano, że mniej niż 5% połączeń przypadało na wieczory i weekendy
+    - Ustalono, że 80–90% kontaktów pochodziło od klientów końcowych
+    - Rozbudowano strukturę działu z 2 serwisantów Tier 1 i 2 serwisantów Tier 2 do 3 serwisantów Tier 1 i 2 serwisantów Tier 2
+    - W kolejnym sezonie średni czas rozmów spadł o około 36%
+    - Na podstawie analizy danych opracowano około 15 priorytetowych procedur diagnostycznych
+
+  qualitative:
+    - Zastąpiono decyzje oparte na opiniach decyzjami opartymi na danych
+    - Zidentyfikowano rzeczywiste źródła przeciążenia serwisu
+    - Obalono trzy kluczowe założenia funkcjonujące w organizacji
+    - Ochroniono kluczowe kompetencje techniczne przed utratą
+    - Stworzono podstawy do dalszej standaryzacji wiedzy i rozwoju systemu wiedzy
+    - Zaprojektowano model działania wykorzystywany przez kolejnych kierowników serwisu
+    - Wpłynięto na strategię obsługi klienta funkcjonującą w organizacji przez kolejne lata
+
+evidence:
+  achievement_ids:
+    - ACH-004
+    - ACH-010
+
+  supporting_materials:
+    - Statystyki połączeń telefonicznych
+    - Dane CRM dotyczące zgłoszeń serwisowych
+    - Raporty ticketowe
+    - Analizy obciążenia serwisu
+    - Dokumenty dotyczące organizacji pracy działu
+
+lessons_learned:
+  - Przed podjęciem decyzji organizacyjnych należy zweryfikować założenia funkcjonujące w firmie
+  - Nawet ograniczona ilość danych może wystarczyć do podejmowania trafnych decyzji, jeśli mierzone są właściwe wskaźniki
+  - Ochrona kluczowych kompetencji organizacji może być ważniejsza niż maksymalizacja krótkoterminowej dostępności
+  - Przyczyna problemu często znajduje się poza obszarem, w którym widoczne są jego skutki
+  - Skuteczne skalowanie organizacji wymaga zrozumienia struktury pracy, a nie wyłącznie zwiększania zatrudnienia
+
+interview_angles:
+  - Data-Driven Decision Making
+  - Analytical Thinking
+  - Organizational Diagnostics
+  - Capacity Planning
+  - Change Management
+  - Stakeholder Management
+  - Problem Solving
+  - Service Operations
+  - Leadership Without Authority
+  - Decision Making Under Uncertainty
+
+cv_bullets:
+  - Zbudowałem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy braku danych historycznych.
+  - Przeanalizowałem ponad 11 000 zgłoszeń telefonicznych, identyfikując rzeczywiste źródła przeciążenia działu.
+  - Zaprojektowałem model organizacyjny serwisu wspierający wzrost liczby urządzeń z 50 000 do 70 000 jednostek.
+  - Obaliłem kluczowe założenia organizacyjne i wdrożyłem metryki wykorzystywane przez kolejne kierownictwo serwisu.
+```
