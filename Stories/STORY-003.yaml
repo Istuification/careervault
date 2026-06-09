@@ -1,0 +1,150 @@
+```yaml
+id: STORY-003
+
+title: Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
+
+summary: >
+  Współtworzyłem od podstaw nowy model gwarancyjny obejmujący producentów,
+  instalatorów, dystrybutorów, użytkowników końcowych oraz dział serwisu.
+  Projekt obejmował stworzenie nowych umów, regulaminów, procesów,
+  formularzy, workflowów oraz systemu identyfikacji urządzeń opartego na
+  numerach seryjnych. Efektem było skrócenie czasu uzyskania gwarancji,
+  skrócenie czasu rozpatrywania reklamacji oraz znaczące zwiększenie
+  przewidywalności procesu dla wszystkich stron.
+
+competencies:
+  - Stakeholder Management
+  - Business Analysis
+  - Process Design
+  - Service Design
+  - Change Management
+  - Requirements Gathering
+  - Systems Thinking
+  - Legal & Regulatory Awareness
+  - UX Design
+  - Strategic Thinking
+
+situation: >
+  Problem gwarancyjny początkowo wydawał się problemem działu serwisu,
+  jednak szybko okazało się, że dotyczy całej organizacji.
+
+  Formalnie istniały warunki gwarancji oraz procedury ich obsługi, jednak
+  w praktyce były one martwe. Instalatorzy często uzupełniali dokumentację
+  po czasie lub podawali informacje niezgodne ze stanem faktycznym.
+  Większość klientów nie realizowała procesu zgodnie z założeniami, a
+  dokumenty wymagane do uruchomienia gwarancji trafiały do firmy dopiero
+  w momencie wystąpienia awarii.
+
+  Dodatkowo część klientów i partnerów biznesowych wywierała nacisk na
+  pomijanie procedur. Powodowało to konflikty pomiędzy działem handlowym
+  a serwisem, rozbieżne interpretacje zasad współpracy oraz okresowe
+  problemy wizerunkowe.
+
+problem: >
+  Proces gwarancyjny nie odpowiadał rzeczywistym zachowaniom użytkowników,
+  instalatorów i producentów urządzeń.
+
+  Obsługa gwarancji opierała się na dokumentach papierowych, komunikacji
+  telefonicznej, wiadomościach e-mail oraz indywidualnych ustaleniach.
+  Nie istniał spójny system pozwalający jednoznacznie określić status
+  urządzenia, historię jego obsługi oraz zakres odpowiedzialności
+  poszczególnych uczestników procesu.
+
+  Serwis był zmuszany do obchodzenia procedur pod wpływem nacisków
+  handlowych, a brak jasnych zasad powodował wydłużenie czasu obsługi
+  oraz częste konflikty pomiędzy uczestnikami procesu.
+
+constraints:
+  - Sprzeczne oczekiwania działu handlowego i działu serwisu.
+  - Istniejące przyzwyczajenia klientów oraz instalatorów.
+  - Brak centralnego systemu identyfikacji urządzeń.
+  - Konieczność uwzględnienia wymagań producentów kotłów.
+  - Wysoka liczba interesariuszy.
+  - Istniejące napięcia organizacyjne pomiędzy działami.
+  - Konieczność zachowania zgodności z obowiązującymi przepisami.
+
+goal: >
+  Stworzyć jednolity i skalowalny system gwarancyjny, który będzie
+  jednocześnie prosty dla użytkownika, przejrzysty dla instalatora,
+  wykonalny dla serwisu oraz akceptowalny dla producentów urządzeń i
+  partnerów handlowych.
+
+actions:
+  - Przeanalizowałem wcześniejsze projekty i drafty dokumentów gwarancyjnych.
+  - Zidentyfikowałem rzeczywiste potrzeby wszystkich uczestników procesu.
+  - Prowadziłem iteracyjne warsztaty i konsultacje z interesariuszami.
+  - Rozbiłem rozwiązanie na zestaw wyspecjalizowanych dokumentów pełniących różne funkcje biznesowe.
+  - Współtworzyłem umowę dla instalatorów wraz z regulaminami i cennikami.
+  - Współtworzyłem odrębne modele współpracy dla producentów urządzeń.
+  - Zaprojektowałem strukturę procesów opartych o formularze i workflow.
+  - Opracowałem system zbierania, nadawania i ewidencjonowania numerów seryjnych urządzeń.
+  - Przekształciłem proces rejestracji gwarancji z modelu papierowego na model systemowy.
+  - Współtworzyłem komunikację i narrację wyjaśniającą sens nowych zasad współpracy.
+  - Wspierałem przygotowanie materiałów szkoleniowych i informacyjnych dla uczestników programu.
+
+challenges:
+  - Bardzo duża liczba interesariuszy o sprzecznych oczekiwaniach.
+  - Ciągłe rozszerzanie zakresu projektu wraz z odkrywaniem kolejnych zależności.
+  - Trudność w odróżnianiu wymagań krytycznych od elementów opcjonalnych.
+  - Konieczność pogodzenia potrzeb handlowych, serwisowych i użytkowników końcowych.
+  - Potrzeba stworzenia prostego procesu dla użytkownika przy zachowaniu wysokiej kontroli operacyjnej.
+  - Konieczność zbudowania zaufania do nowych zasad współpracy.
+
+results:
+  quantitative:
+    - Wzrost liczby poprawnie składanych wniosków gwarancyjnych o około 20%.
+    - Skrócenie czasu uzyskania gwarancji z około 7–8 dni do około 3 dni.
+    - Skrócenie czasu rozpatrywania reklamacji z około 4–5 dni do około 2 dni.
+    - Skrócenie czasu podejmowania decyzji serwisowych o około 95%.
+    - Utrzymanie kosztów obsługi pomimo wzrostu liczby urządzeń na rynku.
+
+  qualitative:
+    - Ujednolicenie zasad współpracy pomiędzy uczestnikami procesu.
+    - Zmniejszenie liczby sporów interpretacyjnych.
+    - Zwiększenie przewidywalności obsługi gwarancyjnej.
+    - Poprawa kultury organizacyjnej poprzez formalizację wiedzy.
+    - Przeniesienie kluczowej wiedzy z głów pracowników do systemu.
+    - Stworzenie podstaw do dalszej cyfryzacji procesów serwisowych.
+    - Znaczący wzrost pozytywnego odbioru szkoleń powiązanych z programem gwarancyjnym.
+
+evidence:
+  achievement_ids:
+    - ACH-XXX
+
+  supporting_materials:
+    - Umowa typ 1
+    - Umowa typ 2
+    - Umowa typ 3
+    - Regulaminy gwarancyjne
+    - OWS
+    - Formularze gwarancyjne
+    - Workflow rejestracji gwarancji
+    - Materiały szkoleniowe
+    - Materiały filmowe
+    - CRM i baza numerów seryjnych
+
+lessons_learned:
+  - Najtrudniejsze problemy organizacyjne rzadko są problemami pojedynczego działu.
+  - Proces może być poprawny formalnie, ale nieskuteczny operacyjnie.
+  - Narracja i komunikacja są równie ważne jak sama procedura.
+  - Ludzie chętniej stosują zasady, jeśli rozumieją ich cel.
+  - Projektowanie procesów wymaga zrozumienia motywacji wszystkich uczestników systemu.
+  - Proste i intuicyjne ścieżki kontaktu znacząco zwiększają zaangażowanie użytkowników.
+  - Dobrze zaprojektowany system powinien ograniczać potrzebę podejmowania indywidualnych decyzji.
+
+interview_angles:
+  - Stakeholder Management
+  - Business Analysis
+  - Process Design
+  - Organizational Change
+  - Conflict Resolution
+  - Requirements Gathering
+  - Service Design
+  - Strategic Thinking
+  - Customer Experience
+
+cv_bullets:
+  - Współtworzyłem kompleksowy system gwarancyjny obejmujący producentów, instalatorów, dystrybutorów i użytkowników końcowych.
+  - Skróciłem czas uzyskania gwarancji z 7–8 dni do około 3 dni oraz czas rozpatrywania reklamacji z 4–5 dni do około 2 dni.
+  - Zaprojektowałem procesy, workflowy oraz system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając przewidywalność i skalowalność obsługi.
+```
