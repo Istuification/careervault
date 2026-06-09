@@ -1,0 +1,191 @@
+```yaml
+id: STORY-005
+
+title: Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
+
+summary: >
+  Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN,
+  Wiki.js oraz interaktywnych schematach diagnostycznych, który pozwolił
+  przechwycić wiedzę znajdującą się w głowach ekspertów i przekształcić ją
+  w skalowalny system organizacyjny. W ciągu czterech miesięcy zespół
+  stworzył 120 schematów diagnostycznych i artykułów serwisowych,
+  skracając czas osiągnięcia samodzielności operacyjnej nowych
+  serwisantów z 8–9 miesięcy do 2–3 miesięcy.
+
+competencies:
+  - Knowledge Management
+  - Knowledge Engineering
+  - Process Design
+  - BPMN 2.0
+  - Systems Thinking
+  - Organizational Learning
+  - Technical Documentation
+  - Onboarding
+  - Enablement
+  - Change Management
+  - Cross-Functional Collaboration
+  - Project Coordination
+
+situation: >
+  Po analizie pracy działu serwisu zidentyfikowaliśmy, że znacząca część
+  zgłoszeń mogłaby być obsługiwana przez mniej doświadczonych pracowników,
+  pod warunkiem zapewnienia im odpowiednich narzędzi diagnostycznych.
+  Problem polegał na tym, że wiedza niezbędna do rozwiązywania problemów
+  znajdowała się głównie w głowach dwóch ekspertów serwisowych oraz
+  głównego konstruktora produktu.
+
+  Dotychczasowe próby onboardingu nowych pracowników nie przynosiły
+  oczekiwanych rezultatów. Osiągnięcie samodzielności operacyjnej
+  wymagało od 8 do 9 miesięcy pracy, a nowi pracownicy często nie byli
+  w stanie przejść okresu próbnego.
+
+problem: >
+  Organizacja potrzebowała sposobu na szybkie przekazanie wiedzy
+  eksperckiej nowym pracownikom przed kolejnym sezonem grzewczym.
+  Nie było jednak gotowych materiałów, dokumentacji ani metodologii
+  pozwalającej przechwycić i uporządkować wiedzę techniczną dotyczącą
+  diagnostyki urządzeń.
+
+constraints:
+  - Wiedza znajdowała się głównie w głowach trzech ekspertów
+  - Brak istniejącej dokumentacji diagnostycznej
+  - Brak sprawdzonej metodologii opisu wiedzy eksperckiej
+  - Ograniczona dostępność ekspertów serwisowych
+  - Maksymalnie cztery miesiące na realizację projektu
+  - Konieczność przygotowania rozwiązania przed kolejnym sezonem grzewczym
+  - Młody i niedoświadczony zespół
+
+goal: >
+  Stworzyć skalowalny system przechwytywania, organizowania i przekazywania
+  wiedzy eksperckiej, który umożliwi szybszy onboarding nowych pracowników,
+  zmniejszy zależność organizacji od pojedynczych ekspertów oraz pozwoli
+  mniej doświadczonym serwisantom samodzielnie rozwiązywać najczęstsze
+  problemy klientów.
+
+actions:
+  - Przeanalizowałem najczęściej występujące problemy zgłaszane przez klientów
+    i uporządkowałem je w logiczne obszary diagnostyczne.
+
+  - Przeprowadziłem analizę dostępnych metod modelowania procesów
+    i wiedzy eksperckiej, identyfikując BPMN 2.0 jako najbardziej
+    obiecujące rozwiązanie.
+
+  - Samodzielnie nauczyłem się notacji BPMN 2.0 na podstawie literatury,
+    materiałów edukacyjnych i dokumentacji technicznej.
+
+  - Zidentyfikowałem ograniczenia klasycznych diagramów BPMN dla złożonych
+    procesów diagnostycznych i opracowałem koncepcję podziału wiedzy
+    na mniejsze, połączone ze sobą interaktywne schematy.
+
+  - Zaprojektowałem architekturę rozwiązania opartą o Wiki.js,
+    diagrams.net oraz sieć wzajemnie powiązanych diagramów.
+
+  - Opracowałem standard dokumentacji obejmujący:
+      - strukturę schematów diagnostycznych,
+      - strukturę artykułów serwisowych,
+      - zasady nazewnictwa,
+      - sposób prezentacji wiedzy,
+      - proces publikacji i recenzji.
+
+  - Wprowadziłem podział dokumentacji na:
+      - Drzewa Diagnostyczne (DD),
+      - Artykuły Serwisowe (AS).
+
+  - Zaprojektowałem proces tworzenia wiedzy obejmujący:
+      - identyfikację potrzeby,
+      - tworzenie diagramu,
+      - przygotowanie opisu,
+      - recenzję ekspercką,
+      - weryfikację przez głównego konstruktora,
+      - publikację.
+
+  - Współtworzyłem główne drzewa diagnostyczne wraz z dwoma ekspertami
+    serwisowymi i koordynowałem ich iteracyjną walidację z głównym
+    konstruktorem produktu.
+
+  - Samodzielnie stworzyłem około 30% wszystkich diagramów i opisów.
+
+  - Zrecenzowałem około 90% powstających materiałów w celu utrzymania
+    spójności i jakości całego systemu.
+
+  - Przygotowałem szkolenia z BPMN dla zespołu oraz materiały onboardingowe
+    umożliwiające samodzielne korzystanie z nowego rozwiązania.
+
+  - Zaprojektowałem system śledzenia postępów oparty na elementach
+    gamifikacji, który pozwalał monitorować tempo prac i utrzymywać
+    zaangażowanie zespołu.
+
+  - Koordynowałem pracę czteroosobowego zespołu odpowiedzialnego
+    za tworzenie dokumentacji oraz regularnie raportowałem postępy
+    przed zarządem.
+
+  - Współorganizowałem wdrożenie Wiki.js na firmowym serwerze
+    oraz publikację gotowej bazy wiedzy.
+
+challenges:
+  - Przechwycenie wiedzy, która nigdy wcześniej nie była formalnie opisana
+  - Zamiana intuicyjnej wiedzy ekspertów w powtarzalne algorytmy decyzyjne
+  - Opracowanie własnej metodologii tworzenia dokumentacji od podstaw
+  - Utrzymanie spójności materiałów tworzonych przez wiele osób
+  - Realizacja projektu w ograniczonym czasie przed sezonem grzewczym
+  - Nauczenie zespołu nowej notacji procesowej i sposobu pracy
+
+results:
+  quantitative:
+    - Stworzono 120 schematów diagnostycznych i artykułów serwisowych
+    - Projekt został zrealizowany przez 4-osobowy zespół w ciągu 4 miesięcy
+    - Około 30% dokumentacji zostało przygotowane przeze mnie osobiście
+    - Około 90% materiałów zostało przeze mnie zrecenzowanych
+    - Skrócono czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy
+    - Rozwiązanie zostało zweryfikowane na grupie 3 nowych pracowników
+
+  qualitative:
+    - Przechwycono wiedzę krytyczną dla funkcjonowania serwisu
+    - Ograniczono zależność organizacji od pojedynczych ekspertów
+    - Stworzono skalowalny system transferu wiedzy
+    - Umożliwiono mniej doświadczonym pracownikom samodzielne rozwiązywanie najczęstszych problemów
+    - Ustandaryzowano sposób dokumentowania wiedzy technicznej
+    - Stworzono fundament dla dalszego rozwoju wiedzy organizacyjnej
+    - Rozwiązanie jest wykorzystywane do dziś jako podstawowe narzędzie onboardingu serwisu
+    - BPMN został później zaadaptowany do opisu innych procesów organizacyjnych
+    - Inni managerowie korzystali z wypracowanych standardów i szkoleń
+
+evidence:
+  achievement_ids:
+    - ACH-003
+    - ACH-004
+
+  supporting_materials:
+    - Wiki.js
+    - Schematy BPMN 2.0
+    - Drzewa Diagnostyczne (DD)
+    - Artykuły Serwisowe (AS)
+    - Materiały onboardingowe
+    - Szkolenia BPMN
+    - Dokumentacja procesu tworzenia wiedzy
+
+lessons_learned:
+  - Wiedza ekspercka staje się wartościowa dla organizacji dopiero wtedy, gdy można ją skutecznie przekazać innym
+  - Dobrze zaprojektowany system wiedzy może skrócić onboarding wielokrotnie bardziej niż dodatkowe szkolenia
+  - Eksperci chętnie dzielą się wiedzą, jeśli otrzymają odpowiednie narzędzia i wsparcie
+  - Graficzna reprezentacja procesów jest skuteczniejsza od samego tekstu przy nauce złożonych zagadnień technicznych
+  - Standaryzacja sposobu tworzenia wiedzy jest równie ważna jak sama wiedza
+
+interview_angles:
+  - Knowledge Management
+  - Process Design
+  - Change Management
+  - Organizational Learning
+  - Onboarding
+  - Systems Thinking
+  - Project Management
+  - Team Coordination
+  - Innovation
+  - Continuous Improvement
+
+cv_bullets:
+  - Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN i Wiki.js obejmujący 120 schematów diagnostycznych.
+  - Skróciłem czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy.
+  - Przechwyciłem i ustrukturyzowałem wiedzę ekspercką krytyczną dla funkcjonowania serwisu.
+  - Stworzyłem standard dokumentowania wiedzy technicznej wykorzystywany do dziś w procesie onboardingu.
+```
