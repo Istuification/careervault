@@ -1,3 +1,4 @@
+```yaml
 id: DEV-004
 
 title: Commercial Discovery
@@ -18,12 +19,25 @@ sources:
   stories:
     - STORY-006
 
+  achievements:
+    - ACH-008
+    - ACH-011
+    - ACH-013
+    - ACH-014
+
+  skills:
+    - product-management
+    - stakeholder-management
+    - operations-management
+    - process-design
+
 observed_pattern:
 
-  - Silna koncentracja na realizacji
-  - Duże zaufanie do logicznie poprawnych założeń
-  - Skupienie na rozwiązaniu problemu operacyjnego
-  - Mniejsza uwaga poświęcana walidacji potrzeb klientów
+  - Naturalna koncentracja na realizacji i dowożeniu rezultatów
+  - Silne zaufanie do logicznie poprawnych założeń
+  - Szybkie przechodzenie od problemu do projektowania rozwiązania
+  - Większa uwaga poświęcana wykonaniu niż walidacji potrzeb rynku
+  - Skupienie na jakości produktu i procesu przed oceną market fit
 
 strengths:
 
@@ -31,20 +45,75 @@ strengths:
   - Project Delivery
   - Product Introduction
   - Cross-functional Coordination
+  - Operational Thinking
+  - Process Design
 
 risks:
 
-  - Budowanie rozwiązań bez pełnej walidacji rynku
+  - Budowanie rozwiązań bez pełnej walidacji potrzeb klientów
   - Niedoszacowanie znaczenia procesów sprzedażowych
-  - Nadmierne skupienie na produkcie kosztem klienta
+  - Nadmierne skupienie na produkcie kosztem użytkownika
+  - Zbyt wczesne przechodzenie do realizacji
+  - Ryzyko optymalizacji rozwiązania przed potwierdzeniem problemu
+
+evidence:
+
+  - STORY-006 pokazuje proces wprowadzania nowego produktu w warunkach ograniczonej walidacji rynkowej.
+  - ACH-008 dokumentuje koncentrację na skutecznym wdrożeniu produktu oraz stronie wykonawczej projektu.
+  - ACH-011 pokazuje skupienie na usprawnianiu procesu ofertowania i kalkulacji.
+  - ACH-013 dokumentuje budowę systemów wspierających organizację i procesy operacyjne.
+  - ACH-014 pokazuje tendencję do standaryzacji i porządkowania środowiska pracy.
+
+root_cause_analysis:
+
+  assumption: >
+    Jeżeli rozwiązanie jest logiczne, technicznie poprawne
+    i dobrze wdrożone, powinno przynieść oczekiwane rezultaty.
+
+  reality: >
+    Sukces produktu zależy nie tylko od jakości wykonania,
+    ale również od zrozumienia klienta, walidacji problemu,
+    modelu biznesowego oraz dopasowania do rynku.
+    W wielu przypadkach discovery powinno poprzedzać execution.
 
 key_realizations:
 
-  - Poprawnie wykonany projekt nie gwarantuje sukcesu rynkowego
-  - Klient kupuje wartość, a nie techniczną poprawność rozwiązania
-  - Discovery powinno poprzedzać execution
-  - Market fit jest równie ważny jak jakość wdrożenia
+  - Poprawnie wykonany projekt nie gwarantuje sukcesu rynkowego.
+  - Klient kupuje wartość, a nie techniczną poprawność rozwiązania.
+  - Discovery powinno poprzedzać execution.
+  - Market fit jest równie ważny jak jakość wdrożenia.
+  - Weryfikacja założeń biznesowych powinna następować możliwie wcześnie.
+
+current_approach:
+
+  - Wcześniej identyfikuję kluczowe założenia biznesowe i rynkowe.
+  - Staram się angażować klientów, partnerów i sprzedaż przed rozpoczęciem pełnej realizacji.
+  - Oddzielam walidację problemu od projektowania rozwiązania.
+  - Szukam prostych sposobów testowania hipotez przed większymi inwestycjami.
+  - Świadomie poświęcam więcej uwagi perspektywie klienta i modelowi biznesowemu.
 
 development_goal: >
   Rozwijać umiejętności związane z walidacją potrzeb klientów,
-  badaniem rynku oraz oceną potencjału biznesowego nowych inicjatyw.
+  badaniem rynku, discovery produktowym oraz oceną potencjału
+  biznesowego nowych inicjatyw przed rozpoczęciem pełnej realizacji.
+
+interview_usage:
+
+  strengths_questions:
+
+    - Jak podchodzisz do wprowadzania nowych produktów?
+    - Jak łączysz skuteczną realizację z oceną potrzeb biznesowych?
+    - Jakie są Twoje najmocniejsze strony w prowadzeniu projektów?
+
+  weakness_questions:
+
+    - Jakie błędy popełniałeś przy wprowadzaniu nowych rozwiązań?
+    - W jakich sytuacjach zbyt szybko przechodzisz do działania?
+    - Jakie obszary świadomie rozwijasz jako manager lub product owner?
+
+  growth_questions:
+
+    - Jak zmieniło się Twoje podejście do walidacji pomysłów?
+    - Jak sprawdzasz dziś, czy produkt odpowiada na rzeczywistą potrzebę?
+    - Jakie działania podejmujesz, aby lepiej rozumieć klientów i rynek?
+```
