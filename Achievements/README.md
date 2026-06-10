@@ -174,205 +174,182 @@ Przykład:
 
 Każdy Achievement powinien zawierać następujące pola:
 
+### Pola obowiązkowe
+
 ```yaml
 id:
-
 title:
-
-period:
-  start:
-  end:
-
 summary:
 
-problem:
-
-approach:
-
-skills:
-
-themes:
-
+situation:
 actions:
-
-result:
-
 impact:
 
-importance:
+skills:
+```
+
+### Pola opcjonalne
+
+```yaml
+metrics:
+related_experience:
+related_stories:
+related_tools:
+notes:
 ```
 
 ---
 
 # Opis pól
 
-## id
-
-Unikalny identyfikator rekordu.
-
-Przykłady:
-
-```text
-ACH-001
-ACH-014
-ACH-P003
-```
-
-Identyfikator powinien pozostać niezmienny przez cały czas życia repozytorium.
-
----
-
-## title
+### title
 
 Krótka nazwa osiągnięcia.
 
-Powinna jasno wskazywać czego dotyczy rekord.
-
----
-
-## period
-
-Okres realizacji osiągnięcia.
+Powinna opisywać rezultat lub inicjatywę.
 
 Przykład:
 
 ```yaml
-period:
-  start: 2023
-  end: current
+title: Wdrożenie systemu KPI dla działu handlowego
 ```
 
-lub
-
-```yaml
-period:
-  start: 2020
-  end: 2023
-```
-
-Career Vault przechowuje daty domyślnie na poziomie lat.
-
 ---
 
-## summary
+### summary
 
-Krótki opis osiągnięcia.
+Jedno- lub dwuzdaniowe podsumowanie osiągnięcia.
 
-Powinien odpowiadać na pytanie:
-
-> Co zostało osiągnięte?
-
----
-
-## problem
-
-Jaki problem, potrzeba lub wyzwanie doprowadziło do realizacji osiągnięcia?
-
----
-
-## approach
-
-W jaki sposób podszedłem do rozwiązania problemu?
-
-Opis głównej strategii działania.
-
----
-
-## skills
-
-Lista kompetencji wykorzystanych podczas realizacji.
+Powinno pozwalać szybko zrozumieć sens rekordu bez czytania szczegółów.
 
 Przykład:
 
 ```yaml
-skills:
-  - process-design
-  - leadership
-  - operations-management
+summary: >
+  Zaprojektowałem i wdrożyłem system KPI dla działu handlowego,
+  który umożliwił monitorowanie efektywności procesu sprzedaży
+  i identyfikację głównych wąskich gardeł.
 ```
 
 ---
 
-## themes
+### situation
 
-Lista głównych tematów związanych z osiągnięciem.
+Krótki opis sytuacji wyjściowej.
+
+Odpowiada na pytanie:
+
+> W jakim kontekście wystąpiło osiągnięcie?
 
 Przykład:
 
 ```yaml
-themes:
-  - transformation
-  - automation
-  - knowledge-management
+situation: >
+  Firma nie posiadała spójnego systemu monitorowania efektywności sprzedaży.
 ```
 
 ---
 
-## actions
+### actions
 
-Najważniejsze działania wykonane podczas realizacji.
+Opis wykonanych działań.
+
+Odpowiada na pytanie:
+
+> Co konkretnie zrobiłem?
 
 Przykład:
 
 ```yaml
 actions:
-  - analiza procesu
-  - stworzenie dokumentacji
-  - wdrożenie nowego workflow
+  - Zidentyfikowałem kluczowe etapy procesu sprzedaży.
+  - Zaprojektowałem zestaw KPI.
+  - Wdrożyłem cykliczne raportowanie.
 ```
 
 ---
 
-## result
+### impact
 
-Bezpośredni rezultat osiągnięcia.
+Opis efektów.
 
-Co zostało dostarczone lub wdrożone?
+Odpowiada na pytanie:
 
----
-
-## impact
-
-Wpływ biznesowy, organizacyjny lub operacyjny.
-
-Preferowane są rezultaty mierzalne.
+> Co zmieniło się dzięki tym działaniom?
 
 Przykład:
 
 ```yaml
 impact:
-  - skrócenie czasu realizacji
-  - zmniejszenie liczby błędów
-  - poprawa jakości danych
+  - Kierownictwo uzyskało bieżący wgląd w efektywność sprzedaży.
+  - Ułatwiono identyfikację problemów procesowych.
+  - Powstała podstawa do dalszej optymalizacji działań.
 ```
 
 ---
 
-## importance
+### skills
 
-Znaczenie osiągnięcia w skali od 1 do 10.
+Kompetencje potwierdzane przez achievement.
 
-### 10
+Nazwy powinny pochodzić z modułu Skills.
 
-Osiągnięcie definiujące karierę.
+Przykład:
 
-### 8–9
-
-Bardzo ważne osiągnięcie.
-
-### 6–7
-
-Istotne osiągnięcie.
-
-### 1–5
-
-Osiągnięcie wspierające.
+```yaml
+skills:
+  - Data Analysis
+  - KPI Design
+  - Process Improvement
+```
 
 ---
 
-# Pola opcjonalne
+### metrics (opcjonalne)
 
-## related_tools
+Mierzalne rezultaty osiągnięcia.
+
+Przykład:
+
+```yaml
+metrics:
+  reporting_time:
+    before: 4h
+    after: 20m
+
+  sales_growth:
+    value: "+18%"
+```
+
+---
+
+### related_experience (opcjonalne)
+
+Powiązane stanowiska lub role.
+
+Przykład:
+
+```yaml
+related_experience:
+  - EXP-003
+```
+
+---
+
+### related_stories (opcjonalne)
+
+Story wykorzystujące dany achievement jako dowód.
+
+Przykład:
+
+```yaml
+related_stories:
+  - STORY-002
+```
+
+---
+
+### related_tools (opcjonalne)
 
 Narzędzia wykorzystane podczas realizacji.
 
@@ -380,56 +357,18 @@ Przykład:
 
 ```yaml
 related_tools:
-  - Bitrix24
   - Excel
-  - Wiki.js
+  - Power BI
+  - ERP
 ```
 
 ---
 
-## evidence
+### notes (opcjonalne)
 
-Dodatkowe informacje potwierdzające osiągnięcie.
+Dodatkowy kontekst, obserwacje lub informacje pomocnicze.
 
-Przykład:
-
-```yaml
-evidence:
-  - wdrożono w całej organizacji
-  - wykorzystywane przez kilka działów
-```
-
----
-
-## related_stories
-
-Powiązane Stories.
-
-Przykład:
-
-```yaml
-related_stories:
-  - STORY-005
-```
-
----
-
-## related_development_areas
-
-Powiązane Development Areas.
-
-Przykład:
-
-```yaml
-related_development_areas:
-  - DEV-001
-```
-
----
-
-## notes
-
-Dodatkowy kontekst wymagający wyjaśnienia.
+Nie powinny zawierać kluczowych danych nieobecnych w głównych sekcjach.
 
 ---
 
