@@ -1,0 +1,121 @@
+id: DEV-002
+
+title: Personal Capacity Management
+
+summary: >
+  Naturalnie przejmuję odpowiedzialność za problemy organizacyjne,
+  szczególnie gdy dostrzegam ich wpływ na klientów, pracowników lub
+  funkcjonowanie firmy. W przeszłości prowadziło to do przyjmowania
+  zbyt wielu obowiązków jednocześnie oraz prób kompensowania problemów
+  organizacyjnych własnym wysiłkiem. Doświadczenia zdobyte podczas
+  gwałtownego wzrostu działalności operacyjnej nauczyły mnie, że
+  przeciążenie ludzi nie jest rozwiązaniem problemów systemowych.
+
+category: Self Management
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-001
+    - STORY-004
+    - STORY-005
+    - STORY-007
+    - STORY-008
+
+  achievements:
+    - ACH-012
+
+  skills:
+    - Ownership
+    - Problem Solving
+    - Operations Management
+    - Organizational Analysis
+
+observed_pattern: >
+
+  W sytuacjach nieuporządkowanych mam tendencję do:
+
+  - przejmowania dodatkowych obowiązków,
+  - kompensowania braków organizacyjnych własną pracą,
+  - odkładania własnych ograniczeń na później,
+  - skupiania się na rozwiązaniu problemu zamiast na własnej przepustowości,
+  - traktowania odpowiedzialności organizacyjnej jako odpowiedzialności osobistej.
+
+  W krótkim okresie zwiększa to skuteczność działania.
+  W dłuższym prowadzi do przeciążenia i tworzenia nowych ryzyk.
+
+strengths:
+
+  - Wysokie poczucie odpowiedzialności
+  - Ownership
+  - Gotowość do działania w sytuacjach kryzysowych
+  - Umiejętność funkcjonowania pod presją
+  - Determinacja w doprowadzaniu tematów do końca
+  - Skłonność do przejmowania inicjatywy
+
+risks:
+
+  - Przeciążenie obowiązkami
+  - Wypalenie
+  - Odkładanie odpoczynku i regeneracji
+  - Tworzenie single point of failure
+  - Trudność w odmawianiu nowych zadań
+  - Nadmierna odpowiedzialność za obszary niezależne ode mnie
+
+evidence:
+
+  - Łączenie wielu funkcji operacyjnych podczas wzrostu rynku PV
+  - Praca podczas choroby w okresie przeciążenia operacyjnego
+  - Samodzielne tworzenie systemów i narzędzi eliminujących ograniczenia organizacyjne
+  - Wielokrotne przejmowanie odpowiedzialności za obszary bez właściciela
+
+root_cause_analysis:
+
+  assumption: >
+    Jeżeli widzę problem i potrafię go rozwiązać,
+    powinienem wziąć za niego odpowiedzialność.
+
+  reality: >
+    Nie każdy problem organizacyjny powinien być rozwiązywany
+    dodatkowym wysiłkiem jednej osoby. Skalowanie wymaga budowy
+    procesów, narzędzi oraz zdolności organizacyjnych.
+
+key_realizations:
+
+  - Cięższa praca nie rozwiązuje problemów systemowych
+  - Skalowanie wymaga budowy zdolności organizacyjnych
+  - Odpowiedzialność nie oznacza wykonywania wszystkiego samodzielnie
+  - Lider powinien chronić ludzi przed skutkami przeciążenia
+  - Dług organizacyjny zawsze zostanie spłacony
+  - Własna przepustowość jest zasobem, którym należy zarządzać
+
+current_approach:
+
+  - Wcześniejsze identyfikowanie przeciążenia
+  - Świadome zarządzanie priorytetami
+  - Eskalowanie problemów zasobowych
+  - Budowanie procesów zamiast zwiększania wysiłku
+  - Większa dbałość o delegowanie i podział odpowiedzialności
+  - Analizowanie kosztów alternatywnych nowych zobowiązań
+
+development_goal: >
+
+  Rozwijać zdolność zarządzania własną przepustowością oraz
+  oddzielania odpowiedzialności organizacyjnej od odpowiedzialności
+  osobistej. Skupiać się na budowaniu systemów i zdolności
+  organizacyjnych zamiast kompensowania problemów dodatkowym wysiłkiem.
+
+interview_usage:
+
+  strengths_questions:
+    - Jak reagujesz w sytuacjach kryzysowych?
+    - Jak bierzesz odpowiedzialność za problemy?
+
+  weakness_questions:
+    - Jaką słabość zawodową rozwijasz?
+    - Opowiedz o sytuacji przeciążenia.
+
+  growth_questions:
+    - Czego nauczyłeś się o skalowaniu organizacji?
+    - Jak zmieniło się Twoje podejście do odpowiedzialności?
