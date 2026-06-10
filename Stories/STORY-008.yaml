@@ -1,0 +1,125 @@
+id: STORY-008
+
+title: Zatrzymanie niekontrolowanego skalowania operacji PV
+
+summary: >
+  W okresie gwałtownego wzrostu rynku fotowoltaiki zidentyfikowałem, że tempo
+  sprzedaży znacząco przekroczyło możliwości operacyjne organizacji. Pomimo
+  wysokich wyników biznesowych narastające przeciążenie ludzi, błędy operacyjne
+  oraz ryzyka jakościowe i bezpieczeństwa wskazywały na systemowy problem.
+  Doprowadziłem do zmiany podejścia do skalowania organizacji poprzez
+  zwiększenie zasobów administracyjnych oraz rozpoczęcie prac nad procesami i
+  narzędziami wspierającymi dalszy wzrost.
+
+competencies:
+  - Capacity Planning
+  - Operational Leadership
+  - Resource Planning
+  - Risk Management
+  - Escalation Management
+  - Stakeholder Management
+  - Organizational Awareness
+  - Decision Making Under Pressure
+  - Operational Scaling
+  - Quality Management
+  - Safety Awareness
+  - Boundary Setting
+  - Change Management
+
+situation: >
+  Pod koniec 2021 roku, w związku ze zbliżającym się zakończeniem systemu
+  net-meteringu, rynek fotowoltaiczny przeżywał gwałtowny wzrost. Klienci
+  masowo podpisywali umowy, chcąc zdążyć przed zmianą zasad rozliczania.
+  Pomimo ograniczonych mocy wykonawczych firma zakontraktowała około 26
+  instalacji w ciągu dwóch miesięcy, co znacząco przekraczało realne
+  możliwości operacyjne zespołu.
+
+problem: >
+  Organizacja próbowała skalować sprzedaż szybciej niż była w stanie skalować
+  operacje. Kluczowe procesy administracyjne, logistyczne i techniczne były
+  skoncentrowane na jednej osobie. Rosnące obciążenie prowadziło do błędów,
+  spadku jakości realizacji, zwiększonego ryzyka bezpieczeństwa oraz
+  uzależnienia ciągłości działania od pojedynczego pracownika.
+
+constraints:
+  - Ekstremalny wzrost liczby realizowanych instalacji
+  - Presja klientów związana z terminami wynikającymi ze zmian regulacyjnych
+  - Jedna osoba odpowiedzialna za większość procesów administracyjnych
+  - Brak odpowiednich narzędzi wspierających planowanie i skalowanie
+  - Ograniczona liczba ekip montażowych
+  - Wysoka odpowiedzialność za jakość i terminowość realizacji
+  - Rosnące ryzyko błędów wynikających z przeciążenia
+
+goal: >
+  Utrzymać zdolność operacyjną organizacji bez dalszego pogarszania jakości,
+  bezpieczeństwa oraz warunków pracy zespołu, a jednocześnie stworzyć warunki
+  umożliwiające dalszy wzrost w sposób kontrolowany i powtarzalny.
+
+actions:
+  - Koordynowałem pracę czterech pracowników oraz wielu równoległych realizacji instalacji PV
+  - Zarządzałem planowaniem montaży, logistyką, zamówieniami materiałów, rozliczeniami ekip i obsługą bieżących problemów technicznych
+  - Na bieżąco identyfikowałem ograniczenia przepustowości organizacji i obszary generujące największe ryzyko błędów
+  - Analizowałem wpływ przeciążenia na jakość realizacji, bezpieczeństwo oraz efektywność pracy zespołu
+  - Pomimo choroby utrzymywałem ciągłość działania kluczowych procesów operacyjnych
+  - Zidentyfikowałem, że dalsze zwiększanie obciążenia nie rozwiązuje problemu i prowadzi do narastania długu organizacyjnego
+  - Przygotowałem argumentację biznesową dotyczącą konieczności zwiększenia zasobów administracyjnych
+  - Przedstawiłem przełożonemu ultimatum dotyczące zmiany sposobu skalowania organizacji
+  - Zarekomendowałem zatrudnienie dodatkowych osób administracyjnych oraz uporządkowanie procesów i narzędzi operacyjnych
+  - Zapoczątkowałem zmianę podejścia z modelu opartego na heroicznej pracy pojedynczych osób na model oparty na procesach i zdolnościach organizacyjnych
+
+challenges:
+  - Presja realizacji liczby montaży przekraczającej teoretyczne możliwości operacyjne
+  - Odpowiedzialność za wiele krytycznych procesów jednocześnie
+  - Brak narzędzi wspierających planowanie przy rosnącej skali działalności
+  - Konieczność przeciwstawienia się decyzjom wspieranym przez krótkoterminowe cele sprzedażowe
+  - Pogarszający się stan zdrowia wynikający z przeciążenia i stresu
+  - Rosnące ryzyko błędów jakościowych i operacyjnych
+  - Wystąpienie incydentu bezpieczeństwa będącego skutkiem działania na granicy możliwości organizacji
+
+results:
+  quantitative:
+    - Skoordynowano realizację około 26 instalacji w ciągu dwóch miesięcy
+    - Zarządzano pracą 4-osobowego zespołu operacyjnego
+    - Utrzymano ciągłość działania pomimo skrajnego przeciążenia organizacyjnego
+  qualitative:
+    - Doprowadzono do zwiększenia zasobów administracyjnych
+    - Zmieniono podejście do skalowania działalności operacyjnej
+    - Uświadomiono kierownictwu ograniczenia przepustowości organizacji
+    - Ograniczono ryzyko dalszego pogarszania jakości realizacji
+    - Zwiększono świadomość znaczenia procesów i narzędzi wspierających wzrost
+    - Przesunięto organizację z modelu opartego na wysiłku ludzi w kierunku modelu opartego na systemach
+
+evidence:
+  achievement_ids:
+    - ACH-012
+  supporting_materials:
+    - Harmonogramy realizacji instalacji PV
+    - Dokumentacja planowania montaży
+    - Raporty obciążenia zespołu
+    - Dokumentacja procesów operacyjnych opracowanych po okresie przeciążenia
+
+lessons_learned:
+  - Przeciążenie ludzi nie jest strategią skalowania organizacji
+  - Wzrost sprzedaży musi być równoważony wzrostem zdolności operacyjnych
+  - Problemy systemowe nie mogą być rozwiązywane wyłącznie dodatkowym wysiłkiem pracowników
+  - Ryzyka jakościowe i bezpieczeństwa są często pierwszym sygnałem przekroczenia możliwości organizacji
+  - Lider odpowiada nie tylko za wyniki, ale również za stworzenie warunków umożliwiających bezpieczną i powtarzalną pracę
+  - Dług organizacyjny i technologiczny zawsze zostaje spłacony, jeśli nie jest zarządzany odpowiednio wcześnie
+
+interview_angles:
+  - Operational Leadership
+  - Managing Under Pressure
+  - Capacity Planning
+  - Escalation Management
+  - Difficult Conversations
+  - Organizational Change
+  - Risk Management
+  - Quality and Safety
+  - Leadership Lessons
+  - Managing Growth
+
+cv_bullets:
+  - Zidentyfikowałem ograniczenia operacyjne organizacji podczas gwałtownego wzrostu rynku PV i doprowadziłem do zmiany podejścia do skalowania działalności.
+  - Zarządzałem realizacją 26 instalacji w okresie dwóch miesięcy, koordynując logistykę, planowanie i wsparcie techniczne zespołu.
+  - Eskalowałem ryzyka jakościowe i bezpieczeństwa wynikające z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych.
+  - Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia operacyjne.
