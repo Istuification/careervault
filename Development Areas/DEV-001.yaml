@@ -1,0 +1,124 @@
+id: DEV-001
+
+title: Leadership Through Accountability
+
+summary: >
+  Naturalnie buduję zaufanie, współpracę i autonomię zespołu. W początkowym
+  okresie zarządzania ludźmi zakładałem, że większość pracowników będzie
+  kierować się podobnym poziomem odpowiedzialności, uczciwości i zaangażowania
+  jak ja. W praktyce doprowadziło to do sytuacji, w której zbyt późno
+  reagowałem na niepożądane zachowania, nadmiernie polegałem na zaufaniu oraz
+  unikałem formalnego egzekwowania standardów. Doświadczenia zdobyte podczas
+  prowadzenia serwisu nauczyły mnie, że skuteczny lider musi równoważyć
+  zaufanie, autonomię i odpowiedzialność.
+
+category: Leadership
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-009
+
+  achievements:
+    - ACH-012
+
+  skills:
+    - Leadership
+    - Team Management
+    - Conflict Resolution
+    - Stakeholder Management
+
+observed_pattern: >
+
+  W nowych zespołach mam tendencję do:
+
+  - budowania relacji partnerskich zamiast hierarchicznych,
+  - zakładania dobrej woli pracowników,
+  - dawania dużej autonomii,
+  - długiego dawania szans na poprawę,
+  - skupiania się na edukacji zamiast konsekwencjach.
+
+  Podejście to dobrze działa wśród osób odpowiedzialnych i
+  samodzielnych, jednak prowadzi do problemów gdy członkowie zespołu
+  nie podzielają tych samych standardów pracy.
+
+strengths:
+
+  - Budowanie atmosfery zaufania
+  - Tworzenie bezpiecznego środowiska do nauki
+  - Wysoka empatia wobec pracowników
+  - Umiejętność integrowania zespołu wokół wspólnych wartości
+  - Skłonność do rozwijania ludzi zamiast kontrolowania ich
+  - Wspieranie autonomii i inicjatywy
+
+risks:
+
+  - Opóźnione reagowanie na niepożądane zachowania
+  - Zbyt duży kredyt zaufania dla nowych pracowników
+  - Trudność w prowadzeniu rozmów dyscyplinujących
+  - Przeciążanie najbardziej odpowiedzialnych członków zespołu
+  - Powstawanie nierównowagi pomiędzy wkładem poszczególnych osób
+  - Odkładanie trudnych decyzji personalnych
+
+evidence:
+
+  - Utrzymanie ekspertów poprzez budowę kultury współpracy i wsparcia
+  - Trudności z egzekwowaniem standardów wobec młodszych pracowników
+  - Zbyt późne wykrycie nadużyć wynikające z nadmiernego zaufania
+  - Problemy z prowadzeniem rozmów korygujących w modelu "kierownik-przyjaciel"
+  - Konieczność rozwiązania współpracy z pracownikami naruszającymi zasady odpowiedzialności
+
+root_cause_analysis:
+
+  assumption: >
+    Zakładałem, że większość ludzi będzie podejmować decyzje zgodnie
+    z podobnym poziomem odpowiedzialności, uczciwości i zaangażowania.
+
+  reality: >
+    Ludzie różnią się motywacją, wartościami i poziomem odpowiedzialności.
+    Zaufanie bez mechanizmów rozliczalności tworzy przestrzeń do
+    nadużyć i przerzucania odpowiedzialności.
+
+key_realizations:
+
+  - Postawa pracownika jest ważniejsza niż jego aktualne kompetencje
+  - Zaufanie nie zastępuje rozliczalności
+  - Autonomia wymaga jasnych oczekiwań i konsekwencji
+  - Lider nie może budować autorytetu wyłącznie na relacjach koleżeńskich
+  - Najbardziej odpowiedzialni pracownicy ponoszą największy koszt tolerowania słabych postaw
+  - Kultura organizacyjna wymaga zarówno wsparcia, jak i egzekwowania standardów
+
+current_approach:
+
+  - Szybsze reagowanie na sygnały ostrzegawcze
+  - Wcześniejsze prowadzenie rozmów korygujących
+  - Wyraźniejsze definiowanie oczekiwań
+  - Oddzielanie relacji osobistych od odpowiedzialności zawodowej
+  - Łączenie zaufania z mechanizmami kontroli
+  - Regularna weryfikacja jakości pracy i realizacji zobowiązań
+
+development_goal: >
+
+  Rozwinąć styl przywództwa oparty na równowadze pomiędzy zaufaniem,
+  autonomią, odpowiedzialnością i konsekwencją. Zachować mocne strony
+  związane z budowaniem relacji i współpracy, jednocześnie zwiększając
+  skuteczność w egzekwowaniu standardów oraz podejmowaniu trudnych decyzji
+  personalnych.
+
+interview_usage:
+
+  strengths_questions:
+    - Jak budujesz zespoły?
+    - Jak motywujesz pracowników?
+    - Jakie wartości są dla Ciebie ważne jako lidera?
+
+  weakness_questions:
+    - Jaka jest Twoja największa słabość managerska?
+    - Opowiedz o błędzie w zarządzaniu ludźmi.
+    - Jak zmienił się Twój styl przywództwa?
+
+  growth_questions:
+    - Czego nauczyłeś się o zarządzaniu ludźmi?
+    - Jakie kompetencje rozwijasz obecnie?
+    - Jakie doświadczenie najbardziej wpłynęło na Twój styl zarządzania?
