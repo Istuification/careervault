@@ -2,36 +2,40 @@
 
 ## Cel
 
-Folder **Stories** zawiera historie przygotowane według modelu STAR (Situation, Task, Action, Result).
+Folder **Stories** zawiera historie zawodowe przygotowane na podstawie Achievementów zgromadzonych w Career Vault.
 
-Stories służą do przekształcania osiągnięć zapisanych w Career Vault w gotowe narracje, które mogą zostać wykorzystane podczas:
+Stories przekształcają fakty, rezultaty i osiągnięcia w uporządkowane narracje pokazujące:
 
-* rozmów kwalifikacyjnych,
-* rozmów rozwojowych,
-* ocen okresowych,
-* prezentacji doświadczenia zawodowego,
-* pracy z systemami AI.
+* sposób myślenia,
+* podejmowanie decyzji,
+* rozwiązywanie problemów,
+* wykorzystywane kompetencje,
+* wpływ biznesowy,
+* wyciągnięte wnioski.
+
+Stories są zoptymalizowane pod:
+
+* rozmowy kwalifikacyjne,
+* przygotowanie odpowiedzi STAR,
+* portfolio zawodowe,
+* profile zawodowe,
+* analizę kompetencji,
+* współpracę z AI i systemami RAG.
 
 Stories nie są źródłem prawdy.
 
 Źródłem prawdy pozostają Achievementy.
 
-Stories są sposobem przedstawiania osiągnięć w formie narracji.
-
 ---
 
 # Rola Stories w Career Vault
 
-Career Vault składa się z pięciu warstw:
+Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
 
 ```text
-Identity
-↓
-Kim jestem?
-
 Experience
 ↓
-Gdzie zdobyłem doświadczenie?
+Gdzie zdobywałem doświadczenie?
 
 Achievements
 ↓
@@ -39,66 +43,118 @@ Co osiągnąłem?
 
 Skills
 ↓
-Jakie kompetencje pokazują te osiągnięcia?
+Jakie kompetencje potwierdzają te osiągnięcia?
 
 Stories
 ↓
-Jak o tym opowiadać?
+Jak wyglądały rzeczywiste sytuacje stojące za osiągnięciami?
+
+Development Areas
+↓
+Jakie wzorce rozwojowe można zaobserwować?
+
+Identity
+↓
+Kim jestem jako profesjonalista?
 ```
 
-Stories są ostatnią warstwą systemu.
+Stories pełnią rolę warstwy narracyjnej.
 
-Ich zadaniem jest zamiana faktów, działań i rezultatów na spójną historię pokazującą sposób myślenia, podejmowania decyzji i rozwiązywania problemów.
-
----
-
-# Model STAR
-
-Każda Story powinna wykorzystywać model STAR.
-
-## Situation
-
-Opis sytuacji lub problemu.
-
-Odpowiada na pytanie:
-
-> Jaki był kontekst?
+Ich zadaniem jest połączenie kontekstu, decyzji, działań i rezultatów w historię możliwą do opowiedzenia drugiej osobie.
 
 ---
 
-## Task
+# Czym jest Story?
 
-Opis celu, odpowiedzialności lub wyzwania.
+Story opisuje pojedynczą sytuację zawodową posiadającą:
 
-Odpowiada na pytanie:
+* wyraźny problem,
+* konkretny cel,
+* podjęte działania,
+* osiągnięty rezultat,
+* wyciągnięte wnioski.
 
-> Co należało osiągnąć?
+Story nie opisuje stanowiska.
 
----
+Story nie opisuje zakresu obowiązków.
 
-## Action
-
-Opis konkretnych działań.
-
-Odpowiada na pytanie:
-
-> Co zrobiłem?
-
-Sekcja Action jest najważniejszą częścią Story.
-
-To właśnie ona pokazuje kompetencje oraz sposób działania.
+Story opisuje sytuację, która pokazuje sposób działania autora.
 
 ---
 
-## Result
+# Stories a model STAR
 
-Opis rezultatów.
+Stories wykorzystują rozszerzony model STAR.
 
-Odpowiada na pytanie:
+Klasyczny STAR:
 
-> Jaki był efekt?
+```text
+Situation
+Task
+Action
+Result
+```
 
-Preferowane są rezultaty mierzalne.
+Model stosowany w Career Vault:
+
+```text
+Situation
+↓
+Problem
+↓
+Constraints
+↓
+Goal
+↓
+Actions
+↓
+Challenges
+↓
+Results
+↓
+Lessons Learned
+```
+
+Dzięki temu każda Story może zostać łatwo przekształcona do klasycznej odpowiedzi STAR, jednocześnie zachowując znacznie więcej informacji przydatnych podczas analizy doświadczenia.
+
+---
+
+# Fakty ponad deklaracje
+
+Najważniejsza zasada Career Vault:
+
+> Fakty ponad deklaracje.
+
+Story nie służy do opisywania cech charakteru.
+
+Story służy do pokazywania ich poprzez działania.
+
+Przykład:
+
+❌ Jestem dobrym liderem.
+
+✅ Przeprowadziłem reorganizację działu serwisu, utrzymałem kluczowych ekspertów i ustabilizowałem dział w okresie wysokiej rotacji.
+
+Kompetencje powinny wynikać z historii.
+
+Nie odwrotnie.
+
+---
+
+# Jedna Story = jedna historia
+
+Każda Story powinna opisywać jeden główny problem lub wyzwanie.
+
+Dobre przykłady:
+
+* transformacja działu,
+* wdrożenie systemu,
+* uruchomienie produktu,
+* rozwiązanie kryzysu,
+* stworzenie nowego procesu,
+* przeprowadzenie reorganizacji.
+
+Nie należy łączyć wielu niezależnych historii w jeden rekord.
 
 ---
 
@@ -108,389 +164,251 @@ Każda Story powinna być zapisana jako osobny plik YAML.
 
 ```yaml
 id:
+
 title:
 
 summary:
 
 competencies:
-  -
-  -
-  -
 
 situation:
+
 problem:
+
 constraints:
 
 goal:
 
 actions:
-  -
-  -
-  -
-  -
 
 challenges:
-  -
-  -
 
 results:
   quantitative:
-    -
-    -
   qualitative:
-    -
-    -
 
 evidence:
   achievement_ids:
-    -
   supporting_materials:
-    -
 
 lessons_learned:
-  -
-  -
 
 interview_angles:
-  -
-  -
-  -
 
 cv_bullets:
-  -
-  -
 ```
 
 ---
 
 # Opis pól
 
-## Metadata
-
-### `id`
+## id
 
 Unikalny identyfikator historii.
 
-Format:
+Przykład:
 
 ```yaml
 id: STORY-001
 ```
 
-Powinien być stabilny i niezmienny po utworzeniu dokumentu.
+Identyfikator powinien być stabilny i niezmienny.
 
 ---
 
-### `title`
+## title
 
 Krótka nazwa historii.
 
-Powinna opisywać osiągnięty rezultat lub główny temat projektu.
+Powinna opisywać osiągnięty rezultat lub główny temat.
 
 Przykłady:
 
-```yaml
-title: Process Documentation System Implementation
-title: Customer Support Reorganization
-title: Product Launch Coordination
+```text
+Transformacja organizacji pracy działu Instal/Solar
+Projektowanie modelu działania serwisu
+Wprowadzenie produktu PV Stand na rynek
 ```
-
-Unikaj nazw stanowisk i nazw firm.
 
 ---
 
-## Overview
+## summary
 
-### `summary`
+Krótki opis historii.
 
-Jedno- lub dwuzdaniowe streszczenie historii.
+Powinien odpowiadać na pytanie:
 
-Powinno odpowiadać na pytanie:
+> Co zostało osiągnięte i dlaczego było ważne?
 
-> Co zostało osiągnięte i dlaczego było istotne?
-
-Przykład:
-
-```yaml
-summary: >
-  Designed and implemented a centralized process documentation system
-  that standardized operational knowledge across multiple departments.
-```
-
-Powinno być możliwe do wykorzystania jako skrót historii w wyszukiwaniu lub RAG.
+Powinien umożliwiać szybkie zrozumienie historii bez czytania całego dokumentu.
 
 ---
 
-## Competencies
+## competencies
 
-### `competencies`
+Kompetencje zaprezentowane podczas realizacji historii.
 
-Lista kompetencji zaprezentowanych podczas realizacji historii.
+Preferowane jest wykorzystanie kompetencji istniejących w module Skills.
 
 Przykład:
 
 ```yaml
 competencies:
-  - Process Improvement
+  - Process Design
+  - Systems Thinking
   - Stakeholder Management
-  - Documentation
-```
-
-Powinny opisywać umiejętności wykazane w praktyce, a nie deklarowane przez autora.
-Preferowane jest używanie kompetencji występujących w katalogu Skills.
-
-Dobre źródła kompetencji:
-
-* działania opisane w `actions`
-* wyzwania opisane w `challenges`
-* osiągnięte rezultaty
-
----
-
-## Context
-
-### `situation`
-
-Opis sytuacji początkowej.
-
-Powinien odpowiadać na pytania:
-
-* W jakim środowisku działała organizacja?
-* Co było stanem wyjściowym?
-* Dlaczego temat był ważny?
-
-Przykład:
-
-```yaml
-situation: >
-  Operational knowledge was distributed across departments and largely
-  undocumented, making onboarding and delegation difficult.
 ```
 
 ---
 
-### `problem`
+## situation
+
+Opis sytuacji wyjściowej.
+
+Powinien odpowiadać na pytanie:
+
+> W jakim kontekście działałem?
+
+---
+
+## problem
 
 Precyzyjne określenie problemu biznesowego.
 
 Powinien odpowiadać na pytanie:
 
-> Co konkretnie wymagało rozwiązania?
-
-Przykład:
-
-```yaml
-problem: >
-  The organization lacked standardized documentation, creating risks
-  related to employee turnover and inconsistent execution of processes.
-```
-
-Jeden problem może wynikać z szerszej sytuacji opisanej w `situation`.
+> Co wymagało rozwiązania?
 
 ---
 
-### `constraints`
+## constraints
 
-Ograniczenia wpływające na realizację projektu.
+Najważniejsze ograniczenia.
 
-Mogą obejmować:
+Przykłady:
 
-* ograniczenia czasowe
-* ograniczenia budżetowe
-* brak zasobów
-* zależności między działami
-* wymagania prawne
-* ograniczenia technologiczne
-
-Przykład:
-
-```yaml
-constraints:
-  - No dedicated project team
-  - Limited availability of subject matter experts
-  - Tight implementation deadline
-```
+* ograniczenia czasowe,
+* ograniczenia zasobów,
+* brak wiedzy,
+* konflikty między działami,
+* ograniczenia organizacyjne.
 
 ---
 
-### `goal`
+## goal
 
-Cel biznesowy projektu.
+Cel biznesowy lub organizacyjny.
 
 Powinien odpowiadać na pytanie:
 
 > Co miało zostać osiągnięte?
 
-Przykład:
-
-```yaml
-goal: >
-  Create a scalable documentation framework that improves operational
-  consistency and supports employee onboarding.
-```
-
-Cel powinien być możliwie konkretny.
-
 ---
 
-## Execution
+## actions
 
-### `actions`
+Najważniejsza sekcja całej historii.
 
-Najważniejsze działania wykonane przez autora.
-
-To kluczowa sekcja całej historii.
+Opisuje działania autora.
 
 Każdy punkt powinien opisywać:
 
-* decyzję
-* inicjatywę
-* działanie
-* wdrożenie
-* koordynację
+* decyzję,
+* inicjatywę,
+* analizę,
+* wdrożenie,
+* koordynację,
+* rozwiązanie problemu.
 
-Przykład:
+Opisuj własny wkład.
 
-```yaml
-actions:
-  - Conducted process discovery interviews
-  - Designed a documentation standard
-  - Built a centralized repository
-  - Coordinated reviews with stakeholders
-```
-
-Opisuj własny wkład, a nie działania całego zespołu.
+Nie działania całego zespołu.
 
 ---
 
-### `challenges`
+## challenges
 
 Najważniejsze trudności napotkane podczas realizacji.
 
-Powinny odpowiadać na pytania:
+Powinny pokazywać:
 
-* Co utrudniało realizację?
-* Jakie ryzyko występowało?
-* Co wymagało dodatkowego wysiłku?
-
-Przykład:
-
-```yaml
-challenges:
-  - Resistance from process owners
-  - Incomplete documentation sources
-```
-
-Sekcja szczególnie przydatna podczas generowania odpowiedzi STAR.
+* ryzyka,
+* konflikty,
+* ograniczenia,
+* niepewność,
+* sytuacje wymagające adaptacji.
 
 ---
 
-## Results
+## results
 
-### `results.quantitative`
+Rezultaty osiągnięte dzięki działaniom.
 
-Mierzalne rezultaty projektu.
+### quantitative
 
-Preferowane dane:
-
-* liczby
-* procenty
-* kwoty
-* czasy
-* wielkość zespołów
-* liczba użytkowników
-* liczba klientów
-
-Przykład:
-
-```yaml
-quantitative:
-  - Created 50 procedures
-  - Covered 6 departments
-  - Supported 70 employees
-```
-
-Jeżeli istnieją wiarygodne liczby, powinny znaleźć się właśnie tutaj. 
-Jeżeli autor pamięta istnienie mierzalnego rezultatu, ale nie zna dokładnej wartości, należy oznaczyć potencjalną lukę informacyjną do późniejszego uzupełnienia.
----
-
-### `results.qualitative`
-
-Rezultaty niemierzalne lub trudne do zmierzenia.
-
-Przykład:
-
-```yaml
-qualitative:
-  - Improved process consistency
-  - Reduced dependency on key employees
-  - Increased organizational transparency
-```
-
-Opisują wartość biznesową, której nie da się łatwo wyrazić liczbami.
-
----
-
-## Evidence
-
-### `evidence.achievement_ids`
-
-Lista Achievementów, na których opiera się historia.
-
-Przykład:
-
-```yaml
-achievement_ids:
-  - ACH-001
-  - ACH-004
-```
-
-Story powinno być możliwe do zweryfikowania poprzez powiązane Achievementy.
-
----
-
-### `evidence.supporting_materials`
-
-Materiały wspierające historię.
+Mierzalne rezultaty.
 
 Przykłady:
 
-```yaml
-supporting_materials:
-  - onboarding-guide.pdf
-  - process-template.docx
-  - project-plan.xlsx
-```
+* liczby,
+* procenty,
+* czas,
+* koszty,
+* wielkość zespołu,
+* liczba klientów.
 
-Mogą to być dokumenty, prezentacje, procedury, raporty lub inne artefakty.
+### qualitative
+
+Rezultaty jakościowe.
+
+Przykłady:
+
+* poprawa jakości,
+* poprawa współpracy,
+* większa przewidywalność,
+* ograniczenie ryzyka,
+* zwiększenie skalowalności.
 
 ---
 
-## Reflection
+## evidence
 
-### `lessons_learned`
+Powiązane źródła.
 
-Najważniejsze wnioski wyniesione z projektu.
+### achievement_ids
+
+Achievementy będące źródłem historii.
+
+Każda Story musi być powiązana z co najmniej jednym Achievementem.
+
+### supporting_materials
+
+Materiały wspierające.
+
+Przykłady:
+
+* procedury,
+* workflow,
+* dokumentacja,
+* prezentacje,
+* instrukcje,
+* raporty.
+
+---
+
+## lessons_learned
+
+Najważniejsze wnioski wyniesione z realizacji.
 
 Powinny odpowiadać na pytanie:
 
 > Czego nauczyłem się dzięki tej sytuacji?
 
-Przykład:
-
-```yaml
-lessons_learned:
-  - Early stakeholder involvement reduces resistance
-  - Documentation requires clear ownership
-```
-
-Sekcja szczególnie przydatna podczas rozmów kwalifikacyjnych.
+Sekcja szczególnie ważna dla Development Areas.
 
 ---
 
-## Interview Preparation
-
-### `interview_angles`
+## interview_angles
 
 Kategorie pytań rekrutacyjnych, do których historia może zostać wykorzystana.
 
@@ -499,130 +417,51 @@ Przykład:
 ```yaml
 interview_angles:
   - Leadership
-  - Stakeholder Management
   - Change Management
+  - Ownership
 ```
-
-Pozwala AI szybko dopasować historię do pytania rekrutacyjnego.
 
 ---
 
-## CV Generation
-
-### `cv_bullets`
+## cv_bullets
 
 Najkrótsze możliwe podsumowania historii.
 
-Powinny być gotowe do użycia w CV.
-
-Przykład:
-
-```yaml
-cv_bullets:
-  - Designed and implemented a process documentation framework covering six departments.
-  - Created over 50 procedures and work instructions supporting operational standardization.
-```
+Powinny być gotowe do wykorzystania w CV, LinkedIn lub portfolio.
 
 Każdy punkt powinien:
 
-* zaczynać się od czasownika działania,
-* opisywać rezultat,
-* być możliwy do wykorzystania bez dodatkowej edycji.
-
-
----
-
-# Zasady tworzenia Stories
-
-## Jedna Story = jedna historia
-
-Każda Story powinna opisywać jeden konkretny przykład.
-
-Dobra Story:
-
-* transformacja działu,
-* wdrożenie systemu,
-* rozwiązanie kryzysu,
-* przeprowadzenie zmiany organizacyjnej.
-
-Nie należy łączyć wielu niezależnych sytuacji w jedną historię.
+* zaczynać się od działania,
+* zawierać rezultat,
+* być zrozumiały bez dodatkowego kontekstu.
 
 ---
 
-## Story musi mieć źródło
-
-Każda Story musi być powiązana z co najmniej jednym Achievementem.
-
-Story nie może zawierać informacji, których nie da się potwierdzić w Achievementach.
-
----
-
-## Skupienie na działaniach
-
-Największa wartość Story znajduje się w sekcji Action.
-
-To właśnie ona pokazuje:
-
-* sposób myślenia,
-* podejmowanie decyzji,
-* kompetencje,
-* podejście do problemów.
-
----
-
-## Rezultat jest obowiązkowy
-
-Każda Story musi kończyć się rezultatem.
-
-Preferowane są:
-
-* liczby,
-* oszczędności,
-* skrócenie czasu,
-* poprawa jakości,
-* wzrost efektywności,
-* poprawa organizacji.
-
----
-
-# Typowe zastosowania
-
-Stories powinny umożliwiać szybkie przygotowanie odpowiedzi na pytania takie jak:
-
-* Opowiedz o największym sukcesie zawodowym.
-* Opowiedz o trudnej zmianie organizacyjnej.
-* Opowiedz o sytuacji kryzysowej.
-* Opowiedz o projekcie, z którego jesteś najbardziej dumny.
-* Opowiedz o konflikcie w zespole.
-* Opowiedz o błędzie, który popełniłeś.
-* Opowiedz o wdrożeniu nowego rozwiązania.
-* Opowiedz o sytuacji wymagającej przywództwa.
-
-Jedna Story może odpowiadać na wiele różnych pytań.
-
----
-
-# Relacja do pozostałych elementów Career Vault
-
-## Identity
-
-Opisuje profil zawodowy.
+# Relacje z pozostałymi modułami
 
 ## Experience
 
-Dostarcza kontekstu.
+Dostarcza kontekstu kariery.
 
 ## Achievements
 
-Stanowią źródło faktów.
+Stanowią źródło faktów i dowodów.
 
 ## Skills
 
-Opisują kompetencje wykorzystane w historii.
+Opisują kompetencje wykorzystywane w historii.
 
 ## Stories
 
-Przekształcają osiągnięcia w narrację STAR.
+Pokazują sposób działania, podejmowania decyzji oraz osiągania rezultatów.
+
+## Development Areas
+
+Powstają na podstawie analizy wielu Stories i Achievementów.
+
+## Identity
+
+Stanowi syntezę wzorców widocznych w całym Career Vault.
 
 ---
 
@@ -630,17 +469,18 @@ Przekształcają osiągnięcia w narrację STAR.
 
 1. Każda Story musi być powiązana z Achievementem.
 2. Nie twórz Story bez dowodów.
-3. Nie duplikuj treści Achievementów.
-4. Skupiaj się na działaniach i decyzjach.
-5. Pokazuj rezultaty.
-6. Łącz Stories ze Skills.
-7. Aktualizuj Stories wraz z rozwojem Career Vault.
-8. Preferuj jakość nad liczbę historii.
+3. Skupiaj się na decyzjach i działaniach.
+4. Pokazuj wpływ biznesowy.
+5. Dodawaj rezultaty ilościowe, gdy są dostępne.
+6. Dokumentuj najważniejsze wnioski.
+7. Łącz Stories ze Skills.
+8. Łącz Stories z Development Areas, gdy stanowią ich źródło.
+9. Preferuj jakość nad liczbę historii.
 
 ---
 
 # Najważniejsza zasada
 
-Achievement opisuje fakty.
+Achievement opisuje co zostało osiągnięte.
 
-Story opisuje te same fakty w formie historii, którą można opowiedzieć drugiej osobie.
+Story opisuje jak myślałem, jakie decyzje podejmowałem, jakie działania wykonałem i dlaczego osiągnąłem taki rezultat.
