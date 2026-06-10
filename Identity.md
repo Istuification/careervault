@@ -10,6 +10,50 @@ Moje doświadczenie obejmuje zarówno pracę operacyjną, jak i role związane z
 
 ---
 
+## Professional Archetypes
+
+### Systems Builder
+
+Projektuję struktury, procesy, narzędzia i modele działania umożliwiające organizacjom funkcjonowanie w sposób powtarzalny, przewidywalny i skalowalny.
+
+### Operational Transformer
+
+Specjalizuję się w przejmowaniu obszarów znajdujących się w chaosie organizacyjnym i przekształcaniu ich w stabilne, mierzalne oraz zarządzalne systemy operacyjne.
+
+### Knowledge Architect
+
+Buduję struktury wiedzy, dokumentację i procesy umożliwiające organizacji skuteczne wykorzystywanie kompetencji oraz ograniczanie zależności od pojedynczych ekspertów.
+
+### Technical Product Integrator
+
+Łączę wiedzę techniczną, operacyjną i organizacyjną podczas wdrażania nowych produktów, usług oraz inicjatyw wymagających współpracy wielu działów.
+
+---
+
+## Core Values
+
+### Responsibility
+
+Biorę odpowiedzialność za rezultat, a nie wyłącznie za wykonanie zadania. Staram się rozumieć konsekwencje decyzji dla całego systemu, a nie tylko własnego obszaru odpowiedzialności.
+
+### Transparency
+
+Preferuję jawne procesy, czytelne zasady działania oraz łatwy dostęp do wiedzy i informacji.
+
+### Continuous Improvement
+
+Traktuję procesy, narzędzia i organizacje jako systemy podlegające ciągłemu doskonaleniu.
+
+### Long-Term Thinking
+
+Unikam rozwiązań generujących dług organizacyjny, techniczny lub operacyjny. Preferuję decyzje budujące trwałą wartość w długim okresie.
+
+### Knowledge Sharing
+
+Wiedza powinna być własnością organizacji, a nie pojedynczych osób. Dlatego dużą wagę przykładam do dokumentowania, standaryzowania i przekazywania wiedzy.
+
+---
+
 ## Core Competencies
 
 ### Product Management
@@ -76,9 +120,28 @@ Specjalizuję się w porządkowaniu rozproszonej wiedzy, budowaniu baz wiedzy or
 
 Chętnie przejmuję odpowiedzialność za obszary wymagające uporządkowania, rozwoju lub transformacji. Dobrze odnajduję się w środowiskach wymagających samodzielności i inicjatywy.
 
+### Learning Agility
+
+Szybko uczę się nowych domen, technologii i zagadnień biznesowych. Potrafię skutecznie funkcjonować w obszarach, w których początkowo nie posiadam doświadczenia eksperckiego.
+
+### Cross-Functional Coordination
+
+Skutecznie koordynuję współpracę pomiędzy działami o różnych celach, kompetencjach i perspektywach, budując wspólne zrozumienie problemu oraz kierunku działania.
+
 ### Continuous Learning
 
 Regularnie rozwijam kompetencje zarówno zawodowe, jak i prywatne. Szczególnie interesują mnie obszary związane z procesami, zarządzaniem wiedzą, AI, automatyzacją oraz projektowaniem systemów organizacyjnych.
+
+---
+
+## Development Areas
+
+Powiązane obszary rozwoju zawodowego zostały opisane w module Development Areas:
+
+* DEV-001 — Leadership Through Accountability
+* DEV-002 — Personal Capacity Management
+* DEV-003 — Delegation and Leverage
+* DEV-004 — Commercial Discovery
 
 ---
 
@@ -97,12 +160,16 @@ Regularnie rozwijam kompetencje zarówno zawodowe, jak i prywatne. Szczególnie 
 
 * wysoka samodzielność
 * odpowiedzialność za rezultat
+* ownership mindset
 * podejście systemowe
 * decyzje oparte na danych
 * orientacja na usprawnienia
+* orientacja na przyczynę źródłową
 * długoterminowe myślenie
 * wysoka adaptacyjność
 * szybkie przyswajanie wiedzy technicznej
+* wysoka tolerancja niepewności
+* preferencja dla autonomii
 
 ---
 
@@ -147,3 +214,5 @@ Regularnie rozwijam kompetencje zarówno zawodowe, jak i prywatne. Szczególnie 
 ## Career Mission
 
 Projektowanie i rozwijanie systemów, procesów oraz produktów, które pozwalają organizacjom działać sprawniej, skuteczniej wykorzystywać wiedzę oraz skalować działalność bez utraty jakości.
+
+Moim naturalnym obszarem działania są sytuacje wymagające uporządkowania chaosu organizacyjnego, budowy nowych struktur oraz przekształcania wiedzy i doświadczeń w powtarzalne, skalowalne systemy.
