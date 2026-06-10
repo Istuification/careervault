@@ -1,0 +1,130 @@
+id: STORY-007
+
+title: Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
+
+summary: >
+  Zaprojektowałem i wdrożyłem skalowalny system wspierający decyzje handlowe,
+  techniczne i operacyjne dla instalacji fotowoltaicznych. Narzędzie zastąpiło
+  ręczne kalkulacje wykonywane przez ekspertów, skróciło czas przygotowania
+  ofert i list materiałowych z kilku godzin do kilkunastu minut oraz przez
+  kolejne lata stało się podstawowym narzędziem wykorzystywanym w procesie
+  sprzedaży i realizacji instalacji.
+
+competencies:
+  - Systems Thinking
+  - Business Analysis
+  - Decision Support Systems
+  - Process Automation
+  - Knowledge Engineering
+  - Cost Modeling
+  - Operational Scalability
+  - Process Design
+  - Workflow Optimization
+  - Financial Analysis
+  - Technical Analysis
+  - Knowledge Transfer
+  - Continuous Improvement
+
+situation: >
+  W okresie dynamicznego wzrostu sprzedaży instalacji fotowoltaicznych proces
+  ofertowania i przygotowywania realizacji był w dużej mierze oparty na wiedzy
+  eksperckiej kilku osób. Każda instalacja wymagała ręcznego liczenia
+  komponentów, kosztów, zabezpieczeń elektrycznych, przekrojów przewodów oraz
+  przygotowania list materiałowych do zamówień. Proces był czasochłonny,
+  trudny do skalowania i silnie uzależniony od dostępności osób posiadających
+  wiedzę techniczną.
+
+problem: >
+  Organizacja nie posiadała ustandaryzowanego sposobu wyceny instalacji,
+  kalkulacji rentowności ani przygotowywania list materiałowych. Handlowcy
+  wyceniali instalacje na podstawie doświadczenia i szacunków, technicy ręcznie
+  przygotowywali zestawienia materiałowe, a administracja przepisywała dane do
+  systemu ERP. Powodowało to wysokie koszty czasowe, ryzyko błędów,
+  ograniczoną skalowalność procesu oraz uzależnienie organizacji od wiedzy
+  pojedynczych ekspertów.
+
+constraints:
+  - Brak gotowych narzędzi wspierających proces ofertowania
+  - Konieczność zachowania zgodności pomiędzy sprzedażą, techniką i logistyką
+  - Duża liczba zmiennych technicznych wpływających na wycenę
+  - Konieczność integracji z istniejącym systemem ERP
+  - Brak doświadczenia w budowie podobnych systemów
+  - Ograniczony czas wynikający z planowanej zmiany stanowiska
+  - Konieczność umożliwienia równoczesnej pracy wielu użytkowników
+
+goal: >
+  Stworzyć skalowalny system pozwalający handlowcom, technikom i administracji
+  przygotowywać spójne wyceny, listy materiałowe i kalkulacje rentowności bez
+  konieczności angażowania ekspertów technicznych w każdą ofertę.
+
+actions:
+  - Przeanalizowałem cały proces ofertowania, przygotowania realizacji oraz zamówień materiałowych
+  - Zidentyfikowałem wiedzę ekspercką wykorzystywaną przy doborze komponentów, wycenach i projektowaniu instalacji
+  - Opracowałem model reguł biznesowych i technicznych wykorzystywanych podczas przygotowania ofert
+  - Zaprojektowałem modularny system oparty o Excel umożliwiający dalszy rozwój i modyfikację logiki biznesowej
+  - Stworzyłem mechanizm automatycznego doboru komponentów na podstawie parametrów instalacji
+  - Opracowałem algorytmy wyliczające ilości materiałów, zabezpieczenia elektryczne, obwody oraz przekroje przewodów
+  - Zbudowałem system automatycznego generowania list materiałowych zgodnych z wymaganiami ERP
+  - Zintegrowałem kalkulacje kosztów z aktualizowanymi danymi cenowymi eksportowanymi z ERP
+  - Zaprojektowałem mechanizm zarządzania marżami umożliwiający kierownictwu samodzielne sterowanie polityką cenową
+  - Stworzyłem uproszczony interfejs użytkownika przeznaczony dla handlowców i techników
+  - Opracowałem dokumentację umożliwiającą dalszy rozwój oraz utrzymanie rozwiązania
+  - Przeprowadziłem wdrożenie narzędzia w dziale handlowym, technicznym i administracyjnym
+
+challenges:
+  - Konieczność przełożenia wiedzy eksperckiej na zestaw jednoznacznych reguł
+  - Duża liczba zależności technicznych wpływających na poprawność wyników
+  - Zachowanie spójności pomiędzy wyceną handlową a rzeczywistymi potrzebami materiałowymi
+  - Zaprojektowanie rozwiązania możliwego do utrzymania i rozwijania przez inne osoby
+  - Budowa pierwszego tego typu systemu bez wcześniejszych wzorców i doświadczeń
+  - Utrzymanie przejrzystości logiki przy rosnącej liczbie funkcji i zależności
+
+results:
+  quantitative:
+    - Skrócenie czasu przygotowania wyceny i list materiałowych z około 2–6 godzin do około 10 minut
+    - Wsparcie procesu obsługującego do około 60–80 ofert miesięcznie
+    - Wykorzystanie przez około 8 użytkowników z działów handlowych, technicznych i administracyjnych
+    - Utrzymanie rozwiązania w aktywnym wykorzystaniu przez około 4 lata
+  qualitative:
+    - Wyeliminowanie uzależnienia procesu od pojedynczych ekspertów technicznych
+    - Ujednolicenie wycen oraz list materiałowych pomiędzy działem handlowym i technicznym
+    - Stworzenie wspólnego źródła prawdy dla sprzedaży, realizacji i zakupów
+    - Umożliwienie skalowania liczby ofert bez proporcjonalnego zwiększania liczby specjalistów
+    - Standaryzacja procesu ofertowania i przygotowania realizacji
+    - Rozwiązanie stało się podstawowym narzędziem wykorzystywanym w codziennej pracy
+    - Koncepcja została później wykorzystana jako inspiracja dla analogicznego rozwiązania w obszarze instalacji hydraulicznych
+
+evidence:
+  achievement_ids:
+    - ACH-011
+  supporting_materials:
+    - Kalkulator ofertowania PV
+    - Dokumentacja użytkownika
+    - Instrukcja polityki marżowej
+    - Arkusze integracyjne ERP
+    - Modele kalkulacyjne instalacji PV
+
+lessons_learned:
+  - Największym ograniczeniem skalowania organizacji często nie są zasoby, lecz wiedza ukryta w głowach ekspertów
+  - Dobrze zaprojektowany system powinien umożliwiać podejmowanie poprawnych decyzji również mniej doświadczonym użytkownikom
+  - Automatyzacja przynosi największą wartość wtedy, gdy standaryzuje sposób myślenia, a nie tylko przyspiesza wykonywanie zadań
+  - Modularna architektura znacząco ułatwia rozwój i utrzymanie rozwiązania
+  - Skalowalne systemy powinny oddzielać logikę biznesową od interfejsu użytkownika
+
+interview_angles:
+  - Process Improvement
+  - Business Analysis
+  - Systems Thinking
+  - Automation
+  - Operational Scaling
+  - Knowledge Management
+  - Continuous Improvement
+  - Problem Solving
+  - Innovation
+  - Cross-Functional Impact
+
+cv_bullets:
+  - Zaprojektowałem system wspierający wycenę, kalkulację rentowności i przygotowanie list materiałowych dla instalacji PV, redukując czas przygotowania ofert z 2–6 godzin do około 10 minut.
+  - Przekształciłem wiedzę ekspercką z obszaru PV, elektryki i kosztorysowania w skalowalny system wykorzystywany przez sprzedaż, technikę i administrację.
+  - Stworzyłem rozwiązanie stanowiące przez około 4 lata podstawę procesu ofertowania i przygotowania realizacji instalacji fotowoltaicznych.
+  - Umożliwiłem skalowanie procesu sprzedaży bez proporcjonalnego zwiększania liczby specjalistów technicznych.
