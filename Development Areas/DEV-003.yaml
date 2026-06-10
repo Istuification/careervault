@@ -1,0 +1,111 @@
+id: DEV-003
+
+title: Delegation and Leverage
+
+summary: >
+  Naturalnie przejmuję inicjatywę w obszarach wymagających uporządkowania,
+  analizy lub stworzenia nowego rozwiązania. W praktyce często prowadziło
+  to do samodzielnego rozwiązywania problemów, które mogły zostać częściowo
+  przekazane innym osobom lub rozwiązane poprzez budowę odpowiednich
+  mechanizmów organizacyjnych. Rozwijam umiejętność zwiększania wpływu
+  poprzez delegowanie, budowanie właścicieli oraz tworzenie systemów,
+  które działają bez mojego bezpośredniego udziału.
+
+category: Leadership
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-004
+    - STORY-005
+    - STORY-006
+    - STORY-007
+    - STORY-008
+
+  skills:
+    - Process Design
+    - Systems Thinking
+    - Knowledge Management
+    - Operational Leadership
+
+observed_pattern: >
+
+  W sytuacjach wymagających zmian mam tendencję do:
+
+  - samodzielnego projektowania rozwiązań,
+  - przejmowania odpowiedzialności za wdrożenie,
+  - angażowania się w szczegóły wykonawcze,
+  - traktowania problemów organizacyjnych jako własnych problemów.
+
+  Podejście to zwiększa szybkość działania,
+  ale ogranicza możliwość skalowania własnego wpływu.
+
+strengths:
+
+  - Wysoka samodzielność
+  - Ownership
+  - Szybkie przechodzenie od problemu do rozwiązania
+  - Umiejętność budowania działających systemów
+  - Gotowość do wejścia w nowe obszary wiedzy
+
+risks:
+
+  - Nadmierne angażowanie się w szczegóły
+  - Ograniczona możliwość skalowania własnego wpływu
+  - Tworzenie zależności od jednej osoby
+  - Przeciążenie wynikające z nadmiernej liczby inicjatyw
+  - Zbyt późne przekazywanie odpowiedzialności innym
+
+evidence:
+
+  - Samodzielne stworzenie systemu wiedzy BPMN
+  - Samodzielne opracowanie kalkulatora PV
+  - Samodzielne przygotowanie dokumentacji PV Stand
+  - Tworzenie modeli działania w obszarach bez właściciela
+
+root_cause_analysis:
+
+  assumption: >
+    Jeżeli potrafię coś zrobić szybciej i lepiej,
+    powinienem zrobić to samodzielnie.
+
+  reality: >
+    Długoterminowa skuteczność organizacyjna wymaga budowy
+    właścicieli, kompetencji oraz systemów niezależnych od jednej osoby.
+
+key_realizations:
+
+  - Własny czas jest zasobem strategicznym
+  - Delegowanie jest formą skalowania wpływu
+  - Budowanie właścicieli jest ważniejsze niż wykonywanie pracy za nich
+  - Dobrze zaprojektowany system powinien działać bez stałego udziału autora
+  - Największą wartość tworzą rozwiązania, które przeżywają swojego twórcę
+
+current_approach:
+
+  - Szukanie właścicieli problemów zamiast przejmowania ich
+  - Koncentracja na budowie mechanizmów i kompetencji
+  - Ograniczanie zaangażowania w szczegóły operacyjne
+  - Świadome przekazywanie odpowiedzialności
+  - Projektowanie rozwiązań możliwych do utrzymania przez innych
+
+development_goal: >
+
+  Zwiększać wpływ organizacyjny poprzez rozwijanie ludzi,
+  budowanie właścicieli procesów oraz tworzenie systemów,
+  które nie wymagają mojego bezpośredniego udziału w codziennym działaniu.
+
+interview_usage:
+
+  strengths_questions:
+    - Jak rozwiązujesz problemy organizacyjne?
+    - Jak budujesz procesy?
+
+  weakness_questions:
+    - Co najtrudniej jest Ci delegować?
+    - Jakie zachowanie najbardziej ograniczało Twój rozwój?
+
+  growth_questions:
+    - Jak zmieniło się Twoje podejście do delegowania?
+    - Jak skalujesz swój wpływ w organizacji?
