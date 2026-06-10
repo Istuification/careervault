@@ -4,24 +4,24 @@
 
 Folder **Achievements** zawiera najważniejsze osiągnięcia zawodowe i prywatne zgromadzone w ramach Career Vault.
 
-Achievement jest pojedynczym, możliwym do udokumentowania rezultatem, projektem, usprawnieniem, wdrożeniem lub zmianą, która miała zauważalny wpływ na organizację, zespół, produkt, proces lub życie prywatne.
+Achievement jest pojedynczym, możliwym do udokumentowania osiągnięciem, projektem, usprawnieniem, wdrożeniem, transformacją lub zmianą, która wywarła zauważalny wpływ na organizację, zespół, produkt, proces lub rozwój osobisty.
 
 Achievements stanowią główne źródło dowodów w całym Career Vault.
+
+Jeżeli Experience dostarcza kontekstu, a Skills opisują kompetencje, to Achievements odpowiadają na pytanie:
+
+> Co faktycznie zostało osiągnięte?
 
 ---
 
 # Rola Achievements w Career Vault
 
-Career Vault składa się z pięciu warstw:
+Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
 
 ```text
-Identity
-↓
-Kim jestem?
-
 Experience
 ↓
-Gdzie zdobyłem doświadczenie?
+Gdzie zdobywałem doświadczenie?
 
 Achievements
 ↓
@@ -29,53 +29,62 @@ Co osiągnąłem?
 
 Skills
 ↓
-Jakie kompetencje pokazują te osiągnięcia?
+Jakie kompetencje potwierdzają te osiągnięcia?
 
 Stories
 ↓
-Jak o tym opowiadać?
+Jak opowiadać o tych doświadczeniach?
+
+Development Areas
+↓
+Jakie wzorce rozwojowe obserwuję u siebie?
+
+Identity
+↓
+Kim jestem jako profesjonalista?
 ```
 
 Achievements są fundamentem całego systemu.
 
-Wszystkie pozostałe elementy powinny opierać się na zawartych tutaj informacjach.
+Wszystkie pozostałe moduły powinny opierać się na informacjach zapisanych w Achievementach.
 
 ---
 
 # Czym jest Achievement?
 
-Achievement opisuje konkretny rezultat osiągnięty w określonym czasie.
+Achievement opisuje konkretną sytuację, projekt, usprawnienie lub rezultat osiągnięty w określonym kontekście.
 
 Dobry Achievement:
 
-* opisuje rzeczywiste działanie,
-* posiada kontekst,
+* opisuje rzeczywisty problem lub potrzebę,
+* zawiera kontekst biznesowy,
+* pokazuje podjęte działania,
 * wskazuje zastosowane kompetencje,
-* zawiera rezultaty,
-* może być wykorzystany jako dowód doświadczenia.
+* opisuje rezultat,
+* dokumentuje wpływ,
+* może zostać wykorzystany jako dowód doświadczenia.
 
-Przykłady:
+Achievement nie opisuje obowiązków.
 
-* transformacja działu,
-* wdrożenie systemu,
-* stworzenie procesu,
-* organizacja wydarzenia,
-* budowa bazy wiedzy,
-* usprawnienie organizacji.
+Achievement opisuje rezultat wykraczający poza standardowy zakres odpowiedzialności.
 
 ---
 
 # Fakty ponad deklaracje
 
-Achievements powinny opierać się na faktach.
+Najważniejsza zasada Career Vault:
+
+> Fakty ponad deklaracje.
 
 Przykład:
 
-❌ „Jestem dobrym liderem”
+❌ Jestem dobrym liderem.
 
-✅ „Przeprowadziłem reorganizację działu serwisu i ustabilizowałem jego pracę”
+✅ Przeprowadziłem restrukturyzację działu serwisu oraz ustabilizowałem jego funkcjonowanie.
 
-Kompetencje powinny wynikać z osiągnięć, a nie odwrotnie.
+Kompetencje powinny wynikać z osiągnięć.
+
+Nie odwrotnie.
 
 ---
 
@@ -91,7 +100,7 @@ ACH-002
 ...
 ```
 
-Dotyczą doświadczenia zawodowego, działalności biznesowej oraz projektów realizowanych w pracy.
+Dotyczą doświadczenia zawodowego, działalności biznesowej, projektów organizacyjnych, wdrożeń, produktów oraz inicjatyw realizowanych w pracy.
 
 ---
 
@@ -117,6 +126,50 @@ Mogą dokumentować kompetencje rozwijane poprzez:
 
 ---
 
+# Poziomy wpływu
+
+Achievement może dotyczyć różnych poziomów oddziaływania.
+
+## Indywidualny
+
+Wpływ na własną pracę lub efektywność.
+
+Przykład:
+
+* stworzenie własnego narzędzia automatyzującego pracę.
+
+---
+
+## Zespołowy
+
+Wpływ na sposób pracy zespołu.
+
+Przykład:
+
+* usprawnienie workflow działu.
+
+---
+
+## Działowy
+
+Wpływ na funkcjonowanie całego działu.
+
+Przykład:
+
+* restrukturyzacja działu serwisu.
+
+---
+
+## Organizacyjny
+
+Wpływ na funkcjonowanie całej organizacji.
+
+Przykład:
+
+* wdrożenie systemu wykorzystywanego przez wiele działów.
+
+---
+
 # Schemat rekordu
 
 Każdy Achievement powinien zawierać następujące pola:
@@ -132,11 +185,17 @@ period:
 
 summary:
 
+problem:
+
+approach:
+
 skills:
 
 themes:
 
 actions:
+
+result:
 
 impact:
 
@@ -205,6 +264,20 @@ Powinien odpowiadać na pytanie:
 
 ---
 
+## problem
+
+Jaki problem, potrzeba lub wyzwanie doprowadziło do realizacji osiągnięcia?
+
+---
+
+## approach
+
+W jaki sposób podszedłem do rozwiązania problemu?
+
+Opis głównej strategii działania.
+
+---
+
 ## skills
 
 Lista kompetencji wykorzystanych podczas realizacji.
@@ -237,22 +310,30 @@ themes:
 
 ## actions
 
-Lista najważniejszych działań podjętych podczas realizacji.
+Najważniejsze działania wykonane podczas realizacji.
 
 Przykład:
 
 ```yaml
 actions:
-  - przeanalizowanie procesu
+  - analiza procesu
   - stworzenie dokumentacji
   - wdrożenie nowego workflow
 ```
 
 ---
 
+## result
+
+Bezpośredni rezultat osiągnięcia.
+
+Co zostało dostarczone lub wdrożone?
+
+---
+
 ## impact
 
-Rezultaty osiągnięcia.
+Wpływ biznesowy, organizacyjny lub operacyjny.
 
 Preferowane są rezultaty mierzalne.
 
@@ -260,8 +341,8 @@ Przykład:
 
 ```yaml
 impact:
-  - 70% mniej błędów
   - skrócenie czasu realizacji
+  - zmniejszenie liczby błędów
   - poprawa jakości danych
 ```
 
@@ -300,8 +381,8 @@ Przykład:
 ```yaml
 related_tools:
   - Bitrix24
-  - Wiki.js
   - Excel
+  - Wiki.js
 ```
 
 ---
@@ -315,7 +396,33 @@ Przykład:
 ```yaml
 evidence:
   - wdrożono w całej organizacji
-  - objęto 250 partnerów
+  - wykorzystywane przez kilka działów
+```
+
+---
+
+## related_stories
+
+Powiązane Stories.
+
+Przykład:
+
+```yaml
+related_stories:
+  - STORY-005
+```
+
+---
+
+## related_development_areas
+
+Powiązane Development Areas.
+
+Przykład:
+
+```yaml
+related_development_areas:
+  - DEV-001
 ```
 
 ---
@@ -324,33 +431,33 @@ evidence:
 
 Dodatkowy kontekst wymagający wyjaśnienia.
 
-Przykład:
-
-```yaml
-notes:
-  - daty są przybliżone
-  - projekt realizowany samodzielnie
-```
-
 ---
 
-# Relacja do pozostałych elementów Career Vault
+# Relacje z pozostałymi modułami
 
 ## Experience
 
-Dostarcza kontekstu.
+Dostarcza kontekstu kariery.
 
 ## Achievements
 
-Dostarczają dowodów.
+Stanowią źródło dowodów.
 
 ## Skills
 
-Grupują osiągnięcia w kompetencje.
+Opisują kompetencje potwierdzone Achievementami.
 
 ## Stories
 
-Przekształcają osiągnięcia w narrację STAR.
+Przekształcają Achievementy w narrację.
+
+## Development Areas
+
+Powstają na podstawie analizy wielu Achievementów i Stories.
+
+## Identity
+
+Stanowi syntezę wiedzy zgromadzonej w całym Career Vault.
 
 ---
 
@@ -361,8 +468,11 @@ Przekształcają osiągnięcia w narrację STAR.
 3. Preferuj fakty zamiast opinii.
 4. Unikaj duplikowania informacji.
 5. Dodawaj mierzalne rezultaty, gdy są dostępne.
-6. Łącz Achievementy ze Skillami.
-7. Aktualizuj rekordy, gdy pojawią się nowe informacje.
+6. Łącz Achievementy ze Skills.
+7. Łącz Achievementy ze Stories.
+8. Łącz Achievementy z Development Areas, jeśli stanowią ich źródło.
+9. Aktualizuj rekordy, gdy pojawią się nowe informacje.
+10. Preferuj jakość nad ilość.
 
 ---
 
@@ -371,3 +481,5 @@ Przekształcają osiągnięcia w narrację STAR.
 Achievement nie opisuje tego, za co odpowiadałem.
 
 Achievement opisuje to, co udało mi się osiągnąć.
+
+Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno stanowić podstawy do budowania kompetencji, narracji ani wniosków rozwojowych.
