@@ -2,65 +2,76 @@
 
 ## Cel
 
-Career Vault to osobista baza wiedzy zawodowej służąca do gromadzenia, organizowania i wyszukiwania informacji o doświadczeniu, osiągnięciach, kompetencjach oraz rozwoju zawodowym.
+Career Vault to osobista baza wiedzy zawodowej służąca do gromadzenia, organizowania, analizowania i wyszukiwania informacji o doświadczeniu, osiągnięciach, kompetencjach oraz rozwoju zawodowym.
 
 Repozytorium stanowi pojedyncze źródło prawdy dla:
 
 * generowania CV,
 * przygotowania do rozmów kwalifikacyjnych,
+* budowy profilu LinkedIn,
 * analizy kompetencji,
 * planowania rozwoju zawodowego,
 * budowy portfolio osiągnięć,
 * współpracy z systemami AI,
+* systemów typu RAG,
 * zarządzania wiedzą o własnej karierze.
 
-Celem Career Vault nie jest przechowywanie gotowych CV, lecz budowanie trwałej bazy faktów, dowodów i doświadczeń, które mogą być wielokrotnie wykorzystywane w różnych kontekstach.
+Celem Career Vault nie jest przechowywanie gotowych dokumentów aplikacyjnych.
+
+Celem jest budowanie trwałej bazy faktów, dowodów, doświadczeń i wniosków, które mogą być wielokrotnie wykorzystywane w różnych kontekstach zawodowych.
 
 ---
 
-# Główne założenia
+# Filozofia Career Vault
 
 ## Fakty ponad deklaracje
 
-Repozytorium powinno opierać się na dowodach, a nie opiniach.
+Career Vault opiera się na dowodach, a nie opiniach.
 
 Przykład:
 
-❌ „Jestem dobrym liderem”
+❌ Jestem dobrym liderem
 
-✅ „Przeprowadziłem transformację działu i ustabilizowałem jego pracę”
+✅ Przeprowadziłem restrukturyzację działu serwisu oraz ustabilizowałem jego funkcjonowanie
 
-Każda kompetencja powinna być możliwa do powiązania z konkretnymi osiągnięciami.
+Każda kompetencja powinna być możliwa do powiązania z konkretnymi osiągnięciami, projektami lub doświadczeniami.
 
 ---
 
 ## Jedno źródło informacji
 
-Każda informacja powinna mieć jedno główne miejsce przechowywania.
+Każda informacja powinna posiadać jedno główne miejsce przechowywania.
 
 Przykładowo:
 
 * historia zatrudnienia należy do Experience,
 * osiągnięcia należą do Achievements,
 * kompetencje należą do Skills,
-* historie STAR należą do Stories.
+* narracje należą do Stories,
+* obszary rozwoju należą do Development Areas.
 
-Należy unikać duplikowania informacji pomiędzy plikami.
+Należy unikać duplikowania informacji pomiędzy modułami.
 
 ---
 
 ## Wielokrotne wykorzystanie
 
-Career Vault powinien umożliwiać tworzenie różnych materiałów na podstawie tych samych danych:
+Career Vault powinien umożliwiać tworzenie różnych materiałów na podstawie tych samych danych.
+
+Przykładowe zastosowania:
 
 * CV,
-* profilu LinkedIn,
-* listów motywacyjnych,
+* profil LinkedIn,
+* portfolio zawodowe,
 * odpowiedzi na pytania rekrutacyjne,
-* portfolio zawodowego,
-* analiz kompetencji.
+* analiza kompetencji,
+* plan rozwoju zawodowego,
+* profile eksperckie,
+* prezentacje doświadczenia.
 
-Repozytorium przechowuje fakty i dowody. Dokumenty końcowe są tworzone na ich podstawie.
+Repozytorium przechowuje wiedzę źródłową.
+
+Dokumenty końcowe są generowane na jej podstawie.
 
 ---
 
@@ -68,7 +79,43 @@ Repozytorium przechowuje fakty i dowody. Dokumenty końcowe są tworzone na ich 
 
 Career Vault jest projektem rozwijanym przez całą karierę zawodową.
 
-Pliki powinny zawierać informacje trwałe i wartościowe również za kilka lat.
+Pliki powinny zawierać informacje trwałe, możliwe do wykorzystania również za wiele lat.
+
+Repozytorium powinno z czasem zwiększać swoją wartość, a nie poziom skomplikowania.
+
+---
+
+# Model wiedzy Career Vault
+
+Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
+
+```text
+Experience
+↓
+Kontekst kariery
+
+Achievements
+↓
+Dowody osiągnięć
+
+Skills
+↓
+Kompetencje wynikające z osiągnięć
+
+Stories
+↓
+Narracje opisujące doświadczenia
+
+Development Areas
+↓
+Powtarzalne wzorce rozwojowe
+
+Identity
+↓
+Profesjonalna tożsamość wynikająca z całości zgromadzonej wiedzy
+```
+
+Każda warstwa odpowiada na inne pytanie i pełni inną rolę.
 
 ---
 
@@ -91,9 +138,14 @@ CareerVault/
 │   ├── SKILL-001.yaml
 │   └── ...
 │
-└── Stories/
+├── Stories/
+│   ├── README.md
+│   ├── STORY-001.yaml
+│   └── ...
+│
+└── DevelopmentAreas/
     ├── README.md
-    ├── STAR-001.yaml
+    ├── DEV-001.yaml
     └── ...
 ```
 
@@ -110,14 +162,17 @@ Odpowiada na pytanie:
 Zawiera między innymi:
 
 * profil zawodowy,
+* archetypy zawodowe,
+* wartości zawodowe,
 * mocne strony,
 * branże,
 * styl pracy,
 * języki,
 * certyfikaty,
-* zainteresowania zawodowe.
+* zainteresowania zawodowe,
+* obszary rozwoju.
 
-Identity opisuje tożsamość zawodową.
+Identity jest warstwą syntetyzującą wiedzę zgromadzoną w pozostałych modułach.
 
 ---
 
@@ -146,7 +201,7 @@ Odpowiadają na pytanie:
 
 > Co osiągnąłem?
 
-Są najważniejszą częścią Career Vault.
+Są podstawowym źródłem dowodów w Career Vault.
 
 Zawierają:
 
@@ -158,7 +213,7 @@ Zawierają:
 * wpływ organizacyjny,
 * mierzalne efekty.
 
-Achievements stanowią główne źródło dowodów kompetencji.
+Achievements stanowią fundament całego repozytorium.
 
 ---
 
@@ -168,9 +223,9 @@ Odpowiadają na pytanie:
 
 > Co potrafię i jakie mam na to dowody?
 
-Każdy skill powinien być powiązany z odpowiednimi achievementami.
+Każdy Skill powinien być powiązany z odpowiednimi Achievementami.
 
-Skills pełnią rolę warstwy kompetencyjnej pomiędzy osiągnięciami a dokumentami końcowymi.
+Skills pełnią rolę warstwy kompetencyjnej pomiędzy osiągnięciami a materiałami końcowymi.
 
 ---
 
@@ -180,14 +235,9 @@ Odpowiadają na pytanie:
 
 > Jak opowiadać o swoim doświadczeniu?
 
-Stories są historiami przygotowanymi według modelu STAR:
+Stories opisują doświadczenia w formie narracji.
 
-* Situation
-* Task
-* Action
-* Result
-
-Każda Story powinna być powiązana z jednym lub większą liczbą achievementów.
+Każda Story powinna być powiązana z jednym lub większą liczbą Achievementów.
 
 Stories służą do:
 
@@ -201,69 +251,114 @@ Stories nie są źródłem prawdy.
 
 Źródłem prawdy pozostają Achievementy.
 
-Stories są sposobem przedstawiania osiągnięć w formie narracji.
+---
+
+## Development Areas
+
+Odpowiadają na pytanie:
+
+> Jakie wzorce obserwuję u siebie i nad czym świadomie pracuję?
+
+Development Areas dokumentują:
+
+* powtarzalne wzorce zachowań,
+* obszary rozwoju,
+* ryzyka zawodowe,
+* mocne strony wynikające z danego wzorca,
+* kluczowe lekcje zawodowe.
+
+Development Areas nie są listą wad.
+
+Stanowią uporządkowany zapis doświadczeń rozwojowych wynikających z analizy Stories i Achievementów.
+
+---
+
+# Relacje pomiędzy modułami
+
+Career Vault jest systemem powiązanych informacji.
+
+Przykładowa zależność:
+
+```text
+Experience
+↓
+Achievement
+↓
+Skill
+↓
+Story
+↓
+Development Area
+↓
+Identity
+```
+
+Dzięki temu każda informacja może zostać prześledzona do źródła.
 
 ---
 
 # Hierarchia informacji
 
-Przy generowaniu materiałów zawodowych należy stosować następującą kolejność:
+Przy analizie doświadczenia oraz generowaniu materiałów zawodowych należy stosować następującą kolejność:
 
 1. Achievements
 2. Skills
 3. Stories
-4. Experience
-5. Identity
+4. Development Areas
+5. Experience
+6. Identity
 
-Achievements są głównym źródłem dowodów.
+Achievements pozostają głównym źródłem dowodów.
 
-Skills opisują kompetencje wynikające z osiągnięć.
-
-Stories pomagają przedstawić osiągnięcia w formie narracji.
-
-Experience dostarcza kontekstu.
-
-Identity opisuje profil zawodowy.
+Pozostałe moduły dostarczają interpretacji, kontekstu lub sposobu prezentacji informacji.
 
 ---
 
 # Współpraca z AI
 
-Career Vault został zaprojektowany tak, aby mógł współpracować z systemami AI, bazami wiedzy oraz rozwiązaniami typu RAG.
+Career Vault został zaprojektowany jako baza wiedzy możliwa do wykorzystania przez systemy AI oraz rozwiązania typu RAG.
 
 Rekomendowany proces:
 
-1. Określenie wymaganych kompetencji.
-2. Wyszukanie odpowiednich skills.
-3. Odnalezienie powiązanych achievements.
-4. Wyszukanie odpowiednich stories.
-5. Wygenerowanie dokumentu lub odpowiedzi.
+1. Określenie celu lub wymaganych kompetencji.
+2. Wyszukanie odpowiednich Skills.
+3. Odnalezienie powiązanych Achievements.
+4. Wyszukanie odpowiednich Stories.
+5. Uwzględnienie powiązanych Development Areas.
+6. Wygenerowanie odpowiedzi, dokumentu lub rekomendacji.
 
 Przykładowe zastosowania:
 
 * generowanie CV,
+* generowanie profilu LinkedIn,
 * przygotowanie do rozmów kwalifikacyjnych,
 * analiza kompetencji,
+* analiza luk kompetencyjnych,
 * planowanie rozwoju zawodowego,
-* identyfikacja luk kompetencyjnych.
+* tworzenie portfolio osiągnięć.
 
 ---
 
 # Konwencje danych
 
-## Struktura rekordów
+## Identyfikatory
 
-Career Vault wykorzystuje wspólną filozofię:
+Każdy rekord powinien posiadać unikalny identyfikator.
 
-- pola obowiązkowe zawierają informacje niezbędne do zrozumienia rekordu,
-- pola opcjonalne służą do przechowywania dodatkowego kontekstu,
-- brak pola oznacza brak dostępnych informacji, a nie błąd.
+Przykłady:
 
-Szczegółowe schematy znajdują się w README poszczególnych folderów.
+```text
+ACH-001
+SKILL-001
+STORY-001
+DEV-001
+```
+
+Identyfikatory powinny być niezmienne w czasie.
 
 ---
 
-## Daty w Experience, Achievements i Stories
+## Daty
 
 Dla okresów należy stosować format:
 
@@ -281,75 +376,42 @@ period:
   end: 2023-04
 ```
 
-Career Vault przechowuje daty domyślnie na poziomie lat.
+Domyślnie Career Vault przechowuje daty na poziomie lat.
 
-Dokładne miesiące powinny być używane wyłącznie wtedy, gdy mają istotne znaczenie.
-
----
-
-## Doświadczenie w Skills
-
-Dla opisu doświadczenia należy stosować format:
-
-```yaml
-experience:
-  first_used: 2020
-  years: 5
-```
-
-### first_used
-
-Pierwszy znany moment praktycznego wykorzystania kompetencji.
-
-### years
-
-Przybliżona liczba lat praktycznego doświadczenia.
+Miesiące powinny być stosowane wyłącznie wtedy, gdy mają znaczenie biznesowe lub historyczne.
 
 ---
 
-## Identyfikatory
-
-Każdy rekord powinien posiadać unikalny identyfikator.
-
-Przykłady:
-
-```text
-ACH-001
-ACH-P001
-
-SKILL-001
-
-STAR-001
-```
-
-Identyfikatory powinny być niezmienne w czasie.
-
----
-
-# Zasady utrzymania
+## Zasady jakości
 
 Podczas dodawania nowych informacji:
 
 1. Opieraj się na faktach i dowodach.
 2. Preferuj mierzalne rezultaty.
-3. Unikaj duplikatów.
+3. Unikaj duplikowania informacji.
 4. Zachowuj spójne nazewnictwo.
-5. Łącz skille z achievementami.
-6. Łącz stories z achievementami.
-7. Rozwijaj repozytorium stopniowo.
-
-Career Vault powinien z czasem stawać się coraz bardziej wartościowy, a nie coraz bardziej skomplikowany.
+5. Łącz Skills z Achievementami.
+6. Łącz Stories z Achievementami.
+7. Łącz Development Areas ze Stories i Achievementami.
+8. Preferuj jakość nad ilość.
+9. Rozwijaj repozytorium stopniowo.
 
 ---
 
 # Najważniejsza zasada
 
-Stanowiska opisują, gdzie pracowałem.
+Career Vault przechowuje wiedzę na różnych poziomach abstrakcji.
 
-Achievements opisują, co osiągnąłem.
+Experience opisuje kontekst kariery.
 
-Skills opisują, jakie kompetencje potwierdzają osiągnięcia.
+Achievements opisują faktyczne osiągnięcia.
 
-Stories opisują, jak o tych osiągnięciach opowiadać.
+Skills opisują kompetencje potwierdzone osiągnięciami.
 
-To osiągnięcia są podstawowym źródłem wartości Career Vault.
+Stories pokazują, jak o doświadczeniach opowiadać.
+
+Development Areas pokazują, jakie wzorce rozwojowe wynikają z doświadczeń.
+
+Identity opisuje profesjonalną tożsamość wynikającą z całości zgromadzonej wiedzy.
+
+Najważniejszym źródłem prawdy pozostają Achievementy.
