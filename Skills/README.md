@@ -6,22 +6,24 @@ Folder **Skills** zawiera kompetencje zidentyfikowane na podstawie doświadczeni
 
 Skills nie są listą deklarowanych umiejętności.
 
-Każda kompetencja powinna być poparta konkretnymi achievementami, które stanowią dowód jej praktycznego wykorzystania.
+Każda kompetencja powinna być poparta konkretnymi dowodami w postaci Achievementów, Stories oraz innych elementów Career Vault.
+
+Skills pełnią rolę warstwy kompetencyjnej całego systemu wiedzy.
+
+Odpowiadają na pytanie:
+
+> Co potrafię udowodnić poprzez swoje doświadczenia i osiągnięcia?
 
 ---
 
 # Rola Skills w Career Vault
 
-Career Vault składa się z pięciu warstw:
+Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
 
 ```text
-Identity
-↓
-Kim jestem?
-
 Experience
 ↓
-Gdzie zdobyłem doświadczenie?
+Gdzie zdobywałem doświadczenie?
 
 Achievements
 ↓
@@ -29,52 +31,72 @@ Co osiągnąłem?
 
 Skills
 ↓
-Co potrafię?
+Jakie kompetencje potwierdzają te osiągnięcia?
 
 Stories
 ↓
-Jak o tym opowiadać?
+Jak opowiadać o tych doświadczeniach?
+
+Development Areas
+↓
+Jakie wzorce rozwojowe obserwuję u siebie?
+
+Identity
+↓
+Kim jestem jako profesjonalista?
 ```
 
-Skills stanowią warstwę pośrednią pomiędzy osiągnięciami a dokumentami końcowymi takimi jak CV, profile zawodowe, analizy kompetencji czy przygotowanie do rozmów kwalifikacyjnych.
+Skills stanowią warstwę interpretacyjną pomiędzy osiągnięciami a wyższymi poziomami modelu wiedzy.
+
+To właśnie Skills pozwalają przekształcić pojedyncze osiągnięcia w spójny obraz kompetencji zawodowych.
 
 ---
 
 # Czym jest Skill?
 
-Skill opisuje kompetencję możliwą do zaobserwowania poprzez działania i rezultaty.
+Skill opisuje kompetencję możliwą do zaobserwowania poprzez działania, decyzje oraz rezultaty.
 
-Przykład:
+Skill nie opisuje technologii.
 
-❌ „Znam BPMN”
+Skill nie opisuje narzędzia.
 
-To znajomość metody.
+Skill nie opisuje certyfikatu.
 
-✅ „Process Design”
+Skill opisuje zdolność do osiągania określonych rezultatów.
+
+---
+
+## Przykład
+
+❌ BPMN 2.0
+
+To metoda.
+
+✅ Process Design
 
 To kompetencja.
 
 ---
 
-Przykład:
+## Przykład
 
-❌ „Umiem Bitrix24”
+❌ Bitrix24
 
-To znajomość narzędzia.
+To narzędzie.
 
-✅ „Workflow Automation”
+✅ Workflow Automation
 
 To kompetencja.
 
 ---
 
-Przykład:
+## Przykład
 
-❌ „Znam Excel”
+❌ Excel
 
-To znajomość narzędzia.
+To narzędzie.
 
-✅ „Data Analysis”
+✅ Data Analysis
 
 To kompetencja.
 
@@ -82,7 +104,11 @@ To kompetencja.
 
 # Fakty ponad deklaracje
 
-Każdy Skill powinien posiadać powiązane achievementy potwierdzające jego wykorzystanie.
+Najważniejsza zasada Career Vault:
+
+> Fakty ponad deklaracje.
+
+Każdy Skill powinien posiadać dowody potwierdzające jego praktyczne wykorzystanie.
 
 Przykład:
 
@@ -90,12 +116,71 @@ Przykład:
 name: Process Design
 
 evidence:
-  - ACH-001
-  - ACH-003
-  - ACH-005
+  achievements:
+    - ACH-001
+    - ACH-003
+    - ACH-005
 ```
 
-Jeżeli nie istnieją achievementy potwierdzające daną kompetencję, prawdopodobnie nie powinna ona jeszcze znajdować się w Career Vault.
+Jeżeli nie istnieją dowody potwierdzające daną kompetencję, prawdopodobnie nie powinna ona jeszcze znajdować się w Career Vault.
+
+---
+
+# Evidence-Based Skills
+
+Career Vault wykorzystuje podejście Evidence-Based Skills.
+
+Skill nie opisuje tego:
+
+> czego się nauczyłem.
+
+Skill opisuje:
+
+> co wielokrotnie udowodniłem w praktyce.
+
+Dlatego kompetencje powinny wynikać z doświadczeń, projektów oraz osiągniętych rezultatów.
+
+Nie odwrotnie.
+
+---
+
+# Rodzaje kompetencji
+
+## Kompetencje rdzeniowe
+
+Najsilniej definiują profil zawodowy.
+
+Przykłady:
+
+* Systems Thinking
+* Process Design
+* Knowledge Management
+* Operations Management
+
+---
+
+## Kompetencje wspierające
+
+Regularnie wykorzystywane obszary wspierające kompetencje rdzeniowe.
+
+Przykłady:
+
+* Product Management
+* Leadership
+* Workflow Automation
+* Technical Communication
+
+---
+
+## Kompetencje rozwijane
+
+Obszary znajdujące się w trakcie aktywnego rozwoju.
+
+Przykłady:
+
+* Product Strategy
+* AI Systems
+* Commercial Discovery
 
 ---
 
@@ -198,8 +283,6 @@ Nie określa poziomu umiejętności.
 
 Kompetencja rdzeniowa.
 
-Definiuje profil zawodowy.
-
 ### 8–9
 
 Bardzo ważna kompetencja wspierająca.
@@ -229,7 +312,7 @@ Basic
 
 ### Expert
 
-Kompetencja wykorzystywana regularnie przez wiele lat i potwierdzona licznymi achievementami.
+Kompetencja wykorzystywana regularnie przez wiele lat i potwierdzona licznymi dowodami.
 
 ### Advanced
 
@@ -257,7 +340,7 @@ Powinien odpowiadać na pytanie:
 
 ## capabilities
 
-Lista umiejętności składających się na daną kompetencję.
+Lista zdolności składających się na daną kompetencję.
 
 Przykład:
 
@@ -302,18 +385,25 @@ tools:
 
 ## evidence
 
-Achievementy potwierdzające kompetencję.
+Najważniejsze pole całego rekordu.
+
+Opisuje źródła potwierdzające kompetencję.
 
 Przykład:
 
 ```yaml
 evidence:
-  - ACH-001
-  - ACH-003
-  - ACH-005
-```
+  achievements:
+    - ACH-001
+    - ACH-003
 
-To najważniejsze pole całego rekordu.
+  stories:
+    - STORY-001
+    - STORY-005
+
+  development_areas:
+    - DEV-002
+```
 
 ---
 
@@ -390,7 +480,7 @@ related_skills:
 
 ---
 
-# Rodzaje informacji
+# Kompetencje, metody i narzędzia
 
 ## Skills
 
@@ -430,25 +520,15 @@ Przykłady:
 
 ---
 
-## Achievements
-
-Stanowią dowody wykorzystania kompetencji.
-
----
-
-# Relacja do pozostałych elementów Career Vault
-
-## Identity
-
-Opisuje profil zawodowy.
+# Relacje z pozostałymi modułami
 
 ## Experience
 
-Opisuje historię zawodową.
+Dostarcza kontekstu zawodowego.
 
 ## Achievements
 
-Dostarczają dowodów.
+Stanowią główne źródło dowodów.
 
 ## Skills
 
@@ -458,18 +538,28 @@ Grupują osiągnięcia w kompetencje.
 
 Pokazują wykorzystanie kompetencji w praktyce.
 
+## Development Areas
+
+Pokazują wzorce rozwojowe wynikające z wykorzystania kompetencji.
+
+## Identity
+
+Stanowi syntezę wszystkich kompetencji oraz doświadczeń zgromadzonych w Career Vault.
+
 ---
 
 # Zasady utrzymania
 
-1. Każdy Skill powinien posiadać achievementy potwierdzające jego wykorzystanie.
-2. Nie twórz Skilli dla pojedynczych narzędzi.
-3. Nie twórz Skilli dla pojedynczych technologii.
+1. Każdy Skill powinien posiadać dowody potwierdzające jego wykorzystanie.
+2. Nie twórz Skills dla pojedynczych narzędzi.
+3. Nie twórz Skills dla pojedynczych technologii.
 4. Preferuj kompetencje zamiast technologii.
 5. Łącz Skills z Achievementami.
-6. Łącz Skills z innymi Skills.
-7. Aktualizuj kompetencje wraz z rozwojem Career Vault.
-8. Dodawaj nowe Skills dopiero wtedy, gdy istnieją dowody ich praktycznego wykorzystania.
+6. Łącz Skills ze Stories.
+7. Łącz Skills z Development Areas.
+8. Łącz Skills z innymi Skills.
+9. Aktualizuj kompetencje wraz z rozwojem Career Vault.
+10. Dodawaj nowe Skills dopiero wtedy, gdy istnieją dowody ich praktycznego wykorzystania.
 
 ---
 
@@ -477,4 +567,6 @@ Pokazują wykorzystanie kompetencji w praktyce.
 
 Skill nie opisuje tego, czego się nauczyłem.
 
-Skill opisuje to, co potrafię udowodnić poprzez osiągnięcia.
+Skill opisuje to, co potrafię udowodnić poprzez doświadczenie, osiągnięcia oraz powtarzalne rezultaty.
+
+Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career Vault.
