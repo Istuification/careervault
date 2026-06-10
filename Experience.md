@@ -1,6 +1,6 @@
 # Experience
 
-## Purpose
+## Cel
 
 Dokument opisuje historię zatrudnienia, pełnione role oraz obszary odpowiedzialności.
 
@@ -10,27 +10,41 @@ Szczegóły dotyczące rezultatów, projektów i sukcesów znajdują się w fold
 
 ---
 
+# Podsumowanie kariery
+
+Od początku kariery rozwijam się od ról technicznych w środowisku przemysłowym i instalacyjnym w kierunku ról operacyjnych, organizacyjnych oraz produktowych.
+
+Moje doświadczenie obejmuje energetykę odnawialną, HVAC, produkcję, serwis techniczny oraz rozwój produktów technicznych.
+
+W kolejnych rolach przejmowałem coraz większą odpowiedzialność za procesy, zespoły, wiedzę organizacyjną oraz rozwój produktów.
+
+Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, nieustrukturyzowanych lub silnie eksperckich obszarów w uporządkowane, mierzalne i skalowalne systemy operacyjne.
+
+---
+
 # KIPI / BTI Gumkowski
 
-## Period
+## Okres
 
-2020-06 – Present
+2020-06 – obecnie
 
-## Industry
+## Branża
 
 * HVAC
-* Renewable Energy
-* Manufacturing
-* Technical Service
+* Energetyka odnawialna
+* Produkcja
+* Serwis techniczny
 
-## Roles
+---
+
+## Role
 
 ### Product Manager
 
-Period:
-2025-01 – Present
+**Okres:**
+2025-01 – obecnie
 
-Domains:
+**Domeny:**
 
 * Product Management
 * Warranty Systems
@@ -38,7 +52,16 @@ Domains:
 * Partner Enablement
 * Product Development
 
-Related Achievements:
+**Kluczowe obszary odpowiedzialności:**
+
+* zarządzanie cyklem życia produktu
+* rozwój procesów gwarancyjnych
+* systemy dokumentacji technicznej
+* wsparcie i rozwój sieci instalatorów
+* zarządzanie wiedzą produktową
+* koordynacja międzydziałowa
+
+**Powiązane Achievementy:**
 
 * ACH-005
 * ACH-006
@@ -48,10 +71,10 @@ Related Achievements:
 
 ### Acting Service Manager
 
-Period:
+**Okres:**
 2023-09 – 2025-01
 
-Domains:
+**Domeny:**
 
 * Service Operations
 * Team Coordination
@@ -59,7 +82,16 @@ Domains:
 * Process Design
 * Organizational Development
 
-Related Achievements:
+**Kluczowe obszary odpowiedzialności:**
+
+* stabilizacja pracy działu serwisu
+* przechwytywanie i transfer wiedzy
+* koordynacja zespołu
+* projektowanie workflow serwisowego
+* budowa widoczności operacyjnej i KPI
+* rozwój organizacyjny działu
+
+**Powiązane Achievementy:**
 
 * ACH-003
 * ACH-004
@@ -71,10 +103,10 @@ Related Achievements:
 
 ### Installation Coordinator
 
-Period:
+**Okres:**
 2020-09 – 2023-09
 
-Domains:
+**Domeny:**
 
 * Operations
 * Workflow Design
@@ -82,7 +114,18 @@ Domains:
 * CRM Systems
 * Installation Management
 
-Related Achievements:
+**Kluczowe obszary odpowiedzialności:**
+
+* skalowanie operacji montażowych
+* standaryzacja workflow
+* koordynacja logistyki
+* automatyzacja kalkulacji kosztów
+* planowanie montaży
+* optymalizacja procesów technicznych
+* wdrażanie i wykorzystanie CRM
+* transfer wiedzy do zespołów operacyjnych
+
+**Powiązane Achievementy:**
 
 * ACH-001
 * ACH-008
@@ -92,18 +135,25 @@ Related Achievements:
 
 ---
 
-### Electrician
+### Elektryk
 
-Period:
+**Okres:**
 2020-06 – 2020-09
 
-Domains:
+**Domeny:**
 
 * Electrical Installations
 * Technical Service
 * Field Operations
 
-Related Achievements:
+**Kluczowe obszary odpowiedzialności:**
+
+* wykonywanie instalacji elektrycznych
+* systemy OZE
+* prace terenowe
+* diagnostyka i rozwiązywanie problemów technicznych
+
+**Powiązane Achievementy:**
 
 * Foundation Role
 
@@ -111,93 +161,155 @@ Related Achievements:
 
 # Kamnet
 
-## Period
+## Okres
 
 2018 – 2020
 
-## Industry
+## Branża
 
-* Telecommunications
-* Electrical Installations
+* Telekomunikacja
+* Instalacje elektryczne
 
-## Roles
+---
 
-### Telecommunications Technician
+## Role
 
-Domains:
+### Technik Telekomunikacji
+
+**Domeny:**
 
 * Network Installations
 * Technical Service
 * Customer Support
 * Field Work
 
-Key Responsibilities:
+**Kluczowe obowiązki:**
 
-* installation and maintenance of network infrastructure
-* customer technical support
-* troubleshooting
+* instalacja i utrzymanie infrastruktury sieciowej
+* wsparcie techniczne klientów
+* diagnostyka problemów
+* prace terenowe
+* rozwiązywanie problemów technicznych
 
 ---
 
 # KGHM Polska Miedź
 
-## Period
+## Okres
 
 2016 – 2018
 
-## Industry
+## Branża
 
-* Mining
-* Heavy Industry
+* Górnictwo
+* Przemysł ciężki
 
-## Roles
+---
 
-### Electrician Apprentice / Technical Worker
+## Role
 
-Domains:
+### Elektryk Praktykant / Pracownik Techniczny
+
+**Domeny:**
 
 * Industrial Maintenance
 * Electrical Systems
 * Technical Operations
 
-Key Responsibilities:
+**Kluczowe obowiązki:**
 
-* maintenance support
-* electrical work
-* industrial environment operations
-
----
-
-# Career Progression
-
-2016–2018
-→ Technical and industrial foundations
-
-2018–2020
-→ Telecommunications and field operations
-
-2020–2023
-→ Operations, logistics and process design
-
-2023–2025
-→ Service management, knowledge management and organizational transformation
-
-2025–Present
-→ Product management, warranty systems and product development
+* wsparcie utrzymania ruchu
+* prace elektryczne
+* działania w środowisku przemysłowym
+* diagnostyka techniczna
+* przestrzeganie procedur bezpieczeństwa
 
 ---
 
-# Core Career Themes
+# Rozwój odpowiedzialności
 
-Throughout my career, several recurring themes can be observed:
+### 2016–2018
 
-* Process Design
-* Operations Management
-* Knowledge Management
-* Organizational Scaling
+**Fundamenty techniczne**
+
+* środowisko przemysłowe
+* systemy elektryczne
+* utrzymanie ruchu
+* bezpieczeństwo pracy
+
+### 2018–2020
+
+**Samodzielna praca terenowa**
+
+* obsługa klientów
+* rozwiązywanie problemów technicznych
+* infrastruktura sieciowa
+* diagnostyka w terenie
+
+### 2020–2023
+
+**Odpowiedzialność operacyjna**
+
+* koordynacja montaży
+* logistyka
+* projektowanie procesów
+* optymalizacja workflow
+* planowanie techniczne
+
+### 2023–2025
+
+**Zarządzanie działem**
+
+* operacje serwisowe
+* koordynacja zespołu
+* rozwój organizacyjny
+* zarządzanie wiedzą
+* transformacja procesów
+
+### 2025–obecnie
+
+**Odpowiedzialność produktowa**
+
+* rozwój produktów
+* systemy gwarancyjne
+* dokumentacja techniczna
+* współpraca z instalatorami
+* rozwój organizacji produktowej
+
+---
+
+# Główne motywy kariery
+
+## Motywy główne
+
 * Systems Thinking
+* Process Design
+* Knowledge Management
+
+## Motywy wspierające
+
+* Operations Management
+* Organizational Scaling
 * Technical Communication
-* Product Development
 * Workflow Automation
 
-These themes are further documented in the Skills and Achievements sections of the Career Vault.
+## Obszary rozwijane
+
+* Product Strategy
+* Artificial Intelligence
+* Product Operations
+
+---
+
+# Powiązane moduły
+
+Aby uzyskać pełny obraz doświadczenia zawodowego, należy analizować Experience razem z pozostałymi modułami Career Vault:
+
+* Achievements — osiągnięcia i rezultaty biznesowe
+* Skills — kompetencje potwierdzone dowodami
+* Stories — narracje wykorzystywane podczas rozmów i prezentacji doświadczenia
+* Development Areas — powtarzalne wzorce rozwojowe i obszary świadomej pracy nad sobą
+
+Experience dostarcza kontekstu kariery zawodowej.
+
+Achievements pozostają głównym źródłem dowodów i rezultatów.
