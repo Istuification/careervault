@@ -170,37 +170,57 @@ Przykład:
 
 ---
 
-# Schemat rekordu
-
-Każdy Achievement powinien zawierać następujące pola:
+## Struktura rekordu
 
 ### Pola obowiązkowe
 
 ```yaml
 id:
 title:
-summary:
+
+period:
+  start:
+  end:
+
+company:
+roles:
 
 situation:
 actions:
 impact:
 
 skills:
+themes:
+
+importance:
 ```
 
 ### Pola opcjonalne
 
 ```yaml
+category:
+evidence:
 metrics:
-related_experience:
-related_stories:
 related_tools:
+star_candidates:
 notes:
 ```
 
 ---
 
-# Opis pól
+## Opis pól
+
+### id
+
+Unikalny identyfikator rekordu.
+
+Przykład:
+
+```yaml
+id: ACH-001
+```
+
+---
 
 ### title
 
@@ -216,19 +236,44 @@ title: Wdrożenie systemu KPI dla działu handlowego
 
 ---
 
-### summary
+### period
 
-Jedno- lub dwuzdaniowe podsumowanie osiągnięcia.
-
-Powinno pozwalać szybko zrozumieć sens rekordu bez czytania szczegółów.
+Okres, w którym osiągnięcie miało miejsce.
 
 Przykład:
 
 ```yaml
-summary: >
-  Zaprojektowałem i wdrożyłem system KPI dla działu handlowego,
-  który umożliwił monitorowanie efektywności procesu sprzedaży
-  i identyfikację głównych wąskich gardeł.
+period:
+  start: 2022-01
+  end: 2022-12
+```
+
+Jeżeli osiągnięcie trwało przez dłuższy okres, należy podać pełny zakres.
+
+---
+
+### company
+
+Organizacja, w której osiągnięcie zostało zrealizowane.
+
+Przykład:
+
+```yaml
+company: KIPI
+```
+
+---
+
+### roles
+
+Stanowiska lub role pełnione podczas realizacji osiągnięcia.
+
+Przykład:
+
+```yaml
+roles:
+  - Product Manager
+  - Operations Manager
 ```
 
 ---
@@ -245,14 +290,14 @@ Przykład:
 
 ```yaml
 situation: >
-  Firma nie posiadała spójnego systemu monitorowania efektywności sprzedaży.
+  Firma nie posiadała spójnego systemu raportowania wyników sprzedaży.
 ```
 
 ---
 
 ### actions
 
-Opis wykonanych działań.
+Opis podjętych działań.
 
 Odpowiada na pytanie:
 
@@ -262,8 +307,8 @@ Przykład:
 
 ```yaml
 actions:
-  - Zidentyfikowałem kluczowe etapy procesu sprzedaży.
-  - Zaprojektowałem zestaw KPI.
+  - Zmapowałem proces sprzedaży.
+  - Zdefiniowałem kluczowe wskaźniki.
   - Wdrożyłem cykliczne raportowanie.
 ```
 
@@ -271,7 +316,7 @@ actions:
 
 ### impact
 
-Opis efektów.
+Opis rezultatów i efektów działań.
 
 Odpowiada na pytanie:
 
@@ -281,9 +326,9 @@ Przykład:
 
 ```yaml
 impact:
-  - Kierownictwo uzyskało bieżący wgląd w efektywność sprzedaży.
-  - Ułatwiono identyfikację problemów procesowych.
-  - Powstała podstawa do dalszej optymalizacji działań.
+  - Zwiększono przejrzystość procesu sprzedaży.
+  - Skrócono czas przygotowania raportów.
+  - Ułatwiono identyfikację problemów operacyjnych.
 ```
 
 ---
@@ -292,22 +337,107 @@ impact:
 
 Kompetencje potwierdzane przez achievement.
 
-Nazwy powinny pochodzić z modułu Skills.
+Wartości powinny odpowiadać identyfikatorom z modułu `Skills`.
 
 Przykład:
 
 ```yaml
 skills:
-  - Data Analysis
-  - KPI Design
-  - Process Improvement
+  - process-design
+  - workflow-automation
+  - data-analysis
 ```
 
 ---
 
-### metrics (opcjonalne)
+### themes
 
-Mierzalne rezultaty osiągnięcia.
+Tematy lub obszary, których dotyczy achievement.
+
+Themes opisują kontekst, a nie kompetencje.
+
+Przykład:
+
+```yaml
+themes:
+  - operations
+  - reporting
+  - sales
+```
+
+---
+
+### importance
+
+Ocena znaczenia achievementu.
+
+Rekomendowana skala:
+
+```yaml
+importance: 10
+```
+
+Gdzie:
+
+| Wartość | Znaczenie                |
+| ------- | ------------------------ |
+| 9–10    | Kluczowe osiągnięcie     |
+| 7–8     | Bardzo ważne osiągnięcie |
+| 5–6     | Istotne osiągnięcie      |
+| 1–4     | Osiągnięcie pomocnicze   |
+
+Pole służy do priorytetyzacji przy budowie CV, Stories i analizie AI.
+
+---
+
+### category
+
+Opcjonalna kategoria nadrzędna.
+
+Przykłady:
+
+```yaml
+category: operations
+```
+
+```yaml
+category: leadership
+```
+
+```yaml
+category: product
+```
+
+---
+
+### evidence
+
+Dowody potwierdzające achievement.
+
+Mogą to być:
+
+* raporty,
+* dashboardy,
+* procedury,
+* prezentacje,
+* dokumentacja,
+* wyniki biznesowe,
+* inne artefakty pracy.
+
+Przykład:
+
+```yaml
+evidence:
+  - KPI dashboard
+  - Monthly sales report
+  - Internal process documentation
+```
+
+---
+
+### metrics
+
+Mierzalne wyniki achievementu.
 
 Przykład:
 
@@ -317,39 +447,13 @@ metrics:
     before: 4h
     after: 20m
 
-  sales_growth:
-    value: "+18%"
+  conversion_rate:
+    improvement: "+18%"
 ```
 
 ---
 
-### related_experience (opcjonalne)
-
-Powiązane stanowiska lub role.
-
-Przykład:
-
-```yaml
-related_experience:
-  - EXP-003
-```
-
----
-
-### related_stories (opcjonalne)
-
-Story wykorzystujące dany achievement jako dowód.
-
-Przykład:
-
-```yaml
-related_stories:
-  - STORY-002
-```
-
----
-
-### related_tools (opcjonalne)
+### related_tools
 
 Narzędzia wykorzystane podczas realizacji.
 
@@ -364,11 +468,28 @@ related_tools:
 
 ---
 
-### notes (opcjonalne)
+### star_candidates
 
-Dodatkowy kontekst, obserwacje lub informacje pomocnicze.
+Elementy szczególnie przydatne przy budowie Story.
 
-Nie powinny zawierać kluczowych danych nieobecnych w głównych sekcjach.
+Przykład:
+
+```yaml
+star_candidates:
+  - problem: brak raportowania
+  - action: wdrożenie KPI
+  - result: szybsze decyzje
+```
+
+---
+
+### notes
+
+Dodatkowe informacje pomocnicze.
+
+Pole nie powinno zawierać kluczowych danych, które powinny znaleźć się w polach głównych.
+
+---
 
 ---
 
@@ -422,3 +543,4 @@ Achievement nie opisuje tego, za co odpowiadałem.
 Achievement opisuje to, co udało mi się osiągnąć.
 
 Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno stanowić podstawy do budowania kompetencji, narracji ani wniosków rozwojowych.
+
