@@ -1,0 +1,50 @@
+id: DEV-004
+
+title: Commercial Discovery
+
+summary: >
+  Naturalnie koncentruję się na skutecznej realizacji projektów,
+  procesów i rozwiązań operacyjnych. Historycznie mniej uwagi
+  poświęcałem walidacji rynkowej, zachowaniom klientów oraz
+  komercyjnej stronie produktów. Doświadczenia związane z
+  wprowadzaniem nowych produktów nauczyły mnie znaczenia
+  wcześniejszego testowania założeń biznesowych i rynkowych.
+
+category: Product & Business
+
+status: Emerging Development Area
+
+sources:
+  stories:
+    - STORY-006
+
+observed_pattern:
+
+  - Silna koncentracja na realizacji
+  - Duże zaufanie do logicznie poprawnych założeń
+  - Skupienie na rozwiązaniu problemu operacyjnego
+  - Mniejsza uwaga poświęcana walidacji potrzeb klientów
+
+strengths:
+
+  - Execution
+  - Project Delivery
+  - Product Introduction
+  - Cross-functional Coordination
+
+risks:
+
+  - Budowanie rozwiązań bez pełnej walidacji rynku
+  - Niedoszacowanie znaczenia procesów sprzedażowych
+  - Nadmierne skupienie na produkcie kosztem klienta
+
+key_realizations:
+
+  - Poprawnie wykonany projekt nie gwarantuje sukcesu rynkowego
+  - Klient kupuje wartość, a nie techniczną poprawność rozwiązania
+  - Discovery powinno poprzedzać execution
+  - Market fit jest równie ważny jak jakość wdrożenia
+
+development_goal: >
+  Rozwijać umiejętności związane z walidacją potrzeb klientów,
+  badaniem rynku oraz oceną potencjału biznesowego nowych inicjatyw.
