@@ -66,7 +66,7 @@ Dobry Achievement:
 
 Achievement nie opisuje obowiązków.
 
-Achievement opisuje rezultat wykraczający poza standardowy zakres odpowiedzialności.
+Achievement opisuje rezultat, zmianę lub wpływ wykraczający poza samo wykonywanie obowiązków.
 
 ---
 
