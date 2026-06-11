@@ -1,0 +1,115 @@
+id: DEV-005
+
+title: Assertiveness and Difficult Conversations
+
+summary: >
+  Naturalnie preferuję wspieranie, mentoring i budowanie porozumienia zamiast
+  konfrontacji. W większości sytuacji pozwala mi to skutecznie budować relacje,
+  rozwijać ludzi oraz wspierać współpracę między działami. Jednocześnie wzorzec
+  ten może prowadzić do odkładania trudnych rozmów, nadmiernego przejmowania
+  odpowiedzialności oraz zbyt późnego komunikowania problemów wymagających
+  jednoznacznego stanowiska.
+
+category: Communication
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-001
+    - STORY-002
+    - STORY-004
+    - STORY-005
+    - STORY-006
+
+  achievements:
+    - ACH-001
+    - ACH-004
+    - ACH-006
+    - ACH-008
+    - ACH-010
+    - ACH-013
+
+  skills:
+    - SKILL-017
+    - SKILL-011
+    - SKILL-003
+
+observed_pattern:
+  - Przed oceną zachowania staram się zrozumieć jego przyczyny, ograniczenia i kontekst.
+  - W relacjach zawodowych naturalnie przyjmuję rolę mentora, doradcy lub osoby wspierającej.
+  - Preferuję rozwiązywanie problemów poprzez dialog, argumentację i zmianę perspektywy zamiast otwartej konfrontacji.
+  - Mam tendencję do przejmowania odpowiedzialności za problemy organizacyjne, nawet gdy formalnie nie należą do mojego zakresu obowiązków.
+  - Trudniej przychodzi mi przekazywanie krytycznego feedbacku, gdy wiem, że może być dla drugiej strony nieprzyjemny emocjonalnie.
+  - W sytuacjach konfliktowych częściej szukam obejścia problemu niż bezpośredniego starcia.
+
+strengths:
+  - Budowanie zaufania i długoterminowych relacji.
+  - Wysoka empatia oraz umiejętność rozumienia perspektyw różnych stron.
+  - Skuteczne wspieranie rozwoju innych osób.
+  - Umiejętność obniżania napięcia i deeskalacji konfliktów.
+  - Tworzenie środowiska sprzyjającego współpracy i wymianie wiedzy.
+  - Wysoka otwartość na informację zwrotną i krytykę.
+
+risks:
+  - Odkładanie trudnych rozmów dłużej niż jest to optymalne.
+  - Zbyt późne komunikowanie problemów wymagających stanowczej reakcji.
+  - Przejmowanie nadmiernej liczby obowiązków z poczucia odpowiedzialności za organizację.
+  - Trudność z odmawianiem zadań, które są ważne dla firmy.
+  - Nadmierne skupienie na zrozumieniu drugiej strony kosztem szybkiego egzekwowania decyzji.
+  - Ryzyko przeciążenia wynikające z ograniczonego stawiania granic.
+
+evidence:
+  - Wielokrotne angażowanie się w rozwiązywanie problemów między działami mimo braku formalnej odpowiedzialności za dany obszar.
+  - Wdrażanie i wspieranie rozwoju kilkudziesięciu pracowników w różnych obszarach organizacji.
+  - Regularne pełnienie nieformalnej roli doradczej dla osób obejmujących stanowiska kierownicze.
+  - Preferowanie pracy rozwojowej i mentoringowej nad rolą egzekwującą.
+  - Powtarzalna tendencja do przyjmowania dodatkowych obowiązków, gdy ich niewykonanie mogłoby zaszkodzić organizacji.
+
+root_cause_analysis:
+  assumption: >
+    Dobry lider przede wszystkim wspiera ludzi, pomaga im się rozwijać i
+    buduje porozumienie. Problemy interpersonalne najczęściej wynikają z
+    braku zrozumienia kontekstu lub ograniczeń drugiej strony.
+
+  reality: >
+    Wsparcie, empatia i mentoring są bardzo skuteczne w rozwijaniu ludzi,
+    jednak część sytuacji wymaga również jednoznacznych granic, szybkiej
+    informacji zwrotnej oraz gotowości do prowadzenia niekomfortowych rozmów.
+    Unikanie tych elementów może ograniczać skuteczność zarządzania i
+    zwiększać obciążenie własne.
+
+key_realizations:
+  - Empatia i asertywność nie są przeciwieństwami.
+  - Trudna rozmowa przeprowadzona odpowiednio wcześnie jest zwykle mniej kosztowna niż rozmowa odkładana przez długi czas.
+  - Brak jednoznacznego komunikatu również jest formą komunikatu.
+  - Chronienie innych przed dyskomfortem może czasem ograniczać ich rozwój.
+  - Odmowa przyjęcia zadania nie jest brakiem zaangażowania, jeżeli wynika z racjonalnego zarządzania priorytetami.
+
+current_approach:
+  - Świadomie ćwiczę bardziej bezpośrednie komunikowanie oczekiwań i problemów.
+  - Staram się oddzielać ocenę sytuacji od oceny osoby.
+  - Przed przyjęciem nowych zobowiązań analizuję ich wpływ na istniejące priorytety.
+  - Uczę się prowadzić rozmowy korygujące wcześniej, zanim problem urośnie.
+  - Traktuję asertywność jako element odpowiedzialności organizacyjnej, a nie konfliktowości.
+
+development_goal: >
+  Rozwijać umiejętność prowadzenia trudnych rozmów, przekazywania
+  jednoznacznego feedbacku oraz stawiania granic bez utraty empatii,
+  jakości relacji i orientacji na współpracę.
+
+interview_usage:
+  strengths_questions:
+    - Jak budujesz relacje między działami?
+    - Jak wspierasz rozwój innych pracowników?
+    - Jak radzisz sobie z konfliktami organizacyjnymi?
+
+  weakness_questions:
+    - Jaka jest Twoja największa słabość zawodowa?
+    - Jakie sytuacje są dla Ciebie najtrudniejsze jako lidera?
+    - Czy zdarza Ci się brać na siebie zbyt dużo odpowiedzialności?
+
+  growth_questions:
+    - Nad jakim obszarem rozwoju pracujesz obecnie?
+    - Jak zmieniło się Twoje podejście do zarządzania ludźmi?
+    - Jak nauczyłeś się prowadzić trudne rozmowy?
