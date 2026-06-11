@@ -328,5 +328,7 @@ Pomaga AI dopasować go do pytań o:
 * DEV-002 — Personal Capacity Management
 * DEV-003 — Delegation and Leverage
 * DEV-004 — Commercial Discovery
+* DEV-005 — Assertiveness and Difficult Conversations
+* DEV-006 — Boundary Management
 
 Lista może być rozwijana, ale tylko wtedy, gdy pojawi się nowy, powtarzalny wzorzec potwierdzony w Career Vault.
