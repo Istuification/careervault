@@ -52,6 +52,62 @@ Unikam rozwiązań generujących dług organizacyjny, techniczny lub operacyjny.
 
 Wiedza powinna być własnością organizacji, a nie pojedynczych osób. Dlatego dużą wagę przykładam do dokumentowania, standaryzowania i przekazywania wiedzy.
 
+### Service Orientation
+
+Naturalnie kieruję uwagę na to, gdzie mogę realnie pomóc innym ludziom oraz organizacji. Działanie ma dla mnie większą wartość niż deklaracje, jeśli prowadzi do konkretnego efektu.
+
+### Empathic Pragmatism
+
+Łączę empatię z podejściem zadaniowym. Staram się rozumieć emocje, ograniczenia i kontekst drugiej strony, ale jednocześnie nie tracę z oczu celu, odpowiedzialności i konsekwencji.
+
+### Perspective Taking
+
+Zależy mi na rozumieniu sytuacji z różnych punktów widzenia. W praktyce oznacza to szukanie tła problemu, przyczyn zachowania i szerszego kontekstu zamiast szybkiego oceniania.
+
+### Organizational Loyalty
+
+Naturalnie myślę kategoriami dobra organizacji jako całości, a nie wyłącznie własnego działu lub własnego zakresu zadań. Bardziej interesuje mnie to, co służy systemowi, niż to, co jest wygodne lokalnie.
+
+### Respectful Communication
+
+Preferuję komunikację, która nie jest agresywna ani upokarzająca. Nawet w sytuacjach wymagających krytyki ważne jest dla mnie zachowanie godności drugiej strony oraz rzeczowości przekazu.
+
+---
+
+## Natural Predispositions
+
+### Teaching and Explanation
+
+Naturalnie upraszczam złożone tematy i próbuję tłumaczyć je w sposób możliwy do zrozumienia dla osób o różnym poziomie wiedzy. Dobrze odnajduję się w roli osoby, która porządkuje chaos poznawczy.
+
+### Mentoring
+
+Mam naturalną skłonność do wspierania innych w rozwoju, wdrażaniu się w rolę oraz rozumieniu szerszego kontekstu pracy. Łatwo przychodzi mi dzielenie się doświadczeniem i pomaganie w dojściu do samodzielności.
+
+### Bridging Between Groups
+
+Instynktownie staram się łączyć perspektywy różnych działów, specjalizacji i osób o odmiennych priorytetach. Dobrze funkcjonuję jako pomost między obszarami organizacji, które inaczej patrzą na ten sam problem.
+
+### Context Reading
+
+Naturalnie zwracam uwagę na tło sytuacji, wcześniejsze decyzje, zależności i ukryte przyczyny problemów. Dzięki temu często widzę nie tylko objaw, ale też mechanizm, który go wywołał.
+
+### Helping Orientation
+
+Jeżeli widzę, że mogę komuś realnie pomóc i nie wymaga to działania sprzecznego z dobrem organizacji, zwykle odruchowo wychodzę z inicjatywą. Jest to jedna z moich najbardziej stałych cech działania.
+
+### Calm Problem Framing
+
+Mam skłonność do wyciszania napięcia i porządkowania emocjonalnie trudnych sytuacji poprzez nazwane fakty, kontekst i spokojne rozłożenie problemu na elementy składowe.
+
+### Self-Directed Learning
+
+Szybko przyswajam nowe zagadnienia i potrafię samodzielnie budować rozumienie obszarów, w których wcześniej nie miałem pełnej wiedzy. Uczę się efektywnie zarówno z praktyki, jak i z analizy systemowej.
+
+### Improvement Sensitivity
+
+Naturalnie zauważam miejsca, w których proces, komunikacja, struktura wiedzy lub organizacja pracy mogłyby działać lepiej. Zamiast akceptować chaos jako stan domyślny, szukam sposobu na jego uporządkowanie.
+
 ---
 
 ## Core Competencies
