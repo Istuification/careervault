@@ -1,0 +1,119 @@
+id: DEV-006
+
+title: Boundary Management
+
+summary: >
+  Naturalnie przyjmuję szeroką odpowiedzialność za problemy organizacyjne oraz
+  chętnie angażuję się w działania wspierające innych ludzi i zespoły. Wzorzec
+  ten pozwala mi skutecznie budować wartość wykraczającą poza formalny zakres
+  obowiązków, ale jednocześnie może prowadzić do przeciążenia, rozproszenia
+  uwagi oraz przejmowania odpowiedzialności za obszary, które powinny pozostać
+  własnością innych osób.
+
+category: Self Management
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-001
+    - STORY-002
+    - STORY-004
+    - STORY-005
+    - STORY-006
+
+  achievements:
+    - ACH-001
+    - ACH-004
+    - ACH-006
+    - ACH-008
+    - ACH-010
+    - ACH-013
+    - ACH-014
+
+  skills:
+    - SKILL-017
+    - SKILL-003
+    - SKILL-005
+    - SKILL-011
+
+observed_pattern:
+  - Naturalnie koncentruję się na tym, czy zadanie jest ważne dla organizacji, a nie wyłącznie na tym, czy formalnie należy do mojego zakresu obowiązków.
+  - Chętnie angażuję się w pomoc innym osobom, szczególnie gdy widzę możliwość realnego rozwiązania problemu.
+  - Mam tendencję do przyjmowania dodatkowych zadań, jeśli ich niewykonanie mogłoby negatywnie wpłynąć na funkcjonowanie firmy.
+  - Często pełnię rolę nieformalnego konsultanta dla wielu działów jednocześnie.
+  - Łatwiej przychodzi mi przejęcie odpowiedzialności za problem niż pozostawienie go nierozwiązanym.
+  - Mam skłonność do angażowania się w obszary wykraczające poza moją formalną rolę.
+
+strengths:
+  - Wysoki poziom ownership i odpowiedzialności za rezultaty.
+  - Silna orientacja na dobro organizacji jako całości.
+  - Gotowość do wspierania innych zespołów i działów.
+  - Zdolność identyfikowania problemów pomiędzy obszarami organizacji.
+  - Budowanie szerokiej sieci współpracy i zaufania.
+  - Duża elastyczność w podejmowaniu nowych wyzwań.
+
+risks:
+  - Przeciążenie wynikające z nadmiernej liczby zobowiązań.
+  - Rozproszenie uwagi pomiędzy zbyt wieloma inicjatywami.
+  - Ograniczenie czasu na działania o najwyższej wartości biznesowej.
+  - Tworzenie nieformalnej zależności organizacji od własnej osoby.
+  - Utrudnione delegowanie odpowiedzialności.
+  - Ryzyko przejmowania problemów, które powinny zostać rozwiązane przez właściciela procesu lub obszaru.
+  - Trudności z odmawianiem nowych zadań.
+
+evidence:
+  - Wspieranie wielu działów organizacji poza formalnym zakresem odpowiedzialności.
+  - Wdrażanie i rozwijanie pracowników z różnych zespołów oraz funkcji.
+  - Regularne pełnienie roli eksperta konsultowanego przez osoby z wielu obszarów biznesowych.
+  - Uczestnictwo w inicjatywach wykraczających poza podstawowy zakres stanowiska.
+  - Powtarzalne sytuacje, w których przejmowałem dodatkowe zadania ze względu na ich znaczenie dla organizacji.
+
+root_cause_analysis:
+  assumption: >
+    Jeżeli posiadam wiedzę, doświadczenie lub możliwość rozwiązania problemu,
+    powinienem zaangażować się i pomóc organizacji osiągnąć lepszy rezultat.
+
+  reality: >
+    Takie podejście buduje dużą wartość organizacyjną, ale przy odpowiedniej
+    skali odpowiedzialności prowadzi do przeciążenia oraz ogranicza możliwość
+    skupienia się na działaniach o największym wpływie. Długoterminowa
+    skuteczność wymaga nie tylko pomagania, ale również świadomego wyznaczania
+    granic oraz pozostawiania części odpowiedzialności jej właścicielom.
+
+key_realizations:
+  - Nie każdy problem organizacyjny wymaga mojego osobistego zaangażowania.
+  - Pomoc jest najbardziej wartościowa wtedy, gdy prowadzi do samodzielności innych osób.
+  - Odmowa przyjęcia zadania może być właściwą decyzją biznesową.
+  - Delegowanie odpowiedzialności jest elementem skalowania organizacji.
+  - Wysoka dostępność nie powinna zastępować dobrze zaprojektowanych procesów.
+  - Ochrona własnej przepustowości zwiększa długoterminową wartość dostarczaną organizacji.
+
+current_approach:
+  - Coraz częściej oceniam nowe zadania przez pryzmat priorytetów i kosztu alternatywnego.
+  - Staram się wspierać innych poprzez coaching, dokumentację i transfer wiedzy zamiast przejmowania wykonania.
+  - Świadomie ograniczam liczbę równoległych zobowiązań.
+  - Rozróżniam sytuacje wymagające mojego działania od sytuacji wymagających jedynie konsultacji.
+  - Większą uwagę poświęcam budowaniu systemów ograniczających zależność organizacji od pojedynczych osób.
+
+development_goal: >
+  Rozwinąć zdolność świadomego zarządzania własną przepustowością,
+  priorytetami i zaangażowaniem poprzez skuteczniejsze stawianie granic,
+  delegowanie odpowiedzialności oraz koncentrację na działaniach o
+  największym wpływie organizacyjnym.
+
+interview_usage:
+  strengths_questions:
+    - Jak budujesz współpracę między działami?
+    - W jaki sposób wspierasz organizację poza własnym zakresem obowiązków?
+    - Jak zdobywasz zaufanie różnych zespołów?
+
+  weakness_questions:
+    - Jakie są Twoje najczęstsze błędy zawodowe?
+    - Czy zdarza Ci się brać na siebie zbyt dużo pracy?
+    - Jak radzisz sobie z przeciążeniem obowiązkami?
+
+  growth_questions:
+    - Czego nauczyłeś się o delegowaniu odpowiedzialności?
+    - Jak zmieniło się Twoje podejście do priorytetów?
+    - Nad jakim obszarem rozwoju pracujesz obecnie?
