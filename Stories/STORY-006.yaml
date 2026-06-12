@@ -8,7 +8,9 @@ summary: >
   formalnego procesu wdrażania produktów, doświadczenia projektowego oraz wiedzy
   z zakresu dokumentacji produkcyjnej, FMEA i wymagań jakościowych,
   skoordynowałem działania wielu działów i doprowadziłem produkt do gotowości
-  produkcyjnej oraz rynkowej.
+  produkcyjnej oraz rynkowej. Projekt zakończył się dostarczeniem kompletnego
+  produktu, jednocześnie ujawniając istotne luki organizacyjne związane z
+  zarządzaniem wymaganiami i odpowiedzialnością za całość przedsięwzięcia.
 
 competencies:
   - Zarządzanie projektami
@@ -24,6 +26,15 @@ competencies:
   - Projektowanie procesów
   - Koordynacja operacyjna
 
+behavioral_signals:
+  - ownership
+  - accountability
+  - feedback_receptiveness
+  - perspective_taking
+  - solution_orientation
+  - constructive_challenge
+  - transparency
+
 situation: >
   W wyniku przejścia polskiego rynku fotowoltaicznego z systemu net-meteringu
   na net-billing pojawiło się zapotrzebowanie na małe instalacje PV, które były
@@ -33,20 +44,29 @@ situation: >
   produktów, dedykowanego Product Managera ani doświadczenia w prowadzeniu tego
   typu projektów.
 
+  Projekt został uruchomiony w warunkach dużej presji czasowej wynikającej z
+  okna rynkowego stworzonego przez zmiany regulacyjne. Jednocześnie wiele
+  wymagań biznesowych, technicznych i operacyjnych było niejasnych lub
+  niezweryfikowanych.
+
 problem: >
   Firma potrzebowała w krótkim czasie przekształcić pomysł biznesowy w gotowy
   produkt możliwy do produkcji, sprzedaży, transportu, serwisowania i obsługi
   gwarancyjnej. Jednocześnie brakowało jasno określonych wymagań, właścicieli
   procesów oraz modelu współpracy pomiędzy zaangażowanymi działami.
 
+  Dodatkowo różne działy organizacji posiadały odmienne priorytety i sposoby
+  pracy, co utrudniało budowanie wspólnej wizji produktu i prowadzenie
+  efektywnych dyskusji projektowych.
+
 constraints:
-  - Około 2 miesiące na przygotowanie produktu do wejścia na rynek
-  - Brak formalnego procesu wdrażania produktów w organizacji
-  - Pierwszy projekt prowadzony przeze mnie w roli kierownika projektu
-  - Brak wcześniejszego doświadczenia z FMEA, CE, DTR i dokumentacją produkcyjną
-  - Konflikty i napięcia pomiędzy kluczowymi działami organizacji
-  - Ciągle zmieniające się wymagania odkrywane podczas projektu
-  - Odpowiedzialność za koordynację bez wpływu na marketing, sprzedaż i budżet
+  - Około 2 miesiące na przygotowanie produktu do wejścia na rynek.
+  - Brak formalnego procesu wdrażania produktów w organizacji.
+  - Pierwszy projekt prowadzony przeze mnie w roli kierownika projektu.
+  - Brak wcześniejszego doświadczenia z FMEA, CE, DTR i dokumentacją produkcyjną.
+  - Konflikty i napięcia pomiędzy kluczowymi działami organizacji.
+  - Ciągle zmieniające się wymagania odkrywane podczas projektu.
+  - Odpowiedzialność za koordynację bez wpływu na marketing, sprzedaż i budżet.
 
 goal: >
   Wprowadzić na rynek nowy produkt fotowoltaiczny typu DIY poprzez
@@ -55,43 +75,69 @@ goal: >
   okna rynkowego wynikającego ze zmian regulacyjnych.
 
 actions:
-  - Przeprowadziłem spotkanie kick-off identyfikując, że początkowa lista wymagań jest niekompletna, niespójna i niemożliwa do bezpośredniej realizacji
-  - Zorganizowałem indywidualne spotkania z kierownikami działów w celu zebrania i doprecyzowania wymagań
-  - Przekształciłem rozproszone oczekiwania interesariuszy w harmonogram projektu, plan działań i podział odpowiedzialności
-  - Opracowałem model komunikacji ograniczający konflikty pomiędzy działami poprzez pracę w mniejszych grupach zamiast dużych spotkań zbiorczych
-  - Koordynowałem współpracę produkcji, zakupów, jakości, serwisu, BOK, konstruktorów oraz działu handlowego
-  - Zarządzałem projektem wykorzystując Excel, Bitrix24, spotkania statusowe oraz harmonogram Gantta
-  - Samodzielnie zdobyłem wiedzę z zakresu FMEA, dokumentacji produkcyjnej oraz wymagań jakościowych niezbędnych do realizacji projektu
-  - Opracowałem tabliczkę znamionową, dokumentację produkcyjną, instrukcję dla klienta, warunki gwarancji oraz regulamin serwisowy
-  - Przełożyłem wiedzę ekspercką z zakresu instalacji PV na instrukcję zrozumiałą dla klientów bez doświadczenia technicznego
-  - Zaprojektowałem proces kontroli jakości pozwalający weryfikować poprawność montażu i kompletność produktu na kluczowych etapach produkcji
-  - Koordynowałem przygotowanie prototypów, serii 0 oraz wdrożenia produktu do produkcji
-  - Wspierałem przygotowanie procesów magazynowych, serwisowych i logistycznych związanych z nowym produktem
+  - Przeprowadziłem spotkanie kick-off identyfikując, że początkowa lista wymagań jest niekompletna, niespójna i niemożliwa do bezpośredniej realizacji.
+
+  - Podczas pierwszych spotkań projektowych zaobserwowałem, że komunikacja grupowa prowadzi głównie do wzajemnego obwiniania się działów i utrudnia pozyskiwanie merytorycznych informacji.
+
+  - Zakwestionowałem początkowy model prowadzenia projektu oparty na dużych spotkaniach wielodziałowych i zastąpiłem go serią indywidualnych rozmów z kluczowymi interesariuszami.
+
+  - Zorganizowałem indywidualne spotkania z kierownikami działów w celu zebrania, doprecyzowania i uzgodnienia wymagań.
+
+  - Przekształciłem rozproszone oczekiwania interesariuszy w harmonogram projektu, plan działań i podział odpowiedzialności.
+
+  - Opracowałem model komunikacji ograniczający konflikty pomiędzy działami poprzez pracę w mniejszych grupach zamiast dużych spotkań zbiorczych.
+
+  - Koordynowałem współpracę produkcji, zakupów, jakości, serwisu, BOK, konstruktorów oraz działu handlowego.
+
+  - Zarządzałem projektem wykorzystując Excel, Bitrix24, spotkania statusowe oraz harmonogram Gantta.
+
+  - Samodzielnie zdobyłem wiedzę z zakresu FMEA, dokumentacji produkcyjnej oraz wymagań jakościowych niezbędnych do realizacji projektu.
+
+  - Opracowałem tabliczkę znamionową, dokumentację produkcyjną, instrukcję dla klienta, warunki gwarancji oraz regulamin serwisowy.
+
+  - Przełożyłem wiedzę ekspercką z zakresu instalacji PV na instrukcję zrozumiałą dla klientów bez doświadczenia technicznego.
+
+  - Przyjąłem uwagi produkcji dotyczące instrukcji montażowej, organizując wspólną analizę dokumentacji podczas wdrożenia serii 0 i wprowadzając wskazane poprawki.
+
+  - Dostosowałem sposób składania zamówień produktu do ograniczeń i potrzeb działu BOK, ograniczając ryzyko problemów operacyjnych po uruchomieniu sprzedaży.
+
+  - Zaprojektowałem proces kontroli jakości pozwalający weryfikować poprawność montażu i kompletność produktu na kluczowych etapach produkcji.
+
+  - Koordynowałem przygotowanie prototypów, serii 0 oraz wdrożenia produktu do produkcji.
+
+  - Wspierałem przygotowanie procesów magazynowych, serwisowych i logistycznych związanych z nowym produktem.
+
+  - Regularnie komunikowałem ryzyka projektowe oraz ograniczenia wynikające z dostępnych zasobów, wiedzy i czasu.
 
 challenges:
-  - Projekt rozpoczął się od dużej liczby niespójnych oczekiwań bez jasno określonych wymagań
-  - Wymagania zmieniały się wraz z kolejnymi odkryciami i zaangażowaniem nowych działów
-  - Musiałem nauczyć się kilku nowych obszarów wiedzy w trakcie trwania projektu
-  - Konflikty pomiędzy działami utrudniały komunikację i współpracę
-  - Pod koniec projektu ujawniła się rozbieżność pomiędzy założeniami produktu a oczekiwaniami działu handlowego dotyczącymi sposobu sprzedaży
+  - Projekt rozpoczął się od dużej liczby niespójnych oczekiwań bez jasno określonych wymagań.
+  - Wymagania zmieniały się wraz z kolejnymi odkryciami i zaangażowaniem nowych działów.
+  - Musiałem nauczyć się kilku nowych obszarów wiedzy w trakcie trwania projektu.
+  - Konflikty pomiędzy działami utrudniały komunikację i współpracę.
+  - Pod koniec projektu ujawniła się rozbieżność pomiędzy założeniami produktu a oczekiwaniami działu handlowego dotyczącymi sposobu sprzedaży.
+  - Projekt nie posiadał jednego właściciela odpowiedzialnego za całość inicjatywy, co utrudniało synchronizację działań biznesowych i operacyjnych.
+  - Część kluczowych założeń biznesowych została zweryfikowana dopiero na późnym etapie realizacji.
 
 results:
   quantitative:
-    - Projekt został zrealizowany w zakładanym terminie
-    - Skoordynowano współpracę co najmniej 6 obszarów organizacji
-    - Przygotowano pełen pakiet dokumentacji produkcyjnej, jakościowej, serwisowej i użytkowej
-    - Wdrożono produkt do produkcji i przygotowano serię 0
+    - Projekt został zrealizowany w zakładanym terminie.
+    - Skoordynowano współpracę co najmniej 6 obszarów organizacji.
+    - Przygotowano pełen pakiet dokumentacji produkcyjnej, jakościowej, serwisowej i użytkowej.
+    - Wdrożono produkt do produkcji i przygotowano serię 0.
+
   qualitative:
-    - Produkt został poprawnie przygotowany do produkcji, magazynowania, sprzedaży i obsługi serwisowej
-    - Organizacja otrzymała pierwszy ustrukturyzowany proces wdrożenia nowego produktu
-    - Dokumentacja montażowa została wysoko oceniona przez pracowników produkcji, liderów i dyrektora zakładu
-    - Wszystkie wyprodukowane egzemplarze zostały poprawnie oznaczone i dostarczone na magazyn
-    - Sprzedane urządzenia nie wykazywały błędów konstrukcyjnych ani produkcyjnych
-    - Projekt ujawnił znaczenie walidacji potrzeb klienta i założeń sprzedażowych przed wdrożeniem produktu
+    - Produkt został poprawnie przygotowany do produkcji, magazynowania, sprzedaży i obsługi serwisowej.
+    - Organizacja otrzymała pierwszy ustrukturyzowany proces wdrożenia nowego produktu.
+    - Dokumentacja montażowa została wysoko oceniona przez pracowników produkcji, liderów i dyrektora zakładu.
+    - Wszystkie wyprodukowane egzemplarze zostały poprawnie oznaczone i dostarczone na magazyn.
+    - Sprzedane urządzenia nie wykazywały błędów konstrukcyjnych ani produkcyjnych.
+    - Projekt ujawnił znaczenie walidacji potrzeb klienta i założeń sprzedażowych przed wdrożeniem produktu.
+    - Ujawniono ryzyko wynikające z rozproszonej odpowiedzialności za projekt i braku wspólnego zarządzania częścią biznesową oraz operacyjną.
 
 evidence:
   achievement_ids:
     - ACH-009
+
   supporting_materials:
     - Karta Projektu PV Stand
     - Instrukcja montażu i obsługi Stand PV
@@ -101,11 +147,14 @@ evidence:
     - Procedury serwisowe
 
 lessons_learned:
-  - Zanim zacznie się rozwiązywać problem, należy zrozumieć granice projektu, interesariuszy i niewiadome
-  - W środowisku konfliktowym skuteczna komunikacja często wymaga dostosowania procesu do realiów organizacji
-  - Nawet poprawnie wdrożony produkt może nie osiągnąć sukcesu rynkowego, jeśli nie zostaną zweryfikowane potrzeby klienta
-  - Nieznane obszary wiedzy można skutecznie opanować poprzez systematyczne pozyskiwanie informacji i pracę z ekspertami
-  - Sukces wdrożenia produktu wymaga synchronizacji całego łańcucha wartości, a nie tylko przygotowania technicznego
+  - Zanim zacznie się rozwiązywać problem, należy zrozumieć granice projektu, interesariuszy i niewiadome.
+  - W środowisku konfliktowym skuteczna komunikacja często wymaga dostosowania procesu do realiów organizacji.
+  - Nawet poprawnie wdrożony produkt może nie osiągnąć sukcesu rynkowego, jeśli nie zostaną zweryfikowane potrzeby klienta.
+  - Nieznane obszary wiedzy można skutecznie opanować poprzez systematyczne pozyskiwanie informacji i pracę z ekspertami.
+  - Sukces wdrożenia produktu wymaga synchronizacji całego łańcucha wartości, a nie tylko przygotowania technicznego.
+  - Rozproszona odpowiedzialność za projekt zwiększa ryzyko powstawania niespójnych decyzji biznesowych i operacyjnych.
+  - Krytyka rozwiązania często wynika z problemów organizacyjnych lub komunikacyjnych, a nie z samej jakości rozwiązania.
+  - Zrozumienie perspektywy poszczególnych działów jest warunkiem skutecznej współpracy międzyfunkcyjnej.
 
 interview_angles:
   - Zarządzanie projektami
@@ -117,6 +166,8 @@ interview_angles:
   - Zarządzanie interesariuszami
   - Wyciąganie wniosków z nieudanego produktu
   - Rozwiązywanie konfliktów organizacyjnych
+  - Stakeholder Management
+  - Product Development
 
 cv_bullets:
   - Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując współpracę wielu działów organizacji.
