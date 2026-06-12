@@ -3,198 +3,153 @@ id: STORY-002
 title: Restrukturyzacja i stabilizacja działu serwisu
 
 summary: >
-Przejąłem odpowiedzialność za chaotycznie funkcjonujący dział serwisu
-i zorganizowałem jego codzienną pracę. Wdrożyłem podstawowe workflow,
-uporządkowałem podział odpowiedzialności, przeprowadziłem onboarding
-pracowników oraz przygotowałem dział do dalszego funkcjonowania pod
-kierownictwem nowego managera. Równolegle wypracowałem kulturę pracy
-opartą na współodpowiedzialności zespołu, transparentności oraz
-rozwiązywaniu problemów bez szukania winnych.
+  Przejąłem odpowiedzialność za chaotycznie funkcjonujący dział serwisu
+  i zorganizowałem jego codzienną pracę. Wdrożyłem podstawowe workflow,
+  uporządkowałem podział odpowiedzialności, przeprowadziłem onboarding
+  pracowników oraz przygotowałem dział do dalszego funkcjonowania pod
+  kierownictwem nowego managera. Równolegle wypracowałem kulturę pracy
+  opartą na współodpowiedzialności zespołu, transparentności oraz
+  rozwiązywaniu problemów bez szukania winnych.
 
 competencies:
-
-* Leadership
-* Team Coordination
-* Service Operations
-* Workflow Design
-* Operational Training
-* Onboarding
-* Stakeholder Communication
-* Organizational Scaling
-* Process Improvement
+  - Leadership
+  - Team Coordination
+  - Service Operations
+  - Workflow Design
+  - Operational Training
+  - Onboarding
+  - Stakeholder Communication
+  - Organizational Scaling
+  - Process Improvement
 
 behavioral_signals:
-
-* ownership
-* accountability
-* feedback_receptiveness
-* feedback_giving
-* psychological_safety
-* transparency
-* perspective_taking
-* solution_orientation
-* constructive_challenge
+  - ownership
+  - accountability
+  - feedback_receptiveness
+  - feedback_giving
+  - psychological_safety
+  - transparency
+  - perspective_taking
+  - solution_orientation
+  - constructive_challenge
 
 situation: >
-W związku z brakami kadrowymi i problemami organizacyjnymi zostałem
-poproszony o przejęcie odpowiedzialności za dział serwisu.
-Organizacja nie posiadała spójnego modelu pracy, obowiązki nie były
-jasno zdefiniowane, a wiele działań opierało się na indywidualnej,
-nieudokumentowanej wiedzy pracowników.
+  W związku z brakami kadrowymi i problemami organizacyjnymi zostałem
+  poproszony o przejęcie odpowiedzialności za dział serwisu.
+  Organizacja nie posiadała spójnego modelu pracy, obowiązki nie były
+  jasno zdefiniowane, a wiele działań opierało się na indywidualnej,
+  nieudokumentowanej wiedzy pracowników.
 
-Dział serwisu pełnił rolę organizacyjnego "ostatniego ogniwa",
-przejmując konsekwencje problemów powstałych na wcześniejszych etapach
-procesu. Jednocześnie nie posiadał narzędzi pozwalających skutecznie
-raportować rzeczywisty zakres wykonywanej pracy ani odróżniać problemów
-wynikających z błędów własnych od problemów generowanych przez inne
-obszary organizacji.
+  Dział serwisu pełnił rolę organizacyjnego "ostatniego ogniwa",
+  przejmując konsekwencje problemów powstałych na wcześniejszych etapach
+  procesu. Jednocześnie nie posiadał narzędzi pozwalających skutecznie
+  raportować rzeczywisty zakres wykonywanej pracy ani odróżniać problemów
+  wynikających z błędów własnych od problemów generowanych przez inne
+  obszary organizacji.
 
 problem: >
-Dział wymagał uporządkowania codziennej pracy, poprawy przepływu
-informacji oraz stworzenia struktury umożliwiającej skuteczne
-wdrażanie nowych pracowników i dalsze funkcjonowanie organizacji.
+  Dział wymagał uporządkowania codziennej pracy, poprawy przepływu
+  informacji oraz stworzenia struktury umożliwiającej skuteczne
+  wdrażanie nowych pracowników i dalsze funkcjonowanie organizacji.
 
-Dodatkowym problemem było funkcjonowanie w kulturze organizacyjnej,
-która często koncentrowała się na wskazywaniu osób odpowiedzialnych za
-problem zamiast na analizie jego przyczyn. Powodowało to napięcia,
-utrudniało współpracę oraz osłabiało poczucie odpowiedzialności
-zespołowej.
+  Dodatkowym problemem było funkcjonowanie w kulturze organizacyjnej,
+  która często koncentrowała się na wskazywaniu osób odpowiedzialnych za
+  problem zamiast na analizie jego przyczyn. Powodowało to napięcia,
+  utrudniało współpracę oraz osłabiało poczucie odpowiedzialności
+  zespołowej.
 
 constraints:
-
-* Ograniczone zasoby kadrowe
-* Rosnąca liczba zgłoszeń
-* Braki kompetencyjne części zespołu
-* Konieczność utrzymania ciągłości pracy działu
-* Brak formalnie zdefiniowanych procesów
+  - Ograniczone zasoby kadrowe
+  - Rosnąca liczba zgłoszeń
+  - Braki kompetencyjne części zespołu
+  - Konieczność utrzymania ciągłości pracy działu
+  - Brak formalnie zdefiniowanych procesów
 
 goal: >
-Ustabilizować funkcjonowanie działu serwisu, uporządkować organizację
-pracy oraz stworzyć podstawy pozwalające na dalszy rozwój zespołu.
+  Ustabilizować funkcjonowanie działu serwisu, uporządkować organizację
+  pracy oraz stworzyć podstawy pozwalające na dalszy rozwój zespołu.
 
 actions:
-
-* Przejąłem odpowiedzialność za bieżące funkcjonowanie działu serwisu.
-
-* Uporządkowałem podział obowiązków między pracowników
-  oraz zdefiniowałem podstawowe role w zespole.
-
-* Zaprojektowałem i wdrożyłem workflow obsługi zgłoszeń
-  oraz przepływu informacji wewnątrz działu.
-
-* Ustandaryzowałem komunikację między serwisem,
-  klientami i pozostałymi działami organizacji.
-
-* Koordynowałem pracę zespołu liczącego do 5 osób.
-
-* Wdrażałem nowych pracowników oraz wspierałem ich
-  w osiąganiu samodzielności operacyjnej.
-
-* Organizowałem harmonogramy pracy oraz priorytetyzację zadań.
-
-* Prowadziłem szkolenia wewnętrzne dotyczące procedur,
-  narzędzi i organizacji pracy.
-
-* Regularnie zbierałem informacje zwrotne dotyczące działania
-  procesów, standardów i narzędzi wykorzystywanych przez zespół,
-  wykorzystując je do dalszego doskonalenia sposobu pracy działu.
-
-* Wspólnie z zespołem prowadziłem burze mózgów dotyczące problemów
-  organizacyjnych i sposobów ich rozwiązania, angażując pracowników
-  w wypracowywanie usprawnień.
-
-* Wdrożyłem system raportowania pracy wykonywanej poza standardowym
-  workflow, dzięki czemu możliwe stało się lepsze odzwierciedlenie
-  rzeczywistego obciążenia pracowników.
-
-* Promowałem kulturę otwartego omawiania problemów i błędów,
-  koncentrując dyskusję na przyczynach sytuacji oraz działaniach
-  naprawczych zamiast na poszukiwaniu winnych.
-
-* Wprowadziłem zasadę odpowiedzialności zespołowej za rezultaty
-  działu, ograniczając kulturę wzajemnego obwiniania się oraz
-  wzmacniając współpracę między pracownikami.
-
-* Chroniłem pracowników przed nadmiernym obciążeniem wynikającym
-  z trudnych sytuacji obsługowych, przejmując najbardziej wymagające
-  rozmowy z klientami oraz wspierając zespół w sytuacjach kryzysowych.
-
-* Regularnie raportowałem wyniki, ograniczenia i problemy działu
-  przełożonemu, wykorzystując dane z systemu ticketowego oraz
-  przygotowane raporty operacyjne.
-
-* Przygotowałem dział do przejęcia przez nowego kierownika
-  oraz aktywnie wspierałem proces przekazania obowiązków.
+  - Przejąłem odpowiedzialność za bieżące funkcjonowanie działu serwisu.
+  - Uporządkowałem podział obowiązków między pracowników oraz zdefiniowałem podstawowe role w zespole.
+  - Zaprojektowałem i wdrożyłem workflow obsługi zgłoszeń oraz przepływu informacji wewnątrz działu.
+  - Ustandaryzowałem komunikację między serwisem, klientami i pozostałymi działami organizacji.
+  - Koordynowałem pracę zespołu liczącego do 5 osób.
+  - Wdrażałem nowych pracowników oraz wspierałem ich w osiąganiu samodzielności operacyjnej.
+  - Organizowałem harmonogramy pracy oraz priorytetyzację zadań.
+  - Prowadziłem szkolenia wewnętrzne dotyczące procedur, narzędzi i organizacji pracy.
+  - Regularnie zbierałem informacje zwrotne dotyczące działania procesów, standardów i narzędzi wykorzystywanych przez zespół, wykorzystując je do dalszego doskonalenia sposobu pracy działu.
+  - Wspólnie z zespołem prowadziłem burze mózgów dotyczące problemów organizacyjnych i sposobów ich rozwiązania, angażując pracowników w wypracowywanie usprawnień.
+  - Wdrożyłem system raportowania pracy wykonywanej poza standardowym workflow, dzięki czemu możliwe stało się lepsze odzwierciedlenie rzeczywistego obciążenia pracowników.
+  - Promowałem kulturę otwartego omawiania problemów i błędów, koncentrując dyskusję na przyczynach sytuacji oraz działaniach naprawczych zamiast na poszukiwaniu winnych.
+  - Wprowadziłem zasadę odpowiedzialności zespołowej za rezultaty działu, ograniczając kulturę wzajemnego obwiniania się oraz wzmacniając współpracę między pracownikami.
+  - Chroniłem pracowników przed nadmiernym obciążeniem wynikającym z trudnych sytuacji obsługowych, przejmując najbardziej wymagające rozmowy z klientami oraz wspierając zespół w sytuacjach kryzysowych.
+  - Regularnie raportowałem wyniki, ograniczenia i problemy działu przełożonemu, wykorzystując dane z systemu ticketowego oraz przygotowane raporty operacyjne.
+  - Przygotowałem dział do przejęcia przez nowego kierownika oraz aktywnie wspierałem proces przekazania obowiązków.
 
 challenges:
-
-* Przejęcie odpowiedzialności za dział bez wcześniejszego przygotowania.
-* Organizacja pracy podczas niedoborów kadrowych.
-* Wdrażanie nowych pracowników przy utrzymaniu ciągłości działania.
-* Budowanie spójnego sposobu pracy w zespole o zróżnicowanych kompetencjach.
-* Konieczność jednoczesnego zarządzania operacjami i rozwojem działu.
-* Ograniczanie konfliktów wynikających z niejasnego podziału odpowiedzialności między działami.
-* Budowanie kultury współpracy w środowisku przyzwyczajonym do wskazywania osób odpowiedzialnych za błędy.
-* Równoważenie oczekiwań zarządu, działu handlowego oraz możliwości operacyjnych zespołu serwisowego.
-* Zapewnienie transparentności działań działu przy jednoczesnym zachowaniu wysokiej efektywności operacyjnej.
+  - Przejęcie odpowiedzialności za dział bez wcześniejszego przygotowania.
+  - Organizacja pracy podczas niedoborów kadrowych.
+  - Wdrażanie nowych pracowników przy utrzymaniu ciągłości działania.
+  - Budowanie spójnego sposobu pracy w zespole o zróżnicowanych kompetencjach.
+  - Konieczność jednoczesnego zarządzania operacjami i rozwojem działu.
+  - Ograniczanie konfliktów wynikających z niejasnego podziału odpowiedzialności między działami.
+  - Budowanie kultury współpracy w środowisku przyzwyczajonym do wskazywania osób odpowiedzialnych za błędy.
+  - Równoważenie oczekiwań zarządu, działu handlowego oraz możliwości operacyjnych zespołu serwisowego.
+  - Zapewnienie transparentności działań działu przy jednoczesnym zachowaniu wysokiej efektywności operacyjnej.
 
 results:
-quantitative:
-- Koordynacja zespołu liczącego do 5 osób.
-- Wdrożenie nowych pracowników i nowego kierownika działu.
-- Utrzymanie ciągłości działania serwisu podczas okresu transformacji.
-
-qualitative:
-- Uporządkowano organizację pracy działu.
-- Poprawiono przepływ informacji.
-- Skrócono czas wdrażania nowych pracowników.
-- Zmniejszono zależność od pojedynczych osób.
-- Stworzono podstawy pod dalszy rozwój organizacji serwisowej.
-- Zapewniono płynne przekazanie odpowiedzialności nowemu kierownikowi.
-- Zwiększono transparentność pracy działu.
-- Wzmocniono kulturę współpracy i odpowiedzialności zespołowej.
-- Ograniczono liczbę konfliktów wynikających z niejasności organizacyjnych.
+  quantitative:
+    - Koordynacja zespołu liczącego do 5 osób.
+    - Wdrożenie nowych pracowników i nowego kierownika działu.
+    - Utrzymanie ciągłości działania serwisu podczas okresu transformacji.
+  qualitative:
+    - Uporządkowano organizację pracy działu.
+    - Poprawiono przepływ informacji.
+    - Skrócono czas wdrażania nowych pracowników.
+    - Zmniejszono zależność od pojedynczych osób.
+    - Stworzono podstawy pod dalszy rozwój organizacji serwisowej.
+    - Zapewniono płynne przekazanie odpowiedzialności nowemu kierownikowi.
+    - Zwiększono transparentność pracy działu.
+    - Wzmocniono kulturę współpracy i odpowiedzialności zespołowej.
+    - Ograniczono liczbę konfliktów wynikających z niejasności organizacyjnych.
 
 evidence:
-achievement_ids:
-- ACH-004
-
-supporting_materials:
-- Workflow serwisowe
-- Harmonogramy pracy
-- Materiały onboardingowe
-- Dokumentacja organizacyjna
+  achievement_ids:
+    - ACH-004
+  supporting_materials:
+    - Workflow serwisowe
+    - Harmonogramy pracy
+    - Materiały onboardingowe
+    - Dokumentacja organizacyjna
 
 lessons_learned:
-
-* Nawet niewielki zespół wymaga jasno określonych ról i odpowiedzialności.
-* Stabilizacja organizacji jest często ważniejsza niż szybkie zmiany.
-* Dobrze przygotowany onboarding znacząco skraca czas osiągania samodzielności.
-* Przekazywanie odpowiedzialności powinno być planowane równie starannie jak jej przejmowanie.
-* Problemy organizacyjne najczęściej wynikają z niejasnych zasad, braku informacji lub niewłaściwego podziału odpowiedzialności, a nie ze złej woli pracowników.
-* Otwarta rozmowa o błędach jest skuteczniejsza niż poszukiwanie winnych.
-* Zaangażowanie zespołu w wypracowywanie rozwiązań zwiększa akceptację zmian i poprawia ich skuteczność.
-* Transparentność danych i regularne raportowanie ograniczają konflikty oparte na domysłach i opiniach.
-* Kultura współodpowiedzialności pozwala budować silniejsze zespoły niż kultura indywidualnego rozliczania błędów.
+  - Nawet niewielki zespół wymaga jasno określonych ról i odpowiedzialności.
+  - Stabilizacja organizacji jest często ważniejsza niż szybkie zmiany.
+  - Dobrze przygotowany onboarding znacząco skraca czas osiągania samodzielności.
+  - Przekazywanie odpowiedzialności powinno być planowane równie starannie jak jej przejmowanie.
+  - Problemy organizacyjne najczęściej wynikają z niejasnych zasad, braku informacji lub niewłaściwego podziału odpowiedzialności, a nie ze złej woli pracowników.
+  - Otwarta rozmowa o błędach jest skuteczniejsza niż poszukiwanie winnych.
+  - Zaangażowanie zespołu w wypracowywanie rozwiązań zwiększa akceptację zmian i poprawia ich skuteczność.
+  - Transparentność danych i regularne raportowanie ograniczają konflikty oparte na domysłach i opiniach.
+  - Kultura współodpowiedzialności pozwala budować silniejsze zespoły niż kultura indywidualnego rozliczania błędów.
 
 interview_angles:
-
-* Leadership
-* Team Management
-* Organizational Change
-* Onboarding
-* Operational Excellence
-* People Development
-* Service Operations
-* Psychological Safety
-* Feedback Culture
-* Accountability
-* Team Leadership
+  - Leadership
+  - Team Management
+  - Organizational Change
+  - Onboarding
+  - Operational Excellence
+  - People Development
+  - Service Operations
+  - Psychological Safety
+  - Feedback Culture
+  - Accountability
+  - Team Leadership
 
 cv_bullets:
-
-* Przejąłem odpowiedzialność za dział serwisu i przeprowadziłem jego stabilizację organizacyjną.
-* Zaprojektowałem workflow oraz model pracy wspierający codzienną obsługę klientów.
-* Koordynowałem zespół serwisowy i wdrażałem nowych pracowników.
-* Zbudowałem kulturę współodpowiedzialności i rozwiązywania problemów bez szukania winnych.
-* Przygotowałem dział do płynnego przekazania nowemu kierownikowi.
+  - Przejąłem odpowiedzialność za dział serwisu i przeprowadziłem jego stabilizację organizacyjną.
+  - Zaprojektowałem workflow oraz model pracy wspierający codzienną obsługę klientów.
+  - Koordynowałem zespół serwisowy i wdrażałem nowych pracowników.
+  - Zbudowałem kulturę współodpowiedzialności i rozwiązywania problemów bez szukania winnych.
+  - Przygotowałem dział do płynnego przekazania nowemu kierownikowi.
