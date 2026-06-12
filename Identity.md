@@ -127,11 +127,15 @@ Skutecznie koordynuję współpracę pomiędzy działami o różnych celach, kom
 
 Regularnie rozwijam kompetencje zarówno zawodowe, jak i prywatne. Szczególnie interesują mnie obszary związane z procesami, zarządzaniem wiedzą, AI, automatyzacją oraz projektowaniem systemów organizacyjnych.
 
+### Knowledge Transfer
+
+Potrafię przekładać złożone zagadnienia techniczne, procesowe i organizacyjne na formę zrozumiałą dla osób o różnym poziomie wiedzy. Dobrze odnajduję się w tworzeniu szkoleń, dokumentacji, procesów onboardingowych oraz materiałów wspierających rozwój kompetencji innych osób.
+
 ---
 
 ## Evidence Summary
 
-Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w osiągnięciach, kompetencjach oraz historiach zawodowych zgromadzonych w Career Vault.
+Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w osiągnięciach, kompetencjach, historiach zawodowych oraz zapisanych obszarach umiejętności zgromadzonych w Career Vault.
 
 ### Najsilniejsze Obszary Kompetencyjne
 
@@ -142,6 +146,9 @@ Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w
 - Podejmowanie decyzji w oparciu o dane i mierzalne wskaźniki.
 - Budowanie skalowalnych rozwiązań organizacyjnych.
 - Samodzielne zdobywanie wiedzy i szybkie rozwijanie nowych kompetencji.
+
+Powiązane obszary Skills:
+Product Management, Operations Management, Knowledge Management, Business Systems, Technical Communication.
 
 Potwierdzenie:
 ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014  
@@ -156,9 +163,24 @@ STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009
 - Transparentna komunikacja problemów, ryzyk i błędów.
 - Budowanie poczucia bezpieczeństwa i przewidywalności we współpracy.
 
+Powiązane obszary Skills:
+Operations Management, Knowledge Management, Technical Communication, Business Systems.
+
 Potwierdzenie:
 ACH-001, ACH-003, ACH-005, ACH-012  
 STORY-002, STORY-003, STORY-004, STORY-005, STORY-009
+
+### Najbardziej Charakterystyczne Wzorce
+
+- Łączenie kompetencji technicznych, procesowych i organizacyjnych.
+- Naturalne przejmowanie odpowiedzialności za obszary wymagające uporządkowania.
+- Działanie w oparciu o długoterminową wartość, a nie krótkoterminową wygodę.
+- Silna orientacja na porządkowanie złożoności i zamienianie chaosu w system.
+- Wysoka skłonność do dzielenia się wiedzą i tworzenia struktur, które mogą działać bez ciągłej zależności od jednej osoby.
+
+Potwierdzenie:
+ACH-001, ACH-003, ACH-010, ACH-012, ACH-013, ACH-014  
+STORY-001, STORY-004, STORY-005, STORY-008, STORY-009
 
 ---
 
@@ -237,6 +259,6 @@ Powiązane obszary rozwoju zawodowego zostały opisane w module Development Area
 
 ## Career Mission
 
-Projektowanie i rozwijanie systemów, procesów oraz produktów, które pozwalają organizacjom działać sprawniej, skuteczniej wykorzystywać wiedzę oraz skalować działalność bez utraty jakości.
+Pomagam organizacjom przekształcać wiedzę, doświadczenie i dobre praktyki w skalowalne systemy działania, które zwiększają efektywność, ograniczają zależność od pojedynczych ekspertów oraz umożliwiają dalszy rozwój organizacji.
 
-Moim naturalnym obszarem działania są sytuacje wymagające uporządkowania chaosu organizacyjnego, budowy nowych struktur oraz przekształcania wiedzy i doświadczeń w powtarzalne, skalowalne systemy.
+Największą satysfakcję daje mi budowanie struktur, które pozostają użyteczne i skuteczne również wtedy, gdy nie wymagają już mojego bezpośredniego zaangażowania.
