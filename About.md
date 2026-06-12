@@ -99,6 +99,28 @@ Poszczególne warstwy są ze sobą powiązane i tworzą spójny model wiedzy o k
 
 ---
 
+# Wartości projektanta
+
+Osobiście jestem zgodny co do popularnego wzoru opisującaego wartość pracownika:
+
+```
+Wartość = (Wiedza + Kompetencje) * Postawa
+```
+
+Chciałem by Career Vault odzworowywał to przeświadczenie. W świecie AI, wiedza jest szeroko i łatwo dostępna i odgrywa coraz mniejszą rolę.
+
+W związu z tym, zdecydowałem się na umieszczenie w Career Vault dodatkowych sekcji mówiących o postawie. 
+
+We wzorze, Postawa jest dżwignią dla całej wartości. Jeśli wyrzucimy z równania Wiedzę, to tak naprawdę wzór zaczyna wyglądać następująco:
+
+```
+Wartość = Kompetencje * Postawa
+```
+
+W związku z tym, Career Vault konceturje się na kompetencjach ale także posiada informacje o postawie właściciela.
+
+---
+
 # Dlaczego nie przechowuję gotowych CV?
 
 CV jest produktem końcowym.
