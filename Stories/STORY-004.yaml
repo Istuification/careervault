@@ -3,191 +3,165 @@ id: STORY-004
 title: Projektowanie modelu działania serwisu przy braku danych historycznych
 
 summary: >
-Przejąłem odpowiedzialność za dział serwisu funkcjonujący w oparciu
-o opinie i przypuszczenia zamiast danych. Stworzyłem system pomiarowy,
-zweryfikowałem kluczowe założenia organizacyjne oraz zaprojektowałem
-model działania pozwalający obsłużyć gwałtowny wzrost liczby urządzeń
-bez utraty kluczowych kompetencji technicznych. Projekt doprowadził do
-zmiany sposobu podejmowania decyzji z opartego na intuicji na oparty
-na danych oraz ujawnił rzeczywiste przyczyny przeciążenia organizacji.
+  Przejąłem odpowiedzialność za dział serwisu funkcjonujący w oparciu
+  o opinie i przypuszczenia zamiast danych. Stworzyłem system pomiarowy,
+  zweryfikowałem kluczowe założenia organizacyjne oraz zaprojektowałem
+  model działania pozwalający obsłużyć gwałtowny wzrost liczby urządzeń
+  bez utraty kluczowych kompetencji technicznych. Projekt doprowadził do
+  zmiany sposobu podejmowania decyzji z opartego na intuicji na oparty
+  na danych oraz ujawnił rzeczywiste przyczyny przeciążenia organizacji.
 
 competencies:
-
-* Analiza Operacyjna
-* Diagnostyka Organizacyjna
-* Data-Driven Improvements
-* Capacity Planning
-* Systems Thinking
-* Service Process Design
-* Podejmowanie Decyzji Przy Niepełnych Danych
-* Stakeholder Communication
-* Root Cause Analysis
-* Organizational Design
+  - Analiza Operacyjna
+  - Diagnostyka Organizacyjna
+  - Data-Driven Improvements
+  - Capacity Planning
+  - Systems Thinking
+  - Service Process Design
+  - Podejmowanie Decyzji Przy Niepełnych Danych
+  - Stakeholder Communication
+  - Root Cause Analysis
+  - Organizational Design
 
 behavioral_signals:
-
-* ownership
-* accountability
-* constructive_challenge
-* solution_orientation
-* transparency
-* perspective_taking
-* psychological_safety
-* feedback_receptiveness
+  - ownership
+  - accountability
+  - constructive_challenge
+  - solution_orientation
+  - transparency
+  - perspective_taking
+  - psychological_safety
+  - feedback_receptiveness
 
 situation: >
-Po objęciu odpowiedzialności za dział serwisu firma obsługiwała około
-50 000 urządzeń pracujących na rynku, a ich liczba rosła średnio
-o około 20% rok do roku. W organizacji funkcjonowało przekonanie,
-że serwis nie odbiera telefonów, klienci zbyt długo czekają na pomoc,
-a jedynym rozwiązaniem problemu będzie zwiększenie liczby pracowników
-oraz wydłużenie dostępności działu.
+  Po objęciu odpowiedzialności za dział serwisu firma obsługiwała około
+  50 000 urządzeń pracujących na rynku, a ich liczba rosła średnio
+  o około 20% rok do roku. W organizacji funkcjonowało przekonanie,
+  że serwis nie odbiera telefonów, klienci zbyt długo czekają na pomoc,
+  a jedynym rozwiązaniem problemu będzie zwiększenie liczby pracowników
+  oraz wydłużenie dostępności działu.
 
-Jednocześnie nie istniał praktycznie żaden system pomiarowy pozwalający
-zweryfikować te założenia. Dostępne były jedynie podstawowe dane
-billingowe dotyczące liczby i długości połączeń.
+  Jednocześnie nie istniał praktycznie żaden system pomiarowy pozwalający
+  zweryfikować te założenia. Dostępne były jedynie podstawowe dane
+  billingowe dotyczące liczby i długości połączeń.
 
 problem: >
-Organizacja musiała podjąć decyzje dotyczące przyszłej struktury
-serwisu, zatrudnienia oraz dostępności wsparcia technicznego, jednak
-brakowało wiarygodnych danych pozwalających określić rzeczywistą skalę
-problemów i ich przyczyny. Błędne decyzje mogły doprowadzić zarówno
-do pogorszenia jakości obsługi klienta, jak i utraty najbardziej
-doświadczonych pracowników wskutek przeciążenia pracą.
+  Organizacja musiała podjąć decyzje dotyczące przyszłej struktury
+  serwisu, zatrudnienia oraz dostępności wsparcia technicznego, jednak
+  brakowało wiarygodnych danych pozwalających określić rzeczywistą skalę
+  problemów i ich przyczyny. Błędne decyzje mogły doprowadzić zarówno
+  do pogorszenia jakości obsługi klienta, jak i utraty najbardziej
+  doświadczonych pracowników wskutek przeciążenia pracą.
 
-Dodatkowym problemem było funkcjonowanie organizacji w oparciu
-o utrwalone przekonania i opinie, których nikt wcześniej nie próbował
-systemowo zweryfikować.
+  Dodatkowym problemem było funkcjonowanie organizacji w oparciu
+  o utrwalone przekonania i opinie, których nikt wcześniej nie próbował
+  systemowo zweryfikować.
 
 constraints:
-
-* Brak historycznych danych operacyjnych.
-* Brak nagrań rozmów telefonicznych.
-* Brak systemu klasyfikacji zgłoszeń.
-* Ograniczone zasoby kadrowe.
-* Rosnąca liczba urządzeń na rynku.
-* Duża sezonowość obciążenia.
-* Presja biznesowa na zwiększanie dostępności serwisu.
-* Konieczność podejmowania decyzji przed rozpoczęciem sezonu grzewczego.
+  - Brak historycznych danych operacyjnych.
+  - Brak nagrań rozmów telefonicznych.
+  - Brak systemu klasyfikacji zgłoszeń.
+  - Ograniczone zasoby kadrowe.
+  - Rosnąca liczba urządzeń na rynku.
+  - Duża sezonowość obciążenia.
+  - Presja biznesowa na zwiększanie dostępności serwisu.
+  - Konieczność podejmowania decyzji przed rozpoczęciem sezonu grzewczego.
 
 goal: >
-Ustalić rzeczywiste źródła przeciążenia serwisu, zweryfikować
-funkcjonujące w organizacji założenia, określić przyszłe potrzeby
-kadrowe oraz zaprojektować model działania pozwalający skalować
-obsługę klienta bez utraty kluczowych kompetencji technicznych.
+  Ustalić rzeczywiste źródła przeciążenia serwisu, zweryfikować
+  funkcjonujące w organizacji założenia, określić przyszłe potrzeby
+  kadrowe oraz zaprojektować model działania pozwalający skalować
+  obsługę klienta bez utraty kluczowych kompetencji technicznych.
 
 actions:
-
-* Stworzyłem pierwszy system pomiarowy dla działu serwisu obejmujący analizę liczby połączeń, czasu rozmów, typów klientów, częstotliwości kontaktów oraz danych ticketowych.
-
-* Wprowadziłem obowiązek rejestrowania każdego zgłoszenia niezależnie od tego, czy problem został rozwiązany podczas pierwszej rozmowy, czy wymagał dalszej obsługi.
-
-* Przyjąłem zasadę oddzielania opinii od danych i świadomie wstrzymałem się z formułowaniem wniosków do momentu zbudowania minimalnego systemu pomiarowego.
-
-* Przeanalizowałem dane z poprzedniego sezonu obejmujące 5 361 połączeń oraz średni czas rozmowy wynoszący 4 minuty i 1 sekundę, aby określić rzeczywiste obciążenie zespołu.
-
-* Zidentyfikowałem kluczowe wzorce operacyjne, w tym wpływ sezonowości, temperatury oraz dni tygodnia na liczbę zgłoszeń.
-
-* Przeanalizowałem ruch telefoniczny po godzinie 15:00 oraz w weekendy, aby zweryfikować biznesową zasadność utrzymywania rozszerzonej dostępności serwisu.
-
-* Wykazałem, że mniej niż 5% wszystkich połączeń przypadało na wieczory i weekendy, co podważyło potrzebę utrzymywania dodatkowych dyżurów.
-
-* Pomimo sprzeciwu części działu handlowego i kierownictwa rekomendowałem ograniczenie dostępności serwisu poza standardowymi godzinami pracy w celu ochrony najbardziej doświadczonych ekspertów przed przeciążeniem i wypaleniem.
-
-* Połączyłem dane telefoniczne z CRM i ticketami, aby zweryfikować rzeczywiste źródła ruchu trafiającego do serwisu.
-
-* Obaliłem trzy kluczowe założenia funkcjonujące w organizacji:
-
-  * głównymi odbiorcami wsparcia nie byli instalatorzy, lecz klienci końcowi,
-  * instalatorzy nie przejmowali odpowiedzialności za znaczną część klientów po montażu,
-  * przeciążenie serwisu wynikało nie tylko z przepustowości działu, ale również z wadliwego modelu obsługi posprzedażowej.
-
-* Ustaliłem, że 80-90% wszystkich kontaktów pochodziło od klientów końcowych, co całkowicie zmieniło sposób postrzegania problemu przez organizację.
-
-* Wykorzystałem dane ticketowe do identyfikacji najczęściej występujących problemów i określenia, które zgłoszenia wymagają eksperta, a które mogą zostać obsłużone przez mniej doświadczonych pracowników.
-
-* Zaprojektowałem podział pracy pomiędzy szybkie wsparcie telefoniczne oraz zaawansowane przypadki wymagające eksperckiej diagnostyki lub wyjazdu serwisowego.
-
-* Świadomie budowałem zaufanie zespołu do procesu pomiarowego, podkreślając że dane służą analizie procesów i obciążenia działu, a nie ocenie poszczególnych osób.
-
-* Wykorzystywałem wyniki analiz do ochrony interesów zarówno przedsiębiorstwa, klientów końcowych, jak i pracowników serwisu, unikając opowiadania się po stronie pojedynczych grup interesariuszy.
-
-* Prowadziłem comiesięczną analizę danych operacyjnych w celu weryfikacji hipotez oraz bieżącego dostosowywania organizacji pracy.
+  - Stworzyłem pierwszy system pomiarowy dla działu serwisu obejmujący analizę liczby połączeń, czasu rozmów, typów klientów, częstotliwości kontaktów oraz danych ticketowych.
+  - Wprowadziłem obowiązek rejestrowania każdego zgłoszenia niezależnie od tego, czy problem został rozwiązany podczas pierwszej rozmowy, czy wymagał dalszej obsługi.
+  - Przyjąłem zasadę oddzielania opinii od danych i świadomie wstrzymałem się z formułowaniem wniosków do momentu zbudowania minimalnego systemu pomiarowego.
+  - Przeanalizowałem dane z poprzedniego sezonu obejmujące 5 361 połączeń oraz średni czas rozmowy wynoszący 4 minuty i 1 sekundę, aby określić rzeczywiste obciążenie zespołu.
+  - Zidentyfikowałem kluczowe wzorce operacyjne, w tym wpływ sezonowości, temperatury oraz dni tygodnia na liczbę zgłoszeń.
+  - Przeanalizowałem ruch telefoniczny po godzinie 15:00 oraz w weekendy, aby zweryfikować biznesową zasadność utrzymywania rozszerzonej dostępności serwisu.
+  - Wykazałem, że mniej niż 5% wszystkich połączeń przypadało na wieczory i weekendy, co podważyło potrzebę utrzymywania dodatkowych dyżurów.
+  - Pomimo sprzeciwu części działu handlowego i kierownictwa rekomendowałem ograniczenie dostępności serwisu poza standardowymi godzinami pracy w celu ochrony najbardziej doświadczonych ekspertów.
+  - Połączyłem dane telefoniczne z CRM i ticketami, aby zweryfikować rzeczywiste źródła ruchu trafiającego do serwisu.
+  - Obaliłem trzy kluczowe założenia funkcjonujące w organizacji:
+    - głównymi odbiorcami wsparcia nie byli instalatorzy, lecz klienci końcowi,
+    - instalatorzy nie przejmowali odpowiedzialności za znaczną część klientów po montażu,
+    - przeciążenie serwisu wynikało nie tylko z przepustowości działu, ale również z wadliwego modelu obsługi posprzedażowej.
+  - Ustaliłem, że 80-90% wszystkich kontaktów pochodziło od klientów końcowych, co całkowicie zmieniło sposób postrzegania problemu przez organizację.
+  - Wykorzystałem dane ticketowe do identyfikacji najczęściej występujących problemów i określenia, które zgłoszenia wymagają eksperta, a które mogą zostać obsłużone przez mniej doświadczonych pracowników.
+  - Zaprojektowałem podział pracy pomiędzy szybkie wsparcie telefoniczne oraz zaawansowane przypadki wymagające eksperckiej diagnostyki lub wyjazdu serwisowego.
+  - Świadomie budowałem zaufanie zespołu do procesu pomiarowego, podkreślając że dane służą analizie procesów i obciążenia działu, a nie ocenie poszczególnych osób.
+  - Wykorzystywałem wyniki analiz do ochrony interesów zarówno przedsiębiorstwa, klientów końcowych, jak i pracowników serwisu, unikając opowiadania się po stronie pojedynczych grup interesariuszy.
+  - Prowadziłem comiesięczną analizę danych operacyjnych w celu weryfikacji hipotez oraz bieżącego dostosowywania organizacji pracy.
 
 challenges:
-
-* Podejmowanie decyzji strategicznych bez wiarygodnych danych historycznych.
-* Oddzielenie faktów od opinii funkcjonujących w organizacji.
-* Przekonanie interesariuszy do niepopularnej decyzji o ograniczeniu dostępności.
-* Ochrona kluczowych ekspertów przed utratą w okresie największego przeciążenia.
-* Projektowanie struktury organizacyjnej przy dynamicznie rosnącym obciążeniu.
-* Identyfikacja rzeczywistych przyczyn problemów zamiast ich objawów.
-* Kwestionowanie utrwalonych przekonań organizacyjnych bez eskalowania konfliktów pomiędzy działami.
-* Budowanie wiarygodności nowego systemu pomiarowego w środowisku obawiającym się nadmiernej kontroli i rozliczania indywidualnych wyników.
-* Podejmowanie decyzji przy niepełnych danych oraz konieczność komunikowania poziomu niepewności wniosków.
+  - Podejmowanie decyzji strategicznych bez wiarygodnych danych historycznych.
+  - Oddzielenie faktów od opinii funkcjonujących w organizacji.
+  - Przekonanie interesariuszy do niepopularnej decyzji o ograniczeniu dostępności.
+  - Ochrona kluczowych ekspertów przed utratą w okresie największego przeciążenia.
+  - Projektowanie struktury organizacyjnej przy dynamicznie rosnącym obciążeniu.
+  - Identyfikacja rzeczywistych przyczyn problemów zamiast ich objawów.
+  - Kwestionowanie utrwalonych przekonań organizacyjnych bez eskalowania konfliktów pomiędzy działami.
+  - Budowanie wiarygodności nowego systemu pomiarowego w środowisku obawiającym się nadmiernej kontroli i rozliczania indywidualnych wyników.
+  - Podejmowanie decyzji przy niepełnych danych oraz konieczność komunikowania poziomu niepewności wniosków.
 
 results:
-quantitative:
-- Przeanalizowano wzrost liczby połączeń z 5 361 w sezonie 2022/23 do 11 101 w sezonie 2023/24.
-- Potwierdzono, że mniej niż 5% ruchu przypadało na godziny wieczorne i weekendy.
-- Ustalono, że 80-90% wszystkich kontaktów pochodziło od klientów końcowych.
-- Wsparto wzrost liczby urządzeń na rynku z około 50 000 do około 70 000.
-- Rozbudowano strukturę działu z 2 serwisantów Tier 1 i 2 serwisantów Tier 2 do 3 serwisantów Tier 1 i 2 serwisantów Tier 2.
-- W kolejnym sezonie średni czas rozmowy spadł o około 36%.
-- Na podstawie analizy danych opracowano około 15 priorytetowych procedur diagnostycznych.
-
-qualitative:
-- Zastąpiono decyzje oparte na opiniach decyzjami opartymi na danych.
-- Obalono trzy kluczowe założenia funkcjonujące w organizacji.
-- Ujawniono rzeczywiste przyczyny przeciążenia serwisu.
-- Ochroniono kluczowe kompetencje techniczne przed utratą.
-- Stworzono fundament pod dalsze skalowanie działu serwisu.
-- Zaprojektowano model działania wykorzystywany przez kolejnych kierowników.
-- Wpłynięto na strategię obsługi klienta funkcjonującą w organizacji przez kolejne lata.
-- Potwierdzono, że problem wymagał zmian systemowych, a nie wyłącznie zwiększania zatrudnienia.
-- Zbudowano kulturę podejmowania decyzji opartą na danych zamiast intuicji i przypuszczeniach.
+  quantitative:
+    - Przeanalizowano wzrost liczby połączeń z 5 361 w sezonie 2022/23 do 11 101 w sezonie 2023/24.
+    - Potwierdzono, że mniej niż 5% ruchu przypadało na godziny wieczorne i weekendy.
+    - Ustalono, że 80-90% wszystkich kontaktów pochodziło od klientów końcowych.
+    - Wsparto wzrost liczby urządzeń na rynku z około 50 000 do około 70 000.
+    - Rozbudowano strukturę działu z 2 serwisantów Tier 1 i 2 serwisantów Tier 2 do 3 serwisantów Tier 1 i 2 serwisantów Tier 2.
+    - W kolejnym sezonie średni czas rozmowy spadł o około 36%.
+    - Na podstawie analizy danych opracowano około 15 priorytetowych procedur diagnostycznych.
+  qualitative:
+    - Zastąpiono decyzje oparte na opiniach decyzjami opartymi na danych.
+    - Obalono trzy kluczowe założenia funkcjonujące w organizacji.
+    - Ujawniono rzeczywiste przyczyny przeciążenia serwisu.
+    - Ochroniono kluczowe kompetencje techniczne przed utratą.
+    - Stworzono fundament pod dalsze skalowanie działu serwisu.
+    - Zaprojektowano model działania wykorzystywany przez kolejnych kierowników.
+    - Wpłynięto na strategię obsługi klienta funkcjonującą w organizacji przez kolejne lata.
+    - Potwierdzono, że problem wymagał zmian systemowych, a nie wyłącznie zwiększania zatrudnienia.
+    - Zbudowano kulturę podejmowania decyzji opartą na danych zamiast intuicji i przypuszczeniach.
 
 evidence:
-achievement_ids:
-- ACH-004
-- ACH-010
-
-supporting_materials:
-- Statystyki połączeń telefonicznych
-- Raporty CRM
-- Analizy ticketów serwisowych
-- Analizy obciążenia działu
-- Plany organizacyjne serwisu
+  achievement_ids:
+    - ACH-004
+    - ACH-010
+  supporting_materials:
+    - Statystyki połączeń telefonicznych
+    - Raporty CRM
+    - Analizy ticketów serwisowych
+    - Analizy obciążenia działu
+    - Plany organizacyjne serwisu
 
 lessons_learned:
-
-* Najbardziej kosztowne decyzje organizacyjne są często podejmowane na podstawie niezweryfikowanych założeń.
-* Nawet ograniczona ilość danych może wystarczyć do podejmowania trafnych decyzji, jeśli mierzone są właściwe wskaźniki.
-* Ochrona kluczowych kompetencji organizacji może być ważniejsza niż maksymalizacja krótkoterminowej dostępności.
-* Objawy problemu rzadko wskazują jego rzeczywistą przyczynę.
-* Skalowanie organizacji wymaga zrozumienia struktury pracy, a nie wyłącznie zwiększania liczby pracowników.
-* Dane są najskuteczniejsze wtedy, gdy pomagają zrozumieć problem, a nie potwierdzić wcześniej przyjęte założenia.
-* Skuteczne zarządzanie wymaga uwzględnienia perspektywy wszystkich stron systemu, również tych, które nie uczestniczą bezpośrednio w podejmowaniu decyzji.
-* Transparentne komunikowanie poziomu pewności wniosków buduje większe zaufanie niż prezentowanie niepełnych danych jako niepodważalnych faktów.
+  - Najbardziej kosztowne decyzje organizacyjne są często podejmowane na podstawie niezweryfikowanych założeń.
+  - Nawet ograniczona ilość danych może wystarczyć do podejmowania trafnych decyzji, jeśli mierzone są właściwe wskaźniki.
+  - Ochrona kluczowych kompetencji organizacji może być ważniejsza niż maksymalizacja krótkoterminowej dostępności.
+  - Objawy problemu rzadko wskazują jego rzeczywistą przyczynę.
+  - Skalowanie organizacji wymaga zrozumienia struktury pracy, a nie wyłącznie zwiększania liczby pracowników.
+  - Dane są najskuteczniejsze wtedy, gdy pomagają zrozumieć problem, a nie potwierdzić wcześniej przyjęte założenia.
+  - Skuteczne zarządzanie wymaga uwzględnienia perspektywy wszystkich stron systemu, również tych, które nie uczestniczą bezpośrednio w podejmowaniu decyzji.
+  - Transparentne komunikowanie poziomu pewności wniosków buduje większe zaufanie niż prezentowanie niepełnych danych jako niepodważalnych faktów.
 
 interview_angles:
-
-* Data-Driven Decision Making
-* Analytical Thinking
-* Organizational Diagnostics
-* Capacity Planning
-* Stakeholder Management
-* Difficult Decisions
-* Change Management
-* Service Operations
-* Problem Solving
-* Decision Making Under Uncertainty
-* Root Cause Analysis
-* Evidence-Based Management
+  - Data-Driven Decision Making
+  - Analytical Thinking
+  - Organizational Diagnostics
+  - Capacity Planning
+  - Stakeholder Management
+  - Difficult Decisions
+  - Change Management
+  - Service Operations
+  - Problem Solving
+  - Decision Making Under Uncertainty
+  - Root Cause Analysis
+  - Evidence-Based Management
 
 cv_bullets:
-
-* Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy niemal całkowitym braku danych historycznych.
-* Obaliłem kluczowe założenia organizacyjne i zidentyfikowałem rzeczywiste przyczyny przeciążenia działu obsługującego ponad 50 000 urządzeń.
-* Zaprojektowałem model działania serwisu wspierający wzrost liczby urządzeń do około 70 000 bez utraty kluczowych kompetencji technicznych.
-* Wdrożyłem metryki i model zarządzania wykorzystywane przez kolejnych kierowników serwisu.
+  - Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy niemal całkowitym braku danych historycznych.
+  - Obaliłem kluczowe założenia organizacyjne i zidentyfikowałem rzeczywiste przyczyny przeciążenia działu obsługującego ponad 50 000 urządzeń.
+  - Zaprojektowałem model działania serwisu wspierający wzrost liczby urządzeń do około 70 000 bez utraty kluczowych kompetencji technicznych.
+  - Wdrożyłem metryki i model zarządzania wykorzystywane przez kolejnych kierowników serwisu.
