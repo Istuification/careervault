@@ -3,175 +3,165 @@ id: STORY-001
 title: Transformacja organizacji pracy działu Instal/Solar
 
 summary: >
-Przekształciłem dział montażowy działający głównie na komunikacji ad-hoc
-w uporządkowany system workflow oparty o Bitrix24, standaryzację
-informacji oraz jasno zdefiniowane procesy operacyjne. Pozwoliło to
-znacząco skrócić czas organizacji montaży, ograniczyć liczbę błędów
-operacyjnych i przygotować dział do dalszego skalowania.
+  Przekształciłem dział montażowy działający głównie na komunikacji ad-hoc
+  w uporządkowany system workflow oparty o Bitrix24, standaryzację
+  informacji oraz jasno zdefiniowane procesy operacyjne. Pozwoliło to
+  znacząco skrócić czas organizacji montaży, ograniczyć liczbę błędów
+  operacyjnych i przygotować dział do dalszego skalowania.
 
 competencies:
-
-* Process Improvement
-* Workflow Design
-* Systems Thinking
-* Organizational Scaling
-* Change Management
-* Stakeholder Management
-* Knowledge Management
-* Operational Excellence
-* Ownership
+  - Process Improvement
+  - Workflow Design
+  - Systems Thinking
+  - Organizational Scaling
+  - Change Management
+  - Stakeholder Management
+  - Knowledge Management
+  - Operational Excellence
+  - Ownership
 
 behavioral_signals:
-
-* ownership
-* accountability
-* feedback_receptiveness
-* constructive_challenge
-* solution_orientation
-* transparency
-* perspective_taking
+  - ownership
+  - accountability
+  - feedback_receptiveness
+  - constructive_challenge
+  - solution_orientation
+  - transparency
+  - perspective_taking
 
 situation: >
-Po około trzech miesiącach pracy właściciel firmy przekazał mi
-odpowiedzialność za organizację procesu montaży, uznając że moje
-podejście organizacyjne pozwoli odciążyć go od bieżącego zarządzania
-operacyjnego.
+  Po około trzech miesiącach pracy właściciel firmy przekazał mi
+  odpowiedzialność za organizację procesu montaży, uznając że moje
+  podejście organizacyjne pozwoli odciążyć go od bieżącego zarządzania
+  operacyjnego.
 
-W tym czasie dział Instal/Solar rozwijał się bardzo dynamicznie.
-Początkowo składał się z kilku osób, a wraz ze wzrostem liczby realizacji
-został rozbudowany do kilku handlowców, kilku monterów oraz kilku ekip
-montażowych realizujących instalacje fotowoltaiczne i urządzenia grzewcze.
+  W tym czasie dział Instal/Solar rozwijał się bardzo dynamicznie.
+  Początkowo składał się z kilku osób, a wraz ze wzrostem liczby realizacji
+  został rozbudowany do kilku handlowców, kilku monterów oraz kilku ekip
+  montażowych realizujących instalacje fotowoltaiczne i urządzenia grzewcze.
 
-Organizacja pracy opierała się głównie na komunikacji ad-hoc.
-Informacje dotyczące realizacji przekazywano za pomocą krótkich wiadomości
-i pojedynczych zdjęć wysyłanych na komunikatorze. Brakowało jednolitego
-sposobu zbierania, przechowywania i przekazywania informacji pomiędzy
-handlowcami, administracją i ekipami montażowymi.
+  Organizacja pracy opierała się głównie na komunikacji ad-hoc.
+  Informacje dotyczące realizacji przekazywano za pomocą krótkich wiadomości
+  i pojedynczych zdjęć wysyłanych na komunikatorze. Brakowało jednolitego
+  sposobu zbierania, przechowywania i przekazywania informacji pomiędzy
+  handlowcami, administracją i ekipami montażowymi.
 
 problem: >
-Ekipy montażowe regularnie rozpoczynały realizacje bez kompletu
-informacji technicznych. Często brakowało danych dotyczących typu dachu,
-jego wymiarów, wysokości budynku, zdjęć rozdzielni elektrycznych oraz
-innych informacji niezbędnych do prawidłowego przygotowania realizacji.
+  Ekipy montażowe regularnie rozpoczynały realizacje bez kompletu
+  informacji technicznych. Często brakowało danych dotyczących typu dachu,
+  jego wymiarów, wysokości budynku, zdjęć rozdzielni elektrycznych oraz
+  innych informacji niezbędnych do prawidłowego przygotowania realizacji.
 
-W efekcie podczas montaży regularnie pojawiały się nieprzewidziane
-problemy. Brakowało materiałów, konieczne były dodatkowe przejazdy,
-zmiany koncepcji lub improwizowanie rozwiązań na miejscu.
+  W efekcie podczas montaży regularnie pojawiały się nieprzewidziane
+  problemy. Brakowało materiałów, konieczne były dodatkowe przejazdy,
+  zmiany koncepcji lub improwizowanie rozwiązań na miejscu.
 
-Dodatkowym źródłem problemów był narastający konflikt pomiędzy działem
-handlowym a ekipami montażowymi. Handlowcy często składali klientom
-obietnice bez pełnego zrozumienia ograniczeń technicznych, natomiast
-konsekwencje tych decyzji ujawniały się dopiero podczas realizacji.
-Powodowało to frustrację ekip montażowych, konieczność tłumaczenia się
-przed klientami oraz częste spory dotyczące odpowiedzialności za problemy.
+  Dodatkowym źródłem problemów był narastający konflikt pomiędzy działem
+  handlowym a ekipami montażowymi. Handlowcy często składali klientom
+  obietnice bez pełnego zrozumienia ograniczeń technicznych, natomiast
+  konsekwencje tych decyzji ujawniały się dopiero podczas realizacji.
+  Powodowało to frustrację ekip montażowych, konieczność tłumaczenia się
+  przed klientami oraz częste spory dotyczące odpowiedzialności za problemy.
 
-Przed wdrożeniem praktycznie każda realizacja zawierała błędy lub
-nieprzewidziane sytuacje wynikające z brakujących informacji, co
-generowało dodatkowe koszty, chaos organizacyjny oraz utrudniało
-dalszy rozwój działu.
+  Przed wdrożeniem praktycznie każda realizacja zawierała błędy lub
+  nieprzewidziane sytuacje wynikające z brakujących informacji, co
+  generowało dodatkowe koszty, chaos organizacyjny oraz utrudniało
+  dalszy rozwój działu.
 
 constraints:
-
-* Dynamiczny wzrost liczby realizacji i zespołu.
-* Brak wcześniej zdefiniowanych procesów operacyjnych.
-* Konieczność utrzymania bieżącej działalności podczas wdrażania zmian.
-* Brak wcześniejszego doświadczenia autora w projektowaniu procesów operacyjnych.
-* Konieczność pogodzenia potrzeb handlowców, administracji i ekip montażowych.
+  - Dynamiczny wzrost liczby realizacji i zespołu.
+  - Brak wcześniej zdefiniowanych procesów operacyjnych.
+  - Konieczność utrzymania bieżącej działalności podczas wdrażania zmian.
+  - Brak wcześniejszego doświadczenia autora w projektowaniu procesów operacyjnych.
+  - Konieczność pogodzenia potrzeb handlowców, administracji i ekip montażowych.
 
 goal: >
-Stworzyć powtarzalny i skalowalny proces organizacji montaży, który
-zapewni kompletność informacji technicznych, ograniczy liczbę błędów
-operacyjnych oraz umożliwi dalszy rozwój działu bez utraty jakości
-realizacji.
+  Stworzyć powtarzalny i skalowalny proces organizacji montaży, który
+  zapewni kompletność informacji technicznych, ograniczy liczbę błędów
+  operacyjnych oraz umożliwi dalszy rozwój działu bez utraty jakości
+  realizacji.
 
 actions:
-
-* Samodzielnie przejąłem odpowiedzialność za organizację procesu montaży.
-* Przeanalizowałem najczęściej występujące problemy pojawiające się podczas realizacji.
-* Zidentyfikowałem informacje niezbędne dla handlowców, administracji i ekip montażowych.
-* Zaprojektowałem od podstaw docelowy workflow organizacji montaży.
-* Opracowałem instrukcje określające jakie dane muszą zostać zebrane na każdym etapie procesu.
-* Stworzyłem zestaw zadań, checklist i punktów kontrolnych zapewniających kompletność informacji.
-* Zaprojektowałem strukturę przechowywania danych i historii realizacji w Bitrix24.
-* Wdrożyłem workflow operacyjne wykorzystujące zadania, pola danych, lejki procesowe oraz automatyzacje.
-* Ustandaryzowałem sposób przekazywania informacji pomiędzy działami.
-* Wprowadziłem arkusz audytu technicznego pozwalający handlowcom zbierać kompletne i jednoznaczne informacje jeszcze przed sprzedażą.
-* Zbudowałem transparentny system śledzenia realizacji, dzięki któremu handlowcy mogli na bieżąco monitorować status montaży, serwisów oraz zgłoszonych problemów.
-* Przeprowadziłem szkolenia i wdrożenie nowych zasad pracy.
-* Regularnie konsultowałem kierunek rozwoju rozwiązania z właścicielem firmy, zachowując pełną odpowiedzialność za projekt i jego realizację.
-* Rozwijałem rozwiązanie metodą iteracyjną, opierając się na informacjach zwrotnych od monterów i analizie rzeczywistych przyczyn problemów.
-* Wielokrotnie weryfikowałem własne hipotezy dotyczące źródeł nieefektywności procesu i dostosowywałem rozwiązania na podstawie uzyskanych wyników.
+  - Samodzielnie przejąłem odpowiedzialność za organizację procesu montaży.
+  - Przeanalizowałem najczęściej występujące problemy pojawiające się podczas realizacji.
+  - Zidentyfikowałem informacje niezbędne dla handlowców, administracji i ekip montażowych.
+  - Zaprojektowałem od podstaw docelowy workflow organizacji montaży.
+  - Opracowałem instrukcje określające jakie dane muszą zostać zebrane na każdym etapie procesu.
+  - Stworzyłem zestaw zadań, checklist i punktów kontrolnych zapewniających kompletność informacji.
+  - Zaprojektowałem strukturę przechowywania danych i historii realizacji w Bitrix24.
+  - Wdrożyłem workflow operacyjne wykorzystujące zadania, pola danych, lejki procesowe oraz automatyzacje.
+  - Ustandaryzowałem sposób przekazywania informacji pomiędzy działami.
+  - Wprowadziłem arkusz audytu technicznego pozwalający handlowcom zbierać kompletne i jednoznaczne informacje jeszcze przed sprzedażą.
+  - Zbudowałem transparentny system śledzenia realizacji, dzięki któremu handlowcy mogli na bieżąco monitorować status montaży, serwisów oraz zgłoszonych problemów.
+  - Przeprowadziłem szkolenia i wdrożenie nowych zasad pracy.
+  - Regularnie konsultowałem kierunek rozwoju rozwiązania z właścicielem firmy, zachowując pełną odpowiedzialność za projekt i jego realizację.
+  - Rozwijałem rozwiązanie metodą iteracyjną, opierając się na informacjach zwrotnych od monterów i analizie rzeczywistych przyczyn problemów.
+  - Wielokrotnie weryfikowałem własne hipotezy dotyczące źródeł nieefektywności procesu i dostosowywałem rozwiązania na podstawie uzyskanych wyników.
 
 challenges:
-
-* Brak wcześniejszego doświadczenia w projektowaniu procesów operacyjnych.
-* Konieczność stworzenia rozwiązania praktycznie od podstaw bez gotowych wzorców organizacyjnych.
-* Pogodzenie potrzeb wielu grup uczestniczących w procesie.
-* Zmiana przyzwyczajeń osób pracujących wcześniej głównie w modelu komunikacji ad-hoc.
-* Projektowanie rozwiązania metodą iteracyjną na podstawie własnych obserwacji, analizy błędów oraz informacji zwrotnych od użytkowników.
-* Wielokrotne weryfikowanie własnych założeń projektowych na podstawie rzeczywistych problemów zgłaszanych przez monterów i użytkowników procesu.
-* Ograniczanie konfliktów pomiędzy działem handlowym a technicznym wynikających z rozbieżności pomiędzy oczekiwaniami sprzedażowymi a możliwościami realizacyjnymi organizacji.
-* Konieczność podejmowania decyzji w oparciu o dane i obserwacje w środowisku, gdzie wiele decyzji było wcześniej podejmowanych intuicyjnie.
-* Dokumentowanie decyzji i ich konsekwencji w celu budowania poparcia dla zmian organizacyjnych opartych na faktach zamiast opiniach.
+  - Brak wcześniejszego doświadczenia w projektowaniu procesów operacyjnych.
+  - Konieczność stworzenia rozwiązania praktycznie od podstaw bez gotowych wzorców organizacyjnych.
+  - Pogodzenie potrzeb wielu grup uczestniczących w procesie.
+  - Zmiana przyzwyczajeń osób pracujących wcześniej głównie w modelu komunikacji ad-hoc.
+  - Projektowanie rozwiązania metodą iteracyjną na podstawie własnych obserwacji, analizy błędów oraz informacji zwrotnych od użytkowników.
+  - Wielokrotne weryfikowanie własnych założeń projektowych na podstawie rzeczywistych problemów zgłaszanych przez monterów i użytkowników procesu.
+  - Ograniczanie konfliktów pomiędzy działem handlowym a technicznym wynikających z rozbieżności pomiędzy oczekiwaniami sprzedażowymi a możliwościami realizacyjnymi organizacji.
+  - Konieczność podejmowania decyzji w oparciu o dane i obserwacje w środowisku, gdzie wiele decyzji było wcześniej podejmowanych intuicyjnie.
+  - Dokumentowanie decyzji i ich konsekwencji w celu budowania poparcia dla zmian organizacyjnych opartych na faktach zamiast opiniach.
 
 results:
-quantitative:
-- Skrócenie czasu organizacji pojedynczego montażu z 1–2 dni do około 2–3 godzin.
-- Spadek liczby realizacji zawierających błędy lub nieprzewidziane problemy z około 100% do około 30%.
-- Redukcja liczby błędów operacyjnych o około 70%.
-- Skalowanie działu do około 30 realizacji miesięcznie.
-- Obsługa około 280 realizacji w analizowanym okresie.
-
-qualitative:
-- Znaczące ograniczenie chaosu organizacyjnego.
-- Poprawa jakości przygotowania ekip montażowych.
-- Ujednolicenie sposobu przekazywania informacji.
-- Zwiększenie przewidywalności realizacji.
-- Stworzenie skalowalnego modelu organizacji pracy.
-- Ograniczenie liczby konfliktów wynikających z niepełnych informacji i niejednoznacznych ustaleń.
-- Zwiększenie transparentności procesu dla wszystkich zaangażowanych działów.
-- Wypracowanie standardu procesowego, który stał się punktem odniesienia dla dalszej standaryzacji procesów w organizacji.
+  quantitative:
+    - Skrócenie czasu organizacji pojedynczego montażu z 1–2 dni do około 2–3 godzin.
+    - Spadek liczby realizacji zawierających błędy lub nieprzewidziane problemy z około 100% do około 30%.
+    - Redukcja liczby błędów operacyjnych o około 70%.
+    - Skalowanie działu do około 30 realizacji miesięcznie.
+    - Obsługa około 280 realizacji w analizowanym okresie.
+  qualitative:
+    - Znaczące ograniczenie chaosu organizacyjnego.
+    - Poprawa jakości przygotowania ekip montażowych.
+    - Ujednolicenie sposobu przekazywania informacji.
+    - Zwiększenie przewidywalności realizacji.
+    - Stworzenie skalowalnego modelu organizacji pracy.
+    - Ograniczenie liczby konfliktów wynikających z niepełnych informacji i niejednoznacznych ustaleń.
+    - Zwiększenie transparentności procesu dla wszystkich zaangażowanych działów.
+    - Wypracowanie standardu procesowego, który stał się punktem odniesienia dla dalszej standaryzacji procesów w organizacji.
 
 evidence:
-achievement_ids:
-- ACH-001
-
-supporting_materials:
-- Workflow Bitrix24
-- Szablony zadań
-- Checklisty procesowe
-- Dokumentacja operacyjna
+  achievement_ids:
+    - ACH-001
+  supporting_materials:
+    - Workflow Bitrix24
+    - Szablony zadań
+    - Checklisty procesowe
+    - Dokumentacja operacyjna
 
 lessons_learned:
-
-* Dobrze zaprojektowany proces jest często bardziej wartościowy niż zwiększanie liczby pracowników.
-* Większość problemów operacyjnych wynika z brakujących lub niejednoznacznych informacji.
-* Proces powinien być projektowany z perspektywy wszystkich uczestników, a nie tylko jednej grupy.
-* Standaryzacja i szkolenia są równie ważne jak samo wdrożenie systemu.
-* Systemowe i logiczne podejście pozwala skutecznie rozwiązywać problemy nawet bez wcześniejszego doświadczenia w danym obszarze.
-* Budowa procesów jest kompetencją rozwijaną poprzez iteracyjne rozwiązywanie rzeczywistych problemów operacyjnych.
-* Nawet bez wcześniejszego doświadczenia można skutecznie projektować procesy, jeżeli rozumie się problem i potrafi logicznie analizować zależności.
-* Informacje zwrotne od użytkowników często wskazują objawy problemu, ale nie jego rzeczywistą przyczynę. Skuteczne rozwiązania wymagają dotarcia do źródła problemu i wielokrotnej weryfikacji hipotez.
-* Konflikty pomiędzy działami są często skutkiem braku wspólnych danych, procesów i definicji odpowiedzialności, a nie złej woli uczestników.
-* Dane i obserwowalne konsekwencje decyzji są znacznie skuteczniejszym narzędziem zmiany organizacyjnej niż opinie lub argumenty oparte wyłącznie na autorytecie.
+  - Dobrze zaprojektowany proces jest często bardziej wartościowy niż zwiększanie liczby pracowników.
+  - Większość problemów operacyjnych wynika z brakujących lub niejednoznacznych informacji.
+  - Proces powinien być projektowany z perspektywy wszystkich uczestników, a nie tylko jednej grupy.
+  - Standaryzacja i szkolenia są równie ważne jak samo wdrożenie systemu.
+  - Systemowe i logiczne podejście pozwala skutecznie rozwiązywać problemy nawet bez wcześniejszego doświadczenia w danym obszarze.
+  - Budowa procesów jest kompetencją rozwijaną poprzez iteracyjne rozwiązywanie rzeczywistych problemów operacyjnych.
+  - Nawet bez wcześniejszego doświadczenia można skutecznie projektować procesy, jeżeli rozumie się problem i potrafi logicznie analizować zależności.
+  - Informacje zwrotne od użytkowników często wskazują objawy problemu, ale nie jego rzeczywistą przyczynę. Skuteczne rozwiązania wymagają dotarcia do źródła problemu i wielokrotnej weryfikacji.
+  - Konflikty pomiędzy działami są często skutkiem braku wspólnych danych, procesów i definicji odpowiedzialności, a nie złej woli uczestników.
+  - Dane i obserwowalne konsekwencje decyzji są znacznie skuteczniejszym narzędziem zmiany organizacyjnej niż opinie lub argumenty oparte wyłącznie na autorytecie.
 
 interview_angles:
-
-* Process Improvement
-* Organizational Scaling
-* Change Management
-* Workflow Design
-* Systems Thinking
-* Operational Excellence
-* Leadership Without Authority
-* Ownership
-* Initiative
-* Feedback Receptiveness
-* Constructive Challenge
-* Evidence-Based Decision Making
+  - Process Improvement
+  - Organizational Scaling
+  - Change Management
+  - Workflow Design
+  - Systems Thinking
+  - Operational Excellence
+  - Leadership Without Authority
+  - Ownership
+  - Initiative
+  - Feedback Receptiveness
+  - Constructive Challenge
+  - Evidence-Based Decision Making
 
 cv_bullets:
-
-* Przekształciłem dział montażowy z modelu opartego na komunikacji ad-hoc w uporządkowany workflow wspierany przez Bitrix24.
-* Skróciłem czas organizacji montaży z 1–2 dni do około 2–3 godzin oraz ograniczyłem liczbę błędów operacyjnych o około 70%.
-* Zaprojektowałem procesy i standardy informacyjne umożliwiające skalowanie działu do około 30 realizacji miesięcznie.
+  - Przekształciłem dział montażowy z modelu opartego na komunikacji ad-hoc w uporządkowany workflow wspierany przez Bitrix24.
+  - Skróciłem czas organizacji montaży z 1–2 dni do około 2–3 godzin oraz ograniczyłem liczbę błędów operacyjnych o około 70%.
+  - Zaprojektowałem procesy i standardy informacyjne umożliwiające skalowanie działu do około 30 realizacji miesięcznie.
