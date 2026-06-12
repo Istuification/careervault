@@ -26,6 +26,16 @@ competencies:
   - Boundary Setting
   - Change Management
 
+behavioral_signals:
+  - ownership
+  - accountability
+  - constructive_challenge
+  - transparency
+  - solution_orientation
+  - perspective_taking
+  - psychological_safety
+  - boundary_setting
+
 situation: >
   Pod koniec 2021 roku, w związku ze zbliżającym się zakończeniem systemu
   net-meteringu, rynek fotowoltaiczny przeżywał gwałtowny wzrost. Klienci
@@ -34,6 +44,10 @@ situation: >
   instalacji w ciągu dwóch miesięcy, co znacząco przekraczało realne
   możliwości operacyjne zespołu.
 
+  Dział techniczny był postrzegany jako zdolny do poradzenia sobie z każdym
+  problemem, a wcześniejsze sukcesy organizacji wzmacniały przekonanie, że
+  dalsze zwiększanie obciążenia jest możliwe bez większych konsekwencji.
+
 problem: >
   Organizacja próbowała skalować sprzedaż szybciej niż była w stanie skalować
   operacje. Kluczowe procesy administracyjne, logistyczne i techniczne były
@@ -41,14 +55,18 @@ problem: >
   spadku jakości realizacji, zwiększonego ryzyka bezpieczeństwa oraz
   uzależnienia ciągłości działania od pojedynczego pracownika.
 
+  Dodatkowo przeciążenie zaczęło negatywnie wpływać na ludzi, zwiększając
+  ryzyko wypalenia, utraty pracowników oraz dalszego pogarszania jakości
+  realizacji.
+
 constraints:
-  - Ekstremalny wzrost liczby realizowanych instalacji
-  - Presja klientów związana z terminami wynikającymi ze zmian regulacyjnych
-  - Jedna osoba odpowiedzialna za większość procesów administracyjnych
-  - Brak odpowiednich narzędzi wspierających planowanie i skalowanie
-  - Ograniczona liczba ekip montażowych
-  - Wysoka odpowiedzialność za jakość i terminowość realizacji
-  - Rosnące ryzyko błędów wynikających z przeciążenia
+  - Ekstremalny wzrost liczby realizowanych instalacji.
+  - Presja klientów związana z terminami wynikającymi ze zmian regulacyjnych.
+  - Jedna osoba odpowiedzialna za większość procesów administracyjnych.
+  - Brak odpowiednich narzędzi wspierających planowanie i skalowanie.
+  - Ograniczona liczba ekip montażowych.
+  - Wysoka odpowiedzialność za jakość i terminowość realizacji.
+  - Rosnące ryzyko błędów wynikających z przeciążenia.
 
 goal: >
   Utrzymać zdolność operacyjną organizacji bez dalszego pogarszania jakości,
@@ -56,42 +74,65 @@ goal: >
   umożliwiające dalszy wzrost w sposób kontrolowany i powtarzalny.
 
 actions:
-  - Koordynowałem pracę czterech pracowników oraz wielu równoległych realizacji instalacji PV
-  - Zarządzałem planowaniem montaży, logistyką, zamówieniami materiałów, rozliczeniami ekip i obsługą bieżących problemów technicznych
-  - Na bieżąco identyfikowałem ograniczenia przepustowości organizacji i obszary generujące największe ryzyko błędów
-  - Analizowałem wpływ przeciążenia na jakość realizacji, bezpieczeństwo oraz efektywność pracy zespołu
-  - Pomimo choroby utrzymywałem ciągłość działania kluczowych procesów operacyjnych
-  - Zidentyfikowałem, że dalsze zwiększanie obciążenia nie rozwiązuje problemu i prowadzi do narastania długu organizacyjnego
-  - Przygotowałem argumentację biznesową dotyczącą konieczności zwiększenia zasobów administracyjnych
-  - Przedstawiłem przełożonemu ultimatum dotyczące zmiany sposobu skalowania organizacji
-  - Zarekomendowałem zatrudnienie dodatkowych osób administracyjnych oraz uporządkowanie procesów i narzędzi operacyjnych
-  - Zapoczątkowałem zmianę podejścia z modelu opartego na heroicznej pracy pojedynczych osób na model oparty na procesach i zdolnościach organizacyjnych
+  - Koordynowałem pracę czterech pracowników oraz wielu równoległych realizacji instalacji PV.
+
+  - Zarządzałem planowaniem montaży, logistyką, zamówieniami materiałów, rozliczeniami ekip i obsługą bieżących problemów technicznych.
+
+  - Na bieżąco identyfikowałem ograniczenia przepustowości organizacji i obszary generujące największe ryzyko błędów.
+
+  - Analizowałem wpływ przeciążenia na jakość realizacji, bezpieczeństwo oraz efektywność pracy zespołu.
+
+  - Pomimo własnej choroby utrzymywałem ciągłość działania kluczowych procesów operacyjnych, chroniąc zespół przed skutkami narastającego chaosu organizacyjnego.
+
+  - Regularnie rozmawiałem z pracownikami o ich obciążeniu i problemach operacyjnych, starając się ograniczać skutki przeciążenia oraz utrzymywać zaangażowanie zespołu.
+
+  - Upewniałem pracowników, że trudna sytuacja ma charakter przejściowy oraz komunikowałem działania podejmowane w celu jej rozwiązania.
+
+  - Zidentyfikowałem, że dalsze zwiększanie obciążenia nie rozwiązuje problemu i prowadzi do narastania długu organizacyjnego.
+
+  - Po wystąpieniu incydentu jakościowego związanego z przeciążeniem organizacji osobiście przejąłem obsługę sytuacji, ograniczyłem skutki problemu oraz zorganizowałem zastępcze zasoby umożliwiające dokończenie realizacji.
+
+  - Przygotowałem argumentację biznesową dotyczącą konieczności zwiększenia zasobów administracyjnych.
+
+  - Przedstawiłem przełożonemu otwartą informację, że obecny model pracy jest dla mnie nieakceptowalny i nie może być dalej utrzymywany bez zmian organizacyjnych.
+
+  - Zaproponowałem konkretne rozwiązanie obejmujące zatrudnienie dodatkowej osoby administracyjnej, której wdrożenie zobowiązałem się przeprowadzić osobiście.
+
+  - Zarekomendowałem zatrudnienie dodatkowych osób administracyjnych oraz uporządkowanie procesów i narzędzi operacyjnych.
+
+  - Zapoczątkowałem zmianę podejścia z modelu opartego na heroicznej pracy pojedynczych osób na model oparty na procesach i zdolnościach organizacyjnych.
 
 challenges:
-  - Presja realizacji liczby montaży przekraczającej teoretyczne możliwości operacyjne
-  - Odpowiedzialność za wiele krytycznych procesów jednocześnie
-  - Brak narzędzi wspierających planowanie przy rosnącej skali działalności
-  - Konieczność przeciwstawienia się decyzjom wspieranym przez krótkoterminowe cele sprzedażowe
-  - Pogarszający się stan zdrowia wynikający z przeciążenia i stresu
-  - Rosnące ryzyko błędów jakościowych i operacyjnych
-  - Wystąpienie incydentu bezpieczeństwa będącego skutkiem działania na granicy możliwości organizacji
+  - Presja realizacji liczby montaży przekraczającej teoretyczne możliwości operacyjne.
+  - Odpowiedzialność za wiele krytycznych procesów jednocześnie.
+  - Brak narzędzi wspierających planowanie przy rosnącej skali działalności.
+  - Konieczność przeciwstawienia się decyzjom wspieranym przez krótkoterminowe cele sprzedażowe.
+  - Pogarszający się stan zdrowia wynikający z przeciążenia i stresu.
+  - Rosnące ryzyko błędów jakościowych i operacyjnych.
+  - Wystąpienie incydentu bezpieczeństwa będącego skutkiem działania na granicy możliwości organizacji.
+  - Konieczność wyznaczenia granic dalszego obciążania ludzi bez pogorszenia jakości i bezpieczeństwa.
 
 results:
   quantitative:
-    - Skoordynowano realizację około 26 instalacji w ciągu dwóch miesięcy
-    - Zarządzano pracą 4-osobowego zespołu operacyjnego
-    - Utrzymano ciągłość działania pomimo skrajnego przeciążenia organizacyjnego
+    - Skoordynowano realizację około 26 instalacji w ciągu dwóch miesięcy.
+    - Zarządzano pracą 4-osobowego zespołu operacyjnego.
+    - Utrzymano ciągłość działania pomimo skrajnego przeciążenia organizacyjnego.
+    - Zatrudniono dodatkowe wsparcie administracyjne odciążające kluczowe procesy operacyjne.
+
   qualitative:
-    - Doprowadzono do zwiększenia zasobów administracyjnych
-    - Zmieniono podejście do skalowania działalności operacyjnej
-    - Uświadomiono kierownictwu ograniczenia przepustowości organizacji
-    - Ograniczono ryzyko dalszego pogarszania jakości realizacji
-    - Zwiększono świadomość znaczenia procesów i narzędzi wspierających wzrost
-    - Przesunięto organizację z modelu opartego na wysiłku ludzi w kierunku modelu opartego na systemach
+    - Doprowadzono do zwiększenia zasobów administracyjnych.
+    - Zmieniono podejście do skalowania działalności operacyjnej.
+    - Uświadomiono kierownictwu ograniczenia przepustowości organizacji.
+    - Ograniczono ryzyko dalszego pogarszania jakości realizacji.
+    - Zwiększono świadomość znaczenia procesów i narzędzi wspierających wzrost.
+    - Przesunięto organizację z modelu opartego na wysiłku ludzi w kierunku modelu opartego na systemach.
+    - Utrzymano zaangażowanie i retencję kluczowych pracowników pomimo okresu ekstremalnego przeciążenia.
+    - Właściciel organizacji uznał konieczność zmiany modelu skalowania i podjął działania wspierające dalszą profesjonalizację operacji.
 
 evidence:
   achievement_ids:
     - ACH-012
+
   supporting_materials:
     - Harmonogramy realizacji instalacji PV
     - Dokumentacja planowania montaży
@@ -99,12 +140,15 @@ evidence:
     - Dokumentacja procesów operacyjnych opracowanych po okresie przeciążenia
 
 lessons_learned:
-  - Przeciążenie ludzi nie jest strategią skalowania organizacji
-  - Wzrost sprzedaży musi być równoważony wzrostem zdolności operacyjnych
-  - Problemy systemowe nie mogą być rozwiązywane wyłącznie dodatkowym wysiłkiem pracowników
-  - Ryzyka jakościowe i bezpieczeństwa są często pierwszym sygnałem przekroczenia możliwości organizacji
-  - Lider odpowiada nie tylko za wyniki, ale również za stworzenie warunków umożliwiających bezpieczną i powtarzalną pracę
-  - Dług organizacyjny i technologiczny zawsze zostaje spłacony, jeśli nie jest zarządzany odpowiednio wcześnie
+  - Przeciążenie ludzi nie jest strategią skalowania organizacji.
+  - Wzrost sprzedaży musi być równoważony wzrostem zdolności operacyjnych.
+  - Problemy systemowe nie mogą być rozwiązywane wyłącznie dodatkowym wysiłkiem pracowników.
+  - Ryzyka jakościowe i bezpieczeństwa są często pierwszym sygnałem przekroczenia możliwości organizacji.
+  - Lider odpowiada nie tylko za wyniki, ale również za stworzenie warunków umożliwiających bezpieczną i powtarzalną pracę.
+  - Lider odpowiada również za ochronę ludzi przed długotrwałym przeciążeniem i wypaleniem.
+  - Każdy system organizacyjny posiada granice przepustowości, których ignorowanie prowadzi do narastania kosztów ukrytych.
+  - Dług organizacyjny i technologiczny zawsze zostaje spłacony, jeśli nie jest zarządzany odpowiednio wcześnie.
+  - Stawianie granic jest czasami równie ważne jak branie odpowiedzialności.
 
 interview_angles:
   - Operational Leadership
@@ -117,6 +161,8 @@ interview_angles:
   - Quality and Safety
   - Leadership Lessons
   - Managing Growth
+  - Boundary Setting
+  - Protecting Teams During Growth
 
 cv_bullets:
   - Zidentyfikowałem ograniczenia operacyjne organizacji podczas gwałtownego wzrostu rynku PV i doprowadziłem do zmiany podejścia do skalowania działalności.
