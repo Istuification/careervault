@@ -25,6 +25,17 @@ competencies:
   - Cross-Functional Collaboration
   - Project Coordination
 
+behavioral_signals:
+  - ownership
+  - accountability
+  - feedback_giving
+  - feedback_receptiveness
+  - psychological_safety
+  - solution_orientation
+  - perspective_taking
+  - transparency
+  - constructive_challenge
+
 situation: >
   Po analizie pracy działu serwisu zidentyfikowaliśmy, że znacząca część
   zgłoszeń mogłaby być obsługiwana przez mniej doświadczonych pracowników,
@@ -45,14 +56,19 @@ problem: >
   pozwalającej przechwycić i uporządkować wiedzę techniczną dotyczącą
   diagnostyki urządzeń.
 
+  Dodatkowym wyzwaniem było stworzenie środowiska, w którym eksperci
+  będą gotowi poświęcić czas na formalizację swojej wiedzy mimo dużego
+  obciążenia bieżącą pracą oraz konieczności nauczenia się nowych
+  narzędzi i metod pracy.
+
 constraints:
-  - Wiedza znajdowała się głównie w głowach trzech ekspertów
-  - Brak istniejącej dokumentacji diagnostycznej
-  - Brak sprawdzonej metodologii opisu wiedzy eksperckiej
-  - Ograniczona dostępność ekspertów serwisowych
-  - Maksymalnie cztery miesiące na realizację projektu
-  - Konieczność przygotowania rozwiązania przed kolejnym sezonem grzewczym
-  - Młody i niedoświadczony zespół
+  - Wiedza znajdowała się głównie w głowach trzech ekspertów.
+  - Brak istniejącej dokumentacji diagnostycznej.
+  - Brak sprawdzonej metodologii opisu wiedzy eksperckiej.
+  - Ograniczona dostępność ekspertów serwisowych.
+  - Maksymalnie cztery miesiące na realizację projektu.
+  - Konieczność przygotowania rozwiązania przed kolejnym sezonem grzewczym.
+  - Młody i niedoświadczony zespół.
 
 goal: >
   Stworzyć skalowalny system przechwytywania, organizowania i przekazywania
@@ -62,92 +78,88 @@ goal: >
   problemy klientów.
 
 actions:
-  - Przeanalizowałem najczęściej występujące problemy zgłaszane przez klientów
-    i uporządkowałem je w logiczne obszary diagnostyczne.
+  - Przeanalizowałem najczęściej występujące problemy zgłaszane przez klientów i uporządkowałem je w logiczne obszary diagnostyczne.
 
-  - Przeprowadziłem analizę dostępnych metod modelowania procesów
-    i wiedzy eksperckiej, identyfikując BPMN 2.0 jako najbardziej
-    obiecujące rozwiązanie.
+  - Przeprowadziłem analizę dostępnych metod modelowania procesów i wiedzy eksperckiej, identyfikując BPMN 2.0 jako najbardziej obiecujące rozwiązanie.
 
-  - Samodzielnie nauczyłem się notacji BPMN 2.0 na podstawie literatury,
-    materiałów edukacyjnych i dokumentacji technicznej.
+  - Samodzielnie nauczyłem się notacji BPMN 2.0 na podstawie literatury, materiałów edukacyjnych i dokumentacji technicznej.
 
-  - Zidentyfikowałem ograniczenia klasycznych diagramów BPMN dla złożonych
-    procesów diagnostycznych i opracowałem koncepcję podziału wiedzy
-    na mniejsze, połączone ze sobą interaktywne schematy.
+  - Zidentyfikowałem ograniczenia klasycznych diagramów BPMN dla złożonych procesów diagnostycznych i opracowałem koncepcję podziału wiedzy na mniejsze, połączone ze sobą interaktywne schematy.
 
-  - Zaprojektowałem architekturę rozwiązania opartą o Wiki.js,
-    diagrams.net oraz sieć wzajemnie powiązanych diagramów.
+  - Zaprojektowałem architekturę rozwiązania opartą o Wiki.js, diagrams.net oraz sieć wzajemnie powiązanych diagramów.
 
-  - Opracowałem standard dokumentacji obejmujący:
-      - strukturę schematów diagnostycznych,
-      - strukturę artykułów serwisowych,
-      - zasady nazewnictwa,
-      - sposób prezentacji wiedzy,
-      - proces publikacji i recenzji.
+  - Opracowałem standard dokumentacji obejmujący strukturę schematów diagnostycznych, artykułów serwisowych, zasady nazewnictwa, sposób prezentacji wiedzy oraz proces publikacji i recenzji.
 
   - Wprowadziłem podział dokumentacji na:
-      - Drzewa Diagnostyczne (DD),
-      - Artykuły Serwisowe (AS).
+      - Drzewa Diagnostyczne (DD)
+      - Artykuły Serwisowe (AS)
 
   - Zaprojektowałem proces tworzenia wiedzy obejmujący:
-      - identyfikację potrzeby,
-      - tworzenie diagramu,
-      - przygotowanie opisu,
-      - recenzję ekspercką,
-      - weryfikację przez głównego konstruktora,
-      - publikację.
+      - identyfikację potrzeby
+      - tworzenie diagramu
+      - przygotowanie opisu
+      - recenzję ekspercką
+      - weryfikację przez głównego konstruktora
+      - publikację
 
-  - Współtworzyłem główne drzewa diagnostyczne wraz z dwoma ekspertami
-    serwisowymi i koordynowałem ich iteracyjną walidację z głównym
-    konstruktorem produktu.
+  - Współtworzyłem główne drzewa diagnostyczne wraz z dwoma ekspertami serwisowymi i koordynowałem ich iteracyjną walidację z głównym konstruktorem produktu.
+
+  - Wykorzystywałem warsztaty i pytania pomocnicze do wydobywania ukrytej wiedzy eksperckiej oraz eliminowania niejednoznaczności logicznych w procesach diagnostycznych.
+
+  - Podczas recenzji diagramów prowadziłem dyskusje dotyczące zależności logicznych, pomagając ekspertom przełożyć intuicyjną wiedzę na jednoznaczne algorytmy decyzyjne.
+
+  - Wspólnie z zespołem iteracyjnie doskonaliłem strukturę diagramów i dokumentacji na podstawie uwag ekspertów oraz doświadczeń zdobytych podczas pracy.
+
+  - Na podstawie informacji zwrotnych zespołu zrezygnowaliśmy z modelu pojedynczych, rozbudowanych diagramów na rzecz interaktywnych i powiązanych ze sobą mniejszych drzew diagnostycznych.
 
   - Samodzielnie stworzyłem około 30% wszystkich diagramów i opisów.
 
-  - Zrecenzowałem około 90% powstających materiałów w celu utrzymania
-    spójności i jakości całego systemu.
+  - Zrecenzowałem około 90% powstających materiałów w celu utrzymania spójności logicznej, jakości oraz zgodności ze standardami BPMN.
 
-  - Przygotowałem szkolenia z BPMN dla zespołu oraz materiały onboardingowe
-    umożliwiające samodzielne korzystanie z nowego rozwiązania.
+  - Stworzyłem kulturę recenzji opartą na wspólnym doskonaleniu materiałów zamiast przypisywania odpowiedzialności za błędy pojedynczym osobom.
 
-  - Zaprojektowałem system śledzenia postępów oparty na elementach
-    gamifikacji, który pozwalał monitorować tempo prac i utrzymywać
-    zaangażowanie zespołu.
+  - Przygotowałem szkolenia z BPMN dla zespołu oraz materiały onboardingowe umożliwiające samodzielne korzystanie z nowego rozwiązania.
 
-  - Koordynowałem pracę czteroosobowego zespołu odpowiedzialnego
-    za tworzenie dokumentacji oraz regularnie raportowałem postępy
-    przed zarządem.
+  - Zaprojektowałem system śledzenia postępów oparty na elementach gamifikacji, który pozwalał monitorować tempo prac i utrzymywać zaangażowanie zespołu.
 
-  - Współorganizowałem wdrożenie Wiki.js na firmowym serwerze
-    oraz publikację gotowej bazy wiedzy.
+  - Wspierałem motywację zespołu poprzez działania integracyjne, świętowanie postępów oraz angażowanie zarządu w docenianie osiągnięć uczestników projektu.
+
+  - Koordynowałem pracę czteroosobowego zespołu odpowiedzialnego za tworzenie dokumentacji oraz regularnie raportowałem postępy przed zarządem.
+
+  - Udostępniłem zarządowi bieżący wgląd w realizację projektu poprzez system raportowania postępu oparty na wskaźnikach procentowych i punktowych.
+
+  - Współorganizowałem wdrożenie Wiki.js na firmowym serwerze oraz publikację gotowej bazy wiedzy.
 
 challenges:
-  - Przechwycenie wiedzy, która nigdy wcześniej nie była formalnie opisana
-  - Zamiana intuicyjnej wiedzy ekspertów w powtarzalne algorytmy decyzyjne
-  - Opracowanie własnej metodologii tworzenia dokumentacji od podstaw
-  - Utrzymanie spójności materiałów tworzonych przez wiele osób
-  - Realizacja projektu w ograniczonym czasie przed sezonem grzewczym
-  - Nauczenie zespołu nowej notacji procesowej i sposobu pracy
+  - Przechwycenie wiedzy, która nigdy wcześniej nie była formalnie opisana.
+  - Zamiana intuicyjnej wiedzy ekspertów w powtarzalne algorytmy decyzyjne.
+  - Opracowanie własnej metodologii tworzenia dokumentacji od podstaw.
+  - Utrzymanie spójności materiałów tworzonych przez wiele osób.
+  - Realizacja projektu w ograniczonym czasie przed sezonem grzewczym.
+  - Nauczenie zespołu nowej notacji procesowej i sposobu pracy.
+  - Utrzymanie motywacji ekspertów podczas wielotygodniowej, powtarzalnej pracy dokumentacyjnej.
+  - Zapewnienie jakości materiałów bez tworzenia atmosfery wzajemnego oceniania i obwiniania.
+  - Pogodzenie potrzeb ekspertów, konstruktora produktu oraz zarządu organizacji.
 
 results:
   quantitative:
-    - Stworzono 120 schematów diagnostycznych i artykułów serwisowych
-    - Projekt został zrealizowany przez 4-osobowy zespół w ciągu 4 miesięcy
-    - Około 30% dokumentacji zostało przygotowane przeze mnie osobiście
-    - Około 90% materiałów zostało przeze mnie zrecenzowanych
-    - Skrócono czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy
-    - Rozwiązanie zostało zweryfikowane na grupie 3 nowych pracowników
+    - Stworzono 120 schematów diagnostycznych i artykułów serwisowych.
+    - Projekt został zrealizowany przez 4-osobowy zespół w ciągu 4 miesięcy.
+    - Około 30% dokumentacji zostało przygotowane przeze mnie osobiście.
+    - Około 90% materiałów zostało przeze mnie zrecenzowanych.
+    - Skrócono czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy.
+    - Rozwiązanie zostało zweryfikowane na grupie 3 nowych pracowników.
 
   qualitative:
-    - Przechwycono wiedzę krytyczną dla funkcjonowania serwisu
-    - Ograniczono zależność organizacji od pojedynczych ekspertów
-    - Stworzono skalowalny system transferu wiedzy
-    - Umożliwiono mniej doświadczonym pracownikom samodzielne rozwiązywanie najczęstszych problemów
-    - Ustandaryzowano sposób dokumentowania wiedzy technicznej
-    - Stworzono fundament dla dalszego rozwoju wiedzy organizacyjnej
-    - Rozwiązanie jest wykorzystywane do dziś jako podstawowe narzędzie onboardingu serwisu
-    - BPMN został później zaadaptowany do opisu innych procesów organizacyjnych
-    - Inni managerowie korzystali z wypracowanych standardów i szkoleń
+    - Przechwycono wiedzę krytyczną dla funkcjonowania serwisu.
+    - Ograniczono zależność organizacji od pojedynczych ekspertów.
+    - Stworzono skalowalny system transferu wiedzy.
+    - Umożliwiono mniej doświadczonym pracownikom samodzielne rozwiązywanie najczęstszych problemów.
+    - Ustandaryzowano sposób dokumentowania wiedzy technicznej.
+    - Stworzono fundament dla dalszego rozwoju wiedzy organizacyjnej.
+    - Rozwiązanie jest wykorzystywane do dziś jako podstawowe narzędzie onboardingu serwisu.
+    - BPMN został później zaadaptowany do opisu innych procesów organizacyjnych.
+    - Inni managerowie korzystali z wypracowanych standardów i szkoleń.
 
 evidence:
   achievement_ids:
@@ -164,11 +176,13 @@ evidence:
     - Dokumentacja procesu tworzenia wiedzy
 
 lessons_learned:
-  - Wiedza ekspercka staje się wartościowa dla organizacji dopiero wtedy, gdy można ją skutecznie przekazać innym
-  - Dobrze zaprojektowany system wiedzy może skrócić onboarding wielokrotnie bardziej niż dodatkowe szkolenia
-  - Eksperci chętnie dzielą się wiedzą, jeśli otrzymają odpowiednie narzędzia i wsparcie
-  - Graficzna reprezentacja procesów jest skuteczniejsza od samego tekstu przy nauce złożonych zagadnień technicznych
-  - Standaryzacja sposobu tworzenia wiedzy jest równie ważna jak sama wiedza
+  - Wiedza ekspercka staje się wartościowa dla organizacji dopiero wtedy, gdy można ją skutecznie przekazać innym.
+  - Dobrze zaprojektowany system wiedzy może skrócić onboarding wielokrotnie bardziej niż dodatkowe szkolenia.
+  - Eksperci chętnie dzielą się wiedzą, jeśli otrzymają odpowiednie narzędzia, wsparcie oraz poczucie bezpieczeństwa.
+  - Graficzna reprezentacja procesów jest skuteczniejsza od samego tekstu przy nauce złożonych zagadnień technicznych.
+  - Standaryzacja sposobu tworzenia wiedzy jest równie ważna jak sama wiedza.
+  - Recenzowanie materiałów działa najlepiej wtedy, gdy koncentruje się na jakości rozwiązania, a nie ocenie autora.
+  - Zaangażowanie i motywacja zespołu są równie istotne dla sukcesu projektu jak metodologia i narzędzia.
 
 interview_angles:
   - Knowledge Management
@@ -181,10 +195,11 @@ interview_angles:
   - Team Coordination
   - Innovation
   - Continuous Improvement
+  - Knowledge Engineering
+  - Enablement
 
 cv_bullets:
   - Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN i Wiki.js obejmujący 120 schematów diagnostycznych.
   - Skróciłem czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy.
   - Przechwyciłem i ustrukturyzowałem wiedzę ekspercką krytyczną dla funkcjonowania serwisu.
   - Stworzyłem standard dokumentowania wiedzy technicznej wykorzystywany do dziś w procesie onboardingu.
-```
