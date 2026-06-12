@@ -34,8 +34,8 @@ behavioral_signals:
   - feedback_receptiveness
 
 situation: >
-  Po objęciu odpowiedzialności za dział serwisu firma obsługiwała około
-  50 000 urządzeń pracujących na rynku, a ich liczba rosła średnio
+  Po objęciu odpowiedzialności za dział serwisu firma obsługiwała dziesiątki
+  tysięcy urządzeń pracujących na rynku, a ich liczba rosła średnio
   o około 20% rok do roku. W organizacji funkcjonowało przekonanie,
   że serwis nie odbiera telefonów, klienci zbyt długo czekają na pomoc,
   a jedynym rozwiązaniem problemu będzie zwiększenie liczby pracowników
@@ -77,7 +77,7 @@ actions:
   - Stworzyłem pierwszy system pomiarowy dla działu serwisu obejmujący analizę liczby połączeń, czasu rozmów, typów klientów, częstotliwości kontaktów oraz danych ticketowych.
   - Wprowadziłem obowiązek rejestrowania każdego zgłoszenia niezależnie od tego, czy problem został rozwiązany podczas pierwszej rozmowy, czy wymagał dalszej obsługi.
   - Przyjąłem zasadę oddzielania opinii od danych i świadomie wstrzymałem się z formułowaniem wniosków do momentu zbudowania minimalnego systemu pomiarowego.
-  - Przeanalizowałem dane z poprzedniego sezonu obejmujące 5 361 połączeń oraz średni czas rozmowy wynoszący 4 minuty i 1 sekundę, aby określić rzeczywiste obciążenie zespołu.
+  - Przeanalizowałem dane z poprzedniego sezonu obejmujące  kilka tysięcy połączeń oraz średni czas rozmowy, aby określić rzeczywiste obciążenie zespołu.
   - Zidentyfikowałem kluczowe wzorce operacyjne, w tym wpływ sezonowości, temperatury oraz dni tygodnia na liczbę zgłoszeń.
   - Przeanalizowałem ruch telefoniczny po godzinie 15:00 oraz w weekendy, aby zweryfikować biznesową zasadność utrzymywania rozszerzonej dostępności serwisu.
   - Wykazałem, że mniej niż 5% wszystkich połączeń przypadało na wieczory i weekendy, co podważyło potrzebę utrzymywania dodatkowych dyżurów.
@@ -87,7 +87,7 @@ actions:
     - głównymi odbiorcami wsparcia nie byli instalatorzy, lecz klienci końcowi,
     - instalatorzy nie przejmowali odpowiedzialności za znaczną część klientów po montażu,
     - przeciążenie serwisu wynikało nie tylko z przepustowości działu, ale również z wadliwego modelu obsługi posprzedażowej.
-  - Ustaliłem, że 80-90% wszystkich kontaktów pochodziło od klientów końcowych, co całkowicie zmieniło sposób postrzegania problemu przez organizację.
+  - Ustaliłem, że zdecydowana większość wszystkich kontaktów pochodziło od klientów końcowych, co całkowicie zmieniło sposób postrzegania problemu przez organizację.
   - Wykorzystałem dane ticketowe do identyfikacji najczęściej występujących problemów i określenia, które zgłoszenia wymagają eksperta, a które mogą zostać obsłużone przez mniej doświadczonych pracowników.
   - Zaprojektowałem podział pracy pomiędzy szybkie wsparcie telefoniczne oraz zaawansowane przypadki wymagające eksperckiej diagnostyki lub wyjazdu serwisowego.
   - Świadomie budowałem zaufanie zespołu do procesu pomiarowego, podkreślając że dane służą analizie procesów i obciążenia działu, a nie ocenie poszczególnych osób.
@@ -107,10 +107,10 @@ challenges:
 
 results:
   quantitative:
-    - Przeanalizowano wzrost liczby połączeń z 5 361 w sezonie 2022/23 do 11 101 w sezonie 2023/24.
+    - Przeanalizowano wzrost liczby połączeń pomiędzy sezonami.
     - Potwierdzono, że mniej niż 5% ruchu przypadało na godziny wieczorne i weekendy.
-    - Ustalono, że 80-90% wszystkich kontaktów pochodziło od klientów końcowych.
-    - Wsparto wzrost liczby urządzeń na rynku z około 50 000 do około 70 000.
+    - Ustalono, że zdecydowana większość wszystkich kontaktów pochodziło od klientów końcowych.
+    - Wsparto wzrost liczby urządzeń na rynku 20% rok do roku.
     - Rozbudowano strukturę działu z 2 serwisantów Tier 1 i 2 serwisantów Tier 2 do 3 serwisantów Tier 1 i 2 serwisantów Tier 2.
     - W kolejnym sezonie średni czas rozmowy spadł o około 36%.
     - Na podstawie analizy danych opracowano około 15 priorytetowych procedur diagnostycznych.
