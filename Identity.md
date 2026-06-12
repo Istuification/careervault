@@ -30,6 +30,23 @@ Buduję struktury wiedzy, dokumentację i procesy umożliwiające organizacji sk
 
 ---
 
+## Behavioral Principles
+
+Mój sposób pracy opiera się na odpowiedzialności, transparentności oraz ciągłym doskonaleniu. Preferuję otwartą komunikację, merytoryczną dyskusję oraz wspólne rozwiązywanie problemów zamiast działania w oparciu o hierarchię, politykę organizacyjną czy osobiste ambicje.
+
+W codziennej pracy kieruję się następującymi zasadami:
+
+- Biorę odpowiedzialność za rezultaty i konsekwencje podejmowanych decyzji.
+- Koncentruję się na rozwiązywaniu problemów i usprawnianiu procesów zamiast poszukiwaniu winnych.
+- Konstruktywnie kwestionuję istniejące sposoby działania, gdy dostrzegam możliwość poprawy efektywności lub jakości.
+- Aktywnie poszukuję informacji zwrotnej i uwzględniam odmienne perspektywy podczas podejmowania decyzji.
+- Otwarcie komunikuję ryzyka, błędy oraz ograniczenia, aby umożliwić szybką reakcję i wyciąganie wniosków.
+- Udzielam informacji zwrotnej w sposób bezpośredni, rzeczowy i ukierunkowany na poprawę sytuacji.
+- Buduję przewidywalne relacje zawodowe oparte na zaufaniu, szacunku i transparentności.
+- W przypadku przeciążenia lub przeszkód komunikuję je odpowiednio wcześnie, zamiast dopuszczać do niewidocznego narastania problemów.
+
+---
+
 ## Core Values
 
 ### Responsibility
@@ -158,6 +175,7 @@ Naturalnie zauważam miejsca, w których proces, komunikacja, struktura wiedzy l
 
 ---
 
+
 ## Professional Strengths
 
 ### Systems Thinking
@@ -190,7 +208,51 @@ Regularnie rozwijam kompetencje zarówno zawodowe, jak i prywatne. Szczególnie 
 
 ---
 
+## Evidence Summary
+
+Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w osiągnięciach, kompetencjach oraz historiach zawodowych zgromadzonych w Career Vault.
+
+### Najsilniejsze Obszary Kompetencyjne
+
+- Projektowanie i usprawnianie procesów operacyjnych.
+- Myślenie systemowe i analiza zależności pomiędzy procesami.
+- Zarządzanie wiedzą oraz dokumentacją organizacyjną.
+- Koordynacja współpracy między działami i interesariuszami.
+- Podejmowanie decyzji w oparciu o dane i mierzalne wskaźniki.
+- Budowanie skalowalnych rozwiązań organizacyjnych.
+- Samodzielne zdobywanie wiedzy i szybkie rozwijanie nowych kompetencji.
+
+Potwierdzenie:
+ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014  
+STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009
+
+### Najsilniejsze Obszary Postawy
+
+- Branie odpowiedzialności za wyniki i powierzony obszar.
+- Koncentracja na rozwiązaniach zamiast szukania winnych.
+- Konstruktywne podważanie status quo w oparciu o argumenty i dane.
+- Otwartość na informację zwrotną i inne perspektywy.
+- Transparentna komunikacja problemów, ryzyk i błędów.
+- Budowanie poczucia bezpieczeństwa i przewidywalności we współpracy.
+
+Potwierdzenie:
+ACH-001, ACH-003, ACH-005, ACH-012  
+STORY-002, STORY-003, STORY-004, STORY-005, STORY-009
+
+---
+
 ## Development Areas
+
+Obecny rozwój zawodowy koncentruje się przede wszystkim na zwiększaniu skuteczności liderskiej oraz wpływu organizacyjnego, a nie na poszerzaniu kompetencji technicznych.
+
+Najważniejsze obszary rozwoju obejmują:
+
+- Większą asertywność w trudnych rozmowach i sytuacjach konfliktowych.
+- Wcześniejsze sygnalizowanie ryzyk, ograniczeń oraz problemów organizacyjnych.
+- Skuteczniejsze stawianie granic i ograniczanie nadmiernego przejmowania odpowiedzialności za obszary należące do innych osób.
+- Delegowanie odpowiedzialności oraz budowanie odpowiedzialności po stronie współpracowników.
+- Egzekwowanie ustalonych standardów i zobowiązań z większą konsekwencją.
+- Rozwijanie umiejętności przywództwa poprzez wpływ, coaching i wspieranie rozwoju innych.
 
 Powiązane obszary rozwoju zawodowego zostały opisane w module Development Areas:
 
