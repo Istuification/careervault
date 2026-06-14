@@ -10,10 +10,11 @@ level: Advanced
 
 summary: >
   Projektowanie i wdrażanie automatyzacji procesów
-  biznesowych w celu ograniczenia pracy ręcznej,
-  standaryzacji działań oraz zwiększenia skalowalności
-  organizacji. Obejmuje analizę procesów, budowę workflow
-  oraz integrację działań pomiędzy systemami.
+  biznesowych poprzez standaryzację przepływu informacji,
+  reguł biznesowych i działań operacyjnych.
+  Obejmuje analizę procesów, budowę workflow,
+  automatyzację zadań oraz integrację wielu obszarów
+  organizacji.
 
 capabilities:
   - workflow-design
@@ -36,6 +37,7 @@ tools:
 
 evidence:
   - ACH-001
+  - ACH-002
   - ACH-004
   - ACH-005
   - ACH-007
@@ -46,7 +48,7 @@ experience:
   years: 5
 
 career_relevance:
-  product_manager: 7
+  product_manager: 8
   operations_manager: 10
   process_manager: 10
   service_manager: 9
