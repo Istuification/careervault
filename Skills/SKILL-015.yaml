@@ -10,8 +10,12 @@ level: Advanced
 
 summary: >
   Analiza oraz projektowanie struktur organizacyjnych,
-  podziału odpowiedzialności, przepływu informacji
-  i współpracy pomiędzy ludźmi oraz zespołami.
+  modeli operacyjnych, podziału odpowiedzialności,
+  przepływu informacji i współpracy pomiędzy ludźmi
+  oraz zespołami. Obejmuje identyfikację ograniczeń
+  organizacyjnych, projektowanie ról, procesów
+  i mechanizmów koordynacji wspierających skalowanie
+  organizacji.
 
 capabilities:
   - organizational-analysis
@@ -21,11 +25,15 @@ capabilities:
   - workforce-planning
   - organizational-scaling
   - governance-design
+  - knowledge-system-design
+  - operating-model-design
 
 methods:
   - Organizational Diagnostics
   - Systems Thinking
   - Responsibility Mapping
+  - Capacity Planning
+  - Root Cause Analysis
 
 tools:
   - BPMN 2.0
@@ -34,6 +42,9 @@ tools:
 
 evidence:
   - ACH-001
+  - ACH-003
+  - ACH-004
+  - ACH-008
   - ACH-010
   - ACH-012
   - ACH-P004
