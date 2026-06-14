@@ -11,9 +11,11 @@ level: Advanced
 summary: >
   Planowanie, wdrażanie i utrwalanie zmian
   organizacyjnych, procesowych oraz systemowych.
-  Obejmuje analizę obecnego stanu, projektowanie
-  zmian, komunikację, wdrożenie oraz wsparcie
-  organizacji w adaptacji do nowych sposobów pracy.
+  Obejmuje diagnozowanie rzeczywistych przyczyn
+  problemów, projektowanie zmian, komunikację,
+  budowanie zaangażowania interesariuszy oraz
+  wspieranie organizacji w adaptacji do nowych
+  sposobów pracy.
 
 capabilities:
   - organizational-transformation
@@ -23,11 +25,15 @@ capabilities:
   - adoption-support
   - organizational-stabilization
   - change-implementation
+  - stakeholder-alignment
+  - resistance-management
 
 methods:
   - Continuous Improvement
   - Incremental Change
   - Organizational Diagnostics
+  - Feedback Loops
+  - Stakeholder Analysis
 
 tools:
   - BPMN 2.0
@@ -36,8 +42,10 @@ tools:
 
 evidence:
   - ACH-001
+  - ACH-003
   - ACH-004
   - ACH-005
+  - ACH-008
   - ACH-012
 
 experience:
