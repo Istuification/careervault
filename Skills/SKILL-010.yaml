@@ -11,9 +11,10 @@ level: Advanced
 summary: >
   Organizacja, rozwój i optymalizacja procesów
   serwisowych. Obejmuje projektowanie workflow,
-  zarządzanie zgłoszeniami, analizę obciążenia,
-  rozwój zespołów serwisowych oraz budowę systemów
-  wspierających efektywną obsługę klientów.
+  zarządzanie zgłoszeniami, analizę danych
+  operacyjnych, rozwój zespołów serwisowych oraz
+  budowę systemów wspierających efektywną obsługę
+  klientów.
 
 capabilities:
   - service-process-design
@@ -23,6 +24,8 @@ capabilities:
   - service-scaling
   - service-analysis
   - service-standardization
+  - workforce-planning
+  - service-knowledge-management
 
 methods:
   - BPMN 2.0
@@ -46,7 +49,7 @@ experience:
   years: 2
 
 career_relevance:
-  product_manager: 6
+  product_manager: 7
   operations_manager: 10
   process_manager: 9
   service_manager: 10
