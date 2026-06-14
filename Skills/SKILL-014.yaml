@@ -10,9 +10,12 @@ level: Advanced
 
 summary: >
   Planowanie, organizacja i koordynacja projektów
-  obejmujących wiele osób, zależności, terminów
-  oraz zasobów. Obejmuje zarządzanie harmonogramem,
-  ryzykiem, komunikacją i realizacją celów.
+  realizowanych w warunkach niepewności, zmieniających
+  się wymagań i wielu interesariuszy. Obejmuje
+  definiowanie celów, odkrywanie wymagań, zarządzanie
+  ryzykiem, koordynację działań oraz doprowadzanie
+  inicjatyw do wdrożenia pomimo ograniczeń
+  organizacyjnych i informacyjnych.
 
 capabilities:
   - project-planning
@@ -22,17 +25,24 @@ capabilities:
   - project-execution
   - milestone-management
   - project-documentation
+  - stakeholder-alignment
+  - stakeholder-alignment
+  - ambiguity-management
 
 methods:
-  - Work Breakdown Structure
-  - Critical Path Thinking
+  - Iterative Planning
+  - Stakeholder Analysis
   - Risk Management
+  - Incremental Delivery
 
 tools:
   - Excel
   - Google Sheets
 
 evidence:
+  - ACH-001
+  - ACH-004
+  - ACH-005
   - ACH-008
   - ACH-P002
   - ACH-P003
@@ -42,10 +52,10 @@ experience:
   years: 6
 
 career_relevance:
-    product_manager: 8
-    operations_manager: 8
-    process_manager: 7
-    service_manager: 6
+  product_manager: 9
+  operations_manager: 8
+  process_manager: 8
+  service_manager: 7
 
 keywords:
   - project management

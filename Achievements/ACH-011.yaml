@@ -37,10 +37,11 @@ actions:
   - wdrożenie rozwiązania dla handlowców
 
 impact:
-  - przyspieszenie przygotowywania ofert
-  - ograniczenie ręcznych obliczeń
-  - zmniejszenie ryzyka błędów kalkulacyjnych
-  - standaryzacja procesu doboru komponentów
+  - skrócenie czasu przygotowania wyceny i list materiałowych z około 2–6 godzin do około 10 minut
+  - wsparcie procesu obsługującego około 60–80 ofert miesięcznie
+  - ograniczenie ręcznych obliczeń i ryzyka błędów kalkulacyjnych
+  - standaryzacja procesu doboru komponentów i przygotowania realizacji
+  - utrzymanie rozwiązania w aktywnym wykorzystaniu przez około 4 lata
 
 importance: 7
 

@@ -101,23 +101,25 @@ Poszczególne warstwy są ze sobą powiązane i tworzą spójny model wiedzy o k
 
 # Wartości projektanta
 
-Osobiście jestem zgodny co do popularnego wzoru opisującaego wartość pracownika:
+Osobiście jestem zwolennikiem popularnego wzoru opisującego wartość pracownika:
 
 ```
-Wartość = (Wiedza + Kompetencje) * Postawa
+Wartość = (Wiedza + Kompetencje) × Postawa
 ```
 
-Chciałem by Career Vault odzworowywał to przeświadczenie. W świecie AI, wiedza jest szeroko i łatwo dostępna i odgrywa coraz mniejszą rolę.
+Chciałem, aby Career Vault odzwierciedlał to przeświadczenie.
 
-W związu z tym, zdecydowałem się na umieszczenie w Career Vault dodatkowych sekcji mówiących o postawie. 
+W świecie AI wiedza staje się coraz łatwiej dostępna i coraz rzadziej stanowi trwałą przewagę konkurencyjną.
 
-We wzorze, Postawa jest dżwignią dla całej wartości. Jeśli wyrzucimy z równania Wiedzę, to tak naprawdę wzór zaczyna wyglądać następująco:
+Z tego powodu zdecydowałem się uwzględnić w Career Vault nie tylko doświadczenia i kompetencje, ale również informacje dotyczące postawy, sposobu podejmowania decyzji oraz wzorców zachowań.
+
+Jeżeli usuniemy z równania wiedzę, pozostaje:
 
 ```
-Wartość = Kompetencje * Postawa
+Wartość = Kompetencje × Postawa
 ```
 
-W związku z tym, Career Vault konceturje się na kompetencjach ale także posiada informacje o postawie właściciela.
+Dlatego Career Vault koncentruje się zarówno na kompetencjach, jak i na zachowaniach, które wpływają na skuteczność ich wykorzystania.
 
 ---
 
@@ -167,6 +169,10 @@ Ustrukturyzowane dane zapisane w Markdown i YAML umożliwiają:
 * generowanie dokumentów,
 * przygotowanie do rozmów kwalifikacyjnych,
 * budowę systemów typu RAG.
+
+Repozytorium przechowuje nie tylko fakty, ale również ich kontekst, zależności oraz interpretację.
+
+Dzięki temu AI może analizować nie pojedyncze osiągnięcia, lecz całe wzorce działania, sposoby rozwiązywania problemów oraz rozwój kompetencji w czasie.
 
 W praktyce oznacza to możliwość prowadzenia rozmowy z własną historią zawodową w taki sam sposób, w jaki organizacje wykorzystują własne bazy wiedzy.
 

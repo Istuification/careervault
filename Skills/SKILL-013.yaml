@@ -10,9 +10,10 @@ level: Advanced
 
 summary: >
   Przygotowywanie i prowadzenie wystąpień publicznych,
-  prezentacji oraz spotkań dla większych grup odbiorców.
-  Obejmuje budowanie przekazu, utrzymywanie uwagi
-  uczestników oraz skuteczne przekazywanie wiedzy.
+  szkoleń, prezentacji oraz spotkań dla większych grup
+  odbiorców. Obejmuje budowanie przekazu, angażowanie
+  uczestników, moderowanie dyskusji oraz skuteczne
+  przekazywanie wiedzy technicznej i organizacyjnej.
 
 capabilities:
   - public-speaking
@@ -22,6 +23,8 @@ capabilities:
   - verbal-communication
   - knowledge-sharing
   - event-speaking
+  - training-delivery
+  - group-facilitation
 
 methods:
   - Storytelling
@@ -35,6 +38,8 @@ tools:
 
 evidence:
   - ACH-P001
+  - ACH-P002
+  - ACH-P003
   - ACH-006
 
 experience:

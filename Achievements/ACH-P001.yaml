@@ -48,18 +48,24 @@ impact:
 importance: 8
 
 evidence:
-  - ponad 6 lat aktywności
+  - około 7 lat aktywności
+  - około 240 wystąpień publicznych
   - audytorium 60-120 osób
-  - prezentacje 10-30 minut
+  - prezentacje 5-30 minut
   - organizacja wydarzeń
   - wsparcie AV
 
 metrics:
+  years_active: 7
+
   audience_size:
     min: 60
     max: 120
 
-  years_active: 6
+  estimated_presentations: 240
+
+  estimated_speaking_hours: 44
+
 
 star_candidates:
   - public-speaking

@@ -54,11 +54,11 @@ impact:
 importance: 10
 
 evidence:
-  - workflow gwarancyjne
-  - polityka gwarancyjna
+  - workflow operacyjne
+  - dokumentacja procesowa
   - automatyzacje CRM
-  - dokumentacja DTR
-  - warunki gwarancyjne
+  - dokumentacja produktowa
+  - materiały szkoleniowe
 
 related_tools:
   - Bitrix24

@@ -48,32 +48,46 @@ actions:
   - zarządzanie listą uczestników
   - organizacja komunikacji uczestników
   - przygotowanie dokumentacji organizacyjnej
-  - koordynacja transportu
+  - koordynacja transportu uczestników pomiędzy wieloma lokalizacjami
+  - organizacja kierowców oraz pojazdów wspierających wydarzenie
+  - przygotowanie procedur awaryjnych i komunikacji kryzysowej
+  - monitorowanie lokalizacji uczestników podczas podróży i wydarzenia
   - planowanie bezpieczeństwa i zarządzanie ryzykiem
   - tworzenie materiałów informacyjnych
   - organizacja działań po zakończeniu wydarzenia
 
 impact:
-  - stworzenie powtarzalnego procesu organizacji wydarzeń
-  - coroczna realizacja wielodniowych wyjazdów
-  - skuteczna koordynacja uczestników i logistyki
-  - budowanie zaangażowanej społeczności uczestników
-  - ograniczenie ryzyka organizacyjnego poprzez standaryzację procedur
-  - przygotowanie kompletnej dokumentacji wydarzeń
+  - organizacja cyklicznych, czterodniowych wydarzeń dla 20–30 uczestników
+  - koordynacja logistyki obejmującej transport, noclegi i działania terenowe
+  - stworzenie powtarzalnego procesu organizacyjnego wykorzystywanego przez kolejne lata
+  - przygotowanie procedur ograniczających ryzyko organizacyjne i bezpieczeństwa
+  - budowanie zaangażowanej społeczności liczącej łącznie ponad 140 uczestników na przestrzeni kilku lat
 
 importance: 8
 
 evidence:
-  - wielodniowe spływy kajakowe
+  - 7 zorganizowanych wydarzeń
+  - grupy 20-30 uczestników
   - dokumentacja organizacyjna licząca kilkanaście stron
   - harmonogramy wydarzeń
   - procedury bezpieczeństwa
   - budżety i rozliczenia
-  - zarządzanie uczestnikami
-  - koordynacja transportu
-  - materiały informacyjne
-  - prezentacje dla uczestników
+  - koordynacja transportu wieloosobowych grup
 
+metrics:
+  years_active: 7
+
+  events_organized: 7
+
+  participant_count:
+    min: 20
+    max: 30
+
+  event_duration_days: 4
+
+  total_participants_supported: 140-210
+
+  
 related_tools:
   - Google Sheets
   - Google Forms

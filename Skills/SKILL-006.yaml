@@ -11,8 +11,10 @@ level: Expert
 summary: >
   Tworzenie, standaryzacja i utrzymywanie
   dokumentacji technicznej, operacyjnej oraz
-  produktowej wspierającej sprzedaż, serwis,
-  onboarding oraz rozwój produktów.
+  produktowej. Obejmuje przekształcanie wiedzy
+  eksperckiej w instrukcje, procedury, bazy wiedzy,
+  materiały szkoleniowe i dokumentację wspierającą
+  skalowanie organizacji.
 
 capabilities:
   - technical-writing
@@ -22,11 +24,13 @@ capabilities:
   - warranty-documentation
   - process-documentation
   - knowledge-documentation
+  - information-architecture
+  - information-architecture
 
 methods:
   - BPMN 2.0
-  - Documentation Standards
-  - Structured Knowledge Management
+  - Documentation Driven Development
+  - Knowledge Base Design
 
 tools:
   - Markdown
@@ -36,10 +40,12 @@ tools:
   - diagrams.net
 
 evidence:
+  - ACH-001
   - ACH-003
   - ACH-005
   - ACH-008
   - ACH-014
+  - ACH-P004
 
 experience:
   first_used: 2020
@@ -48,7 +54,7 @@ experience:
 career_relevance:
     product_manager: 9
     operations_manager: 8
-    process_manager: 8
+    process_manager: 9
     service_manager: 8
 
 keywords:

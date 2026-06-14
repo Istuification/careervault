@@ -142,16 +142,10 @@ evidence:
   achievement_ids:
     - ACH-XXX
   supporting_materials:
-    - Umowa typ 1
-    - Umowa typ 2
-    - Umowa typ 3
-    - Regulaminy gwarancyjne
-    - OWS
-    - Formularze gwarancyjne
-    - Workflow rejestracji gwarancji
-    - Materiały szkoleniowe
-    - Materiały filmowe
-    - CRM i baza numerów seryjnych
+  - Dokumentacja procesowa
+  - Dokumentacja projektowa
+  - Materiały szkoleniowe
+  - Workflow operacyjne
 
 lessons_learned:
   - Najtrudniejsze problemy organizacyjne rzadko są problemami pojedynczego działu.

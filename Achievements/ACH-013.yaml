@@ -34,20 +34,19 @@ situation: >
   sposobu pracy pomiędzy działami.
 
 actions:
-  - administracja Bitrix24
-  - projektowanie workflow operacyjnych
-  - rozwój automatyzacji CRM
-  - onboarding systemowy pracowników
-  - wsparcie wdrożeń międzydziałowych
-  - administracja systemów wspierających działalność firmy
-  - rozwój procesów opartych o systemy operacyjne
+  - pełnienie roli administratora kluczowych systemów operacyjnych
+  - zarządzanie konfiguracją Bitrix24
+  - rozwój architektury workflow
+  - projektowanie automatyzacji międzydziałowych
+  - onboarding użytkowników systemów
+  - wsparcie użytkowników i rozwiązywanie problemów operacyjnych
+  - integracja nowych procesów z istniejącym środowiskiem systemowym
 
 impact:
-  - zwiększenie standaryzacji procesów
-  - ograniczenie pracy wykonywanej ręcznie
-  - poprawa przepływu informacji między działami
-  - rozwój skalowalnego środowiska operacyjnego
-  - wsparcie wielu obszarów organizacji jednym ekosystemem systemów
+  - wsparcie operacyjne wielu działów organizacji
+  - rozwój środowiska wykorzystywanego przez sprzedaż, serwis, instalacje i administrację
+  - utrzymanie spójności procesów pomimo wzrostu organizacji
+  - ograniczenie liczby procesów realizowanych poza systemem
 
 importance: 8
 

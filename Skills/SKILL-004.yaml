@@ -9,10 +9,12 @@ importance: 10
 level: Advanced
 
 summary: >
-  Zarządzanie rozwojem produktów technicznych,
-  koordynacja wdrożeń, tworzenie dokumentacji,
-  współpraca międzydziałowa oraz budowa procesów
-  wspierających sprzedaż, serwis i obsługę klienta.
+  Zarządzanie rozwojem produktów technicznych
+  obejmujące analizę potrzeb interesariuszy,
+  projektowanie procesów wspierających produkt,
+  koordynację wdrożeń, dokumentację,
+  obsługę posprzedażową oraz współpracę
+  międzydziałową w całym cyklu życia produktu.
 
 capabilities:
   - product-development
@@ -22,6 +24,8 @@ capabilities:
   - warranty-management
   - partner-enablement
   - product-lifecycle-management
+  - requirements-gathering
+  - service-design
 
 methods:
   - Product Discovery
@@ -37,7 +41,9 @@ evidence:
   - ACH-005
   - ACH-006
   - ACH-008
+  - ACH-010
   - ACH-014
+  - ACH-013
 
 experience:
   first_used: 2022
@@ -46,7 +52,7 @@ experience:
 career_relevance:
     product_manager: 10
     operations_manager: 8
-    process_manager: 7
+    process_manager: 8
     service_manager: 7
 
 keywords:

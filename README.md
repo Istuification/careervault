@@ -85,6 +85,23 @@ Repozytorium powinno z czasem zwiększać swoją wartość, a nie poziom skompli
 
 ---
 
+## Warstwa interpretacyjna
+
+Career Vault przechowuje nie tylko dane źródłowe, ale również ich interpretację.
+
+Funkcję tę pełnią dokumenty takie jak:
+
+* Identity
+* AI Profile
+
+Ich zadaniem nie jest dostarczanie nowych faktów.
+
+Ich rolą jest synteza informacji pochodzących z pozostałych modułów oraz identyfikowanie wzorców pojawiających się w historii zawodowej.
+
+Dzięki temu zarówno ludzie, jak i systemy AI mogą szybciej zrozumieć znaczenie zgromadzonych danych oraz ograniczyć ryzyko błędnej interpretacji pojedynczych doświadczeń.
+
+---
+
 # Model wiedzy Career Vault
 
 Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
@@ -125,7 +142,9 @@ Każda warstwa odpowiada na inne pytanie i pełni inną rolę.
 CareerVault/
 
 ├── README.md
+├── About.md
 ├── Identity.md
+├── AI_Profile.md
 ├── Experience.md
 │
 ├── Achievements/
@@ -273,6 +292,30 @@ Stanowią uporządkowany zapis doświadczeń rozwojowych wynikających z analizy
 
 ---
 
+## AI Profile
+
+Odpowiada na pytanie:
+
+> Jak interpretować zgromadzone informacje?
+
+AI Profile jest dokumentem przeznaczonym przede wszystkim dla systemów AI.
+
+Opisuje:
+
+* dominujące wzorce zawodowe,
+* preferowany sposób działania,
+* charakterystyczne kompetencje,
+* typowe role organizacyjne,
+* mocne strony,
+* ograniczenia interpretacyjne,
+* rekomendowany sposób analizy repozytorium.
+
+AI Profile nie jest źródłem nowych informacji.
+
+Jest warstwą interpretacyjną opartą na istniejących danych.
+
+---
+
 # Relacje pomiędzy modułami
 
 Career Vault jest systemem powiązanych informacji.
@@ -320,12 +363,14 @@ Career Vault został zaprojektowany jako baza wiedzy możliwa do wykorzystania p
 
 Rekomendowany proces:
 
-1. Określenie celu lub wymaganych kompetencji.
-2. Wyszukanie odpowiednich Skills.
-3. Odnalezienie powiązanych Achievements.
-4. Wyszukanie odpowiednich Stories.
-5. Uwzględnienie powiązanych Development Areas.
-6. Wygenerowanie odpowiedzi, dokumentu lub rekomendacji.
+1. Określenie celu lub wymagań.
+2. Analiza AI Profile.
+3. Analiza Identity.
+4. Wyszukanie odpowiednich Skills.
+5. Analiza powiązanych Achievements.
+6. Analiza Stories.
+7. Uwzględnienie Development Areas.
+8. Wygenerowanie odpowiedzi, rekomendacji lub dokumentu.
 
 Przykładowe zastosowania:
 
@@ -393,8 +438,9 @@ Podczas dodawania nowych informacji:
 5. Łącz Skills z Achievementami.
 6. Łącz Stories z Achievementami.
 7. Łącz Development Areas ze Stories i Achievementami.
-8. Preferuj jakość nad ilość.
-9. Rozwijaj repozytorium stopniowo.
+8. Oddzielaj fakty od interpretacji.
+9. Preferuj jakość nad ilość.
+10. Rozwijaj repozytorium stopniowo.
 
 ---
 
