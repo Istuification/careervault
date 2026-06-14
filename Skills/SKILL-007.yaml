@@ -23,11 +23,13 @@ capabilities:
   - partner-enablement
   - technical-training
   - curriculum-development
+  - presentation-delivery
+  - instructional-design
 
 methods:
-  - Adult Learning Principles
+  - Onboarding Design
   - Documentation Driven Training
-  - Knowledge Transfer Frameworks
+  - Structured Knowledge Transfer
 
 tools:
   - PowerPoint
@@ -37,13 +39,15 @@ tools:
 
 evidence:
   - ACH-003
+  - ACH-004
   - ACH-005
   - ACH-006
+  - ACH-012
   - ACH-P001
 
 experience:
-  first_used: 2023
-  years: 3
+  first_used: 2019
+  years: 7
 
 career_relevance:
   product_manager: 9
