@@ -11,9 +11,10 @@ level: Expert
 summary: >
   Pozyskiwanie, organizowanie, dokumentowanie
   i udostępnianie wiedzy w organizacji.
-  Obejmuje tworzenie baz wiedzy, procedur,
-  materiałów szkoleniowych oraz systemów
-  wspierających transfer wiedzy.
+  Obejmuje przekształcanie wiedzy eksperckiej
+  w skalowalne procesy, dokumentację,
+  bazy wiedzy i materiały szkoleniowe
+  wspierające transfer kompetencji.
 
 capabilities:
   - knowledge-capture
@@ -36,18 +37,19 @@ tools:
   - Markdown
 
 evidence:
+  - ACH-001
   - ACH-003
+  - ACH-005
   - ACH-006
   - ACH-014
-  - ACH-P001
   - ACH-P004
 
 experience:
-  first_used: 2023
-  years: 2
+  first_used: 2020
+  years: 6
 
 career_relevance:
-  product_manager: 8
+  product_manager: 9
   operations_manager: 9
   process_manager: 10
   knowledge_manager: 10
