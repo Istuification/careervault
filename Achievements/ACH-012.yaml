@@ -32,29 +32,28 @@ situation: >
   serwisu funkcjonujący bez stabilnego modelu operacyjnego.
 
 actions:
-  - przejęcie odpowiedzialności za dział
-  - organizacja pracy zespołu
-  - wdrożenie procesów operacyjnych
-  - uporządkowanie przepływu informacji
-  - rozwój onboardingu
-  - wsparcie rekrutacji i rozwoju kompetencji
-  - przygotowanie działu do przekazania nowemu kierownikowi
+  - utrzymanie kluczowych kompetencji eksperckich
+  - wsparcie zespołu w okresie niepewności organizacyjnej
+  - rozwój nowych pracowników
+  - budowanie kultury współpracy i odpowiedzialności
+  - wsparcie rekrutacji
+  - przygotowanie sukcesji kierowniczej
+  - przekazanie działu nowemu managerowi
 
 impact:
-  - ustabilizowanie pracy działu
-  - poprawa organizacji operacyjnej
-  - usprawnienie wdrażania nowych pracowników
-  - skuteczne przekazanie odpowiedzialności nowemu kierownikowi
-  - ograniczenie ryzyka operacyjnego
+  - utrzymanie kluczowych kompetencji eksperckich w okresie wysokiego ryzyka rotacji
+  - wdrożenie nowych pracowników do samodzielnej pracy
+  - przygotowanie działu do płynnego przejęcia przez nowego kierownika
+  - ograniczenie ryzyka utraty wiedzy organizacyjnej
 
 importance: 9
 
 evidence:
-  - koordynacja zespołu
   - onboarding
-  - workflow serwisowe
-  - przekazanie działu nowemu kierownikowi
-
+  - materiały rozwojowe
+  - sukcesja kierownicza
+  - rozwój kompetencji zespołu
+  
 star_candidates:
   - leadership
   - ownership
