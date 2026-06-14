@@ -12,8 +12,10 @@ summary: >
   Budowanie i utrzymywanie skutecznej współpracy
   pomiędzy osobami, zespołami oraz organizacjami
   posiadającymi różne cele, potrzeby i oczekiwania.
-  Obejmuje komunikację, negocjacje, uzgadnianie
-  priorytetów oraz koordynację działań.
+  Obejmuje identyfikację interesariuszy,
+  uzgadnianie priorytetów, rozwiązywanie konfliktów
+  oraz przekładanie perspektyw różnych grup na
+  wspólne rozwiązania.
 
 capabilities:
   - stakeholder-alignment
@@ -23,11 +25,13 @@ capabilities:
   - conflict-resolution
   - expectation-management
   - relationship-building
+  - requirements-facilitation
+  - influence-without-authority
 
 methods:
   - Active Listening
+  - Facilitation
   - Consensus Building
-  - Stakeholder Mapping
 
 tools:
   - Bitrix24
@@ -35,11 +39,13 @@ tools:
   - Excel
 
 evidence:
+  - ACH-001
+  - ACH-004
   - ACH-005
   - ACH-006
   - ACH-008
+  - ACH-012
   - ACH-P002
-  - ACH-P003
 
 experience:
   first_used: 2020
