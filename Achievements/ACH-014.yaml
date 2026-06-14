@@ -1,6 +1,6 @@
 id: ACH-014
 
-title: Standaryzacja dokumentacji technicznej i operacyjnej
+title: Budowa standardów dokumentacyjnych wspierających rozwój organizacji
 
 company: KIPI
 
@@ -43,11 +43,11 @@ actions:
   - współpraca z działami technicznymi i prawnikami
 
 impact:
-  - zwiększenie spójności dokumentacji
-  - ujednolicenie standardów organizacyjnych
-  - poprawa jakości materiałów dla klientów i partnerów
-  - ograniczenie niejednoznaczności proceduralnych
-  - wsparcie wdrożeń nowych produktów i procesów
+  - stworzenie jednolitych standardów dokumentacyjnych wspierających wiele obszarów organizacji
+  - ograniczenie ryzyka błędnych interpretacji procedur i zasad współpracy
+  - usprawnienie wdrażania nowych produktów, procesów i partnerów
+  - zwiększenie spójności komunikacji pomiędzy organizacją, klientami i partnerami
+  - wsparcie skalowania organizacji poprzez formalizację wiedzy operacyjnej i produktowej
 
 importance: 8
 
