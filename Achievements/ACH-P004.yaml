@@ -46,20 +46,32 @@ actions:
   - tworzenie systemów wspierających podejmowanie decyzji
 
 impact:
-  - stworzenie wielu samodzielnie zaprojektowanych systemów organizacyjnych
-  - ograniczenie chaosu informacyjnego w prowadzonych projektach
-  - zwiększenie możliwości skalowania projektów prywatnych
-  - usprawnienie dostępu do informacji i wiedzy
-  - wypracowanie własnych metod organizacji procesów i dokumentacji
+  - stworzenie wielu niezależnych systemów organizacyjnych i baz wiedzy wykorzystywanych w projektach prywatnych
+  - uporządkowanie złożonych zbiorów informacji poprzez projektowanie struktur danych, dokumentacji i workflow
+  - zwiększenie możliwości skalowania projektów wymagających koordynacji ludzi, wiedzy i zasobów
+  - wypracowanie własnych metod organizacji informacji i podejmowania decyzji
+  - rozwój kompetencji systemowego rozwiązywania problemów poprzez wieloletnią praktykę
 
 importance: 10
+
+metrics:
+  years_active: 7
+
+  systems_created: 5_plus
+
+  domains_supported:
+    - knowledge_management
+    - community_management
+    - event_operations
+    - worldbuilding
+    - personal_organization
 
 evidence:
   - Career Vault
   - baza danych KŁS
   - organizacja spływów kajakowych
   - organizacja zaręczyn i wesela
-  - dokumentacja świata Rune Reach
+  - dokumentacja świata Rune Reach (autorski swiat dla TTRPG)
   - systemy zarządzania wiedzą dla projektów prywatnych
 
 star_candidates:
