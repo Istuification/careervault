@@ -11,9 +11,10 @@ level: Advanced
 summary: >
   Projektowanie, rozwój i administracja systemów
   wspierających działalność organizacji. Obejmuje
-  analizę procesów biznesowych, konfigurację narzędzi,
-  integrację systemów oraz rozwój środowisk wspierających
-  codzienną pracę wielu działów.
+  analizę procesów biznesowych, przekładanie ich
+  na rozwiązania systemowe, integrację narzędzi
+  oraz rozwój środowisk wspierających codzienną
+  pracę wielu działów.
 
 capabilities:
   - business-systems-design
@@ -23,6 +24,8 @@ capabilities:
   - requirements-analysis
   - digitalization
   - operational-systems
+  - workflow-automation
+  - process-to-system-design
 
 methods:
   - Business Process Analysis
@@ -37,6 +40,8 @@ tools:
 
 evidence:
   - ACH-001
+  - ACH-002
+  - ACH-004
   - ACH-005
   - ACH-007
   - ACH-013
