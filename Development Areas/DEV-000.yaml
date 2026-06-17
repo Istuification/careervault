@@ -1,0 +1,94 @@
+id: DEV-000
+
+title: Psychometric and Talent Blueprint
+
+summary: >
+  Centralny rejestr i synteza zwalidowanych danych psychometrycznych
+  pochodzących z oficjalnych badań CliftonStrengths 34 (Gallup) oraz
+  IPIP-NEO-PI-R (Wielka Piątka). Dokument stanowi warstwę interpretacyjną
+  wyjaśniającą naturalne mechanizmy poznawcze, motywatory, styl pracy
+  oraz dynamikę rozwoju osobistego opisaną w pozostałych modułach systemu.
+
+category: Diagnostics
+
+status: Stable
+
+sources:
+  psychometric_tests:
+    - CliftonStrengths 34 (Gallup) - Data badania: 2026-06-17
+    - IPIP-NEO-PI-R (Big Five) via OpenPsychometrics
+
+observed_pattern:
+  - Dominacja procesów myślenia strategicznego i analitycznego nad działaniem intuicyjnym.
+  - Silne zorientowanie na psychologiczną współodpowiedzialność i etykę pracy.
+  - Wysokie zapotrzebowanie na złożone stymulacje intelektualne przy jednoczesnej potrzebie harmonii relacyjnej.
+
+verified_data:
+  clifton_strengths_top_10:
+    1: Uczenie się (Learner - Myślenie Strategiczne)
+    2: Pryncypialność (Belief - Wykonywanie)
+    3: Strateg (Strategic - Myślenie Strategiczne)
+    4: Współzależność (Connectedness - Budowanie Relacji)
+    5: Analityk (Analytical - Myślenie Strategiczne)
+    6: Odpowiedzialność (Responsibility - Wykonywanie)
+    7: Bliskość (Relator - Budowanie Relacji)
+    8: Indywidualizacja (Individualization - Budowanie Relacji)
+    9: Rozwijanie Innych (Developer - Budowanie Relacji)
+    10: Intelekt (Intellection - Myślenie Strategiczne)
+
+  big_five_core_domains:
+    neuroticism:
+      score: 3.53
+      percentile: 45
+      interpretation: Przeciętna, zdrowa reaktywność emocjonalna i stabilna odporność na stres.
+    extraversion:
+      score: Umiarkowanie wysoki
+      distinct_facet: "Poszukiwanie Doznań (Excitement-Seeking): Maksymalny wskaźnik paska."
+      interpretation: Selektowna towarzyskość, wysoka asertywność komunikacyjna i silna potrzeba intensywnych bodźców intelektualnych/projektowych.
+    agreeableness:
+      score: Bardzo wysoki
+      interpretation: Ekstremalnie wysoka koncyliacyjność, empatia, nastawienie na kooperację i unikanie destrukcyjnych konfliktów.
+    conscientiousness:
+      score: Wysoki
+      interpretation: Silna samodyscyplina, rzetelność, wysoka organizacja pracy i dążenie do doskonałości egzekucyjnej.
+    openness_to_experience:
+      score: Umiarkowanie wysoki
+      interpretation: Wysoka ciekawość poznawcza, elastyczność intelektualna i otwartość na innowacje.
+
+behavioral_synergies:
+  - theme: "The Strategic Architect (Uczenie się #1 + Strateg #3 + Analityk #5 + Excitement-Seeking)"
+    description: >
+      Potrzeba nowości i adrenaliny manifestuje się w sferze poznawczej. Największą efektywność
+      osiągam wchodząc w chaotyczne, skomplikowane środowiska procesowe, diagnozując je i
+      zamieniając w czystą logikę. Rutyna operacyjna działa demotywująco.
+  - theme: "The Empirical Mission (Pryncypialność #2 + Odpowiedzialność #6 + Wysoka Sumienność)"
+    description: >
+      Całkowity brak zgody na deklaratywność. Każde działanie musi opierać się na twardych danych
+      i faktach (Analityk), ale być głęboko zakorzenione w wartościach i poczuciu misji (Pryncypialność).
+      Przejmuję pełną odpowiedzialność za końcowy rezultat systemowy.
+  - theme: "The Systemic Harmonizer (Współzależność #4 + Bardzo Wysoka Ugodowość)"
+    description: >
+      Postrzeganie firmy jako ekosystemu naczyń połączonych. Zarządzanie zmianą i interesariuszami
+      realizuję poprzez translację perspektyw, mediację i budowanie struktur wspierających ludzi,
+      a nie poprzez autorytarny nacisk (low Command/Influence domain).
+
+risks_and_blind_spots:
+  - id: RISK-001
+    description: "Przeciążenie operacyjne (Odpowiedzialność + Pryncypialność) - kompensowanie niewydolności systemów własnym, heroicznym wysiłkiem."
+    mapped_to: "DEV-002, DEV-006"
+  - id: RISK-002
+    description: "Opóźniona konfrontacja (Wysoka Ugodowość + Bliskość) - unikanie trudnych rozmów i dawanie zbyt dużego kredytu zaufania w imię zachowania harmonii."
+    mapped_to: "DEV-001, DEV-005"
+  - id: RISK-003
+    description: "Paraliż realizacyjny (Uczenie się + Analityk) - ryzyko nadmiernego skupienia na budowaniu idealnego, logicznego systemu bez wystarczającej walidacji rynkowej."
+    mapped_to: "DEV-003, DEV-004"
+
+key_realizations:
+  - Profil psychometryczny nie definiuje limitów, ale wskazuje domyślne ścieżki i koszty energetyczne działań.
+  - Wysoka ugodowość i empatia wymagają intencjonalnego obudowania strukturami rozliczalności (Accountability Frameworks), aby zachować skuteczność liderską.
+  - Moja przewaga konkurencyjna leży w unikalnym łączeniu twardej analityki systemowej z głębokim, ludzkim podejściem do budowania relacji i transferu wiedzy.
+
+development_goal: >
+  Świadome wykorzystywanie silnych talentów z domeny Myślenia Strategicznego i Budowania Relacji,
+  przy jednoczesnym aktywnym mitygowaniu ryzyk behawioralnych (przeciążenie, unikanie konfrontacji)
+  poprzez wdrażanie ścisłych, zewnętrznych mechanizmów boundary management i systemowej rozliczalności.
