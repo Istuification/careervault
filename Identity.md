@@ -30,6 +30,27 @@ Buduję struktury wiedzy, dokumentację i procesy umożliwiające organizacji sk
 
 ---
 
+## Behavioral & Psychometric Framework
+
+Mój naturalny styl działania charakteryzuje się strategiczno-analitycznym podejściem do problemów, silnym kręgosłupem wartości oraz zorientowaniem na współpracę opartą na zaufaniu i harmonii międzydziałowej. Powyższy profil behawioralny został zwalidowany badaniami CliftonStrengths (Gallup) oraz IPIP-NEO-PI-R (Wielka Piątka).
+
+### Cognitive Style: Strategic Exploration
+*   **Talenty Gallup (Myślenie Strategiczne):** Uczenie się (#1), Strateg (#3), Analityk (#5), Intelekt (#10)
+*   **Wielka Piątka:** Wysoka Otwartość na Doświadczenia, Ekstremalnie wysokie Poszukiwanie Doznań (Excitement-Seeking)
+*   **Manifestacja:** Potrzeba stymulacji intelektualnej i poszukiwanie "adrenaliny" w rozwiązywaniu złożonych, unikalnych problemów biznesowych. Nie akceptuję stagnacji i rutyny operacyjnej. Wykorzystuję logiczne modelowanie procesów oraz rozkładanie skomplikowanych mechanizmów na części elementarne w celu znajdowania unikalnych zależności i wzorców.
+
+### Execution Engine: Principled Delivery
+*   **Talenty Gallup (Wykonywanie):** Pryncypialność (#2), Odpowiedzialność (#6)
+*   **Wielka Piątka:** Wysoka Sumienność
+*   **Manifestacja:** Biorę całkowitą psychologiczną odpowiedzialność za realizowane zobowiązania. Buduję kulturę rzetelności zawodowej, u której podstaw leżą twarde dowody, transparencja oraz "źródła prawdy" (Evidence-Based Management). Moje zaangażowanie wynika z poczucia głębszego celu i misji, a nie wyłącznie z KPI czy korzyści finansowych.
+
+### Collaboration Style: Cross-Functional Harmonizer
+*   **Talenty Gallup (Budowanie Relacji):** Współzależność (#4), Bliskość (#7), Indywidualizacja (#8), Rozwijanie Innych (#9)
+*   **Wielka Piątka:** Bardzo wysoka Ugodowość (Agreeableness)
+*   **Manifestacja:** Postrzegam organizację jako nierozerwalny ekosystem naczyń połączonych. Buduję mosty komunikacyjne i dążę do łagodzenia napięć międzyfunkcyjnych poprzez głębokie zrozumienie perspektyw i ograniczeń innych działów. W relacjach unikam polityki hierarchicznej – preferuję mentoring, partnerskie zaufanie oraz stwarzanie zespołom warunków do samodzielnego rozwoju i sukcesu.
+
+---
+
 ## Behavioral Principles
 
 Mój sposób pracy opiera się na odpowiedzialności, transparentności oraz ciągłym doskonaleniu. Preferuję otwartą komunikację, merytoryczną dyskusję oraz wspólne rozwiązywanie problemów zamiast działania w oparciu o hierarchię, politykę organizacyjną czy osobiste ambicje.
