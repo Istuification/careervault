@@ -69,11 +69,21 @@ root_cause_analysis:
     Jeżeli rozwiązanie jest logiczne, technicznie poprawne
     i dobrze wdrożone, powinno przynieść oczekiwane rezultaty.
 
+  psychometric_drivers: >
+    Wzór ten wynika z faktu, że moje główne talenty skupione są w domenie Myślenia Strategicznego
+    i Wykonywania (Analityk #5, Strateg #3, Odpowiedzialność #6), przy jednoczesnym braku talentów
+    w domenie Wpływania (np. Rywalizacja na odległym #31 miejscu, Dowodzenie na #34)[cite: 1]. Logiczne piękno 
+    i techniczna spójność procesu (będąca zasługą wysokiej Sumienności) dają mi pełne poczucie 
+    bezpieczeństwa. Podświadomie zakładam, że rynek i klient zachowają się tak samo racjonalnie jak 
+    dobrze zaprojektowany system operacyjny, przez co faza komercyjnej walidacji wydawała mi się 
+    formalnością, a nie kluczowym punktem ryzyka.
+
   reality: >
     Sukces produktu zależy nie tylko od jakości wykonania,
     ale również od zrozumienia klienta, walidacji problemu,
     modelu biznesowego oraz dopasowania do rynku.
     W wielu przypadkach discovery powinno poprzedzać execution.
+    Faktyczny sukces rynkowy wymaga weryfikacji hipotez poza granicami organizacji.
 
 key_realizations:
 
