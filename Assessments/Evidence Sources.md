@@ -454,75 +454,173 @@ Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie histor
 
 ## Metadane
 
-| Pole                  | Wartość  |
-| --------------------- | -------- |
-| Typ Modelu            | Wartości |
-| Siła Naukowa          | 10 / 10  |
-| Siła Predykcyjna      | TBD      |
-| Ostatnia Aktualizacja | TBD      |
-| Status                | Aktywny  |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Wartości        |
+| Wiarygodność Naukowa   | 10 / 10         |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Schwartz Value Theory (SVT) jest jednym z najlepiej przebadanych modeli wartości ludzkich.
+
+Model opisuje wartości jako podstawowe motywacje wpływające na decyzje, priorytety oraz ocenę sytuacji.
+
+W przeciwieństwie do modeli osobowości, które opisują sposób funkcjonowania człowieka, model Schwartza koncentruje się na tym, co człowiek uznaje za ważne i warte realizacji.
+
+Model składa się z dziesięciu podstawowych wartości, które można dodatkowo pogrupować w cztery nadrzędne obszary.
+
+---
 
 ## Wyniki
 
-TODO
+### Wartości Podstawowe
 
-## Rozbicie na Wartości
+| Wartość                          | Wynik |
+| -------------------------------- | ----- |
+| Benevolence (Życzliwość)         | 5.50  |
+| Tradition (Tradycja)             | 4.75  |
+| Conformity (Konformizm)          | 4.75  |
+| Universalism (Uniwersalizm)      | 4.50  |
+| Self-Direction (Samostanowienie) | 4.00  |
+| Security (Bezpieczeństwo)        | 3.00  |
+| Stimulation (Stymulacja)         | 2.67  |
+| Achievement (Osiągnięcia)        | 2.50  |
+| Hedonism (Hedonizm)              | 2.00  |
+| Power (Władza)                   | 2.00  |
 
-### Życzliwość (Benevolence)
+---
 
-TODO
+### Wartości Nadrzędne
 
-### Uniwersalizm (Universalism)
+| Obszar                                               | Wynik |
+| ---------------------------------------------------- | ----- |
+| Self-Transcendence (Przekraczanie Własnego Interesu) | 5.00  |
+| Conservatism (Zachowawczość)                         | 4.17  |
+| Openness to Change (Otwartość na Zmianę)             | 3.34  |
+| Self-Enhancement (Wzmacnianie Własnego Interesu)     | 2.17  |
 
-TODO
+---
 
-### Samostanowienie (Self-Direction)
+## Opis Wyników
 
-TODO
+### Życzliwość (Benevolence) — bardzo wysoka
 
-### Konformizm (Conformity)
+Najwyższy wynik w całym profilu.
 
-TODO
+Wskazuje na dużą wagę przypisywaną wspieraniu ludzi znajdujących się w najbliższym otoczeniu, uczciwości wobec innych oraz odpowiedzialności za relacje.
 
-### Tradycja (Tradition)
+### Tradycja (Tradition) — wysoka
 
-TODO
+Wynik sugeruje szacunek dla istniejących zasad, norm oraz sprawdzonych sposobów działania.
 
-### Bezpieczeństwo (Security)
+Nie oznacza bezrefleksyjnego podporządkowania tradycji, lecz uznawanie wartości rozwiązań, które przetrwały próbę czasu.
 
-TODO
+### Konformizm (Conformity) — wysoki
 
-### Osiągnięcia (Achievement)
+Wynik wskazuje na skłonność do ograniczania działań mogących szkodzić innym ludziom lub destabilizować funkcjonowanie grupy.
 
-TODO
+W tym modelu konformizm nie oznacza braku niezależności myślenia, lecz respektowanie wspólnych zasad współżycia.
 
-### Władza (Power)
+### Uniwersalizm (Universalism) — wysoki
 
-TODO
+Wskazuje na znaczenie dobra wspólnego, sprawiedliwości oraz troski o ludzi wykraczających poza najbliższe otoczenie.
 
-### Hedonizm (Hedonism)
+### Samostanowienie (Self-Direction) — umiarkowanie wysokie
 
-TODO
+Sugeruje potrzebę samodzielnego myślenia oraz podejmowania własnych decyzji.
 
-### Stymulacja (Stimulation)
+### Bezpieczeństwo (Security) — umiarkowane
 
-TODO
+Wynik wskazuje na znaczenie stabilności i przewidywalności, jednak nie jest to dominująca motywacja.
+
+### Stymulacja (Stimulation) — niska
+
+Nie wskazuje na silną potrzebę poszukiwania ekscytacji, ryzyka lub intensywnych doznań.
+
+### Osiągnięcia (Achievement) — niskie
+
+Wynik sugeruje, że sukces i osiągnięcia nie są głównym źródłem motywacji.
+
+### Hedonizm (Hedonism) — bardzo niski
+
+Przyjemność i maksymalizacja osobistej satysfakcji nie wydają się głównym kryterium podejmowania decyzji.
+
+### Władza (Power) — bardzo niska
+
+Najniższy wynik w profilu.
+
+Wskazuje na niewielkie znaczenie kontroli nad innymi ludźmi, prestiżu społecznego lub dominacji.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil wartości wskazuje na osobę, która przy podejmowaniu decyzji koncentruje się przede wszystkim na wpływie swoich działań na innych ludzi oraz na zgodności tych działań z własnymi zasadami.
+
+Najsilniejszym motywatorem nie wydaje się sukces, status ani przyjemność, lecz poczucie działania zgodnego z wartościami.
+
+Szczególnie istotne wydają się:
+
+* uczciwość,
+* odpowiedzialność wobec innych,
+* sprawiedliwość,
+* stabilność relacji,
+* poszanowanie zasad.
+
+Jednocześnie profil nie wskazuje na silną potrzebę dominacji, rywalizacji ani zdobywania prestiżu.
+
+Może to wpływać na sposób definiowania sukcesu oraz oceniania własnych osiągnięć.
+
+---
 
 ## Notatki Badanego
 
-TODO
+Badany uznaje wyniki za stosunkowo trafne.
 
-## Potencjalne Predyktory
+Szczególnie trafne wydają się:
 
-TODO
+* niska potrzeba statusu społecznego,
+* niska motywacja związana z władzą,
+* wysoka wartość przypisywana uczciwości,
+* wysoka wartość przypisywana sprawiedliwości,
+* większe znaczenie użyteczności i sensu działań niż ich prestiżu.
+
+Wymaga dalszej obserwacji sposób interpretacji wysokich wyników w obszarach Tradycji i Konformizmu.
+
+Możliwe jest, że wyniki te odzwierciedlają bardziej szacunek dla sprawdzonych zasad i procedur niż potrzebę podporządkowania się autorytetom lub normom społecznym.
+
+---
+
+## Ograniczenia Modelu
+
+* Model opisuje deklarowane wartości, a nie rzeczywiste zachowania.
+* Wysokie znaczenie danej wartości nie oznacza automatycznie działania zgodnego z nią.
+* Model nie uwzględnia wpływu sytuacji, środowiska ani ograniczeń zewnętrznych.
+* Model nie mierzy zdolności, kompetencji ani cech osobowości.
+* Interpretacja wymaga zestawienia z innymi źródłami danych oraz analizą rzeczywistych historii.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Na obecnym etapie model wykazuje wysoką zgodność z wynikami HEXACO, VIA oraz częściowo z wynikami AOT i CIHS.
+
+Szczególnie istotne dla dalszej budowy Cognitive Model mogą okazać się:
+
+* bardzo niska orientacja na władzę,
+* bardzo niska orientacja na hedonizm,
+* wysoka orientacja na dobro innych ludzi,
+* wysoka orientacja na sprawiedliwość i zasady.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii oraz dowodów behawioralnych.
+
 
 ---
 
@@ -530,59 +628,159 @@ TODO
 
 ## Metadane
 
-| Pole                  | Wartość  |
-| --------------------- | -------- |
-| Typ Modelu            | Wartości |
-| Siła Naukowa          | 7.5 / 10 |
-| Siła Predykcyjna      | TBD      |
-| Ostatnia Aktualizacja | TBD      |
-| Status                | Aktywny  |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Wartości        |
+| Wiarygodność Naukowa   | 7.5 / 10        |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Moral Foundations Theory (MFT) jest teorią psychologiczną opisującą intuicyjne fundamenty moralne wykorzystywane przez ludzi podczas oceniania zachowań, decyzji i sytuacji społecznych.
+
+W przeciwieństwie do modeli osobowości, które opisują sposób funkcjonowania człowieka, MFQ koncentruje się na tym, jakie zasady moralne są spontanicznie uznawane za ważne.
+
+Model nie mierzy moralności jako takiej. Mierzy raczej wrażliwość na określone rodzaje argumentów moralnych.
+
+---
 
 ## Wyniki
 
-TODO
+| Fundament Moralny                  | Percentyl |
+| ---------------------------------- | --------- |
+| Purity (Czystość)                  | 84.17     |
+| Equality (Równość)                 | 82.16     |
+| Authority (Autorytet)              | 69.05     |
+| Care (Troska)                      | 62.54     |
+| Proportionality (Proporcjonalność) | 44.96     |
+| Loyalty (Lojalność Grupowa)        | 21.47     |
+
+---
 
 ## Rozbicie na Fundamenty Moralne
 
-### Troska (Care)
+### Czystość (Purity)
 
-TODO
+Dotyczy potrzeby ochrony rzeczy uznawanych za wartościowe, właściwe lub godne szacunku przed degradacją, zepsuciem lub naruszeniem.
 
 ### Równość (Equality)
 
-TODO
-
-### Proporcjonalność (Proportionality)
-
-TODO
-
-### Lojalność (Loyalty)
-
-TODO
+Dotyczy potrzeby równego traktowania ludzi, równego głosu, równego dostępu do szans oraz sprzeciwu wobec niesprawiedliwych nierówności.
 
 ### Autorytet (Authority)
 
-TODO
+Dotyczy znaczenia struktur, zasad, kompetencji oraz szacunku wobec uzasadnionej hierarchii.
 
-### Czystość (Purity)
+### Troska (Care)
 
-TODO
+Dotyczy potrzeby ochrony ludzi przed krzywdą oraz reagowania na cierpienie innych.
+
+### Proporcjonalność (Proportionality)
+
+Dotyczy przekonania, że nagrody, konsekwencje i korzyści powinny być proporcjonalne do wkładu, wysiłku lub zasług.
+
+### Lojalność Grupowa (Loyalty)
+
+Dotyczy identyfikacji z grupą, wspólnotą lub zespołem oraz gotowości do stawiania interesu grupy ponad interes jednostki.
+
+---
+
+## Opis Wyników
+
+### Czystość — bardzo wysoka
+
+Najwyższy wynik w całym profilu.
+
+Może wskazywać na dużą wagę przypisywaną integralności systemów, zasad, procesów lub idei.
+
+W praktyce nie musi oznaczać religijnego lub konserwatywnego rozumienia czystości.
+
+Może przejawiać się jako niechęć wobec działań postrzeganych jako psujące, degradujące lub naruszające coś wartościowego.
+
+### Równość — bardzo wysoka
+
+Wynik wskazuje na silną potrzebę sprawiedliwego traktowania ludzi oraz niechęć wobec arbitralnych przywilejów.
+
+Jest spójny z wysokim wynikiem Fairness w modelu HEXACO oraz wysokim Benevolence i Universalism w modelu Schwartza.
+
+### Autorytet — podwyższony
+
+Wynik sugeruje uznawanie znaczenia zasad, kompetencji oraz uzasadnionych struktur odpowiedzialności.
+
+Nie musi oznaczać bezwarunkowego posłuszeństwa wobec osób posiadających formalną władzę.
+
+### Troska — umiarkowanie wysoka
+
+Wynik wskazuje na ponadprzeciętną wrażliwość na krzywdę innych ludzi oraz znaczenie ochrony osób narażonych na negatywne konsekwencje działań.
+
+### Proporcjonalność — przeciętna
+
+Wynik sugeruje umiarkowane znaczenie zasady „wkład powinien odpowiadać nagrodzie”.
+
+Nie jest to dominujący element profilu moralnego.
+
+### Lojalność Grupowa — niska
+
+Najniższy wynik w całym profilu.
+
+Wskazuje na niewielką skłonność do uznawania przynależności grupowej jako samodzielnego argumentu moralnego.
+
+Przynależność do grupy nie wydaje się być wystarczającym uzasadnieniem dla określonych działań lub decyzji.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil moralny sugeruje osobę oceniającą sytuacje przede wszystkim przez pryzmat:
+
+* sprawiedliwości,
+* integralności zasad,
+* jakości procesów,
+* wpływu na ludzi.
+
+Jednocześnie stosunkowo niewielkie znaczenie wydaje się mieć sam fakt przynależności do grupy.
+
+Profil nie wskazuje na moralność opartą na lojalności plemiennej lub identyfikacji grupowej.
+
+Znacznie większe znaczenie wydają się mieć zasady oraz sposób działania niż interes konkretnej grupy.
+
+---
 
 ## Notatki Badanego
 
 TODO
 
-## Potencjalne Predyktory
+---
 
-TODO
+## Ograniczenia Modelu
+
+* Model mierzy intuicje moralne, a nie rzeczywiste zachowania.
+* Wyniki nie określają poziomu moralności badanego.
+* Interpretacja zależy od kontekstu kulturowego.
+* Model nie mierzy cech osobowości ani kompetencji.
+* Poszczególne fundamenty mogą przyjmować różne znaczenia w zależności od sposobu interpretacji przez badanego.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Model wykazuje wysoką zgodność z wynikami HEXACO i Schwartz Value Theory w obszarach związanych ze sprawiedliwością, uczciwością i dobrem innych ludzi.
+
+Szczególnie interesujące dla dalszej analizy są:
+
+* bardzo wysoka Równość,
+* bardzo wysoka Czystość,
+* wysoki Autorytet,
+* bardzo niska Lojalność Grupowa.
+
+Wymagają one dalszej weryfikacji na podstawie historii i rzeczywistych zachowań.
+
 
 ---
 
@@ -594,41 +792,170 @@ TODO
 
 ## Metadane
 
-| Pole                  | Wartość         |
-| --------------------- | --------------- |
-| Typ Modelu            | Siły Charakteru |
-| Siła Naukowa          | 8 / 10          |
-| Siła Predykcyjna      | TBD             |
-| Ostatnia Aktualizacja | TBD             |
-| Status                | Aktywny         |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Siły Charakteru |
+| Wiarygodność Naukowa   | 8 / 10          |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Values in Action Character Strengths (VIA) jest modelem psychologii pozytywnej opisującym charakter człowieka poprzez zestaw 24 sił charakteru.
+
+Model nie opisuje osobowości, zdolności ani kompetencji.
+
+Jego celem jest identyfikacja naturalnych sposobów działania oraz cech charakteru, które człowiek najczęściej wykorzystuje podczas podejmowania decyzji, rozwiązywania problemów i budowania relacji.
+
+Siły charakteru pogrupowane są w sześć głównych cnót:
+
+* Mądrość (Wisdom)
+* Odwaga (Courage)
+* Humanitaryzm (Humanity)
+* Sprawiedliwość (Justice)
+* Umiarkowanie (Temperance)
+* Transcendencja (Transcendence)
+
+---
 
 ## Wyniki
 
-TODO
+### Ranking Sił Charakteru
 
-## Najsilniejsze Cechy
+| Pozycja | Siła Charakteru                                                          |
+| ------- | ------------------------------------------------------------------------ |
+| 1       | Rozsądek (Judgment)                                                      |
+| 2       | Skromność (Humility)                                                     |
+| 3       | Mądrość / Szerokie Horyzonty (Perspective)                               |
+| 4       | Poczucie Humoru (Humor)                                                  |
+| 5       | Wdzięczność (Gratitude)                                                  |
+| 6       | Zdolność do Przebaczania (Forgiveness)                                   |
+| 7       | Ciekawość (Curiosity)                                                    |
+| 8       | Roztropność (Prudence)                                                   |
+| 9       | Zespołowość (Teamwork)                                                   |
+| 10      | Sprawiedliwość (Fairness)                                                |
+| 11      | Energia Życiowa (Zest)                                                   |
+| 12      | Zdolność do Kochania (Love)                                              |
+| 13      | Wytrwałość (Perseverance)                                                |
+| 14      | Odwaga (Bravery)                                                         |
+| 15      | Życzliwość (Kindness)                                                    |
+| 16      | Kreatywność (Creativity)                                                 |
+| 17      | Inteligencja Społeczna (Social Intelligence)                             |
+| 18      | Samoregulacja (Self-Regulation)                                          |
+| 19      | Pasja Zdobywania Wiedzy (Love of Learning)                               |
+| 20      | Nadzieja (Hope)                                                          |
+| 21      | Podziw dla Piękna i Doskonałości (Appreciation of Beauty and Excellence) |
+| 22      | Szczerość / Autentyczność (Honesty)                                      |
+| 23      | Poczucie Sensu (Spirituality / Meaning)                                  |
+| 24      | Zdolności Przywódcze (Leadership)                                        |
 
-TODO
+---
 
-## Pełny Ranking
+## Opis Wyników
 
-TODO
+### Rozsądek (Judgment) — bardzo wysoki
+
+Najwyższy wynik całego profilu.
+
+Wskazuje na silną potrzebę analizowania problemów z wielu perspektyw, oceniania argumentów oraz unikania pochopnych wniosków.
+
+Charakterystyczna jest gotowość do zmiany stanowiska pod wpływem nowych dowodów.
+
+### Skromność (Humility) — bardzo wysoka
+
+Wynik sugeruje niewielką potrzebę eksponowania własnych osiągnięć oraz niską orientację na status społeczny.
+
+Jest silnie zgodny z wysokim Honesty-Humility w modelu HEXACO.
+
+### Mądrość / Szerokie Horyzonty (Perspective) — bardzo wysoka
+
+Wskazuje na tendencję do patrzenia na problemy w szerszym kontekście oraz integrowania wielu punktów widzenia.
+
+### Poczucie Humoru — wysokie
+
+Sugestia naturalnej skłonności do wykorzystywania humoru jako narzędzia budowania relacji i radzenia sobie z trudnościami.
+
+### Wdzięczność — wysoka
+
+Wskazuje na zdolność dostrzegania pozytywnych aspektów życia oraz doceniania wsparcia otrzymywanego od innych ludzi.
+
+### Zdolność do Przebaczania — wysoka
+
+Sugeruje niewielką skłonność do długotrwałego utrzymywania urazy oraz gotowość do dawania ludziom kolejnych szans.
+
+### Ciekawość — wysoka
+
+Potwierdza silną orientację poznawczą widoczną również w HEXACO, AOT oraz Need for Cognition.
+
+### Roztropność — wysoka
+
+Wskazuje na ostrożność decyzyjną i tendencję do analizowania konsekwencji działań.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil VIA przedstawia osobę, której najmocniejsze strony koncentrują się wokół:
+
+* jakości rozumowania,
+* analizowania problemów,
+* oceny argumentów,
+* szerokiego spojrzenia na sytuacje,
+* sprawiedliwości,
+* pokory intelektualnej,
+* rozwagi decyzyjnej.
+
+Wynik nie sugeruje osoby motywowanej przywództwem, dominacją lub statusem.
+
+Znacznie większą rolę odgrywają:
+
+* zrozumienie sytuacji,
+* trafność ocen,
+* uczciwość,
+* jakość decyzji.
+
+Profil jest wyjątkowo spójny z wynikami HEXACO, Actively Open-Minded Thinking (AOT), Comprehensive Intellectual Humility Scale (CIHS) oraz Schwartz Value Theory.
+
+---
 
 ## Notatki Badanego
 
 TODO
 
-## Potencjalne Predyktory
+---
 
-TODO
+## Ograniczenia Modelu
+
+* Model mierzy deklarowane siły charakteru, a nie rzeczywiste zachowania.
+* Wyniki opierają się na samoopisie badanego.
+* Model nie mierzy kompetencji ani poziomu wiedzy.
+* Ranking nie oznacza, że niższe cechy są nieobecne.
+* Interpretacja wymaga zestawienia z innymi źródłami danych oraz analizą historii.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Na obecnym etapie VIA jest jednym z najbardziej spójnych źródeł danych w całym zbiorze Evidence Sources.
+
+Najsilniejsze sygnały pojawiają się wokół:
+
+* jakości rozumowania,
+* gotowości do rewizji poglądów,
+* szerokiego spojrzenia na problemy,
+* pokory,
+* rozwagi decyzyjnej,
+* sprawiedliwości.
+
+Model wykazuje bardzo wysoką zgodność z HEXACO, AOT, CIHS oraz Schwartz Value Theory.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+
 
 ---
 
@@ -640,33 +967,122 @@ TODO
 
 ## Metadane
 
-| Pole                  | Wartość       |
-| --------------------- | ------------- |
-| Typ Modelu            | Styl Myślenia |
-| Siła Naukowa          | 8.5 / 10      |
-| Siła Predykcyjna      | TBD           |
-| Ostatnia Aktualizacja | TBD           |
-| Status                | Aktywny       |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Styl Myślenia   |
+| Wiarygodność Naukowa   | 8.5 / 10        |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Need for Cognition (NFC) jest modelem opisującym indywidualną skłonność do angażowania się w wysiłek poznawczy.
+
+Model nie mierzy inteligencji, wiedzy ani zdolności analitycznych.
+
+Mierzy natomiast stopień, w jakim człowiek:
+
+* lubi myśleć,
+* lubi analizować problemy,
+* czerpie satysfakcję z rozumowania,
+* angażuje się w złożone zagadnienia poznawcze.
+
+Osoby z wysokim NFC częściej podejmują decyzje na podstawie analizy argumentów, natomiast osoby z niskim NFC częściej opierają się na autorytetach, intuicjach lub uproszczonych heurystykach.
+
+---
 
 ## Wyniki
 
-TODO
+| Skala              | Wynik   |
+| ------------------ | ------- |
+| Need for Cognition | 4.2 / 5 |
+
+---
+
+## Opis Wyników
+
+### Need for Cognition — wysoki
+
+Wynik wskazuje na ponadprzeciętną skłonność do angażowania się w złożone procesy myślowe.
+
+Badany prawdopodobnie:
+
+* odczuwa satysfakcję z analizowania problemów,
+* preferuje zrozumienie mechanizmu działania zamiast zapamiętywania gotowych odpowiedzi,
+* częściej poszukuje przyczyn niż objawów,
+* wykazuje zainteresowanie modelami, zależnościami i strukturami.
+
+Wysoki wynik nie oznacza większej inteligencji.
+
+Oznacza natomiast większą motywację do korzystania z posiadanych zdolności poznawczych.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil wskazuje na osobę, która traktuje myślenie jako aktywność wartościową samą w sobie.
+
+Rozwiązywanie problemów nie wydaje się być wyłącznie narzędziem prowadzącym do celu.
+
+Sam proces analizy może stanowić źródło satysfakcji i zaangażowania.
+
+W praktyce może przejawiać się to poprzez:
+
+* budowanie modeli rzeczywistości,
+* potrzebę rozumienia zależności,
+* zadawanie pytań wykraczających poza bezpośredni problem,
+* preferowanie głębokiego zrozumienia nad szybkim działaniem.
+
+---
 
 ## Notatki Badanego
 
-TODO
+Wynik jest postrzegany jako trafny.
 
-## Potencjalne Predyktory
+Badany wykazuje silną tendencję do rozkładania problemów na elementy składowe oraz budowania modeli wyjaśniających zjawiska.
 
-TODO
+W praktyce przejawia się to między innymi poprzez:
+
+* tworzenie Career Vault,
+* budowę Cognitive Model,
+* zainteresowanie systemami decyzyjnymi,
+* dążenie do identyfikowania zależności przyczynowo-skutkowych.
+
+Jednocześnie analiza nie jest celem samym w sobie.
+
+W większości przypadków służy zwiększeniu trafności decyzji, lepszemu zrozumieniu problemu lub uporządkowaniu chaosu informacyjnego.
+
+---
+
+## Ograniczenia Modelu
+
+* Model nie mierzy inteligencji.
+* Model nie mierzy wiedzy eksperckiej.
+* Model nie mierzy jakości rozumowania.
+* Wysoki wynik nie gwarantuje trafnych wniosków.
+* Model opisuje motywację do myślenia, a nie skuteczność myślenia.
+* Wyniki opierają się na samoopisie badanego.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Na obecnym etapie model wykazuje bardzo wysoką zgodność z:
+
+* HEXACO (Inquisitiveness),
+* VIA (Judgment, Perspective, Curiosity),
+* Actively Open-Minded Thinking (AOT),
+* Comprehensive Intellectual Humility Scale (CIHS).
+
+Need for Cognition może stanowić jedno z kluczowych źródeł wyjaśniających, dlaczego badany naturalnie angażuje się w analizę problemów, budowę modeli oraz porządkowanie złożonych informacji.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+
 
 ---
 
@@ -674,33 +1090,118 @@ TODO
 
 ## Metadane
 
-| Pole                  | Wartość       |
-| --------------------- | ------------- |
-| Typ Modelu            | Styl Myślenia |
-| Siła Naukowa          | 8.5 / 10      |
-| Siła Predykcyjna      | TBD           |
-| Ostatnia Aktualizacja | TBD           |
-| Status                | Aktywny       |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Styl Myślenia   |
+| Wiarygodność Naukowa   | 8.5 / 10        |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Need for Closure Scale (NFCS) mierzy potrzebę osiągania jednoznacznych odpowiedzi oraz tolerancję wobec niepewności i wieloznaczności.
+
+Model opisuje stopień, w jakim człowiek odczuwa potrzebę:
+
+* podejmowania decyzji,
+* zamykania otwartych kwestii,
+* redukowania niepewności,
+* przechodzenia od analizy do działania.
+
+Osoby z wysokim wynikiem zwykle preferują szybkie domknięcie problemu i większą stabilność przekonań.
+
+Osoby z niskim wynikiem częściej tolerują niejednoznaczność, utrzymują wiele możliwych wyjaśnień oraz dłużej pozostają w fazie eksploracji.
+
+---
 
 ## Wyniki
 
-TODO
+| Skala            | Wynik   |
+| ---------------- | ------- |
+| Need for Closure | 3.0 / 6 |
+
+---
+
+## Opis Wyników
+
+### Need for Closure — umiarkowany
+
+Wynik znajduje się blisko środka skali.
+
+Nie wskazuje ani na silną potrzebę szybkiego domykania problemów, ani na szczególnie wysoką tolerancję niepewności.
+
+Profil sugeruje zdolność funkcjonowania zarówno w trybie eksploracji, jak i w trybie decyzyjnym.
+
+Badany wydaje się zdolny do utrzymywania niejednoznaczności przez pewien czas, ale jednocześnie nie wykazuje tendencji do niekończącej się analizy.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil sugeruje równowagę pomiędzy eksploracją a domknięciem poznawczym.
+
+W praktyce może oznaczać:
+
+* gotowość do zbierania dodatkowych informacji przed podjęciem decyzji,
+* brak potrzeby natychmiastowego formułowania opinii,
+* zdolność do funkcjonowania przy częściowej niepewności,
+* jednoczesną gotowość do zakończenia analizy po osiągnięciu satysfakcjonującego poziomu zrozumienia.
+
+Wynik jest szczególnie interesujący w zestawieniu z wysokim Need for Cognition.
+
+Sugeruje on, że analiza nie jest napędzana potrzebą redukcji niepewności, lecz autentyczną potrzebą zrozumienia problemu.
+
+---
 
 ## Notatki Badanego
 
-TODO
+Badany deklaruje, że po wyrobieniu sobie stanowiska zwykle przestaje aktywnie poszukiwać kolejnych informacji.
 
-## Potencjalne Predyktory
+Powrót do dalszej analizy następuje najczęściej w sytuacji pojawienia się nowych danych, argumentów lub przesłanek podważających istniejący model.
 
-TODO
+W praktyce może to oznaczać, że proces analizy przebiega w dwóch etapach:
+
+1. Intensywna eksploracja problemu.
+2. Tymczasowe zamknięcie modelu i przejście do działania.
+
+Ponowna eksploracja następuje dopiero po pojawieniu się sygnału wskazującego na potrzebę rewizji wcześniejszych założeń.
+
+---
+
+## Ograniczenia Modelu
+
+* Model nie mierzy jakości decyzji.
+* Model nie mierzy inteligencji ani wiedzy.
+* Wyniki opierają się na samoopisie badanego.
+* Potrzeba domknięcia może różnić się pomiędzy obszarami życia.
+* Model nie uwzględnia wpływu kontekstu sytuacyjnego.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Model wykazuje wysoką zgodność z wynikami:
+
+* Need for Cognition (NFC),
+* Actively Open-Minded Thinking (AOT),
+* Comprehensive Intellectual Humility Scale (CIHS),
+* VIA (Judgment i Prudence).
+
+Szczególnie istotne może być wyjaśnienie relacji pomiędzy:
+
+* wysoką potrzebą analizy,
+* wysoką otwartością poznawczą,
+* umiarkowaną potrzebą domknięcia.
+
+Połączenie tych cech może odgrywać istotną rolę w sposobie podejmowania decyzji przez badanego.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+
 
 ---
 
@@ -708,51 +1209,157 @@ TODO
 
 ## Metadane
 
-| Pole                  | Wartość       |
-| --------------------- | ------------- |
-| Typ Modelu            | Styl Myślenia |
-| Siła Naukowa          | 8.5 / 10      |
-| Siła Predykcyjna      | TBD           |
-| Ostatnia Aktualizacja | TBD           |
-| Status                | Aktywny       |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Styl Myślenia   |
+| Wiarygodność Naukowa   | 8.5 / 10        |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Comprehensive Intellectual Humility Scale (CIHS) mierzy pokorę intelektualną.
+
+Model nie bada skromności społecznej ani niskiej samooceny.
+
+Jego celem jest ocena sposobu, w jaki człowiek odnosi się do własnej omylności, ograniczeń wiedzy oraz odmiennych poglądów innych ludzi.
+
+Pokora intelektualna nie oznacza braku pewności siebie.
+
+Oznacza zdolność do uznania możliwości własnego błędu przy jednoczesnym zachowaniu zaufania do własnego rozumowania.
+
+---
 
 ## Wyniki
 
-TODO
+### Wynik Ogólny
+
+| Skala                 | Wynik    |
+| --------------------- | -------- |
+| Intellectual Humility | 81 / 110 |
+| Średnia               | 3.68 / 5 |
+
+Interpretacja ogólna: **wysoki poziom pokory intelektualnej**.
+
+---
 
 ## Rozbicie na Podskale
 
-### Niezależność Intelektu od Ego (Independence of Intellect and Ego)
+| Podskala                             | Wynik    |
+| ------------------------------------ | -------- |
+| Independence of Intellect and Ego    | 4.00 / 5 |
+| Openness to Revising One's Viewpoint | 4.40 / 5 |
+| Respect for Others' Viewpoints       | 4.17 / 5 |
+| Lack of Intellectual Overconfidence  | 2.33 / 5 |
 
-TODO
+---
 
-### Otwartość na Rewizję Poglądów (Openness to Revising One's Viewpoint)
+## Opis Wyników
 
-TODO
+### Niezależność Intelektu od Ego (Independence of Intellect and Ego) — wysoka
 
-### Szacunek dla Perspektyw Innych Ludzi (Respect for Others' Viewpoints)
+Wynik wskazuje na zdolność oddzielania krytyki poglądów od oceny własnej osoby.
 
-TODO
+Niezgoda lub krytyka nie są automatycznie interpretowane jako atak osobisty.
 
-### Brak Nadmiernej Pewności Intelektualnej (Lack of Intellectual Overconfidence)
+Pozwala to prowadzić dyskusję skoncentrowaną na argumentach zamiast na obronie własnego wizerunku.
 
-TODO
+### Otwartość na Rewizję Poglądów (Openness to Revising One's Viewpoint) — bardzo wysoka
+
+Najwyższy wynik w całym profilu.
+
+Wskazuje na dużą gotowość do zmiany stanowiska po pojawieniu się nowych danych lub mocnych argumentów.
+
+Wynik sugeruje, że przekonania są traktowane bardziej jako robocze modele niż element tożsamości wymagający obrony za wszelką cenę.
+
+### Szacunek dla Perspektyw Innych Ludzi (Respect for Others' Viewpoints) — wysoki
+
+Wskazuje na uznawanie wartości odmiennych punktów widzenia nawet wtedy, gdy nie prowadzą one do zmiany własnego stanowiska.
+
+Profil sugeruje gotowość do wysłuchania argumentów oraz próbę zrozumienia sposobu rozumowania drugiej osoby.
+
+### Brak Nadmiernej Pewności Intelektualnej (Lack of Intellectual Overconfidence) — niski
+
+Najniższy wynik w całym profilu.
+
+Nie oznacza zamknięcia na argumenty.
+
+Wskazuje natomiast na dużą pewność własnych ocen oraz wysoki próg dowodowy wymagany do zmiany stanowiska.
+
+Profil sugeruje osobę, która jest gotowa zmienić zdanie, ale oczekuje silnych argumentów i wysokiej jakości uzasadnienia.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil wskazuje na nietypową kombinację:
+
+* wysokiej pokory intelektualnej,
+* wysokiej otwartości na zmianę poglądów,
+* wysokiego szacunku dla innych perspektyw,
+* jednocześnie wysokiej pewności własnych osądów.
+
+Na pierwszy rzut oka cechy te mogą wydawać się sprzeczne.
+
+W praktyce sugerują one osobę, która:
+
+* nie traktuje swoich poglądów jako niepodważalnych,
+* aktywnie dopuszcza możliwość błędu,
+* jest gotowa zmienić zdanie,
+* ale wymaga wysokiej jakości argumentacji i dowodów.
+
+Profil nie odpowiada stereotypowi osoby niezdecydowanej lub nadmiernie sceptycznej wobec własnych ocen.
+
+Bliższy jest obrazowi osoby posiadającej własne modele rzeczywistości, które podlegają ciągłej walidacji i aktualizacji.
+
+---
 
 ## Notatki Badanego
 
-TODO
+Badany wskazuje, że zmiana stanowiska nie następuje często, ponieważ rzadko spotyka argumenty lub dane spełniające wymagany próg jakości.
 
-## Potencjalne Predyktory
+Nie wynika to z niechęci do zmiany zdania, lecz z wysokich wymagań wobec jakości rozumowania i dowodów.
 
-TODO
+Po wypracowaniu modelu lub stanowiska dalsza analiza zwykle ustaje do momentu pojawienia się nowych przesłanek podważających wcześniejsze założenia.
+
+Badany deklaruje gotowość do rewizji poglądów, jednak proces ten wymaga przedstawienia argumentów uznanych za istotne i dobrze uzasadnione.
+
+---
+
+## Ograniczenia Modelu
+
+* Model opiera się na samoopisie badanego.
+* Nie mierzy rzeczywistej jakości rozumowania.
+* Nie mierzy trafności przekonań.
+* Wysoka pokora intelektualna nie gwarantuje poprawności wniosków.
+* Wyniki mogą zależeć od poziomu samoświadomości badanego.
+* Interpretacja wymaga zestawienia z innymi źródłami danych.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Na obecnym etapie model wykazuje bardzo wysoką zgodność z:
+
+* Actively Open-Minded Thinking (AOT),
+* Need for Cognition (NFC),
+* VIA (Judgment, Perspective, Humility),
+* HEXACO (Honesty-Humility, Openness).
+
+Szczególnie istotna wydaje się kombinacja:
+
+* wysokiej gotowości do zmiany zdania,
+* wysokiego szacunku dla odmiennych perspektyw,
+* wysokiej pewności własnych ocen.
+
+Może ona stanowić ważny element wyjaśniający sposób podejmowania decyzji przez badanego.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
 
 ---
 
@@ -760,33 +1367,151 @@ TODO
 
 ## Metadane
 
-| Pole                  | Wartość       |
-| --------------------- | ------------- |
-| Typ Modelu            | Styl Myślenia |
-| Siła Naukowa          | 8.5 / 10      |
-| Siła Predykcyjna      | TBD           |
-| Ostatnia Aktualizacja | TBD           |
-| Status                | Aktywny       |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Styl Myślenia   |
+| Wiarygodność Naukowa   | 8.5 / 10        |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+Actively Open-Minded Thinking (AOT) jest modelem opisującym sposób przetwarzania informacji, oceniania argumentów oraz podejmowania decyzji.
+
+Model mierzy stopień, w jakim człowiek:
+
+* aktywnie poszukuje alternatywnych wyjaśnień,
+* rozważa argumenty przeciw własnym przekonaniom,
+* testuje własne założenia,
+* jest gotowy do aktualizacji modeli rzeczywistości pod wpływem nowych danych.
+
+AOT nie mierzy inteligencji, wiedzy ani kompetencji.
+
+Opisuje natomiast jakość procesu poznawczego wykorzystywanego podczas rozwiązywania problemów i formułowania wniosków.
+
+---
 
 ## Wyniki
 
-TODO
+### Wynik Ogólny
+
+| Skala                         | Wynik    |
+| ----------------------------- | -------- |
+| Actively Open-Minded Thinking | 64 / 75  |
+| Średnia                       | 4.27 / 5 |
+
+Interpretacja ogólna: **wysoki poziom aktywnie otwartego myślenia**.
+
+---
+
+## Opis Wyników
+
+### Aktywne Poszukiwanie Kontrargumentów — wysokie
+
+Wynik wskazuje na gotowość do analizowania argumentów niezgodnych z własnymi przekonaniami.
+
+Profil sugeruje świadome poszukiwanie słabych punktów własnych modeli i założeń.
+
+### Orientacja na Trafność Wniosków — wysoka
+
+Badany wydaje się przywiązywać większą wagę do jakości rozumowania niż do obrony wcześniej przyjętego stanowiska.
+
+W procesie decyzyjnym większe znaczenie ma trafność modelu niż zgodność z wcześniejszymi przekonaniami.
+
+### Gotowość do Rewizji Poglądów — wysoka
+
+Wynik wskazuje na otwartość na zmianę stanowiska pod wpływem nowych danych i argumentów.
+
+Przekonania nie są traktowane jako element tożsamości wymagający ochrony za wszelką cenę.
+
+### Poszukiwanie Alternatywnych Wyjaśnień — wysokie
+
+Profil sugeruje naturalną tendencję do analizowania różnych możliwych interpretacji tej samej sytuacji.
+
+Zanim zostanie przyjęte jedno wyjaśnienie, rozważane są konkurencyjne hipotezy.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil wskazuje na osobę aktywnie testującą własne przekonania.
+
+Proces rozumowania wydaje się opierać bardziej na budowie i walidacji modeli niż na obronie wcześniej przyjętych stanowisk.
+
+W praktyce może przejawiać się poprzez:
+
+* analizowanie różnych perspektyw,
+* poszukiwanie kontrprzykładów,
+* identyfikowanie słabych punktów własnych założeń,
+* budowanie modeli przyczynowo-skutkowych,
+* aktualizowanie poglądów po pojawieniu się nowych danych.
+
+Jednocześnie wysoki wynik nie oznacza nieograniczonej eksploracji.
+
+Proces poszukiwania informacji wydaje się mieć charakter celowy i ukierunkowany na poprawę jakości modelu.
+
+---
 
 ## Notatki Badanego
 
-TODO
+Badany deklaruje wysoką gotowość do analizowania argumentów przeczących własnym przekonaniom.
 
-## Potencjalne Predyktory
+Jednocześnie po wypracowaniu satysfakcjonującego modelu dalsze poszukiwanie informacji zwykle ustaje.
 
-TODO
+Powrót do analizy następuje najczęściej po pojawieniu się:
+
+* nowych danych,
+* nowych argumentów,
+* nowych okoliczności,
+* sygnałów wskazujących na potencjalne błędy modelu.
+
+W praktyce proces poznawczy wydaje się przebiegać w cyklu:
+
+1. Intensywna eksploracja.
+2. Budowa modelu.
+3. Tymczasowe domknięcie.
+4. Powrót do analizy po pojawieniu się nowych przesłanek.
+
+Opis ten jest zgodny z deklaracjami badanego uzyskanymi podczas omawiania wyników testu.
+
+---
+
+## Ograniczenia Modelu
+
+* Model opiera się na samoopisie badanego.
+* Nie mierzy trafności wniosków.
+* Nie mierzy inteligencji ani wiedzy.
+* Wysoki wynik nie gwarantuje poprawnych decyzji.
+* Model opisuje sposób podejścia do argumentów, a nie jakość argumentacji.
+* Interpretacja wymaga zestawienia z innymi źródłami danych.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Na obecnym etapie AOT jest jednym z najbardziej spójnych źródeł danych w całym zbiorze Evidence Sources.
+
+Model wykazuje wysoką zgodność z:
+
+* Comprehensive Intellectual Humility Scale (CIHS),
+* Need for Cognition (NFC),
+* VIA (Judgment, Perspective),
+* HEXACO (Openness to Experience, Inquisitiveness).
+
+Szczególnie istotne wydają się:
+
+* aktywne poszukiwanie kontrargumentów,
+* gotowość do rewizji poglądów,
+* orientacja na jakość rozumowania,
+* budowanie modeli opartych na dowodach.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+
 
 ---
 
@@ -794,45 +1519,233 @@ TODO
 
 ---
 
-# Gallup CliftonStrengths
+# CliftonStrengths (Gallup)
 
 ## Metadane
 
-| Pole                  | Wartość  |
-| --------------------- | -------- |
-| Typ Modelu            | Talenty  |
-| Siła Naukowa          | 6.5 / 10 |
-| Siła Predykcyjna      | TBD      |
-| Ostatnia Aktualizacja | TBD      |
-| Status                | Aktywny  |
+| Pole                   | Wartość                                 |
+| ---------------------- | --------------------------------------- |
+| Typ Modelu             | Talenty i preferowane sposoby działania |
+| Wiarygodność Naukowa   | 5.5 / 10                                |
+| Przydatność dla Modelu | Wysoka                                  |
+| Data Badania           | 2026-06-17                              |
+| Status                 | Aktywny                                 |
+
+---
 
 ## Opis
 
-TODO
+CliftonStrengths (dawniej StrengthsFinder) jest modelem identyfikującym naturalne talenty oraz preferowane sposoby działania.
+
+Model nie mierzy osobowości, inteligencji, wiedzy ani kompetencji.
+
+Jego celem jest określenie wzorców myślenia, odczuwania i działania, które pojawiają się spontanicznie oraz mogą zostać rozwinięte w mocne strony.
+
+Gallup zakłada, że największy potencjał rozwoju wynika z rozwijania naturalnych talentów, a nie wyłącznie z eliminowania słabości.
+
+---
 
 ## Wyniki
 
-TODO
+### Dominująca Domena
 
-## Najsilniejsze Talenty
+**Myślenie Strategiczne (Strategic Thinking)**
 
-TODO
+Najsilniejszą domeną profilu jest Myślenie Strategiczne.
 
-## Pełny Ranking
+---
 
-TODO
+### Ranking Talentów
+
+| Pozycja | Talent                               |
+| ------- | ------------------------------------ |
+| 1       | Uczenie się (Learner)                |
+| 2       | Pryncypialność (Belief)              |
+| 3       | Strateg (Strategic)                  |
+| 4       | Współzależność (Connectedness)       |
+| 5       | Analityk (Analytical)                |
+| 6       | Odpowiedzialność (Responsibility)    |
+| 7       | Bliskość (Relator)                   |
+| 8       | Indywidualizacja (Individualization) |
+| 9       | Rozwijanie Innych (Developer)        |
+| 10      | Intelekt (Intellection)              |
+| 11      | Dyscyplina (Discipline)              |
+| 12      | Bezstronność (Consistency)           |
+| 13      | Organizator (Arranger)               |
+| 14      | Naprawianie (Restorative)            |
+| 15      | Empatia (Empathy)                    |
+| 16      | Osiąganie (Achiever)                 |
+| 17      | Maksymalista (Maximizer)             |
+| 18      | Kontekst (Context)                   |
+| 19      | Zgodność (Harmony)                   |
+| 20      | Zbieranie (Input)                    |
+| 21      | Wiara w Siebie (Self-Assurance)      |
+| 22      | Optymista (Positivity)               |
+| 23      | Wizjoner (Futuristic)                |
+| 24      | Ukierunkowanie (Focus)               |
+| 25      | Komunikatywność (Communication)      |
+| 26      | Odkrywczość (Ideation)               |
+| 27      | Rozwaga (Deliberative)               |
+| 28      | Elastyczność (Adaptability)          |
+| 29      | Aktywator (Activator)                |
+| 30      | CZAR (Woo)                           |
+| 31      | Rywalizacja (Competition)            |
+| 32      | Poważanie (Significance)             |
+| 33      | Integrator (Includer)                |
+| 34      | Dowodzenie (Command)                 |
+
+---
+
+## Opis Wyników
+
+### Top 5 Talentów
+
+#### Uczenie się (#1)
+
+Najsilniejszy talent w profilu.
+
+Wskazuje na motywację do zdobywania wiedzy, rozwijania kompetencji i pogłębiania zrozumienia. Satysfakcję przynosi nie tylko rezultat, ale również sam proces uczenia się.
+
+#### Pryncypialność (#2)
+
+Silna orientacja na wartości, zasady i poczucie celu.
+
+Decyzje często oceniane są przez pryzmat zgodności z wewnętrznym systemem wartości.
+
+#### Strateg (#3)
+
+Naturalna zdolność dostrzegania możliwych ścieżek działania, scenariuszy i alternatywnych rozwiązań.
+
+Talent ten wspiera podejmowanie decyzji w warunkach niepewności.
+
+#### Współzależność (#4)
+
+Skłonność do dostrzegania zależności pomiędzy ludźmi, wydarzeniami i systemami.
+
+Wysoka potrzeba rozumienia szerszego kontekstu sytuacji.
+
+#### Analityk (#5)
+
+Naturalna potrzeba rozumienia przyczyn, zależności i mechanizmów.
+
+Silna orientacja na logikę, dowody oraz analizę danych.
+
+---
+
+### Pozostałe Talenty z Top 10
+
+#### Odpowiedzialność (#6)
+
+Silne poczucie zobowiązania wobec podjętych deklaracji i obowiązków.
+
+#### Bliskość (#7)
+
+Preferencja budowania głębokich relacji opartych na zaufaniu zamiast szerokiej sieci powierzchownych kontaktów.
+
+#### Indywidualizacja (#8)
+
+Naturalna zdolność dostrzegania indywidualnych różnic pomiędzy ludźmi.
+
+#### Rozwijanie Innych (#9)
+
+Skłonność do dostrzegania potencjału innych osób i wspierania ich rozwoju.
+
+#### Intelekt (#10)
+
+Potrzeba refleksji, analizowania oraz prowadzenia pogłębionych procesów myślowych.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil Gallupa wskazuje na dominację talentów związanych z:
+
+* uczeniem się,
+* analizą,
+* budowaniem modeli,
+* rozumieniem zależności,
+* podejmowaniem decyzji,
+* wspieraniem rozwoju innych ludzi.
+
+Najsilniejsza domena — Myślenie Strategiczne — pojawia się konsekwentnie w całym profilu.
+
+Wysokie pozycje talentów takich jak:
+
+* Uczenie się,
+* Strateg,
+* Analityk,
+* Intelekt,
+
+sugerują preferencję dla pracy koncepcyjnej, analitycznej i systemowej.
+
+Jednocześnie wysokie pozycje:
+
+* Pryncypialności,
+* Odpowiedzialności,
+* Bliskości,
+* Rozwijania Innych,
+
+wskazują na silny komponent wartościowy i relacyjny.
+
+Profil nie wskazuje na naturalną potrzebę dominacji, rywalizacji ani zdobywania statusu społecznego.
+
+Najniżej sklasyfikowane zostały:
+
+* Dowodzenie,
+* Poważanie,
+* Rywalizacja,
+* CZAR.
+
+Może to sugerować preferowanie wpływu poprzez wiedzę, argumentację i relacje zamiast formalnego autorytetu lub pozycji.
+
+---
 
 ## Notatki Badanego
 
-TODO
+TBD
 
-## Potencjalne Predyktory
+---
 
-TODO
+## Ograniczenia Modelu
+
+* Model nie mierzy osobowości.
+* Model nie mierzy inteligencji.
+* Model nie mierzy kompetencji.
+* Model nie przewiduje skuteczności zawodowej.
+* Wyniki opierają się na autodeklaracji.
+* Gallup posiada ograniczone wsparcie naukowe w porównaniu do modeli takich jak Big Five lub HEXACO.
+* Talenty opisują preferowane sposoby działania, a nie rzeczywiste zachowania.
+
+---
+
+## Przydatność dla Modelu
+
+### Ocena Wstępna
+
+**Wysoka**
+
+Model dostarcza wartościowych informacji o naturalnych preferencjach poznawczych i behawioralnych badanego.
+
+Szczególnie istotne dla budowy Cognitive Model wydają się talenty:
+
+* Uczenie się,
+* Strateg,
+* Analityk,
+* Pryncypialność,
+* Intelekt.
+
+Profil jest spójny z wynikami:
+
+* HEXACO,
+* VIA,
+* Need for Cognition,
+* Actively Open-Minded Thinking,
+* Comprehensive Intellectual Humility Scale,
+* Schwartz Value Theory.
+
+Gallup może stanowić istotne źródło danych przy identyfikacji predyktorów dotyczących sposobu uczenia się, analizowania problemów, podejmowania decyzji oraz rozwoju innych ludzi.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
 
 ---
 
