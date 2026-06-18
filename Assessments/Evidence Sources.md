@@ -1749,35 +1749,234 @@ Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie histor
 
 ---
 
-# Analiza Międzymodelowa
+# CliftonStrengths (Gallup)
 
-## Najsilniejsze Źródła Naukowe
+## Metadane
 
-TODO
+| Pole                   | Wartość                                 |
+| ---------------------- | --------------------------------------- |
+| Typ Modelu             | Talenty i preferowane sposoby działania |
+| Wiarygodność Naukowa   | 5.5 / 10                                |
+| Przydatność dla Modelu | Wysoka                                  |
+| Data Badania           | 2026-06-17                              |
+| Status                 | Aktywny                                 |
 
-## Najsilniejsze Źródła Predykcyjne
+---
 
-TODO
+## Opis
 
-## Obszary Zgodności Między Modelami
+CliftonStrengths (dawniej StrengthsFinder) jest modelem identyfikującym naturalne talenty oraz preferowane sposoby działania.
 
-TODO
+Model nie mierzy osobowości, inteligencji, wiedzy ani kompetencji.
 
-## Obszary Sprzeczności Między Modelami
+Jego celem jest określenie wzorców myślenia, odczuwania i działania, które pojawiają się spontanicznie oraz mogą zostać rozwinięte w mocne strony.
 
-TODO
+Gallup zakłada, że największy potencjał rozwoju wynika z rozwijania naturalnych talentów, a nie wyłącznie z eliminowania słabości.
 
-## Powtarzające się Motywy
+---
 
-TODO
+## Wyniki
 
-## Otwarte Pytania
+### Dominująca Domena
 
-TODO
+**Myślenie Strategiczne (Strategic Thinking)**
 
-## Kandydaci do Kalibracji
+Najsilniejszą domeną profilu jest Myślenie Strategiczne.
 
-TODO
+---
+
+### Ranking Talentów
+
+| Pozycja | Talent                               |
+| ------- | ------------------------------------ |
+| 1       | Uczenie się (Learner)                |
+| 2       | Pryncypialność (Belief)              |
+| 3       | Strateg (Strategic)                  |
+| 4       | Współzależność (Connectedness)       |
+| 5       | Analityk (Analytical)                |
+| 6       | Odpowiedzialność (Responsibility)    |
+| 7       | Bliskość (Relator)                   |
+| 8       | Indywidualizacja (Individualization) |
+| 9       | Rozwijanie Innych (Developer)        |
+| 10      | Intelekt (Intellection)              |
+| 11      | Dyscyplina (Discipline)              |
+| 12      | Bezstronność (Consistency)           |
+| 13      | Organizator (Arranger)               |
+| 14      | Naprawianie (Restorative)            |
+| 15      | Empatia (Empathy)                    |
+| 16      | Osiąganie (Achiever)                 |
+| 17      | Maksymalista (Maximizer)             |
+| 18      | Kontekst (Context)                   |
+| 19      | Zgodność (Harmony)                   |
+| 20      | Zbieranie (Input)                    |
+| 21      | Wiara w Siebie (Self-Assurance)      |
+| 22      | Optymista (Positivity)               |
+| 23      | Wizjoner (Futuristic)                |
+| 24      | Ukierunkowanie (Focus)               |
+| 25      | Komunikatywność (Communication)      |
+| 26      | Odkrywczość (Ideation)               |
+| 27      | Rozwaga (Deliberative)               |
+| 28      | Elastyczność (Adaptability)          |
+| 29      | Aktywator (Activator)                |
+| 30      | CZAR (Woo)                           |
+| 31      | Rywalizacja (Competition)            |
+| 32      | Poważanie (Significance)             |
+| 33      | Integrator (Includer)                |
+| 34      | Dowodzenie (Command)                 |
+
+---
+
+## Opis Wyników
+
+### Top 5 Talentów
+
+#### Uczenie się (#1)
+
+Najsilniejszy talent w profilu.
+
+Wskazuje na motywację do zdobywania wiedzy, rozwijania kompetencji i pogłębiania zrozumienia. Satysfakcję przynosi nie tylko rezultat, ale również sam proces uczenia się.
+
+#### Pryncypialność (#2)
+
+Silna orientacja na wartości, zasady i poczucie celu.
+
+Decyzje często oceniane są przez pryzmat zgodności z wewnętrznym systemem wartości.
+
+#### Strateg (#3)
+
+Naturalna zdolność dostrzegania możliwych ścieżek działania, scenariuszy i alternatywnych rozwiązań.
+
+Talent ten wspiera podejmowanie decyzji w warunkach niepewności.
+
+#### Współzależność (#4)
+
+Skłonność do dostrzegania zależności pomiędzy ludźmi, wydarzeniami i systemami.
+
+Wysoka potrzeba rozumienia szerszego kontekstu sytuacji.
+
+#### Analityk (#5)
+
+Naturalna potrzeba rozumienia przyczyn, zależności i mechanizmów.
+
+Silna orientacja na logikę, dowody oraz analizę danych.
+
+---
+
+### Pozostałe Talenty z Top 10
+
+#### Odpowiedzialność (#6)
+
+Silne poczucie zobowiązania wobec podjętych deklaracji i obowiązków.
+
+#### Bliskość (#7)
+
+Preferencja budowania głębokich relacji opartych na zaufaniu zamiast szerokiej sieci powierzchownych kontaktów.
+
+#### Indywidualizacja (#8)
+
+Naturalna zdolność dostrzegania indywidualnych różnic pomiędzy ludźmi.
+
+#### Rozwijanie Innych (#9)
+
+Skłonność do dostrzegania potencjału innych osób i wspierania ich rozwoju.
+
+#### Intelekt (#10)
+
+Potrzeba refleksji, analizowania oraz prowadzenia pogłębionych procesów myślowych.
+
+---
+
+## Interpretacja
+
+Profil Gallupa wskazuje na dominację talentów związanych z:
+
+* uczeniem się,
+* analizą,
+* budowaniem modeli,
+* rozumieniem zależności,
+* podejmowaniem decyzji,
+* wspieraniem rozwoju innych ludzi.
+
+Najsilniejsza domena — Myślenie Strategiczne — pojawia się konsekwentnie w całym profilu.
+
+Wysokie pozycje talentów takich jak:
+
+* Uczenie się,
+* Strateg,
+* Analityk,
+* Intelekt,
+
+sugerują preferencję dla pracy koncepcyjnej, analitycznej i systemowej.
+
+Jednocześnie wysokie pozycje:
+
+* Pryncypialności,
+* Odpowiedzialności,
+* Bliskości,
+* Rozwijania Innych,
+
+wskazują na silny komponent wartościowy i relacyjny.
+
+Profil nie wskazuje na naturalną potrzebę dominacji, rywalizacji ani zdobywania statusu społecznego.
+
+Najniżej sklasyfikowane zostały:
+
+* Dowodzenie,
+* Poważanie,
+* Rywalizacja,
+* CZAR.
+
+Może to sugerować preferowanie wpływu poprzez wiedzę, argumentację i relacje zamiast formalnego autorytetu lub pozycji.
+
+---
+
+## Notatki Badanego
+
+TBD
+
+---
+
+## Ograniczenia Modelu
+
+* Model nie mierzy osobowości.
+* Model nie mierzy inteligencji.
+* Model nie mierzy kompetencji.
+* Model nie przewiduje skuteczności zawodowej.
+* Wyniki opierają się na autodeklaracji.
+* Gallup posiada ograniczone wsparcie naukowe w porównaniu do modeli takich jak Big Five lub HEXACO.
+* Talenty opisują preferowane sposoby działania, a nie rzeczywiste zachowania.
+
+---
+
+## Przydatność dla Modelu
+
+### Ocena Wstępna
+
+**Wysoka**
+
+Model dostarcza wartościowych informacji o naturalnych preferencjach poznawczych i behawioralnych badanego.
+
+Szczególnie istotne dla budowy Cognitive Model wydają się talenty:
+
+* Uczenie się,
+* Strateg,
+* Analityk,
+* Pryncypialność,
+* Intelekt.
+
+Profil jest spójny z wynikami:
+
+* HEXACO,
+* VIA,
+* Need for Cognition,
+* Actively Open-Minded Thinking,
+* Comprehensive Intellectual Humility Scale,
+* Schwartz Value Theory.
+
+Gallup może stanowić istotne źródło danych przy identyfikacji predyktorów dotyczących sposobu uczenia się, analizowania problemów, podejmowania decyzji oraz rozwoju innych ludzi.
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+
 
 ---
 
