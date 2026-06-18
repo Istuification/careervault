@@ -2,17 +2,58 @@
 
 ## Cel dokumentu
 
-Dokument zawiera wszystkie źródła danych wykorzystywane przez Cognitive Model.
+Dokument gromadzi źródła pomiarowe wykorzystywane podczas budowy Cognitive Model.
 
-Źródła te nie są traktowane jako obiektywna prawda o badanym.
+Każde źródło opisuje wybrany aspekt funkcjonowania badanego, wykorzystując określony model psychologiczny, poznawczy lub behawioralny. Źródła te nie stanowią samodzielnie pełnego opisu osoby i nie są traktowane jako obiektywna prawda o badanym.
 
-Ich celem jest:
+Każdy model mierzy jedynie fragment rzeczywistości:
 
-* identyfikacja potencjalnych predyktorów zachowań,
-* generowanie hipotez,
-* wspieranie analizy historii i doświadczeń,
-* dostarczanie dowodów wspierających lub obalających hipotezy,
-* wspieranie przyszłej kalibracji modelu.
+* cechy osobowości,
+* wartości,
+* siły charakteru,
+* style myślenia,
+* talenty,
+* preferencje poznawcze.
+
+Wyniki poszczególnych modeli mogą się wzajemnie uzupełniać, częściowo pokrywać lub pozostawać ze sobą w napięciu. Z tego względu żaden pojedynczy model nie powinien być interpretowany w oderwaniu od pozostałych źródeł danych.
+
+Rolą dokumentu nie jest definiowanie prawdy o badanym, lecz dostarczanie uporządkowanych danych obserwacyjnych wykorzystywanych podczas budowy Cognitive Model.
+
+Proces budowy modelu przebiega w następujących etapach:
+
+Źródła Pomiarowe → Predyktory → Hipotezy → Analiza Historii → Dowody → Kalibracja Modelu
+
+### Źródła Pomiarowe
+
+Wyniki testów, ocen i modeli opisujących wybrane aspekty funkcjonowania badanego.
+
+### Predyktory
+
+Powtarzające się wzorce, tendencje lub cechy zidentyfikowane na podstawie wielu źródeł danych.
+
+Predyktory nie są jeszcze wnioskami o zachowaniu. Stanowią przesłanki wykorzystywane do budowy hipotez.
+
+### Hipotezy
+
+Przypuszczenia dotyczące sposobu myślenia, podejmowania decyzji, działania lub rozwiązywania problemów przez badanego.
+
+Hipotezy są generowane na podstawie predyktorów oraz innych źródeł danych dostępnych w Career Vault.
+
+### Analiza Historii
+
+Weryfikacja hipotez na podstawie rzeczywistych doświadczeń, projektów, sukcesów, porażek oraz opisanych sytuacji życiowych i zawodowych.
+
+### Dowody
+
+Fragmenty historii lub innych źródeł danych wspierające lub podważające istniejące hipotezy.
+
+### Kalibracja Modelu
+
+Proces aktualizacji Cognitive Model na podstawie zgromadzonych dowodów.
+
+W miarę przyrostu danych model powinien stopniowo przechodzić od hipotez opartych na pomiarach do wniosków opartych na obserwowanych zachowaniach.
+
+Celem końcowym nie jest stworzenie zbioru wyników testów, lecz zbudowanie możliwie trafnego, aktualizowanego i opartego na dowodach modelu poznawczego badanego.
 
 ---
 
