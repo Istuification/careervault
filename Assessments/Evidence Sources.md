@@ -250,59 +250,199 @@ TBD
 
 ## Metadane
 
-| Pole                  | Wartość   |
-| --------------------- | --------- |
-| Typ Modelu            | Osobowość |
-| Siła Naukowa          | 9.5 / 10  |
-| Siła Predykcyjna      | TBD       |
-| Ostatnia Aktualizacja | TBD       |
-| Status                | Aktywny   |
+| Pole                   | Wartość         |
+| ---------------------- | --------------- |
+| Typ Modelu             | Osobowość       |
+| Wiarygodność Naukowa   | 9.5 / 10        |
+| Przydatność dla Modelu | W trakcie oceny |
+| Data Badania           | 2026-06-18      |
+| Status                 | Aktywny         |
+
+---
 
 ## Opis
 
-TODO
+HEXACO Personality Inventory jest sześcioczynnikowym modelem osobowości rozwijającym klasyczny model Big Five.
+
+Najważniejszą różnicą względem Big Five jest dodanie wymiaru Uczciwość i Pokora (Honesty-Humility), który opisuje stosunek do uczciwości, sprawiedliwości, statusu społecznego oraz wykorzystywania innych ludzi dla własnych korzyści.
+
+Model opisuje osobowość za pomocą sześciu głównych wymiarów:
+
+* Uczciwość i Pokora (Honesty-Humility)
+* Emocjonalność (Emotionality)
+* Ekstrawersja (Extraversion)
+* Ugodowość (Agreeableness)
+* Sumienność (Conscientiousness)
+* Otwartość na Doświadczenia (Openness to Experience)
+
+Dodatkowo model zawiera skalę Altruizmu.
+
+---
 
 ## Wyniki
 
-TODO
+| Czynnik                | Wynik |
+| ---------------------- | ----- |
+| Honesty-Humility       | 7.10  |
+| Emotionality           | 3.33  |
+| Extraversion           | 4.60  |
+| Agreeableness          | 6.61  |
+| Conscientiousness      | 5.24  |
+| Openness to Experience | 5.59  |
+| Altruism               | 4.88  |
+
+---
 
 ## Rozbicie na Czynniki
 
 ### Uczciwość i Pokora (Honesty-Humility)
 
-TODO
+| Faceta          | Wynik |
+| --------------- | ----- |
+| Sincerity       | 6.04  |
+| Fairness        | 6.76  |
+| Greed Avoidance | 7.00  |
+| Modesty         | 5.62  |
 
 ### Emocjonalność (Emotionality)
 
-TODO
+| Faceta         | Wynik |
+| -------------- | ----- |
+| Fearfulness    | 3.74  |
+| Anxiety        | 3.20  |
+| Dependence     | 3.86  |
+| Sentimentality | 4.69  |
 
 ### Ekstrawersja (Extraversion)
 
-TODO
+| Faceta             | Wynik |
+| ------------------ | ----- |
+| Social Self-Esteem | 3.80  |
+| Social Boldness    | 5.84  |
+| Sociability        | 4.59  |
+| Liveliness         | 4.32  |
 
 ### Ugodowość (Agreeableness)
 
-TODO
+| Faceta      | Wynik |
+| ----------- | ----- |
+| Forgiveness | 6.80  |
+| Gentleness  | 7.10  |
+| Flexibility | 4.60  |
+| Patience    | 6.21  |
 
 ### Sumienność (Conscientiousness)
 
-TODO
+| Faceta        | Wynik |
+| ------------- | ----- |
+| Organization  | 5.24  |
+| Diligence     | 5.34  |
+| Perfectionism | 4.36  |
+| Prudence      | 6.09  |
 
-### Otwartość na Doświadczenia (Openness to Experience)
+### Otwartość na Doświadczenia (Openness)
 
-TODO
+| Faceta                 | Wynik |
+| ---------------------- | ----- |
+| Aesthetic Appreciation | 3.34  |
+| Inquisitiveness        | 6.53  |
+| Creativity             | 6.09  |
+| Unconventionality      | 5.91  |
+
+---
+
+## Opis Wyników
+
+### Uczciwość i Pokora — bardzo wysoka
+
+Najsilniejszy wymiar całego profilu.
+
+Wynik wskazuje na bardzo niską skłonność do manipulowania innymi dla własnych korzyści, wysokie znaczenie uczciwości proceduralnej oraz niewielkie zainteresowanie statusem społecznym, prestiżem lub demonstracją sukcesu.
+
+Szczególnie wysoki wynik Fairness sugeruje silną niechęć do działań postrzeganych jako nieuczciwe lub wykorzystujące innych.
+
+### Emocjonalność — umiarkowanie niska
+
+Wynik sugeruje względnie dobrą odporność na stres i umiarkowaną niezależność emocjonalną.
+
+Jednocześnie podwyższona Sentimentality wskazuje na zdolność tworzenia silnych więzi emocjonalnych oraz empatię wobec innych ludzi.
+
+### Ekstrawersja — umiarkowana
+
+Profil wskazuje na zdolność funkcjonowania w sytuacjach społecznych bez wyraźnej dominacji cech introwertycznych lub ekstrawertycznych.
+
+Wyróżnia się wysoka Social Boldness, sugerująca stosunkowo dużą swobodę w wystąpieniach publicznych, prowadzeniu rozmów lub podejmowaniu inicjatywy społecznej.
+
+### Ugodowość — wysoka
+
+Wynik wskazuje na dużą cierpliwość, skłonność do wybaczania oraz łagodne podejście do innych ludzi.
+
+Jednocześnie umiarkowana Flexibility sugeruje, że gotowość do kompromisu nie oznacza automatycznej rezygnacji z własnego stanowiska.
+
+### Sumienność — umiarkowanie wysoka
+
+Wynik wskazuje na rozwagę, zdolność planowania oraz tendencję do analizowania konsekwencji działań przed podjęciem decyzji.
+
+Najsilniejszą cechą tego obszaru jest Prudence, sugerująca ostrożność decyzyjną oraz preferencję dla przemyślanych działań.
+
+### Otwartość na Doświadczenia — wysoka
+
+Profil wskazuje na dużą ciekawość poznawczą, zainteresowanie nowymi ideami oraz skłonność do poszukiwania nowych sposobów rozwiązywania problemów.
+
+Najbardziej wyróżnia się bardzo wysoka Inquisitiveness oraz Creativity.
+
+Jednocześnie stosunkowo niski wynik Aesthetic Appreciation sugeruje, że zainteresowanie nowością ma charakter bardziej intelektualny niż artystyczny.
+
+---
 
 ## Interpretacja
 
-TODO
+HEXACO przedstawia obraz osoby silnie skoncentrowanej na uczciwości, sprawiedliwości oraz jakości rozumowania.
+
+Profil sugeruje:
+
+* wysoką niezależność od statusu społecznego,
+* dużą wagę przywiązywaną do uczciwości i zasad,
+* rozwagę decyzyjną,
+* wysoką ciekawość poznawczą,
+* skłonność do analizowania problemów przed działaniem,
+* łagodne i cierpliwe podejście do ludzi,
+* gotowość do obrony własnego stanowiska bez potrzeby eskalowania konfliktu.
+
+Model jest spójny z wynikami VIA, Schwartz Value Theory, Actively Open-Minded Thinking (AOT) oraz Comprehensive Intellectual Humility Scale (CIHS).
+
+---
 
 ## Notatki Badanego
 
-TODO
+Wyniki modelu są postrzegane przez badanego jako stosunkowo trafny opis jego sposobu funkcjonowania.
 
-## Potencjalne Predyktory
+Szczególnie trafne wydają się wyniki związane z ciekawością poznawczą, rozwagą decyzyjną, niewielkim znaczeniem statusu społecznego oraz wysoką wagą przypisywaną uczciwości i sprawiedliwości.
 
-TODO
+Wymaga dalszej weryfikacji sposób interpretacji wyników związanych z sumiennością w kontekście występowania hiperfokusu oraz nierównomiernego poziomu organizacji pomiędzy różnymi obszarami życia.
+
+---
+
+## Ograniczenia Modelu
+
+* Model opisuje względnie stabilne cechy osobowości, a nie konkretne zachowania.
+* Wyniki opierają się na samoopisie badanego.
+* Model nie uwzględnia wpływu kontekstu sytuacyjnego.
+* Model nie mierzy kompetencji ani poziomu wiedzy.
+* Interpretacja wymaga zestawienia z innymi źródłami danych oraz analizą rzeczywistych historii.
+
+---
+
+## Przydatność dla Modelu
+
+W trakcie oceny.
+
+Na obecnym etapie HEXACO stanowi jedno z najbardziej spójnych źródeł danych w całym zbiorze Evidence Sources.
+
+Wyniki wykazują wysoką zgodność z wynikami VIA, Schwartz Value Theory, Actively Open-Minded Thinking (AOT) oraz Comprehensive Intellectual Humility Scale (CIHS).
+
+Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+
 
 ---
 
