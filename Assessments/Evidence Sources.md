@@ -65,55 +65,184 @@ Celem końcowym nie jest stworzenie zbioru wyników testów, lecz zbudowanie mo�
 
 ## Metadane
 
-| Pole                  | Wartość   |
-| --------------------- | --------- |
-| Typ Modelu            | Osobowość |
-| Siła Naukowa          | TBD       |
-| Siła Predykcyjna      | TBD       |
-| Ostatnia Aktualizacja | TBD       |
-| Status                | Aktywny   |
+| Pole                   | Wartość    |
+| ---------------------- | ---------- |
+| Typ Modelu             | Osobowość  |
+| Wiarygodność Naukowa   | 10 / 10    |
+| Przydatność dla Modelu | TBD        |
+| Data Badania           | 2026-06-18 |
+| Status                 | Aktywny    |
+
+---
 
 ## Opis
 
-TODO
+Big Five Personality Model (BFM), zwany również Pięcioczynnikowym Modelem Osobowości, jest jednym z najlepiej przebadanych modeli osobowości we współczesnej psychologii.
+
+Model opisuje osobowość za pomocą pięciu szerokich wymiarów:
+
+* Otwartość na Doświadczenia (Openness)
+* Sumienność (Conscientiousness)
+* Ekstrawersja (Extraversion)
+* Ugodowość (Agreeableness)
+* Neurotyczność (Neuroticism)
+
+Model nie opisuje zdolności, inteligencji ani kompetencji. Jego celem jest opis względnie trwałych tendencji psychologicznych i behawioralnych.
+
+---
 
 ## Wyniki
 
-TODO
+| Czynnik                               | Wynik    |
+| ------------------------------------- | -------- |
+| Neurotyczność (Neuroticism)           | 3.53 / 5 |
+| Ekstrawersja (Extraversion)           | 3.30 / 5 |
+| Ugodowość (Agreeableness)             | 2.40 / 5 |
+| Otwartość na Doświadczenia (Openness) | 2.80 / 5 |
+| Sumienność (Conscientiousness)        | 2.80 / 5 |
 
-## Rozbicie na Czynniki
+### Facety
 
-### Otwartość na Doświadczenia
+#### Neurotyczność
 
-TODO
+| Faceta                                        | Wynik |
+| --------------------------------------------- | ----- |
+| Lęk (Anxiety)                                 | 3.9   |
+| Wrogość (Angry Hostility)                     | 3.5   |
+| Depresyjność (Depression)                     | 2.9   |
+| Samoświadomość społeczna (Self-Consciousness) | 2.7   |
+| Impulsywność (Impulsiveness)                  | 4.2   |
+| Podatność na stres (Vulnerability)            | 2.7   |
 
-### Sumienność
+#### Ekstrawersja
 
-TODO
+| Faceta                                       | Wynik |
+| -------------------------------------------- | ----- |
+| Ciepło interpersonalne (Warmth)              | 3.9   |
+| Towarzyskość (Gregariousness)                | 3.9   |
+| Asertywność (Assertiveness)                  | 3.5   |
+| Aktywność (Activity)                         | 3.3   |
+| Poszukiwanie stymulacji (Excitement-Seeking) | 2.8   |
+| Pozytywne emocje (Positive Emotions)         | 3.8   |
 
-### Ekstrawersja
+#### Ugodowość
 
-TODO
+| Faceta                                | Wynik |
+| ------------------------------------- | ----- |
+| Zaufanie (Trust)                      | 2.0   |
+| Prostolinijność (Straightforwardness) | 2.3   |
+| Altruizm (Altruism)                   | 1.5   |
+| Uległość (Compliance)                 | 2.1   |
+| Skromność (Modesty)                   | 2.8   |
+| Wrażliwość (Tender-Mindedness)        | 2.4   |
 
-### Ugodowość
+#### Otwartość na Doświadczenia
 
-TODO
+| Faceta                | Wynik |
+| --------------------- | ----- |
+| Wyobraźnia (Fantasy)  | 1.8   |
+| Estetyka (Aesthetics) | 2.8   |
+| Uczucia (Feelings)    | 1.9   |
+| Działania (Actions)   | 2.4   |
+| Idee (Ideas)          | 2.5   |
+| Wartości (Values)     | 2.5   |
 
-### Neurotyczność
+#### Sumienność
 
-TODO
+| Faceta                                      | Wynik |
+| ------------------------------------------- | ----- |
+| Kompetencje (Competence)                    | 2.3   |
+| Porządek (Order)                            | 2.3   |
+| Obowiązkowość (Dutifulness)                 | 2.5   |
+| Dążenie do osiągnięć (Achievement Striving) | 2.5   |
+| Samodyscyplina (Self-Discipline)            | 1.4   |
+| Rozwaga (Deliberation)                      | 3.3   |
+
+---
+
+## Opis Wyników
+
+### Neurotyczność — umiarkowana
+
+Wynik wskazuje na przeciętną podatność na stres i negatywne emocje. Badany nie wydaje się szczególnie odporny emocjonalnie, ale również nie wykazuje cech wysokiej neurotyczności.
+
+Najbardziej wyróżnia się podwyższona impulsywność przy jednocześnie umiarkowanej podatności na stres.
+
+### Ekstrawersja — umiarkowana
+
+Profil wskazuje na zdolność do funkcjonowania społecznego bez wyraźnej dominacji cech introwertycznych lub ekstrawertycznych.
+
+Badany nie poszukuje intensywnej stymulacji społecznej, ale potrafi funkcjonować komfortowo w relacjach i sytuacjach grupowych.
+
+### Ugodowość — niska
+
+Wynik sugeruje ograniczoną skłonność do automatycznego zaufania, podporządkowywania się lub dostosowywania do innych osób.
+
+Nie musi oznaczać konfliktowości. Może oznaczać niezależność ocen, sceptycyzm wobec cudzych opinii oraz preferowanie własnych standardów oceny sytuacji.
+
+### Otwartość na Doświadczenia — umiarkowanie niska
+
+Wynik nie wskazuje na szczególnie wysokie zainteresowanie doświadczeniami estetycznymi, emocjonalnymi lub fantazyjnymi.
+
+Model sugeruje raczej praktyczne niż eksploracyjne podejście do nowych doświadczeń.
+
+### Sumienność — umiarkowanie niska
+
+Wynik wskazuje na ograniczoną potrzebę utrzymywania stałego porządku, rutyn i dyscypliny.
+
+Jednocześnie podwyższona rozwaga sugeruje, że decyzje nie są podejmowane całkowicie impulsywnie.
+
+---
 
 ## Interpretacja
 
-TODO
+Profil Big Five sugeruje osobę funkcjonującą w sposób bardziej niezależny niż konformistyczny.
+
+Najbardziej charakterystycznymi cechami profilu są:
+
+* niska potrzeba podporządkowywania się opiniom innych,
+* ograniczone zaufanie domyślne,
+* relatywnie niski poziom organizacji codziennej,
+* umiarkowana rozwaga decyzyjna,
+* przeciętna potrzeba kontaktów społecznych.
+
+Wyniki nie wskazują na osobę szczególnie napędzaną statusem społecznym, popularnością lub potrzebą aprobaty.
+
+---
 
 ## Notatki Badanego
 
-TODO
+Badany nie identyfikuje się ani z profilem osoby konsekwentnie uporządkowanej, ani z profilem osoby trwale chaotycznej.
 
-## Potencjalne Predyktory
+Deklaruje występowanie silnej polaryzacji pomiędzy obszarami zainteresowań.
 
-TODO
+Niektóre obszary życia mogą pozostawać w stanie znacznej dezorganizacji bez odczuwalnego dyskomfortu.
+
+Jednocześnie obszary objęte aktualnym hiperfokusem są organizowane i kontrolowane na bardzo wysokim poziomie szczegółowości.
+
+Badany wskazuje również na wpływ zespołu Aspergera na sposób gospodarowania zasobami poznawczymi. W praktyce może to prowadzić do występowania skrajności pomiędzy zaniedbaniem wybranych obszarów a bardzo wysokim poziomem organizacji innych.
+
+Może to częściowo wpływać na wyniki związane z sumiennością, porządkiem i samodyscypliną.
+
+Ponadto wyniki modelu wykazują częściowe rozbieżności względem modelu HEXACO, szczególnie w obszarach Ugodowości, Otwartości oraz Sumienności. Rozbieżności te wymagają dalszej analizy podczas budowy Cognitive Model.
+
+---
+
+## Ograniczenia Modelu
+
+* Model opisuje szerokie tendencje osobowościowe, a nie rzeczywiste zachowania.
+* Model nie uwzględnia wpływu środowiska, doświadczeń życiowych ani kontekstu sytuacyjnego.
+* Model nie mierzy zdolności poznawczych, inteligencji ani kompetencji.
+* Wyniki opierają się na samoopisie badanego.
+* Interpretacja wymaga zestawienia z innymi źródłami danych.
+* Zaobserwowano istotne różnice względem wyników HEXACO, co ogranicza możliwość wyciągania jednoznacznych wniosków bez dalszej kalibracji.
+
+---
+
+## Przydatność dla Modelu
+
+TBD
+
 
 ---
 
