@@ -2,59 +2,53 @@
 
 ## Cel dokumentu
 
-Predyktory są pierwszą warstwą interpretacyjną modelu poznawczego.
+Predictors są pierwszą warstwą interpretacyjną Cognitive Model.
 
-Ich zadaniem jest przekształcenie danych pochodzących z Assessment Data oraz wcześniejszych kalibracji w opis potencjalnych mechanizmów poznawczych, behawioralnych lub decyzyjnych.
+Ich zadaniem jest identyfikacja mechanizmów poznawczych, decyzyjnych, motywacyjnych oraz behawioralnych, które mogą wyjaśniać obserwowane działania badanego.
 
-Predyktory nie opisują całej osoby.
+Predictors nie opisują całej osoby.
 
-Predyktory nie są również traktowane jako prawda.
+Predictors nie są również traktowane jako prawda.
 
-Stanowią robocze modele wyjaśniające obserwowane wzorce zachowań i służą jako budulec dla hipotez oraz Cognitive Model.
+Stanowią robocze modele wyjaśniające rzeczywistość i służą jako budulec dla Behavioral Patterns oraz Cognitive Model.
 
 ---
 
 ## Miejsce w architekturze Vault
 
 ```text
-Assessment Data
-       │
-       ▼
-  Predictors
-       │
-       ▼
-  Hypotheses
-       │
-       ▼
- Cognitive Model
-
-Stories
-       │
-       ▼
- Calibration
-       │
-       ├──────────────► Predictors
-       ├──────────────► Hypotheses
-       └──────────────► Cognitive Model
+Assessment Data      Stories
+        ↓               ↓
+          Calibration
+                ↓
+           Predictors
+                ↓
+      Behavioral Patterns
+                ↓
+         Cognitive Model
 ```
 
 Assessment Data dostarczają danych pomiarowych.
 
-Predyktory interpretują dane.
+Stories dostarczają obserwacji zachowań.
 
-Hipotezy łączą wiele predyktorów w bardziej złożone wzorce.
+Calibration integruje oba źródła.
 
-Cognitive Model integruje wszystkie zweryfikowane hipotezy w jeden model działania.
+Predictors opisują pojedyncze mechanizmy wspierane przez wiele źródeł.
 
-Stories nie wpływają bezpośrednio na predyktory.
+Behavioral Patterns opisują powtarzalne wzorce działania wynikające ze współwystępowania wielu Predictorów.
 
-Stories stanowią materiał obserwacyjny wykorzystywany podczas procesu kalibracji.
+Cognitive Model integruje całość w spójny model funkcjonowania badanego.
 
 ---
 
-## Czym jest predyktor?
+## Czym jest Predictor?
 
-Predyktor jest pojedynczym mechanizmem lub wzorcem, który może wyjaśniać określone zachowania, decyzje lub sposoby myślenia.
+Predictor opisuje pojedynczy mechanizm mogący wyjaśniać określone zachowania, decyzje lub sposoby myślenia.
+
+Predictor powinien odpowiadać na pytanie:
+
+> Jaki mechanizm prawdopodobnie działa?
 
 Przykłady:
 
@@ -62,220 +56,232 @@ Przykłady:
 * Evidence-Driven Belief Updating
 * Learning-Oriented Exploration
 * Fairness-Oriented Evaluation
+* Stakes-Adjusted Evidence Threshold
 
-Predyktor powinien opisywać jeden mechanizm.
+Predictor powinien opisywać jeden mechanizm.
 
-Jeżeli predyktor zaczyna opisywać wiele niezależnych mechanizmów, powinien zostać rozdzielony lub zastąpiony dokładniejszym modelem.
+Jeżeli Predictor zaczyna opisywać kilka niezależnych mechanizmów jednocześnie, powinien zostać rozdzielony lub zastąpiony dokładniejszym modelem.
 
 ---
 
-## Źródła predyktorów
+## Źródła Predictorów
 
-Predyktory mogą być tworzone lub aktualizowane wyłącznie na podstawie:
+Predictors nie są tworzone bezpośrednio przez Assessment Data ani Stories.
+
+Predictors powstają wyłącznie w wyniku procesu Calibration.
+
+Calibration analizuje:
 
 * Assessment Data,
-* wcześniejszych kalibracji.
+* Stories,
+* istniejące Predictors,
+* wcześniejsze Calibration Records.
 
-Stories nie tworzą predyktorów bezpośrednio.
-
-Stories mogą jedynie dostarczyć nowych dowodów uruchamiających proces kalibracji.
+Predictor powinien być wspierany przez więcej niż jedno źródło danych.
 
 ---
 
-## Status predyktorów
+## Status Predictorów
 
 ### Candidate
 
-Mechanizm został zidentyfikowany, ale nie posiada jeszcze wystarczającej liczby dowodów behawioralnych.
+Mechanizm został zidentyfikowany, ale posiada ograniczoną ilość dowodów wspierających.
 
 ### Validated
 
-Mechanizm został potwierdzony przez wiele niezależnych źródeł oraz historię zachowań.
+Mechanizm został potwierdzony przez wiele niezależnych źródeł danych oraz obserwacji behawioralnych.
 
 ### Deprecated
 
-Mechanizm został zastąpiony przez dokładniejszy model lub utracił wartość wyjaśniającą.
+Mechanizm utracił wartość wyjaśniającą lub został zastąpiony dokładniejszym modelem.
 
 ---
 
-## Relacja pomiędzy Assessment Data, Stories i Predyktorami
+## Relacja pomiędzy Assessment Data, Stories i Predictorami
 
-Assessment Data opisują wyniki pomiarów oraz profile poznawcze.
+Assessment Data opisują potencjalne tendencje.
 
-Stories opisują rzeczywiste zachowania i zdarzenia.
+Stories opisują rzeczywiste zachowania.
 
-Predyktory są aktualnym stanem interpretacji dostępnych danych.
+Predictors stanowią aktualną interpretację najlepiej wyjaśniającą oba źródła jednocześnie.
 
-Stories nie zmieniają predyktorów bezpośrednio.
-
-Zmiany mogą zostać wprowadzone wyłącznie poprzez proces kalibracji.
+Żadne pojedyncze źródło nie powinno samodzielnie tworzyć Predictorów.
 
 ---
 
-## Relacja pomiędzy predyktorami i hipotezami
+## Relacja pomiędzy Predictorami i Behavioral Patterns
 
-Predyktor opisuje pojedynczy mechanizm.
+Predictor opisuje pojedynczy mechanizm.
 
-Hipoteza opisuje wzorzec wynikający ze współwystępowania wielu predyktorów.
+Behavioral Pattern opisuje powtarzalny wzorzec działania obserwowany w rzeczywistości.
 
-Pojedynczy predyktor może wspierać wiele hipotez.
+Pojedynczy Predictor może wspierać wiele Behavioral Patterns.
 
-Hipotezy powinny być budowane w oparciu o 2–4 predyktory.
+Pojedynczy Behavioral Pattern zwykle opiera się na współwystępowaniu 2–4 Predictorów oraz wielokrotnym występowaniu podobnego wzorca w Stories.
 
-Hipotezy stanowią warstwę interpretacyjną wykorzystywaną podczas analizy Stories.
+Przykład:
+
+```text
+Predictors
+
+- Model-Centric Decision Making
+- Systemic Problem Structuring
+- Evidence-Driven Belief Updating
+
+↓
+
+Behavioral Pattern
+
+Operational Transformation Under Ambiguity
+```
 
 ---
 
-## Zasada stabilności predyktora
+## Zasada stabilności Predictora
 
-Kalibracja może:
+Calibration może:
 
 * zwiększać lub zmniejszać confidence,
-* dodawać nowe dowody,
-* dodawać nowe zachowania przewidywane,
-* dodawać nowe zachowania przeczące,
+* dodawać nowe źródła,
+* dodawać nowe przewidywania,
+* dodawać nowe dowody wspierające,
+* dodawać nowe dowody przeczące,
 * doprecyzowywać opis.
 
-Kalibracja nie powinna zmieniać podstawowego znaczenia predyktora.
+Calibration nie powinna zmieniać podstawowego znaczenia Predictora.
 
-Jeżeli nowy materiał wskazuje, że predyktor opisuje inny mechanizm niż pierwotnie zakładano, należy utworzyć nowy predyktor lub przeprowadzić formalną migrację modelu.
+Jeżeli nowy materiał wskazuje na inny mechanizm niż pierwotnie zakładano, należy utworzyć nowy Predictor lub przeprowadzić formalną migrację modelu.
 
 ---
 
-## Struktura predyktora
+## Struktura Predictora
 
-Każdy predyktor powinien być zapisany jako osobny plik Markdown zawierający metadane YAML oraz sekcje opisowe.
+Każdy Predictor powinien być zapisany jako osobny plik Markdown zawierający metadane YAML oraz sekcje opisowe.
 
 ### Metadane
 
 ```yaml
 ---
 id: PRED-001
+
 name: Model-Centric Decision Making
 
-status: candidate
+status: validated
 confidence: high
 
-created_from:
-  - Assessment Data
+created_by:
+  - CAL-001
 
-supporting_stories: []
+related_patterns: []
 
-conflicting_stories: []
+supporting_calibrations: []
 
-related_hypotheses: []
-
-related_calibrations: []
+conflicting_calibrations: []
 
 last_updated: 2026-06-22
 version: 1.0
 ---
 ```
 
-### Elementy predyktora
+---
 
-#### Opis
+## Elementy Predictora
 
-Opis mechanizmu oraz jego znaczenia.
+### Opis
+
+Opis mechanizmu.
 
 Odpowiada na pytanie:
 
-> Co ten predyktor opisuje?
+> Jaki mechanizm opisuje ten Predictor?
 
 ---
 
-#### Źródła
+### Źródła
 
-Dane i obserwacje wykorzystane podczas tworzenia lub aktualizacji predyktora.
+Źródła wykorzystane podczas kalibracji.
 
-Źródła mogą obejmować:
+Powinny wskazywać:
 
 * Assessment Data,
-* wcześniejsze kalibracje.
+* Stories,
+* wcześniejsze Calibration Records.
 
 ---
 
-#### Zachowania Przewidywane
+### Zachowania Przewidywane
 
-Zachowania, które powinny występować, jeśli predyktor jest poprawny.
-
-Odpowiada na pytanie:
-
-> Co powinno być widoczne w rzeczywistości?
+Jakie zachowania powinny pojawiać się, jeśli Predictor jest poprawny?
 
 ---
 
-#### Zachowania Przeczące
+### Zachowania Przeczące
 
-Zachowania osłabiające lub podważające predyktor.
-
-Odpowiada na pytanie:
-
-> Co mogłoby wskazywać, że model jest błędny lub niepełny?
+Jakie zachowania osłabiają lub podważają Predictor?
 
 ---
 
-#### Dowody Potwierdzające
+### Dowody Potwierdzające
 
-Historie, obserwacje lub kalibracje wspierające predyktor.
-
----
-
-#### Dowody Przeczące
-
-Historie, obserwacje lub kalibracje pozostające w konflikcie z predyktorem.
+Historie, obserwacje oraz kalibracje wspierające Predictor.
 
 ---
 
-#### Historia Kalibracji
+### Dowody Przeczące
 
-Lista kalibracji, które wpłynęły na predyktor.
+Historie, obserwacje oraz kalibracje pozostające w konflikcie z Predictorem.
 
 ---
 
-#### Ocena
+### Historia Kalibracji
 
-Aktualna ocena jakości predyktora.
+Lista Calibration Records wpływających na Predictor.
+
+---
+
+### Ocena
+
+Aktualna ocena jakości Predictora.
 
 Powinna zawierać:
 
-* poziom pewności,
-* siłę źródeł pomiarowych,
-* siłę źródeł behawioralnych,
+* confidence,
+* siłę wsparcia z Assessment Data,
+* siłę wsparcia ze Stories,
 * poziom walidacji.
 
 ---
 
-#### Notatki
+### Notatki
 
-Dodatkowe informacje, ograniczenia interpretacyjne, potencjalne kierunki dalszej kalibracji oraz powiązania z innymi predyktorami.
+Ograniczenia interpretacyjne, potencjalne kierunki dalszej kalibracji oraz powiązania z innymi Predictorami.
 
 ---
 
 ## Weryfikacja jakości
 
-Dobry predyktor:
+Dobry Predictor:
 
 * opisuje pojedynczy mechanizm,
-* posiada źródła,
+* posiada wiele źródeł,
 * generuje przewidywania,
 * może zostać sfalsyfikowany,
-* wspiera budowę hipotez.
+* wspiera budowę Behavioral Patterns.
 
-Słaby predyktor:
+Słaby Predictor:
 
 * opisuje wiele mechanizmów jednocześnie,
-* nie posiada źródeł,
+* jest wyłącznie parafrazą wyników testów,
+* nie posiada dowodów behawioralnych,
 * nie generuje przewidywań,
-* nie może zostać obalony,
-* jest wyłącznie parafrazą wyników testów.
+* nie może zostać obalony.
 
 ---
 
 ## Cel długoterminowy
 
-Celem predyktorów nie jest stworzenie kompletnego opisu osobowości.
+Celem Predictorów nie jest opisanie osobowości badanego.
 
-Ich rolą jest budowa możliwie użytecznego modelu wyjaśniającego sposób myślenia, podejmowania decyzji, uczenia się oraz funkcjonowania badanego.
+Ich rolą jest identyfikacja mechanizmów, które najlepiej wyjaśniają sposób myślenia, podejmowania decyzji, uczenia się oraz działania badanego.
 
-Model ma charakter iteracyjny i podlega ciągłej kalibracji wraz z pojawianiem się nowych danych, historii oraz zmian w Assessment Data.
+Predictors stanowią fundament dla Behavioral Patterns oraz Cognitive Model i podlegają ciągłej kalibracji wraz z pojawianiem się nowych danych, historii oraz obserwacji.
