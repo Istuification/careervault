@@ -1980,6 +1980,435 @@ Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie histor
 
 ---
 
+# Analiza Międzymodelowa
+
+## Cel
+
+Celem niniejszej sekcji jest identyfikacja obszarów zgodności, niezgodności oraz powtarzających się wzorców występujących pomiędzy poszczególnymi źródłami danych zgromadzonymi w dokumencie Evidence Sources.
+
+Analiza nie ma na celu tworzenia ostatecznych wniosków dotyczących badanego.
+
+Jej zadaniem jest:
+
+* identyfikacja potencjalnych predyktorów,
+* wskazanie obszarów wymagających dalszej weryfikacji,
+* wykrycie sprzeczności pomiędzy modelami,
+* przygotowanie danych wejściowych dla kolejnych etapów budowy Cognitive Model.
+
+Wszystkie wnioski zawarte w tej sekcji mają charakter roboczy i mogą zostać zmienione w wyniku analizy historii, dowodów behawioralnych oraz późniejszej kalibracji modelu.
+
+---
+
+# Najsilniejsze Źródła Danych
+
+## Wysoka wartość naukowa i wysoka zgodność
+
+| Model                                            | Waga Naukowa  | Waga dla Modelu |
+| ------------------------------------------------ | ------------- | --------------- |
+| HEXACO                                           | Bardzo wysoka | Bardzo wysoka   |
+| Schwartz Value Theory                            | Bardzo wysoka | Wysoka          |
+| Need for Cognition (NFC)                         | Wysoka        | Bardzo wysoka   |
+| Actively Open-Minded Thinking (AOT)              | Wysoka        | Bardzo wysoka   |
+| Comprehensive Intellectual Humility Scale (CIHS) | Wysoka        | Bardzo wysoka   |
+
+---
+
+## Uzupełniające źródła danych
+
+| Model                     | Waga Naukowa   | Waga dla Modelu   |
+| ------------------------- | -------------- | ----------------- |
+| VIA Character Strengths   | Średnio-wysoka | Wysoka            |
+| Moral Foundations Theory  | Średnia        | Średnia           |
+| CliftonStrengths (Gallup) | Niska-średnia  | Wysoka praktyczna |
+| Big Five                  | Bardzo wysoka  | Średnia           |
+
+---
+
+# Obszary Wysokiej Zgodności
+
+## 1. Silna Orientacja Poznawcza
+
+### Źródła
+
+* Need for Cognition
+* AOT
+* CIHS
+* HEXACO
+* VIA
+* Gallup
+
+### Powtarzające się sygnały
+
+* wysoka ciekawość poznawcza,
+* potrzeba rozumienia zjawisk,
+* budowanie modeli rzeczywistości,
+* zainteresowanie zależnościami przyczynowo-skutkowymi,
+* satysfakcja płynąca z procesu uczenia się.
+
+### Pewność
+
+**Bardzo wysoka**
+
+---
+
+## 2. Decyzje Oparte na Modelach i Argumentach
+
+### Źródła
+
+* VIA (Judgment)
+* AOT
+* CIHS
+* NFC
+* HEXACO (Prudence)
+* Gallup (Strategic, Analytical)
+
+### Powtarzające się sygnały
+
+* analiza przed działaniem,
+* poszukiwanie przyczyn zamiast objawów,
+* budowanie modeli sytuacji,
+* ocena jakości argumentów,
+* preferencja rozwiązań opartych na zrozumieniu problemu.
+
+### Pewność
+
+**Bardzo wysoka**
+
+---
+
+## 3. Niska Orientacja na Status i Dominację
+
+### Źródła
+
+* Schwartz
+* HEXACO
+* VIA
+* Gallup
+
+### Powtarzające się sygnały
+
+* niska motywacja związana z prestiżem,
+* niewielkie znaczenie statusu społecznego,
+* brak potrzeby dominacji,
+* brak potrzeby rywalizacji dla samej rywalizacji.
+
+### Pewność
+
+**Wysoka**
+
+---
+
+## 4. Wysoka Orientacja na Uczciwość i Sprawiedliwość
+
+### Źródła
+
+* HEXACO
+* Schwartz
+* VIA
+* Moral Foundations Theory
+
+### Powtarzające się sygnały
+
+* wysoka wrażliwość na uczciwość,
+* znaczenie sprawiedliwego traktowania,
+* respektowanie zasad,
+* niechęć wobec działań postrzeganych jako nieuczciwe.
+
+### Pewność
+
+**Wysoka**
+
+---
+
+## 5. Gotowość do Aktualizacji Poglądów
+
+### Źródła
+
+* AOT
+* CIHS
+* VIA (Judgment)
+
+### Powtarzające się sygnały
+
+* otwartość na nowe dane,
+* gotowość do rewizji stanowiska,
+* wysoka wartość przypisywana trafności modelu.
+
+### Pewność
+
+**Wysoka**
+
+### Dodatkowa obserwacja
+
+Aktualizacja poglądów wydaje się następować na poziomie modelu rzeczywistości, a nie na poziomie pojedynczych opinii.
+
+Badany nie deklaruje częstej zmiany zdania, jednak opisuje szybkie aktualizowanie modeli po pojawieniu się wystarczająco wiarygodnych danych.
+
+---
+
+# Obszary Umiarkowanej Zgodności
+
+## 1. Rozwijanie Innych Ludzi
+
+### Źródła
+
+* Gallup (Developer)
+* Schwartz (Benevolence)
+* VIA
+
+### Obserwacja
+
+Pojawia się tendencja do wspierania rozwoju innych ludzi, jednak obecnie brakuje wystarczającej liczby dowodów behawioralnych pozwalających ocenić znaczenie tego wzorca.
+
+### Pewność
+
+**Średnia**
+
+---
+
+## 2. Myślenie Systemowe
+
+### Źródła
+
+* Gallup (Connectedness)
+* Gallup (Strategic)
+* Gallup (Analytical)
+* HEXACO (Inquisitiveness)
+
+### Obserwacja
+
+Badany wykazuje tendencję do postrzegania problemów jako elementów większych systemów oraz do analizowania wzajemnych zależności.
+
+Wymaga dalszej walidacji na podstawie rzeczywistych historii.
+
+### Pewność
+
+**Średnia**
+
+---
+
+# Obszary Pozornej Sprzeczności
+
+## 1. Tradycja i Konformizm (Schwartz)
+
+### Wyniki
+
+* Tradition: wysoki
+* Conformity: wysoki
+
+### Potencjalna sprzeczność
+
+Wynik wydaje się niezgodny z:
+
+* wysokim AOT,
+* wysokim CIHS,
+* wysokim Judgment,
+* wysoką niezależnością poznawczą.
+
+### Wyjaśnienie
+
+Analiza jakościowa wskazuje, że wyniki te prawdopodobnie nie odzwierciedlają potrzeby podporządkowania się normom społecznym lub autorytetom.
+
+Bardziej prawdopodobna interpretacja:
+
+* szacunek dla sprawdzonych rozwiązań,
+* szacunek dla procedur posiadających uzasadnienie,
+* preferencja rozumienia zasad przed ich bezrefleksyjnym stosowaniem.
+
+### Status
+
+**Wstępnie wyjaśnione**
+
+---
+
+## 2. Authority vs Loyalty (MFT)
+
+### Wyniki
+
+* Authority: wysokie
+* Loyalty: niskie
+
+### Potencjalna sprzeczność
+
+Nietypowa kombinacja w ramach Moral Foundations Theory.
+
+### Wyjaśnienie
+
+Analiza wskazuje, że autorytet jest postrzegany przede wszystkim przez pryzmat:
+
+* kompetencji,
+* odpowiedzialności,
+* funkcji organizacyjnej.
+
+Jednocześnie nie występuje silna orientacja plemienna ani grupowa.
+
+Hierarchia jest akceptowana jako mechanizm organizacyjny, a nie jako źródło moralnej lojalności.
+
+### Status
+
+**Wstępnie wyjaśnione**
+
+---
+
+## 3. Leadership (VIA) vs Wpływ na Otoczenie
+
+### Wyniki
+
+* Leadership: bardzo nisko
+
+### Obserwacja
+
+Badany nie wykazuje potrzeby zarządzania ludźmi ani zajmowania formalnych stanowisk przywódczych.
+
+Jednocześnie przejawia silną tendencję do:
+
+* porządkowania problemów,
+* projektowania rozwiązań,
+* wpływania na jakość decyzji.
+
+### Wyjaśnienie
+
+Preferowaną rolą wydaje się:
+
+* ekspert,
+* architekt rozwiązania,
+* konsultant,
+* doradca.
+
+Nie zaś:
+
+* kierownik,
+* menedżer,
+* formalny lider.
+
+### Status
+
+**Wstępnie wyjaśnione**
+
+---
+
+# Obszary Wymagające Kalibracji
+
+## 1. Big Five vs HEXACO
+
+### Sumienność
+
+Wyniki sugerują rozbieżność pomiędzy ogólną organizacją a organizacją zależną od kontekstu.
+
+Analiza jakościowa wskazuje, że badany nie wykazuje potrzeby porządku dla samego porządku.
+
+Organizacja pojawia się przede wszystkim wtedy, gdy:
+
+* zwiększa skuteczność,
+* wspiera innych ludzi,
+* umożliwia realizację celu.
+
+### Status
+
+**Do dalszej obserwacji**
+
+---
+
+## 2. Big Five vs HEXACO — Ugodowość
+
+Możliwa interpretacja:
+
+Badany wykazuje wysoką ugodowość wobec ludzi oraz niską tolerancję wobec błędów logicznych, niespójności i słabej argumentacji.
+
+Może to prowadzić do pozornie sprzecznych wyników pomiędzy modelami.
+
+### Status
+
+**Do dalszej obserwacji**
+
+---
+
+# Powtarzające się Motywy
+
+## Motyw 1
+
+### Rozumienie przed działaniem
+
+Badany wykazuje silną tendencję do budowania modelu sytuacji przed podjęciem decyzji.
+
+---
+
+## Motyw 2
+
+### Trafność ponad status
+
+Ocena sytuacji wydaje się opierać przede wszystkim na jakości argumentów i rozwiązań, a nie na pozycji społecznej ich autora.
+
+---
+
+## Motyw 3
+
+### Zasady ponad plemienność
+
+Decyzje wydają się częściej wynikać z zasad, wartości i logiki niż z lojalności wobec konkretnej grupy.
+
+---
+
+## Motyw 4
+
+### Uczenie się jako mechanizm działania
+
+Proces zdobywania wiedzy i rozumienia stanowi istotny element funkcjonowania badanego.
+
+---
+
+## Motyw 5
+
+### Aktualizacja modeli rzeczywistości
+
+Badany wydaje się traktować przekonania jako modele robocze podlegające aktualizacji wraz z pojawianiem się nowych danych.
+
+---
+
+# Wstępni Kandydaci na Predyktory
+
+Poniższe pozycje nie stanowią jeszcze predyktorów.
+
+Są kandydatami do dalszej analizy.
+
+1. Model-Centric Decision Making
+2. Evidence-Driven Belief Updating
+3. Fairness-Oriented Evaluation
+4. Principle-Based Decision Making
+5. Learning-Oriented Exploration
+6. Systemic Problem Structuring
+7. Low Status Motivation
+8. Selective Cognitive Reopening
+9. Expert-over-Manager Preference
+10. Proven-System Optimization
+
+---
+
+# Wnioski
+
+Pomimo wykorzystania wielu różnych modeli psychologicznych, poznawczych i wartościowych, większość źródeł wskazuje na zaskakująco spójny obraz badanego.
+
+Najsilniejszym wspólnym wzorcem jest orientacja na rozumienie rzeczywistości poprzez budowanie modeli, analizowanie zależności oraz podejmowanie decyzji opartych na argumentach i wartościach.
+
+Znacznie mniejsze znaczenie wydają się mieć:
+
+* status społeczny,
+* dominacja,
+* rywalizacja,
+* formalne przywództwo.
+
+Wysokie znaczenie mają natomiast:
+
+* uczciwość,
+* sprawiedliwość,
+* jakość rozumowania,
+* odpowiedzialność,
+* ciągłe doskonalenie modeli rzeczywistości.
+
+Analiza wskazuje, że kolejnym etapem projektu powinno być przejście od opisu wyników testów do budowy predyktorów, hipotez oraz ich walidacji na podstawie rzeczywistych historii i dowodów behawioralnych.
+
+---
+
 # Historia Wersji
 
 ## v1.0
