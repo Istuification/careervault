@@ -27,17 +27,18 @@ supporting_stories:
 * STORY-008
 * STORY-009
 
-conflicting_stories: []
+conflicting_stories:
 
-related_behavioral_patterns: []
+related_behavioral_patterns:
 
 related_calibrations:
 
 * CAL-001
 
-last_updated: 2026-06-22
-version: 1.1
-------------
+last_updated: "2026-06-22"
+version: "1.1"
+--------------
+
 
 # Opis
 
