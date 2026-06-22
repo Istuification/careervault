@@ -1,7 +1,5 @@
 # Assessment Data
 
-# Assessment Data
-
 ## Cel dokumentu
 
 Assessment Data stanowi zbiór źródeł pomiarowych wykorzystywanych podczas budowy Cognitive Model.
@@ -27,7 +25,7 @@ Assessment Data      Stories
                 ↓
            Predictors
                 ↓
-           Hypotheses
+        Behavioral Pattern
                 ↓
          Cognitive Model
 ```
@@ -141,33 +139,33 @@ Model powinien być budowany wyłącznie na podstawie wzorców pojawiających si
 
 ---
 
-## Relacja z Predictorami
+## Relacja z Predyktorami
 
-Assessment Data nie tworzy Predictorów bezpośrednio.
+Assessment Data nie tworzy Predyktorów bezpośrednio.
 
-Predictory powstają podczas procesu Calibration.
+Predyhktory powstają podczas procesu Calibration.
 
 Calibration analizuje:
 
 * Assessment Data,
 * Stories,
-* istniejące Predictory,
+* istniejące Predyktory,
 * wcześniejsze kalibracje.
 
 Predictor powinien reprezentować mechanizm wsparty przez więcej niż jedno źródło danych.
 
 ---
 
-## Relacja z Hypotheses
+## Relacja z Behavioral Pattern
 
-Assessment Data nie tworzy Hypotheses bezpośrednio.
+Assessment Data nie tworzy Behavioral Pattern bezpośrednio.
 
-Hypotheses powstają na podstawie:
+Behavioral Pattern powstają na podstawie:
 
 * Predictorów,
 * wzorców zachowań występujących w Stories.
 
-Hipoteza nie opisuje pojedynczej cechy.
+Behavioral Pattern nie opisuje pojedynczej cechy.
 
 Opisuje powtarzalny wzorzec działania obserwowany w rzeczywistości.
 
