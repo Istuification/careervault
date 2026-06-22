@@ -2613,6 +2613,10 @@ Są kandydatami do dalszej analizy.
 8. Selective Cognitive Reopening
 9. Expert-over-Manager Preference
 10. Proven-System Optimization
+11. Stakes-Adjusted Evidence Threshold
+12. Tolerance for People vs Cognitive Errors
+13. Strategic Self-Presentation / Attention Management
+14. Supportive Facilitation Orientation
 
 ---
 
