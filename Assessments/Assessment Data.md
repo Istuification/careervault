@@ -1,59 +1,192 @@
 # Assessment Data
 
+# Assessment Data
+
 ## Cel dokumentu
 
-Dokument gromadzi źródła pomiarowe wykorzystywane podczas budowy Cognitive Model.
+Assessment Data stanowi zbiór źródeł pomiarowych wykorzystywanych podczas budowy Cognitive Model.
 
-Każde źródło opisuje wybrany aspekt funkcjonowania badanego, wykorzystując określony model psychologiczny, poznawczy lub behawioralny. Źródła te nie stanowią samodzielnie pełnego opisu osoby i nie są traktowane jako obiektywna prawda o badanym.
+Dokument nie służy do interpretacji badanego.
 
-Każdy model mierzy jedynie fragment rzeczywistości:
+Jego celem jest przechowywanie wyników pomiarów, ocen oraz modeli opisujących wybrane aspekty funkcjonowania badanego.
+
+Assessment Data stanowi jedno z dwóch głównych źródeł obserwacyjnych wykorzystywanych podczas budowy modelu.
+
+Drugim źródłem są Stories opisujące rzeczywiste zachowania i doświadczenia.
+
+Żadne z tych źródeł nie jest traktowane jako nadrzędne względem drugiego.
+
+---
+
+## Miejsce w architekturze Vault
+
+```text
+Assessment Data      Stories
+        ↓               ↓
+          Calibration
+                ↓
+           Predictors
+                ↓
+           Hypotheses
+                ↓
+         Cognitive Model
+```
+
+Assessment Data opisuje wyniki pomiarów.
+
+Stories opisują rzeczywiste zachowania.
+
+Calibration odpowiada za integrację obu źródeł.
+
+---
+
+## Czym jest Assessment Data?
+
+Assessment Data zawiera wyniki modeli psychologicznych, poznawczych, wartości, talentów oraz innych narzędzi pomiarowych.
+
+Modele te nie opisują całej osoby.
+
+Każdy model mierzy jedynie wybrany fragment rzeczywistości, między innymi:
 
 * cechy osobowości,
 * wartości,
-* siły charakteru,
 * style myślenia,
+* preferencje poznawcze,
 * talenty,
-* preferencje poznawcze.
+* siły charakteru.
 
-Wyniki poszczególnych modeli mogą się wzajemnie uzupełniać, częściowo pokrywać lub pozostawać ze sobą w napięciu. Z tego względu żaden pojedynczy model nie powinien być interpretowany w oderwaniu od pozostałych źródeł danych.
+Żaden pojedynczy model nie powinien być traktowany jako samodzielny opis badanego.
 
-Rolą dokumentu nie jest definiowanie prawdy o badanym, lecz dostarczanie uporządkowanych danych obserwacyjnych wykorzystywanych podczas budowy Cognitive Model.
+---
 
-Proces budowy modelu przebiega w następujących etapach:
+## Rola Assessment Data
 
-Źródła Pomiarowe → Predyktory → Hipotezy → Analiza Historii → Dowody → Kalibracja Modelu
+Assessment Data odpowiada na pytanie:
 
-### Źródła Pomiarowe
+> Jakie mechanizmy mogą istnieć?
 
-Wyniki testów, ocen i modeli opisujących wybrane aspekty funkcjonowania badanego.
+Nie odpowiada natomiast na pytania:
 
-### Predyktory
+> Jak badany rzeczywiście działa?
 
-Powtarzające się wzorce, tendencje lub cechy zidentyfikowane na podstawie wielu źródeł danych.
+> Jak podejmuje decyzje?
 
-Predyktory nie są jeszcze wnioskami o zachowaniu. Stanowią przesłanki wykorzystywane do budowy hipotez.
+> Jak zachowuje się w rzeczywistych sytuacjach?
 
-### Hipotezy
+Na te pytania odpowiadają dopiero Stories oraz późniejsze etapy modelu.
 
-Przypuszczenia dotyczące sposobu myślenia, podejmowania decyzji, działania lub rozwiązywania problemów przez badanego.
+---
 
-Hipotezy są generowane na podstawie predyktorów oraz innych źródeł danych dostępnych w Career Vault.
+## Relacja pomiędzy Assessment Data i Stories
 
-### Analiza Historii
+Assessment Data oraz Stories pełnią różne funkcje.
 
-Weryfikacja hipotez na podstawie rzeczywistych doświadczeń, projektów, sukcesów, porażek oraz opisanych sytuacji życiowych i zawodowych.
+### Assessment Data
 
-### Dowody
+Opisuje potencjalne cechy, tendencje oraz mechanizmy.
 
-Fragmenty historii lub innych źródeł danych wspierające lub podważające istniejące hipotezy.
+Przykład:
 
-### Kalibracja Modelu
+```text
+Wysoki Need for Cognition
+```
 
-Proces aktualizacji Cognitive Model na podstawie zgromadzonych dowodów.
+oznacza, że badany prawdopodobnie lubi angażować się w wysiłek poznawczy.
 
-W miarę przyrostu danych model powinien stopniowo przechodzić od hipotez opartych na pomiarach do wniosków opartych na obserwowanych zachowaniach.
+Nie oznacza jeszcze, że rzeczywiście robi to regularnie.
 
-Celem końcowym nie jest stworzenie zbioru wyników testów, lecz zbudowanie możliwie trafnego, aktualizowanego i opartego na dowodach modelu poznawczego badanego.
+---
+
+### Stories
+
+Opisują rzeczywiste zachowania.
+
+Przykład:
+
+```text
+Wielokrotne budowanie modeli,
+analiza problemów,
+tworzenie Career Vault.
+```
+
+stanowią obserwacje zachowania.
+
+---
+
+### Calibration
+
+Calibration porównuje oba źródła.
+
+Jeżeli Assessment Data oraz Stories wskazują ten sam mechanizm, może zostać utworzony lub wzmocniony Predictor.
+
+Jeżeli pozostają ze sobą w konflikcie, powstaje potrzeba dalszej kalibracji.
+
+---
+
+## Fakty przed deklaracjami
+
+Jedną z podstawowych zasad Career Vault jest:
+
+> Fakty przed deklaracjami.
+
+Assessment Data zawiera głównie deklaracje badanego udzielone podczas wypełniania narzędzi pomiarowych.
+
+Stories zawierają deklaracje badanego dotyczące rzeczywistych zdarzeń.
+
+Oba źródła mogą zawierać błędy poznawcze, uproszczenia oraz ograniczenia pamięci.
+
+Dlatego żadne pojedyncze źródło nie powinno samodzielnie tworzyć Cognitive Model.
+
+Model powinien być budowany wyłącznie na podstawie wzorców pojawiających się w wielu niezależnych źródłach.
+
+---
+
+## Relacja z Predictorami
+
+Assessment Data nie tworzy Predictorów bezpośrednio.
+
+Predictory powstają podczas procesu Calibration.
+
+Calibration analizuje:
+
+* Assessment Data,
+* Stories,
+* istniejące Predictory,
+* wcześniejsze kalibracje.
+
+Predictor powinien reprezentować mechanizm wsparty przez więcej niż jedno źródło danych.
+
+---
+
+## Relacja z Hypotheses
+
+Assessment Data nie tworzy Hypotheses bezpośrednio.
+
+Hypotheses powstają na podstawie:
+
+* Predictorów,
+* wzorców zachowań występujących w Stories.
+
+Hipoteza nie opisuje pojedynczej cechy.
+
+Opisuje powtarzalny wzorzec działania obserwowany w rzeczywistości.
+
+---
+
+## Cel długoterminowy
+
+Celem Assessment Data nie jest stworzenie profilu psychologicznego badanego.
+
+Jego rolą jest dostarczenie danych wykorzystywanych podczas budowy modelu odpowiadającego na pytania:
+
+* Jak badany podejmuje decyzje?
+* Jak rozwiązuje problemy?
+* Jak aktualizuje swoje przekonania?
+* Jak reaguje na niepewność?
+* Jak działa w organizacjach?
+* Jakie mechanizmy stoją za jego zachowaniami?
+
+Odpowiedzi na te pytania powstają dopiero na poziomie Cognitive Model.
 
 ---
 
