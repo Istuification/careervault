@@ -36,11 +36,10 @@ related_calibrations:
  - CAL-001
 
 last_updated: 
+  "2026-06-22"
 
-"2026-06-22"
 version: 
-
-"1.1"
+  "1.1"
 
 ---
 
