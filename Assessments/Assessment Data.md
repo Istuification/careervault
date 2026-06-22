@@ -1,4 +1,4 @@
-# Evidence Sources
+# Assessment Data
 
 ## Cel dokumentu
 
@@ -437,7 +437,7 @@ Wymaga dalszej weryfikacji sposób interpretacji wyników związanych z sumienno
 
 W trakcie oceny.
 
-Na obecnym etapie HEXACO stanowi jedno z najbardziej spójnych źródeł danych w całym zbiorze Evidence Sources.
+Na obecnym etapie HEXACO stanowi jedno z najbardziej spójnych źródeł danych w całym zbiorze Assessment Data.
 
 Wyniki wykazują wysoką zgodność z wynikami VIA, Schwartz Value Theory, Actively Open-Minded Thinking (AOT) oraz Comprehensive Intellectual Humility Scale (CIHS).
 
@@ -941,7 +941,7 @@ TODO
 
 W trakcie oceny.
 
-Na obecnym etapie VIA jest jednym z najbardziej spójnych źródeł danych w całym zbiorze Evidence Sources.
+Na obecnym etapie VIA jest jednym z najbardziej spójnych źródeł danych w całym zbiorze Assessment Data.
 
 Najsilniejsze sygnały pojawiają się wokół:
 
@@ -1494,7 +1494,7 @@ Opis ten jest zgodny z deklaracjami badanego uzyskanymi podczas omawiania wynik�
 
 W trakcie oceny.
 
-Na obecnym etapie AOT jest jednym z najbardziej spójnych źródeł danych w całym zbiorze Evidence Sources.
+Na obecnym etapie AOT jest jednym z najbardziej spójnych źródeł danych w całym zbiorze Assessment Data.
 
 Model wykazuje wysoką zgodność z:
 
@@ -1984,7 +1984,7 @@ Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie histor
 
 ## Cel
 
-Celem niniejszej sekcji jest identyfikacja obszarów zgodności, niezgodności oraz powtarzających się wzorców występujących pomiędzy poszczególnymi źródłami danych zgromadzonymi w dokumencie Evidence Sources.
+Celem niniejszej sekcji jest identyfikacja obszarów zgodności, niezgodności oraz powtarzających się wzorców występujących pomiędzy poszczególnymi źródłami danych zgromadzonymi w dokumencie Assessment Data.
 
 Analiza nie ma na celu tworzenia ostatecznych wniosków dotyczących badanego.
 
