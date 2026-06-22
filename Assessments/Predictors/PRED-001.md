@@ -8,24 +8,24 @@ confidence: high
 
 created_from:
 
-  * HEXACO
-  * VIA
-  * NFC
-  * AOT
-  * CIHS
-  * Gallup
+  - HEXACO
+  - VIA
+  - NFC
+  - AOT
+  - CIHS
+  - Gallup
 
 supporting_stories:
 
-  * STORY-001
-  * STORY-002
-  * STORY-003
-  * STORY-004
-  * STORY-005
-  * STORY-006
-  * STORY-007
-  * STORY-008
-  * STORY-009
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-004
+  - STORY-005
+  - STORY-006
+  - STORY-007
+  - STORY-008
+  - STORY-009
 
 conflicting_stories:
 
@@ -33,7 +33,7 @@ related_behavioral_patterns:
 
 related_calibrations:
 
-* CAL-001
+ - CAL-001
 
 last_updated: "2026-06-22"
 version: "1.1"
