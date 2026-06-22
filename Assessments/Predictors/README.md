@@ -2,9 +2,9 @@
 
 ## Cel dokumentu
 
-Predyktory są pierwszą warstwą interpretacyjną modelu.
+Predyktory są pierwszą warstwą interpretacyjną modelu poznawczego.
 
-Ich zadaniem jest przekształcenie surowych danych pochodzących z testów, ocen, historii i innych źródeł dowodowych w opis potencjalnych mechanizmów poznawczych, behawioralnych lub decyzyjnych.
+Ich zadaniem jest przekształcenie danych pochodzących z Assessment Data oraz wcześniejszych kalibracji w opis potencjalnych mechanizmów poznawczych, behawioralnych lub decyzyjnych.
 
 Predyktory nie opisują całej osoby.
 
@@ -17,22 +17,38 @@ Stanowią robocze modele wyjaśniające obserwowane wzorce zachowań i służą 
 ## Miejsce w architekturze Vault
 
 ```text
-Evidence Sources
-        ↓
-    Predictors
-        ↓
-    Hypotheses
-        ↓
-  Cognitive Model
+Assessment Data
+       │
+       ▼
+  Predictors
+       │
+       ▼
+  Hypotheses
+       │
+       ▼
+ Cognitive Model
+
+Stories
+       │
+       ▼
+ Calibration
+       │
+       ├──────────────► Predictors
+       ├──────────────► Hypotheses
+       └──────────────► Cognitive Model
 ```
 
-Evidence Sources dostarczają danych.
+Assessment Data dostarczają danych pomiarowych.
 
 Predyktory interpretują dane.
 
-Hipotezy łączą wiele predyktorów w bardziej złożone mechanizmy.
+Hipotezy łączą wiele predyktorów w bardziej złożone wzorce.
 
-Cognitive Model stanowi najwyższy poziom integracji wszystkich zweryfikowanych hipotez.
+Cognitive Model integruje wszystkie zweryfikowane hipotezy w jeden model działania.
+
+Stories nie wpływają bezpośrednio na predyktory.
+
+Stories stanowią materiał obserwacyjny wykorzystywany podczas procesu kalibracji.
 
 ---
 
@@ -49,21 +65,20 @@ Przykłady:
 
 Predyktor powinien opisywać jeden mechanizm.
 
-Jeżeli predyktor zaczyna opisywać wiele niezależnych mechanizmów, powinien zostać rozdzielony lub skalibrowany.
+Jeżeli predyktor zaczyna opisywać wiele niezależnych mechanizmów, powinien zostać rozdzielony lub zastąpiony dokładniejszym modelem.
 
 ---
 
 ## Źródła predyktorów
 
-Predyktory mogą być tworzone na podstawie:
+Predyktory mogą być tworzone lub aktualizowane wyłącznie na podstawie:
 
-* wyników testów psychometrycznych,
-* ocen jakościowych,
-* analiz historii,
-* kalibracji istniejącego modelu,
-* powtarzających się wzorców zachowań.
+* Assessment Data,
+* wcześniejszych kalibracji.
 
-Każdy predyktor powinien wskazywać źródła, które doprowadziły do jego utworzenia.
+Stories nie tworzą predyktorów bezpośrednio.
+
+Stories mogą jedynie dostarczyć nowych dowodów uruchamiających proces kalibracji.
 
 ---
 
@@ -83,33 +98,17 @@ Mechanizm został zastąpiony przez dokładniejszy model lub utracił wartość 
 
 ---
 
-## Kalibracja predyktorów
+## Relacja pomiędzy Assessment Data, Stories i Predyktorami
 
-Predyktory są modelami roboczymi i mogą być kalibrowane.
+Assessment Data opisują wyniki pomiarów oraz profile poznawcze.
 
-Kalibracja może:
+Stories opisują rzeczywiste zachowania i zdarzenia.
 
-* zmieniać poziom pewności,
-* doprecyzowywać opis,
-* dodawać nowe dowody,
-* dodawać nowe zachowania przewidywane,
-* dodawać nowe zachowania przeczące.
+Predyktory są aktualnym stanem interpretacji dostępnych danych.
 
-Kalibracja nie powinna zmieniać podstawowego znaczenia predyktora.
+Stories nie zmieniają predyktorów bezpośrednio.
 
-Jeżeli znaczenie predyktora wymaga zmiany, należy utworzyć nowy predyktor lub przeprowadzić formalną migrację modelu.
-
----
-
-## Relacja pomiędzy Evidence i Stories
-
-Evidence Sources opisują potencjalne predyspozycje i wzorce.
-
-Stories opisują rzeczywiste zachowania.
-
-Żadne z tych źródeł nie jest automatycznie nadrzędne względem drugiego.
-
-Celem kalibracji jest budowanie modelu, który najlepiej wyjaśnia zarówno wyniki pomiarów, jak i rzeczywiste zachowania.
+Zmiany mogą zostać wprowadzone wyłącznie poprzez proces kalibracji.
 
 ---
 
@@ -117,31 +116,29 @@ Celem kalibracji jest budowanie modelu, który najlepiej wyjaśnia zarówno wyni
 
 Predyktor opisuje pojedynczy mechanizm.
 
-Hipoteza opisuje zależność pomiędzy wieloma predyktorami.
+Hipoteza opisuje wzorzec wynikający ze współwystępowania wielu predyktorów.
 
 Pojedynczy predyktor może wspierać wiele hipotez.
 
 Hipotezy powinny być budowane w oparciu o 2–4 predyktory.
 
+Hipotezy stanowią warstwę interpretacyjną wykorzystywaną podczas analizy Stories.
+
 ---
 
-## Weryfikacja jakości
+## Zasada stabilności predyktora
 
-Dobry predyktor:
+Kalibracja może:
 
-* opisuje pojedynczy mechanizm,
-* posiada źródła,
-* generuje przewidywania,
-* może zostać obalony przez dowody,
-* wspiera budowę hipotez.
+* zwiększać lub zmniejszać confidence,
+* dodawać nowe dowody,
+* dodawać nowe zachowania przewidywane,
+* dodawać nowe zachowania przeczące,
+* doprecyzowywać opis.
 
-Słaby predyktor:
+Kalibracja nie powinna zmieniać podstawowego znaczenia predyktora.
 
-* opisuje wiele różnych mechanizmów jednocześnie,
-* nie posiada źródeł,
-* nie generuje przewidywań,
-* nie może zostać sfalsyfikowany,
-* jest jedynie parafrazą wyników testów.
+Jeżeli nowy materiał wskazuje, że predyktor opisuje inny mechanizm niż pierwotnie zakładano, należy utworzyć nowy predyktor lub przeprowadzić formalną migrację modelu.
 
 ---
 
@@ -160,9 +157,7 @@ status: candidate
 confidence: high
 
 created_from:
-  - HEXACO
-  - NFC
-  - AOT
+  - Assessment Data
 
 supporting_stories: []
 
@@ -170,16 +165,18 @@ conflicting_stories: []
 
 related_hypotheses: []
 
+related_calibrations: []
+
 last_updated: 2026-06-22
 version: 1.0
 ---
 ```
 
-### Sekcje obowiązkowe
+### Elementy predyktora
 
 #### Opis
 
-Krótki opis mechanizmu oraz jego znaczenia.
+Opis mechanizmu oraz jego znaczenia.
 
 Odpowiada na pytanie:
 
@@ -189,72 +186,50 @@ Odpowiada na pytanie:
 
 #### Źródła
 
-Źródła, które doprowadziły do utworzenia predyktora.
+Dane i obserwacje wykorzystane podczas tworzenia lub aktualizacji predyktora.
 
-Mogą obejmować:
+Źródła mogą obejmować:
 
-* testy psychometryczne,
-* analizy jakościowe,
-* historie,
+* Assessment Data,
 * wcześniejsze kalibracje.
 
 ---
 
 #### Zachowania Przewidywane
 
-Lista zachowań, które powinny występować, jeśli predyktor jest poprawny.
+Zachowania, które powinny występować, jeśli predyktor jest poprawny.
 
 Odpowiada na pytanie:
 
-> Co powinienem zaobserwować w rzeczywistości?
+> Co powinno być widoczne w rzeczywistości?
 
 ---
 
 #### Zachowania Przeczące
 
-Lista zachowań osłabiających lub podważających predyktor.
+Zachowania osłabiające lub podważające predyktor.
 
 Odpowiada na pytanie:
 
-> Co mogłoby wskazywać, że ten model jest błędny lub niepełny?
+> Co mogłoby wskazywać, że model jest błędny lub niepełny?
 
 ---
 
 #### Dowody Potwierdzające
 
-Lista historii, obserwacji lub innych dowodów wspierających predyktor.
-
-Przykład:
-
-```text
-- STORY-014
-- STORY-027
-```
+Historie, obserwacje lub kalibracje wspierające predyktor.
 
 ---
 
 #### Dowody Przeczące
 
-Lista historii lub obserwacji pozostających w konflikcie z predyktorem.
-
-Przykład:
-
-```text
-- STORY-031
-```
+Historie, obserwacje lub kalibracje pozostające w konflikcie z predyktorem.
 
 ---
 
 #### Historia Kalibracji
 
 Lista kalibracji, które wpłynęły na predyktor.
-
-Przykład:
-
-```text
-- CAL-002
-- CAL-011
-```
 
 ---
 
@@ -265,7 +240,7 @@ Aktualna ocena jakości predyktora.
 Powinna zawierać:
 
 * poziom pewności,
-* siłę źródeł psychometrycznych,
+* siłę źródeł pomiarowych,
 * siłę źródeł behawioralnych,
 * poziom walidacji.
 
@@ -277,10 +252,30 @@ Dodatkowe informacje, ograniczenia interpretacyjne, potencjalne kierunki dalszej
 
 ---
 
+## Weryfikacja jakości
+
+Dobry predyktor:
+
+* opisuje pojedynczy mechanizm,
+* posiada źródła,
+* generuje przewidywania,
+* może zostać sfalsyfikowany,
+* wspiera budowę hipotez.
+
+Słaby predyktor:
+
+* opisuje wiele mechanizmów jednocześnie,
+* nie posiada źródeł,
+* nie generuje przewidywań,
+* nie może zostać obalony,
+* jest wyłącznie parafrazą wyników testów.
+
+---
+
 ## Cel długoterminowy
 
 Celem predyktorów nie jest stworzenie kompletnego opisu osobowości.
 
 Ich rolą jest budowa możliwie użytecznego modelu wyjaśniającego sposób myślenia, podejmowania decyzji, uczenia się oraz funkcjonowania badanego.
 
-Model ten ma charakter iteracyjny i podlega ciągłej kalibracji wraz z pojawianiem się nowych danych.
+Model ma charakter iteracyjny i podlega ciągłej kalibracji wraz z pojawianiem się nowych danych, historii oraz zmian w Assessment Data.
