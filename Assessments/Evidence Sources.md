@@ -2289,37 +2289,261 @@ Nie zaś:
 
 # Obszary Wymagające Kalibracji
 
-## 1. Big Five vs HEXACO
+## 1. Kontekstualna Sumienność (Hiperfokus)
 
-### Sumienność
+### Źródła
 
-Wyniki sugerują rozbieżność pomiędzy ogólną organizacją a organizacją zależną od kontekstu.
+- Big Five Personality Model
+- HEXACO Personality Inventory
+- CliftonStrengths (Gallup)
+- Wywiad jakościowy
+- Przyszła analiza historii
 
-Analiza jakościowa wskazuje, że badany nie wykazuje potrzeby porządku dla samego porządku.
+### Obserwacja
 
-Organizacja pojawia się przede wszystkim wtedy, gdy:
+Największa rozbieżność pomiędzy modelami występuje w obszarze sumienności.
 
-* zwiększa skuteczność,
-* wspiera innych ludzi,
-* umożliwia realizację celu.
+Big Five sugeruje umiarkowanie niski poziom sumienności, szczególnie w zakresie:
+
+- samodyscypliny,
+- porządku,
+- konsekwentnej organizacji działań.
+
+Jednocześnie HEXACO wskazuje na umiarkowanie wysoką sumienność, szczególnie w obszarach:
+
+- rozwagi,
+- planowania,
+- organizacji,
+- analizowania konsekwencji działań.
+
+Dodatkowo Gallup wskazuje na obecność talentów takich jak:
+
+- Responsibility,
+- Strategic,
+- Analytical,
+- Discipline,
+- Learner.
+
+Analiza jakościowa oraz obserwowane zachowania nie są zgodne z profilem osoby o konsekwentnie niskiej sumienności.
+
+### Hipoteza
+
+Badany nie wykazuje jednolitego poziomu sumienności we wszystkich obszarach życia.
+
+Zasoby związane z organizacją, planowaniem, wytrwałością i kontrolą jakości wydają się aktywowane selektywnie.
+
+Najwyższy poziom organizacji pojawia się w sytuacjach, które:
+
+- są uznawane za ważne,
+- posiadają wysoką wartość poznawczą,
+- rozwiązują realny problem,
+- mają znaczenie strategiczne,
+- znajdują się w obszarze aktualnego zainteresowania lub hiperfokusu.
+
+Jednocześnie obszary uznane za mało istotne mogą pozostawać w stanie względnej dezorganizacji bez odczuwania istotnego dyskomfortu.
+
+### Wstępna Interpretacja
+
+Obserwowane wyniki mogą sugerować, że sumienność nie funkcjonuje jako stała cecha aktywna we wszystkich kontekstach.
+
+Bardziej prawdopodobny jest model selektywnej aktywacji zasobów poznawczych i wykonawczych.
+
+W praktyce może to prowadzić do sytuacji, w których ten sam badany prezentuje:
+
+- bardzo wysoki poziom organizacji,
+- bardzo wysoki poziom szczegółowości,
+- bardzo wysoką jakość wykonania,
+
+w jednych obszarach życia,
+
+oraz:
+
+- niski poziom organizacji,
+- odkładanie działań,
+- ograniczone zaangażowanie,
+
+w innych.
 
 ### Status
 
-**Do dalszej obserwacji**
+**Wymaga dalszej walidacji na podstawie historii i dowodów behawioralnych.**
 
 ---
 
-## 2. Big Five vs HEXACO — Ugodowość
+## 2. Ugodowość a Tolerancja Błędów Poznawczych
 
-Możliwa interpretacja:
+### Źródła
 
-Badany wykazuje wysoką ugodowość wobec ludzi oraz niską tolerancję wobec błędów logicznych, niespójności i słabej argumentacji.
+- Big Five Personality Model
+- HEXACO Personality Inventory
+- VIA Character Strengths
+- Schwartz Value Theory
+- Moral Foundations Theory
+- Wywiad jakościowy
 
-Może to prowadzić do pozornie sprzecznych wyników pomiędzy modelami.
+### Obserwacja
+
+Wyniki modeli osobowościowych przedstawiają częściowo odmienne obrazy ugodowości.
+
+Big Five sugeruje umiarkowanie niski poziom ugodowości.
+
+Jednocześnie HEXACO wskazuje na wysokie wyniki w obszarach:
+
+- Forgiveness,
+- Gentleness,
+- Patience.
+
+Podobny obraz pojawia się w:
+
+- Benevolence (Schwartz),
+- Care (MFQ),
+- Forgiveness (VIA),
+- Humility (VIA).
+
+Analiza jakościowa wskazuje dodatkowo, że badany jest częściej postrzegany jako osoba życzliwa niż konfliktowa.
+
+Jednocześnie deklaruje bardzo niski poziom tolerancji wobec:
+
+- błędów logicznych,
+- niespójności argumentacyjnych,
+- błędnych modeli rzeczywistości,
+- nieuzasadnionych założeń.
+
+### Hipoteza
+
+Rozbieżność może wynikać z faktu, że badany oddziela ocenę człowieka od oceny jego argumentów, decyzji lub sposobu rozumowania.
+
+Krytyka kierowana jest najczęściej wobec:
+
+- modelu,
+- procesu,
+- założenia,
+- argumentacji,
+
+a nie wobec osoby.
+
+W efekcie zachowanie może być odbierane jako wymagające lub konfrontacyjne pomimo braku negatywnych intencji interpersonalnych.
+
+### Wstępna Interpretacja
+
+Najbardziej prawdopodobna interpretacja wskazuje na połączenie:
+
+- wysokiej tolerancji wobec ludzi,
+- wysokiej cierpliwości,
+- wysokiej skłonności do wybaczania,
+
+przy jednocześnie:
+
+- niskiej tolerancji dla błędów poznawczych,
+- niskiej tolerancji dla słabej argumentacji,
+- wysokich wymaganiach wobec jakości rozumowania.
+
+Może to wyjaśniać rozbieżności pomiędzy wynikami Big Five i HEXACO.
 
 ### Status
 
-**Do dalszej obserwacji**
+**Wymaga dalszej walidacji na podstawie historii, relacji zawodowych oraz rzeczywistych sytuacji konfliktowych.**
+
+---
+
+## 3. Pewność Własnych Ocen a Otwartość na Zmianę Zdania
+
+### Źródła
+
+- AOT
+- CIHS
+- VIA
+- Need for Cognition
+- Wywiad jakościowy
+
+### Obserwacja
+
+Modele wskazują jednocześnie na:
+
+- wysoką otwartość poznawczą,
+- wysoką gotowość do rewizji poglądów,
+- wysoką pokorę intelektualną.
+
+Jednocześnie badany deklaruje, że stosunkowo rzadko doświadcza sytuacji, w których inni ludzie przekonują go do zmiany stanowiska.
+
+Dodatkowo podskala Lack of Intellectual Overconfidence w CIHS uzyskała najniższy wynik spośród wszystkich podskal.
+
+### Hipoteza
+
+Badany nie wykazuje niskiej otwartości na zmianę poglądów.
+
+Wykazuje natomiast wysoki próg dowodowy wymagany do aktualizacji istniejącego modelu.
+
+Zmiana stanowiska nie następuje często nie dlatego, że jest blokowana emocjonalnie, lecz dlatego, że rzadko pojawiają się argumenty uznane za wystarczająco mocne.
+
+### Wstępna Interpretacja
+
+Przekonania wydają się funkcjonować jako modele robocze.
+
+Model pozostaje aktywny do momentu pojawienia się danych lub argumentów zdolnych znacząco zwiększyć jego trafność.
+
+W praktyce może to prowadzić do połączenia:
+
+- wysokiej pewności własnych ocen,
+- wysokiej gotowości do aktualizacji modelu,
+- stosunkowo rzadkich zmian stanowiska.
+
+Pozornie cechy te mogą wydawać się sprzeczne, jednak są zgodne z wynikami AOT, CIHS oraz wywiadu jakościowego.
+
+### Status
+
+**Wstępnie wyjaśnione, wymaga dalszej obserwacji.**
+
+---
+
+## 4. Tradycja i Konformizm a Niezależność Poznawcza
+
+### Źródła
+
+- Schwartz Value Theory
+- AOT
+- CIHS
+- VIA
+- Wywiad jakościowy
+
+### Obserwacja
+
+Model Schwartza wskazuje podwyższone wyniki dla:
+
+- Tradition,
+- Conformity.
+
+Jednocześnie pozostałe modele wskazują na:
+
+- wysoką niezależność poznawczą,
+- wysoką otwartość na zmianę poglądów,
+- wysoką gotowość do kwestionowania założeń,
+- wysoką orientację na argumenty i dowody.
+
+### Hipoteza
+
+Wysokie wyniki Tradycji i Konformizmu nie odzwierciedlają potrzeby podporządkowania się normom społecznym lub autorytetom.
+
+Bardziej prawdopodobna interpretacja wskazuje na szacunek wobec:
+
+- sprawdzonych rozwiązań,
+- skutecznych procedur,
+- zasad posiadających uzasadnienie,
+- struktur wspierających funkcjonowanie systemów.
+
+### Wstępna Interpretacja
+
+Badany nie wydaje się kierować zasadą:
+
+> „Tak należy robić, ponieważ zawsze tak robiono.”
+
+Znacznie bliższe wydaje się podejście:
+
+> „Jeżeli coś działa, należy rozumieć dlaczego działa, a następnie ulepszać to tylko wtedy, gdy istnieją ku temu wystarczające przesłanki.”
+
+### Status
+
+**Wstępnie wyjaśnione, wymaga dalszej walidacji na podstawie historii i decyzji organizacyjnych.**
 
 ---
 
@@ -2362,6 +2586,14 @@ Proces zdobywania wiedzy i rozumienia stanowi istotny element funkcjonowania bad
 ### Aktualizacja modeli rzeczywistości
 
 Badany wydaje się traktować przekonania jako modele robocze podlegające aktualizacji wraz z pojawianiem się nowych danych.
+
+---
+
+## Motyw 6
+
+### Selektywna Aktywacja Zasobów
+
+Wysoka jakość działania pojawia się przede wszystkim tam, gdzie badany uznaje zadanie za ważne, interesujące lub strategiczne. Nie jest to profil stałej, równomiernej organizacji, lecz raczej profil selektywnego uruchamiania pełnej mocy poznawczej i wykonawczej.
 
 ---
 
