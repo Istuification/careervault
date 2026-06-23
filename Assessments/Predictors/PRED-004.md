@@ -1,25 +1,30 @@
 ---
 id: PRED-004
 name: Principle-Based Decision Making
-
-status: candidate
-confidence: high
-
+status: validated
+confidence: very high
 created_from:
   - HEXACO
   - Schwartz
   - Moral Foundations Theory
   - VIA
   - Gallup
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-003
+  - STORY-008
+  - STORY-009
+  - STORY-001
+  - STORY-002
+  - STORY-004
+  - STORY-007
+  - STORY-005
+  - STORY-006
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -80,9 +85,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (2; umiarkowane wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (2; umiarkowane wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (1; słaby sygnał pomocniczy)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (1; słaby sygnał pomocniczy)
 
 ---
 
@@ -96,7 +109,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -104,7 +119,7 @@ Brak.
 
 ## Pewność
 
-Wysoka
+Bardzo wysoka
 
 ## Siła Źródeł Psychometrycznych
 
@@ -112,15 +127,13 @@ Wysoka
 
 ## Siła Źródeł Behawioralnych
 
-Brak danych
+Wysoka
 
 ## Poziom Walidacji
 
-Niski
+Wysoki
 
-Predyktor jest wspierany przez wiele niezależnych źródeł opisujących wartości, moralność oraz preferencje decyzyjne.
-
-Wymaga potwierdzenia na podstawie historii zawierających rzeczywiste konflikty pomiędzy skutecznością, wygodą i zasadami.
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
 
 ---
 
@@ -137,3 +150,5 @@ niż:
 „Zasady należy przestrzegać bez względu na okoliczności”.
 
 Istotnym obszarem przyszłej kalibracji będzie określenie, które wartości mają charakter fundamentalny, a które podlegają negocjacji w zależności od kontekstu.
+
+CAL-001 potwierdza regularną obecność tego mechanizmu w Stories, mimo że nie jest on jednym z czterech najgłębszych mechanizmów rdzeniowych.
