@@ -7,22 +7,22 @@ confidence: very high
 
 created_from:
 
-* Gallup
-* HEXACO
-* NFC
-* AOT
+- Gallup
+- HEXACO
+- NFC
+- AOT
 
 supporting_stories:
 
-* STORY-001
-* STORY-002
-* STORY-003
-* STORY-004
-* STORY-005
-* STORY-006
-* STORY-007
-* STORY-008
-* STORY-009
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
 
 conflicting_stories: []
 
@@ -30,8 +30,8 @@ related_hypotheses: []
 
 related_calibrations:
 
-* CAL-001
-* CAL-002
+- CAL-001
+- CAL-002
 
 last_updated: 2026-06-23
 
