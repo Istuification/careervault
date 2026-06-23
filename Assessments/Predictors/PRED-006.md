@@ -1,24 +1,29 @@
 ---
 id: PRED-006
 name: Systemic Problem Structuring
-
-status: candidate
-confidence: high
-
+status: validated
+confidence: very high
 created_from:
   - Gallup
   - HEXACO
   - NFC
   - AOT
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-004
+  - STORY-005
+  - STORY-006
+  - STORY-007
+  - STORY-008
+  - STORY-009
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -34,6 +39,8 @@ Proces ten polega na:
 - tworzeniu hierarchii oraz kategorii.
 
 Celem nie jest wyłącznie rozwiązanie pojedynczego problemu, lecz stworzenie uporządkowanego modelu pozwalającego pracować z problemem w sposób przewidywalny i powtarzalny.
+
+Predyktor opisuje rozumienie systemów, zależności i struktury problemu. Nie opisuje samego aktu decyzji, który jest modelowany osobno przez PRED-001.
 
 ---
 
@@ -85,9 +92,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
 
 ---
 
@@ -101,7 +116,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -109,23 +126,21 @@ Brak.
 
 ## Pewność
 
-Wysoka
+Bardzo wysoka
 
 ## Siła Źródeł Psychometrycznych
 
-Średnia
+Wysoka
 
 ## Siła Źródeł Behawioralnych
 
-Wstępnie wysoka
+Bardzo wysoka
 
 ## Poziom Walidacji
 
-Niski
+Bardzo wysoki
 
-Predyktor jest wspierany przez wyniki psychometryczne, jednak jego największym źródłem są obserwacje jakościowe oraz projekty realizowane przez badanego.
-
-Wymaga walidacji na podstawie rzeczywistych historii związanych z rozwiązywaniem problemów organizacyjnych, technicznych oraz procesowych.
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz CAL-001.
 
 ---
 
@@ -143,3 +158,5 @@ Predyktor jest silnie powiązany z:
 Jednak koncentruje się na etapie porządkowania problemu przed rozpoczęciem analizy lub podejmowania decyzji.
 
 Możliwe, że stanowi jeden z głównych mechanizmów odpowiedzialnych za zdolność badanego do pracy z niejednoznacznymi, słabo zdefiniowanymi i wielowymiarowymi problemami.
+
+CAL-001 doprecyzowuje zakres względem PRED-001: ten Predictor opisuje rozumienie systemów, zależności i struktury problemu.
