@@ -1,24 +1,20 @@
 ---
 id: PRED-007
 name: Low Status Motivation
-
 status: candidate
 confidence: high
-
 created_from:
   - Schwartz
   - HEXACO
   - VIA
   - Gallup
-
 supporting_stories: []
-
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -85,9 +81,7 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
-
-Oczekuje na analizę historii.
+Brak Stories przypisanych w matrycy kalibracyjnej. Na tym etapie mechanizm opiera się głównie na Assessment Data i analizie jakościowej.
 
 ---
 
@@ -101,7 +95,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -117,17 +113,13 @@ Wysoka
 
 ## Siła Źródeł Behawioralnych
 
-Średnia
+Niska
 
 ## Poziom Walidacji
 
 Niski
 
-Predyktor jest wspierany przez zgodne wyniki wielu modeli osobowościowych i wartościowych.
-
-Dodatkowo jest wspierany przez deklarowane preferencje dotyczące wyboru pomiędzy rolami eksperckimi i menedżerskimi.
-
-Wymaga dalszej walidacji na podstawie historii zawodowych oraz rzeczywistych decyzji karierowych.
+Predyktor ma ograniczone wsparcie behawioralne i wymaga dalszej walidacji.
 
 ---
 
@@ -150,3 +142,5 @@ Istotnym obszarem przyszłej kalibracji będzie rozróżnienie pomiędzy:
 - potrzebą statusu.
 
 Obecne dane sugerują, że motywacja badanego jest znacznie silniej związana z wpływem na rzeczywistość niż z własną pozycją w hierarchii społecznej.
+
+Wciąż potrzebna jest dalsza walidacja behawioralna; obecna nazwa może wymagać w przyszłości ponownej oceny, ale na tym etapie pozostaje bez zmian.
