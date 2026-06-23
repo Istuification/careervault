@@ -1,10 +1,8 @@
 ---
 id: PRED-012
 name: Tolerance for People vs Cognitive Errors
-
-status: candidate
-confidence: high
-
+status: validated
+confidence: very high
 created_from:
   - HEXACO
   - Big Five
@@ -13,15 +11,22 @@ created_from:
   - MFQ
   - AOT
   - Wywiad jakościowy
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-005
+  - STORY-009
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-007
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -44,6 +49,8 @@ oraz równocześnie:
 - krytykować modele decyzyjne.
 
 Krytyka kierowana jest przede wszystkim wobec treści, procesu lub sposobu rozumowania, a nie wobec człowieka.
+
+Predyktor rozróżnia tolerancję wobec ludzi od niskiej tolerancji wobec błędów poznawczych.
 
 ---
 
@@ -96,9 +103,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (1; słaby sygnał pomocniczy)
 
 ---
 
@@ -112,7 +127,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -120,7 +137,7 @@ Brak.
 
 ## Pewność
 
-Wysoka
+Bardzo wysoka
 
 ## Siła Źródeł Psychometrycznych
 
@@ -128,17 +145,13 @@ Wysoka
 
 ## Siła Źródeł Behawioralnych
 
-Średnia
+Wysoka
 
 ## Poziom Walidacji
 
-Niski
+Wysoki
 
-Predyktor jest wspierany przez wiele niezależnych źródeł opisujących zarówno relacje interpersonalne, jak i sposób oceny informacji.
-
-Stanowi jedno z najbardziej prawdopodobnych wyjaśnień rozbieżności pomiędzy wynikami Big Five i HEXACO w obszarze ugodowości.
-
-Wymaga dalszej walidacji na podstawie historii zawodowych, sytuacji konfliktowych oraz przykładów współpracy z innymi ludźmi.
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
 
 ---
 
@@ -170,3 +183,5 @@ Predyktor może wyjaśniać:
 - koncentrację na jakości procesu decyzyjnego.
 
 Na obecnym etapie jest to jeden z najlepiej wspieranych predyktorów interpersonalnych w całym modelu.
+
+CAL-001 doprecyzowuje rozróżnienie między tolerancją wobec ludzi a niską tolerancją wobec błędów poznawczych.
