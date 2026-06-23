@@ -2,213 +2,284 @@
 
 ## Cel dokumentu
 
-Behavioral Patterns są drugą warstwą interpretacyjną Cognitive Model.
+Behavioral Patterns stanowią pierwszą warstwę interpretacji zachowań zaobserwowanych w Career Vault.
 
-Ich zadaniem jest identyfikacja powtarzalnych wzorców zachowań występujących w rzeczywistych sytuacjach.
+Ich zadaniem jest identyfikacja powtarzalnych mechanizmów działania występujących w wielu niezależnych sytuacjach.
 
-Behavioral Pattern nie opisuje pojedynczego mechanizmu.
+Behavioral Pattern opisuje:
 
-Behavioral Pattern nie jest również teorią wyjaśniającą działanie badanego.
+```text
+Trigger
+↓
+Internal Process
+↓
+Observable Behaviors
+↓
+Outcomes
+```
 
-Stanowi uporządkowany opis zachowania, które wielokrotnie pojawia się w niezależnych Stories.
+Behavioral Pattern nie jest:
 
-Behavioral Patterns stanowią pomost pomiędzy Predictorami a Cognitive Model.
+* cechą osobowości,
+* talentem,
+* kompetencją,
+* archetypem,
+* pojedynczym mechanizmem poznawczym.
+
+Behavioral Pattern jest powtarzalnym wzorcem zachowania obserwowanym w rzeczywistych sytuacjach.
+
+Stanowi podstawową jednostkę analizy behawioralnej wykorzystywaną do budowy Predictorów oraz Cognitive Model.
 
 ---
 
-## Miejsce w architekturze Vault
+# Miejsce w architekturze Vault
 
 ```text
-Assessment Data      Stories
-        ↓               ↓
-          Calibration
-                ↓
-           Predictors
-                ↓
-      Behavioral Patterns
-                ↓
-         Cognitive Model
+Assessment Data
+Stories
+Achievements
+Skills
+Development Areas
+
+        ↓
+
+Behavioral Patterns
+
+        ↓
+
+Predictors
+
+        ↓
+
+Cognitive Model
 ```
 
 Assessment Data dostarczają danych pomiarowych.
 
 Stories dostarczają obserwacji zachowań.
 
-Calibration integruje oba źródła.
+Achievements dostarczają dowodów rezultatów.
 
-Predictors opisują pojedyncze mechanizmy.
+Skills dostarczają informacji o rozwiniętych zdolnościach.
 
-Behavioral Patterns opisują powtarzalne zachowania obserwowane w rzeczywistości.
+Development Areas dostarczają informacji o ograniczeniach oraz powtarzalnych trudnościach.
 
-Cognitive Model wyjaśnia, dlaczego te wzorce występują.
+Behavioral Patterns integrują wszystkie źródła dowodowe w obserwowalne wzorce działania.
+
+Predictors wyjaśniają mechanizmy generujące te wzorce.
+
+Cognitive Model integruje całość w spójny model funkcjonowania badanego.
 
 ---
 
-## Czym jest Behavioral Pattern?
+# Czym jest Behavioral Pattern?
 
-Behavioral Pattern jest powtarzalnym wzorcem działania zaobserwowanym w wielu niezależnych Stories.
+Behavioral Pattern jest powtarzalnym mechanizmem zachowania obserwowanym wielokrotnie w niezależnych sytuacjach.
 
-Behavioral Pattern powinien odpowiadać na pytanie:
+Powinien odpowiadać na pytanie:
 
-> Co badany regularnie robi?
+> Co badany regularnie robi, gdy znajduje się w określonych warunkach?
 
 Przykłady:
 
-* Operational Transformation Under Ambiguity
-* Knowledge Externalization as Scaling Mechanism
-* Influence Without Formal Authority
-* Cross-Functional Facilitation and Alignment
-* Evidence-Based Organizational Diagnosis
+* Od Chaosu do Modelu Operacyjnego
+* Usprawniaj To, Co Istnieje, Zanim To Zastąpisz
+* Bierz Problem Na Siebie
+* Tłumacz Między Funkcjami
+* Ucz Się Poprzez Wejście w Problem
 
-Behavioral Pattern powinien opisywać zachowanie.
+Behavioral Pattern musi opisywać zachowanie możliwe do zaobserwowania.
 
-Nie powinien opisywać cechy osobowości.
-
-Nie powinien opisywać pojedynczego mechanizmu poznawczego.
+Nie powinien opisywać wyłącznie cech osobowości ani stanów wewnętrznych.
 
 ---
 
-## Źródła Behavioral Patterns
+# Źródła Behavioral Patterns
 
-Behavioral Patterns są budowane na podstawie:
+Behavioral Patterns mogą być budowane na podstawie:
 
-* Predictorów,
-* powtarzalnych wzorców występujących w Stories,
-* wcześniejszych kalibracji.
+* Stories,
+* Achievements,
+* Skills,
+* Development Areas,
+* Assessment Data.
+
+Hierarchia dowodów:
+
+```text
+1. Stories
+2. Achievements
+3. Development Areas
+4. Assessment Data
+5. Skills
+```
+
+Stories są głównym źródłem dowodów.
 
 Behavioral Pattern nie powinien być tworzony wyłącznie na podstawie Assessment Data.
 
 Behavioral Pattern nie powinien być tworzony na podstawie pojedynczej Story.
 
-Do utworzenia Behavioral Pattern wymagane są wielokrotne obserwacje podobnego zachowania.
+Do utworzenia wzorca wymagane są wielokrotne obserwacje podobnego zachowania.
 
 ---
 
-## Rola Behavioral Patterns
+# Rola Behavioral Patterns
 
 Behavioral Patterns odpowiadają na pytanie:
 
-> Jak mechanizmy opisane przez Predictors manifestują się w rzeczywistości?
+> Jak badany zachowuje się w rzeczywistych sytuacjach?
+
+Są warstwą obserwacyjną.
+
+Nie próbują wyjaśniać przyczyn zachowania.
+
+Ich celem jest dokumentowanie regularnie występujących wzorców działania.
 
 Przykład:
 
 ```text
-Predictors
-
-- Model-Centric Decision Making
-- Systemic Problem Structuring
-- Evidence-Driven Belief Updating
+Wiele Stories
 
 ↓
 
-Behavioral Pattern
+Powtarzalne zachowanie:
 
-Evidence-Based Organizational Diagnosis
+"Bierze odpowiedzialność za problemy bez właściciela"
+
+↓
+
+Behavioral Pattern:
+
+Bierz Problem Na Siebie
 ```
 
-Predictors opisują potencjalne mechanizmy.
+---
 
-Behavioral Pattern opisuje rzeczywiste zachowanie obserwowane w wielu sytuacjach.
+# Relacja pomiędzy Behavioral Patterns i Predictorami
+
+Behavioral Pattern opisuje zachowanie.
+
+Predictor opisuje mechanizm.
+
+Przykład:
+
+```text
+Behavioral Pattern
+
+Bierz Problem Na Siebie
+
+↓
+
+Predictors
+
+Responsibility Internalization
+Initiative Under Ambiguity
+Low Ownership Diffusion
+```
+
+Behavioral Pattern jest obserwacją.
+
+Predictor jest hipotezą wyjaśniającą.
+
+Jeden Behavioral Pattern może być wspierany przez wiele Predictorów.
+
+Jeden Predictor może wspierać wiele Behavioral Patterns.
+
+Predictory nie są wymagane do identyfikacji Behavioral Pattern.
+
+Mogą zostać dodane podczas późniejszej analizy.
 
 ---
 
-## Status Behavioral Patterns
-
-### Candidate
-
-Wzorzec został zidentyfikowany, ale posiada ograniczoną liczbę obserwacji.
-
-### Validated
-
-Wzorzec został zaobserwowany wielokrotnie w niezależnych Stories i jest wspierany przez Predictors.
-
-### Deprecated
-
-Wzorzec utracił wartość wyjaśniającą lub został zastąpiony dokładniejszym modelem.
-
----
-
-## Relacja pomiędzy Predictorami i Behavioral Patterns
-
-Predictor opisuje pojedynczy mechanizm.
-
-Behavioral Pattern opisuje zachowanie wynikające ze współdziałania wielu Predictorów.
-
-Pojedynczy Predictor może wspierać wiele Behavioral Patterns.
-
-Pojedynczy Behavioral Pattern zwykle wykorzystuje od 2 do 4 Predictorów.
-
-Behavioral Pattern powinien być wsparty zarówno przez Predictors, jak i przez rzeczywiste obserwacje zawarte w Stories.
-
----
-
-## Relacja pomiędzy Behavioral Patterns i Cognitive Model
+# Relacja pomiędzy Behavioral Patterns i Cognitive Model
 
 Behavioral Patterns nie wyjaśniają zachowania.
 
 Behavioral Patterns opisują zachowanie.
 
-Cognitive Model odpowiada za wyjaśnienie, dlaczego dane wzorce występują.
+Cognitive Model odpowiada na pytanie:
 
-Behavioral Patterns stanowią główne źródło dowodów wykorzystywanych podczas budowy Cognitive Model.
+> Dlaczego te wzorce występują?
+
+Behavioral Patterns stanowią główne źródło dowodów wykorzystywane podczas budowy Cognitive Model.
 
 ---
 
-## Zasada stabilności Behavioral Pattern
+# Status Behavioral Patterns
+
+## Candidate
+
+Wzorzec został zidentyfikowany, ale wymaga dalszych obserwacji.
+
+## Validated
+
+Wzorzec został wielokrotnie zaobserwowany w niezależnych sytuacjach i posiada silne wsparcie dowodowe.
+
+## Deprecated
+
+Wzorzec utracił wartość wyjaśniającą lub został zastąpiony dokładniejszym modelem.
+
+---
+
+# Zasada stabilności Behavioral Pattern
 
 Kalibracja może:
 
 * zwiększać lub zmniejszać confidence,
-* dodawać nowe Stories,
 * dodawać nowe dowody,
+* dodawać nowe Stories,
 * doprecyzowywać opis wzorca,
 * rozszerzać zakres zachowań objętych wzorcem.
 
 Kalibracja nie powinna zmieniać podstawowego znaczenia wzorca.
 
-Jeżeli nowy materiał wskazuje na inny wzorzec zachowania, należy utworzyć nowy Behavioral Pattern.
+Jeżeli nowy materiał wskazuje na odmienny mechanizm zachowania, należy utworzyć nowy Behavioral Pattern.
 
 ---
 
-## Struktura Behavioral Pattern
+# Struktura Behavioral Pattern
 
-Każdy Behavioral Pattern powinien być zapisany jako osobny plik Markdown zawierający metadane YAML oraz sekcje opisowe.
+Każdy Behavioral Pattern powinien być zapisany jako osobny plik Markdown.
 
-### Metadane
+---
+
+## Metadane
 
 ```yaml
 ---
 id: BP-001
 
-name: Operational Transformation Under Ambiguity
+name: Od Chaosu do Modelu Operacyjnego
 
 status: candidate
-confidence: medium
+confidence: high
 
-based_on_predictors:
-  - PRED-001
-  - PRED-006
-  - PRED-014
+derived_from:
+  stories:
+    - STORY-001
+    - STORY-004
 
-emerged_from_stories:
-  - STORY-001
-  - STORY-004
-  - STORY-008
+  achievements:
+    - ACH-001
 
-related_calibrations: []
+  skills:
+    - SKILL-002
 
-last_updated: 2026-06-22
-version: 1.0
+  development_areas: []
+
+  assessment_data:
+    - AD-001
 ---
 ```
 
 ---
 
-## Elementy Behavioral Pattern
+# Elementy Behavioral Pattern
 
-### Opis
+## Opis
 
-Opis obserwowanego wzorca zachowania.
+Opis podstawowego mechanizmu zachowania.
 
 Odpowiada na pytanie:
 
@@ -216,119 +287,107 @@ Odpowiada na pytanie:
 
 ---
 
-### Wzorzec zachowania
+## Wyzwalacz
 
-Opis przebiegu zachowania.
-
-Przykład:
-
-```text
-Chaos lub niejasność
-↓
-Analiza sytuacji
-↓
-Strukturyzacja problemu
-↓
-Projekt rozwiązania
-↓
-Wdrożenie lub facylitacja zmiany
-```
+Jakie warunki aktywują wzorzec?
 
 ---
 
-### Wspierające Predictors
+## Proces Wewnętrzny
 
-Opis Predictorów wspierających wzorzec oraz ich roli.
-
----
-
-### Zachowania przewidywane
-
-Jakie zachowania powinny pojawiać się, jeśli wzorzec jest poprawny?
+Jak wygląda typowa sekwencja rozumowania lub działania prowadząca do zachowania?
 
 ---
 
-### Zachowania przeczące
+## Obserwowalne Zachowania
 
-Jakie zachowania osłabiają lub podważają wzorzec?
+Co może zaobserwować osoba zewnętrzna?
 
----
-
-### Pytania walidacyjne
-
-Pytania wykorzystywane podczas analizy Stories.
-
-Przykład:
-
-* Czy wystąpił problem systemowy?
-* Czy badany próbował zrozumieć przyczynę źródłową?
-* Czy stworzył strukturę lub proces?
-* Czy rozwiązanie miało charakter skalowalny?
+Powinny być to zachowania możliwe do zweryfikowania.
 
 ---
 
-### Dowody potwierdzające
+## Typowe Rezultaty
 
-Historie, obserwacje oraz kalibracje wspierające wzorzec.
+Jakie konsekwencje zwykle generuje wzorzec?
 
----
-
-### Dowody przeczące
-
-Historie, obserwacje oraz kalibracje pozostające w konflikcie ze wzorcem.
+Należy uwzględniać zarówno skutki pozytywne, jak i negatywne.
 
 ---
 
-### Historia kalibracji
+## Dowody Wspierające
 
-Lista Calibration Records wpływających na Behavioral Pattern.
+Dowody wykorzystane do identyfikacji wzorca.
 
----
+Powinny być grupowane według źródła:
 
-### Ocena
-
-Aktualna ocena jakości wzorca.
-
-Powinna zawierać:
-
-* confidence,
-* liczbę wspierających Predictorów,
-* liczbę wspierających Stories,
-* liczbę Stories przeczących,
-* poziom walidacji.
+* Stories
+* Achievements
+* Skills
+* Development Areas
+* Assessment Data
 
 ---
 
-### Notatki
+## Potencjalne Tryby Niepowodzenia
 
-Ograniczenia interpretacyjne, potencjalne kierunki dalszej kalibracji oraz powiązania z innymi Behavioral Patterns.
+Jakie ryzyka pojawiają się przy nadmiernym lub niewłaściwym zastosowaniu wzorca?
+
+Dobry Behavioral Pattern powinien wskazywać własne ograniczenia.
 
 ---
 
-## Weryfikacja jakości
+## Ocena
+
+Krótka interpretacja behawioralna.
+
+Powinna odpowiadać na pytanie:
+
+> Jakich zachowań możemy spodziewać się w przyszłości, jeśli wzorzec jest poprawny?
+
+---
+
+## Notatki
+
+Miejsce na:
+
+* niepewności interpretacyjne,
+* konkurencyjne hipotezy,
+* braki dowodowe,
+* powiązania z innymi Behavioral Patterns.
+
+---
+
+# Weryfikacja jakości
 
 Dobry Behavioral Pattern:
 
 * opisuje rzeczywiste zachowanie,
-* występuje w wielu niezależnych Stories,
-* jest wspierany przez Predictors,
+* występuje w wielu niezależnych sytuacjach,
+* posiada wyraźny Trigger,
+* posiada wyraźny Internal Process,
+* posiada obserwowalne zachowania,
 * generuje przewidywania,
-* może zostać sfalsyfikowany.
+* może zostać sfalsyfikowany,
+* posiada udokumentowane dowody.
 
 Słaby Behavioral Pattern:
 
-* jest jedynie parafrazą Predictorów,
+* jest parafrazą cechy osobowości,
+* opisuje wyłącznie kompetencję,
 * nie posiada wsparcia w Stories,
-* opisuje cechę osobowości zamiast zachowania,
 * nie generuje przewidywań,
-* nie może zostać obalony.
+* nie można go obalić,
+* nie wskazuje potencjalnych trybów niepowodzenia.
 
 ---
 
-## Cel długoterminowy
+# Cel długoterminowy
 
 Celem Behavioral Patterns nie jest wyjaśnianie działania badanego.
 
-Ich rolą jest identyfikacja i dokumentowanie powtarzalnych zachowań występujących w rzeczywistych sytuacjach.
+Ich rolą jest dokumentowanie powtarzalnych zachowań obserwowanych w rzeczywistych sytuacjach.
 
-Behavioral Patterns stanowią warstwę dowodową pomiędzy Predictorami a Cognitive Model i pozwalają budować model oparty na obserwacjach, a nie wyłącznie na deklaracjach.
+Behavioral Patterns stanowią główną warstwę dowodową Career Vault, łączącą dane źródłowe z modelami interpretacyjnymi.
+
+Dzięki temu Cognitive Model może być budowany na podstawie obserwowalnych zachowań, a nie wyłącznie deklaracji, testów psychometrycznych lub subiektywnych interpretacji.
