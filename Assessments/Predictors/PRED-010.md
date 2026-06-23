@@ -1,24 +1,29 @@
 ---
 id: PRED-010
 name: Proven-System Optimization
-
-status: candidate
-confidence: medium-high
-
+status: validated
+confidence: high
 created_from:
   - Schwartz
   - AOT
   - CIHS
   - Wywiad jakościowy
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-005
+  - STORY-007
+  - STORY-008
+  - STORY-004
+  - STORY-006
+  - STORY-009
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -35,6 +40,8 @@ Pierwszym krokiem jest próba zrozumienia:
 - jakie konsekwencje może mieć jego zmiana.
 
 Dopiero po zbudowaniu takiego modelu następuje ocena, czy optymalizacja jest uzasadniona.
+
+Predyktor opisuje preferencję optymalizacji istniejących systemów przed ich całkowitą wymianą.
 
 ---
 
@@ -82,9 +89,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
 
 ---
 
@@ -98,7 +113,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -106,7 +123,7 @@ Brak.
 
 ## Pewność
 
-Średnio-wysoka
+Wysoka
 
 ## Siła Źródeł Psychometrycznych
 
@@ -114,15 +131,13 @@ Brak.
 
 ## Siła Źródeł Behawioralnych
 
-Niska
+Bardzo wysoka
 
 ## Poziom Walidacji
 
-Bardzo niski
+Bardzo wysoki
 
-Predyktor powstał głównie jako wyjaśnienie pozornej sprzeczności pomiędzy wynikami Schwartza a wynikami AOT i CIHS.
-
-Wymaga szczególnie starannej walidacji na podstawie historii związanych z usprawnianiem procesów, transformacjami organizacyjnymi oraz analizą istniejących rozwiązań.
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz CAL-001.
 
 ---
 
@@ -143,3 +158,5 @@ Najbardziej prawdopodobny wzorzec działania można opisać jako:
 Predyktor może stanowić jeden z mechanizmów wyjaśniających wysokie wyniki w obszarach Tradition i Conformity przy jednoczesnej wysokiej otwartości poznawczej.
 
 Na obecnym etapie jest to jedna z najbardziej interesujących, ale również najmniej zwalidowanych hipotez wyprowadzonych z dostępnych danych.
+
+CAL-001 doprecyzowuje, że chodzi o preferencję optymalizacji istniejących systemów zamiast ich całkowitej wymiany.
