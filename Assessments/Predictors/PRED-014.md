@@ -1,24 +1,29 @@
 ---
 id: PRED-014
 name: Supportive Facilitation Orientation
-
-status: candidate
-confidence: medium-high
-
+status: validated
+confidence: high
 created_from:
   - Gallup
   - Schwartz
   - VIA
   - Wywiad jakościowy
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-005
+  - STORY-009
+  - STORY-003
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-007
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -28,6 +33,8 @@ Badany wykazuje tendencję do wspierania innych ludzi poprzez usuwanie przeszkó
 Głównym źródłem satysfakcji nie wydaje się bezpośrednie zarządzanie ludźmi ani kontrolowanie ich działań.
 
 Bardziej prawdopodobna jest orientacja na tworzenie warunków umożliwiających innym skuteczniejsze działanie.
+
+Predyktor opisuje wspieranie ludzi w osiąganiu celu, a nie unikanie konfliktu.
 
 ---
 
@@ -79,9 +86,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (1; słaby sygnał pomocniczy)
 
 ---
 
@@ -95,7 +110,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -103,7 +120,7 @@ Brak.
 
 ## Pewność
 
-Średnio-wysoka
+Wysoka
 
 ## Siła Źródeł Psychometrycznych
 
@@ -111,15 +128,13 @@ Brak.
 
 ## Siła Źródeł Behawioralnych
 
-Niska
+Bardzo wysoka
 
 ## Poziom Walidacji
 
-Bardzo niski
+Bardzo wysoki
 
-Predyktor jest wspierany przez kilka niezależnych źródeł opisujących współpracę, relacje interpersonalne oraz wspieranie innych ludzi.
-
-Wymaga walidacji na podstawie historii zawodowych i przykładów rzeczywistego wpływu na pracę innych osób.
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz CAL-001.
 
 ---
 
@@ -137,3 +152,5 @@ Najbardziej prawdopodobny wzorzec działania można opisać jako:
 4. Pozwól innym działać skuteczniej.
 
 Predyktor może stanowić jedno z wyjaśnień, dlaczego badany często pełni rolę osoby wspierającej, konsultującej lub facylitującej mimo braku formalnego stanowiska kierowniczego.
+
+CAL-001 wzmacnia interpretację tego mechanizmu jako wspierania ludzi w osiąganiu celu, a nie unikania konfliktu.
