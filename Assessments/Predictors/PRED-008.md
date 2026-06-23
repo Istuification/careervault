@@ -1,24 +1,23 @@
 ---
 id: PRED-008
 name: Selective Cognitive Reopening
-
 status: candidate
 confidence: medium
-
 created_from:
   - AOT
   - CIHS
   - NFCS
   - Wywiad jakościowy
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-004
+  - STORY-008
+  - STORY-009
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -78,9 +77,11 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (1; słaby sygnał pomocniczy)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (1; słaby sygnał pomocniczy)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (1; słaby sygnał pomocniczy)
 
 ---
 
@@ -94,7 +95,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -110,15 +113,13 @@ Brak.
 
 ## Siła Źródeł Behawioralnych
 
-Niska
+Umiarkowana
 
 ## Poziom Walidacji
 
-Bardzo niski
+Umiarkowany
 
-Predyktor opiera się przede wszystkim na analizie jakościowej oraz interpretacji relacji pomiędzy AOT, CIHS i NFCS.
-
-Wymaga szczególnie starannej walidacji na podstawie historii.
+Predyktor ujawnia się sytuacyjnie i wymaga dalszej obserwacji wraz z nowymi Stories.
 
 ---
 
@@ -142,3 +143,5 @@ Predyktor może stanowić mechanizm łączący:
 - PRED-002 Evidence-Driven Belief Updating
 
 Jego istnienie wymaga jednak potwierdzenia na podstawie rzeczywistych historii i decyzji podejmowanych w dłuższym horyzoncie czasowym.
+
+Mechanizm pozostaje sytuacyjny i nie wymaga obecnie merytorycznej zmiany; warto go obserwować wraz z nowymi Stories.
