@@ -10,22 +10,22 @@ confidence: high
 
 created_from:
 
-* Gallup
-* Schwartz
-* VIA
-* Wywiad jakościowy
+- Gallup
+- Schwartz
+- VIA
+- Wywiad jakościowy
 
 supporting_stories:
 
-* STORY-001
-* STORY-002
-* STORY-005
-* STORY-009
-* STORY-003
-* STORY-004
-* STORY-006
-* STORY-008
-* STORY-007
+- STORY-001
+- STORY-002
+- STORY-005
+- STORY-009
+- STORY-003
+- STORY-004
+- STORY-006
+- STORY-008
+- STORY-007
 
 conflicting_stories: []
 
@@ -33,8 +33,8 @@ related_hypotheses: []
 
 related_calibrations:
 
-* CAL-001
-* CAL-002
+- CAL-001
+- CAL-002
 
 last_updated: 2026-06-23
 
