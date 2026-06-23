@@ -1,24 +1,29 @@
 ---
 id: PRED-002
 name: Evidence-Driven Belief Updating
-
-status: candidate
-confidence: high
-
+status: validated
+confidence: very high
 created_from:
   - AOT
   - CIHS
   - NFC
   - VIA
-
-supporting_stories: []
-
+supporting_stories:
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-003
+  - STORY-005
+  - STORY-007
+  - STORY-009
+  - STORY-001
+  - STORY-002
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -77,9 +82,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-Oczekuje na analizę historii.
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (1; słaby sygnał pomocniczy)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (1; słaby sygnał pomocniczy)
 
 ---
 
@@ -93,7 +106,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -101,7 +116,7 @@ Brak.
 
 ## Pewność
 
-Wysoka
+Bardzo wysoka
 
 ## Siła Źródeł Psychometrycznych
 
@@ -109,15 +124,13 @@ Bardzo wysoka
 
 ## Siła Źródeł Behawioralnych
 
-Brak danych
+Wysoka
 
 ## Poziom Walidacji
 
-Niski
+Wysoki
 
-Predyktor opiera się na wyjątkowo spójnych wynikach AOT, CIHS oraz NFC.
-
-Wymaga potwierdzenia poprzez analizę rzeczywistych sytuacji, w których badany zmienił stanowisko pod wpływem nowych informacji.
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
 
 ---
 
@@ -130,3 +143,5 @@ Wysoka gotowość do aktualizacji modelu może współistnieć z rzadką zmianą
 Predyktor opisuje mechanizm aktualizacji przekonań, a nie częstotliwość zmiany poglądów.
 
 Istotnym elementem wymagającym dalszej walidacji jest poziom dowodów wymaganych do uruchomienia procesu aktualizacji modelu.
+
+CAL-001 wzmacnia ten Predictor: w matrycy kalibracyjnej otrzymał szerokie wsparcie ze Stories.
