@@ -1,21 +1,17 @@
 ---
 id: PRED-013
 name: Context-Adaptive Self-Presentation
-
 status: candidate
 confidence: medium
-
 created_from:
   - Wywiad jakościowy
-
 supporting_stories: []
-
 conflicting_stories: []
-
 related_hypotheses: []
-
-last_updated: 2026-06-22
-version: 1.0
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
 ---
 
 # Opis
@@ -72,9 +68,7 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-Brak.
-
-Oczekuje na analizę historii.
+Brak Stories przypisanych w matrycy kalibracyjnej. Na tym etapie mechanizm opiera się głównie na Assessment Data i analizie jakościowej.
 
 ---
 
@@ -88,7 +82,9 @@ Oczekuje na analizę historii.
 
 # Historia Kalibracji
 
-Brak.
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -100,7 +96,7 @@ Brak.
 
 ## Siła Źródeł Psychometrycznych
 
-Brak
+Niska
 
 ## Siła Źródeł Behawioralnych
 
@@ -108,11 +104,9 @@ Niska
 
 ## Poziom Walidacji
 
-Bardzo niski
+Niski
 
-Predyktor został wyprowadzony wyłącznie z danych jakościowych.
-
-Wymaga szczególnie ostrożnej walidacji na podstawie historii związanych z pracą zawodową, negocjacjami, prezentacjami oraz zmianami pełnionych ról.
+Predyktor ma ograniczone wsparcie behawioralne i wymaga dalszej walidacji.
 
 ---
 
@@ -125,3 +119,5 @@ Opisuje świadome dostosowywanie sposobu prezentowania siebie do kontekstu i cel
 Na obecnym etapie nie wiadomo, czy jest to trwały mechanizm poznawczy, czy jedynie świadome przekonanie badanego.
 
 Wymaga szczególnie uważnej kalibracji podczas analizy historii.
+
+CAL-001 nie daje jeszcze podstaw do mocnej walidacji; Predictor pozostaje hipotezą o ograniczonym wsparciu behawioralnym.
