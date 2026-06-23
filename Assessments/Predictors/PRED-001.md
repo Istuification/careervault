@@ -1,48 +1,32 @@
 ---
-
 id: PRED-001
 name: Model-Centric Decision Making
-
-status: candidate
-confidence: high
-
+status: validated
+confidence: very high
 created_from:
-
   - HEXACO
   - VIA
   - NFC
   - AOT
   - CIHS
   - Gallup
-
 supporting_stories:
-
   - STORY-001
   - STORY-002
-  - STORY-003
   - STORY-004
-  - STORY-005
   - STORY-006
-  - STORY-007
   - STORY-008
+  - STORY-003
+  - STORY-005
+  - STORY-007
   - STORY-009
-
-conflicting_stories:
-
-related_behavioral_patterns:
-
+conflicting_stories: []
+related_behavioral_patterns: []
 related_calibrations:
-
- - CAL-001
-
-last_updated: 
-  "2026-06-22"
-
-version: 
-  "1.1"
-
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.2
 ---
-
 
 # Opis
 
@@ -60,7 +44,7 @@ Celem nie jest zgromadzenie maksymalnej ilości informacji, lecz osiągnięcie p
 
 Model ma charakter roboczy i może zostać zaktualizowany po pojawieniu się nowych danych.
 
-Predyktor opisuje wykorzystanie modelu sytuacji do podejmowania decyzji. Nie opisuje samego procesu strukturyzacji problemu ani organizowania informacji.
+Predyktor opisuje wykorzystanie modelu sytuacji do podejmowania decyzji. Nie opisuje samego procesu strukturyzacji problemu ani organizowania informacji, które są analizowane osobno przez PRED-006.
 
 ---
 
@@ -128,17 +112,17 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 
 # Dowody Potwierdzające
 
-* STORY-001 Transformacja organizacji pracy działu Instal/Solar
-* STORY-002 Restrukturyzacja i stabilizacja działu serwisu
-* STORY-003 Projektowanie modelu działania serwisu przy braku danych historycznych
-* STORY-004 Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności
-* STORY-005 Zatrzymanie niekontrolowanego skalowania operacji PV
-* STORY-006 Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
-* STORY-007 Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
-* STORY-008 Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
-* STORY-009 Budowa zespołu serwisowego po kryzysie kadrowym
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
 
-CAL-001 wykazała obecność tego mechanizmu we wszystkich analizowanych Stories.
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
 
 ---
 
@@ -152,7 +136,9 @@ Nie zidentyfikowano historii pozostających w bezpośrednim konflikcie z predykt
 
 # Historia Kalibracji
 
-* CAL-001 Predictor-Story Mapping Review
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
 ---
 
@@ -160,25 +146,21 @@ Nie zidentyfikowano historii pozostających w bezpośrednim konflikcie z predykt
 
 ## Pewność
 
-Wysoka
+Bardzo wysoka
 
 ## Siła Źródeł Psychometrycznych
 
-Bardzo wysoka
+Wysoka
 
 ## Siła Źródeł Behawioralnych
 
-Wysoka
+Bardzo wysoka
 
 ## Poziom Walidacji
 
-Średni
+Bardzo wysoki
 
-Predyktor został utworzony na podstawie zgodności wielu źródeł psychometrycznych oraz wywiadu jakościowego.
-
-CAL-001 dostarczyła silnego wsparcia behawioralnego poprzez wszystkie dostępne Stories.
-
-Dalsza walidacja wymaga kolejnych historii oraz przyszłych kalibracji.
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz CAL-001.
 
 ---
 
@@ -197,3 +179,5 @@ PRED-006 opisuje proces rozumienia, porządkowania i strukturyzacji problemu.
 PRED-001 opisuje wykorzystanie powstałego modelu do wyboru kierunku działania i podjęcia decyzji.
 
 CAL-001 nie wykazała podstaw do połączenia obu Predictorów, jednak ich relacja powinna być monitorowana podczas kolejnych kalibracji.
+
+CAL-001 doprecyzowuje zakres względem PRED-006: ten Predictor opisuje wykorzystanie modelu sytuacji do decyzji, a nie samą strukturyzację problemu.
