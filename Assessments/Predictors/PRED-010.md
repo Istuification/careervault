@@ -1,13 +1,18 @@
 ---
 id: PRED-010
+
 name: Proven-System Optimization
+
 status: validated
+
 confidence: high
+
 created_from:
   - Schwartz
   - AOT
   - CIHS
   - Wywiad jakościowy
+
 supporting_stories:
   - STORY-001
   - STORY-002
@@ -18,12 +23,29 @@ supporting_stories:
   - STORY-004
   - STORY-006
   - STORY-009
+
 conflicting_stories: []
+
 related_hypotheses: []
+
 related_calibrations:
   - CAL-001
+  - CAL-002
+
+supported_behavioral_patterns:
+  - BP-002
+  - BP-007
+  - BP-008
+  - BP-009
+
+calibration_notes:
+  - CAL-002: Potwierdzono interpretację jako preferencję zrozumienia istniejącego systemu przed jego zmianą.
+  - CAL-002: Oddzielono mechanizm optymalizacji istniejących systemów od mechanizmu ochrony capacity.
+  - CAL-002: Uznano BP-011 za częściowo wyjaśniane przez Predictor, ale niewystarczająco do pełnego pokrycia wzorca.
+
 last_updated: 2026-06-23
-version: 1.1
+
+version: 1.2
 ---
 
 # Opis
