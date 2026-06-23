@@ -35,7 +35,9 @@ related_calibrations:
 
 last_updated: 2026-06-23
 
-## version: 1.2
+version: 1.2
+
+---
 
 # Opis
 
