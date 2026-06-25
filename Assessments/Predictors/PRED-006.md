@@ -222,4 +222,3 @@ Nie opisuje budowy baz wiedzy.
 Nie opisuje zamiany wiedzy eksperckiej w trwałą infrastrukturę organizacyjną.
 
 CAL-003 znacząco zwiększyła rozdzielczość tego Predictora poprzez wyraźne oddzielenie go od BP-006 oraz od mechanizmów związanych z formalizacją wiedzy.
-```
