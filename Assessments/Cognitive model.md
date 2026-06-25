@@ -38,24 +38,35 @@ System poznawczy badanego opiera się na ciągłym modelowaniu i strukturyzowani
 ## B. Core Cognitive Engines
 
 ### Structural Modeling Engine
+
 **Mechanizm działania:** System dąży do zbudowania hierarchicznego modelu zależności przyczynowo-skutkowych przed podjęciem decyzji (PRED-001, PRED-006). Odizolowane dane są grupowane w struktury, a następnie przekształcane w skalowalne reguły (np. schematy diagnostyczne BPMN z STORY-005, kalkulatory opłacalności z STORY-007).
+
 **Warunki aktywacji:** Uruchamia się w kontakcie z chaosem informacyjnym, brakiem spisanych procedur oraz koniecznością podjęcia decyzji bez danych historycznych (STORY-001, STORY-004). Działanie jest blokowane przez środowiska o sztywnym mikrozarządzaniu.
+
 **Wspierające źródła:** PRED-001, PRED-006, STORY-001, STORY-004, STORY-005, STORY-007.
 
 ### Empirical Calibration Engine
+
 **Mechanizm działania:** Weryfikacja i aktualizacja modeli decyzyjnych odbywa się wyłącznie w oparciu o jakość dowodów empirycznych i logicznych (PRED-002). Przekonania są traktowane jako robocze hipotezy; badany zmienia stanowisko po otrzymaniu lepszego argumentu, całkowicie odrzucając autorytet formalny jako kryterium prawdy (PRED-009, CIHS, AOT).
+
 **Warunki aktywacji:** Uruchamia się podczas konieczności optymalizacji istniejących systemów (PRED-010) lub w warunkach merytorycznego sporu. Ulega degradacji, gdy brakuje jakichkolwiek mierzalnych punktów odniesienia.
+
 **Wspierające źródła:** PRED-002, PRED-009, PRED-010, STORY-004, CIHS, AOT.
 
 ### Enablement & Harmonization Engine
+
 **Mechanizm działania:** W relacjach społecznych system operuje poprzez facylitację i usuwanie barier dla innych (PRED-014). Wpływ organizacyjny jest wywierany przez tłumaczenie perspektyw i budowanie procesów obniżających temperaturę konfliktów (STORY-006). System ściśle oddziela ocenę człowieka (gdzie wykazuje dużą życzliwość) od oceny jego argumentów (gdzie wykazuje niską tolerancję na błędy poznawcze) (PRED-012).
+
 **Warunki aktywacji:** Aktywuje się w obliczu konfliktów wynikających z silosów informacyjnych (STORY-006) oraz przy stabilizacji i onboardingu zespołów (STORY-002, STORY-009).
+
 **Wspierające źródła:** PRED-012, PRED-014, STORY-002, STORY-006, STORY-009.
 
 ## C. Decision Architecture
 
 **Próg informacyjny:** Poziom wymaganych danych jest dynamicznie kalibrowany do stawki decyzji (PRED-011). W sytuacjach operacyjnych system podejmuje szybkie działania; przy decyzjach o zasięgu strategicznym próg dowodowy radykalnie rośnie, co badany kompensuje budowaniem systemów pomiarowych (STORY-004).
+
 **Zarządzanie niepewnością:** Brak danych historycznych nie wywołuje paraliżu. System izoluje niewiadome, tworzy własne metryki ad-hoc (STORY-004) i strukturyzuje problem, aż osiągnie minimalny punkt weryfikowalności logiki (PRED-006).
+
 **Rewizja stanowiska:** Przebiega w modelu *Selective Cognitive Reopening* (PRED-008). Zmiana decyzji jest możliwa w każdej chwili (AOT, CIHS), ale wymaga pojawienia się twardych dowodów empirycznych lub logicznych obalających aktualny model (PRED-002). Emocje lub presja społeczna nie aktualizują przekonań.
 
 ## D. Information Processing Style
@@ -69,8 +80,11 @@ Mechanizmy te pozycjonują badanego w roli "wewnętrznego konsultanta" lub archi
 ## F. Failure Modes / Trade-offs
 
 * **Capacity Overload (Ryzyko internalizacji awarii):** W środowiskach o słabej strukturze badany przejmuje odpowiedzialność za luki organizacyjne własnym, heroicznym wysiłkiem (DEV-002, DEV-006, STORY-008). Ten *ownership* prowadzi do tworzenia wąskich gardeł operacyjnych i skrajnego przeciążenia.
+
 * **Delayed Confrontation (Koszty ugodowości):** Dążenie do zachowania harmonii i budowy zaufania (PRED-014) powoduje odkładanie w czasie dyscyplinujących rozmów personalnych (DEV-001, DEV-005, STORY-009). System nadaje nowym współpracownikom zbyt duży, niezweryfikowany kredyt zaufania.
-* **The Builder's Bottleneck (Zjawisko opóźnionego delegowania):** Satysfakcja z eksploracji poznawczej i rozkładania problemu na czynniki pierwsze (Learner) opóźnia decyzję o delegowaniu (DEV-003). Badany woli zbudować idealny model samemu, niż szybciej przekazać "półprodukt".
+
+* **The Builder's Bottleneck (Zjawisko opóźnionego delegowania):** Satysfakcja z eksploracji poznawczej i rozkładania problemu na czynnik i pierwsze (Learner) opóźnia decyzję o delegowaniu (DEV-003). Badany woli zbudować idealny model samemu, niż szybciej przekazać "półprodukt".
+
 * **Premature Execution (Luka walidacji komercyjnej):** Koncentracja na inżynieryjnej poprawności i elegancji wdrażanego systemu sprawia, że badany potrafi pominąć twardą weryfikację rzeczywistych potrzeb rynkowych (DEV-004, STORY-006).
 
 ## G. Learning & Updating
@@ -80,7 +94,11 @@ System wchłania nową wiedzę jako narzędzie służące stabilizacji rzeczywis
 ## H. Evidence & Confidence Map
 
 * **Rdzeniowe mechanizmy (Wysoka pewność):** *Systemic Problem Structuring* (PRED-006), *Model-Centric Decision Making* (PRED-001) oraz *Proven-System Optimization* (PRED-010). Posiadają potężne poparcie w kluczowych historiach (STORY-001, STORY-003, STORY-004, STORY-007) oraz udokumentowanych wdrożeniach architektonicznych.
+
 * **Wspierające mechanizmy (Umiarkowana pewność):** *Selective Cognitive Reopening* (PRED-008) oraz *Stakes-Adjusted Evidence Threshold* (PRED-011). Widać ich ślady behawioralne w zarządzaniu danymi (STORY-004, STORY-008), jednak ze względu na ich sytuacyjność, pełna walidacja wymaga analizy na większych interwałach decyzyjnych.
+
 * **Sytuacyjne/Otwarte pytania (Niska pewność / Potrzeba kalibracji):** * *Ownership vs. Enablement*: Zidentyfikowane luki w kalibracji (CAL-002, CAL-003) dotyczące tego, gdzie kończy się pomocna facylitacja (PRED-014), a zaczyna szkodliwa internalizacja odpowiedzialności (DEV-002, DEV-006).
+  
     * *Low Status Motivation* (PRED-007): Wywiedziony głównie z testów (Schwartz, Gallup) i braku dążeń do władzy. Wymaga weryfikacji przez obserwację zachowań w warunkach silnej, negatywnej rywalizacji o wpływy polityczne.
+      
     * *Asertywność*: Ciągłe napięcie pomiędzy systemową życzliwością a koniecznością wymuszania dyscypliny w zespole, szczególnie wobec tolerowania słabych postaw (DEV-001, STORY-009).
