@@ -1,13 +1,18 @@
 ---
 id: PRED-011
+
 name: Stakes-Adjusted Evidence Threshold
+
 status: validated
+
 confidence: high
+
 created_from:
   - AOT
   - CIHS
   - NFCS
   - Wywiad jakościowy
+
 supporting_stories:
   - STORY-004
   - STORY-006
@@ -18,12 +23,18 @@ supporting_stories:
   - STORY-007
   - STORY-005
   - STORY-009
+
 conflicting_stories: []
+
 related_hypotheses: []
+
 related_calibrations:
   - CAL-001
-last_updated: 2026-06-23
-version: 1.1
+  - CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.2
 ---
 
 # Opis
@@ -33,13 +44,15 @@ Badany dostosowuje poziom wymaganych dowodów i głębokość analizy do przewid
 Nie dąży do maksymalnej możliwej pewności we wszystkich sytuacjach.
 
 Zamiast tego ocenia relację pomiędzy:
-
 - kosztem pozyskania dodatkowych informacji,
 - potencjalnym kosztem błędnej decyzji,
 - wartością szybkiego działania,
-- poziomem pozostałej niepewności.
+- poziomem pozostałej niepewności,
+- kosztem przeciążenia wynikającym z dalszego wydłużania lub komplikowania procesu decyzyjnego.
 
 W rezultacie decyzje o niskiej wadze mogą być podejmowane przy relatywnie ograniczonej ilości danych, podczas gdy decyzje strategiczne wymagają znacznie wyższego poziomu pewności.
+
+Kalibracja 003 doprecyzowała, że próg dowodowy nie jest tożsamy z ochroną pojemności operacyjnej. Badany może równocześnie uznawać, że decyzja wymaga większej ilości danych, ale nie oznacza to automatycznie, że będzie chronił własną capacity w sposób spójny lub konsekwentny.
 
 ---
 
@@ -57,6 +70,8 @@ W rezultacie decyzje o niskiej wadze mogą być podejmowane przy relatywnie ogra
 - Jednocześnie nie wykazuje potrzeby osiągania maksymalnej pewności za wszelką cenę.
 - W przypadku decyzji strategicznych akceptuje wyższy koszt analizy w zamian za zmniejszenie ryzyka błędu.
 - W przypadku decyzji operacyjnych preferuje działanie po osiągnięciu wystarczającego poziomu zrozumienia.
+- Badany uwzględnia nie tylko koszt błędu, ale również koszt dalszego angażowania zasobów w analizę.
+- Kalibracja 003 wskazuje, że oceniany koszt nie dotyczy wyłącznie ryzyka poznawczego, ale również kosztu obciążenia i konsekwencji dla jakości działania.
 
 Przykład deklarowany:
 
@@ -67,24 +82,38 @@ Przykład deklarowany:
 # Zachowania Przewidywane
 
 Predyktor przewiduje, że badany będzie:
-
 - zwiększał zakres analizy wraz ze wzrostem ryzyka decyzji,
 - podejmował szybkie decyzje w sytuacjach niskiego ryzyka,
 - inwestował znacznie więcej czasu w decyzje strategiczne niż operacyjne,
 - oceniał opłacalność zdobywania dodatkowych informacji,
 - akceptował niepewność w sytuacjach o ograniczonych konsekwencjach,
-- dążył do redukcji niepewności w sytuacjach o wysokim koszcie błędu.
+- dążył do redukcji niepewności w sytuacjach o wysokim koszcie błędu,
+- uwzględniał koszt dalszego analitycznego obciążenia przy ocenie sensu kontynuowania analizy.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+- ochrona przepustowości operacyjnej jako stabilny mechanizm graniczny,
+- przejmowanie odpowiedzialności za problem bez formalnego mandatu,
+- internalizacja odpowiedzialności za rezultat,
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- budowanie baz wiedzy i procesów jako celu samego w sobie.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
 
 ---
 
 # Zachowania Przeczące
 
 Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
-
 - stosowanie identycznego poziomu analizy niezależnie od stawki decyzji,
 - chroniczne przeciąganie decyzji o niskim znaczeniu,
 - podejmowanie decyzji strategicznych przy bardzo ograniczonych danych,
-- ignorowanie kosztu potencjalnego błędu podczas planowania działań.
+- ignorowanie kosztu potencjalnego błędu podczas planowania działań,
+- traktowanie każdej niepewności jako powodu do wstrzymania działania,
+- konsekwentne mylenie progu dowodowego z pojemnością operacyjną.
 
 ---
 
@@ -118,6 +147,11 @@ Oczekuje na analizę historii.
   - Zweryfikowano przypisania Stories w matrycy.
   - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
 
+- CAL-003 — Deep Calibration (2026-06-25)
+  - Doprecyzowano, że próg dowodowy jest zależny od stawki decyzji, ale nie jest tożsamy z ochroną capacity.
+  - Potwierdzono, że badany rozróżnia koszt błędu od kosztu przeciążenia.
+  - Ograniczono interpretacje mieszające zarządzanie niepewnością z ochroną pojemności operacyjnej.
+
 ---
 
 # Ocena
@@ -140,6 +174,8 @@ Wysoki
 
 Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
 
+Kalibracja 003 wzmocniła jego rozdzielczość poprzez wyraźne oddzielenie progu dowodowego od mechanizmów związanych z ochroną pojemności operacyjnej.
+
 ---
 
 # Notatki
@@ -156,11 +192,10 @@ Najbardziej prawdopodobny wzorzec działania można opisać jako:
 4. Podejmij decyzję po osiągnięciu odpowiedniego progu dowodowego.
 
 Predyktor może stanowić mechanizm wyjaśniający współwystępowanie:
-
 - wysokiego AOT,
 - wysokiej pokory intelektualnej,
 - umiarkowanej potrzeby domknięcia poznawczego.
 
 Na obecnym etapie jest to jeden z najbardziej obiecujących kandydatów do walidacji na podstawie rzeczywistych historii decyzyjnych.
 
-Wysokość progu dowodowego zależy od stawki decyzji; CAL-001 wzmacnia ten wzorzec w Stories o różnym poziomie ryzyka.
+Wysokość progu dowodowego zależy od stawki decyzji; CAL-003 dodatkowo pokazuje, że ten sam rachunek nie powinien być automatycznie interpretowany jako ochrona capacity.
