@@ -1,13 +1,18 @@
 ---
 id: PRED-005
+
 name: Learning-Oriented Exploration
+
 status: candidate
+
 confidence: high
+
 created_from:
   - Gallup
   - HEXACO
   - VIA
   - NFC
+
 supporting_stories:
   - STORY-004
   - STORY-005
@@ -18,12 +23,19 @@ supporting_stories:
   - STORY-002
   - STORY-003
   - STORY-009
+
 conflicting_stories: []
+
 related_hypotheses: []
+
 related_calibrations:
   - CAL-001
-last_updated: 2026-06-23
-version: 1.1
+  - CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.2
+
 ---
 
 # Opis
@@ -35,6 +47,8 @@ Proces eksploracji nie wydaje się być motywowany wyłącznie potrzebą rozwią
 Samo zdobywanie wiedzy, odkrywanie zależności oraz budowanie nowych modeli poznawczych stanowi źródło satysfakcji i zaangażowania.
 
 W rezultacie badany często rozszerza zakres analizy poza bezpośrednie wymagania sytuacji.
+
+Kalibracja 003 doprecyzowała, że eksploracja nie jest celem samym w sobie. Jej główną funkcją jest budowanie coraz trafniejszych modeli rzeczywistości, które mogą zostać później wykorzystane w analizie, projektowaniu rozwiązań lub podejmowaniu decyzji.
 
 ---
 
@@ -54,6 +68,8 @@ W rezultacie badany często rozszerza zakres analizy poza bezpośrednie wymagani
 - W rozmowach często występuje potrzeba zrozumienia szerszego kontekstu problemu.
 - Wiedza jest traktowana jako zasób umożliwiający lepsze modelowanie rzeczywistości.
 - Eksploracja nowych tematów pojawia się również poza bezpośrednimi obowiązkami zawodowymi.
+- Badany często kontynuuje naukę nawet po rozwiązaniu pierwotnego problemu.
+- Kalibracja 003 potwierdziła, że eksploracja jest ukierunkowana na zwiększenie jakości modeli poznawczych, a nie na samo gromadzenie informacji.
 
 ---
 
@@ -67,7 +83,24 @@ Predyktor przewiduje, że badany będzie:
 - budował własne struktury wiedzy,
 - poszukiwał źródeł pozwalających lepiej zrozumieć temat,
 - szybko rozwijał kompetencje w nowych obszarach,
+- integrował nową wiedzę z istniejącymi modelami poznawczymi,
 - odczuwał satysfakcję z procesu odkrywania i rozumienia.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- tworzenie baz wiedzy,
+- dokumentowanie wiedzy jako produktu końcowego,
+- przejmowanie odpowiedzialności za problem,
+- internalizacja odpowiedzialności za rezultat,
+- budowanie modeli systemowych w celu analizy konkretnego problemu,
+- podejmowanie decyzji na podstawie zdobytej wiedzy.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
 
 ---
 
@@ -78,7 +111,8 @@ Predyktor zostałby osłabiony przez regularne występowanie zachowań takich ja
 - unikanie nowych tematów,
 - zdobywanie wyłącznie minimalnej wiedzy potrzebnej do wykonania zadania,
 - brak zainteresowania zrozumieniem szerszego kontekstu,
-- niechęć do nauki poza obowiązkami.
+- niechęć do nauki poza obowiązkami,
+- rezygnowanie z dalszej eksploracji mimo silnej niepewności poznawczej.
 
 ---
 
@@ -102,15 +136,23 @@ Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Pred
 
 Brak.
 
-Oczekuje na analizę historii.
+Oczekuje na dalszą analizę historii.
 
 ---
 
 # Historia Kalibracji
 
-- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
-  - Zweryfikowano przypisania Stories w matrycy.
-  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+## CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+
+- Zweryfikowano przypisania Stories w matrycy.
+- Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+## CAL-003 — Deep Calibration (2026-06-25)
+
+- Potwierdzono, że Predictor opisuje eksplorację prowadzącą do budowy modeli poznawczych.
+- Wyraźniej oddzielono etap zdobywania wiedzy od etapu jej formalizacji.
+- Doprecyzowano granicę pomiędzy PRED-005 a BP-006.
+- Potwierdzono, że tworzenie trwałej infrastruktury wiedzy wymaga dodatkowego mechanizmu niewyjaśnianego przez ten Predictor.
 
 ---
 
@@ -134,6 +176,8 @@ Umiarkowany
 
 Predyktor ujawnia się sytuacyjnie i wymaga dalszej obserwacji wraz z nowymi Stories.
 
+Kalibracja 003 nie zmieniła jego istoty, lecz zwiększyła rozdzielczość poprzez wyraźne oddzielenie eksploracji wiedzy od jej późniejszej formalizacji.
+
 ---
 
 # Notatki
@@ -147,13 +191,15 @@ Najbardziej prawdopodobny wzorzec działania można opisać jako:
 1. Pojawia się nowy lub niezrozumiały obszar.
 2. Rozpoczyna się eksploracja.
 3. Następuje budowa modelu poznawczego.
-4. Wiedza zostaje uporządkowana i zintegrowana z istniejącymi strukturami.
+4. Nowa wiedza zostaje zintegrowana z istniejącymi strukturami poznawczymi.
 
 Predyktor jest silnie powiązany z:
 
 - PRED-001 Model-Centric Decision Making
 - PRED-002 Evidence-Driven Belief Updating
 
-Jednak opisuje wcześniejszy etap procesu poznawczego — pozyskiwanie i eksplorowanie wiedzy, a nie podejmowanie decyzji lub aktualizację modeli.
+Jednak opisuje wcześniejszy etap procesu poznawczego — pozyskiwanie i eksplorowanie wiedzy, a nie podejmowanie decyzji, formalizację wiedzy ani aktualizację modeli organizacyjnych.
 
 Mechanizm wydaje się ujawniać szczególnie w obszarach wysokiego zainteresowania lub tam, gdzie badany ma wyraźną motywację poznawczą.
+
+CAL-003 znacząco zwiększyła rozdzielczość tego Predictora poprzez wyraźne oddzielenie eksploracji wiedzy od BP-006 oraz od mechanizmów związanych z budową trwałej infrastruktury organizacyjnej.
