@@ -2778,7 +2778,7 @@ Analiza wskazuje, że kolejnym etapem projektu powinno być przejście od opisu 
 
 # Historia Wersji
 
-## v1.0
+## v1.1
 
 Pierwsza wersja repozytorium źródeł dowodowych dla Cognitive Model.
 
@@ -2794,3 +2794,11 @@ Pierwsza wersja repozytorium źródeł dowodowych dla Cognitive Model.
 * Need for Closure Scale (NFCS)
 * Comprehensive Intellectual Humility Scale (CIHS)
 * Actively Open-Minded Thinking (AOT)
+
+## Rola w Career Vault
+
+Model jest wykorzystywany wyłącznie jako źródło danych.
+
+Nie stanowi samodzielnej podstawy do budowy Predictorów ani Cognitive Model.
+
+Wnioski mogą zostać wykorzystane dopiero po zestawieniu z historiami zawodowymi oraz pozostałymi źródłami danych.
