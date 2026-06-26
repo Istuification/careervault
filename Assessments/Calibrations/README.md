@@ -8,7 +8,9 @@ Jej zadaniem jest porównywanie dostępnych danych, identyfikowanie zgodności i
 
 Calibration nie tworzy nowych danych.
 
-Calibration interpretuje istniejące dane i obserwacje w celu zwiększenia trafności modelu.
+Calibration nie tworzy również nowych obserwacji.
+
+Calibration tworzy nowe uzasadnione hipotezy oraz aktualizuje istniejące modele interpretacyjne.
 
 Każda istotna zmiana w Predictorach, Behavioral Patterns lub Cognitive Model powinna zostać udokumentowana w postaci Calibration Record.
 
