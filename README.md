@@ -111,7 +111,7 @@ Career Vault przechowuje nie tylko dane źródłowe, ale również ich interpret
 Funkcję tę pełnią dokumenty takie jak:
 
 * Identity
-* AI Profile
+* AI Interpretation Guide
 
 Ich zadaniem nie jest dostarczanie nowych faktów.
 
@@ -163,15 +163,15 @@ CareerVault/
 ├── README.md
 ├── About.md
 ├── Identity.md
-├── AI_Profile.md
+├── AI Interpretation Guide.md
 ├── Experience.md
-├── Assessment/
-│   ├──README.md
-│   ├──AssessmentData.md
-│   ├──CognitiveModel.md
-│   ├──Calibration/
-│   ├──Predictors/
-│   ├──BehavioralPatterns/
+├── Assessments/
+│   ├── README.md
+│   ├── Assessment Data.md
+│   ├── Cognitive model.md
+│   ├── Calibrations/
+│   ├── Predictors/
+│   ├── Behavioral Patterns/
 │
 ├── Achievements/
 │   ├── README.md
@@ -188,7 +188,7 @@ CareerVault/
 │   ├── STORY-001.yaml
 │   └── ...
 │
-└── DevelopmentAreas/
+└── Development Areas/
     ├── README.md
     ├── DEV-001.yaml
     └── ...
