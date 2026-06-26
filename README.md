@@ -318,13 +318,13 @@ Stanowią uporządkowany zapis doświadczeń rozwojowych wynikających z analizy
 
 ---
 
-## AI Profile
+## AI Interpretation Guide
 
 Odpowiada na pytanie:
 
 > Jak interpretować zgromadzone informacje?
 
-AI Profile jest dokumentem przeznaczonym przede wszystkim dla systemów AI.
+AI Interpretation Guide jest dokumentem przeznaczonym przede wszystkim dla systemów AI.
 
 Opisuje:
 
@@ -336,7 +336,7 @@ Opisuje:
 * ograniczenia interpretacyjne,
 * rekomendowany sposób analizy repozytorium.
 
-AI Profile nie jest źródłem nowych informacji.
+AI Interpretation Guide nie jest źródłem nowych informacji.
 
 Jest warstwą interpretacyjną opartą na istniejących danych.
 
@@ -385,28 +385,48 @@ Pozostałe moduły dostarczają interpretacji, kontekstu lub sposobu prezentacji
 
 # Współpraca z AI
 
-Career Vault został zaprojektowany jako baza wiedzy możliwa do wykorzystania przez systemy AI oraz rozwiązania typu RAG.
+Career Vault od początku był rozwijany we współpracy z modelami językowymi (LLM).
 
-Rekomendowany proces:
+Modele AI nie były wykorzystywane jako narzędzie do automatycznego generowania treści, lecz jako partner analityczny wspierający proces dokumentowania doświadczeń, porządkowania wiedzy, krytycznej analizy oraz projektowania architektury całego repozytorium.
 
-1. Określenie celu lub wymagań.
-2. Analiza AI Profile.
-3. Analiza Identity.
-4. Wyszukanie odpowiednich Skills.
-5. Analiza powiązanych Achievements.
-6. Analiza Stories.
-7. Uwzględnienie Development Areas.
-8. Wygenerowanie odpowiedzi, rekomendacji lub dokumentu.
+Każdy element Career Vault pozostaje odpowiedzialnością autora.
 
-Przykładowe zastosowania:
+AI pełniło rolę:
 
-* generowanie CV,
-* generowanie profilu LinkedIn,
-* przygotowanie do rozmów kwalifikacyjnych,
-* analiza kompetencji,
-* analiza luk kompetencyjnych,
-* planowanie rozwoju zawodowego,
-* tworzenie portfolio osiągnięć.
+- sparring partnera podczas analizy doświadczeń,
+- recenzenta pomagającego wykrywać niespójności,
+- współprojektanta struktury wiedzy,
+- narzędzia wspierającego formalizację wiedzy ukrytej,
+- akceleratora procesu iteracyjnego doskonalenia repozytorium.
+
+Jedną z podstawowych zasad projektu było traktowanie modeli AI jako uczestnika procesu poznawczego, a nie źródła prawdy.
+
+Wszystkie istotne wnioski były wielokrotnie weryfikowane, konfrontowane z dowodami oraz testowane przy użyciu różnych modeli językowych i odmiennych sposobów analizy.
+
+Dzięki temu Career Vault nie jest wyłącznie bazą wiedzy przeznaczoną do współpracy z AI.
+
+Jest również przykładem, w jaki sposób człowiek i modele językowe mogą wspólnie budować uporządkowaną, opartą na dowodach reprezentację wiedzy zawodowej.
+
+## Rekomendowany sposób wykorzystania przez AI
+
+Podczas analizy repozytorium zaleca się następującą kolejność:
+
+1. Zapoznaj się z **AI Interpretation Guide**, aby zrozumieć metodologię analizy.
+2. Przeanalizuj **Identity** w celu poznania syntetycznego obrazu zawodowego.
+3. W razie potrzeby przeanalizuj moduł **Assessment**, aby zrozumieć model poznawczy i mechanizmy decyzyjne.
+4. Zweryfikuj wnioski na podstawie **Achievements**, **Stories**, **Skills** oraz **Experience**.
+5. Uwzględnij **Development Areas**, aby zachować pełny i zrównoważony obraz.
+6. Dopiero na tej podstawie generuj odpowiedzi, rekomendacje lub dokumenty.
+
+Przykładowe zastosowania obejmują:
+
+- generowanie CV i profili LinkedIn,
+- przygotowanie do rozmów kwalifikacyjnych,
+- analizę kompetencji i doświadczenia,
+- planowanie rozwoju zawodowego,
+- dopasowanie do ról i stanowisk,
+- coaching oraz mentoring wspierany przez AI,
+- budowę agentów AI i systemów typu RAG opartych na Career Vault.
 
 ---
 
