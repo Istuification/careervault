@@ -1,204 +1,170 @@
 # About Career Vault
 
-## Czym jest Career Vault?
+## Dlaczego powstał Career Vault?
 
-Career Vault to osobisty system zarządzania karierą oparty na dowodach (*Evidence-Based Career Management System*).
+Career Vault nie powstał jako projekt poboczny ani eksperyment z AI.
 
-Jego celem jest gromadzenie, organizowanie oraz analizowanie wiedzy o doświadczeniu zawodowym w sposób umożliwiający wielokrotne wykorzystanie tych samych informacji w różnych kontekstach: rekrutacyjnych, rozwojowych, organizacyjnych oraz związanych ze współpracą z systemami AI.
+Powstał z bardzo praktycznej potrzeby.
 
-Career Vault nie jest CV.
+Jak pewnie wiele osób, również ja miałem w swojej karierze momenty, w których chciałem wszystko rzucić i zmienić pracę. Z doświadczenia wiem jednak, że decyzje podejmowane pod wpływem silnych emocji rzadko są dobrymi decyzjami. Dlatego wypracowałem prostą zasadę – zanim zrobię coś impulsywnego, daję sobie czas na ochłonięcie.
 
-Nie jest również portfolio, bazą notatek ani archiwum dokumentów.
+Podczas jednego z takich okresów postanowiłem przygotować porządne CV. Nie chciałem wysyłać kolejnej wersji dokumentu stworzonego w pośpiechu. Uznałem, że skoro mam do dyspozycji modele językowe, warto potraktować je jak bezkompromisowego recenzenta.
 
-To ustrukturyzowana baza wiedzy opisująca doświadczenie zawodowe poprzez fakty, osiągnięcia, kompetencje, wzorce działania oraz obszary rozwoju.
+Pierwsza odpowiedź była brutalna.
 
----
+Moje CV było przeciętne. Opisy doświadczeń były ogólne, kompetencje nie miały pokrycia w konkretnych przykładach, a całość niewiele mówiła o rzeczywistej wartości, jaką mogę wnieść do organizacji.
 
-# Problem, który próbowałem rozwiązać
+Początkowo uznałem, że problemem jest samo CV.
 
-Przez wiele lat korzystałem z klasycznych dokumentów zawodowych:
-
-* CV,
-* profilu LinkedIn,
-* listów motywacyjnych,
-* notatek do rozmów kwalifikacyjnych.
-
-Z czasem zauważyłem, że wszystkie te dokumenty opisują jedynie fragment rzeczywistości.
-
-Większość doświadczeń zawodowych była redukowana do krótkich deklaracji:
-
-> „zarządzanie zespołem”
-
-> „organizacja pracy”
-
-> „projektowanie procesów”
-
-Takie opisy nie pokazywały kontekstu, wpływu biznesowego ani sposobu podejmowania decyzji.
-
-Jednocześnie każda nowa rekrutacja wymagała ponownego analizowania własnej kariery i tworzenia kolejnej wersji tych samych materiałów.
-
-Postanowiłem więc potraktować własne doświadczenie zawodowe tak samo, jak traktuję procesy, systemy i wiedzę organizacyjną — jako problem architektury informacji.
+Dość szybko zrozumiałem jednak, że problem leży znacznie głębiej.
 
 ---
 
-# Podstawowa zasada
+# Problem nie był w CV
 
-Najważniejszą zasadą Career Vault jest:
+Moje doświadczenie zawodowe było bogatsze, niż wynikało to z dokumentów, które posiadałem.
 
-> Fakty ponad deklaracje.
+W codziennej pracy realizowałem projekty, usprawniałem procesy, budowałem systemy, porządkowałem organizację i rozwiązywałem złożone problemy. Większość z tych rzeczy nigdy nie trafiała do CV.
 
-Każda kompetencja powinna mieć swoje źródło.
+Nie dlatego, że nie były wartościowe.
 
-Każde stwierdzenie powinno być możliwe do prześledzenia do konkretnego doświadczenia, projektu, osiągnięcia lub sytuacji zawodowej.
+Po prostu nigdy nie zostały odpowiednio udokumentowane.
 
-Przykład:
+Zamiast zastanawiać się, jak napisać lepsze CV, zacząłem zadawać sobie inne pytanie:
 
-❌ Jestem dobrym liderem.
-
-✅ Przeprowadziłem restrukturyzację działu serwisu, ustabilizowałem jego działanie oraz wdrożyłem procesy umożliwiające dalszy rozwój organizacji.
-
-W Career Vault kompetencje nie są deklarowane.
-
-Są wyprowadzane z dowodów.
+> **Jak zbudować trwałą bazę wiedzy o własnej karierze?**
 
 ---
 
-# Model wiedzy
+# Pierwsza wersja
 
-Career Vault został zaprojektowany jako wielowarstwowy system wiedzy.
+Zacząłem od najprostszego rozwiązania.
 
-Każda warstwa odpowiada na inne pytanie.
+Spisywałem projekty, sytuacje i doświadczenia w postaci krótkich notatek. Wspólnie z modelami językowymi stopniowo rozbudowywałem je o kontekst, decyzje, rezultaty oraz wnioski.
 
-```text
-Experience
-↓
-Gdzie zdobywałem doświadczenie?
+Po kilku dniach miałem kilkadziesiąt stron tekstu w pliku Word.
 
-Achievements
-↓
-Co osiągnąłem?
+Problem polegał na tym, że dokument był praktycznie bezużyteczny.
 
-Skills
-↓
-Jakie kompetencje potwierdzają te osiągnięcia?
+Był trudny do przeszukiwania, trudny do rozwijania i równie trudny do analizy — zarówno dla człowieka, jak i dla AI.
 
-Stories
-↓
-Jak opowiadać o tych doświadczeniach?
+Wtedy postanowiłem potraktować własną historię zawodową jak projekt zarządzania wiedzą.
 
-Development Areas
-↓
-Jakie wzorce rozwojowe obserwuję u siebie?
+Wybrałem GitHuba jako repozytorium, Markdown jako format dokumentów oraz prostą, modularną strukturę opartą na niewielkich plikach opisujących konkretne elementy doświadczenia.
 
-Identity
-↓
-Kim jestem jako profesjonalista?
-```
-
-Poszczególne warstwy są ze sobą powiązane i tworzą spójny model wiedzy o karierze zawodowej.
+Tak powstały pierwsze fundamenty Career Vault.
 
 ---
 
-# Wartości projektanta
+# Od dokumentowania do budowania dowodów
 
-Osobiście jestem zwolennikiem popularnego wzoru opisującego wartość pracownika:
+Z czasem repozytorium zaczęło się rozrastać.
 
-```
-Wartość = (Wiedza + Kompetencje) × Postawa
-```
+Powstały osobne moduły dla osiągnięć, kompetencji, historii zawodowych i obszarów rozwoju.
 
-Chciałem, aby Career Vault odzwierciedlał to przeświadczenie.
+Każdy element zaczął pełnić określoną rolę.
 
-W świecie AI wiedza staje się coraz łatwiej dostępna i coraz rzadziej stanowi trwałą przewagę konkurencyjną.
+Nie chciałem już deklarować kompetencji.
 
-Z tego powodu zdecydowałem się uwzględnić w Career Vault nie tylko doświadczenia i kompetencje, ale również informacje dotyczące postawy, sposobu podejmowania decyzji oraz wzorców zachowań.
+Chciałem je udowadniać.
 
-Jeżeli usuniemy z równania wiedzę, pozostaje:
+Każdy Skill zaczął prowadzić do konkretnych osiągnięć.
 
-```
-Wartość = Kompetencje × Postawa
-```
+Każde Achievement otrzymało mierzalne rezultaty.
 
-Dlatego Career Vault koncentruje się zarówno na kompetencjach, jak i na zachowaniach, które wpływają na skuteczność ich wykorzystania.
+Każda Story dostarczała kontekstu i pokazywała sposób działania.
 
----
+Career Vault przestał być zbiorem notatek.
 
-# Dlaczego nie przechowuję gotowych CV?
-
-CV jest produktem końcowym.
-
-Career Vault przechowuje dane źródłowe.
-
-Dzięki temu z jednej bazy wiedzy można generować:
-
-* CV,
-* profile LinkedIn,
-* portfolio zawodowe,
-* odpowiedzi na pytania rekrutacyjne,
-* prezentacje doświadczenia,
-* analizy kompetencji,
-* plany rozwoju zawodowego.
-
-Każdy z tych materiałów wykorzystuje te same dane, ale prezentuje je w inny sposób.
+Stał się uporządkowaną bazą wiedzy.
 
 ---
 
-# Development Areas
+# Nieoczekiwane odkrycie
 
-Jednym z elementów, który odróżnia Career Vault od tradycyjnych systemów zarządzania karierą, jest moduł Development Areas.
+Kiedy pierwsza wersja repozytorium była gotowa, zacząłem testować ją na różnych modelach językowych.
 
-Jego zadaniem jest dokumentowanie powtarzalnych wzorców zachowań, decyzji i sposobów działania, które mają istotny wpływ na efektywność zawodową.
+Poprosiłem je o ocenę mojego doświadczenia, dopasowanie do stanowisk oraz identyfikację mocnych stron.
 
-Development Areas nie są listą słabości.
+Ku mojemu zaskoczeniu ich ocena była znacznie wyższa niż moja własna.
 
-Stanowią zapis świadomego procesu rozwoju opartego na rzeczywistych doświadczeniach i wyciągniętych wnioskach.
+Nie przyjąłem tego jednak bezkrytycznie.
 
-Dzięki temu Career Vault przechowuje nie tylko informacje o sukcesach, ale również wiedzę o tym, czego nauczyłem się podczas ich osiągania.
+Wręcz przeciwnie.
 
----
+Próbowałem znaleźć błędy w ich rozumowaniu.
 
-# Współpraca z AI
+Testowałem różne modele, zmieniałem prompty, szukałem kontrargumentów i sprawdzałem, czy wnioski pozostają spójne.
 
-Career Vault od początku był projektowany z myślą o współpracy z systemami AI.
+Dopiero kiedy kolejne analizy prowadziły do podobnych rezultatów, uznałem, że być może problem nie leży w zawyżonej ocenie AI, ale w mojej wcześniejszej ocenie samego siebie.
 
-Ustrukturyzowane dane zapisane w Markdown i YAML umożliwiają:
+Patrząc z perspektywy czasu widzę, że dokładnie ten sposób działania później został opisany w moim Cognitive Model.
 
-* wyszukiwanie informacji,
-* analizę kompetencji,
-* identyfikowanie luk rozwojowych,
-* generowanie dokumentów,
-* przygotowanie do rozmów kwalifikacyjnych,
-* budowę systemów typu RAG.
+Najpierw szukam dowodów.
 
-Repozytorium przechowuje nie tylko fakty, ale również ich kontekst, zależności oraz interpretację.
-
-Dzięki temu AI może analizować nie pojedyncze osiągnięcia, lecz całe wzorce działania, sposoby rozwiązywania problemów oraz rozwój kompetencji w czasie.
-
-W praktyce oznacza to możliwość prowadzenia rozmowy z własną historią zawodową w taki sam sposób, w jaki organizacje wykorzystują własne bazy wiedzy.
+Dopiero później aktualizuję własne przekonania.
 
 ---
 
-# Co Career Vault mówi o mnie?
+# Ostatni brakujący element
 
-Sam Career Vault jest również dowodem kompetencji, które opisuje.
+Mimo że Career Vault bardzo dobrze dokumentował doświadczenia, osiągnięcia i kompetencje, nadal brakowało odpowiedzi na jedno pytanie.
 
-Projekt pokazuje między innymi:
+> **Dlaczego podejmuję właśnie takie decyzje?**
 
-* Systems Thinking,
-* Knowledge Management,
-* Process Design,
-* Information Architecture,
-* Continuous Improvement,
-* AI Readiness.
+Historie pokazywały, co robiłem.
 
-Jest praktycznym przykładem podejścia, które stosuję zawodowo: porządkowania złożonych systemów, budowania struktur wiedzy oraz przekształcania rozproszonych informacji w użyteczne, skalowalne rozwiązania.
+Osiągnięcia pokazywały efekty.
+
+Kompetencje pokazywały, co potrafię.
+
+Żaden z tych elementów nie wyjaśniał jednak mechanizmów stojących za moim sposobem myślenia.
+
+Tak powstał moduł **Assessment**.
+
+Nie jako zbiór testów psychologicznych, ale jako próba zbudowania modelu poznawczego opartego na rzeczywistych dowodach.
+
+Łącząc wyniki ustrukturyzowanych badań z historiami zawodowymi, zacząłem stopniowo budować model wyjaśniający sposób podejmowania decyzji, uczenia się oraz rozwiązywania problemów.
+
+Career Vault przestał odpowiadać wyłącznie na pytanie:
+
+> **Co zrobiłem?**
+
+Zaczął również odpowiadać na pytanie:
+
+> **Dlaczego najprawdopodobniej działam właśnie w taki sposób?**
 
 ---
 
-# Status
+# Czym Career Vault jest dzisiaj?
 
-Career Vault jest żyjącym systemem rozwijanym wraz z karierą zawodową.
+Dzisiaj Career Vault jest dla mnie znacznie więcej niż narzędziem do tworzenia CV.
 
-Jego celem nie jest stworzenie idealnego CV.
+Jest osobistą bazą wiedzy, systemem zarządzania doświadczeniem zawodowym oraz rozwijanym modelem poznawczym.
 
-Jego celem jest budowa trwałego, rozwijającego się źródła wiedzy o doświadczeniu zawodowym, kompetencjach, osiągnięciach oraz kierunkach dalszego rozwoju.
+W praktyce wykorzystuję go między innymi do:
+
+* generowania CV i profili LinkedIn,
+* przygotowywania się do rozmów kwalifikacyjnych,
+* dokumentowania osiągnięć,
+* planowania rozwoju zawodowego,
+* identyfikowania mocnych i słabych stron,
+* współpracy z własnymi agentami AI,
+* budowy systemów typu RAG,
+* ciągłego doskonalenia sposobu podejmowania decyzji.
+
+Każde nowe doświadczenie może zostać dodane do Career Vault, zweryfikowane, powiązane z istniejącą wiedzą i wykorzystane do dalszego rozwoju modelu.
+
+---
+
+# Najważniejszy wniosek
+
+Career Vault nauczył mnie jednej rzeczy.
+
+Najcenniejszym zasobem w karierze zawodowej nie jest dobrze napisane CV.
+
+Jest dobrze udokumentowana wiedza o własnym doświadczeniu.
+
+Jeżeli potrafię udowodnić swoje kompetencje, zrozumieć mechanizmy stojące za własnymi decyzjami i wykorzystać tę wiedzę podczas współpracy z AI, przestaję za każdym razem budować swoją historię od nowa.
+
+Zamiast tego rozwijam jeden spójny system wiedzy, który rośnie razem ze mną i pomaga mi podejmować coraz lepsze decyzje zawodowe.
