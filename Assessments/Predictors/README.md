@@ -10,7 +10,7 @@ Predictors nie opisują całej osoby.
 
 Predictors nie są również traktowane jako prawda.
 
-Stanowią robocze modele wyjaśniające rzeczywistość i służą jako budulec dla Behavioral Patterns oraz Cognitive Model.
+Stanowią robocze hipotezy wyjaśniające rzeczywistość i służą jako budulec dla Behavioral Patterns oraz Cognitive Model.
 
 ---
 
@@ -34,7 +34,7 @@ Stories dostarczają obserwacji zachowań.
 
 Calibration integruje oba źródła.
 
-Predictors opisują pojedyncze mechanizmy wspierane przez wiele źródeł.
+Predictors opisują pojedyncze mechanizmy wspierane przez niezależne źródła.
 
 Behavioral Patterns opisują powtarzalne wzorce działania wynikające ze współwystępowania wielu Predictorów.
 
