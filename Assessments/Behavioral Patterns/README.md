@@ -9,13 +9,19 @@ Ich zadaniem jest identyfikacja powtarzalnych mechanizmów działania występuj�
 Behavioral Pattern opisuje:
 
 ```text
-Trigger
+Context / Trigger
+
 ↓
-Internal Process
+
+Observable Actions
+
 ↓
-Observable Behaviors
+
+Typical Decisions
+
 ↓
-Outcomes
+
+Typical Outcomes
 ```
 
 Behavioral Pattern nie jest:
@@ -41,15 +47,19 @@ Achievements
 Skills
 Development Areas
 
-        ↓
+↓
 
-Behavioral Patterns
+Calibration
 
-        ↓
+↓
 
 Predictors
 
-        ↓
+↓
+
+Behavioral Patterns
+
+↓
 
 Cognitive Model
 ```
@@ -74,7 +84,7 @@ Cognitive Model integruje całość w spójny model funkcjonowania badanego.
 
 # Czym jest Behavioral Pattern?
 
-Behavioral Pattern jest powtarzalnym mechanizmem zachowania obserwowanym wielokrotnie w niezależnych sytuacjach.
+Behavioral Pattern jest powtarzalnym wzorcem zachowania obserwowanym wielokrotnie w niezależnych sytuacjach.
 
 Powinien odpowiadać na pytanie:
 
@@ -186,9 +196,9 @@ Jeden Behavioral Pattern może być wspierany przez wiele Predictorów.
 
 Jeden Predictor może wspierać wiele Behavioral Patterns.
 
-Predictory nie są wymagane do identyfikacji Behavioral Pattern.
+Behavioral Patterns wykorzystują Predictory jako hipotezy wyjaśniające obserwowane zachowania.
 
-Mogą zostać dodane podczas późniejszej analizy.
+Jednocześnie ich istnienie zawsze musi być uzasadnione rzeczywistymi dowodami pochodzącymi z Career Vault.
 
 ---
 
