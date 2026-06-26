@@ -2,7 +2,7 @@
 
 ## Cel
 
-Career Vault to osobista baza wiedzy zawodowej służąca do gromadzenia, organizowania, analizowania i wyszukiwania informacji o doświadczeniu, osiągnięciach, kompetencjach oraz rozwoju zawodowym.
+Career Vault to osobista baza wiedzy zawodowej oraz model poznawczy opisujący sposób podejmowania decyzji, rozwój kompetencji i doświadczeń zawodowych.
 
 Repozytorium stanowi pojedyncze źródło prawdy dla:
 
@@ -85,6 +85,25 @@ Repozytorium powinno z czasem zwiększać swoją wartość, a nie poziom skompli
 
 ---
 
+## Warstwa poznawcza
+
+Career Vault nie przechowuje wyłącznie faktów dotyczących kariery zawodowej.
+
+Zawiera również moduł **Assessment**, którego celem jest budowa modelu wyjaśniającego sposób podejmowania decyzji, rozwiązywania problemów oraz przetwarzania informacji.
+
+Assessment wykorzystuje dane zgromadzone w całym Career Vault oraz wyniki ustrukturyzowanych narzędzi pomiarowych do identyfikacji mechanizmów poznawczych, powtarzalnych wzorców zachowań oraz budowy rozwijanego w czasie Cognitive Model.
+
+Podczas gdy pozostałe moduły odpowiadają przede wszystkim na pytanie:
+
+> **Co wydarzyło się w mojej karierze?**
+
+Assessment odpowiada na pytanie:
+
+> **Dlaczego najprawdopodobniej działałem właśnie w taki sposób i jak mogę działać w przyszłości?**
+
+
+---
+
 ## Warstwa interpretacyjna
 
 Career Vault przechowuje nie tylko dane źródłowe, ale również ich interpretację.
@@ -146,6 +165,13 @@ CareerVault/
 ├── Identity.md
 ├── AI_Profile.md
 ├── Experience.md
+├── Assessment/
+│   ├──README.md
+│   ├──AssessmentData.md
+│   ├──CognitiveModel.md
+│   ├──Calibration/
+│   ├──Predictors/
+│   ├──BehavioralPatterns/
 │
 ├── Achievements/
 │   ├── README.md
