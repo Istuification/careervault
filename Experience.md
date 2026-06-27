@@ -163,7 +163,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 
 ## Okres
 
-2018 – 2020
+2018 – 2019
 
 ## Branża
 
