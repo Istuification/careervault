@@ -1,0 +1,73 @@
+id: SKILL-018
+
+name: Persuasive Communication
+
+category: Communication
+
+importance: 8
+
+level: Advanced
+
+summary: >
+  Systematyczne prowadzenie perswazyjnych konwersacji
+  z osobami o zróżnicowanych postawach, poziomach
+  otwartości i profilach emocjonalnych. Obejmuje
+  inicjowanie kontaktu w warunkach zimnego rynku,
+  diagnozowanie rzeczywistych potrzeb i obaw rozmówcy,
+  zarządzanie obiekcjami bez wywoływania oporu,
+  kognitywne przeformułowanie punktu widzenia oraz
+  utrzymanie długoterminowej odporności psychologicznej
+  w środowisku wysokiego współczynnika odrzucenia.
+
+capabilities:
+  - cold-outreach
+  - rapport-building
+  - needs-discovery
+  - objection-handling
+  - cognitive-reframing
+  - socratic-persuasion
+  - rejection-resilience
+  - active-listening
+  - pacing-and-leading
+  - emotional-deescalation
+  - graceful-disarming
+
+methods:
+  - LAER (Listen, Acknowledge, Explore, Respond)
+  - Feel-Felt-Found
+  - Socratic Questioning
+  - Pacing and Leading (NLP)
+  - Cognitive Reframing
+  - Deliberate Practice / Rejection Desensitization
+
+evidence:
+  - ACH-P005
+
+experience:
+  first_used: 2013
+  years: 13
+
+career_relevance:
+  sales_b2b: 9
+  customer_success: 9
+  business_development: 8
+  account_manager: 9
+  product_manager: 7
+  fundraiser: 9
+  hr_recruitment: 7
+
+keywords:
+  - persuasive communication
+  - objection handling
+  - cold outreach
+  - rapport building
+  - rejection resilience
+  - active listening
+  - needs discovery
+  - cognitive reframing
+  - influence
+
+related_skills:
+  - SKILL-013
+  - SKILL-011
+  - SKILL-017
