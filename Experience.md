@@ -163,7 +163,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 
 ## Okres
 
-2018 – 2019
+2018-02 – 2019-08
 
 ## Branża
 
@@ -197,7 +197,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 
 ## Okres
 
-2014 – 2018
+2014-09 – 2018-02
 
 ## Branża
 
