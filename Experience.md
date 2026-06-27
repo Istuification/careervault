@@ -193,11 +193,11 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 
 ---
 
-# KGHM Polska Miedź
+# KGHM Zanam
 
 ## Okres
 
-2016 – 2018
+2014 – 2018
 
 ## Branża
 
@@ -208,7 +208,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 
 ## Role
 
-### Elektryk Praktykant / Pracownik Techniczny
+### Elektryk / Operator SMG (Samojezdnych Maszyn Górniczych)
 
 **Domeny:**
 
@@ -223,12 +223,13 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 * działania w środowisku przemysłowym
 * diagnostyka techniczna
 * przestrzeganie procedur bezpieczeństwa
+* operaowanie SMG w wyrobiskach górniczych
 
 ---
 
 # Rozwój odpowiedzialności
 
-### 2016–2018
+### 2014–2018
 
 **Fundamenty techniczne**
 
