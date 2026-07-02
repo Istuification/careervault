@@ -6,23 +6,26 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: pages-branch
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
@@ -34,88 +37,14 @@ jobs:
           mkdir -p dist
           touch dist/.nojekyll
 
-      - name: Publish to gh-pages (peaceiris)
-        id: peaceiris_publish
-        uses: peaceiris/actions-gh-pages@v4
-        continue-on-error: true
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          force_orphan: true
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_message: "Deploy Career Vault (${{ github.sha }})"
+          path: './dist'
 
-      - name: Compute PAGE_URL
-        id: compute_url
-        run: |
-          OWNER="${{ github.repository_owner }}"
-          REPO="${{ github.event.repository.name }}"
-          PAGE_URL="https://${OWNER}.github.io/${REPO}/"
-          echo "page_url=${PAGE_URL}" >> $GITHUB_OUTPUT
-
-      - name: Wait for Pages to become available (retry)
-        id: check_pages
-        continue-on-error: true
-        run: |
-          PAGE_URL="${{ steps.compute_url.outputs.page_url }}"
-          echo "Checking $PAGE_URL"
-          tries=0
-          max=18      # 18 * 10s = 3 minutes total wait (adjust if needed)
-          wait_sec=10
-          while [ $tries -lt $max ]; do
-            tries=$((tries+1))
-            echo "Attempt $tries/$max: curl $PAGE_URL ..."
-            if curl -sSf "$PAGE_URL" >/dev/null 2>&1; then
-              echo "reachable=true" >> $GITHUB_OUTPUT
-              echo "url_ok=true"
-              exit 0
-            fi
-            sleep $wait_sec
-          done
-          echo "reachable=false" >> $GITHUB_OUTPUT
-          echo "Pages did not become available after $((max * wait_sec))s"
-          exit 1
-
-      - name: Fallback: push ./dist to gh-pages (force) if Pages not reachable
-        if: steps.check_pages.outcome != 'success'
-        env:
-          REPO: ${{ github.repository }}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -euo pipefail
-          echo "Running fallback push of ./dist to gh-pages branch"
-          WORKDIR=gh-pages-work
-          rm -rf $WORKDIR
-          mkdir -p $WORKDIR
-          cd $WORKDIR
-
-          # Try to clone gh-pages if exists; otherwise init new repo
-          if git ls-remote "https://x-access-token:${TOKEN}@github.com/${REPO}.git" refs/heads/gh-pages >/dev/null 2>&1; then
-            git clone --branch gh-pages --depth 1 "https://x-access-token:${TOKEN}@github.com/${REPO}.git" .
-          else
-            git init
-            git remote add origin "https://x-access-token:${TOKEN}@github.com/${REPO}.git"
-            # create an initial empty commit if branch doesn't exist
-            git checkout -b gh-pages
-          fi
-
-          # Remove existing contents and copy new build
-          git rm -rf . || true
-          cp -a ../dist/. .
-
-          # Ensure .nojekyll remains
-          touch .nojekyll
-
-          # Commit and push
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit in fallback push."
-          else
-            git commit -m "Fallback Pages deploy: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-            git push origin gh-pages --force
-            echo "Fallback push completed."
-          fi
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
