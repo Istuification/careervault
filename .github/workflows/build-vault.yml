@@ -8,19 +8,20 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Uprawnienia potrzebne do publikacji na GitHub Pages
+# Tryb "deploy from branch": workflow buduje dist/ i pushuje go na galaz gh-pages.
+# GitHub Pages serwuje strone bezposrednio z tej galezi. Dzieki temu OMIJAMY
+# akcje deploy-pages i cala kolejke deploymentow Pages (zrodlo problemu z
+# "deployment_queued"). Do pushu na galaz wystarczy uprawnienie do zapisu tresci.
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
-# Nie odpalaj kilku deployow rownolegle
+# Nie odpalaj kilku buildow rownolegle; nowy push anuluje starszy, wciaz trwajacy.
 concurrency:
-  group: pages
+  group: pages-branch
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repozytorium
@@ -31,25 +32,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Zbuduj zbiorczy plik Vaulta
+      - name: Zbuduj strone (dist/)
         run: python scripts/build_vault.py
 
-      - name: Wyslij artefakt do Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
+      # Wylacza domyslne przetwarzanie Jekyll na Pages (serwuje pliki 1:1).
+      - name: Dodaj .nojekyll
+        run: touch dist/.nojekyll
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Publikuj na GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Publikuj na galaz gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy Career Vault (${{ github.sha }})"
