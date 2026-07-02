@@ -1,5 +1,7 @@
 # Career Vault
 
+> 🔗 **Szybki dostęp:** [Strona projektu](https://istuification.github.io/careervault/) · [Wersja dla AI/LLM (jeden plik tekstowy)](https://istuification.github.io/careervault/vault-full.txt)
+
 ## Cel
 
 Career Vault to osobista baza wiedzy zawodowej oraz model poznawczy opisujący sposób podejmowania decyzji, rozwój kompetencji i doświadczeń zawodowych.
