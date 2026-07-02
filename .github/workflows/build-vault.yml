@@ -51,31 +51,3 @@ jobs:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: "Deploy Career Vault (${{ github.sha }})"
-
-      - name: Zainstaluj jq (potrzebne do parsowania JSON)
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      - name: Poczekaj na zakończenie Pages build (polling, max ~5min)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-        run: |
-          echo "Polling Pages builds for $REPO"
-          # Pobieramy najnowsze buildy Pages i sprawdzamy status pierwszego z nich
-          for i in $(seq 1 60); do
-            builds_json=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/${REPO}/pages/builds")
-            status=$(echo "$builds_json" | jq -r '.[0].status // "unknown"')
-            echo "Attempt $i: Pages build status = $status"
-            if [ "$status" = "built" ]; then
-              echo "Pages site built successfully."
-              exit 0
-            fi
-            if [ "$status" = "errored" ]; then
-              echo "Pages build errored. Dumping info:" 
-              echo "$builds_json" | jq .
-              exit 1
-            fi
-            # jeśli status queued/building -> poczekaj (backoff)
-            sleep 5
-          done
-          echo "Timeout waiting for Pages build to finish." && exit 1
