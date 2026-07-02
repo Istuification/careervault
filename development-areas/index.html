@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Development Areas — Career Vault</title>
+<meta name="description" content="Development Areas — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
+<meta name="robots" content="index, follow">
+<style>
+  body{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+       max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
+       color:#16221D; background:#fff;}
+  header, footer{font-family: system-ui, sans-serif;}
+  nav a{margin-right: 1rem;}
+  h1{font-family: system-ui, sans-serif;}
+  h2.file{font-family: system-ui, sans-serif; margin-top:2.5rem; padding-top:1rem;
+           border-top:2px solid #24594B; color:#24594B;}
+  .id-badge{font-size:0.8rem; color:#33396B;}
+  pre{white-space: pre-wrap; word-wrap: break-word; background:#f6f7f5;
+       padding:1rem; border-radius:6px; overflow-x:auto;}
+  .backlinks{margin:1.5rem 0; font-family: system-ui, sans-serif;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="backlinks">
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+  </nav>
+  <h1>Development Areas</h1>
+  <p>Sekcja Career Vault. Zawiera pełną, surową treść następujących plików repozytorium.
+     Ostatnia aktualizacja: 2026-07-02 17:14 UTC · commit bbd9fe4.</p>
+</header>
+<main>
+<h2 class="file" id="README">Development Areas/README.md</h2>
+<pre># Development Areas
+
+## Cel
+
+Folder **Development Areas** zawiera uporządkowane obszary rozwoju zawodowego wynikające z rzeczywistych doświadczeń, obserwacji i powtarzalnych wzorców zachowań.
+
+Development Areas nie są listą wad ani cech osobistych.
+Nie są też ogólnymi deklaracjami typu „muszę lepiej zarządzać czasem” bez dowodów w danych.
+
+Ich zadaniem jest pokazanie:
+
+* jakie wzorce pojawiają się powtarzalnie,
+* jakie ryzyka lub ograniczenia z nich wynikają,
+* jakie mocne strony temu towarzyszą,
+* nad czym świadomie pracuję dalej.
+
+---
+
+## Rola w Career Vault
+
+Career Vault składa się z kilku warstw:
+
+```text
+Identity
+↓
+Kim jestem zawodowo?
+
+Experience
+↓
+Gdzie zdobyłem doświadczenie?
+
+Achievements
+↓
+Co osiągnąłem?
+
+Skills
+↓
+Jakie kompetencje pokazują te osiągnięcia?
+
+Stories
+↓
+Jak o tym opowiadać?
+
+Development Areas
+↓
+Nad czym świadomie pracuję?
+```
+
+Development Areas są warstwą refleksyjną i rozwojową.
+
+Uzupełniają Identity, ale nie są jej częścią.
+
+---
+
+## Zasada tworzenia
+
+Każdy Development Area powinien:
+
+* wynikać z rzeczywistych Story, Achievements lub innych dowodów,
+* opisywać powtarzalny wzorzec, a nie pojedynczy incydent,
+* zawierać zarówno mocne strony, jak i ryzyka,
+* wskazywać wnioski i aktualny kierunek rozwoju,
+* być na tyle konkretny, aby można go było wykorzystać w rozmowie rekrutacyjnej lub rozwojowej.
+
+Development Area powinien odpowiadać na pytanie:
+
+&gt; Jakie wzorce obserwuję u siebie i nad czym świadomie pracuję?
+
+---
+
+## Kiedy tworzyć Development Area
+
+Twórz Development Area wtedy, gdy:
+
+* ten sam wzorzec pojawia się w wielu sytuacjach,
+* wpływa na sposób pracy lub wyniki,
+* prowadzi do powtarzalnych konsekwencji,
+* został rozpoznany i nazwany świadomie,
+* ma znaczenie dla dalszego rozwoju zawodowego.
+
+Nie twórz Development Area dla:
+
+* pojedynczego błędu,
+* chwilowej trudności,
+* cechy niemającej znaczenia zawodowego,
+* ogólnej samooceny bez dowodów.
+
+---
+
+## Struktura rekordu
+
+Każdy Development Area powinien być zapisany jako osobny plik YAML.
+
+```yaml
+id:
+title:
+summary:
+
+category:
+status:
+
+sources:
+  stories:
+    -
+  achievements:
+    -
+  skills:
+    -
+
+observed_pattern:
+  -
+
+strengths:
+  -
+
+risks:
+  -
+
+evidence:
+  -
+
+root_cause_analysis:
+  assumption:
+  reality:
+
+key_realizations:
+  -
+
+current_approach:
+  -
+
+development_goal:
+  &gt;
+
+interview_usage:
+  strengths_questions:
+    -
+  weakness_questions:
+    -
+  growth_questions:
+    -
+```
+
+---
+
+## Opis pól
+
+### `id`
+
+Unikalny identyfikator Development Area.
+
+Przykład:
+
+```yaml
+id: DEV-001
+```
+
+Powinien być stabilny i niezmienny.
+
+---
+
+### `title`
+
+Krótka nazwa obszaru rozwoju.
+
+Powinna być konkretna i opisywać wzorzec, np.:
+
+* Leadership Through Accountability
+* Personal Capacity Management
+* Delegation and Leverage
+* Commercial Discovery
+
+---
+
+### `summary`
+
+Zwięzły opis obszaru rozwoju.
+
+Powinien odpowiadać na pytanie:
+
+&gt; Jaki wzorzec obserwuję i dlaczego jest to istotne?
+
+---
+
+### `category`
+
+Główna kategoria obszaru rozwoju.
+
+Przykłady:
+
+* Leadership
+* Self Management
+* Product &amp; Business
+* Communication
+* Operations
+
+---
+
+### `status`
+
+Status rozwoju.
+
+Przykłady:
+
+* Active Development
+* Emerging Development Area
+* Stable
+* Needs More Evidence
+
+---
+
+### `sources`
+
+Źródła, na których opiera się Development Area.
+
+Powinny obejmować:
+
+* Stories
+* Achievements
+* Skills
+
+Development Area nie powinien istnieć bez źródeł.
+
+---
+
+### `observed_pattern`
+
+Opis powtarzalnego wzorca zachowania lub decyzji.
+
+To najważniejsza część Development Area.
+
+---
+
+### `strengths`
+
+Mocne strony związane z tym wzorcem.
+
+Development Area nie ma opisywać wyłącznie słabości.
+
+Powinien pokazywać również to, co działa dobrze.
+
+---
+
+### `risks`
+
+Ryzyka, ograniczenia lub koszty uboczne wynikające z danego wzorca.
+
+---
+
+### `evidence`
+
+Konkrety potwierdzające, że ten wzorzec rzeczywiście występuje.
+
+Mogą to być:
+
+* wydarzenia,
+* decyzje,
+* skutki,
+* obserwacje,
+* powiązane Stories.
+
+---
+
+### `root_cause_analysis`
+
+Krótka analiza przyczyny wzorca.
+
+Powinna pokazywać:
+
+* jakie było pierwotne założenie,
+* jak wyglądała rzeczywistość,
+* skąd wzięła się zmiana w myśleniu.
+
+---
+
+### `key_realizations`
+
+Najważniejsze wnioski wynikające z doświadczenia.
+
+---
+
+### `current_approach`
+
+Jak obecnie pracuję z tym wzorcem.
+
+To pole pokazuje, że Development Area nie jest tylko diagnozą, ale także świadomym kierunkiem działania.
+
+---
+
+### `development_goal`
+
+Kierunek dalszego rozwoju.
+
+Powinien być konkretny i praktyczny.
+
+---
+
+### `interview_usage`
+
+Zakres pytań rekrutacyjnych, do których Development Area może być użyty.
+
+Pomaga AI dopasować go do pytań o:
+
+* słabe strony,
+* styl pracy,
+* rozwój,
+* błędy,
+* samoświadomość.
+
+---
+
+## Zasady jakości
+
+1. Jeden Development Area = jeden spójny wzorzec.
+2. Development Area musi mieć źródła.
+3. Development Area musi opisywać coś powtarzalnego.
+4. Nie wpisuj tu ogólnych haseł bez dowodów.
+5. Nie myl Development Areas z Identity.
+6. Nie myl Development Areas z pojedynczymi Stories.
+7. Zapisuj zarówno mocne strony, jak i ryzyka.
+8. Preferuj jakość nad liczbę.
+
+---
+
+## Aktualne Development Areas
+
+* DEV-001 — Leadership Through Accountability
+* DEV-002 — Personal Capacity Management
+* DEV-003 — Delegation and Leverage
+* DEV-004 — Commercial Discovery
+* DEV-005 — Assertiveness and Difficult Conversations
+* DEV-006 — Boundary Management
+
+Lista może być rozwijana, ale tylko wtedy, gdy pojawi się nowy, powtarzalny wzorzec potwierdzony w Career Vault.
+</pre>
+<h2 class="file" id="DEV-001">Development Areas/DEV-001.yaml <span class="id-badge">[DEV-001]</span></h2>
+<pre>id: DEV-001
+
+title: Leadership Through Accountability
+
+summary: &gt;
+  Naturalnie buduję zaufanie, współpracę i autonomię zespołu. W początkowym
+  okresie zarządzania ludźmi zakładałem, że większość pracowników będzie
+  kierować się podobnym poziomem odpowiedzialności, uczciwości i zaangażowania
+  jak ja. W praktyce doprowadziło to do sytuacji, w której zbyt późno
+  reagowałem na niepożądane zachowania, nadmiernie polegałem na zaufaniu oraz
+  unikałem formalnego egzekwowania standardów. Doświadczenia zdobyte podczas
+  prowadzenia serwisu nauczyły mnie, że skuteczny lider musi równoważyć
+  zaufanie, autonomię i odpowiedzialność.
+
+category: Leadership
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-009
+
+  achievements:
+    - ACH-012
+
+  skills:
+    - Leadership
+    - Team Management
+    - Conflict Resolution
+    - Stakeholder Management
+
+observed_pattern: &gt;
+
+  W nowych zespołach mam tendencję do:
+
+  - budowania relacji partnerskich zamiast hierarchicznych,
+  - zakładania dobrej woli pracowników,
+  - dawania dużej autonomii,
+  - długiego dawania szans na poprawę,
+  - skupiania się na edukacji zamiast konsekwencjach.
+
+  Podejście to dobrze działa wśród osób odpowiedzialnych i
+  samodzielnych, jednak prowadzi do problemów gdy członkowie zespołu
+  nie podzielają tych samych standardów pracy.
+
+strengths:
+
+  - Budowanie atmosfery zaufania
+  - Tworzenie bezpiecznego środowiska do nauki
+  - Wysoka empatia wobec pracowników
+  - Umiejętność integrowania zespołu wokół wspólnych wartości
+  - Skłonność do rozwijania ludzi zamiast kontrolowania ich
+  - Wspieranie autonomii i inicjatywy
+
+risks:
+
+  - Opóźnione reagowanie na niepożądane zachowania
+  - Zbyt duży kredyt zaufania dla nowych pracowników
+  - Trudność w prowadzeniu rozmów dyscyplinujących
+  - Przeciążanie najbardziej odpowiedzialnych członków zespołu
+  - Powstawanie nierównowagi pomiędzy wkładem poszczególnych osób
+  - Odkładanie trudnych decyzji personalnych
+
+evidence:
+
+  - Utrzymanie ekspertów poprzez budowę kultury współpracy i wsparcia
+  - Trudności z egzekwowaniem standardów wobec młodszych pracowników
+  - Zbyt późne wykrycie nadużyć wynikające z nadmiernego zaufania
+  - Problemy z prowadzeniem rozmów korygujących w modelu &quot;kierownik-przyjaciel&quot;
+  - Konieczność rozwiązania współpracy z pracownikami naruszającymi zasady odpowiedzialności
+
+root_cause_analysis:
+
+  assumption: &gt;
+    Zakładałem, że większość ludzi będzie podejmować decyzje zgodnie
+    z podobnym poziomem odpowiedzialności, uczciwości i zaangażowania.
+
+  psychometric_drivers: &gt;
+    Ten wzorzec jest silnie napędzany przez moją strukturę osobowościową.
+    Ekstremalnie wysoka Ugodowość (Wielka Piątka) rodzi silną, wewnętrzną potrzebę
+    utrzymywania harmonii i unikania interpersonalnych tarć. Z kolei talenty
+    Współzależność (#4) i Bliskość (#7) sprawiają, że naturalnie postrzegam zespół
+    jako zintegrowany ekosystem i dążę do głębokich, partnerskich relacji. W połączeniu
+    z talentem Rozwijanie Innych (#9) skupiałem się na intencjonalnym dostrzeganiu potencjału
+    i dawaniu kolejnych szans (&quot;onboarding i edukacja naprawią wszystko&quot;), ignorując twarde
+    sygnały o niedopasowaniu postawy pracownika.
+
+  reality: &gt;
+    Ludzie różnią się motywacją, wartościami i poziomem odpowiedzialności.
+    Zaufanie bez mechanizmów rozliczalności tworzy przestrzeń do
+    nadużyć i przerzucania odpowiedzialności. Sam fakt posiadania talentów z domeny
+    Budowania Relacji nie zwalnia managera z roli egzekwującej.
+
+key_realizations:
+
+  - Postawa pracownika jest ważniejsza niż jego aktualne kompetencje
+  - Zaufanie nie zastępuje rozliczalności
+  - Autonomia wymaga jasnych oczekiwań i konsekwencji
+  - Lider nie może budować autorytetu wyłącznie na relacjach koleżeńskich
+  - Najbardziej odpowiedzialni pracownicy ponoszą największy koszt tolerowania słabych postaw
+  - Kultura organizacyjna wymaga zarówno wsparcia, jak i egzekwowania standardów
+
+current_approach:
+
+  - Szybsze reagowanie na sygnały ostrzegawcze
+  - Wcześniejsze prowadzenie rozmów korygujących
+  - Wyraźniejsze definiowanie oczekiwań
+  - Oddzielanie relacji osobistych od odpowiedzialności zawodowej
+  - Łączenie zaufania z mechanizmami kontroli
+  - Regularna weryfikacja jakości pracy i realizacji zobowiązań
+
+development_goal: &gt;
+
+  Rozwinąć styl przywództwa oparty na równowadze pomiędzy zaufaniem,
+  autonomią, odpowiedzialnością i konsekwencją. Zachować mocne strony
+  związane z budowaniem relacji i współpracy, jednocześnie zwiększając
+  skuteczność w egzekwowaniu standardów oraz podejmowaniu trudnych decyzji
+  personalnych.
+
+interview_usage:
+
+  strengths_questions:
+    - Jak budujesz zespoły?
+    - Jak motywujesz pracowników?
+    - Jakie wartości są dla Ciebie ważne jako lidera?
+
+  weakness_questions:
+    - Jaka jest Twoja największa słabość managerska?
+    - Opowiedz o błędzie w zarządzaniu ludźmi.
+    - Jak zmienił się Twój styl przywództwa?
+
+  growth_questions:
+    - Czego nauczyłeś się o zarządzaniu ludźmi?
+    - Jakie kompetencje rozwijasz obecnie?
+    - Jakie doświadczenie najbardziej wpłynęło na Twój styl zarządzania?
+</pre>
+<h2 class="file" id="DEV-002">Development Areas/DEV-002.yaml <span class="id-badge">[DEV-002]</span></h2>
+<pre>id: DEV-002
+
+title: Personal Capacity Management
+
+summary: &gt;
+  Naturalnie przejmuję odpowiedzialność za problemy organizacyjne,
+  szczególnie gdy dostrzegam ich wpływ na klientów, pracowników lub
+  funkcjonowanie firmy. W przeszłości prowadziło to do przyjmowania
+  zbyt wielu obowiązków jednocześnie oraz prób kompensowania problemów
+  organizacyjnych własnym wysiłkiem. Doświadczenia zdobyte podczas
+  gwałtownego wzrostu działalności operacyjnej nauczyły mnie, że
+  przeciążenie ludzi nie jest rozwiązaniem problemów systemowych.
+
+category: Self Management
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-001
+    - STORY-004
+    - STORY-005
+    - STORY-007
+    - STORY-008
+
+  achievements:
+    - ACH-012
+
+  skills:
+    - Ownership
+    - Problem Solving
+    - Operations Management
+    - Organizational Analysis
+
+observed_pattern: &gt;
+
+  W sytuacjach nieuporządkowanych mam tendencję do:
+
+  - przejmowania dodatkowych obowiązków,
+  - kompensowania braków organizacyjnych własną pracą,
+  - odkładania własnych ograniczeń na później,
+  - skupiania się na rozwiązaniu problemu zamiast na własnej przepustowości,
+  - traktowania odpowiedzialności organizacyjnej jako odpowiedzialności osobistej.
+
+  W krótkim okresie zwiększa to skuteczność działania.
+  W dłuższym prowadzi do przeciążenia i tworzenia nowych ryzyk.
+
+strengths:
+
+  - Wysokie poczucie odpowiedzialności
+  - Ownership
+  - Gotowość do działania w sytuacjach kryzysowych
+  - Umiejętność funkcjonowania pod presją
+  - Determinacja w doprowadzaniu tematów do końca
+  - Skłonność do przejmowania inicjatywy
+
+risks:
+
+  - Przeciążenie obowiązkami
+  - Wypalenie
+  - Odkładanie odpoczynku i regeneracji
+  - Tworzenie single point of failure
+  - Trudność w odmawianiu nowych zadań
+  - Nadmierna odpowiedzialność za obszary niezależne ode mnie
+
+evidence:
+
+  - Łączenie wielu funkcji operacyjnych podczas wzrostu rynku PV
+  - Praca podczas choroby w okresie przeciążenia operacyjnego
+  - Samodzielne tworzenie systemów i narzędzi eliminujących ograniczenia organizacyjne
+  - Wielokrotne przejmowanie odpowiedzialności za obszary bez właściciela
+
+root_cause_analysis:
+
+  assumption: &gt;
+    Jeżeli widzę problem i potrafię go rozwiązać,
+    powinienem wziąć za niego odpowiedzialność.
+
+  psychometric_drivers: &gt;
+    Ten schemat działania wynika bezpośrednio z unikalnej kombinacji moich talentów wykonawczych
+    i poznawczych. Rdzeniem tego wzorca jest talent Odpowiedzialność (#6) połączony z
+    Pryncypialnością (#2). Kiedy mój zmysł analityczny (Analityk #5, Strateg #3) mapuje błędy i luki
+    procesowe zagrażające stabilności firmy lub klientom, Pryncypialność nadaje temu rangę &quot;misji i celu&quot;,
+    a Odpowiedzialność generuje potężny przymus psychologiczny do samodzielnego usunięcia awarii.
+    Dodatkowo, ekstremalnie wysokie Poszukiwanie Doznań (Wielka Piątka) sprawia, że gaszenie pożarów
+    organizacyjnych podświadomie traktuję jako ekscytujące wyzwanie intelektualne, co maskuje narastające
+    zmęczenie fizyczne i psychiczne.
+
+  reality: &gt;
+    Nie każdy problem organizacyjny powinien być rozwiązywany
+    dodatkowym wysiłkiem jednej osoby. Skalowanie wymaga budowy
+    procesów, narzędzi oraz zdolności organizacyjnych. Praca ponad siły,
+    nawet napędzana wysoką Sumiennością, generuje dług organizacyjny.
+
+key_realizations:
+
+  - Cięższa praca nie rozwiązuje problemów systemowych
+  - Skalowanie wymaga budowy zdolności organizacyjnych
+  - Odpowiedzialność nie oznacza wykonywania wszystkiego samodzielnie
+  - Lider powinien chronić ludzi przed skutkami przeciążenia
+  - Dług organizacyjny zawsze zostanie spłacony
+  - Własna przepustowość jest zasobem, którym należy zarządzać
+
+current_approach:
+
+  - Wcześniejsze identyfikowanie przeciążenia
+  - Świadome zarządzanie priorytetami
+  - Eskalowanie problemów zasobowych
+  - Budowanie procesów zamiast zwiększania wysiłku
+  - Większa dbałość o delegowanie i podział odpowiedzialności
+  - Analizowanie kosztów alternatywnych nowych zobowiązań
+
+development_goal: &gt;
+
+  Rozwijać zdolność zarządzania własną przepustowością oraz
+  oddzielania odpowiedzialności organizacyjnej od odpowiedzialności
+  osobistej. Skupiać się na budowaniu systemów i zdolności
+  organizacyjnych zamiast kompensowania problemów dodatkowym wysiłkiem.
+
+interview_usage:
+
+  strengths_questions:
+    - Jak reagujesz w sytuacjach kryzysowych?
+    - Jak bierzesz odpowiedzialność za problemy?
+
+  weakness_questions:
+    - Jaką słabość zawodową rozwijasz?
+    - Opowiedz o sytuacji przeciążenia.
+
+  growth_questions:
+    - Czego nauczyłeś się o skalowaniu organizacji?
+    - Jak zmieniło się Twoje podejście do odpowiedzialności?
+</pre>
+<h2 class="file" id="DEV-003">Development Areas/DEV-003.yaml <span class="id-badge">[DEV-003]</span></h2>
+<pre>id: DEV-003
+
+title: Delegation and Leverage
+
+summary: &gt;
+  Naturalnie przejmuję inicjatywę w obszarach wymagających uporządkowania,
+  analizy lub stworzenia nowego rozwiązania. W praktyce często prowadziło
+  to do samodzielnego rozwiązywania problemów, które mogły zostać częściowo
+  przekazane innym osobom lub rozwiązane poprzez budowę odpowiednich
+  mechanizmów organizacyjnych. Rozwijam umiejętność zwiększania wpływu
+  poprzez delegowanie, budowanie właścicieli oraz tworzenie systemów,
+  które działają bez mojego bezpośredniego udziału.
+
+category: Leadership
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-004
+    - STORY-005
+    - STORY-006
+    - STORY-007
+    - STORY-008
+
+  skills:
+    - Process Design
+    - Systems Thinking
+    - Knowledge Management
+    - Operational Leadership
+
+observed_pattern: &gt;
+
+  W sytuacjach wymagających zmian mam tendencję do:
+
+  - samodzielnego projektowania rozwiązań,
+  - przejmowania odpowiedzialności za wdrożenie,
+  - angażowania się w szczegóły wykonawcze,
+  - traktowania problemów organizacyjnych jako własnych problemów.
+
+  Podejście to zwiększa szybkość działania,
+  ale ogranicza możliwość skalowania własnego wpływu.
+
+strengths:
+
+  - Wysoka samodzielność
+  - Ownership
+  - Szybkie przechodzenie od problemu do rozwiązania
+  - Umiejętność budowania działających systemów
+  - Gotowość do wejścia w nowe obszary wiedzy
+
+risks:
+
+  - Nadmierne angażowanie się w szczegóły
+  - Ograniczona możliwość skalowania własnego wpływu
+  - Tworzenie zależności od jednej osoby
+  - Przeciążenie wynikające z nadmiernej liczby inicjatyw
+  - Zbyt późne przekazywanie odpowiedzialności innym
+
+evidence:
+
+  - Samodzielne stworzenie systemu wiedzy BPMN
+  - Samodzielne opracowanie kalkulatora PV
+  - Samodzielne przygotowanie dokumentacji PV Stand
+  - Tworzenie modeli działania w obszarach bez właściciela
+
+root_cause_analysis:
+
+  assumption: &gt;
+    Jeżeli potrafię coś zrobić szybciej i lepiej,
+    powinienem zrobić to samodzielnie.
+
+  psychometric_drivers: &gt;
+    U podłoża tego wzorca leży mój talent numer jeden: Uczenie się (Learner #1)
+    w połączeniu ze Strategiem (#3) i Intelektem (#10). Sam proces wgryzania się w nową,
+    nieznaną dziedzinę biznesową, rozpracowywanie jej barier (jak np. FMEA czy notacja procesowa)
+    oraz syntetyzowanie wiedzy sprawia mi ogromną satysfakcję i daje napęd energetyczny. 
+    Wysoka Sumienność i dążenie do doskonałości technicznej powodują, że podświadomie
+    traktuję delegowanie zadań jako &quot;stratę okazji&quot; do własnej eksploracji poznawczej. 
+    Zamiast pełnić rolę architekta delegującego cegły, staję się murarzem, bo fascynuje mnie
+    sam proces wznoszenia budowli.
+
+  reality: &gt;
+    Długoterminowa skuteczność organizacyjna wymaga budowy
+    właścicieli, kompetencji oraz systemów niezależnych od jednej osoby. 
+    Skupianie całego cyklu wykonawczego w swoich rękach (nawet z sukcesem projektowym) 
+    tworzy ryzyko &quot;Single Point of Failure&quot; dla przedsiębiorstwa i ogranicza 
+    strategiczne wykorzystanie czasu.
+
+key_realizations:
+
+  - Własny czas jest zasobem strategicznym
+  - Delegowanie jest formą skalowania wpływu
+  - Budowanie właścicieli jest ważniejsze niż wykonywanie pracy za nich
+  - Dobrze zaprojektowany system powinien działać bez stałego udziału autora
+  - Największą wartość tworzą rozwiązania, które przeżywają swojego twórcę
+
+current_approach:
+
+  - Szukanie właścicieli problemów zamiast przejmowania ich
+  - Koncentracja na budowie mechanizmów i kompetencji
+  - Ograniczanie zaangażowania w szczegóły operacyjne
+  - Świadome przekazywanie odpowiedzialności
+  - Projektowanie rozwiązań możliwych do utrzymania przez innych
+
+development_goal: &gt;
+
+  Zwiększać wpływ organizacyjny poprzez rozwijanie ludzi,
+  budowanie właścicieli procesów oraz tworzenie systemów,
+  które nie wymagają mojego bezpośredniego udziału w codziennym działaniu.
+
+interview_usage:
+
+  strengths_questions:
+    - Jak rozwiązujesz problemy organizacyjne?
+    - Jak budujesz procesy?
+
+  weakness_questions:
+    - Co najtrudniej jest Ci delegować?
+    - Jakie zachowanie najbardziej ograniczało Twój rozwój?
+
+  growth_questions:
+    - Jak zmieniło się Twoje podejście do delegowania?
+    - Jak skalujesz swój wpływ w organizacji?
+</pre>
+<h2 class="file" id="DEV-004">Development Areas/DEV-004.yaml <span class="id-badge">[DEV-004]</span></h2>
+<pre>id: DEV-004
+
+title: Commercial Discovery
+
+summary: &gt;
+  Naturalnie koncentruję się na skutecznej realizacji projektów,
+  procesów i rozwiązań operacyjnych. Historycznie mniej uwagi
+  poświęcałem walidacji rynkowej, zachowaniom klientów oraz
+  komercyjnej stronie produktów. Doświadczenia związane z
+  wprowadzaniem nowych produktów nauczyły mnie znaczenia
+  wcześniejszego testowania założeń biznesowych i rynkowych.
+
+category: Product &amp; Business
+
+status: Emerging Development Area
+
+sources:
+  stories:
+    - STORY-006
+
+  achievements:
+    - ACH-008
+    - ACH-011
+    - ACH-013
+    - ACH-014
+
+  skills:
+    - product-management
+    - stakeholder-management
+    - operations-management
+    - process-design
+
+observed_pattern:
+
+  - Naturalna koncentracja na realizacji i dowożeniu rezultatów
+  - Silne zaufanie do logicznie poprawnych założeń
+  - Szybkie przechodzenie od problemu do projektowania rozwiązania
+  - Większa uwaga poświęcana wykonaniu niż walidacji potrzeb rynku
+  - Skupienie na jakości produktu i procesu przed oceną market fit
+
+strengths:
+
+  - Execution
+  - Project Delivery
+  - Product Introduction
+  - Cross-functional Coordination
+  - Operational Thinking
+  - Process Design
+
+risks:
+
+  - Budowanie rozwiązań bez pełnej walidacji potrzeb klientów
+  - Niedoszacowanie znaczenia procesów sprzedażowych
+  - Nadmierne skupienie na produkcie kosztem użytkownika
+  - Zbyt wczesne przechodzenie do realizacji
+  - Ryzyko optymalizacji rozwiązania przed potwierdzeniem problemu
+
+evidence:
+
+  - STORY-006 pokazuje proces wprowadzania nowego produktu w warunkach ograniczonej walidacji rynkowej.
+  - ACH-008 dokumentuje koncentrację na skutecznym wdrożeniu produktu oraz stronie wykonawczej projektu.
+  - ACH-011 pokazuje skupienie na usprawnianiu procesu ofertowania i kalkulacji.
+  - ACH-013 dokumentuje budowę systemów wspierających organizację i procesy operacyjne.
+  - ACH-014 pokazuje tendencję do standaryzacji i porządkowania środowiska pracy.
+
+root_cause_analysis:
+
+  assumption: &gt;
+    Jeżeli rozwiązanie jest logiczne, technicznie poprawne
+    i dobrze wdrożone, powinno przynieść oczekiwane rezultaty.
+
+  psychometric_drivers: &gt;
+    Wzór ten wynika z faktu, że moje główne talenty skupione są w domenie Myślenia Strategicznego
+    i Wykonywania (Analityk #5, Strateg #3, Odpowiedzialność #6), przy jednoczesnym braku talentów
+    w domenie Wpływania (np. Rywalizacja na odległym #31 miejscu, Dowodzenie na #34)[cite: 1]. Logiczne piękno 
+    i techniczna spójność procesu (będąca zasługą wysokiej Sumienności) dają mi pełne poczucie 
+    bezpieczeństwa. Podświadomie zakładam, że rynek i klient zachowają się tak samo racjonalnie jak 
+    dobrze zaprojektowany system operacyjny, przez co faza komercyjnej walidacji wydawała mi się 
+    formalnością, a nie kluczowym punktem ryzyka.
+
+  reality: &gt;
+    Sukces produktu zależy nie tylko od jakości wykonania,
+    ale również od zrozumienia klienta, walidacji problemu,
+    modelu biznesowego oraz dopasowania do rynku.
+    W wielu przypadkach discovery powinno poprzedzać execution.
+    Faktyczny sukces rynkowy wymaga weryfikacji hipotez poza granicami organizacji.
+
+key_realizations:
+
+  - Poprawnie wykonany projekt nie gwarantuje sukcesu rynkowego.
+  - Klient kupuje wartość, a nie techniczną poprawność rozwiązania.
+  - Discovery powinno poprzedzać execution.
+  - Market fit jest równie ważny jak jakość wdrożenia.
+  - Weryfikacja założeń biznesowych powinna następować możliwie wcześnie.
+
+current_approach:
+
+  - Wcześniej identyfikuję kluczowe założenia biznesowe i rynkowe.
+  - Staram się angażować klientów, partnerów i sprzedaż przed rozpoczęciem pełnej realizacji.
+  - Oddzielam walidację problemu od projektowania rozwiązania.
+  - Szukam prostych sposobów testowania hipotez przed większymi inwestycjami.
+  - Świadomie poświęcam więcej uwagi perspektywie klienta i modelowi biznesowemu.
+
+development_goal: &gt;
+  Rozwijać umiejętności związane z walidacją potrzeb klientów,
+  badaniem rynku, discovery produktowym oraz oceną potencjału
+  biznesowego nowych inicjatyw przed rozpoczęciem pełnej realizacji.
+
+interview_usage:
+
+  strengths_questions:
+
+    - Jak podchodzisz do wprowadzania nowych produktów?
+    - Jak łączysz skuteczną realizację z oceną potrzeb biznesowych?
+    - Jakie są Twoje najmocniejsze strony w prowadzeniu projektów?
+
+  weakness_questions:
+
+    - Jakie błędy popełniałeś przy wprowadzaniu nowych rozwiązań?
+    - W jakich sytuacjach zbyt szybko przechodzisz do działania?
+    - Jakie obszary świadomie rozwijasz jako manager lub product owner?
+
+  growth_questions:
+
+    - Jak zmieniło się Twoje podejście do walidacji pomysłów?
+    - Jak sprawdzasz dziś, czy produkt odpowiada na rzeczywistą potrzebę?
+    - Jakie działania podejmujesz, aby lepiej rozumieć klientów i rynek?
+</pre>
+<h2 class="file" id="DEV-005">Development Areas/DEV-005.yaml <span class="id-badge">[DEV-005]</span></h2>
+<pre>id: DEV-005
+
+title: Assertiveness and Difficult Conversations
+
+summary: &gt;
+  Naturalnie preferuję wspieranie, mentoring i budowanie porozumienia zamiast
+  konfrontacji. W większości sytuacji pozwala mi to skutecznie budować relacje,
+  rozwijać ludzi oraz wspierać współpracę między działami. Jednocześnie wzorzec
+  ten może prowadzić do odkładania trudnych rozmów, nadmiernego przejmowania
+  odpowiedzialności oraz zbyt późnego komunikowania problemów wymagających
+  jednoznacznego stanowiska.
+
+category: Communication
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-001
+    - STORY-002
+    - STORY-004
+    - STORY-005
+    - STORY-006
+
+  achievements:
+    - ACH-001
+    - ACH-004
+    - ACH-006
+    - ACH-008
+    - ACH-010
+    - ACH-013
+
+  skills:
+    - SKILL-017
+    - SKILL-011
+    - SKILL-003
+
+observed_pattern:
+  - Przed oceną zachowania staram się zrozumieć jego przyczyny, ograniczenia i kontekst.
+  - W relacjach zawodowych naturalnie przyjmuję rolę mentora, doradcy lub osoby wspierającej.
+  - Preferuję rozwiązywanie problemów poprzez dialog, argumentację i zmianę perspektywy zamiast otwartej konfrontacji.
+  - Mam tendencję do przejmowania odpowiedzialności za problemy organizacyjne, nawet gdy formalnie nie należą do mojego zakresu obowiązków.
+  - Trudniej przychodzi mi przekazywanie krytycznego feedbacku, gdy wiem, że może być dla drugiej strony nieprzyjemny emocjonalnie.
+  - W sytuacjach konfliktowych częściej szukam obejścia problemu niż bezpośredniego starcia.
+
+strengths:
+  - Budowanie zaufania i długoterminowych relacji.
+  - Wysoka empatia oraz umiejętność rozumienia perspektyw różnych stron.
+  - Skuteczne wspieranie rozwoju innych osób.
+  - Umiejętność obniżania napięcia i deeskalacji konfliktów.
+  - Tworzenie środowiska sprzyjającego współpracy i wymianie wiedzy.
+  - Wysoka otwartość na informację zwrotną i krytykę.
+
+risks:
+  - Odkładanie trudnych rozmów dłużej niż jest to optymalne.
+  - Zbyt późne komunikowanie problemów wymagających stanowczej reakcji.
+  - Przejmowanie nadmiernej liczby obowiązków z poczucia odpowiedzialności za organizację.
+  - Trudność z odmawianiem zadań, które są ważne dla firmy.
+  - Nadmierne skupienie na zrozumieniu drugiej strony kosztem szybkiego egzekwowania decyzji.
+  - Ryzyko przeciążenia wynikające z ograniczonego stawiania granic.
+
+evidence:
+  - Wielokrotne angażowanie się w rozwiązywanie problemów między działami mimo braku formalnej odpowiedzialności za dany obszar.
+  - Wdrażanie i wspieranie rozwoju kilkudziesięciu pracowników w różnych obszarach organizacji.
+  - Regularne pełnienie nieformalnej roli doradczej dla osób obejmujących stanowiska kierownicze.
+  - Preferowanie pracy rozwojowej i mentoringowej nad rolą egzekwującą.
+  - Powtarzalna tendencja do przyjmowania dodatkowych obowiązków, gdy ich niewykonanie mogłoby zaszkodzić organizacji.
+
+root_cause_analysis:
+  assumption: &gt;
+    Dobry lider przede wszystkim wspiera ludzi, pomaga im się rozwijać i
+    buduje porozumienie. Problemy interpersonalne najczęściej wynikają z
+    braku zrozumienia kontekstu lub ograniczeń drugiej strony.
+
+  psychometric_drivers: &gt;
+    Ten wzorzec behawioralny ma potężne ugruntowanie w mojej psychice. Moja Ugodowość 
+    (Wielka Piątka) jest na bardzo wysokim poziomie, co wywołuje biologiczny dyskomfort 
+    w sytuacjach otwartego sporu. Dodatkowo, talenty Współzależność (#4) i Bliskość (#7) 
+    powodują, że podświadomie priorytetyzuję jakość relacji i integralność całego ludzkiego 
+    ekosystemu. Posiadam też relatywnie niski wynik w fasetach lękowych w Neurotyzmie, co sprawia, 
+    że potrafię znosić napięcie, ale łącząc to z ugodowością – wolę amortyzować problemy 
+    własnym wysiłkiem, zamiast generować dyskomfort u innych poprzez twarde egzekwowanie granic.
+
+  reality: &gt;
+    Wsparcie, empatia i mentoring są bardzo skuteczne w rozwijaniu ludzi,
+    jednak część sytuacji wymaga również jednoznacznych granic, szybkiej
+    informacji zwrotnej oraz gotowości do prowadzenia niekomfortowych rozmów.
+    Unikanie tych elementów z powodu chęci zachowania harmonii (Ugodowość) ogranicza 
+    skuteczność zarządzania i drastycznie zwiększa obciążenie własne.
+
+key_realizations:
+  - Empatia i asertywność nie są przeciwieństwami.
+  - Trudna rozmowa przeprowadzona odpowiednio wcześnie jest zwykle mniej kosztowna niż rozmowa odkładana przez długi czas.
+  - Brak jednoznacznego komunikatu również jest formą komunikatu.
+  - Chronienie innych przed dyskomfortem może czasem ograniczać ich rozwój.
+  - Odmowa przyjęcia zadania nie jest brakiem zaangażowania, jeżeli wynika z racjonalnego zarządzania priorytetami.
+
+current_approach:
+  - Świadomie ćwiczę bardziej bezpośrednie komunikowanie oczekiwań i problemów.
+  - Staram się oddzielać ocenę sytuacji od oceny osoby.
+  - Przed przyjęciem nowych zobowiązań analizuję ich wpływ na istniejące priorytety.
+  - Uczę się prowadzić rozmowy korygujące wcześniej, zanim problem urośnie.
+  - Traktuję asertywność jako element odpowiedzialności organizacyjnej, a nie konfliktowości.
+
+development_goal: &gt;
+  Rozwijać umiejętność prowadzenia trudnych rozmów, przekazywania
+  jednoznacznego feedbacku oraz stawiania granic bez utraty empatii,
+  jakości relacji i orientacji na współpracę.
+
+interview_usage:
+  strengths_questions:
+    - Jak budujesz relacje między działami?
+    - Jak wspierasz rozwój innych pracowników?
+    - Jak radzisz sobie z konfliktami organizacyjnymi?
+
+  weakness_questions:
+    - Jaka jest Twoja największa słabość zawodowa?
+    - Jakie sytuacje są dla Ciebie najtrudniejsze jako lidera?
+    - Czy zdarza Ci się brać na siebie zbyt dużo odpowiedzialności?
+
+  growth_questions:
+    - Nad jakim obszarem rozwoju pracujesz obecnie?
+    - Jak zmieniło się Twoje podejście do zarządzania ludźmi?
+    - Jak nauczyłeś się prowadzić trudne rozmowy?
+</pre>
+<h2 class="file" id="DEV-006">Development Areas/DEV-006.yaml <span class="id-badge">[DEV-006]</span></h2>
+<pre>id: DEV-006
+
+title: Boundary Management
+
+summary: &gt;
+  Naturalnie przyjmuję szeroką odpowiedzialność za problemy organizacyjne oraz
+  chętnie angażuję się w działania wspierające innych ludzi i zespoły. Wzorzec
+  ten pozwala mi skutecznie budować wartość wykraczającą poza formalny zakres
+  obowiązków, ale jednocześnie może prowadzić do przeciążenia, rozproszenia
+  uwagi oraz przejmowania odpowiedzialności za obszary, które powinny pozostać
+  własnością innych osób.
+
+category: Self Management
+
+status: Active Development
+
+sources:
+  stories:
+    - STORY-001
+    - STORY-002
+    - STORY-004
+    - STORY-005
+    - STORY-006
+
+  achievements:
+    - ACH-001
+    - ACH-004
+    - ACH-006
+    - ACH-008
+    - ACH-010
+    - ACH-013
+    - ACH-014
+
+  skills:
+    - SKILL-017
+    - SKILL-003
+    - SKILL-005
+    - SKILL-011
+
+observed_pattern:
+  - Naturalnie koncentruję się na tym, czy zadanie jest ważne dla organizacji, a nie wyłącznie na tym, czy formalnie należy do mojego zakresu obowiązków.
+  - Chętnie angażuję się w pomoc innym osobom, szczególnie gdy widzę możliwość realnego rozwiązania problemu.
+  - Mam tendencję do przyjmowania dodatkowych zadań, jeśli ich niewykonanie mogłoby negatywnie wpłynąć na funkcjonowanie firmy.
+  - Często pełnię rolę nieformalnego konsultanta dla wielu działów jednocześnie.
+  - Łatwiej przychodzi mi przejęcie odpowiedzialności za problem niż pozostawienie go nierozwiązanym.
+  - Mam skłonność do angażowania się w obszary wykraczające poza moją formalną rolę.
+
+strengths:
+  - Wysoki poziom ownership i odpowiedzialności za rezultaty.
+  - Silna orientacja na dobro organizacji jako całości.
+  - Gotowość do wspierania innych zespołów i działów.
+  - Zdolność identyfikowania problemów pomiędzy obszarami organizacji.
+  - Budowanie szerokiej sieci współpracy i zaufania.
+  - Duża elastyczność w podejmowaniu nowych wyzwań.
+
+risks:
+  - Przeciążenie wynikające z nadmiernej liczby zobowiązań.
+  - Rozproszenie uwagi pomiędzy zbyt wieloma inicjatywami.
+  - Ograniczenie czasu na działania o najwyższej wartości biznesowej.
+  - Tworzenie nieformalnej zależności organizacji od własnej osoby.
+  - Utrudnione delegowanie odpowiedzialności.
+  - Ryzyko przejmowania problemów, które powinny zostać rozwiązane przez właściciela procesu lub obszaru.
+  - Trudności z odmawianiem nowych zadań.
+
+evidence:
+  - Wspieranie wielu działów organizacji poza formalnym zakresem odpowiedzialności.
+  - Wdrażanie i rozwijanie pracowników z różnych zespołów oraz funkcji.
+  - Regularne pełnienie roli eksperta konsultowanego przez osoby z wielu obszarów biznesowych.
+  - Uczestnictwo w inicjatywach wykraczających poza podstawowy zakres stanowiska.
+  - Powtarzalne sytuacje, w których przejmowałem dodatkowe zadania ze względu na ich znaczenie dla organizacji.
+
+root_cause_analysis:
+  assumption: &gt;
+    Jeżeli posiadam wiedzę, doświadczenie lub możliwość rozwiązania problemu,
+    powinienem zaangażować się i pomóc organizacji osiągnąć lepszy rezultat.
+
+  psychometric_drivers: &gt;
+    Ten schemat zachowań jest napędzany przez głębokie sprzężenie zwrotne między moją otwartością
+    poznawczą a postrzeganiem systemowym. Maksymalny wynik w fasecie Poszukiwania Doznać 
+    (Wielka Piątka) sprawia, że nowe anomalie operacyjne w obcych działach działają na mnie 
+    jak magnetyczny bodziec – wchodzę tam, bo to stymuluje mój proces myślowy (Learner #1). 
+    Z kolei talent Współzależność (#4) i Indywidualizacja (#8) powodują, że widzę te anomalie 
+    nie jako odizolowane incydenty, ale jako naczynia połączone niszczące efektywność całej firmy. 
+    Wysoka Ugodowość dodatkowo blokuje asertywne odrzucenie prośby o pomoc. W efekcie 
+    &quot;zbawiam świat operacyjny&quot; kosztem własnej energii, działając w oparciu o intuicję systemową, 
+    a nie formalne granice roli.
+
+  reality: &gt;
+    Takie podejście buduje dużą wartość organizacyjną, ale przy odpowiedniej
+    skali odpowiedzialności prowadzi do przeciążenia oraz ogranicza możliwość
+    skupienia się na działaniach o największym wpływie. Długoterminowa
+    skuteczność wymaga nie tylko pomagania, ale również świadomego wyznaczania
+    granic oraz pozostawiania części odpowiedzialności jej właścicielom.
+
+
+key_realizations:
+  - Nie każdy problem organizacyjny wymaga mojego osobistego zaangażowania.
+  - Pomoc jest najbardziej wartościowa wtedy, gdy prowadzi do samodzielności innych osób.
+  - Odmowa przyjęcia zadania może być właściwą decyzją biznesową.
+  - Delegowanie odpowiedzialności jest elementem skalowania organizacji.
+  - Wysoka dostępność nie powinna zastępować dobrze zaprojektowanych procesów.
+  - Ochrona własnej przepustowości zwiększa długoterminową wartość dostarczaną organizacji.
+
+current_approach:
+  - Coraz częściej oceniam nowe zadania przez pryzmat priorytetów i kosztu alternatywnego.
+  - Staram się wspierać innych poprzez coaching, dokumentację i transfer wiedzy zamiast przejmowania wykonania.
+  - Świadomie ograniczam liczbę równoległych zobowiązań.
+  - Rozróżniam sytuacje wymagające mojego działania od sytuacji wymagających jedynie konsultacji.
+  - Większą uwagę poświęcam budowaniu systemów ograniczających zależność organizacji od pojedynczych osób.
+
+development_goal: &gt;
+  Rozwinąć zdolność świadomego zarządzania własną przepustowością,
+  priorytetami i zaangażowaniem poprzez skuteczniejsze stawianie granic,
+  delegowanie odpowiedzialności oraz koncentrację na działaniach o
+  największym wpływie organizacyjnym.
+
+interview_usage:
+  strengths_questions:
+    - Jak budujesz współpracę między działami?
+    - W jaki sposób wspierasz organizację poza własnym zakresem obowiązków?
+    - Jak zdobywasz zaufanie różnych zespołów?
+
+  weakness_questions:
+    - Jakie są Twoje najczęstsze błędy zawodowe?
+    - Czy zdarza Ci się brać na siebie zbyt dużo pracy?
+    - Jak radzisz sobie z przeciążeniem obowiązkami?
+
+  growth_questions:
+    - Czego nauczyłeś się o delegowaniu odpowiedzialności?
+    - Jak zmieniło się Twoje podejście do priorytetów?
+    - Nad jakim obszarem rozwoju pracujesz obecnie?
+</pre>
+</main>
+<footer class="backlinks">
+  <hr>
+  <nav>
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+    <a href="https://github.com/Istuification/careervault" target="_blank" rel="noopener">Repozytorium na GitHub</a>
+  </nav>
+</footer>
+</body>
+</html>

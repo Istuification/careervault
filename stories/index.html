@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stories — Career Vault</title>
+<meta name="description" content="Stories — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
+<meta name="robots" content="index, follow">
+<style>
+  body{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+       max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
+       color:#16221D; background:#fff;}
+  header, footer{font-family: system-ui, sans-serif;}
+  nav a{margin-right: 1rem;}
+  h1{font-family: system-ui, sans-serif;}
+  h2.file{font-family: system-ui, sans-serif; margin-top:2.5rem; padding-top:1rem;
+           border-top:2px solid #24594B; color:#24594B;}
+  .id-badge{font-size:0.8rem; color:#33396B;}
+  pre{white-space: pre-wrap; word-wrap: break-word; background:#f6f7f5;
+       padding:1rem; border-radius:6px; overflow-x:auto;}
+  .backlinks{margin:1.5rem 0; font-family: system-ui, sans-serif;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="backlinks">
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+  </nav>
+  <h1>Stories</h1>
+  <p>Sekcja Career Vault. Zawiera pełną, surową treść następujących plików repozytorium.
+     Ostatnia aktualizacja: 2026-07-02 17:14 UTC · commit bbd9fe4.</p>
+</header>
+<main>
+<h2 class="file" id="README">Stories/README.md</h2>
+<pre># Stories
+
+## Cel
+
+Folder **Stories** zawiera historie zawodowe przygotowane na podstawie Achievementów zgromadzonych w Career Vault.
+
+Stories przekształcają fakty, rezultaty i osiągnięcia w uporządkowane narracje pokazujące:
+
+* sposób myślenia,
+* podejmowanie decyzji,
+* rozwiązywanie problemów,
+* wykorzystywane kompetencje,
+* wpływ biznesowy,
+* wyciągnięte wnioski.
+
+Stories są zoptymalizowane pod:
+
+* rozmowy kwalifikacyjne,
+* przygotowanie odpowiedzi STAR,
+* portfolio zawodowe,
+* profile zawodowe,
+* analizę kompetencji,
+* współpracę z AI i systemami RAG.
+
+Stories nie są źródłem prawdy.
+
+Źródłem prawdy pozostają Achievementy.
+
+---
+
+# Rola Stories w Career Vault
+
+Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
+
+```text
+Experience
+↓
+Gdzie zdobywałem doświadczenie?
+
+Achievements
+↓
+Co osiągnąłem?
+
+Skills
+↓
+Jakie kompetencje potwierdzają te osiągnięcia?
+
+Stories
+↓
+Jak wyglądały rzeczywiste sytuacje stojące za osiągnięciami?
+
+Development Areas
+↓
+Jakie wzorce rozwojowe można zaobserwować?
+
+Identity
+↓
+Kim jestem jako profesjonalista?
+```
+
+Stories pełnią rolę warstwy narracyjnej.
+
+Ich zadaniem jest połączenie kontekstu, decyzji, działań i rezultatów w historię możliwą do opowiedzenia drugiej osobie.
+
+---
+
+# Czym jest Story?
+
+Story opisuje pojedynczą sytuację zawodową posiadającą:
+
+* wyraźny problem,
+* konkretny cel,
+* podjęte działania,
+* osiągnięty rezultat,
+* wyciągnięte wnioski.
+
+Story nie opisuje stanowiska.
+
+Story nie opisuje zakresu obowiązków.
+
+Story opisuje sytuację, która pokazuje sposób działania autora.
+
+---
+
+# Stories a model STAR
+
+Stories wykorzystują rozszerzony model STAR.
+
+Klasyczny STAR:
+
+```text
+Situation
+Task
+Action
+Result
+```
+
+Model stosowany w Career Vault:
+
+```text
+Situation
+↓
+Problem
+↓
+Constraints
+↓
+Goal
+↓
+Actions
+↓
+Challenges
+↓
+Results
+↓
+Lessons Learned
+```
+
+Dzięki temu każda Story może zostać łatwo przekształcona do klasycznej odpowiedzi STAR, jednocześnie zachowując znacznie więcej informacji przydatnych podczas analizy doświadczenia.
+
+---
+
+# Fakty ponad deklaracje
+
+Najważniejsza zasada Career Vault:
+
+&gt; Fakty ponad deklaracje.
+
+Story nie służy do opisywania cech charakteru.
+
+Story służy do pokazywania ich poprzez działania.
+
+Przykład:
+
+❌ Jestem dobrym liderem.
+
+✅ Przeprowadziłem reorganizację działu serwisu, utrzymałem kluczowych ekspertów i ustabilizowałem dział w okresie wysokiej rotacji.
+
+Kompetencje powinny wynikać z historii.
+
+Nie odwrotnie.
+
+---
+
+# Jedna Story = jedna historia
+
+Każda Story powinna opisywać jeden główny problem lub wyzwanie.
+
+Dobre przykłady:
+
+* transformacja działu,
+* wdrożenie systemu,
+* uruchomienie produktu,
+* rozwiązanie kryzysu,
+* stworzenie nowego procesu,
+* przeprowadzenie reorganizacji.
+
+Nie należy łączyć wielu niezależnych historii w jeden rekord.
+
+---
+
+# Schemat rekordu
+
+Każda Story powinna być zapisana jako osobny plik YAML.
+
+```yaml
+id:
+
+title:
+
+summary:
+
+competencies:
+
+situation:
+
+problem:
+
+constraints:
+
+goal:
+
+actions:
+
+challenges:
+
+results:
+  quantitative:
+  qualitative:
+
+evidence:
+  achievement_ids:
+  supporting_materials:
+
+lessons_learned:
+
+interview_angles:
+
+cv_bullets:
+```
+
+---
+
+# Opis pól
+
+## id
+
+Unikalny identyfikator historii.
+
+Przykład:
+
+```yaml
+id: STORY-001
+```
+
+Identyfikator powinien być stabilny i niezmienny.
+
+---
+
+## title
+
+Krótka nazwa historii.
+
+Powinna opisywać osiągnięty rezultat lub główny temat.
+
+Przykłady:
+
+```text
+Transformacja organizacji pracy działu Instal/Solar
+Projektowanie modelu działania serwisu
+Wprowadzenie produktu PV Stand na rynek
+```
+
+---
+
+## summary
+
+Krótki opis historii.
+
+Powinien odpowiadać na pytanie:
+
+&gt; Co zostało osiągnięte i dlaczego było ważne?
+
+Powinien umożliwiać szybkie zrozumienie historii bez czytania całego dokumentu.
+
+---
+
+## competencies
+
+Kompetencje zaprezentowane podczas realizacji historii.
+
+Preferowane jest wykorzystanie kompetencji istniejących w module Skills.
+
+Przykład:
+
+```yaml
+competencies:
+  - Process Design
+  - Systems Thinking
+  - Stakeholder Management
+```
+
+---
+
+## situation
+
+Opis sytuacji wyjściowej.
+
+Powinien odpowiadać na pytanie:
+
+&gt; W jakim kontekście działałem?
+
+---
+
+## problem
+
+Precyzyjne określenie problemu biznesowego.
+
+Powinien odpowiadać na pytanie:
+
+&gt; Co wymagało rozwiązania?
+
+---
+
+## constraints
+
+Najważniejsze ograniczenia.
+
+Przykłady:
+
+* ograniczenia czasowe,
+* ograniczenia zasobów,
+* brak wiedzy,
+* konflikty między działami,
+* ograniczenia organizacyjne.
+
+---
+
+## goal
+
+Cel biznesowy lub organizacyjny.
+
+Powinien odpowiadać na pytanie:
+
+&gt; Co miało zostać osiągnięte?
+
+---
+
+## actions
+
+Najważniejsza sekcja całej historii.
+
+Opisuje działania autora.
+
+Każdy punkt powinien opisywać:
+
+* decyzję,
+* inicjatywę,
+* analizę,
+* wdrożenie,
+* koordynację,
+* rozwiązanie problemu.
+
+Opisuj własny wkład.
+
+Nie działania całego zespołu.
+
+---
+
+## challenges
+
+Najważniejsze trudności napotkane podczas realizacji.
+
+Powinny pokazywać:
+
+* ryzyka,
+* konflikty,
+* ograniczenia,
+* niepewność,
+* sytuacje wymagające adaptacji.
+
+---
+
+## results
+
+Rezultaty osiągnięte dzięki działaniom.
+
+### quantitative
+
+Mierzalne rezultaty.
+
+Przykłady:
+
+* liczby,
+* procenty,
+* czas,
+* koszty,
+* wielkość zespołu,
+* liczba klientów.
+
+### qualitative
+
+Rezultaty jakościowe.
+
+Przykłady:
+
+* poprawa jakości,
+* poprawa współpracy,
+* większa przewidywalność,
+* ograniczenie ryzyka,
+* zwiększenie skalowalności.
+
+---
+
+## evidence
+
+Powiązane źródła.
+
+### achievement_ids
+
+Achievementy będące źródłem historii.
+
+Każda Story musi być powiązana z co najmniej jednym Achievementem.
+
+### supporting_materials
+
+Materiały wspierające.
+
+Przykłady:
+
+* procedury,
+* workflow,
+* dokumentacja,
+* prezentacje,
+* instrukcje,
+* raporty.
+
+---
+
+## lessons_learned
+
+Najważniejsze wnioski wyniesione z realizacji.
+
+Powinny odpowiadać na pytanie:
+
+&gt; Czego nauczyłem się dzięki tej sytuacji?
+
+Sekcja szczególnie ważna dla Development Areas.
+
+---
+
+## interview_angles
+
+Kategorie pytań rekrutacyjnych, do których historia może zostać wykorzystana.
+
+Przykład:
+
+```yaml
+interview_angles:
+  - Leadership
+  - Change Management
+  - Ownership
+```
+
+---
+
+## cv_bullets
+
+Najkrótsze możliwe podsumowania historii.
+
+Powinny być gotowe do wykorzystania w CV, LinkedIn lub portfolio.
+
+Każdy punkt powinien:
+
+* zaczynać się od działania,
+* zawierać rezultat,
+* być zrozumiały bez dodatkowego kontekstu.
+
+---
+
+# Relacje z pozostałymi modułami
+
+## Experience
+
+Dostarcza kontekstu kariery.
+
+## Achievements
+
+Stanowią źródło faktów i dowodów.
+
+## Skills
+
+Opisują kompetencje wykorzystywane w historii.
+
+## Stories
+
+Pokazują sposób działania, podejmowania decyzji oraz osiągania rezultatów.
+
+## Development Areas
+
+Powstają na podstawie analizy wielu Stories i Achievementów.
+
+## Identity
+
+Stanowi syntezę wzorców widocznych w całym Career Vault.
+
+---
+
+# Zasady utrzymania
+
+1. Każda Story musi być powiązana z Achievementem.
+2. Nie twórz Story bez dowodów.
+3. Skupiaj się na decyzjach i działaniach.
+4. Pokazuj wpływ biznesowy.
+5. Dodawaj rezultaty ilościowe, gdy są dostępne.
+6. Dokumentuj najważniejsze wnioski.
+7. Łącz Stories ze Skills.
+8. Łącz Stories z Development Areas, gdy stanowią ich źródło.
+9. Preferuj jakość nad liczbę historii.
+
+---
+
+# Najważniejsza zasada
+
+Achievement opisuje co zostało osiągnięte.
+
+Story opisuje jak myślałem, jakie decyzje podejmowałem, jakie działania wykonałem i dlaczego osiągnąłem taki rezultat.
+</pre>
+<h2 class="file" id="STORY-001">Stories/STORY-001.yaml <span class="id-badge">[STORY-001]</span></h2>
+<pre>id: STORY-001
+
+title: Transformacja organizacji pracy działu Instal/Solar
+
+summary: &gt;
+  Przekształciłem dział montażowy działający głównie na komunikacji ad-hoc
+  w uporządkowany system workflow oparty o Bitrix24, standaryzację
+  informacji oraz jasno zdefiniowane procesy operacyjne. Pozwoliło to
+  znacząco skrócić czas organizacji montaży, ograniczyć liczbę błędów
+  operacyjnych i przygotować dział do dalszego skalowania.
+
+competencies:
+  - Process Improvement
+  - Workflow Design
+  - Systems Thinking
+  - Organizational Scaling
+  - Change Management
+  - Stakeholder Management
+  - Knowledge Management
+  - Operational Excellence
+  - Ownership
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - feedback_receptiveness
+  - constructive_challenge
+  - solution_orientation
+  - transparency
+  - perspective_taking
+
+situation: &gt;
+  Po około trzech miesiącach pracy kierownictwo firmy przekazał mi
+  odpowiedzialność za organizację procesu montaży, uznając że moje
+  podejście organizacyjne pozwoli odciążyć go od bieżącego zarządzania
+  operacyjnego.
+
+  W tym czasie dział Instal/Solar rozwijał się bardzo dynamicznie.
+  Początkowo składał się z kilku osób, a wraz ze wzrostem liczby realizacji
+  został rozbudowany do kilku handlowców, kilku monterów oraz kilku ekip
+  montażowych realizujących instalacje fotowoltaiczne i urządzenia grzewcze.
+
+  Organizacja pracy opierała się głównie na komunikacji ad-hoc.
+  Informacje dotyczące realizacji przekazywano za pomocą krótkich wiadomości
+  i pojedynczych zdjęć wysyłanych na komunikatorze. Brakowało jednolitego
+  sposobu zbierania, przechowywania i przekazywania informacji pomiędzy
+  handlowcami, administracją i ekipami montażowymi.
+
+problem: &gt;
+  Ekipy montażowe regularnie rozpoczynały realizacje bez kompletu
+  informacji technicznych. Często brakowało danych dotyczących typu dachu,
+  jego wymiarów, wysokości budynku, zdjęć rozdzielni elektrycznych oraz
+  innych informacji niezbędnych do prawidłowego przygotowania realizacji.
+
+  W efekcie podczas montaży regularnie pojawiały się nieprzewidziane
+  problemy. Brakowało materiałów, konieczne były dodatkowe przejazdy,
+  zmiany koncepcji lub improwizowanie rozwiązań na miejscu.
+
+  Dodatkowym źródłem problemów był narastający konflikt pomiędzy działem
+  handlowym a ekipami montażowymi. Handlowcy często składali klientom
+  obietnice bez pełnego zrozumienia ograniczeń technicznych, natomiast
+  konsekwencje tych decyzji ujawniały się dopiero podczas realizacji.
+  Powodowało to frustrację ekip montażowych, konieczność tłumaczenia się
+  przed klientami oraz częste spory dotyczące odpowiedzialności za problemy.
+
+  Przed wdrożeniem praktycznie każda realizacja zawierała błędy lub
+  nieprzewidziane sytuacje wynikające z brakujących informacji, co
+  generowało dodatkowe koszty, chaos organizacyjny oraz utrudniało
+  dalszy rozwój działu.
+
+constraints:
+  - Dynamiczny wzrost liczby realizacji i zespołu.
+  - Brak wcześniej zdefiniowanych procesów operacyjnych.
+  - Konieczność utrzymania bieżącej działalności podczas wdrażania zmian.
+  - Brak wcześniejszego doświadczenia autora w projektowaniu procesów operacyjnych.
+  - Konieczność pogodzenia potrzeb handlowców, administracji i ekip montażowych.
+
+goal: &gt;
+  Stworzyć powtarzalny i skalowalny proces organizacji montaży, który
+  zapewni kompletność informacji technicznych, ograniczy liczbę błędów
+  operacyjnych oraz umożliwi dalszy rozwój działu bez utraty jakości
+  realizacji.
+
+actions:
+  - Samodzielnie przejąłem odpowiedzialność za organizację procesu montaży.
+  - Przeanalizowałem najczęściej występujące problemy pojawiające się podczas realizacji.
+  - Zidentyfikowałem informacje niezbędne dla handlowców, administracji i ekip montażowych.
+  - Zaprojektowałem od podstaw docelowy workflow organizacji montaży.
+  - Opracowałem instrukcje określające jakie dane muszą zostać zebrane na każdym etapie procesu.
+  - Stworzyłem zestaw zadań, checklist i punktów kontrolnych zapewniających kompletność informacji.
+  - Zaprojektowałem strukturę przechowywania danych i historii realizacji w Bitrix24.
+  - Wdrożyłem workflow operacyjne wykorzystujące zadania, pola danych, lejki procesowe oraz automatyzacje.
+  - Ustandaryzowałem sposób przekazywania informacji pomiędzy działami.
+  - Wprowadziłem arkusz audytu technicznego pozwalający handlowcom zbierać kompletne i jednoznaczne informacje jeszcze przed sprzedażą.
+  - Zbudowałem transparentny system śledzenia realizacji, dzięki któremu handlowcy mogli na bieżąco monitorować status montaży, serwisów oraz zgłoszonych problemów.
+  - Przeprowadziłem szkolenia i wdrożenie nowych zasad pracy.
+  - Regularnie konsultowałem kierunek rozwoju rozwiązania z kierownictwem firmy, zachowując pełną odpowiedzialność za projekt i jego realizację.
+  - Rozwijałem rozwiązanie metodą iteracyjną, opierając się na informacjach zwrotnych od monterów i analizie rzeczywistych przyczyn problemów.
+  - Wielokrotnie weryfikowałem własne hipotezy dotyczące źródeł nieefektywności procesu i dostosowywałem rozwiązania na podstawie uzyskanych wyników.
+
+challenges:
+  - Brak wcześniejszego doświadczenia w projektowaniu procesów operacyjnych.
+  - Konieczność stworzenia rozwiązania praktycznie od podstaw bez gotowych wzorców organizacyjnych.
+  - Pogodzenie potrzeb wielu grup uczestniczących w procesie.
+  - Zmiana przyzwyczajeń osób pracujących wcześniej głównie w modelu komunikacji ad-hoc.
+  - Projektowanie rozwiązania metodą iteracyjną na podstawie własnych obserwacji, analizy błędów oraz informacji zwrotnych od użytkowników.
+  - Wielokrotne weryfikowanie własnych założeń projektowych na podstawie rzeczywistych problemów zgłaszanych przez monterów i użytkowników procesu.
+  - Ograniczanie konfliktów pomiędzy działem handlowym a technicznym wynikających z rozbieżności pomiędzy oczekiwaniami sprzedażowymi a możliwościami realizacyjnymi organizacji.
+  - Konieczność podejmowania decyzji w oparciu o dane i obserwacje w środowisku, gdzie wiele decyzji było wcześniej podejmowanych intuicyjnie.
+  - Dokumentowanie decyzji i ich konsekwencji w celu budowania poparcia dla zmian organizacyjnych opartych na faktach zamiast opiniach.
+
+results:
+  quantitative:
+    - Skrócenie czasu organizacji pojedynczego montażu z 1–2 dni do około 2–3 godzin.
+    - Spadek liczby realizacji zawierających błędy lub nieprzewidziane problemy z około 100% do około 30%.
+    - Redukcja liczby błędów operacyjnych o około 70%.
+    - Skalowanie działu do około 30 realizacji miesięcznie.
+    - Obsługa około 280 realizacji w analizowanym okresie.
+  qualitative:
+    - Znaczące ograniczenie chaosu organizacyjnego.
+    - Poprawa jakości przygotowania ekip montażowych.
+    - Ujednolicenie sposobu przekazywania informacji.
+    - Zwiększenie przewidywalności realizacji.
+    - Stworzenie skalowalnego modelu organizacji pracy.
+    - Ograniczenie liczby konfliktów wynikających z niepełnych informacji i niejednoznacznych ustaleń.
+    - Zwiększenie transparentności procesu dla wszystkich zaangażowanych działów.
+    - Wypracowanie standardu procesowego, który stał się punktem odniesienia dla dalszej standaryzacji procesów w organizacji.
+
+evidence:
+  achievement_ids:
+    - ACH-001
+  supporting_materials:
+    - Workflow Bitrix24
+    - Szablony zadań
+    - Checklisty procesowe
+    - Dokumentacja operacyjna
+
+lessons_learned:
+  - Dobrze zaprojektowany proces jest często bardziej wartościowy niż zwiększanie liczby pracowników.
+  - Większość problemów operacyjnych wynika z brakujących lub niejednoznacznych informacji.
+  - Proces powinien być projektowany z perspektywy wszystkich uczestników, a nie tylko jednej grupy.
+  - Standaryzacja i szkolenia są równie ważne jak samo wdrożenie systemu.
+  - Systemowe i logiczne podejście pozwala skutecznie rozwiązywać problemy nawet bez wcześniejszego doświadczenia w danym obszarze.
+  - Budowa procesów jest kompetencją rozwijaną poprzez iteracyjne rozwiązywanie rzeczywistych problemów operacyjnych.
+  - Nawet bez wcześniejszego doświadczenia można skutecznie projektować procesy, jeżeli rozumie się problem i potrafi logicznie analizować zależności.
+  - Informacje zwrotne od użytkowników często wskazują objawy problemu, ale nie jego rzeczywistą przyczynę. Skuteczne rozwiązania wymagają dotarcia do źródła problemu i wielokrotnej weryfikacji.
+  - Konflikty pomiędzy działami są często skutkiem braku wspólnych danych, procesów i definicji odpowiedzialności, a nie złej woli uczestników.
+  - Dane i obserwowalne konsekwencje decyzji są znacznie skuteczniejszym narzędziem zmiany organizacyjnej niż opinie lub argumenty oparte wyłącznie na autorytecie.
+
+interview_angles:
+  - Process Improvement
+  - Organizational Scaling
+  - Change Management
+  - Workflow Design
+  - Systems Thinking
+  - Operational Excellence
+  - Leadership Without Authority
+  - Ownership
+  - Initiative
+  - Feedback Receptiveness
+  - Constructive Challenge
+  - Evidence-Based Decision Making
+
+cv_bullets:
+  - Przekształciłem dział montażowy z modelu opartego na komunikacji ad-hoc w uporządkowany workflow wspierany przez Bitrix24.
+  - Skróciłem czas organizacji montaży z 1–2 dni do około 2–3 godzin oraz ograniczyłem liczbę błędów operacyjnych o około 70%.
+  - Zaprojektowałem procesy i standardy informacyjne umożliwiające skalowanie działu do około 30 realizacji miesięcznie.
+</pre>
+<h2 class="file" id="STORY-002">Stories/STORY-002.yaml <span class="id-badge">[STORY-002]</span></h2>
+<pre>id: STORY-002
+
+title: Restrukturyzacja i stabilizacja działu serwisu
+
+summary: &gt;
+  Przejąłem odpowiedzialność za chaotycznie funkcjonujący dział serwisu
+  i zorganizowałem jego codzienną pracę. Wdrożyłem podstawowe workflow,
+  uporządkowałem podział odpowiedzialności, przeprowadziłem onboarding
+  pracowników oraz przygotowałem dział do dalszego funkcjonowania pod
+  kierownictwem nowego managera. Równolegle wypracowałem kulturę pracy
+  opartą na współodpowiedzialności zespołu, transparentności oraz
+  rozwiązywaniu problemów bez szukania winnych.
+
+competencies:
+  - Leadership
+  - Team Coordination
+  - Service Operations
+  - Workflow Design
+  - Operational Training
+  - Onboarding
+  - Stakeholder Communication
+  - Organizational Scaling
+  - Process Improvement
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - feedback_receptiveness
+  - feedback_giving
+  - psychological_safety
+  - transparency
+  - perspective_taking
+  - solution_orientation
+  - constructive_challenge
+
+situation: &gt;
+  W związku z brakami kadrowymi i problemami organizacyjnymi zostałem
+  poproszony o przejęcie odpowiedzialności za dział serwisu.
+  Organizacja nie posiadała spójnego modelu pracy, obowiązki nie były
+  jasno zdefiniowane, a wiele działań opierało się na indywidualnej,
+  nieudokumentowanej wiedzy pracowników.
+
+  Dział serwisu pełnił rolę organizacyjnego &quot;ostatniego ogniwa&quot;,
+  przejmując konsekwencje problemów powstałych na wcześniejszych etapach
+  procesu. Jednocześnie nie posiadał narzędzi pozwalających skutecznie
+  raportować rzeczywisty zakres wykonywanej pracy ani odróżniać problemów
+  wynikających z błędów własnych od problemów generowanych przez inne
+  obszary organizacji.
+
+problem: &gt;
+  Dział wymagał uporządkowania codziennej pracy, poprawy przepływu
+  informacji oraz stworzenia struktury umożliwiającej skuteczne
+  wdrażanie nowych pracowników i dalsze funkcjonowanie organizacji.
+
+  Dodatkowym problemem było funkcjonowanie w kulturze organizacyjnej,
+  która często koncentrowała się na wskazywaniu osób odpowiedzialnych za
+  problem zamiast na analizie jego przyczyn. Powodowało to napięcia,
+  utrudniało współpracę oraz osłabiało poczucie odpowiedzialności
+  zespołowej.
+
+constraints:
+  - Ograniczone zasoby kadrowe
+  - Rosnąca liczba zgłoszeń
+  - Braki kompetencyjne części zespołu
+  - Konieczność utrzymania ciągłości pracy działu
+  - Brak formalnie zdefiniowanych procesów
+
+goal: &gt;
+  Ustabilizować funkcjonowanie działu serwisu, uporządkować organizację
+  pracy oraz stworzyć podstawy pozwalające na dalszy rozwój zespołu.
+
+actions:
+  - Przejąłem odpowiedzialność za bieżące funkcjonowanie działu serwisu.
+  - Uporządkowałem podział obowiązków między pracowników oraz zdefiniowałem podstawowe role w zespole.
+  - Zaprojektowałem i wdrożyłem workflow obsługi zgłoszeń oraz przepływu informacji wewnątrz działu.
+  - Ustandaryzowałem komunikację między serwisem, klientami i pozostałymi działami organizacji.
+  - Koordynowałem pracę zespołu liczącego do 5 osób.
+  - Wdrażałem nowych pracowników oraz wspierałem ich w osiąganiu samodzielności operacyjnej.
+  - Organizowałem harmonogramy pracy oraz priorytetyzację zadań.
+  - Prowadziłem szkolenia wewnętrzne dotyczące procedur, narzędzi i organizacji pracy.
+  - Regularnie zbierałem informacje zwrotne dotyczące działania procesów, standardów i narzędzi wykorzystywanych przez zespół, wykorzystując je do dalszego doskonalenia sposobu pracy działu.
+  - Wspólnie z zespołem prowadziłem burze mózgów dotyczące problemów organizacyjnych i sposobów ich rozwiązania, angażując pracowników w wypracowywanie usprawnień.
+  - Wdrożyłem system raportowania pracy wykonywanej poza standardowym workflow, dzięki czemu możliwe stało się lepsze odzwierciedlenie rzeczywistego obciążenia pracowników.
+  - Promowałem kulturę otwartego omawiania problemów i błędów, koncentrując dyskusję na przyczynach sytuacji oraz działaniach naprawczych zamiast na poszukiwaniu winnych.
+  - Wprowadziłem zasadę odpowiedzialności zespołowej za rezultaty działu, ograniczając kulturę wzajemnego obwiniania się oraz wzmacniając współpracę między pracownikami.
+  - Chroniłem pracowników przed nadmiernym obciążeniem wynikającym z trudnych sytuacji obsługowych, przejmując najbardziej wymagające rozmowy z klientami oraz wspierając zespół w sytuacjach kryzysowych.
+  - Regularnie raportowałem wyniki, ograniczenia i problemy działu przełożonemu, wykorzystując dane z systemu ticketowego oraz przygotowane raporty operacyjne.
+  - Przygotowałem dział do przejęcia przez nowego kierownika oraz aktywnie wspierałem proces przekazania obowiązków.
+
+challenges:
+  - Przejęcie odpowiedzialności za dział bez wcześniejszego przygotowania.
+  - Organizacja pracy podczas niedoborów kadrowych.
+  - Wdrażanie nowych pracowników przy utrzymaniu ciągłości działania.
+  - Budowanie spójnego sposobu pracy w zespole o zróżnicowanych kompetencjach.
+  - Konieczność jednoczesnego zarządzania operacjami i rozwojem działu.
+  - Ograniczanie konfliktów wynikających z niejasnego podziału odpowiedzialności między działami.
+  - Budowanie kultury współpracy w środowisku przyzwyczajonym do wskazywania osób odpowiedzialnych za błędy.
+  - Równoważenie oczekiwań zarządu, działu handlowego oraz możliwości operacyjnych zespołu serwisowego.
+  - Zapewnienie transparentności działań działu przy jednoczesnym zachowaniu wysokiej efektywności operacyjnej.
+
+results:
+  quantitative:
+    - Koordynacja zespołu liczącego do 5 osób.
+    - Wdrożenie nowych pracowników i nowego kierownika działu.
+    - Utrzymanie ciągłości działania serwisu podczas okresu transformacji.
+  qualitative:
+    - Uporządkowano organizację pracy działu.
+    - Poprawiono przepływ informacji.
+    - Skrócono czas wdrażania nowych pracowników.
+    - Zmniejszono zależność od pojedynczych osób.
+    - Stworzono podstawy pod dalszy rozwój organizacji serwisowej.
+    - Zapewniono płynne przekazanie odpowiedzialności nowemu kierownikowi.
+    - Zwiększono transparentność pracy działu.
+    - Wzmocniono kulturę współpracy i odpowiedzialności zespołowej.
+    - Ograniczono liczbę konfliktów wynikających z niejasności organizacyjnych.
+
+evidence:
+  achievement_ids:
+    - ACH-004
+  supporting_materials:
+    - Workflow serwisowe
+    - Harmonogramy pracy
+    - Materiały onboardingowe
+    - Dokumentacja organizacyjna
+
+lessons_learned:
+  - Nawet niewielki zespół wymaga jasno określonych ról i odpowiedzialności.
+  - Stabilizacja organizacji jest często ważniejsza niż szybkie zmiany.
+  - Dobrze przygotowany onboarding znacząco skraca czas osiągania samodzielności.
+  - Przekazywanie odpowiedzialności powinno być planowane równie starannie jak jej przejmowanie.
+  - Problemy organizacyjne najczęściej wynikają z niejasnych zasad, braku informacji lub niewłaściwego podziału odpowiedzialności, a nie ze złej woli pracowników.
+  - Otwarta rozmowa o błędach jest skuteczniejsza niż poszukiwanie winnych.
+  - Zaangażowanie zespołu w wypracowywanie rozwiązań zwiększa akceptację zmian i poprawia ich skuteczność.
+  - Transparentność danych i regularne raportowanie ograniczają konflikty oparte na domysłach i opiniach.
+  - Kultura współodpowiedzialności pozwala budować silniejsze zespoły niż kultura indywidualnego rozliczania błędów.
+
+interview_angles:
+  - Leadership
+  - Team Management
+  - Organizational Change
+  - Onboarding
+  - Operational Excellence
+  - People Development
+  - Service Operations
+  - Psychological Safety
+  - Feedback Culture
+  - Accountability
+  - Team Leadership
+
+cv_bullets:
+  - Przejąłem odpowiedzialność za dział serwisu i przeprowadziłem jego stabilizację organizacyjną.
+  - Zaprojektowałem workflow oraz model pracy wspierający codzienną obsługę klientów.
+  - Koordynowałem zespół serwisowy i wdrażałem nowych pracowników.
+  - Zbudowałem kulturę współodpowiedzialności i rozwiązywania problemów bez szukania winnych.
+  - Przygotowałem dział do płynnego przekazania nowemu kierownikowi.
+</pre>
+<h2 class="file" id="STORY-003">Stories/STORY-003.yaml <span class="id-badge">[STORY-003]</span></h2>
+<pre>id: STORY-003
+
+title: Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
+
+summary: &gt;
+  Współtworzyłem od podstaw nowy model gwarancyjny obejmujący producentów,
+  instalatorów, dystrybutorów, użytkowników końcowych oraz dział serwisu.
+  Projekt obejmował stworzenie nowych umów, regulaminów, procesów,
+  formularzy, workflowów oraz systemu identyfikacji urządzeń opartego na
+  numerach seryjnych. Efektem było skrócenie czasu uzyskania gwarancji,
+  skrócenie czasu rozpatrywania reklamacji oraz znaczące zwiększenie
+  przewidywalności procesu dla wszystkich stron.
+
+competencies:
+  - Stakeholder Management
+  - Business Analysis
+  - Process Design
+  - Service Design
+  - Change Management
+  - Requirements Gathering
+  - Systems Thinking
+  - Legal &amp; Regulatory Awareness
+  - UX Design
+  - Strategic Thinking
+
+behavioral_signals:
+  - ownership
+  - perspective_taking
+  - feedback_receptiveness
+  - constructive_challenge
+  - solution_orientation
+  - transparency
+  - accountability
+  - psychological_safety
+
+situation: &gt;
+  Problem gwarancyjny początkowo wydawał się problemem działu serwisu,
+  jednak szybko okazało się, że dotyczy całej organizacji.
+
+  Formalnie istniały warunki gwarancji oraz procedury ich obsługi, jednak
+  w praktyce były one martwe. Instalatorzy często uzupełniali dokumentację
+  po czasie lub podawali informacje niezgodne ze stanem faktycznym.
+  Większość klientów nie realizowała procesu zgodnie z założeniami, a
+  dokumenty wymagane do uruchomienia gwarancji trafiały do firmy dopiero
+  w momencie wystąpienia awarii.
+
+  Dodatkowo część klientów i partnerów biznesowych wywierała nacisk na
+  pomijanie procedur. Powodowało to konflikty między działem handlowym
+  a serwisem, rozbieżne interpretacje zasad współpracy oraz okresowe
+  problemy wizerunkowe.
+
+  Początkowo moim zadaniem było przygotowanie dokumentacji w oparciu
+  o koncepcję przedstawioną przez dyrektora handlowego. W trakcie prac
+  okazało się jednak, że problem jest znacznie szerszy i obejmuje procesy,
+  odpowiedzialności, komunikację, wymagania producentów oraz ograniczenia
+  technologiczne i prawne. W efekcie stopniowo przejąłem rolę głównego
+  projektanta rozwiązania i koordynatora prac koncepcyjnych.
+
+problem: &gt;
+  Proces gwarancyjny nie odpowiadał rzeczywistym zachowaniom użytkowników,
+  instalatorów i producentów urządzeń.
+
+  Obsługa gwarancji opierała się na dokumentach papierowych, komunikacji
+  telefonicznej, wiadomościach e-mail oraz indywidualnych ustaleniach.
+  Nie istniał spójny system pozwalający jednoznacznie określić status
+  urządzenia, historię jego obsługi oraz zakres odpowiedzialności
+  poszczególnych uczestników procesu.
+
+  Serwis był zmuszany do obchodzenia procedur pod wpływem nacisków
+  handlowych, a brak jasnych zasad powodował wydłużenie czasu obsługi
+  oraz częste konflikty między uczestnikami procesu.
+
+  Dodatkowym problemem było to, że istniejące rozwiązania zostały
+  zaprojektowane bardziej pod kątem formalnym niż operacyjnym.
+  Proces był poprawny na papierze, ale nie odpowiadał sposobowi działania
+  klientów, instalatorów i partnerów biznesowych.
+
+constraints:
+  - Sprzeczne oczekiwania działu handlowego i działu serwisu.
+  - Istniejące przyzwyczajenia klientów oraz instalatorów.
+  - Brak centralnego systemu identyfikacji urządzeń.
+  - Konieczność uwzględnienia wymagań producentów kotłów.
+  - Wysoka liczba interesariuszy.
+  - Istniejące napięcia organizacyjne między działami.
+  - Konieczność zachowania zgodności z obowiązującymi przepisami.
+
+goal: &gt;
+  Stworzyć jednolity i skalowalny system gwarancyjny, który będzie
+  jednocześnie prosty dla użytkownika, przejrzysty dla instalatora,
+  wykonalny dla serwisu oraz akceptowalny dla producentów urządzeń i
+  partnerów handlowych.
+
+actions:
+  - Przeanalizowałem wcześniejsze projekty i drafty dokumentów gwarancyjnych.
+  - Zidentyfikowałem rzeczywiste potrzeby wszystkich uczestników procesu.
+  - Prowadziłem iteracyjne warsztaty i konsultacje z interesariuszami.
+  - Wykorzystywałem prototypy, szkice i kolejne wersje dokumentów jako narzędzie zbierania wymagań i weryfikacji założeń.
+  - Zachęcałem uczestników projektu do krytycznej oceny proponowanych rozwiązań, prosząc o argumentację oraz wskazywanie celu proponowanych zmian.
+  - Przeprowadziłem wiele iteracji dokumentów i procesów, wykorzystując feedback do stopniowego dopracowywania rozwiązania.
+  - Rozbiłem rozwiązanie na zestaw wyspecjalizowanych dokumentów pełniących różne funkcje biznesowe.
+  - Współtworzyłem umowę dla instalatorów wraz z regulaminami i cennikami.
+  - Współtworzyłem odrębne modele współpracy dla producentów urządzeń.
+  - Zaprojektowałem strukturę procesów opartych o formularze i workflow.
+  - Opracowałem system zbierania, nadawania i ewidencjonowania numerów seryjnych urządzeń.
+  - Przekształciłem proces rejestracji gwarancji z modelu papierowego na model systemowy.
+  - Zakwestionowałem założenia istniejącego procesu gwarancyjnego, analizując rzeczywiste przyczyny jego nieskuteczności zamiast próbować odtworzyć wcześniejszy model.
+  - Rozwiązałem problem podpisów i zgód formalnych poprzez rozdzielenie części instalatorskiej i klienckiej na dwa niezależne formularze, eliminując ograniczenia wynikające z RODO i istnienia wielu produktów.
+  - Oceniałem konsekwencje proponowanych zmian pod kątem ryzyk, kosztów, zgodności formalnej oraz wpływu na uczestników procesu.
+  - Współtworzyłem komunikację i narrację wyjaśniającą sens nowych zasad współpracy.
+  - Wspierałem przygotowanie materiałów szkoleniowych i informacyjnych dla uczestników programu.
+
+challenges:
+  - Bardzo duża liczba interesariuszy o sprzecznych oczekiwaniach.
+  - Ciągłe rozszerzanie zakresu projektu wraz z odkrywaniem kolejnych zależności.
+  - Trudność w odróżnianiu wymagań krytycznych od elementów opcjonalnych.
+  - Konieczność pogodzenia potrzeb handlowych, serwisowych i użytkowników końcowych.
+  - Potrzeba stworzenia prostego procesu dla użytkownika przy zachowaniu wysokiej kontroli operacyjnej.
+  - Konieczność zbudowania zaufania do nowych zasad współpracy.
+  - Zarządzanie wieloma iteracjami dokumentów, procedur i wymagań przy jednoczesnym zachowaniu spójności całego systemu.
+  - Utrzymanie równowagi między przejrzystością zasad współpracy a koniecznością zabezpieczenia interesów przedsiębiorstwa.
+  - Konieczność kwestionowania utrwalonych założeń organizacyjnych bez utraty poparcia kluczowych interesariuszy.
+
+results:
+  quantitative:
+    - Wzrost liczby poprawnie składanych wniosków gwarancyjnych o około 20%.
+    - Skrócenie czasu uzyskania gwarancji z około 7–8 dni do około 3 dni.
+    - Skrócenie czasu rozpatrywania reklamacji z około 4–5 dni do około 2 dni.
+    - Skrócenie czasu podejmowania decyzji serwisowych o około 95%.
+    - Utrzymanie kosztów obsługi pomimo wzrostu liczby urządzeń na rynku.
+  qualitative:
+    - Ujednolicenie zasad współpracy między uczestnikami procesu.
+    - Zmniejszenie liczby sporów interpretacyjnych.
+    - Zwiększenie przewidywalności obsługi gwarancyjnej.
+    - Poprawa kultury organizacyjnej poprzez formalizację wiedzy.
+    - Przeniesienie kluczowej wiedzy z głów pracowników do systemu.
+    - Stworzenie podstaw do dalszej cyfryzacji procesów serwisowych.
+    - Znaczący wzrost pozytywnego odbioru szkoleń powiązanych z programem gwarancyjnym.
+    - Ograniczenie liczby wyjątków i indywidualnych interpretacji zasad współpracy.
+    - Zwiększenie przejrzystości odpowiedzialności między uczestnikami procesu.
+
+evidence:
+  achievement_ids:
+    - ACH-005
+    - ACH-006
+    - ACH-014
+    - ACH-013
+  supporting_materials:
+  - Dokumentacja procesowa
+  - Dokumentacja projektowa
+  - Materiały szkoleniowe
+  - Workflow operacyjne
+
+lessons_learned:
+  - Najtrudniejsze problemy organizacyjne rzadko są problemami pojedynczego działu.
+  - Proces może być poprawny formalnie, ale nieskuteczny operacyjnie.
+  - Narracja i komunikacja są równie ważne jak sama procedura.
+  - Ludzie chętniej stosują zasady, jeśli rozumieją ich cel.
+  - Projektowanie procesów wymaga zrozumienia motywacji wszystkich uczestników systemu.
+  - Proste i intuicyjne ścieżki kontaktu znacząco zwiększają zaangażowanie użytkowników.
+  - Dobrze zaprojektowany system powinien ograniczać potrzebę podejmowania indywidualnych decyzji.
+  - Uczestnicy projektu znacznie łatwiej oceniają konkretne rozwiązania niż abstrakcyjne wymagania.
+  - Iteracyjne prototypowanie pozwala szybciej odkrywać rzeczywiste potrzeby interesariuszy niż tradycyjne zbieranie wymagań.
+  - Największe usprawnienia często wynikają z zakwestionowania podstawowych założeń projektu, a nie z optymalizacji istniejących rozwiązań.
+  - Transparentne komunikowanie celów, ryzyk i kompromisów zwiększa akceptację nawet trudnych decyzji organizacyjnych.
+
+interview_angles:
+  - Stakeholder Management
+  - Business Analysis
+  - Process Design
+  - Organizational Change
+  - Conflict Resolution
+  - Requirements Gathering
+  - Service Design
+  - Strategic Thinking
+  - Customer Experience
+  - Systems Thinking
+  - Change Leadership
+  - Facilitation
+
+cv_bullets:
+  - Współtworzyłem kompleksowy system gwarancyjny obejmujący producentów, instalatorów, dystrybutorów i użytkowników końcowych.
+  - Skróciłem czas uzyskania gwarancji z 7–8 dni do około 3 dni oraz czas rozpatrywania reklamacji z 4–5 dni do około 2 dni.
+  - Zaprojektowałem procesy, workflowy oraz system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając przewidywalność i skalowalność obsługi.
+  - Przeprowadziłem wieloetapowy proces zbierania wymagań i uzgadniania rozwiązań między interesariuszami o sprzecznych oczekiwaniach.
+</pre>
+<h2 class="file" id="STORY-004">Stories/STORY-004.yaml <span class="id-badge">[STORY-004]</span></h2>
+<pre>id: STORY-004
+
+title: Projektowanie modelu działania serwisu przy braku danych historycznych
+
+summary: &gt;
+  Przejąłem odpowiedzialność za dział serwisu funkcjonujący w oparciu
+  o opinie i przypuszczenia zamiast danych. Stworzyłem system pomiarowy,
+  zweryfikowałem kluczowe założenia organizacyjne oraz zaprojektowałem
+  model działania pozwalający obsłużyć gwałtowny wzrost liczby urządzeń
+  bez utraty kluczowych kompetencji technicznych. Projekt doprowadził do
+  zmiany sposobu podejmowania decyzji z opartego na intuicji na oparty
+  na danych oraz ujawnił rzeczywiste przyczyny przeciążenia organizacji.
+
+competencies:
+  - Analiza Operacyjna
+  - Diagnostyka Organizacyjna
+  - Data-Driven Improvements
+  - Capacity Planning
+  - Systems Thinking
+  - Service Process Design
+  - Podejmowanie Decyzji Przy Niepełnych Danych
+  - Stakeholder Communication
+  - Root Cause Analysis
+  - Organizational Design
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - constructive_challenge
+  - solution_orientation
+  - transparency
+  - perspective_taking
+  - psychological_safety
+  - feedback_receptiveness
+
+situation: &gt;
+  Po objęciu odpowiedzialności za dział serwisu firma obsługiwała dziesiątki
+  tysięcy urządzeń pracujących na rynku, a ich liczba rosła średnio
+  o około 20% rok do roku. W organizacji funkcjonowało przekonanie,
+  że serwis nie odbiera telefonów, klienci zbyt długo czekają na pomoc,
+  a jedynym rozwiązaniem problemu będzie zwiększenie liczby pracowników
+  oraz wydłużenie dostępności działu.
+
+  Jednocześnie nie istniał praktycznie żaden system pomiarowy pozwalający
+  zweryfikować te założenia. Dostępne były jedynie podstawowe dane
+  billingowe dotyczące liczby i długości połączeń.
+
+problem: &gt;
+  Organizacja musiała podjąć decyzje dotyczące przyszłej struktury
+  serwisu, zatrudnienia oraz dostępności wsparcia technicznego, jednak
+  brakowało wiarygodnych danych pozwalających określić rzeczywistą skalę
+  problemów i ich przyczyny. Błędne decyzje mogły doprowadzić zarówno
+  do pogorszenia jakości obsługi klienta, jak i utraty najbardziej
+  doświadczonych pracowników wskutek przeciążenia pracą.
+
+  Dodatkowym problemem było funkcjonowanie organizacji w oparciu
+  o utrwalone przekonania i opinie, których nikt wcześniej nie próbował
+  systemowo zweryfikować.
+
+constraints:
+  - Brak historycznych danych operacyjnych.
+  - Brak nagrań rozmów telefonicznych.
+  - Brak systemu klasyfikacji zgłoszeń.
+  - Ograniczone zasoby kadrowe.
+  - Rosnąca liczba urządzeń na rynku.
+  - Duża sezonowość obciążenia.
+  - Presja biznesowa na zwiększanie dostępności serwisu.
+  - Konieczność podejmowania decyzji przed rozpoczęciem sezonu grzewczego.
+
+goal: &gt;
+  Ustalić rzeczywiste źródła przeciążenia serwisu, zweryfikować
+  funkcjonujące w organizacji założenia, określić przyszłe potrzeby
+  kadrowe oraz zaprojektować model działania pozwalający skalować
+  obsługę klienta bez utraty kluczowych kompetencji technicznych.
+
+actions:
+  - Stworzyłem pierwszy system pomiarowy dla działu serwisu obejmujący analizę liczby połączeń, czasu rozmów, typów klientów, częstotliwości kontaktów oraz danych ticketowych.
+  - Wprowadziłem obowiązek rejestrowania każdego zgłoszenia niezależnie od tego, czy problem został rozwiązany podczas pierwszej rozmowy, czy wymagał dalszej obsługi.
+  - Przyjąłem zasadę oddzielania opinii od danych i świadomie wstrzymałem się z formułowaniem wniosków do momentu zbudowania minimalnego systemu pomiarowego.
+  - Przeanalizowałem dane z poprzedniego sezonu obejmujące  kilka tysięcy połączeń oraz średni czas rozmowy, aby określić rzeczywiste obciążenie zespołu.
+  - Zidentyfikowałem kluczowe wzorce operacyjne, w tym wpływ sezonowości, temperatury oraz dni tygodnia na liczbę zgłoszeń.
+  - Przeanalizowałem ruch telefoniczny po godzinie 15:00 oraz w weekendy, aby zweryfikować biznesową zasadność utrzymywania rozszerzonej dostępności serwisu.
+  - Wykazałem, że mniej niż 5% wszystkich połączeń przypadało na wieczory i weekendy, co podważyło potrzebę utrzymywania dodatkowych dyżurów.
+  - Pomimo sprzeciwu części działu handlowego i kierownictwa rekomendowałem ograniczenie dostępności serwisu poza standardowymi godzinami pracy w celu ochrony najbardziej doświadczonych ekspertów.
+  - Połączyłem dane telefoniczne z CRM i ticketami, aby zweryfikować rzeczywiste źródła ruchu trafiającego do serwisu.
+  - Obaliłem trzy kluczowe założenia funkcjonujące w organizacji:
+    - głównymi odbiorcami wsparcia nie byli instalatorzy, lecz klienci końcowi,
+    - instalatorzy nie przejmowali odpowiedzialności za znaczną część klientów po montażu,
+    - przeciążenie serwisu wynikało nie tylko z przepustowości działu, ale również z wadliwego modelu obsługi posprzedażowej.
+  - Ustaliłem, że zdecydowana większość wszystkich kontaktów pochodziło od klientów końcowych, co całkowicie zmieniło sposób postrzegania problemu przez organizację.
+  - Wykorzystałem dane ticketowe do identyfikacji najczęściej występujących problemów i określenia, które zgłoszenia wymagają eksperta, a które mogą zostać obsłużone przez mniej doświadczonych pracowników.
+  - Zaprojektowałem podział pracy pomiędzy szybkie wsparcie telefoniczne oraz zaawansowane przypadki wymagające eksperckiej diagnostyki lub wyjazdu serwisowego.
+  - Świadomie budowałem zaufanie zespołu do procesu pomiarowego, podkreślając że dane służą analizie procesów i obciążenia działu, a nie ocenie poszczególnych osób.
+  - Wykorzystywałem wyniki analiz do ochrony interesów zarówno przedsiębiorstwa, klientów końcowych, jak i pracowników serwisu, unikając opowiadania się po stronie pojedynczych grup interesariuszy.
+  - Prowadziłem comiesięczną analizę danych operacyjnych w celu weryfikacji hipotez oraz bieżącego dostosowywania organizacji pracy.
+
+challenges:
+  - Podejmowanie decyzji strategicznych bez wiarygodnych danych historycznych.
+  - Oddzielenie faktów od opinii funkcjonujących w organizacji.
+  - Przekonanie interesariuszy do niepopularnej decyzji o ograniczeniu dostępności.
+  - Ochrona kluczowych ekspertów przed utratą w okresie największego przeciążenia.
+  - Projektowanie struktury organizacyjnej przy dynamicznie rosnącym obciążeniu.
+  - Identyfikacja rzeczywistych przyczyn problemów zamiast ich objawów.
+  - Kwestionowanie utrwalonych przekonań organizacyjnych bez eskalowania konfliktów pomiędzy działami.
+  - Budowanie wiarygodności nowego systemu pomiarowego w środowisku obawiającym się nadmiernej kontroli i rozliczania indywidualnych wyników.
+  - Podejmowanie decyzji przy niepełnych danych oraz konieczność komunikowania poziomu niepewności wniosków.
+
+results:
+  quantitative:
+    - Przeanalizowano wzrost liczby połączeń pomiędzy sezonami.
+    - Potwierdzono, że mniej niż 5% ruchu przypadało na godziny wieczorne i weekendy.
+    - Ustalono, że zdecydowana większość wszystkich kontaktów pochodziło od klientów końcowych.
+    - Wsparto wzrost liczby urządzeń na rynku 20% rok do roku.
+    - Rozbudowano strukturę działu przy zachowaniu kluczowych kompetencji eksperckich.
+    - W kolejnym sezonie średni czas rozmowy spadł o około 36%.
+    - Na podstawie analizy danych opracowano około 15 priorytetowych procedur diagnostycznych.
+  qualitative:
+    - Zastąpiono decyzje oparte na opiniach decyzjami opartymi na danych.
+    - Obalono trzy kluczowe założenia funkcjonujące w organizacji.
+    - Ujawniono rzeczywiste przyczyny przeciążenia serwisu.
+    - Ochroniono kluczowe kompetencje techniczne przed utratą.
+    - Stworzono fundament pod dalsze skalowanie działu serwisu.
+    - Zaprojektowano model działania wykorzystywany przez kolejnych kierowników.
+    - Wpłynięto na strategię obsługi klienta funkcjonującą w organizacji przez kolejne lata.
+    - Potwierdzono, że problem wymagał zmian systemowych, a nie wyłącznie zwiększania zatrudnienia.
+    - Zbudowano kulturę podejmowania decyzji opartą na danych zamiast intuicji i przypuszczeniach.
+
+evidence:
+  achievement_ids:
+    - ACH-004
+    - ACH-010
+  supporting_materials:
+    - Statystyki połączeń telefonicznych
+    - Raporty CRM
+    - Analizy ticketów serwisowych
+    - Analizy obciążenia działu
+    - Plany organizacyjne serwisu
+
+lessons_learned:
+  - Najbardziej kosztowne decyzje organizacyjne są często podejmowane na podstawie niezweryfikowanych założeń.
+  - Nawet ograniczona ilość danych może wystarczyć do podejmowania trafnych decyzji, jeśli mierzone są właściwe wskaźniki.
+  - Ochrona kluczowych kompetencji organizacji może być ważniejsza niż maksymalizacja krótkoterminowej dostępności.
+  - Objawy problemu rzadko wskazują jego rzeczywistą przyczynę.
+  - Skalowanie organizacji wymaga zrozumienia struktury pracy, a nie wyłącznie zwiększania liczby pracowników.
+  - Dane są najskuteczniejsze wtedy, gdy pomagają zrozumieć problem, a nie potwierdzić wcześniej przyjęte założenia.
+  - Skuteczne zarządzanie wymaga uwzględnienia perspektywy wszystkich stron systemu, również tych, które nie uczestniczą bezpośrednio w podejmowaniu decyzji.
+  - Transparentne komunikowanie poziomu pewności wniosków buduje większe zaufanie niż prezentowanie niepełnych danych jako niepodważalnych faktów.
+
+interview_angles:
+  - Data-Driven Decision Making
+  - Analytical Thinking
+  - Organizational Diagnostics
+  - Capacity Planning
+  - Stakeholder Management
+  - Difficult Decisions
+  - Change Management
+  - Service Operations
+  - Problem Solving
+  - Decision Making Under Uncertainty
+  - Root Cause Analysis
+  - Evidence-Based Management
+
+cv_bullets:
+  - Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy niemal całkowitym braku danych historycznych.
+  - Obaliłem kluczowe założenia organizacyjne i zidentyfikowałem rzeczywiste przyczyny przeciążenia działu obsługującego kilkadziesiąt tysięcy urządzeń.
+  - Zaprojektowałem model działania serwisu wspierający dynamiczny wzrost skali działalności bez utraty kluczowych kompetencji technicznych.
+  - Wdrożyłem metryki i model zarządzania wykorzystywane przez kolejnych kierowników serwisu.
+</pre>
+<h2 class="file" id="STORY-005">Stories/STORY-005.yaml <span class="id-badge">[STORY-005]</span></h2>
+<pre>id: STORY-005
+
+title: Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
+
+summary: &gt;
+  Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN,
+  Wiki.js oraz interaktywnych schematach diagnostycznych, który pozwolił
+  przechwycić wiedzę znajdującą się w głowach ekspertów i przekształcić ją
+  w skalowalny system organizacyjny. W ciągu czterech miesięcy zespół
+  stworzył 120 schematów diagnostycznych i artykułów serwisowych,
+  skracając czas osiągnięcia samodzielności operacyjnej nowych
+  serwisantów z 8–9 miesięcy do 2–3 miesięcy.
+
+competencies:
+  - Knowledge Management
+  - Knowledge Engineering
+  - Process Design
+  - BPMN 2.0
+  - Systems Thinking
+  - Organizational Learning
+  - Technical Documentation
+  - Onboarding
+  - Enablement
+  - Change Management
+  - Cross-Functional Collaboration
+  - Project Coordination
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - feedback_giving
+  - feedback_receptiveness
+  - psychological_safety
+  - solution_orientation
+  - perspective_taking
+  - transparency
+  - constructive_challenge
+
+situation: &gt;
+  Po analizie pracy działu serwisu zidentyfikowaliśmy, że znacząca część
+  zgłoszeń mogłaby być obsługiwana przez mniej doświadczonych pracowników,
+  pod warunkiem zapewnienia im odpowiednich narzędzi diagnostycznych.
+  Problem polegał na tym, że wiedza niezbędna do rozwiązywania problemów
+  znajdowała się głównie w głowach dwóch ekspertów serwisowych oraz
+  głównego konstruktora produktu.
+
+  Dotychczasowe próby onboardingu nowych pracowników nie przynosiły
+  oczekiwanych rezultatów. Osiągnięcie samodzielności operacyjnej
+  wymagało od 8 do 9 miesięcy pracy, a nowi pracownicy często nie byli
+  w stanie przejść okresu próbnego.
+
+problem: &gt;
+  Organizacja potrzebowała sposobu na szybkie przekazanie wiedzy
+  eksperckiej nowym pracownikom przed kolejnym sezonem grzewczym.
+  Nie było jednak gotowych materiałów, dokumentacji ani metodologii
+  pozwalającej przechwycić i uporządkować wiedzę techniczną dotyczącą
+  diagnostyki urządzeń.
+
+  Dodatkowym wyzwaniem było stworzenie środowiska, w którym eksperci
+  będą gotowi poświęcić czas na formalizację swojej wiedzy mimo dużego
+  obciążenia bieżącą pracą oraz konieczności nauczenia się nowych
+  narzędzi i metod pracy.
+
+constraints:
+  - Wiedza znajdowała się głównie w głowach trzech ekspertów.
+  - Brak istniejącej dokumentacji diagnostycznej.
+  - Brak sprawdzonej metodologii opisu wiedzy eksperckiej.
+  - Ograniczona dostępność ekspertów serwisowych.
+  - Maksymalnie cztery miesiące na realizację projektu.
+  - Konieczność przygotowania rozwiązania przed kolejnym sezonem grzewczym.
+  - Młody i niedoświadczony zespół.
+
+goal: &gt;
+  Stworzyć skalowalny system przechwytywania, organizowania i przekazywania
+  wiedzy eksperckiej, który umożliwi szybszy onboarding nowych pracowników,
+  zmniejszy zależność organizacji od pojedynczych ekspertów oraz pozwoli
+  mniej doświadczonym serwisantom samodzielnie rozwiązywać najczęstsze
+  problemy klientów.
+
+actions:
+  - Przeanalizowałem najczęściej występujące problemy zgłaszane przez klientów i uporządkowałem je w logiczne obszary diagnostyczne.
+
+  - Przeprowadziłem analizę dostępnych metod modelowania procesów i wiedzy eksperckiej, identyfikując BPMN 2.0 jako najbardziej obiecujące rozwiązanie.
+
+  - Samodzielnie nauczyłem się notacji BPMN 2.0 na podstawie literatury, materiałów edukacyjnych i dokumentacji technicznej.
+
+  - Zidentyfikowałem ograniczenia klasycznych diagramów BPMN dla złożonych procesów diagnostycznych i opracowałem koncepcję podziału wiedzy na mniejsze, połączone ze sobą interaktywne schematy.
+
+  - Zaprojektowałem architekturę rozwiązania opartą o Wiki.js, diagrams.net oraz sieć wzajemnie powiązanych diagramów.
+
+  - Opracowałem standard dokumentacji obejmujący strukturę schematów diagnostycznych, artykułów serwisowych, zasady nazewnictwa, sposób prezentacji wiedzy oraz proces publikacji i recenzji.
+
+  - Wprowadziłem podział dokumentacji na:
+      - Drzewa Diagnostyczne (DD)
+      - Artykuły Serwisowe (AS)
+
+  - Zaprojektowałem proces tworzenia wiedzy obejmujący:
+      - identyfikację potrzeby
+      - tworzenie diagramu
+      - przygotowanie opisu
+      - recenzję ekspercką
+      - weryfikację przez głównego konstruktora
+      - publikację
+
+  - Współtworzyłem główne drzewa diagnostyczne wraz z dwoma ekspertami serwisowymi i koordynowałem ich iteracyjną walidację z głównym konstruktorem produktu.
+
+  - Wykorzystywałem warsztaty i pytania pomocnicze do wydobywania ukrytej wiedzy eksperckiej oraz eliminowania niejednoznaczności logicznych w procesach diagnostycznych.
+
+  - Podczas recenzji diagramów prowadziłem dyskusje dotyczące zależności logicznych, pomagając ekspertom przełożyć intuicyjną wiedzę na jednoznaczne algorytmy decyzyjne.
+
+  - Wspólnie z zespołem iteracyjnie doskonaliłem strukturę diagramów i dokumentacji na podstawie uwag ekspertów oraz doświadczeń zdobytych podczas pracy.
+
+  - Na podstawie informacji zwrotnych zespołu zrezygnowaliśmy z modelu pojedynczych, rozbudowanych diagramów na rzecz interaktywnych i powiązanych ze sobą mniejszych drzew diagnostycznych.
+
+  - Samodzielnie stworzyłem około 30% wszystkich diagramów i opisów.
+
+  - Zrecenzowałem około 90% powstających materiałów w celu utrzymania spójności logicznej, jakości oraz zgodności ze standardami BPMN.
+
+  - Stworzyłem kulturę recenzji opartą na wspólnym doskonaleniu materiałów zamiast przypisywania odpowiedzialności za błędy pojedynczym osobom.
+
+  - Przygotowałem szkolenia z BPMN dla zespołu oraz materiały onboardingowe umożliwiające samodzielne korzystanie z nowego rozwiązania.
+
+  - Zaprojektowałem system śledzenia postępów oparty na elementach gamifikacji, który pozwalał monitorować tempo prac i utrzymywać zaangażowanie zespołu.
+
+  - Wspierałem motywację zespołu poprzez działania integracyjne, świętowanie postępów oraz angażowanie zarządu w docenianie osiągnięć uczestników projektu.
+
+  - Koordynowałem pracę czteroosobowego zespołu odpowiedzialnego za tworzenie dokumentacji oraz regularnie raportowałem postępy przed zarządem.
+
+  - Udostępniłem zarządowi bieżący wgląd w realizację projektu poprzez system raportowania postępu oparty na wskaźnikach procentowych i punktowych.
+
+  - Współorganizowałem wdrożenie Wiki.js na firmowym serwerze oraz publikację gotowej bazy wiedzy.
+
+challenges:
+  - Przechwycenie wiedzy, która nigdy wcześniej nie była formalnie opisana.
+  - Zamiana intuicyjnej wiedzy ekspertów w powtarzalne algorytmy decyzyjne.
+  - Opracowanie własnej metodologii tworzenia dokumentacji od podstaw.
+  - Utrzymanie spójności materiałów tworzonych przez wiele osób.
+  - Realizacja projektu w ograniczonym czasie przed sezonem grzewczym.
+  - Nauczenie zespołu nowej notacji procesowej i sposobu pracy.
+  - Utrzymanie motywacji ekspertów podczas wielotygodniowej, powtarzalnej pracy dokumentacyjnej.
+  - Zapewnienie jakości materiałów bez tworzenia atmosfery wzajemnego oceniania i obwiniania.
+  - Pogodzenie potrzeb ekspertów, konstruktora produktu oraz zarządu organizacji.
+
+results:
+  quantitative:
+    - Stworzono 120 schematów diagnostycznych i artykułów serwisowych.
+    - Projekt został zrealizowany przez 4-osobowy zespół w ciągu 4 miesięcy.
+    - Około 30% dokumentacji zostało przygotowane przeze mnie osobiście.
+    - Około 90% materiałów zostało przeze mnie zrecenzowanych.
+    - Skrócono czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy.
+    - Rozwiązanie zostało zweryfikowane na grupie 3 nowych pracowników.
+
+  qualitative:
+    - Przechwycono wiedzę krytyczną dla funkcjonowania serwisu.
+    - Ograniczono zależność organizacji od pojedynczych ekspertów.
+    - Stworzono skalowalny system transferu wiedzy.
+    - Umożliwiono mniej doświadczonym pracownikom samodzielne rozwiązywanie najczęstszych problemów.
+    - Ustandaryzowano sposób dokumentowania wiedzy technicznej.
+    - Stworzono fundament dla dalszego rozwoju wiedzy organizacyjnej.
+    - Rozwiązanie jest wykorzystywane do dziś jako podstawowe narzędzie onboardingu serwisu.
+    - BPMN został później zaadaptowany do opisu innych procesów organizacyjnych.
+    - Inni managerowie korzystali z wypracowanych standardów i szkoleń.
+
+evidence:
+  achievement_ids:
+    - ACH-003
+    - ACH-004
+
+  supporting_materials:
+    - Wiki.js
+    - Schematy BPMN 2.0
+    - Drzewa Diagnostyczne (DD)
+    - Artykuły Serwisowe (AS)
+    - Materiały onboardingowe
+    - Szkolenia BPMN
+    - Dokumentacja procesu tworzenia wiedzy
+
+lessons_learned:
+  - Wiedza ekspercka staje się wartościowa dla organizacji dopiero wtedy, gdy można ją skutecznie przekazać innym.
+  - Dobrze zaprojektowany system wiedzy może skrócić onboarding wielokrotnie bardziej niż dodatkowe szkolenia.
+  - Eksperci chętnie dzielą się wiedzą, jeśli otrzymają odpowiednie narzędzia, wsparcie oraz poczucie bezpieczeństwa.
+  - Graficzna reprezentacja procesów jest skuteczniejsza od samego tekstu przy nauce złożonych zagadnień technicznych.
+  - Standaryzacja sposobu tworzenia wiedzy jest równie ważna jak sama wiedza.
+  - Recenzowanie materiałów działa najlepiej wtedy, gdy koncentruje się na jakości rozwiązania, a nie ocenie autora.
+  - Zaangażowanie i motywacja zespołu są równie istotne dla sukcesu projektu jak metodologia i narzędzia.
+
+interview_angles:
+  - Knowledge Management
+  - Process Design
+  - Change Management
+  - Organizational Learning
+  - Onboarding
+  - Systems Thinking
+  - Project Management
+  - Team Coordination
+  - Innovation
+  - Continuous Improvement
+  - Knowledge Engineering
+  - Enablement
+
+cv_bullets:
+  - Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN i Wiki.js obejmujący 120 schematów diagnostycznych.
+  - Skróciłem czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy.
+  - Przechwyciłem i ustrukturyzowałem wiedzę ekspercką krytyczną dla funkcjonowania serwisu.
+  - Stworzyłem standard dokumentowania wiedzy technicznej wykorzystywany do dziś w procesie onboardingu.
+</pre>
+<h2 class="file" id="STORY-006">Stories/STORY-006.yaml <span class="id-badge">[STORY-006]</span></h2>
+<pre>id: STORY-006
+
+title: Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności
+
+summary: &gt;
+  Poprowadziłem pierwsze w organizacji wdrożenie produktu typu DIY dla rynku
+  fotowoltaicznego w okresie gwałtownych zmian regulacyjnych. Pomimo braku
+  formalnego procesu wdrażania produktów, doświadczenia projektowego oraz wiedzy
+  z zakresu dokumentacji produkcyjnej, FMEA i wymagań jakościowych,
+  skoordynowałem działania wielu działów i doprowadziłem produkt do gotowości
+  produkcyjnej oraz rynkowej. Projekt zakończył się dostarczeniem kompletnego
+  produktu, jednocześnie ujawniając istotne luki organizacyjne związane z
+  zarządzaniem wymaganiami i odpowiedzialnością za całość przedsięwzięcia.
+
+competencies:
+  - Zarządzanie projektami
+  - Product Introduction
+  - Zarządzanie interesariuszami
+  - Współpraca międzydziałowa
+  - Analiza wymagań
+  - Systems Thinking
+  - Dokumentacja techniczna
+  - Zarządzanie jakością
+  - Analiza ryzyka
+  - Szybkie uczenie się
+  - Projektowanie procesów
+  - Koordynacja operacyjna
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - feedback_receptiveness
+  - perspective_taking
+  - solution_orientation
+  - constructive_challenge
+  - transparency
+
+situation: &gt;
+  W wyniku przejścia polskiego rynku fotowoltaicznego z systemu net-meteringu
+  na net-billing pojawiło się zapotrzebowanie na małe instalacje PV, które były
+  bardziej opłacalne dla klientów indywidualnych. Firma dostrzegła szansę
+  stworzenia produktu typu DIY umożliwiającego samodzielny montaż instalacji
+  przez klienta. Organizacja nie posiadała jednak procesu wdrażania nowych
+  produktów, dedykowanego Product Managera ani doświadczenia w prowadzeniu tego
+  typu projektów.
+
+  Projekt został uruchomiony w warunkach dużej presji czasowej wynikającej z
+  okna rynkowego stworzonego przez zmiany regulacyjne. Jednocześnie wiele
+  wymagań biznesowych, technicznych i operacyjnych było niejasnych lub
+  niezweryfikowanych.
+
+problem: &gt;
+  Firma potrzebowała w krótkim czasie przekształcić pomysł biznesowy w gotowy
+  produkt możliwy do produkcji, sprzedaży, transportu, serwisowania i obsługi
+  gwarancyjnej. Jednocześnie brakowało jasno określonych wymagań, właścicieli
+  procesów oraz modelu współpracy pomiędzy zaangażowanymi działami.
+
+  Dodatkowo różne działy organizacji posiadały odmienne priorytety i sposoby
+  pracy, co utrudniało budowanie wspólnej wizji produktu i prowadzenie
+  efektywnych dyskusji projektowych.
+
+constraints:
+  - Około 2 miesiące na przygotowanie produktu do wejścia na rynek.
+  - Brak formalnego procesu wdrażania produktów w organizacji.
+  - Pierwszy projekt prowadzony przeze mnie w roli kierownika projektu.
+  - Brak wcześniejszego doświadczenia z FMEA, CE, DTR i dokumentacją produkcyjną.
+  - Konflikty i napięcia pomiędzy kluczowymi działami organizacji.
+  - Ciągle zmieniające się wymagania odkrywane podczas projektu.
+  - Odpowiedzialność za koordynację bez wpływu na marketing, sprzedaż i budżet.
+
+goal: &gt;
+  Wprowadzić na rynek nowy produkt fotowoltaiczny typu DIY poprzez
+  skoordynowanie wszystkich działań niezbędnych do przygotowania produkcji,
+  jakości, dokumentacji, logistyki, obsługi klienta i serwisu przed zamknięciem
+  okna rynkowego wynikającego ze zmian regulacyjnych.
+
+actions:
+  - Przeprowadziłem spotkanie kick-off identyfikując, że początkowa lista wymagań jest niekompletna, niespójna i niemożliwa do bezpośredniej realizacji.
+
+  - Podczas pierwszych spotkań projektowych zaobserwowałem, że komunikacja grupowa prowadzi głównie do wzajemnego obwiniania się działów i utrudnia pozyskiwanie merytorycznych informacji.
+
+  - Zakwestionowałem początkowy model prowadzenia projektu oparty na dużych spotkaniach wielodziałowych i zastąpiłem go serią indywidualnych rozmów z kluczowymi interesariuszami.
+
+  - Zorganizowałem indywidualne spotkania z kierownikami działów w celu zebrania, doprecyzowania i uzgodnienia wymagań.
+
+  - Przekształciłem rozproszone oczekiwania interesariuszy w harmonogram projektu, plan działań i podział odpowiedzialności.
+
+  - Opracowałem model komunikacji ograniczający konflikty pomiędzy działami poprzez pracę w mniejszych grupach zamiast dużych spotkań zbiorczych.
+
+  - Koordynowałem współpracę produkcji, zakupów, jakości, serwisu, BOK, konstruktorów oraz działu handlowego.
+
+  - Zarządzałem projektem wykorzystując Excel, Bitrix24, spotkania statusowe oraz harmonogram Gantta.
+
+  - Samodzielnie zdobyłem wiedzę z zakresu FMEA, dokumentacji produkcyjnej oraz wymagań jakościowych niezbędnych do realizacji projektu.
+
+  - Opracowałem tabliczkę znamionową, dokumentację produkcyjną, instrukcję dla klienta, warunki gwarancji oraz regulamin serwisowy.
+
+  - Przełożyłem wiedzę ekspercką z zakresu instalacji PV na instrukcję zrozumiałą dla klientów bez doświadczenia technicznego.
+
+  - Przyjąłem uwagi produkcji dotyczące instrukcji montażowej, organizując wspólną analizę dokumentacji podczas wdrożenia serii 0 i wprowadzając wskazane poprawki.
+
+  - Dostosowałem sposób składania zamówień produktu do ograniczeń i potrzeb działu BOK, ograniczając ryzyko problemów operacyjnych po uruchomieniu sprzedaży.
+
+  - Zaprojektowałem proces kontroli jakości pozwalający weryfikować poprawność montażu i kompletność produktu na kluczowych etapach produkcji.
+
+  - Koordynowałem przygotowanie prototypów, serii 0 oraz wdrożenia produktu do produkcji.
+
+  - Wspierałem przygotowanie procesów magazynowych, serwisowych i logistycznych związanych z nowym produktem.
+
+  - Regularnie komunikowałem ryzyka projektowe oraz ograniczenia wynikające z dostępnych zasobów, wiedzy i czasu.
+
+challenges:
+  - Projekt rozpoczął się od dużej liczby niespójnych oczekiwań bez jasno określonych wymagań.
+  - Wymagania zmieniały się wraz z kolejnymi odkryciami i zaangażowaniem nowych działów.
+  - Musiałem nauczyć się kilku nowych obszarów wiedzy w trakcie trwania projektu.
+  - Konflikty pomiędzy działami utrudniały komunikację i współpracę.
+  - Pod koniec projektu ujawniła się rozbieżność pomiędzy założeniami produktu a oczekiwaniami działu handlowego dotyczącymi sposobu sprzedaży.
+  - Projekt nie posiadał jednego właściciela odpowiedzialnego za całość inicjatywy, co utrudniało synchronizację działań biznesowych i operacyjnych.
+  - Część kluczowych założeń biznesowych została zweryfikowana dopiero na późnym etapie realizacji.
+
+results:
+  quantitative:
+    - Projekt został zrealizowany w zakładanym terminie.
+    - Skoordynowano współpracę co najmniej 6 obszarów organizacji.
+    - Przygotowano pełen pakiet dokumentacji produkcyjnej, jakościowej, serwisowej i użytkowej.
+    - Wdrożono produkt do produkcji i przygotowano serię 0.
+
+  qualitative:
+    - Produkt został poprawnie przygotowany do produkcji, magazynowania, sprzedaży i obsługi serwisowej.
+    - Organizacja otrzymała pierwszy ustrukturyzowany proces wdrożenia nowego produktu.
+    - Dokumentacja montażowa została wysoko oceniona przez pracowników produkcji, liderów i dyrektora zakładu.
+    - Wszystkie wyprodukowane egzemplarze zostały poprawnie oznaczone i dostarczone na magazyn.
+    - Sprzedane urządzenia nie wykazywały błędów konstrukcyjnych ani produkcyjnych.
+    - Projekt ujawnił znaczenie walidacji potrzeb klienta i założeń sprzedażowych przed wdrożeniem produktu.
+    - Ujawniono ryzyko wynikające z rozproszonej odpowiedzialności za projekt i braku wspólnego zarządzania częścią biznesową oraz operacyjną.
+
+evidence:
+  achievement_ids:
+    - ACH-009
+
+  supporting_materials:
+    - Karta Projektu PV Stand
+    - Instrukcja montażu i obsługi Stand PV
+    - Dokumentacja produkcyjna
+    - Analiza FMEA
+    - Warunki gwarancyjne
+    - Procedury serwisowe
+
+lessons_learned:
+  - Zanim zacznie się rozwiązywać problem, należy zrozumieć granice projektu, interesariuszy i niewiadome.
+  - W środowisku konfliktowym skuteczna komunikacja często wymaga dostosowania procesu do realiów organizacji.
+  - Nawet poprawnie wdrożony produkt może nie osiągnąć sukcesu rynkowego, jeśli nie zostaną zweryfikowane potrzeby klienta.
+  - Nieznane obszary wiedzy można skutecznie opanować poprzez systematyczne pozyskiwanie informacji i pracę z ekspertami.
+  - Sukces wdrożenia produktu wymaga synchronizacji całego łańcucha wartości, a nie tylko przygotowania technicznego.
+  - Rozproszona odpowiedzialność za projekt zwiększa ryzyko powstawania niespójnych decyzji biznesowych i operacyjnych.
+  - Krytyka rozwiązania często wynika z problemów organizacyjnych lub komunikacyjnych, a nie z samej jakości rozwiązania.
+  - Zrozumienie perspektywy poszczególnych działów jest warunkiem skutecznej współpracy międzyfunkcyjnej.
+
+interview_angles:
+  - Zarządzanie projektami
+  - Przywództwo bez formalnej władzy
+  - Współpraca międzydziałowa
+  - Wdrażanie nowych produktów
+  - Zarządzanie niepewnością
+  - Szybkie zdobywanie nowych kompetencji
+  - Zarządzanie interesariuszami
+  - Wyciąganie wniosków z nieudanego produktu
+  - Rozwiązywanie konfliktów organizacyjnych
+  - Stakeholder Management
+  - Product Development
+
+cv_bullets:
+  - Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując współpracę wielu działów organizacji.
+  - Stworzyłem kompletną dokumentację produkcyjną, jakościową i użytkową pomimo braku wcześniejszego doświadczenia w obszarach FMEA, DTR i dokumentacji produkcyjnej.
+  - Zaprojektowałem proces jakościowy oraz instrukcję montażową wysoko ocenioną przez produkcję i kierownictwo zakładu.
+  - Dostarczyłem gotowy do produkcji produkt w krótkim oknie rynkowym wynikającym ze zmian regulacyjnych na rynku PV.
+</pre>
+<h2 class="file" id="STORY-007">Stories/STORY-007.yaml <span class="id-badge">[STORY-007]</span></h2>
+<pre>id: STORY-007
+
+title: Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
+
+summary: &gt;
+  Zaprojektowałem i wdrożyłem skalowalny system wspierający decyzje handlowe,
+  techniczne i operacyjne dla instalacji fotowoltaicznych. Narzędzie zastąpiło
+  ręczne kalkulacje wykonywane przez ekspertów, skróciło czas przygotowania
+  ofert i list materiałowych z kilku godzin do kilkunastu minut oraz przez
+  kolejne lata stało się podstawowym narzędziem wykorzystywanym w procesie
+  sprzedaży i realizacji instalacji.
+
+competencies:
+  - Systems Thinking
+  - Business Analysis
+  - Decision Support Systems
+  - Process Automation
+  - Knowledge Engineering
+  - Cost Modeling
+  - Operational Scalability
+  - Process Design
+  - Workflow Optimization
+  - Financial Analysis
+  - Technical Analysis
+  - Knowledge Transfer
+  - Continuous Improvement
+
+behavioral_signals:
+  - ownership
+  - solution_orientation
+  - perspective_taking
+  - constructive_challenge
+
+situation: &gt;
+  W okresie dynamicznego wzrostu sprzedaży instalacji fotowoltaicznych proces
+  ofertowania i przygotowywania realizacji był w dużej mierze oparty na wiedzy
+  eksperckiej kilku osób. Każda instalacja wymagała ręcznego liczenia
+  komponentów, kosztów, zabezpieczeń elektrycznych, przekrojów przewodów oraz
+  przygotowania list materiałowych do zamówień. Proces był czasochłonny,
+  trudny do skalowania i silnie uzależniony od dostępności osób posiadających
+  wiedzę techniczną.
+
+  Problem nie był formalnie zgłaszany jako priorytet organizacyjny.
+  Funkcjonował jako naturalny koszt działalności wynikający z rosnącej liczby
+  realizacji. W praktyce prowadziło to jednak do angażowania specjalistów
+  technicznych w powtarzalne czynności, które nie wymagały eksperckiej
+  kreatywności, lecz konsekwentnego stosowania tych samych reguł.
+
+problem: &gt;
+  Organizacja nie posiadała ustandaryzowanego sposobu wyceny instalacji,
+  kalkulacji rentowności ani przygotowywania list materiałowych. Handlowcy
+  wyceniali instalacje na podstawie doświadczenia i szacunków, technicy ręcznie
+  przygotowywali zestawienia materiałowe, a administracja przepisywała dane do
+  systemu ERP. Powodowało to wysokie koszty czasowe, ryzyko błędów,
+  ograniczoną skalowalność procesu oraz uzależnienie organizacji od wiedzy
+  pojedynczych ekspertów.
+
+constraints:
+  - Brak gotowych narzędzi wspierających proces ofertowania.
+  - Konieczność zachowania zgodności pomiędzy sprzedażą, techniką i logistyką.
+  - Duża liczba zmiennych technicznych wpływających na wycenę.
+  - Konieczność integracji z istniejącym systemem ERP.
+  - Brak doświadczenia w budowie podobnych systemów.
+  - Ograniczony czas wynikający z planowanej zmiany stanowiska.
+  - Konieczność umożliwienia równoczesnej pracy wielu użytkowników.
+
+goal: &gt;
+  Stworzyć skalowalny system pozwalający handlowcom, technikom i administracji
+  przygotowywać spójne wyceny, listy materiałowe i kalkulacje rentowności bez
+  konieczności angażowania ekspertów technicznych w każdą ofertę.
+
+actions:
+  - Przeanalizowałem cały proces ofertowania, przygotowania realizacji oraz zamówień materiałowych.
+
+  - Zidentyfikowałem wiedzę ekspercką wykorzystywaną przy doborze komponentów, wycenach i projektowaniu instalacji.
+
+  - Opracowałem model reguł biznesowych i technicznych wykorzystywanych podczas przygotowania ofert.
+
+  - Zakwestionowałem dotychczasowy model pracy oparty na ręcznych obliczeniach i indywidualnych interpretacjach ekspertów, zakładając że znaczną część procesu można zamienić w zestaw jednoznacznych reguł.
+
+  - Zaprojektowałem modularny system oparty o Excel umożliwiający dalszy rozwój i modyfikację logiki biznesowej.
+
+  - Stworzyłem mechanizm automatycznego doboru komponentów na podstawie parametrów instalacji.
+
+  - Opracowałem algorytmy wyliczające ilości materiałów, zabezpieczenia elektryczne, obwody oraz przekroje przewodów.
+
+  - Zbudowałem system automatycznego generowania list materiałowych zgodnych z wymaganiami ERP.
+
+  - Zintegrowałem kalkulacje kosztów z aktualizowanymi danymi cenowymi eksportowanymi z ERP.
+
+  - Zaprojektowałem mechanizm zarządzania marżami umożliwiający kierownictwu samodzielne sterowanie polityką cenową.
+
+  - Stworzyłem uproszczony interfejs użytkownika przeznaczony dla handlowców i techników.
+
+  - Zaprojektowałem rozwiązanie uwzględniające potrzeby wielu grup użytkowników, tak aby handlowcy, technicy i administracja korzystali z jednego źródła danych przy zachowaniu różnych perspektyw pracy.
+
+  - Po wdrożeniu aktywnie zbierałem sugestie użytkowników i rozwijałem system o nowe funkcjonalności, rodzaje komponentów oraz dodatkowe opcje sprzedażowe.
+
+  - Rozbudowałem narzędzie o dodatkowe funkcje wspierające sprzedaż, między innymi kalkulacje elementów dodatkowych oraz rozszerzone warianty konfiguracji.
+
+  - Opracowałem dokumentację umożliwiającą dalszy rozwój oraz utrzymanie rozwiązania.
+
+  - Przeprowadziłem wdrożenie narzędzia w dziale handlowym, technicznym i administracyjnym.
+
+challenges:
+  - Konieczność przełożenia wiedzy eksperckiej na zestaw jednoznacznych reguł.
+  - Duża liczba zależności technicznych wpływających na poprawność wyników.
+  - Zachowanie spójności pomiędzy wyceną handlową a rzeczywistymi potrzebami materiałowymi.
+  - Zaprojektowanie rozwiązania możliwego do utrzymania i rozwijania przez inne osoby.
+  - Budowa pierwszego tego typu systemu bez wcześniejszych wzorców i doświadczeń.
+  - Utrzymanie przejrzystości logiki przy rosnącej liczbie funkcji i zależności.
+  - Pogodzenie potrzeb użytkowników reprezentujących różne działy organizacji.
+  - Rozwijanie rozwiązania bez formalnego zespołu projektowego.
+
+results:
+  quantitative:
+    - Skrócenie czasu przygotowania wyceny i list materiałowych z około 2–6 godzin do około 10 minut.
+    - Wsparcie procesu obsługującego do około 60–80 ofert miesięcznie.
+    - Wykorzystanie przez około 8 użytkowników z działów handlowych, technicznych i administracyjnych.
+    - Utrzymanie rozwiązania w aktywnym wykorzystaniu przez około 4 lata.
+
+  qualitative:
+    - Wyeliminowanie uzależnienia procesu od pojedynczych ekspertów technicznych.
+    - Ujednolicenie wycen oraz list materiałowych pomiędzy działem handlowym i technicznym.
+    - Stworzenie wspólnego źródła prawdy dla sprzedaży, realizacji i zakupów.
+    - Umożliwienie skalowania liczby ofert bez proporcjonalnego zwiększania liczby specjalistów.
+    - Standaryzacja procesu ofertowania i przygotowania realizacji.
+    - Rozwiązanie stało się podstawowym narzędziem wykorzystywanym w codziennej pracy.
+    - Koncepcja została później wykorzystana jako inspiracja dla analogicznego rozwiązania w obszarze instalacji hydraulicznych.
+    - Kierownictwo organizacji dostrzegło wartość rozwiązania dopiero po jego wdrożeniu i obserwacji wpływu na codzienną pracę zespołów.
+
+evidence:
+  achievement_ids:
+    - ACH-011
+
+  supporting_materials:
+    - Kalkulator ofertowania PV
+    - Dokumentacja użytkownika
+    - Instrukcja polityki marżowej
+    - Arkusze integracyjne ERP
+    - Modele kalkulacyjne instalacji PV
+
+lessons_learned:
+  - Największym ograniczeniem skalowania organizacji często nie są zasoby, lecz wiedza ukryta w głowach ekspertów.
+  - Dobrze zaprojektowany system powinien umożliwiać podejmowanie poprawnych decyzji również mniej doświadczonym użytkownikom.
+  - Automatyzacja przynosi największą wartość wtedy, gdy standaryzuje sposób myślenia, a nie tylko przyspiesza wykonywanie zadań.
+  - Modularna architektura znacząco ułatwia rozwój i utrzymanie rozwiązania.
+  - Skalowalne systemy powinny oddzielać logikę biznesową od interfejsu użytkownika.
+  - Architektura rozwiązania powinna uwzględniać nie tylko obecne wymagania, ale również potencjalne kierunki rozwoju organizacji.
+  - Optymalizacja pod jeden dominujący przypadek użycia może ograniczyć możliwość późniejszej rozbudowy systemu.
+
+interview_angles:
+  - Process Improvement
+  - Business Analysis
+  - Systems Thinking
+  - Automation
+  - Operational Scaling
+  - Knowledge Management
+  - Continuous Improvement
+  - Problem Solving
+  - Innovation
+  - Cross-Functional Impact
+  - Decision Support Systems
+  - Process Design
+
+cv_bullets:
+  - Zaprojektowałem system wspierający wycenę, kalkulację rentowności i przygotowanie list materiałowych dla instalacji PV, redukując czas przygotowania ofert z 2–6 godzin do około 10 minut.
+  - Przekształciłem wiedzę ekspercką z obszaru PV, elektryki i kosztorysowania w skalowalny system wykorzystywany przez sprzedaż, technikę i administrację.
+  - Stworzyłem rozwiązanie stanowiące przez około 4 lata podstawę procesu ofertowania i przygotowania realizacji instalacji fotowoltaicznych.
+  - Umożliwiłem skalowanie procesu sprzedaży bez proporcjonalnego zwiększania liczby specjalistów technicznych.
+</pre>
+<h2 class="file" id="STORY-008">Stories/STORY-008.yaml <span class="id-badge">[STORY-008]</span></h2>
+<pre>id: STORY-008
+
+title: Zatrzymanie niekontrolowanego skalowania operacji PV
+
+summary: &gt;
+  W okresie gwałtownego wzrostu rynku fotowoltaiki zidentyfikowałem, że tempo
+  sprzedaży znacząco przekroczyło możliwości operacyjne organizacji. Pomimo
+  wysokich wyników biznesowych narastające przeciążenie ludzi, błędy operacyjne
+  oraz ryzyka jakościowe i bezpieczeństwa wskazywały na systemowy problem.
+  Doprowadziłem do zmiany podejścia do skalowania organizacji poprzez
+  zwiększenie zasobów administracyjnych oraz rozpoczęcie prac nad procesami i
+  narzędziami wspierającymi dalszy wzrost.
+
+competencies:
+  - Capacity Planning
+  - Operational Leadership
+  - Resource Planning
+  - Risk Management
+  - Escalation Management
+  - Stakeholder Management
+  - Organizational Awareness
+  - Decision Making Under Pressure
+  - Operational Scaling
+  - Quality Management
+  - Safety Awareness
+  - Boundary Setting
+  - Change Management
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - constructive_challenge
+  - transparency
+  - solution_orientation
+  - perspective_taking
+  - psychological_safety
+  - boundary_setting
+
+situation: &gt;
+  Pod koniec 2021 roku, w związku ze zbliżającym się zakończeniem systemu
+  net-meteringu, rynek fotowoltaiczny przeżywał gwałtowny wzrost. Klienci
+  masowo podpisywali umowy, chcąc zdążyć przed zmianą zasad rozliczania.
+  Pomimo ograniczonych mocy wykonawczych firma zakontraktowała około kilkadziesiąt 
+  instalacji w krótkim okresie, co znacząco przekraczało realne
+  możliwości operacyjne zespołu.
+
+  Dział techniczny był postrzegany jako zdolny do poradzenia sobie z każdym
+  problemem, a wcześniejsze sukcesy organizacji wzmacniały przekonanie, że
+  dalsze zwiększanie obciążenia jest możliwe bez większych konsekwencji.
+
+problem: &gt;
+  Organizacja próbowała skalować sprzedaż szybciej niż była w stanie skalować
+  operacje. Kluczowe procesy administracyjne, logistyczne i techniczne były
+  skoncentrowane na jednej osobie. Rosnące obciążenie prowadziło do błędów,
+  spadku jakości realizacji, zwiększonego ryzyka bezpieczeństwa oraz
+  uzależnienia ciągłości działania od pojedynczego pracownika.
+
+  Dodatkowo przeciążenie zaczęło negatywnie wpływać na ludzi, zwiększając
+  ryzyko wypalenia, utraty pracowników oraz dalszego pogarszania jakości
+  realizacji.
+
+constraints:
+  - Ekstremalny wzrost liczby realizowanych instalacji.
+  - Presja klientów związana z terminami wynikającymi ze zmian regulacyjnych.
+  - Jedna osoba odpowiedzialna za większość procesów administracyjnych.
+  - Brak odpowiednich narzędzi wspierających planowanie i skalowanie.
+  - Ograniczona liczba ekip montażowych.
+  - Wysoka odpowiedzialność za jakość i terminowość realizacji.
+  - Rosnące ryzyko błędów wynikających z przeciążenia.
+
+goal: &gt;
+  Utrzymać zdolność operacyjną organizacji bez dalszego pogarszania jakości,
+  bezpieczeństwa oraz warunków pracy zespołu, a jednocześnie stworzyć warunki
+  umożliwiające dalszy wzrost w sposób kontrolowany i powtarzalny.
+
+actions:
+  - Koordynowałem pracę czterech pracowników oraz wielu równoległych realizacji instalacji PV.
+
+  - Zarządzałem planowaniem montaży, logistyką, zamówieniami materiałów, rozliczeniami ekip i obsługą bieżących problemów technicznych.
+
+  - Na bieżąco identyfikowałem ograniczenia przepustowości organizacji i obszary generujące największe ryzyko błędów.
+
+  - Analizowałem wpływ przeciążenia na jakość realizacji, bezpieczeństwo oraz efektywność pracy zespołu.
+
+  - Utrzymywałem ciągłość działania kluczowych procesów operacyjnych pomimo narastającego przeciążenia organizacyjnego.
+
+  - Regularnie rozmawiałem z pracownikami o ich obciążeniu i problemach operacyjnych, starając się ograniczać skutki przeciążenia oraz utrzymywać zaangażowanie zespołu.
+
+  - Upewniałem pracowników, że trudna sytuacja ma charakter przejściowy oraz komunikowałem działania podejmowane w celu jej rozwiązania.
+
+  - Zidentyfikowałem, że dalsze zwiększanie obciążenia nie rozwiązuje problemu i prowadzi do narastania długu organizacyjnego.
+
+  - Po wystąpieniu incydentu jakościowego związanego z przeciążeniem organizacji osobiście przejąłem obsługę sytuacji, ograniczyłem skutki problemu oraz zorganizowałem zastępcze zasoby umożliwiające dokończenie realizacji.
+
+  - Przygotowałem argumentację biznesową dotyczącą konieczności zwiększenia zasobów administracyjnych.
+
+  - Przedstawiłem przełożonemu otwartą informację, że obecny model pracy jest dla mnie nieakceptowalny i nie może być dalej utrzymywany bez zmian organizacyjnych.
+
+  - Zaproponowałem konkretne rozwiązanie obejmujące zatrudnienie dodatkowej osoby administracyjnej, której wdrożenie zobowiązałem się przeprowadzić osobiście.
+
+  - Zarekomendowałem zatrudnienie dodatkowych osób administracyjnych oraz uporządkowanie procesów i narzędzi operacyjnych.
+
+  - Zapoczątkowałem zmianę podejścia z modelu opartego na heroicznej pracy pojedynczych osób na model oparty na procesach i zdolnościach organizacyjnych.
+
+challenges:
+  - Presja realizacji liczby montaży przekraczającej teoretyczne możliwości operacyjne.
+  - Odpowiedzialność za wiele krytycznych procesów jednocześnie.
+  - Brak narzędzi wspierających planowanie przy rosnącej skali działalności.
+  - Konieczność przeciwstawienia się decyzjom wspieranym przez krótkoterminowe cele sprzedażowe.
+  - Pogarszający się stan zdrowia wynikający z przeciążenia i stresu.
+  - Rosnące ryzyko błędów jakościowych i operacyjnych.
+  - Wystąpienie incydentu bezpieczeństwa będącego skutkiem działania na granicy możliwości organizacji.
+  - Konieczność wyznaczenia granic dalszego obciążania ludzi bez pogorszenia jakości i bezpieczeństwa.
+
+results:
+  quantitative:
+    - Skoordynowano realizację około kilkadziesiąt instalacji w krótkim okresie.
+    - Zarządzano pracą 4-osobowego zespołu operacyjnego.
+    - Utrzymano ciągłość działania pomimo skrajnego przeciążenia organizacyjnego.
+    - Zatrudniono dodatkowe wsparcie administracyjne odciążające kluczowe procesy operacyjne.
+
+  qualitative:
+    - Doprowadzono do zwiększenia zasobów administracyjnych.
+    - Zmieniono podejście do skalowania działalności operacyjnej.
+    - Uświadomiono kierownictwu ograniczenia przepustowości organizacji.
+    - Ograniczono ryzyko dalszego pogarszania jakości realizacji.
+    - Zwiększono świadomość znaczenia procesów i narzędzi wspierających wzrost.
+    - Przesunięto organizację z modelu opartego na wysiłku ludzi w kierunku modelu opartego na systemach.
+    - Utrzymano zaangażowanie i retencję kluczowych pracowników pomimo okresu ekstremalnego przeciążenia.
+    - Właściciel organizacji uznał konieczność zmiany modelu skalowania i podjął działania wspierające dalszą profesjonalizację operacji.
+
+evidence:
+  achievement_ids:
+    - ACH-012
+
+  supporting_materials:
+    - Harmonogramy realizacji instalacji PV
+    - Dokumentacja planowania montaży
+    - Raporty obciążenia zespołu
+    - Dokumentacja procesów operacyjnych opracowanych po okresie przeciążenia
+
+lessons_learned:
+  - Przeciążenie ludzi nie jest strategią skalowania organizacji.
+  - Wzrost sprzedaży musi być równoważony wzrostem zdolności operacyjnych.
+  - Problemy systemowe nie mogą być rozwiązywane wyłącznie dodatkowym wysiłkiem pracowników.
+  - Ryzyka jakościowe i bezpieczeństwa są często pierwszym sygnałem przekroczenia możliwości organizacji.
+  - Lider odpowiada nie tylko za wyniki, ale również za stworzenie warunków umożliwiających bezpieczną i powtarzalną pracę.
+  - Lider odpowiada również za ochronę ludzi przed długotrwałym przeciążeniem i wypaleniem.
+  - Każdy system organizacyjny posiada granice przepustowości, których ignorowanie prowadzi do narastania kosztów ukrytych.
+  - Dług organizacyjny i technologiczny zawsze zostaje spłacony, jeśli nie jest zarządzany odpowiednio wcześnie.
+  - Stawianie granic jest czasami równie ważne jak branie odpowiedzialności.
+
+interview_angles:
+  - Operational Leadership
+  - Managing Under Pressure
+  - Capacity Planning
+  - Escalation Management
+  - Difficult Conversations
+  - Organizational Change
+  - Risk Management
+  - Quality and Safety
+  - Leadership Lessons
+  - Managing Growth
+  - Boundary Setting
+  - Protecting Teams During Growth
+
+cv_bullets:
+  - Zidentyfikowałem ograniczenia operacyjne organizacji podczas gwałtownego wzrostu rynku PV i doprowadziłem do zmiany podejścia do skalowania działalności.
+  - Zarządzałem realizacją kilkadziesiąt instalacji w krótkim okresie, koordynując logistykę, planowanie i wsparcie techniczne zespołu.
+  - Eskalowałem ryzyka jakościowe i bezpieczeństwa wynikające z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych.
+  - Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia operacyjne.
+</pre>
+<h2 class="file" id="STORY-009">Stories/STORY-009.yaml <span class="id-badge">[STORY-009]</span></h2>
+<pre>id: STORY-009
+
+title: Budowa zespołu serwisowego po kryzysie kadrowym
+
+summary: &gt;
+  Przejąłem dział serwisu znajdujący się w trudnej sytuacji kadrowej i
+  organizacyjnej po odejściu poprzedniego kierownika oraz części zespołu.
+  Utrzymałem kluczowych ekspertów, ustabilizowałem funkcjonowanie działu oraz
+  zbudowałem kulturę współpracy opartą na odpowiedzialności, wzajemnym wsparciu
+  i transferze wiedzy. Jednocześnie sytuacja ta stała się dla mnie ważną lekcją
+  dotyczącą równowagi pomiędzy zaufaniem, odpowiedzialnością, wsparciem i
+  egzekwowaniem standardów.
+
+competencies:
+  - Leadership
+  - People Management
+  - Team Building
+  - Change Management
+  - Organizational Culture
+  - Talent Assessment
+  - Performance Management
+  - Conflict Management
+  - Accountability
+  - Stakeholder Management
+  - Self-Awareness
+  - Difficult Personnel Decisions
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - psychological_safety
+  - feedback_giving
+  - transparency
+  - solution_orientation
+  - perspective_taking
+  - team_first_mindset
+
+situation: &gt;
+  Po odejściu poprzedniego kierownika serwisu oraz dwóch pracowników dział
+  znajdował się w okresie niepewności. Morale zespołu było niskie, relacje z
+  działem handlowym napięte, a funkcjonowanie serwisu było silnie uzależnione
+  od dwóch ekspertów posiadających kluczową wiedzę techniczną.
+
+  Jednocześnie do zespołu dołączyli nowi, niedoświadczeni pracownicy
+  wymagający wdrożenia i wsparcia. Eksperci byli przeciążeni, rozpoczynali
+  studia i nie mieli pewności, czy dalsze pozostanie w organizacji ma sens.
+  Obawiali się zarówno rosnącej odpowiedzialności, jak i dalszych konfliktów z
+  innymi działami.
+
+problem: &gt;
+  Istniało ryzyko utraty kluczowych ekspertów oraz dalszego pogorszenia morale
+  zespołu. Organizacja potrzebowała stabilnego działu serwisu zdolnego do
+  obsługi klientów, przekazywania wiedzy nowym pracownikom oraz współpracy z
+  innymi działami pomimo trudnej sytuacji kadrowej.
+
+  Dodatkowo konieczne było odbudowanie zaufania wewnątrz zespołu oraz
+  wypracowanie zasad współpracy, które pozwoliłyby ograniczyć przeciążenie
+  ekspertów i stworzyć bardziej przewidywalne środowisko pracy.
+
+constraints:
+  - Niskie morale po odejściu poprzedniego kierownika.
+  - Utrata części doświadczonych pracowników.
+  - Silne uzależnienie operacyjne od dwóch ekspertów.
+  - Konflikty pomiędzy serwisem i działem handlowym.
+  - Ograniczone doświadczenie nowych pracowników.
+  - Brak wcześniejszego doświadczenia w prowadzeniu zespołu serwisowego.
+  - Konieczność utrzymania ciągłości obsługi klientów.
+
+goal: &gt;
+  Utrzymać kluczowych ekspertów, odbudować morale zespołu, stworzyć warunki do
+  skutecznego przekazywania wiedzy oraz zapewnić stabilne funkcjonowanie
+  serwisu pomimo zmian organizacyjnych.
+
+actions:
+  - Przeanalizowałem sytuację zespołu i zidentyfikowałem ekspertów jako kluczowy zasób niezbędny do dalszego funkcjonowania działu.
+
+  - Przyjąłem strategię skoncentrowaną na utrzymaniu ekspertów i ograniczeniu ryzyka ich odejścia.
+
+  - Prowadziłem indywidualne rozmowy z ekspertami, otwarcie rozmawiając o ich obawach, przeciążeniu oraz przyszłości działu.
+
+  - Budowałem narrację opartą na wspólnej odpowiedzialności za przyszłość zespołu, podkreślając znaczenie ich wiedzy i wpływu na rozwój organizacji.
+
+  - Dzieliłem się własnymi doświadczeniami z wcześniejszych trudnych okresów zawodowych, pokazując że kryzysy mogą stać się źródłem rozwoju i budowania charakteru.
+
+  - Zbudowałem model współpracy oparty na wzajemnym wsparciu, odpowiedzialności i nastawieniu na klienta.
+
+  - Wprowadziłem podział obowiązków Tier 1 / Tier 2, aby ograniczyć obciążenie ekspertów sprawami niewymagającymi ich kompetencji.
+
+  - Zachęcałem ekspertów do przekazywania wiedzy oraz wspierania mniej doświadczonych pracowników.
+
+  - Świadomie rozwijałem naturalną liderkę zespołu, wzmacniając jej autorytet oraz pokazując innym pracownikom wartość specjalizacji, odpowiedzialności i inicjatywy.
+
+  - Przejąłem odpowiedzialność za konflikty z działem handlowym, ograniczając wpływ części napięć organizacyjnych na zespół serwisowy.
+
+  - Wprowadziłem jasne zasady dotyczące priorytetów pracy i jakości obsługi klientów.
+
+  - Promowałem kulturę otwartego przyznawania się do błędów oraz skupienia na rozwiązywaniu problemów zamiast poszukiwaniu winnych.
+
+  - W przypadku błędów prowadziłem rozmowy skoncentrowane na analizie sytuacji, konsekwencjach, przyczynach oraz działaniach zapobiegających podobnym problemom w przyszłości.
+
+  - Wspierałem pracowników zgłaszających problemy, jednocześnie oczekując od nich przestrzegania wspólnie ustalonych standardów i zasad odpowiedzialności.
+
+  - Samodzielnie przeprowadziłem rekrutację nowego serwisanta odpowiedzialnego za obszar PV.
+
+  - Prowadziłem rozmowy korygujące z pracownikami niespełniającymi oczekiwanych standardów odpowiedzialności.
+
+  - Podjąłem decyzje personalne wobec pracowników naruszających zasady uczciwości i odpowiedzialności.
+
+challenges:
+  - Odbudowanie morale po odejściu poprzedniego kierownika.
+  - Utrzymanie ekspertów posiadających kluczową wiedzę operacyjną.
+  - Budowanie autorytetu w nowej roli kierowniczej.
+  - Integracja nowych pracowników z istniejącym zespołem.
+  - Trudne relacje pomiędzy serwisem i działem handlowym.
+  - Zbyt koleżeński styl zarządzania utrudniający prowadzenie rozmów korygujących.
+  - Brak odpowiednich mechanizmów kontroli przy wysokim poziomie zaufania.
+  - Nierówny poziom odpowiedzialności pomiędzy członkami zespołu.
+  - Egzekwowanie standardów wobec osób, które wcześniej otrzymały wiele dodatkowych szans.
+
+results:
+  quantitative:
+    - Utrzymano 2 kluczowych ekspertów odpowiedzialnych za najbardziej zaawansowane sprawy serwisowe.
+    - Wdrożono 2 nowych pracowników do pracy w serwisie.
+    - Przeprowadzono 2 trudne decyzje personalne zakończone rozwiązaniem współpracy.
+
+  qualitative:
+    - Ustabilizowano funkcjonowanie działu po zmianach kadrowych.
+    - Ograniczono ryzyko utraty wiedzy eksperckiej.
+    - Zbudowano kulturę współpracy i wzajemnego wsparcia.
+    - Poprawiono przepływ wiedzy pomiędzy ekspertami i młodszymi pracownikami.
+    - Zwiększono poczucie bezpieczeństwa i przewidywalności wewnątrz zespołu.
+    - Zdobyto praktyczne doświadczenie w zarządzaniu ludźmi i zespołami.
+    - Ujawniono ograniczenia modelu zarządzania opartego wyłącznie na zaufaniu.
+    - Wypracowano bardziej dojrzałe podejście do przywództwa.
+
+evidence:
+  achievement_ids:
+    - ACH-012
+
+  supporting_materials:
+    - Struktura organizacyjna serwisu
+    - Materiały onboardingowe
+    - Workflow serwisowe
+    - Dokumentacja organizacji pracy działu
+    - Materiały rekrutacyjne
+
+lessons_learned:
+  - Postawa i odpowiedzialność pracownika są ważniejsze niż same kompetencje techniczne.
+  - Zaufanie wymaga odpowiednich mechanizmów kontroli i rozliczalności.
+  - Lider nie może budować autorytetu wyłącznie na relacjach koleżeńskich.
+  - Problemy personalne należy adresować wcześnie, zanim zaczną wpływać na cały zespół.
+  - Najbardziej odpowiedzialni pracownicy ponoszą największy koszt tolerowania słabych postaw.
+  - Kultura organizacyjna musi być wspierana przez jasne oczekiwania i konsekwencje.
+  - Skuteczne przywództwo wymaga równowagi pomiędzy empatią, zaufaniem i odpowiedzialnością.
+  - Zbyt późna reakcja na sygnały ostrzegawcze może prowadzić do utrwalenia niepożądanych zachowań.
+  - Dodatkowe szanse mają sens tylko wtedy, gdy towarzyszy im realna zmiana zachowania.
+
+interview_angles:
+  - Leadership
+  - People Management
+  - Building Teams
+  - Difficult Personnel Decisions
+  - Organizational Culture
+  - Change Management
+  - Managing Experts
+  - Accountability
+  - Conflict Management
+  - Leadership Lessons
+  - Psychological Safety
+  - Coaching and Development
+
+cv_bullets:
+  - Przejąłem dział serwisu po odejściu kierownika i części zespołu, stabilizując jego funkcjonowanie oraz utrzymując kluczowych ekspertów.
+  - Wdrożyłem model współpracy Tier 1 / Tier 2 wspierający transfer wiedzy i efektywne wykorzystanie kompetencji ekspertów.
+  - Zbudowałem kulturę współpracy opartą na odpowiedzialności, wsparciu i orientacji na klienta.
+  - Przeprowadziłem trudne decyzje personalne oraz wypracowałem bardziej dojrzałe podejście do równoważenia zaufania, odpowiedzialności i kontroli.
+</pre>
+</main>
+<footer class="backlinks">
+  <hr>
+  <nav>
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+    <a href="https://github.com/Istuification/careervault" target="_blank" rel="noopener">Repozytorium na GitHub</a>
+  </nav>
+</footer>
+</body>
+</html>

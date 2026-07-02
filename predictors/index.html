@@ -1,0 +1,2906 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Predictors — Career Vault</title>
+<meta name="description" content="Predictors — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
+<meta name="robots" content="index, follow">
+<style>
+  body{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+       max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
+       color:#16221D; background:#fff;}
+  header, footer{font-family: system-ui, sans-serif;}
+  nav a{margin-right: 1rem;}
+  h1{font-family: system-ui, sans-serif;}
+  h2.file{font-family: system-ui, sans-serif; margin-top:2.5rem; padding-top:1rem;
+           border-top:2px solid #24594B; color:#24594B;}
+  .id-badge{font-size:0.8rem; color:#33396B;}
+  pre{white-space: pre-wrap; word-wrap: break-word; background:#f6f7f5;
+       padding:1rem; border-radius:6px; overflow-x:auto;}
+  .backlinks{margin:1.5rem 0; font-family: system-ui, sans-serif;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="backlinks">
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+  </nav>
+  <h1>Predictors</h1>
+  <p>Sekcja Career Vault. Zawiera pełną, surową treść następujących plików repozytorium.
+     Ostatnia aktualizacja: 2026-07-02 17:14 UTC · commit bbd9fe4.</p>
+</header>
+<main>
+<h2 class="file" id="README">Assessments/Predictors/README.md</h2>
+<pre># Predictors
+
+## Cel dokumentu
+
+Predictors są pierwszą warstwą interpretacyjną Cognitive Model.
+
+Ich zadaniem jest identyfikacja mechanizmów poznawczych, decyzyjnych, motywacyjnych oraz behawioralnych, które mogą wyjaśniać obserwowane działania badanego.
+
+Predictors nie opisują całej osoby.
+
+Predictors nie są również traktowane jako prawda.
+
+Stanowią robocze hipotezy wyjaśniające rzeczywistość i służą jako budulec dla Behavioral Patterns oraz Cognitive Model.
+
+---
+
+## Miejsce w architekturze Vault
+
+```text
+Assessment Data      Stories
+        ↓               ↓
+          Calibration
+                ↓
+           Predictors
+                ↓
+      Behavioral Patterns
+                ↓
+         Cognitive Model
+```
+
+Assessment Data dostarczają danych pomiarowych.
+
+Stories dostarczają obserwacji zachowań.
+
+Calibration integruje oba źródła.
+
+Predictors opisują pojedyncze mechanizmy wspierane przez niezależne źródła.
+
+Behavioral Patterns opisują powtarzalne wzorce działania wynikające ze współwystępowania wielu Predictorów.
+
+Cognitive Model integruje całość w spójny model funkcjonowania badanego.
+
+---
+
+## Czym jest Predictor?
+
+Predictor opisuje pojedynczy mechanizm mogący wyjaśniać określone zachowania, decyzje lub sposoby myślenia.
+
+Predictor powinien odpowiadać na pytanie:
+
+&gt; Jaki mechanizm prawdopodobnie działa?
+
+Przykłady:
+
+* Model-Centric Decision Making
+* Evidence-Driven Belief Updating
+* Learning-Oriented Exploration
+* Fairness-Oriented Evaluation
+* Stakes-Adjusted Evidence Threshold
+
+Predictor powinien opisywać jeden mechanizm.
+
+Jeżeli Predictor zaczyna opisywać kilka niezależnych mechanizmów jednocześnie, powinien zostać rozdzielony lub zastąpiony dokładniejszym modelem.
+
+---
+
+## Źródła Predictorów
+
+Predictors nie są tworzone bezpośrednio przez Assessment Data ani Stories.
+
+Predictors powstają wyłącznie w wyniku procesu Calibration.
+
+Calibration analizuje:
+
+* Assessment Data,
+* Stories,
+* istniejące Predictors,
+* wcześniejsze Calibration Records.
+
+Predictor powinien być wspierany przez więcej niż jedno źródło danych.
+
+---
+
+## Status Predictorów
+
+### Candidate
+
+Mechanizm został zidentyfikowany, ale posiada ograniczoną ilość dowodów wspierających.
+
+### Validated
+
+Mechanizm został potwierdzony przez wiele niezależnych źródeł danych oraz obserwacji behawioralnych.
+
+### Deprecated
+
+Mechanizm utracił wartość wyjaśniającą lub został zastąpiony dokładniejszym modelem.
+
+---
+
+## Relacja pomiędzy Assessment Data, Stories i Predictorami
+
+Assessment Data opisują potencjalne tendencje.
+
+Stories opisują rzeczywiste zachowania.
+
+Predictors stanowią aktualną interpretację najlepiej wyjaśniającą oba źródła jednocześnie.
+
+Żadne pojedyncze źródło nie powinno samodzielnie tworzyć Predictorów.
+
+---
+
+## Relacja pomiędzy Predictorami i Behavioral Patterns
+
+Predictor opisuje pojedynczy mechanizm.
+
+Behavioral Pattern opisuje powtarzalny wzorzec działania obserwowany w rzeczywistości.
+
+Pojedynczy Predictor może wspierać wiele Behavioral Patterns.
+
+Pojedynczy Behavioral Pattern zwykle opiera się na współwystępowaniu 2–4 Predictorów oraz wielokrotnym występowaniu podobnego wzorca w Stories.
+
+Przykład:
+
+```text
+Predictors
+
+- Model-Centric Decision Making
+- Systemic Problem Structuring
+- Evidence-Driven Belief Updating
+
+↓
+
+Behavioral Pattern
+
+Operational Transformation Under Ambiguity
+```
+
+---
+
+## Zasada stabilności Predictora
+
+Calibration może:
+
+* zwiększać lub zmniejszać confidence,
+* dodawać nowe źródła,
+* dodawać nowe przewidywania,
+* dodawać nowe dowody wspierające,
+* dodawać nowe dowody przeczące,
+* doprecyzowywać opis.
+
+Calibration nie powinna zmieniać podstawowego znaczenia Predictora.
+
+Jeżeli nowy materiał wskazuje na inny mechanizm niż pierwotnie zakładano, należy utworzyć nowy Predictor lub przeprowadzić formalną migrację modelu.
+
+---
+
+## Struktura Predictora
+
+Każdy Predictor powinien być zapisany jako osobny plik Markdown zawierający metadane YAML oraz sekcje opisowe.
+
+### Metadane
+
+```yaml
+---
+id: PRED-001
+
+name: Model-Centric Decision Making
+
+status: validated
+confidence: high
+
+created_by:
+  - CAL-001
+
+related_patterns: []
+
+supporting_calibrations: []
+
+conflicting_calibrations: []
+
+last_updated: 2026-06-22
+version: 1.0
+---
+```
+
+---
+
+## Elementy Predictora
+
+### Opis
+
+Opis mechanizmu.
+
+Odpowiada na pytanie:
+
+&gt; Jaki mechanizm opisuje ten Predictor?
+
+---
+
+### Źródła
+
+Źródła wykorzystane podczas kalibracji.
+
+Powinny wskazywać:
+
+* Assessment Data,
+* Stories,
+* wcześniejsze Calibration Records.
+
+---
+
+### Zachowania Przewidywane
+
+Jakie zachowania powinny pojawiać się, jeśli Predictor jest poprawny?
+
+---
+
+### Zachowania Przeczące
+
+Jakie zachowania osłabiają lub podważają Predictor?
+
+---
+
+### Dowody Potwierdzające
+
+Historie, obserwacje oraz kalibracje wspierające Predictor.
+
+---
+
+### Dowody Przeczące
+
+Historie, obserwacje oraz kalibracje pozostające w konflikcie z Predictorem.
+
+---
+
+### Historia Kalibracji
+
+Lista Calibration Records wpływających na Predictor.
+
+---
+
+### Ocena
+
+Aktualna ocena jakości Predictora.
+
+Powinna zawierać:
+
+* confidence,
+* siłę wsparcia z Assessment Data,
+* siłę wsparcia ze Stories,
+* poziom walidacji.
+
+---
+
+### Notatki
+
+Ograniczenia interpretacyjne, potencjalne kierunki dalszej kalibracji oraz powiązania z innymi Predictorami.
+
+---
+
+## Weryfikacja jakości
+
+Dobry Predictor:
+
+* opisuje pojedynczy mechanizm,
+* posiada wiele źródeł,
+* generuje przewidywania,
+* może zostać sfalsyfikowany,
+* wspiera budowę Behavioral Patterns.
+
+Słaby Predictor:
+
+* opisuje wiele mechanizmów jednocześnie,
+* jest wyłącznie parafrazą wyników testów,
+* nie posiada dowodów behawioralnych,
+* nie generuje przewidywań,
+* nie może zostać obalony.
+
+---
+
+## Cel długoterminowy
+
+Celem Predictorów nie jest opisanie osobowości badanego.
+
+Ich rolą jest identyfikacja mechanizmów, które najlepiej wyjaśniają sposób myślenia, podejmowania decyzji, uczenia się oraz działania badanego.
+
+Predictors stanowią fundament dla Behavioral Patterns oraz Cognitive Model i podlegają ciągłej kalibracji wraz z pojawianiem się nowych danych, historii oraz obserwacji.
+</pre>
+<h2 class="file" id="PRED-001">Assessments/Predictors/PRED-001.md <span class="id-badge">[PRED-001]</span></h2>
+<pre>---
+id: PRED-001
+name: Model-Centric Decision Making
+status: validated
+confidence: very high
+created_from:
+  - HEXACO
+  - VIA
+  - NFC
+  - AOT
+  - CIHS
+  - Gallup
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-003
+  - STORY-005
+  - STORY-007
+  - STORY-009
+conflicting_stories: []
+related_behavioral_patterns: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.2
+---
+
+# Opis
+
+Badany wykazuje tendencję do budowania wewnętrznego modelu sytuacji przed podjęciem decyzji.
+
+Proces ten polega na identyfikacji:
+
+* kluczowych zmiennych,
+* zależności pomiędzy elementami systemu,
+* ograniczeń,
+* możliwych konsekwencji działań,
+* alternatywnych ścieżek postępowania.
+
+Celem nie jest zgromadzenie maksymalnej ilości informacji, lecz osiągnięcie poziomu zrozumienia wystarczającego do podjęcia decyzji.
+
+Model ma charakter roboczy i może zostać zaktualizowany po pojawieniu się nowych danych.
+
+Predyktor opisuje wykorzystanie modelu sytuacji do podejmowania decyzji. Nie opisuje samego procesu strukturyzacji problemu ani organizowania informacji, które są analizowane osobno przez PRED-006.
+
+---
+
+# Źródła
+
+## Assessment Data
+
+* HEXACO
+* VIA Character Strengths
+* Need for Cognition (NFC)
+* Actively Open-Minded Thinking (AOT)
+* Comprehensive Intellectual Humility Scale (CIHS)
+* CliftonStrengths (Strategic, Analytical, Learner)
+
+## Analiza Jakościowa
+
+* Badany deklaruje potrzebę zrozumienia problemu przed działaniem.
+* Badany preferuje analizę przyczyn zamiast objawów.
+* Badany opisuje własny proces decyzyjny jako budowę modelu sytuacji.
+* W rozmowach regularnie występuje rozbijanie problemów na elementy składowe.
+
+## Stories
+
+* STORY-001 Transformacja organizacji pracy działu Instal/Solar
+* STORY-002 Restrukturyzacja i stabilizacja działu serwisu
+* STORY-003 Projektowanie modelu działania serwisu przy braku danych historycznych
+* STORY-004 Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności
+* STORY-005 Zatrzymanie niekontrolowanego skalowania operacji PV
+* STORY-006 Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
+* STORY-007 Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
+* STORY-008 Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
+* STORY-009 Budowa zespołu serwisowego po kryzysie kadrowym
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+* zadawał pytania dotyczące kontekstu problemu,
+* próbował zidentyfikować zmienne wpływające na sytuację,
+* tworzył modele wykorzystywane do podejmowania decyzji,
+* analizował zależności przyczynowo-skutkowe,
+* szukał źródła problemu zamiast skupiać się wyłącznie na objawach,
+* porównywał alternatywne scenariusze działania,
+* podejmował decyzje dopiero po osiągnięciu satysfakcjonującego poziomu zrozumienia,
+* aktualizował model po pojawieniu się nowych danych,
+* modyfikował decyzje po zmianie kluczowych założeń modelu.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+* podejmowanie ważnych decyzji bez analizy sytuacji,
+* ignorowanie istotnych zmiennych i ograniczeń,
+* preferowanie intuicji nad zrozumieniem problemu,
+* wielokrotne działanie bez próby identyfikacji przyczyn problemu,
+* brak zainteresowania zależnościami pomiędzy elementami systemu,
+* wybieranie rozwiązań bez wcześniejszego rozważenia alternatywnych scenariuszy,
+* utrzymywanie decyzji pomimo pojawienia się istotnych danych podważających model.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Nie zidentyfikowano historii pozostających w bezpośrednim konflikcie z predyktorem.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Bardzo wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Bardzo wysoka
+
+## Poziom Walidacji
+
+Bardzo wysoki
+
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz CAL-001.
+
+---
+
+# Notatki
+
+Predyktor opisuje sposób podejmowania decyzji, a nie jakość podejmowanych decyzji.
+
+Nie zakłada, że model budowany przez badanego jest zawsze poprawny.
+
+Zakłada jedynie, że budowa modelu jest preferowanym sposobem rozumienia sytuacji i podejmowania decyzji.
+
+Predyktor jest powiązany z PRED-006 Systemic Problem Structuring.
+
+PRED-006 opisuje proces rozumienia, porządkowania i strukturyzacji problemu.
+
+PRED-001 opisuje wykorzystanie powstałego modelu do wyboru kierunku działania i podjęcia decyzji.
+
+CAL-001 nie wykazała podstaw do połączenia obu Predictorów, jednak ich relacja powinna być monitorowana podczas kolejnych kalibracji.
+
+CAL-001 doprecyzowuje zakres względem PRED-006: ten Predictor opisuje wykorzystanie modelu sytuacji do decyzji, a nie samą strukturyzację problemu.
+</pre>
+<h2 class="file" id="PRED-002">Assessments/Predictors/PRED-002.md <span class="id-badge">[PRED-002]</span></h2>
+<pre>---
+id: PRED-002
+name: Evidence-Driven Belief Updating
+status: validated
+confidence: very high
+created_from:
+  - AOT
+  - CIHS
+  - NFC
+  - VIA
+supporting_stories:
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-003
+  - STORY-005
+  - STORY-007
+  - STORY-009
+  - STORY-001
+  - STORY-002
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje tendencję do aktualizowania przekonań, modeli i decyzji przede wszystkim w odpowiedzi na nowe dowody, argumenty lub informacje zwiększające trafność aktualnego modelu rzeczywistości.
+
+Zmiana stanowiska nie wydaje się być uzależniona od autorytetu rozmówcy, presji społecznej ani potrzeby utrzymania spójności z wcześniejszymi deklaracjami.
+
+Kluczowym czynnikiem jest postrzegana jakość nowych danych oraz ich wpływ na aktualny model.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Actively Open-Minded Thinking (AOT)
+- Comprehensive Intellectual Humility Scale (CIHS)
+- Need for Cognition (NFC)
+- VIA Character Strengths (Judgment)
+
+## Analiza Jakościowa
+
+- Badany deklaruje gotowość do zmiany stanowiska pod wpływem nowych danych.
+- Badany opisuje własne przekonania jako modele robocze.
+- Badany wskazuje, że aktualizacja następuje po pojawieniu się informacji zwiększających trafność modelu.
+- Badany nie deklaruje silnej potrzeby obrony wcześniej przyjętych stanowisk.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- zmieniał zdanie po otrzymaniu wystarczająco mocnych dowodów,
+- aktualizował wcześniejsze modele i założenia,
+- poszukiwał informacji podważających własne wnioski,
+- oddzielał ocenę argumentu od oceny osoby,
+- preferował trafność modelu nad konsekwentne trzymanie się wcześniejszego stanowiska,
+- wracał do wcześniej zamkniętych tematów po pojawieniu się nowych danych,
+- traktował przekonania jako hipotezy robocze.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- ignorowanie nowych dowodów,
+- utrzymywanie stanowiska pomimo silnych kontrargumentów,
+- selektywne akceptowanie danych wspierających własne przekonania,
+- odrzucanie argumentów wyłącznie ze względu na ich źródło,
+- obrona wcześniejszych decyzji pomimo świadomości ich błędności.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (1; słaby sygnał pomocniczy)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Bardzo wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Bardzo wysoka
+
+## Siła Źródeł Behawioralnych
+
+Wysoka
+
+## Poziom Walidacji
+
+Wysoki
+
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
+
+---
+
+# Notatki
+
+Predyktor nie oznacza częstej zmiany zdania.
+
+Wysoka gotowość do aktualizacji modelu może współistnieć z rzadką zmianą stanowiska, jeśli nowe dane rzadko przekraczają wymagany próg jakości.
+
+Predyktor opisuje mechanizm aktualizacji przekonań, a nie częstotliwość zmiany poglądów.
+
+Istotnym elementem wymagającym dalszej walidacji jest poziom dowodów wymaganych do uruchomienia procesu aktualizacji modelu.
+
+CAL-001 wzmacnia ten Predictor: w matrycy kalibracyjnej otrzymał szerokie wsparcie ze Stories.
+</pre>
+<h2 class="file" id="PRED-003">Assessments/Predictors/PRED-003.md <span class="id-badge">[PRED-003]</span></h2>
+<pre>---
+id: PRED-003
+name: Fairness-Oriented Evaluation
+status: validated
+confidence: high
+created_from:
+  - HEXACO
+  - Schwartz
+  - Moral Foundations Theory
+  - VIA
+supporting_stories:
+  - STORY-002
+  - STORY-003
+  - STORY-004
+  - STORY-005
+  - STORY-008
+  - STORY-009
+  - STORY-001
+  - STORY-006
+  - STORY-007
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje tendencję do oceniania decyzji, działań i sytuacji przez pryzmat uczciwości, sprawiedliwości oraz spójności stosowanych zasad.
+
+Podczas oceny problemów istotne znaczenie mają:
+
+- równość traktowania,
+- proporcjonalność działań,
+- transparentność decyzji,
+- zgodność pomiędzy deklaracjami a działaniami,
+- uczciwość procesu decyzyjnego.
+
+Ocena sytuacji nie wydaje się opierać wyłącznie na skuteczności rozwiązania lub korzyści osiągniętej przez poszczególne strony.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- HEXACO (Honesty-Humility)
+- Schwartz Value Theory
+- Moral Foundations Theory
+- VIA Character Strengths
+
+## Analiza Jakościowa
+
+- Badany wielokrotnie podkreśla znaczenie zasad i uczciwego traktowania.
+- W rozmowach częściej ocenia proces niż sam rezultat.
+- Wysoka wrażliwość na niespójność pomiędzy deklaracjami i działaniami.
+- Widoczna tendencja do poszukiwania uzasadnienia dla obowiązujących zasad.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- zwracał uwagę na uczciwość procesu decyzyjnego,
+- identyfikował przypadki nierównego traktowania,
+- kwestionował decyzje postrzegane jako arbitralne,
+- analizował konsekwencje decyzji dla różnych stron,
+- preferował transparentne reguły działania,
+- dążył do spójnego stosowania zasad.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- akceptowanie podwójnych standardów,
+- ignorowanie nierównego traktowania,
+- preferowanie korzyści własnej grupy kosztem innych,
+- usprawiedliwianie nieuczciwych działań wyłącznie ze względu na skuteczność.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (1; słaby sygnał pomocniczy)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (1; słaby sygnał pomocniczy)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Wysoka
+
+## Poziom Walidacji
+
+Wysoki
+
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
+
+---
+
+# Notatki
+
+Predyktor nie oznacza idealizmu ani bezwzględnego przestrzegania zasad.
+
+Na obecnym etapie bardziej prawdopodobna wydaje się orientacja na uczciwość procesu niż na sztywne przestrzeganie reguł.
+
+Wymaga dalszej obserwacji relacji pomiędzy:
+
+- sprawiedliwością,
+- skutecznością,
+- pragmatyzmem organizacyjnym.
+
+Możliwe, że badany preferuje rozwiązania jednocześnie skuteczne i uczciwe, a konflikt pomiędzy tymi wartościami uruchamia dodatkowy proces analizy.
+
+CAL-001 nie wskazuje na zmianę definicji; Predictor pozostaje wspierany przez szeroki, choć nie rdzeniowy, zestaw Stories.
+</pre>
+<h2 class="file" id="PRED-004">Assessments/Predictors/PRED-004.md <span class="id-badge">[PRED-004]</span></h2>
+<pre>---
+id: PRED-004
+name: Principle-Based Decision Making
+status: validated
+confidence: very high
+created_from:
+  - HEXACO
+  - Schwartz
+  - Moral Foundations Theory
+  - VIA
+  - Gallup
+supporting_stories:
+  - STORY-003
+  - STORY-008
+  - STORY-009
+  - STORY-001
+  - STORY-002
+  - STORY-004
+  - STORY-007
+  - STORY-005
+  - STORY-006
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje tendencję do podejmowania decyzji w oparciu o wewnętrzny system zasad, wartości oraz przekonań dotyczących właściwego sposobu działania.
+
+Proces decyzyjny nie wydaje się opierać wyłącznie na:
+
+- skuteczności,
+- wygodzie,
+- korzyści osobistej,
+- presji otoczenia.
+
+Istotną rolę odgrywa zgodność decyzji z własnym systemem wartości oraz przekonaniem o tym, jakie działania są właściwe niezależnie od okoliczności.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Gallup (Belief)
+- Schwartz Value Theory
+- Moral Foundations Theory
+- HEXACO (Honesty-Humility)
+- VIA Character Strengths
+
+## Analiza Jakościowa
+
+- Badany deklaruje istnienie uniwersalnych i ponadczasowych wartości.
+- Podczas analizy problemów często pojawia się ocena zgodności działań z określonymi zasadami.
+- W rozmowach widoczna jest potrzeba uzasadniania decyzji nie tylko skutecznością, ale również poprawnością procesu.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- podejmował decyzje zgodne z własnymi wartościami nawet wtedy, gdy jest to mniej wygodne,
+- poszukiwał uzasadnienia dla obowiązujących zasad,
+- odczuwał dyskomfort przy działaniach sprzecznych z własnymi przekonaniami,
+- oceniał rozwiązania nie tylko pod kątem skuteczności, ale również zgodności z przyjętymi zasadami,
+- preferował rozwiązania możliwe do obrony etycznie i logicznie.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- częste rezygnowanie z własnych zasad dla krótkoterminowych korzyści,
+- podejmowanie decyzji wyłącznie na podstawie opłacalności,
+- ignorowanie wcześniej deklarowanych wartości,
+- dostosowywanie zasad do bieżącej wygody lub interesu.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (2; umiarkowane wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (2; umiarkowane wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (1; słaby sygnał pomocniczy)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Bardzo wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Wysoka
+
+## Poziom Walidacji
+
+Wysoki
+
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
+
+---
+
+# Notatki
+
+Predyktor nie oznacza sztywności ani dogmatyzmu.
+
+Na obecnym etapie bardziej prawdopodobne wydaje się podejście:
+
+„Zasady są ważne, ale powinny mieć uzasadnienie”
+
+niż:
+
+„Zasady należy przestrzegać bez względu na okoliczności”.
+
+Istotnym obszarem przyszłej kalibracji będzie określenie, które wartości mają charakter fundamentalny, a które podlegają negocjacji w zależności od kontekstu.
+
+CAL-001 potwierdza regularną obecność tego mechanizmu w Stories, mimo że nie jest on jednym z czterech najgłębszych mechanizmów rdzeniowych.
+</pre>
+<h2 class="file" id="PRED-005">Assessments/Predictors/PRED-005.md <span class="id-badge">[PRED-005]</span></h2>
+<pre>---
+id: PRED-005
+
+name: Learning-Oriented Exploration
+
+status: candidate
+
+confidence: high
+
+created_from:
+  - Gallup
+  - HEXACO
+  - VIA
+  - NFC
+
+supporting_stories:
+  - STORY-004
+  - STORY-005
+  - STORY-006
+  - STORY-007
+  - STORY-008
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-009
+
+conflicting_stories: []
+
+related_hypotheses: []
+
+related_calibrations:
+  - CAL-001
+  - CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.2
+
+---
+
+# Opis
+
+Badany wykazuje tendencję do eksplorowania nowych obszarów wiedzy w celu osiągnięcia głębszego zrozumienia problemu, systemu lub dziedziny.
+
+Proces eksploracji nie wydaje się być motywowany wyłącznie potrzebą rozwiązania bieżącego problemu.
+
+Samo zdobywanie wiedzy, odkrywanie zależności oraz budowanie nowych modeli poznawczych stanowi źródło satysfakcji i zaangażowania.
+
+W rezultacie badany często rozszerza zakres analizy poza bezpośrednie wymagania sytuacji.
+
+Kalibracja 003 doprecyzowała, że eksploracja nie jest celem samym w sobie. Jej główną funkcją jest budowanie coraz trafniejszych modeli rzeczywistości, które mogą zostać później wykorzystane w analizie, projektowaniu rozwiązań lub podejmowaniu decyzji.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Gallup (Learner)
+- HEXACO (Inquisitiveness)
+- VIA (Love of Learning)
+- VIA (Curiosity)
+- Need for Cognition (NFC)
+
+## Analiza Jakościowa
+
+- Badany regularnie inicjuje samodzielne procesy nauki.
+- W rozmowach często występuje potrzeba zrozumienia szerszego kontekstu problemu.
+- Wiedza jest traktowana jako zasób umożliwiający lepsze modelowanie rzeczywistości.
+- Eksploracja nowych tematów pojawia się również poza bezpośrednimi obowiązkami zawodowymi.
+- Badany często kontynuuje naukę nawet po rozwiązaniu pierwotnego problemu.
+- Kalibracja 003 potwierdziła, że eksploracja jest ukierunkowana na zwiększenie jakości modeli poznawczych, a nie na samo gromadzenie informacji.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- samodzielnie zgłębiał nowe obszary wiedzy,
+- inicjował proces nauki bez zewnętrznego przymusu,
+- zadawał dodatkowe pytania wykraczające poza bieżący problem,
+- budował własne struktury wiedzy,
+- poszukiwał źródeł pozwalających lepiej zrozumieć temat,
+- szybko rozwijał kompetencje w nowych obszarach,
+- integrował nową wiedzę z istniejącymi modelami poznawczymi,
+- odczuwał satysfakcję z procesu odkrywania i rozumienia.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- tworzenie baz wiedzy,
+- dokumentowanie wiedzy jako produktu końcowego,
+- przejmowanie odpowiedzialności za problem,
+- internalizacja odpowiedzialności za rezultat,
+- budowanie modeli systemowych w celu analizy konkretnego problemu,
+- podejmowanie decyzji na podstawie zdobytej wiedzy.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- unikanie nowych tematów,
+- zdobywanie wyłącznie minimalnej wiedzy potrzebnej do wykonania zadania,
+- brak zainteresowania zrozumieniem szerszego kontekstu,
+- niechęć do nauki poza obowiązkami,
+- rezygnowanie z dalszej eksploracji mimo silnej niepewności poznawczej.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (2; umiarkowane wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (1; słaby sygnał pomocniczy)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (1; słaby sygnał pomocniczy)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (1; słaby sygnał pomocniczy)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na dalszą analizę historii.
+
+---
+
+# Historia Kalibracji
+
+## CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+
+- Zweryfikowano przypisania Stories w matrycy.
+- Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+## CAL-003 — Deep Calibration (2026-06-25)
+
+- Potwierdzono, że Predictor opisuje eksplorację prowadzącą do budowy modeli poznawczych.
+- Wyraźniej oddzielono etap zdobywania wiedzy od etapu jej formalizacji.
+- Doprecyzowano granicę pomiędzy PRED-005 a BP-006.
+- Potwierdzono, że tworzenie trwałej infrastruktury wiedzy wymaga dodatkowego mechanizmu niewyjaśnianego przez ten Predictor.
+
+---
+
+# Ocena
+
+## Pewność
+
+Wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Umiarkowana
+
+## Poziom Walidacji
+
+Umiarkowany
+
+Predyktor ujawnia się sytuacyjnie i wymaga dalszej obserwacji wraz z nowymi Stories.
+
+Kalibracja 003 nie zmieniła jego istoty, lecz zwiększyła rozdzielczość poprzez wyraźne oddzielenie eksploracji wiedzy od jej późniejszej formalizacji.
+
+---
+
+# Notatki
+
+Predyktor nie opisuje wyłącznie zainteresowania wiedzą.
+
+Opisuje preferowany sposób reagowania na nieznane obszary rzeczywistości.
+
+Najbardziej prawdopodobny wzorzec działania można opisać jako:
+
+1. Pojawia się nowy lub niezrozumiały obszar.
+2. Rozpoczyna się eksploracja.
+3. Następuje budowa modelu poznawczego.
+4. Nowa wiedza zostaje zintegrowana z istniejącymi strukturami poznawczymi.
+
+Predyktor jest silnie powiązany z:
+
+- PRED-001 Model-Centric Decision Making
+- PRED-002 Evidence-Driven Belief Updating
+
+Jednak opisuje wcześniejszy etap procesu poznawczego — pozyskiwanie i eksplorowanie wiedzy, a nie podejmowanie decyzji, formalizację wiedzy ani aktualizację modeli organizacyjnych.
+
+Mechanizm wydaje się ujawniać szczególnie w obszarach wysokiego zainteresowania lub tam, gdzie badany ma wyraźną motywację poznawczą.
+
+CAL-003 znacząco zwiększyła rozdzielczość tego Predictora poprzez wyraźne oddzielenie eksploracji wiedzy od BP-006 oraz od mechanizmów związanych z budową trwałej infrastruktury organizacyjnej.
+</pre>
+<h2 class="file" id="PRED-006">Assessments/Predictors/PRED-006.md <span class="id-badge">[PRED-006]</span></h2>
+<pre>---
+id: PRED-006
+
+name: Systemic Problem Structuring
+
+status: validated
+
+confidence: very high
+
+created_from:
+  - Gallup
+  - HEXACO
+  - NFC
+  - AOT
+
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-004
+  - STORY-005
+  - STORY-006
+  - STORY-007
+  - STORY-008
+  - STORY-009
+
+conflicting_stories: []
+
+related_hypotheses: []
+
+related_calibrations:
+  - CAL-001
+  - CAL-002
+  - CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.3
+
+---
+
+# Opis
+
+Badany wykazuje tendencję do porządkowania złożonych, niejednoznacznych lub chaotycznych problemów poprzez budowę struktur umożliwiających ich analizę i rozwiązanie.
+
+Proces ten polega na:
+
+- identyfikacji elementów systemu,
+- grupowaniu informacji,
+- definiowaniu zależności,
+- wyodrębnianiu przyczyn i skutków,
+- tworzeniu hierarchii oraz kategorii.
+
+Celem nie jest wyłącznie rozwiązanie pojedynczego problemu, lecz stworzenie uporządkowanego modelu pozwalającego analizować problem w sposób przewidywalny, spójny i powtarzalny.
+
+Predyktor opisuje budowanie struktur poznawczych oraz modeli systemowych. Nie opisuje samego aktu decyzji, który jest modelowany osobno przez PRED-001.
+
+Kalibracja 003 dodatkowo doprecyzowała, że Predictor kończy się na zbudowaniu modelu problemu. Nie wyjaśnia procesu utrwalania tej wiedzy w trwałej infrastrukturze organizacyjnej ani zamiany wiedzy eksperckiej w zasób możliwy do wielokrotnego wykorzystania.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Gallup (Strategic)
+- Gallup (Analytical)
+- Gallup (Learner)
+- HEXACO (Inquisitiveness)
+- Need for Cognition (NFC)
+- Actively Open-Minded Thinking (AOT)
+
+## Analiza Jakościowa
+
+- Badany wielokrotnie opisuje swoją główną kompetencję jako „układanie chaosu”.
+- W rozmowach regularnie pojawia się potrzeba tworzenia struktur, kategorii i modeli.
+- Career Vault jest przykładem samodzielnego budowania wielopoziomowego systemu organizacji wiedzy.
+- W analizowanych problemach badany często przechodzi od zbioru nieuporządkowanych informacji do formalnej struktury pozwalającej na dalszą pracę.
+- Badany dąży do zrozumienia relacji pomiędzy elementami systemu zanim rozpocznie projektowanie rozwiązania.
+- Kalibracja 003 potwierdziła, że budowa modelu poznawczego poprzedza decyzję o ewentualnym utrwaleniu wiedzy.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- porządkował nieuporządkowane informacje,
+- dzielił złożone problemy na mniejsze elementy,
+- tworzył kategorie, klasyfikacje i hierarchie,
+- budował modele zależności pomiędzy elementami systemu,
+- identyfikował przyczyny oraz skutki,
+- projektował frameworki ułatwiające analizę,
+- przekształcał chaos informacyjny w uporządkowaną strukturę roboczą,
+- oddzielał opis problemu od późniejszego projektowania rozwiązania.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- budowanie baz wiedzy,
+- tworzenie dokumentacji jako produktu końcowego,
+- przejmowanie odpowiedzialności za rezultat,
+- internalizacja odpowiedzialności za problem,
+- ochrona przepustowości operacyjnej,
+- podejmowanie decyzji na podstawie zbudowanego modelu.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- unikanie złożonych problemów,
+- działanie bez próby uporządkowania sytuacji,
+- brak zainteresowania zależnościami systemowymi,
+- preferowanie doraźnych rozwiązań bez analizy struktury problemu,
+- utrzymywanie chaosu tam, gdzie możliwe jest stworzenie przejrzystej struktury,
+- przechodzenie bezpośrednio do rozwiązań bez wcześniejszego modelowania problemu.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na dalsze kalibracje.
+
+---
+
+# Historia Kalibracji
+
+## CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+
+- Zweryfikowano przypisania Stories w matrycy.
+- Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+## CAL-002 — Behavioral Pattern ↔ Predictor Calibration (2026-06-23)
+
+- Doprecyzowano granicę pomiędzy strukturyzacją problemów a formalizacją wiedzy eksperckiej.
+- Potwierdzono, że Predictor opisuje budowę modeli i struktur poznawczych.
+- Ograniczono zakres interpretacji dotyczącej transferu wiedzy ukrytej.
+
+## CAL-003 — Deep Calibration (2026-06-25)
+
+- Potwierdzono, że Predictor opisuje modelowanie i porządkowanie problemu.
+- Wyraźniej oddzielono etap budowy modelu od etapu budowy trwałej infrastruktury organizacyjnej.
+- Doprecyzowano granicę pomiędzy PRED-006 a BP-006.
+- Potwierdzono, że decyzja o utrwaleniu wiedzy wymaga dodatkowego mechanizmu niewyjaśnianego przez ten Predictor.
+
+---
+
+# Ocena
+
+## Pewność
+
+Bardzo wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Bardzo wysoka
+
+## Poziom Walidacji
+
+Bardzo wysoki
+
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz kalibracje.
+
+Kalibracja 003 nie zmieniła jego istoty, lecz zwiększyła rozdzielczość modelu poprzez wyraźne oddzielenie budowy modeli poznawczych od budowy infrastruktury wiedzy.
+
+---
+
+# Notatki
+
+Predyktor opisuje sposób radzenia sobie ze złożonością, a nie sam proces podejmowania decyzji.
+
+Może występować niezależnie od jakości ostatecznej decyzji.
+
+Predyktor jest silnie powiązany z:
+
+- PRED-001 Model-Centric Decision Making
+- PRED-005 Learning-Oriented Exploration
+
+Jednak koncentruje się wyłącznie na etapie porządkowania problemu przed rozpoczęciem analizy lub podejmowania decyzji.
+
+Najbardziej prawdopodobny przebieg mechanizmu wygląda następująco:
+
+1. Zidentyfikuj elementy problemu.
+2. Odtwórz zależności pomiędzy nimi.
+3. Zbuduj spójny model systemu.
+4. Dopiero na tej podstawie analizuj możliwe rozwiązania.
+
+Predyktor nie opisuje tworzenia dokumentacji.
+
+Nie opisuje budowy baz wiedzy.
+
+Nie opisuje zamiany wiedzy eksperckiej w trwałą infrastrukturę organizacyjną.
+
+CAL-003 znacząco zwiększyła rozdzielczość tego Predictora poprzez wyraźne oddzielenie go od BP-006 oraz od mechanizmów związanych z formalizacją wiedzy.
+</pre>
+<h2 class="file" id="PRED-007">Assessments/Predictors/PRED-007.md <span class="id-badge">[PRED-007]</span></h2>
+<pre>---
+id: PRED-007
+name: Low Status Motivation
+status: candidate
+confidence: high
+created_from:
+  - Schwartz
+  - HEXACO
+  - VIA
+  - Gallup
+supporting_stories: []
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje relatywnie niską motywację związaną ze statusem społecznym, prestiżem, dominacją oraz formalną pozycją w hierarchii.
+
+Pozycja, tytuł lub widoczność społeczna nie wydają się stanowić celu samego w sobie.
+
+Znacznie większe znaczenie mają:
+
+- wpływ na jakość decyzji,
+- możliwość rozwiązywania problemów,
+- sprawczość organizacyjna,
+- rozwój kompetencji,
+- możliwość tworzenia wartości.
+
+W rezultacie badany może dążyć do stanowisk o wysokim wpływie organizacyjnym, jednocześnie nie wykazując szczególnego zainteresowania symbolami statusu związanymi z tymi stanowiskami.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Schwartz Value Theory
+- HEXACO
+- VIA Character Strengths
+- CliftonStrengths (Gallup)
+
+## Analiza Jakościowa
+
+- Niskie wyniki w obszarach związanych z władzą i prestiżem.
+- Niskie wyniki Leadership i Command.
+- Preferencja roli eksperta nad rolą menedżera.
+- Brak deklarowanej potrzeby budowania autorytetu lub marki osobistej dla samej rozpoznawalności.
+- Koncentracja na wpływie merytorycznym zamiast wpływie formalnym.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- preferował wpływ merytoryczny nad formalną władzę,
+- wybierał role eksperckie zamiast ról opartych wyłącznie na zarządzaniu ludźmi,
+- oceniał ludzi bardziej przez kompetencje niż pozycję,
+- wykazywał ograniczone zainteresowanie symbolami statusu,
+- traktował stanowisko jako narzędzie realizacji celów, a nie cel sam w sobie,
+- chętnie przejmował odpowiedzialność za rozwiązanie problemu bez potrzeby eksponowania własnej roli.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- aktywne poszukiwanie prestiżu jako głównego celu,
+- podejmowanie decyzji głównie dla zwiększenia własnego statusu,
+- potrzeba dominowania nad innymi,
+- silne przywiązanie do tytułów, stanowisk lub oznak pozycji społecznej,
+- preferowanie formalnej władzy nad wpływem eksperckim.
+
+---
+
+# Dowody Potwierdzające
+
+Brak Stories przypisanych w matrycy kalibracyjnej. Na tym etapie mechanizm opiera się głównie na Assessment Data i analizie jakościowej.
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Niska
+
+## Poziom Walidacji
+
+Niski
+
+Predyktor ma ograniczone wsparcie behawioralne i wymaga dalszej walidacji.
+
+---
+
+# Notatki
+
+Predyktor nie oznacza braku ambicji.
+
+Nie oznacza również braku zainteresowania stanowiskami o wysokiej odpowiedzialności.
+
+Bardziej prawdopodobna interpretacja wskazuje, że:
+
+- status jest skutkiem ubocznym wartościowej pracy,
+- wpływ jest ważniejszy niż prestiż,
+- kompetencje są ważniejsze niż pozycja.
+
+Istotnym obszarem przyszłej kalibracji będzie rozróżnienie pomiędzy:
+
+- potrzebą wpływu,
+- potrzebą sprawczości,
+- potrzebą statusu.
+
+Obecne dane sugerują, że motywacja badanego jest znacznie silniej związana z wpływem na rzeczywistość niż z własną pozycją w hierarchii społecznej.
+
+Wciąż potrzebna jest dalsza walidacja behawioralna; obecna nazwa może wymagać w przyszłości ponownej oceny, ale na tym etapie pozostaje bez zmian.
+</pre>
+<h2 class="file" id="PRED-008">Assessments/Predictors/PRED-008.md <span class="id-badge">[PRED-008]</span></h2>
+<pre>---
+id: PRED-008
+name: Selective Cognitive Reopening
+status: candidate
+confidence: medium
+created_from:
+  - AOT
+  - CIHS
+  - NFCS
+  - Wywiad jakościowy
+supporting_stories:
+  - STORY-004
+  - STORY-008
+  - STORY-009
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje tendencję do zamykania tematów po osiągnięciu poziomu zrozumienia uznanego za wystarczający do działania.
+
+Jednocześnie nie traktuje wcześniejszych wniosków jako ostatecznych.
+
+Po pojawieniu się nowych danych, istotnych zmian kontekstu lub sygnałów podważających wcześniejszy model, może ponownie otworzyć temat i przeprowadzić jego ponowną analizę.
+
+Proces ten ma charakter selektywny.
+
+Ponowna analiza nie jest uruchamiana automatycznie, lecz dopiero wtedy, gdy potencjalna wartość nowych informacji uzasadnia koszt poznawczy związany z powrotem do problemu.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Actively Open-Minded Thinking (AOT)
+- Comprehensive Intellectual Humility Scale (CIHS)
+- Need for Closure Scale (NFCS)
+
+## Analiza Jakościowa
+
+- Badany deklaruje, że po podjęciu decyzji zwykle przestaje aktywnie poszukiwać dalszych informacji.
+- Powrót do tematu następuje po pojawieniu się nowych danych lub istotnych zmian kontekstu.
+- Niepewność jest tolerowana jedynie do momentu osiągnięcia poziomu wystarczającego do działania.
+- Wcześniejsze wnioski traktowane są jako modele robocze możliwe do aktualizacji.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- kończył analizę po osiągnięciu poziomu wiedzy wystarczającego do działania,
+- ograniczał dalsze poszukiwanie informacji po podjęciu decyzji,
+- wracał do wcześniej zamkniętych tematów po pojawieniu się nowych danych,
+- aktualizował wcześniejsze modele bez konieczności całkowitego ich odrzucania,
+- traktował decyzje jako tymczasowo najlepsze rozwiązania, a nie niepodważalne prawdy,
+- ponownie analizował zagadnienia o wysokiej wadze strategicznej.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- ciągłe podważanie wszystkich wcześniej podjętych decyzji,
+- niezdolność do zamykania tematów,
+- całkowite ignorowanie nowych informacji po podjęciu decyzji,
+- utrzymywanie nieaktualnych modeli pomimo pojawienia się istotnych dowodów.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (1; słaby sygnał pomocniczy)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (1; słaby sygnał pomocniczy)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Średnia
+
+## Siła Źródeł Psychometrycznych
+
+Średnia
+
+## Siła Źródeł Behawioralnych
+
+Umiarkowana
+
+## Poziom Walidacji
+
+Umiarkowany
+
+Predyktor ujawnia się sytuacyjnie i wymaga dalszej obserwacji wraz z nowymi Stories.
+
+---
+
+# Notatki
+
+Predyktor opisuje sposób zarządzania zakończonymi procesami poznawczymi.
+
+Nie opisuje otwartości poznawczej ani potrzeby domknięcia jako takich.
+
+Możliwa interpretacja wskazuje, że badany stosuje strategię:
+
+1. Zbuduj model.
+2. Podejmij decyzję.
+3. Zamknij temat.
+4. Nie wracaj bez powodu.
+5. Jeśli pojawi się nowy sygnał — otwórz temat ponownie.
+
+Predyktor może stanowić mechanizm łączący:
+
+- PRED-001 Model-Centric Decision Making
+- PRED-002 Evidence-Driven Belief Updating
+
+Jego istnienie wymaga jednak potwierdzenia na podstawie rzeczywistych historii i decyzji podejmowanych w dłuższym horyzoncie czasowym.
+
+Mechanizm pozostaje sytuacyjny i nie wymaga obecnie merytorycznej zmiany; warto go obserwować wraz z nowymi Stories.
+</pre>
+<h2 class="file" id="PRED-009">Assessments/Predictors/PRED-009.md <span class="id-badge">[PRED-009]</span></h2>
+<pre>---
+id: PRED-009
+
+name: Expert-over-Manager Preference
+
+status: validated
+
+confidence: very high
+
+created_from:
+  - Gallup
+  - VIA
+  - Schwartz
+  - Wywiad jakościowy
+
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-004
+  - STORY-005
+  - STORY-006
+  - STORY-007
+  - STORY-008
+  - STORY-009
+
+conflicting_stories: []
+
+related_hypotheses: []
+
+related_calibrations:
+  - CAL-001
+  - CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.2
+
+---
+
+# Opis
+
+Badany wykazuje preferencję dla ról opartych na wiedzy eksperckiej, rozwiązywaniu problemów i wpływie merytorycznym nad rolami opartymi przede wszystkim na zarządzaniu ludźmi.
+
+Nie oznacza to niechęci do odpowiedzialności ani do stanowisk kierowniczych.
+
+Sugeruje jednak, że głównym źródłem satysfakcji jest:
+
+- analiza problemów,
+- projektowanie rozwiązań,
+- rozwijanie systemów,
+- wspieranie decyzji,
+
+a nie samo kierowanie zespołem.
+
+Kalibracja 003 doprecyzowała, że wysoka eksperckość powoduje, iż badany jest często naturalnym punktem odniesienia dla innych osób. Ludzie zwracają się do niego po opinię, analizę lub pomoc, jednak sam Predictor nie opisuje przejmowania odpowiedzialności za rezultat. Opisuje jedynie preferowaną formę tworzenia wartości dla organizacji.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Gallup (Strategic)
+- Gallup (Analytical)
+- Gallup (Learner)
+- VIA Character Strengths
+- Schwartz Value Theory
+
+## Analiza Jakościowa
+
+- Badany jednoznacznie preferuje rolę eksperta nad rolą menedżera.
+- W rozmowach częściej pojawia się zainteresowanie jakością decyzji niż zarządzaniem personelem.
+- Wysoka motywacja związana z rozwiązywaniem problemów.
+- Niska motywacja związana ze statusem i formalną władzą.
+- Deklarowana chęć pełnienia funkcji dyrektorskich wynika przede wszystkim z możliwości wpływania na kierunek działań organizacji.
+- Badany częściej buduje autorytet poprzez kompetencję niż poprzez formalną pozycję.
+- Kalibracja 003 potwierdziła, że eksperckość nie jest automatycznie równoznaczna z ownershipem.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- preferował role eksperckie i konsultingowe,
+- chętnie uczestniczył w projektowaniu rozwiązań,
+- koncentrował się na jakości decyzji i procesów,
+- rozwijał kompetencje specjalistyczne,
+- angażował się w rozwiązywanie problemów systemowych,
+- traktował stanowiska kierownicze jako narzędzie wpływu, a nie cel sam w sobie,
+- często pełnił rolę doradcy lub eksperta, do którego inni zwracają się po pomoc,
+- budował autorytet przede wszystkim poprzez wiedzę i skuteczność.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+
+- przejmowanie odpowiedzialności za problem bez formalnego mandatu,
+- internalizacja odpowiedzialności za rezultat,
+- chroniczne przejmowanie zaniedbanych tematów,
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- świadoma ochrona przepustowości operacyjnej.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- poszukiwanie stanowisk głównie ze względu na władzę nad ludźmi,
+- preferowanie zarządzania personelem nad pracą ekspercką,
+- rezygnowanie z wpływu merytorycznego na rzecz wpływu formalnego,
+- deklarowanie, że główną satysfakcję daje kierowanie ludźmi,
+- systematyczne unikanie pracy eksperckiej mimo możliwości jej wykonywania.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (2; umiarkowane wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (2; umiarkowane wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+## CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+
+- Zweryfikowano przypisania Stories w matrycy.
+- Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+## CAL-003 — Deep Calibration (2026-06-25)
+
+- Doprecyzowano granicę pomiędzy eksperckością a internalizacją odpowiedzialności.
+- Potwierdzono, że wysoka kompetencja wyjaśnia, dlaczego badany jest często proszony o pomoc, ale nie wyjaśnia automatycznego przejmowania ownershipu.
+- Wyraźniej oddzielono Predictor od BP-005 oraz PRED-014.
+
+---
+
+# Ocena
+
+## Pewność
+
+Bardzo wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Wysoka
+
+## Poziom Walidacji
+
+Wysoki
+
+Predyktor ma regularne wsparcie w Stories i pozostaje jednym z najbardziej stabilnych mechanizmów modelu.
+
+Kalibracja 003 nie zmieniła jego istoty, lecz zwiększyła rozdzielczość interpretacyjną poprzez wyraźne oddzielenie eksperckości od ownershipu.
+
+---
+
+# Notatki
+
+Predyktor nie oznacza braku potencjału menedżerskiego.
+
+Bardziej prawdopodobna interpretacja wskazuje, że badany preferuje:
+
+- przywództwo merytoryczne,
+- wpływ ekspercki,
+- projektowanie rozwiązań,
+
+nad:
+
+- zarządzaniem administracyjnym,
+- koordynacją ludzi jako głównym zadaniem.
+
+Istotnym obszarem przyszłej kalibracji będzie określenie, czy badany preferuje:
+
+ekspert → konsultant → architekt rozwiązań
+
+czy
+
+ekspert → dyrektor merytoryczny → lider transformacji.
+
+Obecne dane sugerują, że stanowisko jest postrzegane przede wszystkim jako narzędzie zwiększania wpływu na system, a nie jako źródło prestiżu lub kontroli nad ludźmi.
+
+CAL-003 dodatkowo potwierdziła, że eksperckość wyjaśnia, dlaczego badany staje się naturalnym doradcą i punktem odniesienia dla innych, ale sama w sobie nie wyjaśnia przejmowania odpowiedzialności za rezultat ani internalizacji ownershipu.
+```
+</pre>
+<h2 class="file" id="PRED-010">Assessments/Predictors/PRED-010.md <span class="id-badge">[PRED-010]</span></h2>
+<pre>---
+id: PRED-010
+
+name: Proven-System Optimization
+
+status: validated
+
+confidence: high
+
+created_from:
+
+- Schwartz
+- AOT
+- CIHS
+- Wywiad jakościowy
+
+supporting_stories:
+
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-005
+- STORY-007
+- STORY-008
+- STORY-004
+- STORY-006
+- STORY-009
+
+conflicting_stories: []
+
+related_hypotheses: []
+
+related_calibrations:
+
+- CAL-001
+- CAL-002
+- CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.3
+
+---
+
+# Opis
+
+Badany wykazuje tendencję do traktowania istniejących rozwiązań, procesów i struktur jako źródła wiedzy o rzeczywistości.
+
+Rozwiązania, które przetrwały próbę czasu lub skutecznie realizują swoją funkcję, nie są automatycznie odrzucane ani bezkrytycznie akceptowane.
+
+Pierwszym krokiem jest próba zrozumienia:
+
+- dlaczego dane rozwiązanie istnieje,
+- jaki problem rozwiązuje,
+- jakie ograniczenia uwzględnia,
+- jakie kompromisy projektowe zawiera,
+- jakie konsekwencje może mieć jego zmiana.
+
+Badany traktuje istniejące rozwiązania przede wszystkim jako źródło informacji o wcześniejszych decyzjach, ograniczeniach oraz logice działania organizacji.
+
+Dopiero po zbudowaniu takiego modelu następuje ocena, czy zmiana jest uzasadniona.
+
+Predyktor opisuje preferencję zrozumienia istniejących systemów przed ich zmianą.
+
+Optymalizacja jest naturalną konsekwencją tego mechanizmu, ale nie stanowi jego głównego celu.
+
+Kalibracja 003 doprecyzowała, że rdzeniem mechanizmu nie jest potrzeba ulepszania wszystkiego, lecz traktowanie istniejącego systemu jako najlepszego dostępnego źródła informacji o rzeczywistości.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Schwartz Value Theory
+- Actively Open-Minded Thinking (AOT)
+- Comprehensive Intellectual Humility Scale (CIHS)
+
+## Analiza Jakościowa
+
+- Badany nie wykazuje przywiązania do tradycji dla samej tradycji.
+- Badany deklaruje potrzebę zrozumienia przyczyn istnienia zasad i procesów.
+- W rozmowach regularnie pojawia się pytanie: „Dlaczego?”
+- Zmiana jest akceptowana, jeżeli istnieją wystarczające przesłanki wskazujące na poprawę rozwiązania.
+- Widoczna jest świadomość kosztów organizacyjnych związanych z nadmierną optymalizacją.
+- Badany traktuje istniejące procesy jako źródło wiedzy o organizacji, a nie przeszkodę wymagającą usunięcia.
+- Zmiana pojawia się dopiero wtedy, gdy istnieje lepsze wyjaśnienie działania systemu oraz wystarczające dowody, że korzyść przewyższy koszt.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- analizował istniejące procesy przed ich zmianą,
+- szukał przyczyn stojących za obecnym stanem rzeczy,
+- identyfikował ukryte funkcje istniejących rozwiązań,
+- rekonstruował logikę istniejącego rozwiązania przed zaproponowaniem zmian,
+- szukał kompromisów ukrytych w obecnym projekcie,
+- oddzielał zrozumienie systemu od decyzji o jego przebudowie,
+- podchodził sceptycznie zarówno do bezrefleksyjnego utrzymywania status quo, jak i do zmian dla samej zmiany,
+- proponował usprawnienia dopiero po zrozumieniu istniejącego systemu,
+- uwzględniał koszt wdrożenia zmian podczas oceny ich opłacalności.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- budowanie baz wiedzy,
+- tworzenie dokumentacji jako celu samego w sobie,
+- przejmowanie odpowiedzialności za problem,
+- internalizacja odpowiedzialności za rezultat,
+- ochrona przepustowości organizacji,
+- wyznaczanie granic dotyczących własnego obciążenia.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- odrzucanie istniejących rozwiązań bez próby ich zrozumienia,
+- wprowadzanie zmian wyłącznie dlatego, że są nowe,
+- przywiązanie do tradycji pomimo oczywistych problemów,
+- ignorowanie skutków ubocznych proponowanych usprawnień,
+- przebudowywanie systemów bez wcześniejszego modelowania ich logiki.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na dalsze kalibracje.
+
+---
+
+# Historia Kalibracji
+
+## CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+
+- Zweryfikowano przypisania Stories w matrycy.
+- Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+## CAL-002 — Behavioral Pattern ↔ Predictor Calibration (2026-06-23)
+
+- Doprecyzowano granicę pomiędzy optymalizacją istniejących systemów a ochroną przepustowości.
+- Potwierdzono, że Predictor opisuje preferencję zrozumienia systemu przed jego zmianą.
+- Ograniczono interpretacje związane z zarządzaniem capacity.
+
+## CAL-003 — Deep Calibration (2026-06-25)
+
+- Potwierdzono, że Predictor opisuje sposób rozumienia istniejących systemów przed ich zmianą.
+- Doprecyzowano granicę pomiędzy analizą istniejącego systemu a budową nowej infrastruktury wiedzy.
+- Potwierdzono, że tworzenie dokumentacji, repozytoriów wiedzy i procedur nie jest wyjaśniane przez ten Predictor, lecz przez BP-006.
+- Wyraźniej oddzielono Predictor od mechanizmów związanych z internalizacją odpowiedzialności oraz ochroną przepustowości.
+
+---
+
+# Ocena
+
+## Pewność
+
+Wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Średnia
+
+## Siła Źródeł Behawioralnych
+
+Bardzo wysoka
+
+## Poziom Walidacji
+
+Bardzo wysoki
+
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz kalibracje.
+
+Kalibracja 003 dodatkowo wzmocniła interpretację, że rdzeniem mechanizmu jest modelowanie i zrozumienie istniejącego systemu, a nie sama optymalizacja.
+
+---
+
+# Notatki
+
+Predyktor nie opisuje przywiązania do tradycji.
+
+Nie opisuje również potrzeby ciągłej optymalizacji.
+
+Najbardziej prawdopodobny wzorzec działania można opisać jako:
+
+1. Zrozum istniejący system.
+2. Odtwórz logikę jego działania.
+3. Zidentyfikuj ograniczenia oraz kompromisy.
+4. Oceń koszt zmiany.
+5. Zmień system tylko wtedy, gdy nowy model lepiej wyjaśnia rzeczywistość i przynosi większą wartość.
+
+Predyktor opisuje sposób uczenia się z istniejących rozwiązań.
+
+Nie opisuje potrzeby tworzenia dokumentacji.
+
+Nie opisuje zamiany wiedzy ukrytej w infrastrukturę organizacyjną.
+
+Nie opisuje również przejmowania odpowiedzialności za rezultat.
+
+CAL-003 znacząco zwiększył rozdzielczość tego Predictora poprzez wyraźne oddzielenie go od BP-006 oraz BP-005.
+```
+</pre>
+<h2 class="file" id="PRED-011">Assessments/Predictors/PRED-011.md <span class="id-badge">[PRED-011]</span></h2>
+<pre>---
+id: PRED-011
+
+name: Stakes-Adjusted Evidence Threshold
+
+status: validated
+
+confidence: high
+
+created_from:
+  - AOT
+  - CIHS
+  - NFCS
+  - Wywiad jakościowy
+
+supporting_stories:
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-007
+  - STORY-005
+  - STORY-009
+
+conflicting_stories: []
+
+related_hypotheses: []
+
+related_calibrations:
+  - CAL-001
+  - CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.2
+---
+
+# Opis
+
+Badany dostosowuje poziom wymaganych dowodów i głębokość analizy do przewidywanego kosztu błędu.
+
+Nie dąży do maksymalnej możliwej pewności we wszystkich sytuacjach.
+
+Zamiast tego ocenia relację pomiędzy:
+- kosztem pozyskania dodatkowych informacji,
+- potencjalnym kosztem błędnej decyzji,
+- wartością szybkiego działania,
+- poziomem pozostałej niepewności,
+- kosztem przeciążenia wynikającym z dalszego wydłużania lub komplikowania procesu decyzyjnego.
+
+W rezultacie decyzje o niskiej wadze mogą być podejmowane przy relatywnie ograniczonej ilości danych, podczas gdy decyzje strategiczne wymagają znacznie wyższego poziomu pewności.
+
+Kalibracja 003 doprecyzowała, że próg dowodowy nie jest tożsamy z ochroną pojemności operacyjnej. Badany może równocześnie uznawać, że decyzja wymaga większej ilości danych, ale nie oznacza to automatycznie, że będzie chronił własną capacity w sposób spójny lub konsekwentny.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Actively Open-Minded Thinking (AOT)
+- Comprehensive Intellectual Humility Scale (CIHS)
+- Need for Closure Scale (NFCS)
+
+## Analiza Jakościowa
+
+- Badany deklaruje preferencję dla redukcji niepewności przed podjęciem decyzji.
+- Jednocześnie nie wykazuje potrzeby osiągania maksymalnej pewności za wszelką cenę.
+- W przypadku decyzji strategicznych akceptuje wyższy koszt analizy w zamian za zmniejszenie ryzyka błędu.
+- W przypadku decyzji operacyjnych preferuje działanie po osiągnięciu wystarczającego poziomu zrozumienia.
+- Badany uwzględnia nie tylko koszt błędu, ale również koszt dalszego angażowania zasobów w analizę.
+- Kalibracja 003 wskazuje, że oceniany koszt nie dotyczy wyłącznie ryzyka poznawczego, ale również kosztu obciążenia i konsekwencji dla jakości działania.
+
+Przykład deklarowany:
+
+&gt; Jeżeli decyzja może generować bardzo wysokie straty, preferowane jest pozyskanie dodatkowych danych nawet kosztem opóźnienia działania.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+- zwiększał zakres analizy wraz ze wzrostem ryzyka decyzji,
+- podejmował szybkie decyzje w sytuacjach niskiego ryzyka,
+- inwestował znacznie więcej czasu w decyzje strategiczne niż operacyjne,
+- oceniał opłacalność zdobywania dodatkowych informacji,
+- akceptował niepewność w sytuacjach o ograniczonych konsekwencjach,
+- dążył do redukcji niepewności w sytuacjach o wysokim koszcie błędu,
+- uwzględniał koszt dalszego analitycznego obciążenia przy ocenie sensu kontynuowania analizy.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+- ochrona przepustowości operacyjnej jako stabilny mechanizm graniczny,
+- przejmowanie odpowiedzialności za problem bez formalnego mandatu,
+- internalizacja odpowiedzialności za rezultat,
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- budowanie baz wiedzy i procesów jako celu samego w sobie.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+- stosowanie identycznego poziomu analizy niezależnie od stawki decyzji,
+- chroniczne przeciąganie decyzji o niskim znaczeniu,
+- podejmowanie decyzji strategicznych przy bardzo ograniczonych danych,
+- ignorowanie kosztu potencjalnego błędu podczas planowania działań,
+- traktowanie każdej niepewności jako powodu do wstrzymania działania,
+- konsekwentne mylenie progu dowodowego z pojemnością operacyjną.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (3; silne wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (2; umiarkowane wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (2; umiarkowane wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (2; umiarkowane wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (1; słaby sygnał pomocniczy)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+- CAL-003 — Deep Calibration (2026-06-25)
+  - Doprecyzowano, że próg dowodowy jest zależny od stawki decyzji, ale nie jest tożsamy z ochroną capacity.
+  - Potwierdzono, że badany rozróżnia koszt błędu od kosztu przeciążenia.
+  - Ograniczono interpretacje mieszające zarządzanie niepewnością z ochroną pojemności operacyjnej.
+
+---
+
+# Ocena
+
+## Pewność
+
+Wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Średnia
+
+## Siła Źródeł Behawioralnych
+
+Wysoka
+
+## Poziom Walidacji
+
+Wysoki
+
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
+
+Kalibracja 003 wzmocniła jego rozdzielczość poprzez wyraźne oddzielenie progu dowodowego od mechanizmów związanych z ochroną pojemności operacyjnej.
+
+---
+
+# Notatki
+
+Predyktor nie opisuje ostrożności ani awersji do ryzyka.
+
+Opisuje sposób zarządzania niepewnością.
+
+Najbardziej prawdopodobny wzorzec działania można opisać jako:
+
+1. Oszacuj koszt błędu.
+2. Oszacuj koszt zdobycia dodatkowych informacji.
+3. Określ wymagany poziom pewności.
+4. Podejmij decyzję po osiągnięciu odpowiedniego progu dowodowego.
+
+Predyktor może stanowić mechanizm wyjaśniający współwystępowanie:
+- wysokiego AOT,
+- wysokiej pokory intelektualnej,
+- umiarkowanej potrzeby domknięcia poznawczego.
+
+Na obecnym etapie jest to jeden z najbardziej obiecujących kandydatów do walidacji na podstawie rzeczywistych historii decyzyjnych.
+
+Wysokość progu dowodowego zależy od stawki decyzji; CAL-003 dodatkowo pokazuje, że ten sam rachunek nie powinien być automatycznie interpretowany jako ochrona capacity.
+</pre>
+<h2 class="file" id="PRED-012">Assessments/Predictors/PRED-012.md <span class="id-badge">[PRED-012]</span></h2>
+<pre>---
+id: PRED-012
+name: Tolerance for People vs Cognitive Errors
+status: validated
+confidence: very high
+created_from:
+  - HEXACO
+  - Big Five
+  - VIA
+  - Schwartz
+  - MFQ
+  - AOT
+  - Wywiad jakościowy
+supporting_stories:
+  - STORY-001
+  - STORY-002
+  - STORY-003
+  - STORY-005
+  - STORY-009
+  - STORY-004
+  - STORY-006
+  - STORY-008
+  - STORY-007
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje wysoką tolerancję wobec ludzi przy jednocześnie niskiej tolerancji wobec błędów poznawczych, niespójności logicznych oraz słabej argumentacji.
+
+Ocena osoby i ocena jej rozumowania wydają się funkcjonować jako dwa odrębne procesy.
+
+W rezultacie badany może jednocześnie:
+
+- szanować rozmówcę,
+- zachowywać życzliwość,
+- wykazywać cierpliwość,
+
+oraz równocześnie:
+
+- kwestionować argumenty,
+- wskazywać błędy logiczne,
+- podważać założenia,
+- krytykować modele decyzyjne.
+
+Krytyka kierowana jest przede wszystkim wobec treści, procesu lub sposobu rozumowania, a nie wobec człowieka.
+
+Predyktor rozróżnia tolerancję wobec ludzi od niskiej tolerancji wobec błędów poznawczych.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- HEXACO (Agreeableness)
+- Big Five (Agreeableness)
+- VIA Character Strengths
+- Schwartz Value Theory
+- Moral Foundations Theory
+- Actively Open-Minded Thinking (AOT)
+
+## Analiza Jakościowa
+
+- Badany deklaruje wysoką tolerancję wobec ludzi.
+- Najbardziej irytującym czynnikiem jest nielogiczność.
+- Badany regularnie oddziela ocenę osoby od oceny argumentu.
+- W rozmowach częściej pojawia się analiza jakości rozumowania niż ocena intencji rozmówcy.
+- Krytyka najczęściej dotyczy procesu decyzyjnego lub modelu rzeczywistości.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- utrzymywał dobre relacje mimo różnic poglądów,
+- szanował ludzi o odmiennych przekonaniach,
+- aktywnie analizował jakość argumentów,
+- wskazywał niespójności logiczne,
+- zadawał pytania podważające założenia,
+- oddzielał ocenę człowieka od oceny jego decyzji,
+- próbował poprawić model zamiast przypisywać winę osobie.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- personalizowanie sporów merytorycznych,
+- przypisywanie błędów poznawczych złym intencjom,
+- odrzucanie ludzi z powodu pojedynczych błędów,
+- unikanie kwestionowania błędnych założeń w celu zachowania zgody,
+- traktowanie krytyki argumentu jako ataku na człowieka.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (1; słaby sygnał pomocniczy)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Bardzo wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Wysoka
+
+## Siła Źródeł Behawioralnych
+
+Wysoka
+
+## Poziom Walidacji
+
+Wysoki
+
+Predyktor ma regularne wsparcie w Stories i pozostaje spójnym mechanizmem wspierającym model.
+
+---
+
+# Notatki
+
+Predyktor nie opisuje konfliktowości.
+
+Predyktor nie opisuje również potrzeby krytykowania innych ludzi.
+
+Opisuje sposób rozdzielania:
+
+- osoby,
+- argumentu,
+- modelu,
+- decyzji.
+
+Najbardziej prawdopodobny wzorzec działania można opisać jako:
+
+1. Oceń człowieka.
+2. Oceń argument.
+3. Oceń model.
+4. Nie zakładaj automatycznie, że błędny model oznacza błędnego człowieka.
+
+Predyktor może wyjaśniać:
+
+- pozorne rozbieżności pomiędzy Big Five i HEXACO,
+- wysoką gotowość do debat merytorycznych,
+- preferencję dla rozmów opartych na argumentach,
+- koncentrację na jakości procesu decyzyjnego.
+
+Na obecnym etapie jest to jeden z najlepiej wspieranych predyktorów interpersonalnych w całym modelu.
+
+CAL-001 doprecyzowuje rozróżnienie między tolerancją wobec ludzi a niską tolerancją wobec błędów poznawczych.
+</pre>
+<h2 class="file" id="PRED-013">Assessments/Predictors/PRED-013.md <span class="id-badge">[PRED-013]</span></h2>
+<pre>---
+id: PRED-013
+name: Context-Adaptive Self-Presentation
+status: candidate
+confidence: medium
+created_from:
+  - Wywiad jakościowy
+supporting_stories: []
+conflicting_stories: []
+related_hypotheses: []
+related_calibrations:
+  - CAL-001
+last_updated: 2026-06-23
+version: 1.1
+---
+
+# Opis
+
+Badany wykazuje tendencję do świadomego dostosowywania sposobu prezentowania siebie do kontekstu, roli oraz celu interakcji.
+
+Dostosowanie może obejmować:
+
+- sposób komunikacji,
+- poziom formalności,
+- eksponowane kompetencje,
+- widoczność własnej osoby,
+- sposób budowania autorytetu.
+
+Celem nie wydaje się budowanie określonego wizerunku dla samego wizerunku.
+
+Bardziej prawdopodobna interpretacja wskazuje na świadome zarządzanie uwagą otoczenia w sposób wspierający realizację aktualnej roli i celu.
+
+---
+
+# Źródła
+
+## Analiza Jakościowa
+
+- Badany deklaruje przekonanie, że uwagą należy zarządzać.
+- Badany uważa, że różne role wymagają różnych sposobów prezentowania siebie.
+- Deklaruje gotowość do zmiany stylu komunikacji, wyglądu lub zachowania, jeśli wymaga tego pełniona funkcja.
+- Obecnie świadomie eksponuje rolę osoby wspierającej, pomocnej i facylitującej współpracę.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- dostosowywał sposób komunikacji do odbiorcy,
+- zmieniał poziom formalności zależnie od sytuacji,
+- eksponował różne aspekty własnych kompetencji w różnych rolach,
+- świadomie ograniczał lub zwiększał własną widoczność,
+- traktował autorytet jako narzędzie realizacji celu, a nie wartość samą w sobie.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- identyczny styl działania niezależnie od kontekstu,
+- całkowity brak refleksji nad odbiorem społecznym,
+- niezdolność do dostosowania komunikacji do odbiorcy,
+- odrzucanie zmian sposobu prezentacji siebie niezależnie od sytuacji.
+
+---
+
+# Dowody Potwierdzające
+
+Brak Stories przypisanych w matrycy kalibracyjnej. Na tym etapie mechanizm opiera się głównie na Assessment Data i analizie jakościowej.
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Oczekuje na analizę historii.
+
+---
+
+# Historia Kalibracji
+
+- CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+  - Zweryfikowano przypisania Stories w matrycy.
+  - Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+
+---
+
+# Ocena
+
+## Pewność
+
+Średnia
+
+## Siła Źródeł Psychometrycznych
+
+Niska
+
+## Siła Źródeł Behawioralnych
+
+Niska
+
+## Poziom Walidacji
+
+Niski
+
+Predyktor ma ograniczone wsparcie behawioralne i wymaga dalszej walidacji.
+
+---
+
+# Notatki
+
+Predyktor nie opisuje manipulacji ani budowania fałszywego wizerunku.
+
+Opisuje świadome dostosowywanie sposobu prezentowania siebie do kontekstu i celu działania.
+
+Na obecnym etapie nie wiadomo, czy jest to trwały mechanizm poznawczy, czy jedynie świadome przekonanie badanego.
+
+Wymaga szczególnie uważnej kalibracji podczas analizy historii.
+
+CAL-001 nie daje jeszcze podstaw do mocnej walidacji; Predictor pozostaje hipotezą o ograniczonym wsparciu behawioralnym.
+</pre>
+<h2 class="file" id="PRED-014">Assessments/Predictors/PRED-014.md <span class="id-badge">[PRED-014]</span></h2>
+<pre>---
+id: PRED-014
+
+name: Supportive Facilitation Orientation
+
+status: validated
+
+confidence: high
+
+created_from:
+- Gallup
+- Schwartz
+- VIA
+- Wywiad jakościowy
+
+supporting_stories:
+- STORY-001
+- STORY-002
+- STORY-005
+- STORY-009
+- STORY-003
+- STORY-004
+- STORY-006
+- STORY-008
+- STORY-007
+
+conflicting_stories: []
+
+related_hypotheses: []
+
+related_calibrations:
+- CAL-001
+- CAL-002
+- CAL-003
+
+last_updated: 2026-06-25
+
+version: 1.3
+
+---
+
+# Opis
+
+Badany wykazuje silną tendencję do zwiększania skuteczności działania innych ludzi poprzez usuwanie przeszkód, porządkowanie informacji, ułatwianie współpracy oraz wspieranie procesu podejmowania decyzji.
+
+Głównym źródłem satysfakcji nie wydaje się bezpośrednie zarządzanie ludźmi, kontrolowanie ich działań ani zajmowanie formalnej pozycji kierowniczej.
+
+Znacznie bardziej prawdopodobna jest orientacja na tworzenie warunków umożliwiających innym skuteczniejsze i bardziej samodzielne działanie.
+
+Predyktor opisuje mechanizm **enablementu** — zwiększania zdolności działania innych ludzi poprzez facylitację, koordynację, porządkowanie informacji oraz usuwanie barier.
+
+Kalibracja 003 doprecyzowała, że mechanizm ten kończy się w momencie, gdy druga osoba odzyskuje zdolność samodzielnego działania. Sam Predictor nie opisuje przejmowania odpowiedzialności za rezultat ani zastępowania właściciela problemu.
+
+---
+
+# Źródła
+
+## Evidence Sources
+
+- Gallup (Developer)
+- Gallup (Harmony)
+- Gallup (Relator)
+- Gallup (Connectedness)
+- Schwartz (Benevolence)
+- VIA (Kindness)
+- VIA (Teamwork)
+- VIA (Social Intelligence)
+
+## Analiza Jakościowa
+
+- Badany opisuje swoją rolę zawodową jako wspieranie i facylitowanie.
+- Widoczna jest tendencja do pomagania innym w rozwiązywaniu problemów.
+- W rozmowach częściej pojawia się język współpracy niż kontroli.
+- Wysoka orientacja na usprawnianie działania całego systemu.
+- Widoczna jest motywacja do zwiększania skuteczności innych ludzi, a nie do zarządzania nimi.
+- Badany konsekwentnie rozróżnia pomaganie od przejmowania odpowiedzialności za rezultat.
+
+---
+
+# Mechanizm
+
+Najbardziej prawdopodobny przebieg działania wygląda następująco:
+
+1. Zidentyfikuj przeszkodę utrudniającą skuteczne działanie.
+2. Zrozum czego potrzebują zaangażowane osoby.
+3. Uporządkuj informacje, komunikację lub proces.
+4. Usuń bariery ograniczające skuteczność.
+5. Przekaż możliwość dalszego działania właścicielowi.
+6. Wycofaj się z roli centralnego wykonawcy.
+
+Mechanizm zakłada, że wartość powstaje poprzez zwiększenie zdolności działania innych ludzi, a nie poprzez wykonywanie pracy za nich.
+
+Jeżeli druga osoba odzyskuje sprawczość, Predictor osiągnął swój cel.
+
+Jeżeli badany przejmuje odpowiedzialność za wynik mimo istnienia właściciela, zachowanie nie jest już wyjaśniane przez ten Predictor.
+
+---
+
+# Zachowania Przewidywane
+
+Predyktor przewiduje, że badany będzie:
+
+- pomagał innym rozwiązywać problemy,
+- porządkował informacje dla zespołu,
+- łączył ludzi z odpowiednimi zasobami lub wiedzą,
+- usuwał bariery utrudniające współpracę,
+- wspierał proces podejmowania decyzji,
+- ułatwiał komunikację pomiędzy grupami,
+- budował warunki umożliwiające samodzielne działanie innych,
+- działał jako nieformalny konsultant,
+- działał jako facylitator,
+- działał jako mentor lub coach, jeżeli zwiększa to samodzielność drugiej osoby.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+
+- przejmowanie odpowiedzialności za problem bez formalnego mandatu,
+- absorbowanie odpowiedzialności za rezultat,
+- pełnienie roli nieformalnego właściciela problemu,
+- chroniczne przejmowanie zaniedbanych tematów,
+- zastępowanie właściciela zamiast wspierania go,
+- przejmowanie wykonania tylko dlatego, że badany zrobi to szybciej lub lepiej.
+
+Jeżeli takie zachowania występują regularnie, powinny być wyjaśniane przez inne Predictory lub przez Behavioral Patterns (np. BP-005), a nie przez Supportive Facilitation Orientation.
+
+---
+
+# Zachowania Przeczące
+
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+
+- świadome utrudnianie współpracy,
+- gromadzenie wiedzy wyłącznie dla własnej przewagi,
+- unikanie wspierania innych ludzi,
+- preferowanie rywalizacji nad współpracę,
+- świadome tworzenie zależności od własnej wiedzy lub pozycji,
+- systematyczne odbieranie ludziom sprawczości zamiast jej wzmacniania.
+
+---
+
+# Dowody Potwierdzające
+
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
+- STORY-003 — Projekt systemu gwarancyjnego (2)
+- STORY-004 — Projektowanie modelu serwisu (2)
+- STORY-006 — Wprowadzenie produktu PV (2)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania PV (2)
+- STORY-007 — Standaryzacja ofertowania (1)
+
+---
+
+# Dowody Przeczące
+
+Brak.
+
+Kalibracja 003 nie osłabiła Predictora.
+
+Przeciwnie — doprecyzowała jego granice interpretacyjne.
+
+---
+
+# Historia Kalibracji
+
+## CAL-001
+
+Zweryfikowano mapowanie Predictor ↔ Story.
+
+## CAL-002
+
+Oddzielono facylitację od ownershipu.
+
+## CAL-003
+
+Znacząco doprecyzowano granicę między:
+
+- pomaganiem,
+- coachingiem,
+- enablementem,
+- a przejęciem odpowiedzialności.
+
+Potwierdzono, że Predictor opisuje zwiększanie sprawczości innych ludzi.
+
+Nie opisuje sytuacji, w której badany sam staje się właścicielem problemu.
+
+---
+
+# Ocena
+
+## Pewność
+
+Wysoka
+
+## Siła Źródeł Psychometrycznych
+
+Średnia
+
+## Siła Źródeł Behawioralnych
+
+Bardzo wysoka
+
+## Poziom Walidacji
+
+Bardzo wysoki
+
+CAL-003 nie zmieniła istoty Predictora.
+
+Doprecyzowała jedynie jego granice oraz zwiększyła rozdzielczość pomiędzy facylitacją a internalizacją odpowiedzialności.
+
+---
+
+# Notatki
+
+Najbardziej prawdopodobny wzorzec działania można opisać jako:
+
+1. Zidentyfikuj przeszkodę.
+2. Ułatw innym jej usunięcie.
+3. Zwiększ ich zdolność działania.
+4. Oddaj im sprawczość.
+5. Wycofaj się z roli centralnego wykonawcy.
+
+Najważniejszym odkryciem CAL-003 było to, że pomoc kończy się tam, gdzie druga osoba odzyskuje możliwość samodzielnego działania.
+
+Jeżeli badany przejmuje odpowiedzialność za rezultat mimo istnienia właściciela, nie jest to już zachowanie wyjaśniane przez ten Predictor, lecz przez odrębny mechanizm opisany w Behavioral Patterns.
+```
+</pre>
+</main>
+<footer class="backlinks">
+  <hr>
+  <nav>
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+    <a href="https://github.com/Istuification/careervault" target="_blank" rel="noopener">Repozytorium na GitHub</a>
+  </nav>
+</footer>
+</body>
+</html>

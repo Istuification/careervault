@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calibrations — Career Vault</title>
+<meta name="description" content="Calibrations — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
+<meta name="robots" content="index, follow">
+<style>
+  body{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+       max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
+       color:#16221D; background:#fff;}
+  header, footer{font-family: system-ui, sans-serif;}
+  nav a{margin-right: 1rem;}
+  h1{font-family: system-ui, sans-serif;}
+  h2.file{font-family: system-ui, sans-serif; margin-top:2.5rem; padding-top:1rem;
+           border-top:2px solid #24594B; color:#24594B;}
+  .id-badge{font-size:0.8rem; color:#33396B;}
+  pre{white-space: pre-wrap; word-wrap: break-word; background:#f6f7f5;
+       padding:1rem; border-radius:6px; overflow-x:auto;}
+  .backlinks{margin:1.5rem 0; font-family: system-ui, sans-serif;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="backlinks">
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+  </nav>
+  <h1>Calibrations</h1>
+  <p>Sekcja Career Vault. Zawiera pełną, surową treść następujących plików repozytorium.
+     Ostatnia aktualizacja: 2026-07-02 17:14 UTC · commit bbd9fe4.</p>
+</header>
+<main>
+<h2 class="file" id="README">Assessments/Calibrations/README.md</h2>
+<pre># Calibration
+
+## Cel dokumentu
+
+Calibration jest formalnym procesem aktualizacji Cognitive Model.
+
+Jej zadaniem jest porównywanie dostępnych danych, identyfikowanie zgodności i sprzeczności pomiędzy źródłami oraz dokumentowanie zmian w modelu.
+
+Calibration nie tworzy nowych danych.
+
+Calibration nie tworzy również nowych obserwacji.
+
+Calibration tworzy nowe uzasadnione hipotezy oraz aktualizuje istniejące modele interpretacyjne.
+
+Każda istotna zmiana w Predictorach, Behavioral Patterns lub Cognitive Model powinna zostać udokumentowana w postaci Calibration Record.
+
+---
+
+## Miejsce w architekturze Vault
+
+```text
+Assessment Data      Stories
+        ↓               ↓
+          Calibration
+                ↓
+           Predictors
+                ↓
+      Behavioral Patterns
+                ↓
+         Cognitive Model
+```
+
+Assessment Data dostarczają danych pomiarowych.
+
+Stories dostarczają obserwacji zachowań.
+
+Calibration integruje oba źródła i odpowiada za aktualizację modelu.
+
+Predictors opisują mechanizmy.
+
+Behavioral Patterns opisują powtarzalne wzorce zachowań.
+
+Cognitive Model integruje całość w spójny model funkcjonowania badanego.
+
+---
+
+## Dlaczego Calibration istnieje?
+
+Żadne pojedyncze źródło danych nie powinno być traktowane jako prawda.
+
+Assessment Data opisują wyniki pomiarów oraz profile poznawcze.
+
+Stories opisują rzeczywiste zdarzenia i zachowania.
+
+Oba źródła posiadają ograniczenia:
+
+* wyniki badań opisują jedynie wybrane aspekty funkcjonowania,
+* Stories mogą zawierać błędy pamięci, interpretacji lub perspektywy,
+* pojedyncze obserwacje mogą być przypadkowe lub niereprezentatywne.
+
+Calibration istnieje po to, aby:
+
+* porównywać źródła,
+* identyfikować zgodności,
+* identyfikować sprzeczności,
+* wykrywać nowe wzorce,
+* aktualizować model,
+* dokumentować proces zmian.
+
+---
+
+## Zasada „Fakty przed deklaracjami”
+
+Jedną z podstawowych zasad Career Vault jest:
+
+&gt; Fakty przed deklaracjami.
+
+Model nie powinien być budowany wyłącznie na podstawie deklaracji badanego ani wyłącznie na podstawie wyników testów.
+
+Każdy istotny element modelu powinien być wsparty przez wiele niezależnych źródeł danych.
+
+Im więcej niezależnych źródeł wspiera dany wniosek, tym wyższy poziom zaufania do modelu.
+
+---
+
+## Co może zrobić Calibration?
+
+Calibration może:
+
+* utworzyć nowy Predictor,
+
+* zmodyfikować istniejący Predictor,
+
+* wycofać Predictor,
+
+* utworzyć nowy Behavioral Pattern,
+
+* zmodyfikować istniejący Behavioral Pattern,
+
+* wycofać Behavioral Pattern,
+
+* zaktualizować Cognitive Model,
+
+* zwiększyć lub zmniejszyć poziom confidence,
+
+* wykryć konflikt pomiędzy źródłami,
+
+* wykryć nowy wzorzec wymagający dalszej analizy,
+
+* wskazać obszary wymagające dodatkowych danych.
+
+Calibration nie powinna zmieniać modelu bez wyraźnego uzasadnienia opartego na dostępnych dowodach.
+
+---
+
+## Struktura Calibration Record
+
+Każda kalibracja powinna być zapisana jako osobny plik Markdown.
+
+### Metadane
+
+```yaml
+---
+id: CAL-001
+
+name: Predictor-Story Mapping
+
+date: 2026-06-22
+
+status: completed
+
+scope:
+  - Predictors
+  - Stories
+
+version: 1.0
+---
+```
+
+---
+
+## Elementy Calibration Record
+
+### Cel
+
+Dlaczego przeprowadzono kalibrację?
+
+Jakie pytanie lub problem miała rozwiązać?
+
+---
+
+### Zakres
+
+Które elementy Vault zostały przeanalizowane?
+
+Przykłady:
+
+* Assessment Data,
+* Stories,
+* Predictors,
+* Behavioral Patterns,
+* Cognitive Model.
+
+---
+
+### Analiza
+
+Opis przeprowadzonej analizy.
+
+Powinna zawierać:
+
+* wykorzystane źródła,
+* przebieg rozumowania,
+* istotne obserwacje,
+* zauważone zgodności,
+* zauważone konflikty.
+
+---
+
+### Wnioski
+
+Najważniejsze obserwacje wynikające z kalibracji.
+
+Powinny odpowiadać na pytanie:
+
+&gt; Czego dowiedzieliśmy się o modelu?
+
+---
+
+### Zmiany rekomendowane
+
+Zmiany sugerowane przez kalibrację.
+
+Przykłady:
+
+* zwiększenie confidence Predictora,
+* doprecyzowanie opisu,
+* utworzenie nowego Behavioral Pattern,
+* oznaczenie elementu jako wymagającego dalszej obserwacji.
+
+---
+
+### Zmiany wdrożone
+
+Zmiany faktycznie wprowadzone do modelu.
+
+Jeżeli żadna zmiana nie została wdrożona, należy to odnotować.
+
+---
+
+### Otwarte pytania
+
+Elementy wymagające dalszej obserwacji, dodatkowych danych lub kolejnych kalibracji.
+
+---
+
+## Zasada śledzenia zmian
+
+Calibration pełni funkcję historii rozwoju modelu.
+
+Każda istotna zmiana powinna posiadać odpowiadający jej Calibration Record.
+
+Dzięki temu możliwe jest prześledzenie:
+
+* dlaczego zmiana została wprowadzona,
+* jakie dowody ją wspierały,
+* które elementy modelu zostały zmienione,
+* jakie były alternatywne interpretacje.
+
+---
+
+## Relacja z Predictorami
+
+Predictors są najniższą warstwą interpretacyjną modelu.
+
+Calibration odpowiada za ocenę, czy istniejące Predictors nadal najlepiej wyjaśniają dostępne dane.
+
+W wyniku kalibracji Predictor może zostać:
+
+* potwierdzony,
+* zmodyfikowany,
+* rozdzielony,
+* połączony z innym Predictorem,
+* wycofany.
+
+---
+
+## Relacja z Behavioral Patterns
+
+Behavioral Patterns opisują powtarzalne wzorce zachowań.
+
+Calibration odpowiada za ocenę, czy wzorce nadal występują w dostępnych Stories oraz czy są wspierane przez Predictors.
+
+W wyniku kalibracji Behavioral Pattern może zostać:
+
+* potwierdzony,
+* zmodyfikowany,
+* rozszerzony,
+* ograniczony,
+* wycofany.
+
+---
+
+## Relacja z Cognitive Model
+
+Cognitive Model stanowi najwyższą warstwę interpretacyjną Vault.
+
+Calibration odpowiada za ocenę, czy Cognitive Model nadal najlepiej wyjaśnia:
+
+* Assessment Data,
+* Predictors,
+* Behavioral Patterns,
+* Stories.
+
+Jeżeli model przestaje wyjaśniać dostępne dane, powinien zostać zaktualizowany.
+
+---
+
+## Cel długoterminowy
+
+Celem Calibration nie jest osiągnięcie idealnego modelu.
+
+Jej rolą jest stopniowe zwiększanie trafności Cognitive Model poprzez systematyczne porównywanie modelu z nowymi danymi, obserwacjami i doświadczeniami.
+
+Model powinien ewoluować wraz z pojawianiem się nowych dowodów, zachowując jednocześnie pełną historię zmian i uzasadnień.
+</pre>
+<h2 class="file" id="CAL-001">Assessments/Calibrations/CAL-001.md <span class="id-badge">[CAL-001]</span></h2>
+<pre># CAL-001 – Predictor ↔ Story Mapping Review
+
+```yaml
+---
+id: CAL-001
+
+name: Predictor-Story Mapping Review
+
+date: 2026-06-22
+
+status: completed
+
+scope:
+  - Predictors
+  - Stories
+
+version: 1.0
+---
+```
+
+# Cel
+
+Zweryfikowanie stopnia wsparcia Predictorów przez dostępne Stories.
+
+Kalibracja ma odpowiedzieć na następujące pytania:
+
+* Czy Predictory znajdują potwierdzenie w rzeczywistych zachowaniach?
+* Które Predictory stanowią rdzeń modelu?
+* Które Predictory pełnią rolę wspierającą?
+* Które Predictory wymagają dalszej obserwacji lub rewizji?
+* Czy istnieją Predictory potencjalnie nakładające się na siebie?
+
+---
+
+# Zakres
+
+Przeanalizowano:
+
+* wszystkie istniejące Predictors,
+* wszystkie dostępne Stories,
+* matrycę Predictor ↔ Story.
+
+---
+
+# Analiza
+
+## Obserwacja 1 – Wysoka spójność zachowań
+
+Stories wykazują wysoki poziom spójności.
+
+Zamiast wielu niezależnych stylów działania widoczny jest jeden dominujący wzorzec:
+
+```text
+Złożoność
+↓
+Analiza
+↓
+Strukturyzacja
+↓
+Model
+↓
+Usprawnienie
+↓
+Facylitacja wdrożenia
+```
+
+Wzorzec ten pojawia się wielokrotnie w różnych kontekstach zawodowych i organizacyjnych.
+
+---
+
+## Obserwacja 2 – Silny rdzeń modelu
+
+Cztery Predictors wykazują bardzo silne wsparcie behawioralne:
+
+* PRED-001 Model-Centric Decision Making
+* PRED-006 Systemic Problem Structuring
+* PRED-010 Proven-System Optimization
+* PRED-014 Supportive Facilitation Orientation
+
+Predictors te występują regularnie w większości analizowanych Stories.
+
+Stanowią najbardziej prawdopodobny rdzeń przyszłego Cognitive Model.
+
+---
+
+## Obserwacja 3 – Predictors wspierające
+
+Pięć Predictorów wykazuje regularne, ale mniej dominujące wsparcie:
+
+* PRED-002 Evidence-Driven Belief Updating
+* PRED-004 Principle-Based Decision Making
+* PRED-009 Expert-over-Manager Preference
+* PRED-011 Stakes-Adjusted Evidence Threshold
+* PRED-012 Tolerance for People vs Cognitive Errors
+
+Mechanizmy te wydają się wspierać działanie Predictorów rdzeniowych.
+
+---
+
+## Obserwacja 4 – Mechanizmy sytuacyjne
+
+Dwa Predictors wydają się aktywować głównie w określonych warunkach:
+
+* PRED-005 Learning-Oriented Exploration
+* PRED-008 Selective Cognitive Reopening
+
+Obecnie brak podstaw do ich modyfikacji lub usunięcia.
+
+Wymagają dalszej obserwacji wraz z pojawianiem się nowych Stories.
+
+---
+
+## Obserwacja 5 – Ograniczona walidacja behawioralna
+
+Dwa Predictors posiadają ograniczone wsparcie w Stories:
+
+* PRED-007 Low Status Motivation
+* PRED-013 Strategic Self-Presentation / Attention Management
+
+Oba mechanizmy posiadają wsparcie w Assessment Data oraz wywiadzie jakościowym.
+
+Obecna liczba Stories nie pozwala jednak na silną walidację behawioralną.
+
+---
+
+## Obserwacja 6 – Potencjalne nakładanie się Predictorów
+
+Istnieje potencjalne częściowe nakładanie się pomiędzy:
+
+* PRED-001 Model-Centric Decision Making
+* PRED-006 Systemic Problem Structuring
+
+Obecne dane nie uzasadniają połączenia Predictorów.
+
+Temat powinien zostać ponownie oceniony podczas przyszłych kalibracji.
+
+---
+
+# Wnioski
+
+## Wniosek 1
+
+Model posiada wyraźny rdzeń behawioralny.
+
+Najsilniej wspierane mechanizmy to:
+
+* Systemic Problem Structuring
+* Model-Centric Decision Making
+* Proven-System Optimization
+* Supportive Facilitation Orientation
+
+---
+
+## Wniosek 2
+
+Stories wspierają hipotezę, że badany wykazuje względnie spójny styl działania niezależnie od kontekstu zawodowego.
+
+---
+
+## Wniosek 3
+
+Większość Predictorów posiada przynajmniej częściowe wsparcie behawioralne.
+
+Nie zidentyfikowano Predictorów wymagających natychmiastowego usunięcia.
+
+---
+
+## Wniosek 4
+
+Istnieją podstawy do rozpoczęcia budowy pierwszych Behavioral Patterns.
+
+Jednocześnie wskazane jest wcześniejsze przeprowadzenie rewizji Predictorów oraz aktualizacji poziomów confidence.
+
+---
+
+# Zmiany rekomendowane
+
+## PRED-001 Model-Centric Decision Making
+
+Rekomendacja:
+
+* zwiększyć confidence,
+* utrzymać aktualny zakres mechanizmu.
+
+---
+
+## PRED-006 Systemic Problem Structuring
+
+Rekomendacja:
+
+* zwiększyć confidence,
+* oznaczyć jako jeden z Predictorów rdzeniowych.
+
+---
+
+## PRED-010 Proven-System Optimization
+
+Rekomendacja:
+
+* zwiększyć confidence,
+* oznaczyć jako Predictor rdzeniowy.
+
+---
+
+## PRED-014 Supportive Facilitation Orientation
+
+Rekomendacja:
+
+* zwiększyć confidence,
+* oznaczyć jako Predictor rdzeniowy.
+
+---
+
+## PRED-007 Low Status Motivation
+
+Rekomendacja:
+
+* pozostawić bez zmian,
+* oznaczyć jako wymagający dalszej walidacji.
+
+---
+
+## PRED-013 Strategic Self-Presentation / Attention Management
+
+Rekomendacja:
+
+* pozostawić bez zmian,
+* oznaczyć jako wymagający dalszej walidacji.
+
+---
+
+# Zmiany wdrożone
+
+Brak.
+
+CAL-001 ma charakter diagnostyczny.
+
+Zmiany zostaną wprowadzone w ramach kolejnych aktualizacji Predictorów.
+
+---
+
+# Otwarte pytania
+
+## OP-001
+
+Czy PRED-001 i PRED-006 opisują dwa niezależne mechanizmy, czy dwa aspekty tego samego procesu poznawczego?
+
+---
+
+## OP-002
+
+Czy PRED-007 Low Status Motivation jest poprawnie nazwany i czy jego obecna definicja najlepiej opisuje obserwowany mechanizm?
+
+---
+
+## OP-003
+
+Czy PRED-013 Strategic Self-Presentation / Attention Management stanowi niezależny Predictor, czy raczej strategię adaptacyjną aktywowaną kontekstowo?
+
+---
+
+## OP-004
+
+Czy wraz z pojawieniem się nowych Stories ujawnią się dodatkowe Behavioral Patterns niewidoczne przy obecnej liczbie obserwacji?
+
+---
+
+# Podsumowanie
+
+CAL-001 potwierdziła wysoką spójność modelu.
+
+Dostępne Stories wspierają istnienie niewielkiej liczby silnych mechanizmów poznawczych i decyzyjnych, które pojawiają się w wielu niezależnych kontekstach.
+
+Wyniki kalibracji uzasadniają przejście do etapu rewizji Predictorów oraz przygotowania pierwszych Behavioral Patterns.
+</pre>
+<h2 class="file" id="CAL-002">Assessments/Calibrations/CAL-002.md <span class="id-badge">[CAL-002]</span></h2>
+<pre>---
+id: CAL-002
+name: BP–Predictor Calibration Summary
+date: 2026-06-23
+status: completed
+scope:
+  - Behavioral Patterns
+  - Predictors
+  - Predictor Coverage Matrix
+version: 1.0
+---
+
+# Cel
+
+Celem tej kalibracji było dopasowanie warstwy Predictorów do zaobserwowanych Behavioral Patterns oraz ocena, czy obecny zestaw mechanizmów wyjaśniających jest wystarczający do opisu Vaultu.
+
+Kalibracja miała odpowiedzieć na cztery pytania:
+
+* które Predictory najlepiej wyjaśniają każdy Behavioral Pattern,
+* gdzie występują silne, średnie i słabe dopasowania,
+* czy istnieją luki w warstwie Predictorów,
+* które Predictory są najbardziej nośne dla całego modelu.
+
+# Zakres
+
+W tej kalibracji przeanalizowano:
+
+* 12 Behavioral Patterns,
+* 14 Predictors,
+* macierz pokrycia Predictor → Behavioral Pattern,
+* luki kalibracyjne zidentyfikowane na poziomie pojedynczych wzorców.
+
+Ta sesja była skoncentrowana na relacji BP ↔ PRED. Nie wprowadzano nowych Behavioral Patterns ani nowych Predictorów.
+
+# Analiza
+
+Przeprowadzono mapowanie wyjaśniające, a nie dopasowanie po słowach-kluczach. Dla każdego Behavioral Pattern oceniano:
+
+* trigger,
+* proces wewnętrzny,
+* zachowania obserwowalne,
+* typowe rezultaty.
+
+Następnie dobierano Predictory, które najlepiej tłumaczą dany mechanizm.
+
+Najważniejsze obserwacje:
+
+* Wiele BP jest wyjaśnianych przez kombinacje kilku Predictorów, a nie przez pojedynczy mechanizm.
+* Najsilniejszą warstwę nośną tworzą Predictory związane z modelowaniem systemu, strukturą poznawczą, aktualizacją na podstawie danych oraz oceną progu wystarczalności.
+* Najbardziej spójne dopasowania dotyczą wzorców związanych z:
+  * zamykaniem i ponownym otwieraniem tematów,
+  * operacyjną diagnostyką,
+  * budowaniem roboczego modelu w warunkach niepewności,
+  * krytyką argumentu bez ataku na osobę.
+* Dwa obszary okazały się niedookreślone i zostały oznaczone jako luki:
+  * ownership / internalizacja odpowiedzialności za problem bez formalnego mandatu,
+  * świadome zarządzanie capacity / throughput oraz ochrona przepustowości systemu.
+
+Macierz pokrycia pokazała również, że żaden Predictor nie pozostał całkowicie bez użycia. Oznacza to, że obecny zestaw mechanizmów jest mocno skonsolidowany, ale nie w pełni kompletny.
+
+# Wnioski
+
+Kalibracja potwierdziła, że obecny Predictor layer jest szeroki i relatywnie spójny.
+
+Najważniejsze wnioski:
+
+* rdzeń modelu jest dobrze pokryty przez Predictory o charakterze systemowym, diagnostycznym i aktualizacyjnym,
+* kilka Behavioral Patterns wymaga kompozycji z kilku Predictorów, co jest zgodne z przyjętym modelem interpretacyjnym,
+* BP-005, BP-006 i BP-011 ujawniły rzeczywiste luki mechanistyczne,
+* pozostałe wzorce są w większości lub w pełni wyjaśnione,
+* nie było potrzeby tworzenia nowych Predictorów w tej rundzie, ponieważ kalibracja miała charakter diagnostyczny, a nie konstrukcyjny.
+
+# Zmiany rekomendowane
+
+Na podstawie tej kalibracji rekomendowane są następujące działania:
+
+* utrzymać obecny zestaw Predictorów jako bazę roboczą,
+* oznaczyć PRED-005, PRED-007, PRED-009, PRED-010, PRED-011 i PRED-014 jako szczególnie ważne dla interpretacji wielu BP,
+* obserwować, czy mechanizmy ownership oraz throughput protection pojawiają się konsekwentnie w kolejnych danych,
+* przygotować przyszłą kalibrację dla obszarów:
+  * przejmowanie odpowiedzialności,
+  * formalizacja wiedzy ukrytej,
+  * ochrona pojemności operacyjnej.
+
+# Zmiany wdrożone
+
+W tej sesji nie wdrożono zmian do samego Cognitive Model ani do treści Predictorów.
+
+Wdrożono natomiast dokumentację kalibracyjną w postaci:
+
+* pełnej mapy BP ↔ PRED,
+* 12 rekordów kalibracyjnych dla pojedynczych Behavioral Patterns,
+* raportu zbiorczego BP-PRED-NETWORK,
+* oznaczenia luk w warstwie Predictorów.
+
+# Otwarte pytania
+
+Pozostają trzy główne pytania do dalszej obserwacji:
+
+1. Czy ownership/internalizacja odpowiedzialności powinna zostać opisana jako osobny Predictor, czy jako stabilna kompozycja istniejących mechanizmów?
+2. Czy formalizacja wiedzy ukrytej jest odrębnym mechanizmem, czy jedynie skutkiem PRED-006 + PRED-014?
+3. Czy ochrona throughputu wymaga osobnego Predictora, czy da się ją w pełni wyjaśnić istniejącym zestawem?
+
+# Relacja z Predictorami
+
+Najmocniej wspierające Predictory dla całego Vaultu okazały się:
+
+* PRED-001,
+* PRED-002,
+* PRED-006,
+* PRED-010,
+* PRED-011,
+* PRED-014.
+
+To one tworzą podstawowy język kalibracyjny dla większości Behavioral Patterns.
+
+# Relacja z Behavioral Patterns
+
+Najlepiej wyjaśnione wzorce to:
+
+* BP-003,
+* BP-007,
+* BP-008,
+* BP-010,
+* BP-012.
+
+Najbardziej wymagające dalszej pracy wzorce to:
+
+* BP-005,
+* BP-006,
+* BP-011.
+
+# Relacja z Cognitive Model
+
+W tej rundzie Cognitive Model nie był bezpośrednio przebudowywany.
+
+Kalibracja potwierdziła jednak, że model jest na tyle stabilny, aby opierać się na nim dalej, ale jednocześnie ujawniła dwa obszary, które mogą wymagać jego późniejszego doprecyzowania.
+
+# Podsumowanie końcowe
+
+Predictor layer jest zasadniczo wystarczający do kalibracji bieżących Behavioral Patterns, ale nie jest jeszcze całkowicie domknięty.
+
+Najbliższe priorytety dalszej pracy to:
+
+* doprecyzowanie mechanizmu ownership,
+* doprecyzowanie mechanizmu formalizacji wiedzy ukrytej,
+* doprecyzowanie mechanizmu ochrony capacity / throughput.
+
+Do tego czasu obecny model można uznać za silny operacyjnie, lecz niepełny mechanistycznie.
+</pre>
+<h2 class="file" id="CAL-003">Assessments/Calibrations/CAL-003.md <span class="id-badge">[CAL-003]</span></h2>
+<pre>---
+id: CAL-003
+name: Deep Calibration — Responsibility, Tacit Knowledge Codification, Capacity Protection
+date: 2026-06-25
+status: completed
+scope:
+  - Assessment Data
+  - Stories
+  - Predictors
+  - Behavioral Patterns
+  - Cognitive Model
+version: 1.0
+---
+
+# Cel
+
+Celem Kalibracji 003 było sprawdzenie, czy trzy zaobserwowane hipotezy behawioralne — internalizacja odpowiedzialności, kodowanie wiedzy ukrytej oraz ochrona pojemności operacyjnej — są już wyjaśnione przez istniejącą warstwę Predyktorów, czy też wskazują na niepełność modelu.
+
+Kalibracja miała odpowiedzieć na pytanie, czy nowe obserwacje uzasadniają utworzenie nowych Predictorów, czy raczej wzmacniają już istniejące mechanizmy interpretacyjne.
+
+# Zakres
+
+Przeanalizowano następujące źródła:
+
+- dokument „Głęboki wywiad kalibracyjny Career Vault”,
+- transkrypt wypowiedzi badanego z Kalibracji 003,
+- istniejący opis hipotez i logiki oceny,
+- bliskie, już zweryfikowane Predyktory wskazane w Vault jako punkt odniesienia,
+- odpowiedzi dotyczące zachowań, przykładów, kontrprzykładów i przypadków granicznych.
+
+# Analiza
+
+## 1. Internalizacja odpowiedzialności
+
+Materiał wskazuje, że badany bardzo wyraźnie rozróżnia pomaganie od przejęcia odpowiedzialności. Pomoc zachodzi wtedy, gdy osoba zgłaszająca może nadal prowadzić temat i jest chętna do bycia accountable. Odpowiedzialność pojawia się dopiero wtedy, gdy temat jest ważny dla działu lub firmy, nikt inny nie ma realnej możliwości go poprowadzić, a badany posiada kompetencje lub możliwość ich zdobycia. To rozumowanie jest silnie warunkowe, a nie bezwarunkowe. 
+
+Badany odróżnia także odpowiedzialność moralną, społeczną, kompetencyjną i systemową. W praktyce jego decyzje są osadzone w logice hierarchii, dostępnych kompetencji, ryzyka dla organizacji oraz zgodności z porządkiem systemowym. Szczególnie istotne jest to, że przy formalnym właścicielu badany deklaruje niechęć do wchodzenia mu w drogę i skłonność do pozostawienia sprawy właścicielowi, przy jednoczesnym oferowaniu pomocy lub coachingu. To osłabia hipotezę o prostym, bezwarunkowym mechanizmie „ownership”.
+
+Jednocześnie w opisie realnych sytuacji badany wielokrotnie pokazuje, że mimo deklarowanej ostrożności przejmuje tematy spoza formalnej roli, zwłaszcza gdy uznaje je za ważne strategicznie, ryzykowne dla firmy albo niezaopiekowane przez system zarządzania. W tym sensie internalizacja odpowiedzialności występuje, ale wygląda raczej na pochodną ważkości stawki, kompetencyjności, troski o system i sprawiedliwości niż na osobny, pierwotny mechanizm. 
+
+## 2. Kodowanie wiedzy ukrytej
+
+Tu pojawia się najsilniejszy i najbardziej spójny wzorzec. Badany bardzo konsekwentnie uznaje wiedzę „trzymaną w głowie” za ryzyko dla firmy. Motywacją do kodowania jest przede wszystkim redukcja ryzyka utraty wiedzy, możliwość odtworzenia procesu, skalowalność oraz efektywność. Sam proces porządkowania i dokumentowania wiedzy sprawia mu przyjemność, co wskazuje, że zachowanie to nie jest wyłącznie instrumentalne.
+
+Badany odróżnia kodowanie od zwykłego nauczenia jednej osoby. Kodowanie ma tworzyć infrastrukturę organizacyjną, która pozostaje użyteczna po odejściu osób, przy zmianie składu zespołu albo przy późniejszym skalowaniu. W wypowiedziach pojawiają się też wyraźne przypadki tworzenia procedur, algorytmów diagnostycznych i baz wiedzy bez bezpośredniej prośby otoczenia. To sugeruje trwały, powtarzalny wzorzec, który może być blisko powiązany z istniejącymi Predyktorami systemowego strukturyzowania i optymalizacji sprawdzonych systemów.
+
+Jednocześnie kodowanie nie jest u badanego impulsem absolutnym. Jeśli wiedza nie ma przyszłego użycia, jeśli zmiana jest trywialna albo jeśli koszt przewyższa korzyść, badany dopuszcza pozostawienie rzeczy „niezakodowanych”. To wskazuje, że mechanizm jest bardzo silny, ale nadal warunkowy i osadzony w ocenie użyteczności. W rezultacie nie ma jeszcze wystarczającej podstawy, aby traktować go jako nowy, odrębny Predictor zamiast silnej konfiguracji istniejących.
+
+## 3. Ochrona pojemności operacyjnej
+
+To jest najsłabszy kandydat na odrębny mechanizm. Badany jasno rozumie trade-off między przepustowością, jakością i ryzykiem oraz potrafi mówić o przeciążeniu, granicach i kosztach nadmiernych zobowiązań. W warstwie deklaratywnej widać dojrzałe myślenie o limicie zasobów oraz o tym, że system nie powinien być przeciążany bez potrzeby.
+
+Jednocześnie z transkryptu wynika, że w praktyce badany bardzo często bierze dodatkowe tematy, trudno mu odmówić właścicielom i nierzadko płaci za to kosztem własnego zakresu pracy, napięć z przełożonym lub obciążenia osobistego. Oznacza to, że ochrona pojemności nie działa jeszcze jako stabilny, dominujący filtr decyzyjny. Bardziej wygląda to na napięcie między świadomością ograniczeń a nawykiem reagowania na ważność problemu, kompetencyjność własną i oczekiwania hierarchii. 
+
+Wniosek roboczy jest taki, że obecnie mamy raczej zestaw decyzji o priorytecie, jakości i ważności systemowej niż osobny, spójny mechanizm ochrony capacity. Ta hipoteza pozostaje najbliżej statusu „do dalszej obserwacji”.
+
+## 4. Konkurencyjne wyjaśnienia
+
+Najsilniejszym alternatywnym wyjaśnieniem dla wszystkich trzech hipotez jest kombinacja istniejących Predyktorów:
+
+- podejmowanie decyzji skoncentrowane na modelu,
+- aktualizowanie przekonań w oparciu o dowody,
+- podejmowanie decyzji oparte na zasadach,
+- systemowe strukturyzowanie problemów,
+- optymalizacja sprawdzonych systemów,
+- próg dowodowy dostosowany do stawki,
+- wspierająca orientacja facylitacyjna. 
+
+Dane z transkryptu szczególnie mocno wspierają interpretację systemową: badany patrzy na to, kto ma kompetencje, kto ma zasoby, jakie są konsekwencje dla firmy, czy coś da się odtworzyć, jak zabezpieczyć proces przed utratą i kiedy należy wesprzeć, a kiedy przekazać właścicielstwo. To bardziej przypomina stabilny styl zarządzania problemem niż oddzielne, niepowiązane mechanizmy.
+
+# Wnioski
+
+1. Internalizacja odpowiedzialności została zaobserwowana, ale na obecnym etapie najlepiej wyjaśnia ją kombinacja istniejących Predyktorów oraz logika systemowa, nie osobny nowy Predictor.
+
+2. Kodowanie wiedzy ukrytej jest silnym, powtarzalnym i dobrze udokumentowanym wzorcem, jednak nadal można je wyjaśnić przez istniejącą warstwę modelu: optymalizację, systemowość, redukcję ryzyka i myślenie o odtwarzalności.
+
+3. Ochrona pojemności operacyjnej nie ma jeszcze wystarczająco stabilnego i odrębnego profilu behawioralnego. Wydaje się bardziej rezultatem priorytetyzacji, troski o jakość oraz reakcji na ważność tematu niż osobnym mechanizmem.
+
+4. Główny nowy insight brzmi: badany przechodzi od pomagania do przejęcia odpowiedzialności przede wszystkim wtedy, gdy widzi lukę systemową, wysoką stawkę i brak kompetentnego właściciela. To wzmacnia interpretację, że w centrum nie stoi ownership sam w sobie, lecz odpowiedzialność za spójność i ciągłość działania systemu.
+
+# Zmiany rekomendowane
+
+1. Nie tworzyć jeszcze nowych Predictorów dla trzech badanych hipotez.
+2. Podnieść confidence dla istniejących Predyktorów związanych z systemowym strukturyzowaniem problemów, optymalizacją sprawdzonych systemów oraz progiem dowodowym dostosowanym do stawki, ponieważ nowe dane silnie je wspierają.
+3. Zachować internalizację odpowiedzialności jako wzorzec roboczy, ale oznaczyć ją jako prawdopodobnie pochodną innych mechanizmów.
+4. Zachować kodowanie wiedzy ukrytej jako silną hipotezę operacyjną, ale bez jeszcze osobnego Predyktora.
+5. Oznaczyć ochronę pojemności operacyjnej jako wymagającą dalszej obserwacji, zwłaszcza w sytuacjach konfliktu z hierarchią i atrakcyjnymi szansami.
+
+# Zmiany wdrożone
+
+Na potrzeby tej kalibracji nie wdrożono zmian w modelu. Kalibracja ma charakter diagnostyczny i rekomendacyjny.
+
+# Otwarte pytania
+
+1. Czy kodowanie wiedzy ukrytej pozostaje stabilne także poza kontekstami, w których istnieje bezpośrednie ryzyko utraty know-how lub potrzeba skalowania?
+2. Czy ochrona pojemności operacyjnej staje się silniejsza w sytuacjach, gdzie brak zewnętrznej presji hierarchicznej?
+3. Czy internalizacja odpowiedzialności utrzymuje się wtedy, gdy problem nie jest strategiczny, nie jest „systemowy” i nie daje przewagi kompetencyjnej?
+4. Czy istnieją przypadki, w których badany konsekwentnie odmawia przejęcia tematów mimo wysokiej stawki i własnej kompetencji?
+5. Czy różnica między pomaganiem a ownershipem jest u badanego stabilna operacyjnie, czy zależy głównie od kontekstu i języka organizacji?
+
+# Status końcowy
+
+Kalibracja 003 wzmacnia tezę, że obecny model dobrze wyjaśnia większość obserwowanego materiału. Najmocniej wyróżnia się wzorzec kodowania wiedzy ukrytej, ale nawet on nie wymusza jeszcze dodania nowego Predyktora. Najsłabiej wsparta jest odrębność ochrony pojemności operacyjnej. W obecnym stanie model wymaga raczej doprecyzowania i podniesienia confidence w istniejących mechanizmach niż rozbudowy o nowe warstwy interpretacyjne.
+</pre>
+</main>
+<footer class="backlinks">
+  <hr>
+  <nav>
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+    <a href="https://github.com/Istuification/careervault" target="_blank" rel="noopener">Repozytorium na GitHub</a>
+  </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Achievements — Career Vault</title>
+<meta name="description" content="Achievements — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
+<meta name="robots" content="index, follow">
+<style>
+  body{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+       max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
+       color:#16221D; background:#fff;}
+  header, footer{font-family: system-ui, sans-serif;}
+  nav a{margin-right: 1rem;}
+  h1{font-family: system-ui, sans-serif;}
+  h2.file{font-family: system-ui, sans-serif; margin-top:2.5rem; padding-top:1rem;
+           border-top:2px solid #24594B; color:#24594B;}
+  .id-badge{font-size:0.8rem; color:#33396B;}
+  pre{white-space: pre-wrap; word-wrap: break-word; background:#f6f7f5;
+       padding:1rem; border-radius:6px; overflow-x:auto;}
+  .backlinks{margin:1.5rem 0; font-family: system-ui, sans-serif;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="backlinks">
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+  </nav>
+  <h1>Achievements</h1>
+  <p>Sekcja Career Vault. Zawiera pełną, surową treść następujących plików repozytorium.
+     Ostatnia aktualizacja: 2026-07-02 17:14 UTC · commit bbd9fe4.</p>
+</header>
+<main>
+<h2 class="file" id="README">Achievements/README.md</h2>
+<pre># Achievements
+
+## Cel
+
+Folder **Achievements** zawiera najważniejsze osiągnięcia zawodowe i prywatne zgromadzone w ramach Career Vault.
+
+Achievement jest pojedynczym, możliwym do udokumentowania osiągnięciem, projektem, usprawnieniem, wdrożeniem, transformacją lub zmianą, która wywarła zauważalny wpływ na organizację, zespół, produkt, proces lub rozwój osobisty.
+
+Achievements stanowią główne źródło dowodów w całym Career Vault.
+
+Jeżeli Experience dostarcza kontekstu, a Skills opisują kompetencje, to Achievements odpowiadają na pytanie:
+
+&gt; Co faktycznie zostało osiągnięte?
+
+---
+
+# Rola Achievements w Career Vault
+
+Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
+
+```text
+Experience
+↓
+Gdzie zdobywałem doświadczenie?
+
+Achievements
+↓
+Co osiągnąłem?
+
+Skills
+↓
+Jakie kompetencje potwierdzają te osiągnięcia?
+
+Stories
+↓
+Jak opowiadać o tych doświadczeniach?
+
+Development Areas
+↓
+Jakie wzorce rozwojowe obserwuję u siebie?
+
+Identity
+↓
+Kim jestem jako profesjonalista?
+```
+
+Achievements są fundamentem całego systemu.
+
+Wszystkie pozostałe moduły powinny opierać się na informacjach zapisanych w Achievementach.
+
+---
+
+# Czym jest Achievement?
+
+Achievement opisuje konkretną sytuację, projekt, usprawnienie lub rezultat osiągnięty w określonym kontekście.
+
+Dobry Achievement:
+
+* opisuje rzeczywisty problem lub potrzebę,
+* zawiera kontekst biznesowy,
+* pokazuje podjęte działania,
+* wskazuje zastosowane kompetencje,
+* opisuje rezultat,
+* dokumentuje wpływ,
+* może zostać wykorzystany jako dowód doświadczenia.
+
+Achievement nie opisuje obowiązków.
+
+Achievement opisuje rezultat, zmianę lub wpływ wykraczający poza samo wykonywanie obowiązków.
+
+---
+
+# Fakty ponad deklaracje
+
+Najważniejsza zasada Career Vault:
+
+&gt; Fakty ponad deklaracje.
+
+Przykład:
+
+❌ Jestem dobrym liderem.
+
+✅ Przeprowadziłem restrukturyzację działu serwisu oraz ustabilizowałem jego funkcjonowanie.
+
+Kompetencje powinny wynikać z osiągnięć.
+
+Nie odwrotnie.
+
+---
+
+# Rodzaje Achievementów
+
+## Zawodowe
+
+Identyfikator:
+
+```text
+ACH-001
+ACH-002
+...
+```
+
+Dotyczą doświadczenia zawodowego, działalności biznesowej, projektów organizacyjnych, wdrożeń, produktów oraz inicjatyw realizowanych w pracy.
+
+---
+
+## Prywatne
+
+Identyfikator:
+
+```text
+ACH-P001
+ACH-P002
+...
+```
+
+Dotyczą działań realizowanych poza pracą zawodową.
+
+Mogą dokumentować kompetencje rozwijane poprzez:
+
+* działalność społeczną,
+* organizację wydarzeń,
+* hobby,
+* projekty prywatne,
+* aktywność edukacyjną.
+
+---
+
+# Poziomy wpływu
+
+Achievement może dotyczyć różnych poziomów oddziaływania.
+
+## Indywidualny
+
+Wpływ na własną pracę lub efektywność.
+
+Przykład:
+
+* stworzenie własnego narzędzia automatyzującego pracę.
+
+---
+
+## Zespołowy
+
+Wpływ na sposób pracy zespołu.
+
+Przykład:
+
+* usprawnienie workflow działu.
+
+---
+
+## Działowy
+
+Wpływ na funkcjonowanie całego działu.
+
+Przykład:
+
+* restrukturyzacja działu serwisu.
+
+---
+
+## Organizacyjny
+
+Wpływ na funkcjonowanie całej organizacji.
+
+Przykład:
+
+* wdrożenie systemu wykorzystywanego przez wiele działów.
+
+---
+
+## Struktura rekordu
+
+### Pola obowiązkowe
+
+```yaml
+id:
+title:
+
+period:
+  start:
+  end:
+
+company:
+roles:
+
+situation:
+actions:
+impact:
+
+skills:
+themes:
+
+importance:
+```
+
+### Pola opcjonalne
+
+```yaml
+category:
+evidence:
+metrics:
+related_tools:
+star_candidates:
+notes:
+```
+
+---
+
+## Opis pól
+
+### id
+
+Unikalny identyfikator rekordu.
+
+Przykład:
+
+```yaml
+id: ACH-001
+```
+
+---
+
+### title
+
+Krótka nazwa osiągnięcia.
+
+Powinna opisywać rezultat lub inicjatywę.
+
+Przykład:
+
+```yaml
+title: Wdrożenie systemu KPI dla działu handlowego
+```
+
+---
+
+### period
+
+Okres, w którym osiągnięcie miało miejsce.
+
+Przykład:
+
+```yaml
+period:
+  start: 2022-01
+  end: 2022-12
+```
+
+Jeżeli osiągnięcie trwało przez dłuższy okres, należy podać pełny zakres.
+
+---
+
+### company
+
+Organizacja, w której osiągnięcie zostało zrealizowane.
+
+Przykład:
+
+```yaml
+company: KIPI
+```
+
+---
+
+### roles
+
+Stanowiska lub role pełnione podczas realizacji osiągnięcia.
+
+Przykład:
+
+```yaml
+roles:
+  - Product Manager
+  - Operations Manager
+```
+
+---
+
+### situation
+
+Krótki opis sytuacji wyjściowej.
+
+Odpowiada na pytanie:
+
+&gt; W jakim kontekście wystąpiło osiągnięcie?
+
+Przykład:
+
+```yaml
+situation: &gt;
+  Firma nie posiadała spójnego systemu raportowania wyników sprzedaży.
+```
+
+---
+
+### actions
+
+Opis podjętych działań.
+
+Odpowiada na pytanie:
+
+&gt; Co konkretnie zrobiłem?
+
+Przykład:
+
+```yaml
+actions:
+  - Zmapowałem proces sprzedaży.
+  - Zdefiniowałem kluczowe wskaźniki.
+  - Wdrożyłem cykliczne raportowanie.
+```
+
+---
+
+### impact
+
+Opis rezultatów i efektów działań.
+
+Odpowiada na pytanie:
+
+&gt; Co zmieniło się dzięki tym działaniom?
+
+Przykład:
+
+```yaml
+impact:
+  - Zwiększono przejrzystość procesu sprzedaży.
+  - Skrócono czas przygotowania raportów.
+  - Ułatwiono identyfikację problemów operacyjnych.
+```
+
+---
+
+### skills
+
+Kompetencje potwierdzane przez achievement.
+
+Wartości powinny odpowiadać identyfikatorom z modułu `Skills`.
+
+Przykład:
+
+```yaml
+skills:
+  - process-design
+  - workflow-automation
+  - data-analysis
+```
+
+---
+
+### themes
+
+Tematy lub obszary, których dotyczy achievement.
+
+Themes opisują kontekst, a nie kompetencje.
+
+Przykład:
+
+```yaml
+themes:
+  - operations
+  - reporting
+  - sales
+```
+
+---
+
+### importance
+
+Ocena znaczenia achievementu.
+
+Rekomendowana skala:
+
+```yaml
+importance: 10
+```
+
+Gdzie:
+
+| Wartość | Znaczenie                |
+| ------- | ------------------------ |
+| 9–10    | Kluczowe osiągnięcie     |
+| 7–8     | Bardzo ważne osiągnięcie |
+| 5–6     | Istotne osiągnięcie      |
+| 1–4     | Osiągnięcie pomocnicze   |
+
+Pole służy do priorytetyzacji przy budowie CV, Stories i analizie AI.
+
+---
+
+### category
+
+Opcjonalna kategoria nadrzędna.
+
+Przykłady:
+
+```yaml
+category: operations
+```
+
+```yaml
+category: leadership
+```
+
+```yaml
+category: product
+```
+
+---
+
+### evidence
+
+Dowody potwierdzające achievement.
+
+Mogą to być:
+
+* raporty,
+* dashboardy,
+* procedury,
+* prezentacje,
+* dokumentacja,
+* wyniki biznesowe,
+* inne artefakty pracy.
+
+Przykład:
+
+```yaml
+evidence:
+  - KPI dashboard
+  - Monthly sales report
+  - Internal process documentation
+```
+
+---
+
+### metrics
+
+Mierzalne wyniki achievementu.
+
+Przykład:
+
+```yaml
+metrics:
+  reporting_time:
+    before: 4h
+    after: 20m
+
+  conversion_rate:
+    improvement: &quot;+18%&quot;
+```
+
+---
+
+### related_tools
+
+Narzędzia wykorzystane podczas realizacji.
+
+Przykład:
+
+```yaml
+related_tools:
+  - Excel
+  - Power BI
+  - ERP
+```
+
+---
+
+### star_candidates
+
+Elementy szczególnie przydatne przy budowie Story.
+
+Przykład:
+
+```yaml
+star_candidates:
+  - problem: brak raportowania
+  - action: wdrożenie KPI
+  - result: szybsze decyzje
+```
+
+---
+
+### notes
+
+Dodatkowe informacje pomocnicze.
+
+Pole nie powinno zawierać kluczowych danych, które powinny znaleźć się w polach głównych.
+
+---
+
+---
+
+# Relacje z pozostałymi modułami
+
+## Experience
+
+Dostarcza kontekstu kariery.
+
+## Achievements
+
+Stanowią źródło dowodów.
+
+## Skills
+
+Opisują kompetencje potwierdzone Achievementami.
+
+## Stories
+
+Przekształcają Achievementy w narrację.
+
+## Development Areas
+
+Powstają na podstawie analizy wielu Achievementów i Stories.
+
+## Identity
+
+Stanowi syntezę wiedzy zgromadzonej w całym Career Vault.
+
+---
+
+# Zasady utrzymania
+
+1. Jeden Achievement powinien opisywać jedno osiągnięcie.
+2. Preferuj rezultaty zamiast obowiązków.
+3. Preferuj fakty zamiast opinii.
+4. Unikaj duplikowania informacji.
+5. Dodawaj mierzalne rezultaty, gdy są dostępne.
+6. Łącz Achievementy ze Skills.
+7. Łącz Achievementy ze Stories.
+8. Łącz Achievementy z Development Areas, jeśli stanowią ich źródło.
+9. Aktualizuj rekordy, gdy pojawią się nowe informacje.
+10. Preferuj jakość nad ilość.
+
+---
+
+# Najważniejsza zasada
+
+Achievement nie opisuje tego, za co odpowiadałem.
+
+Achievement opisuje to, co udało mi się osiągnąć.
+
+Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno stanowić podstawy do budowania kompetencji, narracji ani wniosków rozwojowych.
+
+</pre>
+<h2 class="file" id="ACH-001">Achievements/ACH-001.yaml <span class="id-badge">[ACH-001]</span></h2>
+<pre>id: ACH-001
+
+title: Transformacja działu Instal/Solar
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: 2023-09
+
+roles:
+  - installation-coordinator
+
+skills:
+  - operations-management
+  - process-design
+  - workflow-automation
+  - logistics
+  - crm
+
+themes:
+  - scaling
+  - workflow
+  - operations
+  - change-management
+
+situation: &gt;
+  Dział opierał się głównie na komunikacji ad-hoc,
+  ręcznym przekazywaniu informacji oraz braku
+  standaryzacji procesów.
+
+actions:
+  - wdrożenie Bitrix24
+  - stworzenie workflow operacyjnych
+  - automatyzacja procesów
+  - standaryzacja przepływu informacji
+  - budowa szablonów zadań
+
+impact:
+  - organizacja montażu skrócona z 1-2 dni do 2-3 godzin
+  - redukcja błędów operacyjnych o około 70%
+  - skalowanie działu do około 30 montaży miesięcznie
+
+importance: 10
+
+evidence:
+  - wdrożone workflow CRM
+  - szablony zadań
+  - automatyzacje Bitrix24
+</pre>
+<h2 class="file" id="ACH-002">Achievements/ACH-002.yaml <span class="id-badge">[ACH-002]</span></h2>
+<pre>id: ACH-002
+
+title: Wdrożenie workflow operacyjnych w Bitrix24
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: 2023-09
+
+roles:
+  - installation-coordinator
+
+skills:
+  - bitrix24
+  - crm
+  - workflow-design
+  - automation
+  - process-management
+
+themes:
+  - digitalization
+  - automation
+  - process-design
+  - systems-thinking
+
+situation: &gt;
+  Rosnąca liczba realizacji wymagała odejścia od
+  zarządzania zadaniami przez komunikację ad-hoc.
+
+actions:
+  - wdrożenie CRM Bitrix24
+  - budowa lejków procesowych
+  - stworzenie szablonów zadań
+  - wdrożenie Smart Process Automation (SPA)
+  - automatyzacja przepływu informacji
+  - wdrożenie formularzy komunikacyjnych
+
+impact:
+  - standaryzacja procesów operacyjnych
+  - zwiększenie przejrzystości realizacji
+  - ograniczenie ręcznego zarządzania informacją
+  - stworzenie podstaw do dalszego skalowania działu
+
+importance: 9
+
+evidence:
+  - CRM
+  - SPA
+  - workflow
+  - formularze CRM
+  - automatyzacje
+</pre>
+<h2 class="file" id="ACH-003">Achievements/ACH-003.yaml <span class="id-badge">[ACH-003]</span></h2>
+<pre>id: ACH-003
+
+title: Stworzenie bazy wiedzy serwisowej BPMN 2.0
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - knowledge-management
+  - bpm
+  - bpmn-2.0
+  - process-design
+  - documentation
+  - onboarding
+  - systems-thinking
+  - wiki-management
+
+themes:
+  - knowledge-management
+  - process-standardization
+  - expert-knowledge-extraction
+  - onboarding
+  - organizational-scaling
+
+situation: &gt;
+  Dział serwisu posiadał dużą ilość wiedzy eksperckiej
+  rozproszonej pomiędzy pracownikami. Brakowało
+  spójnej dokumentacji diagnostycznej oraz
+  standaryzacji procesu wdrażania nowych osób.
+
+actions:
+  - pozyskiwanie wiedzy od ekspertów serwisowych
+  - modelowanie procedur diagnostycznych w BPMN 2.0
+  - współtworzenie około 120 procedur serwisowych
+  - organizacja struktury wiedzy technicznej
+  - wdrożenie interaktywnej wiki serwisowej
+  - opracowanie materiałów onboardingowych
+  - standaryzacja procesów diagnostycznych
+
+impact:
+  - utworzenie około 120 procedur diagnostycznych
+  - stworzenie centralnej bazy wiedzy serwisowej
+  - standaryzacja procesu diagnostyki
+  - usprawnienie onboardingu nowych pracowników
+  - ograniczenie zależności od wiedzy pojedynczych ekspertów
+  - stworzenie skalowalnego systemu transferu wiedzy
+
+importance: 10
+
+evidence:
+  - BPMN 2.0
+  - około 120 procedur diagnostycznych
+  - Wiki.js
+  - onboarding serwisowy
+  - procedury serwisowe
+
+related_tools:
+  - BPMN 2.0
+  - Wiki.js
+  - diagrams.net
+
+metrics:
+  procedures_created: 120
+
+star_candidates:
+  - knowledge-management
+  - process-design
+  - documentation
+  - organizational-scaling
+</pre>
+<h2 class="file" id="ACH-004">Achievements/ACH-004.yaml <span class="id-badge">[ACH-004]</span></h2>
+<pre>id: ACH-004
+
+title: Restrukturyzacja i stabilizacja działu serwisu
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - operations-management
+  - service-management
+  - process-design
+  - workflow-automation
+  - organizational-design
+  - leadership
+  - team-coordination
+
+themes:
+  - turnaround
+  - leadership
+  - change-management
+  - organizational-scaling
+  - process-transformation
+
+situation: &gt;
+  Dział serwisu wymagał uporządkowania procesów,
+  organizacji przepływu informacji oraz stworzenia
+  spójnego modelu pracy umożliwiającego dalszy rozwój
+  i przekazanie odpowiedzialności nowemu kierownikowi.
+
+actions:
+  - zaprojektowanie workflow obsługi zgłoszeń
+  - stworzenie lejków procesowych
+  - automatyzacja procesów serwisowych
+  - standaryzacja komunikacji
+  - organizacja pracy zespołu
+  - wdrożenie onboardingu
+  - delegowanie zadań i harmonogramowanie pracy
+  - analiza obciążenia działu i potrzeb kadrowych
+
+impact:
+  - uporządkowanie procesów serwisowych
+  - poprawa organizacji pracy działu
+  - stworzenie skalowalnej struktury operacyjnej
+  - usprawnienie wdrażania nowych pracowników
+  - skuteczne przekazanie działu nowemu kierownikowi
+
+importance: 10
+
+evidence:
+  - workflow serwisowe
+  - onboarding
+  - organizacja zespołu do 5 osób
+  - analiza danych serwisowych
+  - przekazanie działu nowemu kierownikowi
+
+related_tools:
+  - Bitrix24
+  - Wiki.js
+  - BPMN 2.0
+
+star_candidates:
+  - leadership
+  - organizational-change
+  - turnaround
+  - team-management
+  - service-operations
+</pre>
+<h2 class="file" id="ACH-005">Achievements/ACH-005.yaml <span class="id-badge">[ACH-005]</span></h2>
+<pre>id: ACH-005
+
+title: Zaprojektowanie i wdrożenie systemu gwarancyjnego
+
+company: KIPI
+
+period:
+  start: 2025-01
+  end: current
+
+roles:
+  - product-manager
+
+skills:
+  - product-management
+  - process-design
+  - crm-automation
+  - stakeholder-management
+  - documentation
+  - training
+  - compliance
+
+themes:
+  - business-process-design
+  - change-management
+  - customer-experience
+  - partner-enablement
+  - operational-excellence
+
+situation: &gt;
+  Organizacja potrzebowała spójnego systemu
+  gwarancyjnego obejmującego dokumentację,
+  workflow operacyjne, obsługę zgłoszeń oraz
+  jednolite zasady współpracy z partnerami
+  i klientami.
+
+actions:
+  - współtworzenie polityki gwarancyjnej
+  - projektowanie workflow gwarancyjnych
+  - automatyzacja procesów w CRM
+  - standaryzacja dokumentacji
+  - współpraca z działem handlowym
+  - współpraca z prawnikami
+  - przygotowanie materiałów szkoleniowych
+  - wdrożenie systemu u partnerów i klientów
+
+impact:
+  - stworzenie spójnego systemu gwarancyjnego
+  - standaryzacja procesu obsługi gwarancji
+  - automatyzacja obsługi zgłoszeń
+  - ujednolicenie dokumentacji gwarancyjnej
+  - wdrożenie procesu u partnerów handlowych
+
+importance: 10
+
+evidence:
+  - workflow operacyjne
+  - dokumentacja procesowa
+  - automatyzacje CRM
+  - dokumentacja produktowa
+  - materiały szkoleniowe
+
+related_tools:
+  - Bitrix24
+
+star_candidates:
+  - stakeholder-management
+  - process-design
+  - product-management
+  - change-management
+</pre>
+<h2 class="file" id="ACH-006">Achievements/ACH-006.yaml <span class="id-badge">[ACH-006]</span></h2>
+<pre>id: ACH-006
+
+title: Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów
+
+company: KIPI
+
+period:
+  start: 2025-01
+  end: 2025-12
+
+roles:
+  - product-manager
+
+skills:
+  - training
+  - public-speaking
+  - stakeholder-management
+  - onboarding
+  - technical-communication
+  - product-management
+  - enablement
+
+themes:
+  - education
+  - communication
+  - change-management
+  - partner-enablement
+  - knowledge-transfer
+
+situation: &gt;
+  Wdrożenie nowego systemu gwarancyjnego oraz
+  standaryzacja zasad współpracy wymagały
+  skutecznego przekazania wiedzy partnerom,
+  instalatorom oraz klientom.
+
+actions:
+  - opracowanie programu szkoleniowego
+  - przygotowanie materiałów edukacyjnych
+  - prowadzenie szkoleń operacyjnych
+  - prowadzenie szkoleń produktowych
+  - prowadzenie szkoleń gwarancyjnych
+  - odpowiadanie na pytania uczestników
+  - wsparcie partnerów podczas wdrożeń
+
+impact:
+  - przeszkolenie około 250 osób
+  - realizacja około 20-30 segmentów szkoleniowych
+  - zwiększenie znajomości procedur gwarancyjnych
+  - ujednolicenie zasad współpracy z partnerami
+  - ograniczenie błędów wynikających z nieznajomości procedur
+
+importance: 9
+
+evidence:
+  - około 250 przeszkolonych osób
+  - około 20-30 przeprowadzonych szkoleń
+  - materiały szkoleniowe
+  - szkolenia gwarancyjne
+  - szkolenia produktowe
+
+related_tools:
+  - PowerPoint
+  - Bitrix24
+  - Google Workspace
+
+metrics:
+  people_trained: 250
+  training_sessions: 20-30
+
+star_candidates:
+  - public-speaking
+  - stakeholder-management
+  - education
+  - communication
+  - knowledge-transfer
+</pre>
+<h2 class="file" id="ACH-007">Achievements/ACH-007.yaml <span class="id-badge">[ACH-007]</span></h2>
+<pre>id: ACH-007
+
+title: Samodzielne wdrożenie systemu VOIP i infolinii
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - systems-integration
+  - technical-implementation
+  - process-design
+  - self-learning
+  - systems-administration
+
+themes:
+  - ownership
+  - technical-problem-solving
+  - systems-implementation
+  - self-learning
+  - operational-improvement
+
+situation: &gt;
+  Dział serwisu potrzebował uporządkowanego systemu
+  obsługi połączeń telefonicznych oraz lepszego
+  kierowania zgłoszeń do właściwych osób.
+  W organizacji brakowało spójnego rozwiązania
+  zintegrowanego z istniejącymi procesami.
+
+actions:
+  - samodzielne poznanie technologii VOIP
+  - wybór rozwiązania Zadarma
+  - konfiguracja centrali telefonicznej
+  - projektowanie routingu połączeń
+  - integracja systemu z Bitrix24
+  - wdrożenie workflow obsługi zgłoszeń telefonicznych
+  - konfiguracja komunikacji między działami
+  - uruchomienie rozwiązania produkcyjnego
+
+impact:
+  - uporządkowanie obsługi połączeń przychodzących
+  - usprawnienie kierowania zgłoszeń do właściwych osób
+  - integracja komunikacji telefonicznej z procesami operacyjnymi
+  - stworzenie rozwiązania możliwego do skalowania w organizacji
+  - wdrożenie rozwiązania również w BOK i dziale Instal
+
+importance: 8
+
+evidence:
+  - Zadarma VOIP
+  - integracja z Bitrix24
+  - routing połączeń
+  - infolinia serwisowa
+  - wdrożenie w wielu działach
+
+related_tools:
+  - Zadarma
+  - Bitrix24
+
+star_candidates:
+  - ownership
+  - self-learning
+  - technical-problem-solving
+  - systems-integration
+</pre>
+<h2 class="file" id="ACH-008">Achievements/ACH-008.yaml <span class="id-badge">[ACH-008]</span></h2>
+<pre>id: ACH-008
+
+title: Koordynacja wdrożenia produktu PV Stand
+
+company: KIPI
+
+period:
+  start: 2022
+  end: 2023
+
+roles:
+  - project-manager
+
+skills:
+  - product-introduction
+  - project-management
+  - stakeholder-management
+  - technical-documentation
+  - cross-functional-collaboration
+  - process-design
+
+themes:
+  - product-launch
+  - coordination
+  - communication
+  - execution
+  - product-management
+
+situation: &gt;
+  Firma przygotowywała wdrożenie nowego produktu
+  typu DIY przeznaczonego dla rynku fotowoltaicznego.
+  Konieczne było skoordynowanie działań wielu działów
+  oraz przygotowanie kompletnej dokumentacji
+  wspierającej wdrożenie.
+
+actions:
+  - koordynacja procesu wdrożenia produktu
+  - organizacja współpracy między działami
+  - monitorowanie przepływu informacji
+  - standaryzacja procesu wdrożeniowego
+  - przygotowanie dokumentacji technicznej
+  - przygotowanie instrukcji montażu
+  - przygotowanie dokumentacji jakościowej
+  - przygotowanie dokumentacji DTR
+
+impact:
+  - przygotowanie organizacji do wdrożenia nowego produktu
+  - zapewnienie kompletnej dokumentacji wdrożeniowej
+  - usprawnienie komunikacji między działami
+  - standaryzacja procesu wprowadzania produktu
+
+importance: 7
+
+evidence:
+  - instrukcja montażu
+  - dokumentacja jakościowa
+  - dokumentacja DTR
+  - workflow wdrożeniowy
+  - koordynacja międzydziałowa
+
+related_tools:
+  - Bitrix24
+  - Microsoft Office
+  - Google Workspace
+
+star_candidates:
+  - product-management
+  - project-management
+  - stakeholder-management
+  - cross-functional-collaboration
+</pre>
+<h2 class="file" id="ACH-009">Achievements/ACH-009.yaml <span class="id-badge">[ACH-009]</span></h2>
+<pre>id: ACH-009
+
+title: Reorganizacja infrastruktury magazynowej
+
+company: KIPI
+
+period:
+  start: 2020
+  end: 2023
+
+roles:
+  - installation-coordinator
+
+skills:
+  - warehouse-management
+  - process-design
+  - operational-organization
+  - logistics
+  - standardization
+
+themes:
+  - operational-excellence
+  - organization
+  - process-improvement
+  - logistics
+
+situation: &gt;
+  Magazyn rozwijał się wraz ze wzrostem skali
+  działalności działu Instal/Solar. Brakowało
+  spójnego systemu oznaczeń oraz standardów
+  organizacji przestrzeni magazynowej.
+
+actions:
+  - uporządkowanie magazynu
+  - stworzenie systemu oznaczeń
+  - wdrożenie kodów kreskowych
+  - opisanie regałów
+  - standaryzacja organizacji magazynowej
+
+impact:
+  - poprawa identyfikacji materiałów
+  - skrócenie czasu wyszukiwania komponentów
+  - zwiększenie przejrzystości organizacji magazynu
+  - ograniczenie błędów logistycznych
+
+importance: 6
+
+evidence:
+  - system oznaczeń
+  - kody kreskowe
+  - opisane regały
+  - standardy magazynowe
+
+star_candidates:
+  - process-improvement
+  - operational-organization
+  - logistics
+</pre>
+<h2 class="file" id="ACH-010">Achievements/ACH-010.yaml <span class="id-badge">[ACH-010]</span></h2>
+<pre>id: ACH-010
+
+title: Projektowanie organizacji na podstawie analizy danych operacyjnych
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - operational-analysis
+  - organizational-design
+  - data-analysis
+  - workforce-planning
+  - systems-thinking
+
+themes:
+  - data-driven-decisions
+  - organizational-design
+  - scaling
+  - leadership
+
+situation: &gt;
+  Wraz ze wzrostem liczby zgłoszeń serwisowych
+  konieczne było określenie rzeczywistego
+  obciążenia działu oraz przygotowanie podstaw
+  do dalszego rozwoju organizacyjnego.
+
+actions:
+  - analiza danych serwisowych
+  - identyfikacja najczęstszych problemów
+  - analiza obciążenia zespołu
+  - określanie potrzeb personalnych
+  - projektowanie struktury organizacyjnej
+  - definiowanie kompetencji stanowisk
+
+impact:
+  - lepsze zrozumienie obciążenia działu
+  - wsparcie decyzji kadrowych
+  - przygotowanie skalowalnej struktury organizacyjnej
+  - identyfikacja kluczowych wąskich gardeł
+
+importance: 8
+
+evidence:
+  - analizy obciążenia
+  - rekomendacje kadrowe
+  - projekt struktury działu
+  - mapowanie kompetencji
+
+star_candidates:
+  - analytical-thinking
+  - organizational-design
+  - scaling
+  - decision-making
+</pre>
+<h2 class="file" id="ACH-011">Achievements/ACH-011.yaml <span class="id-badge">[ACH-011]</span></h2>
+<pre>id: ACH-011
+
+title: Stworzenie systemu kalkulacji komponentów dla działu handlowego
+
+company: KIPI
+
+period:
+  start: 2020
+  end: 2023
+
+roles:
+  - installation-coordinator
+
+skills:
+  - process-automation
+  - excel
+  - operational-analysis
+  - sales-support
+  - systems-design
+
+themes:
+  - automation
+  - productivity
+  - process-improvement
+  - operational-support
+
+situation: &gt;
+  Przygotowanie ofert wymagało ręcznego
+  wyliczania komponentów oraz weryfikacji cen,
+  co było czasochłonne i podatne na błędy.
+
+actions:
+  - analiza procesu ofertowania
+  - opracowanie logiki kalkulacji
+  - stworzenie narzędzia Excel
+  - integracja z aktualnym cennikiem
+  - wdrożenie rozwiązania dla handlowców
+
+impact:
+  - skrócenie czasu przygotowania wyceny i list materiałowych z około 2–6 godzin do około 10 minut
+  - wsparcie procesu obsługującego około 60–80 ofert miesięcznie
+  - ograniczenie ręcznych obliczeń i ryzyka błędów kalkulacyjnych
+  - standaryzacja procesu doboru komponentów i przygotowania realizacji
+  - utrzymanie rozwiązania w aktywnym wykorzystaniu przez około 4 lata
+
+importance: 7
+
+evidence:
+  - narzędzie Excel
+  - automatyczne kalkulacje
+  - integracja z cennikiem
+  - wykorzystanie przez dział handlowy
+
+related_tools:
+  - Microsoft Excel
+
+star_candidates:
+  - automation
+  - problem-solving
+  - process-improvement
+  - analytical-thinking
+</pre>
+<h2 class="file" id="ACH-012">Achievements/ACH-012.yaml <span class="id-badge">[ACH-012]</span></h2>
+<pre>id: ACH-012
+
+title: Stabilizacja działu serwisu w okresie zmian organizacyjnych
+
+company: KIPI
+
+period:
+  start: 2023-09
+  end: 2025-01
+
+roles:
+  - acting-service-manager
+
+skills:
+  - leadership
+  - service-management
+  - team-coordination
+  - organizational-design
+  - change-management
+  - stakeholder-management
+
+themes:
+  - leadership
+  - ownership
+  - organizational-stability
+  - succession
+  - crisis-management
+
+situation: &gt;
+  W związku z brakami kadrowymi i potrzebą uporządkowania
+  organizacji pracy powierzono mi odpowiedzialność za dział
+  serwisu funkcjonujący bez stabilnego modelu operacyjnego.
+
+actions:
+  - utrzymanie kluczowych kompetencji eksperckich
+  - wsparcie zespołu w okresie niepewności organizacyjnej
+  - rozwój nowych pracowników
+  - budowanie kultury współpracy i odpowiedzialności
+  - wsparcie rekrutacji
+  - przygotowanie sukcesji kierowniczej
+  - przekazanie działu nowemu managerowi
+
+impact:
+  - utrzymanie kluczowych kompetencji eksperckich w okresie wysokiego ryzyka rotacji
+  - wdrożenie nowych pracowników do samodzielnej pracy
+  - przygotowanie działu do płynnego przejęcia przez nowego kierownika
+  - ograniczenie ryzyka utraty wiedzy organizacyjnej
+
+importance: 9
+
+evidence:
+  - onboarding
+  - materiały rozwojowe
+  - sukcesja kierownicza
+  - rozwój kompetencji zespołu
+  
+star_candidates:
+  - leadership
+  - ownership
+  - organizational-change
+  - succession-planning
+</pre>
+<h2 class="file" id="ACH-013">Achievements/ACH-013.yaml <span class="id-badge">[ACH-013]</span></h2>
+<pre>id: ACH-013
+
+title: Rozwój i administracja ekosystemu systemów operacyjnych organizacji
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: current
+
+roles:
+  - installation-coordinator
+  - acting-service-manager
+  - product-manager
+
+skills:
+  - systems-administration
+  - crm-management
+  - workflow-design
+  - automation
+  - business-systems
+  - process-management
+
+themes:
+  - digitalization
+  - systems-thinking
+  - automation
+  - operational-excellence
+  - ownership
+
+situation: &gt;
+  Wraz ze wzrostem organizacji rosła liczba procesów
+  wymagających wsparcia systemowego oraz standaryzacji
+  sposobu pracy pomiędzy działami.
+
+actions:
+  - pełnienie roli administratora kluczowych systemów operacyjnych
+  - zarządzanie konfiguracją Bitrix24
+  - rozwój architektury workflow
+  - projektowanie automatyzacji międzydziałowych
+  - onboarding użytkowników systemów
+  - wsparcie użytkowników i rozwiązywanie problemów operacyjnych
+  - integracja nowych procesów z istniejącym środowiskiem systemowym
+
+impact:
+  - wsparcie operacyjne wielu działów organizacji
+  - rozwój środowiska wykorzystywanego przez sprzedaż, serwis, instalacje i administrację
+  - utrzymanie spójności procesów pomimo wzrostu organizacji
+  - ograniczenie liczby procesów realizowanych poza systemem
+
+importance: 8
+
+evidence:
+  - Bitrix24
+  - workflow
+  - automatyzacje CRM
+  - onboarding systemowy
+  - administracja sklepu internetowego
+
+related_tools:
+  - Bitrix24
+  - Zadarma
+  - Wiki.js
+
+star_candidates:
+  - systems-thinking
+  - automation
+  - ownership
+  - digital-transformation
+</pre>
+<h2 class="file" id="ACH-014">Achievements/ACH-014.yaml <span class="id-badge">[ACH-014]</span></h2>
+<pre>id: ACH-014
+
+title: Budowa standardów dokumentacyjnych wspierających rozwój organizacji
+
+company: KIPI
+
+period:
+  start: 2020-09
+  end: current
+
+roles:
+  - installation-coordinator
+  - acting-service-manager
+  - product-manager
+
+skills:
+  - technical-documentation
+  - process-design
+  - compliance
+  - knowledge-management
+  - product-support
+
+themes:
+  - standardization
+  - documentation
+  - quality
+  - compliance
+  - operational-excellence
+
+situation: &gt;
+  Dynamiczny rozwój organizacji powodował powstawanie
+  dokumentacji w różnych formatach i standardach.
+  Konieczne było uporządkowanie dokumentów wspierających
+  sprzedaż, serwis, gwarancję oraz rozwój produktów.
+
+actions:
+  - przygotowanie dokumentacji technicznej
+  - tworzenie dokumentacji DTR
+  - standaryzacja warunków gwarancyjnych
+  - opracowanie protokołów serwisowych
+  - opracowanie protokołów montażowych
+  - przygotowanie regulaminów i umów
+  - współpraca z działami technicznymi i prawnikami
+
+impact:
+  - stworzenie jednolitych standardów dokumentacyjnych wspierających wiele obszarów organizacji
+  - ograniczenie ryzyka błędnych interpretacji procedur i zasad współpracy
+  - usprawnienie wdrażania nowych produktów, procesów i partnerów
+  - zwiększenie spójności komunikacji pomiędzy organizacją, klientami i partnerami
+  - wsparcie skalowania organizacji poprzez formalizację wiedzy operacyjnej i produktowej
+
+importance: 8
+
+evidence:
+  - DTR
+  - warunki gwarancyjne
+  - regulaminy
+  - umowy
+  - protokoły serwisowe
+  - protokoły montażowe
+
+star_candidates:
+  - documentation
+  - quality-management
+  - compliance
+  - process-design
+</pre>
+<h2 class="file" id="ACH-P001">Achievements/ACH-P001.yaml <span class="id-badge">[ACH-P001]</span></h2>
+<pre>id: ACH-P001
+
+title: Regularne prowadzenie wystąpień publicznych i koordynacja społeczności
+
+category: personal
+
+period:
+  start: 2019
+  end: current
+
+skills:
+  - public-speaking
+  - communication
+  - facilitation
+  - presentation-design
+  - event-coordination
+  - stakeholder-management
+
+themes:
+  - communication
+  - leadership
+  - education
+  - community-building
+  - facilitation
+
+situation: &gt;
+  Od ponad sześciu lat regularnie angażuję się
+  w działalność społecznościową wymagającą
+  prowadzenia wystąpień publicznych, przygotowywania
+  materiałów edukacyjnych oraz wspierania organizacji
+  wydarzeń dla większych grup uczestników.
+
+actions:
+  - przygotowywanie prezentacji i materiałów
+  - prowadzenie wystąpień publicznych
+  - prowadzenie spotkań grupowych
+  - organizacja harmonogramów wydarzeń
+  - koordynacja działań społecznościowych
+  - wsparcie organizacyjne i logistyczne wydarzeń
+  - wsparcie techniczne AV podczas wydarzeń
+
+impact:
+  - regularne wystąpienia dla grup około 60-120 osób
+  - rozwój umiejętności prezentacyjnych i komunikacyjnych
+  - wsparcie organizacji licznych wydarzeń społecznościowych
+  - budowanie zaangażowania i przepływu informacji w społeczności
+
+importance: 8
+
+evidence:
+  - około 7 lat aktywności
+  - około 240 wystąpień publicznych
+  - audytorium 60-120 osób
+  - prezentacje 5-30 minut
+  - organizacja wydarzeń
+  - wsparcie AV
+
+metrics:
+  years_active: 7
+
+  audience_size:
+    min: 60
+    max: 120
+
+  estimated_presentations: 240
+
+  estimated_speaking_hours: 44
+
+
+star_candidates:
+  - public-speaking
+  - communication
+  - facilitation
+  - leadership-without-authority
+  - community-coordination
+</pre>
+<h2 class="file" id="ACH-P002">Achievements/ACH-P002.yaml <span class="id-badge">[ACH-P002]</span></h2>
+<pre>id: ACH-P002
+
+title: Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych
+
+category: personal
+
+period:
+  start: 2019
+  end: current
+
+roles:
+  - event-organizer
+  - project-coordinator
+  - community-leader
+
+skills:
+  - event-management
+  - project-management
+  - logistics
+  - budgeting
+  - stakeholder-management
+  - risk-management
+  - communication
+  - operations-management
+  - community-building
+  - leadership
+
+themes:
+  - leadership
+  - event-operations
+  - logistics
+  - planning
+  - community-building
+
+situation: &gt;
+  W celu integracji społeczności oraz stworzenia
+  wartościowej formy wypoczynku rozpocząłem organizację
+  cyklicznych, kilkudniowych spływów kajakowych
+  wymagających samodzielnego zaprojektowania procesu,
+  koordynacji uczestników oraz zarządzania logistyką.
+
+actions:
+  - projektowanie przebiegu wydarzeń
+  - planowanie wielodniowych tras
+  - organizacja noclegów i atrakcji
+  - negocjacje z dostawcami usług
+  - przygotowanie budżetów i rozliczeń
+  - zarządzanie listą uczestników
+  - organizacja komunikacji uczestników
+  - przygotowanie dokumentacji organizacyjnej
+  - koordynacja transportu uczestników pomiędzy wieloma lokalizacjami
+  - organizacja kierowców oraz pojazdów wspierających wydarzenie
+  - przygotowanie procedur awaryjnych i komunikacji kryzysowej
+  - monitorowanie lokalizacji uczestników podczas podróży i wydarzenia
+  - planowanie bezpieczeństwa i zarządzanie ryzykiem
+  - tworzenie materiałów informacyjnych
+  - organizacja działań po zakończeniu wydarzenia
+
+impact:
+  - organizacja cyklicznych, czterodniowych wydarzeń dla 20–30 uczestników
+  - koordynacja logistyki obejmującej transport, noclegi i działania terenowe
+  - stworzenie powtarzalnego procesu organizacyjnego wykorzystywanego przez kolejne lata
+  - przygotowanie procedur ograniczających ryzyko organizacyjne i bezpieczeństwa
+  - budowanie zaangażowanej społeczności liczącej łącznie ponad 140 uczestników na przestrzeni kilku lat
+
+importance: 8
+
+evidence:
+  - 7 zorganizowanych wydarzeń
+  - grupy 20-30 uczestników
+  - dokumentacja organizacyjna licząca kilkanaście stron
+  - harmonogramy wydarzeń
+  - procedury bezpieczeństwa
+  - budżety i rozliczenia
+  - koordynacja transportu wieloosobowych grup
+
+metrics:
+  years_active: 7
+
+  events_organized: 7
+
+  participant_count:
+    min: 20
+    max: 30
+
+  event_duration_days: 4
+
+  total_participants_supported: 140-210
+
+  
+related_tools:
+  - Google Sheets
+  - Google Forms
+  - WhatsApp
+  - PowerPoint
+
+star_candidates:
+  - leadership-without-authority
+  - event-management
+  - logistics
+  - project-management
+  - stakeholder-management
+  - crisis-management
+
+notes:
+  - projekt realizowany prywatnie poza działalnością zawodową
+  - pełna odpowiedzialność za planowanie i koordynację wydarzenia
+</pre>
+<h2 class="file" id="ACH-P003">Achievements/ACH-P003.yaml <span class="id-badge">[ACH-P003]</span></h2>
+<pre>id: ACH-P003
+
+title: Kompleksowa organizacja zaręczyn, wesela i oprawy wydarzenia
+
+category: personal
+
+period:
+  start: 2023-05
+  end: 2024-05
+
+roles:
+  - event-organizer
+  - budget-owner
+  - project-coordinator
+  - entertainment-designer
+
+skills:
+  - event-management
+  - project-management
+  - budgeting
+  - logistics
+  - stakeholder-management
+  - communication
+  - risk-management
+  - program-design
+  - music-curation
+  - facilitation
+  - confidentiality-management
+  - operations-management
+
+themes:
+  - event-operations
+  - planning
+  - budgeting
+  - coordination
+  - confidentiality
+  - guest-experience
+  - entertainment-design
+  - family-coordination
+
+situation: &gt;
+  Przygotowanie zaręczyn i wesela wymagało
+  koordynacji wielu osób, zachowania poufności,
+  przygotowania harmonogramów, budżetu, logistyki,
+  oprawy muzycznej oraz scenariusza zabaw i atrakcji
+  dla gości.
+
+actions:
+  - zaprojektowanie przebiegu zaręczyn jako wieloetapowego wydarzenia
+  - przygotowanie poufnego planu komunikacji z organizatorami i uczestnikami
+  - przypisanie ról pomocniczych i odpowiedzialności
+  - stworzenie harmonogramu działań i planu awaryjnego
+  - przygotowanie mapy wydarzenia i punktów operacyjnych
+  - budżetowanie wesela i monitorowanie wydatków
+  - prowadzenie listy gości i statusów potwierdzeń
+  - planowanie harmonogramu dnia ślubu i wesela
+  - dobór muzyki i budowa playlisty
+  - projektowanie zabaw weselnych, rekwizytów i zasad
+  - przygotowanie materiałów organizacyjnych dla współorganizatorów
+
+impact:
+  - przeprowadzenie dwóch złożonych wydarzeń rodzinnych w sposób uporządkowany
+  - ograniczenie chaosu organizacyjnego poprzez jasny podział ról
+  - stworzenie budżetu i kontroli kosztów dla wesela
+  - przygotowanie spójnej oprawy muzycznej i rozrywkowej
+  - zaprojektowanie atrakcji, które można było łatwo uruchomić podczas wydarzenia
+  - zwiększenie przewidywalności i bezpieczeństwa całego procesu
+
+importance: 6
+
+evidence:
+  - dokument zaręczyn z podziałem na role, harmonogram i plan awaryjny
+  - dokument z opisami zabaw weselnych i rekwizytów
+  - arkusz budżetowy wesela
+  - arkusz z listą gości
+  - arkusz z playlistą weselną
+  - harmonogram przygotowań i dnia ślubu
+  - koordynacja przez WhatsApp i Zoom
+
+metrics:
+  confirmed_guests: 79
+  planned_guests: 79
+  wedding_games_designed: 4
+  song_library_tracks: 190_plus
+
+related_tools:
+  - Excel
+  - Google Sheets
+  - WhatsApp
+  - Zoom
+  - PowerPoint
+  - Word
+
+star_candidates:
+  - event-management
+  - budgeting
+  - stakeholder-management
+  - confidentiality
+  - logistics
+  - program-design
+  - leadership-without-authority
+
+notes:
+  - rekord prywatny
+  - można wykorzystywać jako dowód kompetencji w planowaniu wydarzeń, budżetowaniu i koordynacji ludzi
+</pre>
+<h2 class="file" id="ACH-P004">Achievements/ACH-P004.yaml <span class="id-badge">[ACH-P004]</span></h2>
+<pre>id: ACH-P004
+
+title: Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych
+
+category: personal
+
+period:
+  start: 2019
+  end: current
+
+roles:
+  - system-designer
+  - knowledge-manager
+  - process-designer
+
+skills:
+  - systems-thinking
+  - knowledge-management
+  - information-architecture
+  - process-design
+  - documentation
+  - data-modeling
+  - workflow-design
+  - continuous-improvement
+
+themes:
+  - systems-design
+  - knowledge-management
+  - organization
+  - automation
+  - problem-solving
+
+situation: &gt;
+  W projektach prywatnych regularnie napotykałem
+  problemy związane z organizacją informacji,
+  koordynacją ludzi, zarządzaniem wiedzą oraz
+  utrzymaniem spójnych procesów.
+
+actions:
+  - projektowanie baz wiedzy
+  - modelowanie struktur danych
+  - budowa wyszukiwarek i katalogów informacji
+  - tworzenie dokumentacji operacyjnej
+  - projektowanie workflow organizacyjnych
+  - standaryzacja procesów
+  - tworzenie systemów wspierających podejmowanie decyzji
+
+impact:
+  - stworzenie wielu niezależnych systemów organizacyjnych i baz wiedzy wykorzystywanych w projektach prywatnych
+  - uporządkowanie złożonych zbiorów informacji poprzez projektowanie struktur danych, dokumentacji i workflow
+  - zwiększenie możliwości skalowania projektów wymagających koordynacji ludzi, wiedzy i zasobów
+  - wypracowanie własnych metod organizacji informacji i podejmowania decyzji
+  - rozwój kompetencji systemowego rozwiązywania problemów poprzez wieloletnią praktykę
+
+importance: 10
+
+metrics:
+  years_active: 7
+
+  systems_created: 5_plus
+
+  domains_supported:
+    - knowledge_management
+    - community_management
+    - event_operations
+    - worldbuilding
+    - personal_organization
+
+evidence:
+  - Career Vault
+  - baza danych KŁS
+  - organizacja spływów kajakowych
+  - organizacja zaręczyn i wesela
+  - dokumentacja świata Rune Reach (autorski swiat dla TTRPG)
+  - systemy zarządzania wiedzą dla projektów prywatnych
+
+star_candidates:
+  - systems-thinking
+  - knowledge-management
+  - information-architecture
+  - process-design
+  - self-directed-learning
+
+notes:
+  - rekord opisuje wielokrotnie powtarzający się wzorzec projektowania systemów organizacyjnych w projektach prywatnych
+</pre>
+<h2 class="file" id="ACH-P005">Achievements/ACH-P005.yaml <span class="id-badge">[ACH-P005]</span></h2>
+<pre>id: ACH-P005
+
+title: Wieloletni wolontariat kaznodziejski — komunikacja perswazyjna w terenie i rezyliencja psychologiczna
+
+category: personal
+
+period:
+  start: 2013
+  end: current
+
+roles:
+  - field-communicator
+  - volunteer-educator
+
+skills:
+  - persuasive-communication
+  - cold-outreach
+  - objection-handling
+  - rejection-resilience
+  - active-listening
+  - needs-discovery
+  - adult-learning-facilitation
+  - public-speaking
+
+themes:
+  - persuasion
+  - communication
+  - resilience
+  - cold-outreach
+  - adult-education
+  - behavioral-change
+  - deliberate-practice
+
+situation: &gt;
+  Od 2013 roku regularnie angażuję się w
+  systematyczną działalność komunikacyjną wymagającą
+  inicjowania rozmów z obcymi osobami w warunkach
+  nieprzewidywalnych i na terytorium rozmówcy.
+  Działalność obejmuje wizyty bezpośrednie (door-to-door),
+  kontakty w przestrzeni publicznej oraz sporadyczne
+  prowadzenie indywidualnych kursów edukacyjnych.
+  Przez kilkanaście lat przeszedłem przez kilkuletnie
+  okresy intensywne (50–70 godzin miesięcznie)
+  oraz utrzymywałem stały rytm bazowy (minimum
+  10 godzin miesięcznie). Całość opiera się
+  na formalnym systemie szkoleniowym obejmującym
+  cotygodniowe treningi komunikacyjne, symulacje
+  rozmów, natychmiastową informację zwrotną oraz
+  ocenę izolowanych mikroumiejętności.
+
+actions:
+  - regularne inicjowanie rozmów z obcymi osobami w warunkach terenowych
+  - stosowanie pytań otwartych i sokratycznych w diagnozie potrzeb rozmówcy
+  - zarządzanie obiekcjami i wypowiedziami przerywającymi bez eskalacji napięcia
+  - adaptacja przekazu do profilu emocjonalnego i poznawczego rozmówcy
+  - przeformułowanie (reframing) obiekcji jako punktu wyjścia do dalszego dialogu
+  - sporadyczne prowadzenie długoterminowych kursów edukacyjnych w formule 1:1
+  - systematyczne szkolenia komunikacyjne z ustrukturyzowaną oceną umiejętności
+  - praca nad izolowanymi mikroumiejętnościami poprzez symulacje i weryfikowany feedback
+
+impact:
+  - szacunkowo ponad 2000 godzin bezpośrednich interakcji z obcymi osobami
+  - biegłość w inicjowaniu kontaktu i budowaniu rapport w ciągu kilkudziesięciu sekund
+  - wysoce rozwinięta odporność na seryjne odrzucenie bez utraty motywacji i sprawności
+  - opanowanie technik zarządzania obiekcjami bez wywoływania oporu rozmówcy
+  - zdolność do szybkiej diagnozy profilu psychologicznego i emocjonalnego nieznajomego
+  - wysoka elastyczność komunikacyjna w warunkach nieprzewidywalnych i niejednorodnych społecznie
+
+importance: 8
+
+evidence:
+  - ponad 13 lat regularnej aktywności (od 2013 do dziś)
+  - szacunkowo ponad 2000 godzin bezpośrednich interakcji
+  - kilkuletnie okresy aktywności intensywnej (50–70 godzin miesięcznie)
+  - regularne szkolenia z ustrukturyzowaną oceną mikroumiejętności
+  - praca z szerokim spektrum profili demograficznych i psychologicznych
+
+metrics:
+  years_active: 13
+
+  avg_hours_monthly:
+    base: 10
+    intensive_periods: &quot;50–70&quot;
+
+  estimated_total_hours: &quot;2000+&quot;
+
+  interaction_contexts:
+    - wizyty bezpośrednie (door-to-door)
+    - przestrzeń publiczna
+    - kursy edukacyjne 1:1
+
+star_candidates:
+  - persuasive-communication
+  - rejection-resilience
+  - cold-outreach
+  - objection-handling
+  - deliberate-practice
+
+notes:
+  - rekord prywatny
+  - działalność prowadzona w ramach wolontariatu kaznodziejskiego
+  - intensywne okresy odpowiadają profilowi wolontariatu pełnoczasowego
+  - formalny system szkoleniowy obejmuje cotygodniowe treningi z oceną mikroumiejętności komunikacyjnych
+</pre>
+</main>
+<footer class="backlinks">
+  <hr>
+  <nav>
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+    <a href="https://github.com/Istuification/careervault" target="_blank" rel="noopener">Repozytorium na GitHub</a>
+  </nav>
+</footer>
+</body>
+</html>

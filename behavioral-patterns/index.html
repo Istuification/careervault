@@ -1,0 +1,2670 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Behavioral Patterns — Career Vault</title>
+<meta name="description" content="Behavioral Patterns — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
+<meta name="robots" content="index, follow">
+<style>
+  body{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+       max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
+       color:#16221D; background:#fff;}
+  header, footer{font-family: system-ui, sans-serif;}
+  nav a{margin-right: 1rem;}
+  h1{font-family: system-ui, sans-serif;}
+  h2.file{font-family: system-ui, sans-serif; margin-top:2.5rem; padding-top:1rem;
+           border-top:2px solid #24594B; color:#24594B;}
+  .id-badge{font-size:0.8rem; color:#33396B;}
+  pre{white-space: pre-wrap; word-wrap: break-word; background:#f6f7f5;
+       padding:1rem; border-radius:6px; overflow-x:auto;}
+  .backlinks{margin:1.5rem 0; font-family: system-ui, sans-serif;}
+</style>
+</head>
+<body>
+<header>
+  <nav class="backlinks">
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+  </nav>
+  <h1>Behavioral Patterns</h1>
+  <p>Sekcja Career Vault. Zawiera pełną, surową treść następujących plików repozytorium.
+     Ostatnia aktualizacja: 2026-07-02 17:14 UTC · commit bbd9fe4.</p>
+</header>
+<main>
+<h2 class="file" id="README">Assessments/Behavioral Patterns/README.md</h2>
+<pre># Behavioral Patterns
+
+## Cel dokumentu
+
+Behavioral Patterns stanowią pierwszą warstwę interpretacji zachowań zaobserwowanych w Career Vault.
+
+Ich zadaniem jest identyfikacja powtarzalnych mechanizmów działania występujących w wielu niezależnych sytuacjach.
+
+Behavioral Pattern opisuje:
+
+```text
+Context / Trigger
+
+↓
+
+Observable Actions
+
+↓
+
+Typical Decisions
+
+↓
+
+Typical Outcomes
+```
+
+Behavioral Pattern nie jest:
+
+* cechą osobowości,
+* talentem,
+* kompetencją,
+* archetypem,
+* pojedynczym mechanizmem poznawczym.
+
+Behavioral Pattern jest powtarzalnym wzorcem zachowania obserwowanym w rzeczywistych sytuacjach.
+
+Stanowi podstawową jednostkę analizy behawioralnej wykorzystywaną do budowy Predictorów oraz Cognitive Model.
+
+---
+
+# Miejsce w architekturze Vault
+
+```text
+Assessment Data
+Stories
+Achievements
+Skills
+Development Areas
+
+↓
+
+Calibration
+
+↓
+
+Predictors
+
+↓
+
+Behavioral Patterns
+
+↓
+
+Cognitive Model
+```
+
+Assessment Data dostarczają danych pomiarowych.
+
+Stories dostarczają obserwacji zachowań.
+
+Achievements dostarczają dowodów rezultatów.
+
+Skills dostarczają informacji o rozwiniętych zdolnościach.
+
+Development Areas dostarczają informacji o ograniczeniach oraz powtarzalnych trudnościach.
+
+Behavioral Patterns integrują wszystkie źródła dowodowe w obserwowalne wzorce działania.
+
+Predictors wyjaśniają mechanizmy generujące te wzorce.
+
+Cognitive Model integruje całość w spójny model funkcjonowania badanego.
+
+---
+
+# Czym jest Behavioral Pattern?
+
+Behavioral Pattern jest powtarzalnym wzorcem zachowania obserwowanym wielokrotnie w niezależnych sytuacjach.
+
+Powinien odpowiadać na pytanie:
+
+&gt; Co badany regularnie robi, gdy znajduje się w określonych warunkach?
+
+Przykłady:
+
+* Od Chaosu do Modelu Operacyjnego
+* Usprawniaj To, Co Istnieje, Zanim To Zastąpisz
+* Bierz Problem Na Siebie
+* Tłumacz Między Funkcjami
+* Ucz Się Poprzez Wejście w Problem
+
+Behavioral Pattern musi opisywać zachowanie możliwe do zaobserwowania.
+
+Nie powinien opisywać wyłącznie cech osobowości ani stanów wewnętrznych.
+
+---
+
+# Źródła Behavioral Patterns
+
+Behavioral Patterns mogą być budowane na podstawie:
+
+* Stories,
+* Achievements,
+* Skills,
+* Development Areas,
+* Assessment Data.
+
+Hierarchia dowodów:
+
+```text
+1. Stories
+2. Achievements
+3. Development Areas
+4. Assessment Data
+5. Skills
+```
+
+Stories są głównym źródłem dowodów.
+
+Behavioral Pattern nie powinien być tworzony wyłącznie na podstawie Assessment Data.
+
+Behavioral Pattern nie powinien być tworzony na podstawie pojedynczej Story.
+
+Do utworzenia wzorca wymagane są wielokrotne obserwacje podobnego zachowania.
+
+---
+
+# Rola Behavioral Patterns
+
+Behavioral Patterns odpowiadają na pytanie:
+
+&gt; Jak badany zachowuje się w rzeczywistych sytuacjach?
+
+Są warstwą obserwacyjną.
+
+Nie próbują wyjaśniać przyczyn zachowania.
+
+Ich celem jest dokumentowanie regularnie występujących wzorców działania.
+
+Przykład:
+
+```text
+Wiele Stories
+
+↓
+
+Powtarzalne zachowanie:
+
+&quot;Bierze odpowiedzialność za problemy bez właściciela&quot;
+
+↓
+
+Behavioral Pattern:
+
+Bierz Problem Na Siebie
+```
+
+---
+
+# Relacja pomiędzy Behavioral Patterns i Predictorami
+
+Behavioral Pattern opisuje zachowanie.
+
+Predictor opisuje mechanizm.
+
+Przykład:
+
+```text
+Behavioral Pattern
+
+Bierz Problem Na Siebie
+
+↓
+
+Predictors
+
+Responsibility Internalization
+Initiative Under Ambiguity
+Low Ownership Diffusion
+```
+
+Behavioral Pattern jest obserwacją.
+
+Predictor jest hipotezą wyjaśniającą.
+
+Jeden Behavioral Pattern może być wspierany przez wiele Predictorów.
+
+Jeden Predictor może wspierać wiele Behavioral Patterns.
+
+Behavioral Patterns wykorzystują Predictory jako hipotezy wyjaśniające obserwowane zachowania.
+
+Jednocześnie ich istnienie zawsze musi być uzasadnione rzeczywistymi dowodami pochodzącymi z Career Vault.
+
+---
+
+# Relacja pomiędzy Behavioral Patterns i Cognitive Model
+
+Behavioral Patterns nie wyjaśniają zachowania.
+
+Behavioral Patterns opisują zachowanie.
+
+Cognitive Model odpowiada na pytanie:
+
+&gt; Dlaczego te wzorce występują?
+
+Behavioral Patterns stanowią główne źródło dowodów wykorzystywane podczas budowy Cognitive Model.
+
+---
+
+# Status Behavioral Patterns
+
+## Candidate
+
+Wzorzec został zidentyfikowany, ale wymaga dalszych obserwacji.
+
+## Validated
+
+Wzorzec został wielokrotnie zaobserwowany w niezależnych sytuacjach i posiada silne wsparcie dowodowe.
+
+## Deprecated
+
+Wzorzec utracił wartość wyjaśniającą lub został zastąpiony dokładniejszym modelem.
+
+---
+
+# Zasada stabilności Behavioral Pattern
+
+Kalibracja może:
+
+* zwiększać lub zmniejszać confidence,
+* dodawać nowe dowody,
+* dodawać nowe Stories,
+* doprecyzowywać opis wzorca,
+* rozszerzać zakres zachowań objętych wzorcem.
+
+Kalibracja nie powinna zmieniać podstawowego znaczenia wzorca.
+
+Jeżeli nowy materiał wskazuje na odmienny mechanizm zachowania, należy utworzyć nowy Behavioral Pattern.
+
+---
+
+# Struktura Behavioral Pattern
+
+Każdy Behavioral Pattern powinien być zapisany jako osobny plik Markdown.
+
+---
+
+## Metadane
+
+```yaml
+---
+id: BP-001
+
+name: Od Chaosu do Modelu Operacyjnego
+
+status: candidate
+confidence: high
+
+derived_from:
+  stories:
+    - STORY-001
+    - STORY-004
+
+  achievements:
+    - ACH-001
+
+  skills:
+    - SKILL-002
+
+  development_areas: []
+
+  assessment_data:
+    - AD-001
+---
+```
+
+---
+
+# Elementy Behavioral Pattern
+
+## Opis
+
+Opis podstawowego mechanizmu zachowania.
+
+Odpowiada na pytanie:
+
+&gt; Co regularnie robi badany?
+
+---
+
+## Wyzwalacz
+
+Jakie warunki aktywują wzorzec?
+
+---
+
+## Proces Wewnętrzny
+
+Jak wygląda typowa sekwencja rozumowania lub działania prowadząca do zachowania?
+
+---
+
+## Obserwowalne Zachowania
+
+Co może zaobserwować osoba zewnętrzna?
+
+Powinny być to zachowania możliwe do zweryfikowania.
+
+---
+
+## Typowe Rezultaty
+
+Jakie konsekwencje zwykle generuje wzorzec?
+
+Należy uwzględniać zarówno skutki pozytywne, jak i negatywne.
+
+---
+
+## Dowody Wspierające
+
+Dowody wykorzystane do identyfikacji wzorca.
+
+Powinny być grupowane według źródła:
+
+* Stories
+* Achievements
+* Skills
+* Development Areas
+* Assessment Data
+
+---
+
+## Potencjalne Tryby Niepowodzenia
+
+Jakie ryzyka pojawiają się przy nadmiernym lub niewłaściwym zastosowaniu wzorca?
+
+Dobry Behavioral Pattern powinien wskazywać własne ograniczenia.
+
+---
+
+## Ocena
+
+Krótka interpretacja behawioralna.
+
+Powinna odpowiadać na pytanie:
+
+&gt; Jakich zachowań możemy spodziewać się w przyszłości, jeśli wzorzec jest poprawny?
+
+---
+
+## Notatki
+
+Miejsce na:
+
+* niepewności interpretacyjne,
+* konkurencyjne hipotezy,
+* braki dowodowe,
+* powiązania z innymi Behavioral Patterns.
+
+---
+
+# Weryfikacja jakości
+
+Dobry Behavioral Pattern:
+
+* opisuje rzeczywiste zachowanie,
+* występuje w wielu niezależnych sytuacjach,
+* posiada wyraźny Trigger,
+* posiada wyraźny Internal Process,
+* posiada obserwowalne zachowania,
+* generuje przewidywania,
+* może zostać sfalsyfikowany,
+* posiada udokumentowane dowody.
+
+Słaby Behavioral Pattern:
+
+* jest parafrazą cechy osobowości,
+* opisuje wyłącznie kompetencję,
+* nie posiada wsparcia w Stories,
+* nie generuje przewidywań,
+* nie można go obalić,
+* nie wskazuje potencjalnych trybów niepowodzenia.
+
+---
+
+# Cel długoterminowy
+
+Celem Behavioral Patterns nie jest wyjaśnianie działania badanego.
+
+Ich rolą jest dokumentowanie powtarzalnych zachowań obserwowanych w rzeczywistych sytuacjach.
+
+Behavioral Patterns stanowią główną warstwę dowodową Career Vault, łączącą dane źródłowe z modelami interpretacyjnymi.
+
+Dzięki temu Cognitive Model może być budowany na podstawie obserwowalnych zachowań, a nie wyłącznie deklaracji, testów psychometrycznych lub subiektywnych interpretacji.
+</pre>
+<h2 class="file" id="BP-001">Assessments/Behavioral Patterns/BP-001.md <span class="id-badge">[BP-001]</span></h2>
+<pre>---
+
+id: BP-001
+
+name: Od Chaosu do Modelu Operacyjnego
+
+status: candidate
+
+confidence: high
+
+derived_from:
+
+stories:
+
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
+
+achievements:
+
+- ACH-001
+- ACH-002
+- ACH-003
+- ACH-004
+- ACH-005
+- ACH-007
+- ACH-008
+- ACH-010
+- ACH-011
+- ACH-012
+- ACH-013
+- ACH-014
+- ACH-P001
+- ACH-P002
+- ACH-P003
+- ACH-P004
+
+skills:
+
+- SKILL-001
+- SKILL-002
+- SKILL-003
+- SKILL-004
+- SKILL-005
+- SKILL-006
+- SKILL-007
+- SKILL-008
+- SKILL-009
+- SKILL-010
+- SKILL-011
+- SKILL-012
+- SKILL-014
+- SKILL-015
+- SKILL-016
+- SKILL-017
+
+development_areas:
+
+- DEV-001
+- DEV-002
+- DEV-003
+- DEV-004
+- DEV-006
+
+assessment_data:
+
+- AD-GALLUP-2026-06-17
+- AD-AOT-2026-06-18
+- AD-CIHS-2026-06-18
+- AD-BFM-2026-06-18
+- AD-HEXACO-2026-06-18
+
+---
+
+# Opis
+
+Gdy sytuacja jest chaotyczna, niejednoznaczna lub operacyjnie nieuporządkowana, osoba przekształca ją w jawny model, na którym można pracować. Powtarzalnym mechanizmem nie jest samo zrozumienie problemu, lecz zamiana go w ustrukturyzowany model operacyjny obejmujący wejścia, role, zależności, przekazania odpowiedzialności, reguły działania oraz punkty kontrolne.
+
+# Wyzwalacz
+
+Proces działa ad hoc, informacje są niepełne lub wiele osób improwizuje bez wspólnej struktury działania.
+
+# Proces Wewnętrzny
+
+Sekwencja działania wygląda następująco:
+
+1. Wyodrębnienie kluczowych elementów sytuacji.
+2. Identyfikacja brakujących informacji.
+3. Grupowanie powiązanych elementów.
+4. Określenie zależności między nimi.
+5. Przetłumaczenie wyniku na proces, checklistę, system lub ramę decyzyjną.
+
+Gdy model osiągnie wystarczający poziom klarowności, zostaje wdrożony i następnie rozwijany na podstawie informacji zwrotnej z rzeczywistego działania.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* mapowanie procesów,
+* standaryzację działań,
+* jednoznaczne definiowanie ról,
+* tworzenie checklist,
+* projektowanie workflow,
+* silną preferencję do budowania wspólnej struktury przed rozpoczęciem wykonania.
+
+Osoba często zastępuje luźno skoordynowane działania nazwanym procesem i widocznym systemem zarządzania.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* zmniejszenie chaosu,
+* mniej niejednoznacznych przekazań odpowiedzialności,
+* bardziej przewidywalna realizacja działań,
+* możliwość powtarzania procesu,
+* łatwiejsze szkolenie innych osób,
+* większa skalowalność rozwiązania.
+
+### Negatywne
+
+* znaczny nakład czasu na formalizowanie problemów,
+* tendencja do budowania systemów nawet dla sytuacji, które mogłyby zostać rozwiązane prostszymi metodami.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-002
+* STORY-003
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-007
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-001
+* ACH-002
+* ACH-003
+* ACH-004
+* ACH-005
+* ACH-007
+* ACH-008
+* ACH-010
+* ACH-011
+* ACH-012
+* ACH-013
+* ACH-014
+* ACH-P001
+* ACH-P002
+* ACH-P003
+* ACH-P004
+
+## Skills
+
+* SKILL-001
+* SKILL-002
+* SKILL-003
+* SKILL-004
+* SKILL-005
+* SKILL-006
+* SKILL-007
+* SKILL-008
+* SKILL-009
+* SKILL-010
+* SKILL-011
+* SKILL-012
+* SKILL-014
+* SKILL-015
+* SKILL-016
+* SKILL-017
+
+## Development Areas
+
+* DEV-001
+* DEV-002
+* DEV-003
+* DEV-004
+* DEV-006
+
+## Assessment Data
+
+* AD-GALLUP-2026-06-17
+* AD-AOT-2026-06-18
+* AD-CIHS-2026-06-18
+* AD-BFM-2026-06-18
+* AD-HEXACO-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Przy nadmiernym stosowaniu wzorzec może prowadzić do przeinżynierowania (over-engineering). Czas może być poświęcany na budowanie struktury szybciej, niż wymaga tego sytuacja, lub na tworzenie systemu jeszcze przed pełnym zweryfikowaniem rzeczywistego problemu.
+
+# Ocena
+
+Wzorzec przewiduje, że osoba będzie konsekwentnie dążyć do uczynienia nieuporządkowanych środowisk zrozumiałymi i operacyjnie kontrolowalnymi. W przyszłych działaniach będzie preferować jawne modele, udokumentowane procesy oraz rozwiązania strukturalne zamiast doraźnej improwizacji.
+
+# Notatki
+
+Gęstość dowodów jest bardzo wysoka w całym Career Vault. Jest to najczytelniejszy mechanizm występujący przekrojowo w różnych sytuacjach i prawdopodobnie stanowi jeden z głównych wzorców organizujących sposób działania tej osoby.
+</pre>
+<h2 class="file" id="BP-002">Assessments/Behavioral Patterns/BP-002.md <span class="id-badge">[BP-002]</span></h2>
+<pre>---
+
+id: BP-002
+
+name: Usprawniaj To, Co Istnieje, Zanim To Zastąpisz
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
+
+achievements:
+- ACH-001
+- ACH-002
+- ACH-003
+- ACH-004
+- ACH-005
+- ACH-007
+- ACH-008
+- ACH-010
+- ACH-011
+- ACH-012
+- ACH-013
+- ACH-014
+
+skills:
+- SKILL-001
+- SKILL-002
+- SKILL-003
+- SKILL-006
+- SKILL-008
+- SKILL-009
+- SKILL-010
+- SKILL-012
+- SKILL-015
+- SKILL-016
+
+development_areas:
+- DEV-004
+- DEV-002
+
+assessment_data:
+- AD-SVT-2026-06-18
+- AD-AOT-2026-06-18
+- AD-CIHS-2026-06-18
+
+---
+
+# Opis
+
+Osoba traktuje istniejący system jako źródło informacji, a nie coś, co należy od razu odrzucić. Pierwszym krokiem jest zrozumienie, co obecne rozwiązanie faktycznie robi, jakie ograniczenia odzwierciedla i dlaczego przetrwało do dziś. Dopiero potem podejmowana jest decyzja, które elementy należy zoptymalizować, a które przeprojektować.
+
+# Wyzwalacz
+
+Istnieje już proces, struktura lub model organizacyjny, ale działa nieefektywnie, generuje tarcia albo przestał odpowiadać aktualnej skali i potrzebom organizacji.
+
+# Proces Wewnętrzny
+
+Osoba analizuje istniejący system, szukając funkcji ukrytej za każdym ograniczeniem. Sprawdza, czy problem wynika z błędnego rozwiązania, czy raczej z utraty dopasowania między rozwiązaniem a obecnym kontekstem działania.
+
+Zmiany są następnie kierowane w obszary o największym potencjale wpływu, zamiast polegać na całkowitym zastąpieniu systemu od podstaw.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* dokładną diagnozę przed rozpoczęciem zmian,
+* preferencję dla stopniowego przeprojektowywania,
+* konsekwentne próby zachowania tego, co działa poprawnie,
+* skupienie na naprawianiu elementów, które zawodzą,
+* częste pytanie: „Dlaczego obecne rozwiązanie istnieje?” zanim pojawi się pytanie „Jak je zmienić?”.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* bardziej stabilne przejście między stanem obecnym a docelowym,
+* niższe ryzyko wdrożeniowe,
+* ograniczenie niepotrzebnych zakłóceń organizacyjnych,
+* lepsze wykorzystanie istniejących zasobów i wiedzy.
+
+### Negatywne
+
+* znaczny czas poświęcony na analizę systemów, które i tak zostaną częściowo zastąpione,
+* ryzyko zbyt długiego utrzymywania elementów o malejącej wartości.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-002
+* STORY-003
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-007
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-001
+* ACH-002
+* ACH-003
+* ACH-004
+* ACH-005
+* ACH-007
+* ACH-008
+* ACH-010
+* ACH-011
+* ACH-012
+* ACH-013
+* ACH-014
+
+## Skills
+
+* SKILL-001
+* SKILL-002
+* SKILL-003
+* SKILL-006
+* SKILL-008
+* SKILL-009
+* SKILL-010
+* SKILL-012
+* SKILL-015
+* SKILL-016
+
+## Development Areas
+
+* DEV-004
+* DEV-002
+
+## Assessment Data
+
+* AD-SVT-2026-06-18
+* AD-AOT-2026-06-18
+* AD-CIHS-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Gdy sytuacja wymaga radykalnego zerwania z dotychczasowym podejściem, wzorzec ten może opóźniać zdecydowane działania. Może również prowadzić do zbyt długiego optymalizowania wokół historycznych ograniczeń, które utraciły już swoje uzasadnienie biznesowe.
+
+# Ocena
+
+Wzorzec przewiduje pragmatyczne podejście do zmian operacyjnych: bez bezkrytycznego przywiązania do istniejących rozwiązań, ale również bez potrzeby ich natychmiastowego burzenia. Osoba częściej będzie przebudowywać i usprawniać istniejące systemy niż rozpoczynać wszystko od zera.
+
+# Notatki
+
+Wzorzec jest odrębny od budowania struktur i procesów od podstaw. Jego istotą nie jest projektowanie nowych systemów, lecz sposób traktowania systemów odziedziczonych oraz podejmowania decyzji o ich ewolucji.
+</pre>
+<h2 class="file" id="BP-003">Assessments/Behavioral Patterns/BP-003.md <span class="id-badge">[BP-003]</span></h2>
+<pre>---
+
+id: BP-003
+
+name: Zamknij Szybko, Otwórz Ponownie Przy Nowych Dowodach
+
+status: candidate
+
+confidence: medium
+
+derived_from:
+stories:
+- STORY-001
+- STORY-004
+- STORY-006
+- STORY-008
+
+achievements:
+- ACH-004
+- ACH-010
+- ACH-011
+- ACH-012
+- ACH-013
+
+skills:
+- SKILL-011
+- SKILL-012
+- SKILL-014
+- SKILL-016
+- SKILL-017
+
+development_areas:
+- DEV-004
+
+assessment_data:
+- AD-AOT-2026-06-18
+- AD-CIHS-2026-06-18
+- AD-NFCS-2026-06-18
+
+---
+
+# Opis
+
+Osoba nie pozostawia problemów otwartych w nieskończoność. Gdy dostępnych jest wystarczająco dużo informacji, aby podjąć działanie, temat zostaje tymczasowo zamknięty, a uwaga przenosi się na realizację. Zamknięcie nie jest jednak traktowane jako ostateczne. Pojawienie się nowych danych, zmiana warunków lub dowody podważające wcześniejsze założenia mogą spowodować ponowne otwarcie sprawy.
+
+# Wyzwalacz
+
+Podjęto decyzję, zbudowano roboczy model sytuacji lub obecne wyjaśnienie wydaje się wystarczające do rozpoczęcia działania.
+
+# Proces Wewnętrzny
+
+Osoba zbiera informacje do momentu osiągnięcia praktycznego progu użyteczności. Po jego przekroczeniu aktywne poszukiwanie danych zostaje zatrzymane, a działania przechodzą do fazy wykonawczej.
+
+Jeżeli później pojawią się informacje, które w istotny sposób zmieniają obraz sytuacji, temat zostaje ponownie uruchomiony, a wcześniejsze wnioski są poddawane ponownej weryfikacji.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* stosunkowo szybkie przechodzenie od analizy do działania,
+* podejmowanie decyzji mimo niepełnej informacji,
+* brak tendencji do niekończącej się analizy,
+* gotowość do powrotu do wcześniejszych ustaleń, gdy rzeczywistość przeczy przyjętemu modelowi,
+* ponowną ocenę sytuacji wyłącznie wtedy, gdy nowe dane mają rzeczywiste znaczenie.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* ograniczenie paraliżu decyzyjnego,
+* szybsze przechodzenie do realizacji,
+* możliwość korygowania kursu bez konieczności ciągłego kwestionowania każdej decyzji,
+* zachowanie równowagi między działaniem a uczeniem się.
+
+### Negatywne
+
+* temat zamknięty zbyt wcześnie może pozostać zamknięty do momentu pojawienia się bardzo wyraźnego sygnału ostrzegawczego,
+* słabe, ale istotne sygnały mogą zostać początkowo przeoczone.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-004
+* STORY-006
+* STORY-008
+
+## Achievements
+
+* ACH-004
+* ACH-010
+* ACH-011
+* ACH-012
+* ACH-013
+
+## Skills
+
+* SKILL-011
+* SKILL-012
+* SKILL-014
+* SKILL-016
+* SKILL-017
+
+## Development Areas
+
+* DEV-004
+
+## Assessment Data
+
+* AD-AOT-2026-06-18
+* AD-CIHS-2026-06-18
+* AD-NFCS-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Jeżeli próg ponownego otwarcia tematu jest ustawiony zbyt wysoko, osoba może ignorować słabe, lecz ważne sygnały wskazujące na konieczność zmiany kierunku.
+
+Jeżeli próg ten jest ustawiony zbyt nisko, wzorzec może przekształcić się w ciągłe ponowne analizowanie tych samych kwestii, kosztem realizacji i postępu.
+
+# Ocena
+
+Wzorzec przewiduje pragmatyczne podejście do niepewności: analizuj do momentu uzyskania informacji wystarczających do działania, następnie działaj, a do tematu wracaj tylko wtedy, gdy nowe dowody uzasadniają koszt ponownej analizy.
+
+# Notatki
+
+Dowody pochodzące ze Stories są obecne, ale mniej gęste niż w przypadku wzorców związanych z budowaniem struktur i systemów. Mechanizm jest jednak dodatkowo wspierany przez dane z badań oraz materiały kalibracyjne, co zwiększa wiarygodność interpretacji.
+</pre>
+<h2 class="file" id="BP-004">Assessments/Behavioral Patterns/BP-004.md <span class="id-badge">[BP-004]</span></h2>
+<pre>---
+
+id: BP-004
+
+name: Tłumacz Między Funkcjami
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-008
+- STORY-009
+
+achievements:
+- ACH-001
+- ACH-004
+- ACH-005
+- ACH-006
+- ACH-008
+- ACH-012
+- ACH-013
+- ACH-014
+- ACH-P001
+- ACH-P002
+- ACH-P003
+- ACH-P004
+
+skills:
+- SKILL-011
+- SKILL-013
+- SKILL-017
+
+development_areas:
+- DEV-005
+
+assessment_data:
+- AD-GALLUP-2026-06-17
+- AD-MFQ-2026-06-18
+- AD-HEXACO-2026-06-18
+
+---
+
+# Opis
+
+Gdy różne grupy działają w oparciu o odmienne założenia, priorytety lub sposoby myślenia, osoba naturalnie przyjmuje rolę tłumacza. Jej zachowanie polega na ujawnianiu ograniczeń każdej ze stron, przeformułowywaniu problemu na język zrozumiały dla pozostałych uczestników oraz budowaniu wystarczającego wspólnego kontekstu, aby umożliwić skoordynowane działanie.
+
+# Wyzwalacz
+
+Pojawiają się napięcia między działami, rozbieżne oczekiwania lub potrzeba uzgodnienia współpracy między osobami o różnych priorytetach, kompetencjach i poziomach wiedzy.
+
+# Proces Wewnętrzny
+
+Osoba analizuje perspektywy wszystkich zaangażowanych stron i identyfikuje rzeczywiste źródło nieporozumienia. Następnie tłumaczy problem na wspólne ramy operacyjne, które pozwalają uczestnikom patrzeć na sytuację przez ten sam pryzmat.
+
+W celu ograniczenia niejednoznaczności wykorzystuje przejrzystą komunikację, jawne ustalenia oraz jednoznaczne przekazania odpowiedzialności między grupami.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* budowanie mostów między zespołami,
+* mediowanie w sytuacjach nieporozumień,
+* wyjaśnianie perspektyw różnych stron,
+* dostarczanie brakującego kontekstu,
+* używanie konkretnych przykładów do synchronizacji rozumienia problemu,
+* częste pełnienie roli nieformalnego kanału przepływu informacji pomiędzy działami.
+
+Osoba często staje się punktem, przez który przechodzą informacje wymagające interpretacji lub doprecyzowania.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* płynniejsza współpraca między zespołami,
+* mniej ukrytych założeń,
+* redukcja wzajemnych oskarżeń i konfliktów,
+* lepsze zrozumienie ograniczeń poszczególnych stron,
+* skuteczniejsza realizacja działań wymagających współpracy wielu interesariuszy.
+
+### Negatywne
+
+* zwiększone obciążenie wynikające z pełnienia roli stałego pośrednika,
+* uzależnienie organizacji od jednej osoby jako integratora,
+* trudność w zastąpieniu tej roli przez formalne procesy,
+* ryzyko przejmowania odpowiedzialności za problemy, które powinny zostać rozwiązane bezpośrednio przez właścicieli procesu.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-002
+* STORY-003
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-001
+* ACH-004
+* ACH-005
+* ACH-006
+* ACH-008
+* ACH-012
+* ACH-013
+* ACH-014
+* ACH-P001
+* ACH-P002
+* ACH-P003
+* ACH-P004
+
+## Skills
+
+* SKILL-011
+* SKILL-013
+* SKILL-017
+
+## Development Areas
+
+* DEV-005
+
+## Assessment Data
+
+* AD-GALLUP-2026-06-17
+* AD-MFQ-2026-06-18
+* AD-HEXACO-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Przy nadmiernym stosowaniu osoba może stać się trwałym buforem pomiędzy grupami, absorbując napięcia, które powinny zostać rozwiązane na poziomie strukturalnym. Może to również opóźniać bezpośrednią odpowiedzialność pomiędzy faktycznymi właścicielami problemu, ponieważ komunikacja zaczyna przechodzić przez pośrednika zamiast odbywać się bezpośrednio.
+
+# Ocena
+
+Wzorzec przewiduje wysoką skuteczność w środowiskach wielointeresariuszowych oraz sytuacjach wymagających współpracy między różnymi funkcjami organizacji. W momentach pojawienia się nieporozumień lub rozbieżnych perspektyw osoba będzie prawdopodobnie spontanicznie wykorzystywana jako tłumacz, integrator lub mediator pomagający zbudować wspólne zrozumienie sytuacji.
+
+# Notatki
+
+Wzorzec jest odrębny od nauczania i transferu wiedzy. Jego istotą nie jest przekazywanie informacji jednej stronie, lecz tworzenie wzajemnej zrozumiałości pomiędzy grupami, które funkcjonują w różnych kontekstach operacyjnych i poznawczych.
+</pre>
+<h2 class="file" id="BP-005">Assessments/Behavioral Patterns/BP-005.md <span class="id-badge">[BP-005]</span></h2>
+<pre>---
+
+id: BP-005
+
+name: Bierz Problem Na Siebie
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
+
+achievements:
+- ACH-001
+- ACH-002
+- ACH-003
+- ACH-004
+- ACH-005
+- ACH-007
+- ACH-008
+- ACH-010
+- ACH-011
+- ACH-012
+- ACH-013
+- ACH-014
+- ACH-P001
+- ACH-P002
+- ACH-P003
+- ACH-P004
+
+skills:
+- SKILL-002
+- SKILL-005
+- SKILL-010
+- SKILL-011
+- SKILL-012
+- SKILL-015
+- SKILL-017
+
+development_areas:
+- DEV-002
+- DEV-003
+- DEV-006
+
+assessment_data:
+- AD-GALLUP-2026-06-17
+- AD-HEXACO-2026-06-18
+- AD-SVT-2026-06-18
+
+---
+
+# Opis
+
+Gdy pojawia się istotny problem, który nie posiada skutecznego właściciela operacyjnego lub istnieje wysokie ryzyko, że nie zostanie doprowadzony do rozwiązania, badany ma tendencję do internalizowania odpowiedzialności za osiągnięcie rezultatu — niezależnie od formalnego zakresu swojej roli.
+
+Rdzeniem wzorca nie jest pomaganie, inicjatywa ani sama eksperckość. Kluczowym elementem jest mentalne przejście z roli obserwatora lub doradcy do roli osoby odpowiedzialnej za to, aby problem nie pozostał bez skutecznego rozwiązania.
+
+Jednocześnie wzorzec nie oznacza automatycznego przejmowania wszystkich problemów. Przed podjęciem odpowiedzialności badany ocenia:
+
+* znaczenie problemu dla organizacji,
+* czy istnieje realny właściciel,
+* czy właściciel posiada możliwość skutecznego działania,
+* czy sam dysponuje kompetencjami lub jest w stanie je szybko zdobyć.
+
+Jeżeli formalny właściciel istnieje i skutecznie prowadzi temat, badany zwykle pozostaje w roli konsultanta, mentora lub osoby wspierającej zamiast przejmować odpowiedzialność.
+
+---
+
+# Wyzwalacz
+
+Wzorzec uruchamia się, gdy występuje przynajmniej jeden z poniższych warunków:
+
+* problem ma istotne konsekwencje dla klienta, produktu, zespołu lub organizacji,
+* odpowiedzialność jest niejasna, rozproszona lub nieegzekwowana,
+* nikt nie podejmuje skutecznego działania,
+* istnieje ryzyko pozostawienia problemu bez właściciela,
+* badany posiada kompetencje lub realną możliwość ich zdobycia,
+* koszt zaniechania wydaje się większy niż koszt przejęcia odpowiedzialności.
+
+---
+
+# Proces Wewnętrzny
+
+Proces decyzyjny przebiega etapowo.
+
+Najpierw oceniana jest waga problemu oraz jego wpływ na organizację.
+
+Następnie badany analizuje:
+
+* czy istnieje formalny właściciel,
+* czy właściciel rzeczywiście prowadzi temat,
+* czy potrzebuje jedynie wsparcia,
+* czy temat pozostanie bez skutecznego domknięcia.
+
+Dopiero wtedy następuje wewnętrzne przejście:
+
+&gt; &quot;To jest ważny problem.&quot;
+
+↓
+
+&gt; &quot;Czy ktoś rzeczywiście go prowadzi?&quot;
+
+↓
+
+&gt; &quot;Jeżeli nie — dopilnuję, żeby został rozwiązany.&quot;
+
+Kluczowym elementem nie jest przekonanie o własnej wyjątkowości ani potrzeba kontroli.
+
+Rdzeniem jest niechęć do pozostawienia istotnego problemu bez odpowiedzialnego właściciela.
+
+Po przejęciu odpowiedzialności uwaga przesuwa się z pytania:
+
+&gt; &quot;Czy to należy do mojej roli?&quot;
+
+na pytanie:
+
+&gt; &quot;Co musi się wydarzyć, aby problem został skutecznie rozwiązany?&quot;
+
+Uruchamia to:
+
+* organizowanie współpracy,
+* koordynowanie ludzi,
+* pozyskiwanie informacji,
+* wykonywanie pracy wykraczającej poza standardowy zakres obowiązków,
+* utrzymywanie ciągłości działań aż do osiągnięcia rezultatu.
+
+Jeżeli jednak formalny właściciel istnieje i posiada sprawczość, badany znacznie częściej przechodzi w tryb konsultingu, mentoringu lub coachingu niż przejmuje temat.
+
+---
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* przejmowanie odpowiedzialności za tematy pozostające bez skutecznego właściciela,
+* inicjowanie działań bez formalnego upoważnienia w sytuacjach wysokiego ryzyka,
+* organizowanie współpracy wokół problemów organizacyjnych,
+* koordynowanie wielu interesariuszy,
+* aktywne monitorowanie postępów aż do zakończenia problemu,
+* traktowanie rezultatu jako własnego zobowiązania,
+* częste wspieranie formalnych właścicieli zamiast odbierania im odpowiedzialności,
+* odróżnianie pomagania od przejęcia ownershipu.
+
+Osoba staje się faktycznym właścicielem głównie tych problemów, które nie posiadają skutecznego właściciela operacyjnego.
+
+---
+
+# Typowe Rezultaty
+
+## Pozytywne
+
+* eliminowanie problemów wynikających z braku właściciela,
+* zwiększenie prawdopodobieństwa domknięcia strategicznych tematów,
+* poprawa ciągłości działania organizacji,
+* wyższa niezawodność procesów,
+* szybsza reakcja na problemy systemowe,
+* budowanie reputacji osoby odpowiedzialnej i skutecznej.
+
+## Negatywne
+
+* przejmowanie zbyt wielu zobowiązań,
+* przeciążenie wynikające z trudności w odmawianiu,
+* kumulowanie odpowiedzialności na jednej osobie,
+* tworzenie ukrytych zależności organizacyjnych,
+* ryzyko konfliktów z formalną hierarchią,
+* ograniczanie rozwoju odpowiedzialności u innych osób.
+
+---
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-002
+* STORY-003
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-007
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-001
+* ACH-002
+* ACH-003
+* ACH-004
+* ACH-005
+* ACH-007
+* ACH-008
+* ACH-010
+* ACH-011
+* ACH-012
+* ACH-013
+* ACH-014
+* ACH-P001
+* ACH-P002
+* ACH-P003
+* ACH-P004
+
+## Skills
+
+* SKILL-002
+* SKILL-005
+* SKILL-010
+* SKILL-011
+* SKILL-012
+* SKILL-015
+* SKILL-017
+
+## Development Areas
+
+* DEV-002
+* DEV-003
+* DEV-006
+
+## Assessment Data
+
+* AD-GALLUP-2026-06-17
+* AD-HEXACO-2026-06-18
+* AD-SVT-2026-06-18
+
+---
+
+# Potencjalne Tryby Niepowodzenia
+
+Nadmierne wykorzystywanie tego wzorca może prowadzić do chronicznego przejmowania odpowiedzialności za problemy, które powinny zostać rozwiązane przez innych.
+
+W skrajnych przypadkach badany zaczyna pełnić rolę nieformalnego mechanizmu kompensującego braki organizacyjne, przejmując zadania wynikające z niejasnych ról, słabej koordynacji lub niewystarczającej odpowiedzialności innych osób.
+
+Może to prowadzić do:
+
+* przeciążenia,
+* spadku skalowalności,
+* utrwalania nieefektywnych procesów,
+* konfliktów z formalną strukturą zarządzania,
+* powstawania pojedynczych punktów awarii (Single Point of Failure).
+
+Istnieje również ryzyko utożsamienia wysokich kompetencji z koniecznością przejęcia ownershipu. Kalibracja 003 wskazuje, że są to dwa odrębne mechanizmy i nie powinny być interpretowane jako tożsame.
+
+---
+
+# Ocena
+
+Wzorzec przewiduje ponadprzeciętną skłonność do internalizacji odpowiedzialności za problemy, które nie posiadają skutecznego właściciela operacyjnego.
+
+Jest szczególnie wartościowy w organizacjach rozwijających się, dynamicznych lub przechodzących zmiany, gdzie formalne struktury odpowiedzialności nie zawsze nadążają za rzeczywistymi potrzebami operacyjnymi.
+
+Kalibracja 003 doprecyzowała jednak, że wzorzec nie polega na automatycznym przejmowaniu cudzych obowiązków. Badany konsekwentnie odróżnia:
+
+* pomaganie od ownershipu,
+* kompetencję od odpowiedzialności,
+* coaching od przejęcia tematu.
+
+Przejęcie odpowiedzialności następuje przede wszystkim wtedy, gdy problem jest ważny, pozostaje bez skutecznego właściciela oraz istnieje realna możliwość doprowadzenia go do rozwiązania.
+
+---
+
+# Notatki
+
+Kalibracja 003 nie podważyła istnienia wzorca, lecz znacząco doprecyzowała jego granice.
+
+Najważniejszym odkryciem było to, że mechanizm nie jest uruchamiany przez sam fakt zauważenia problemu ani przez wysoką kompetencję. Kluczowym wyzwalaczem jest połączenie trzech elementów:
+
+1. wysoka ważność problemu,
+2. brak skutecznego właściciela,
+3. przekonanie, że badany jest w stanie doprowadzić temat do skutecznego rozwiązania.
+
+To odróżnia BP-005 od zwykłej gotowości do pomocy, wysokiej inicjatywy czy eksperckości i czyni go znacznie bardziej precyzyjnym predyktorem zachowania.
+</pre>
+<h2 class="file" id="BP-006">Assessments/Behavioral Patterns/BP-006.md <span class="id-badge">[BP-006]</span></h2>
+<pre>---
+id: BP-006
+
+name: Zamieniaj Wiedzę Ukrytą w Wspólną Infrastrukturę
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+  - STORY-003
+  - STORY-005
+  - STORY-006
+  - STORY-001
+  - STORY-002
+  - STORY-004
+  - STORY-007
+  - STORY-009
+
+achievements:
+  - ACH-003
+  - ACH-005
+  - ACH-006
+  - ACH-013
+  - ACH-014
+  - ACH-P004
+
+skills:
+  - SKILL-003
+  - SKILL-006
+  - SKILL-007
+  - SKILL-015
+  - SKILL-017
+
+development_areas:
+  - DEV-004
+
+assessment_data:
+  - AD-GALLUP-2026-06-17
+  - AD-AOT-2026-06-18
+  - AD-HEXACO-2026-06-18
+---
+
+# Opis
+
+Powtarzającym się zachowaniem jest dostrzeganie sytuacji, w których kluczowa wiedza istnieje głównie w doświadczeniu, intuicji lub praktyce ekspertów, a następnie przekształcanie jej w trwałą infrastrukturę organizacyjną dostępną dla innych.
+
+Rdzeniem wzorca nie jest samo dokumentowanie ani samo szkolenie. Kluczowym mechanizmem jest identyfikowanie wiedzy ukrytej (tacit knowledge), wydobywanie jej logiki działania i zamienianie w zasób możliwy do przechowywania, odtwarzania, przekazywania i skalowania.
+
+Wzorzec uruchamia się szczególnie wtedy, gdy badany widzi, że:
+- ważna wiedza jest zamknięta w głowach pojedynczych osób,
+- proces zależy od nieformalnego know-how,
+- istnieje ryzyko utraty wiedzy wraz ze zmianą personelu,
+- organizacja musi być w stanie odtworzyć sposób działania niezależnie od konkretnego eksperta.
+
+Kalibracja 003 doprecyzowała, że wzorzec ten nie polega na automatycznym „pisaniu czegokolwiek”, ani na samym nauczaniu jednej osoby. Jego sednem jest stworzenie infrastruktury organizacyjnej, która przetrwa ludzi.
+
+# Wyzwalacz
+
+Wzorzec uruchamia się, gdy występuje przynajmniej jeden z poniższych warunków:
+
+- kluczowa wiedza znajduje się wyłącznie w głowach ekspertów,
+- nowi pracownicy uczą się głównie przez obserwację, rozmowę lub nieformalny mentoring,
+- decyzje zależą od niewielkiej grupy osób posiadających unikalne doświadczenie,
+- organizacja jest podatna na utratę wiedzy wraz z odejściem ekspertów,
+- brak formalnych struktur umożliwiających przekazywanie wiedzy,
+- proces działa, ale jego logika nie jest łatwo odtwarzalna przez innych,
+- istnieje potrzeba skalowania, powtarzalności albo zabezpieczenia ciągłości.
+
+# Proces Wewnętrzny
+
+Osoba identyfikuje obszary, w których wiedza funkcjonuje głównie jako praktyka ekspercka, a nie jako jawnie opisany system.
+
+Następnie analizuje:
+- jak eksperci podejmują decyzje,
+- jakich sygnałów używają,
+- jakie zależności rozpoznają,
+- jakie reguły stosują świadomie lub nieświadomie,
+- jakie błędy rozpoznają i jak na nie reagują,
+- co w ich sposobie działania jest naprawdę istotne, a co stanowi tylko wykonawczy szczegół.
+
+Ukryta logika działania zostaje następnie przełożona na struktury możliwe do wykorzystania przez innych.
+
+Przyjmują one formę:
+- procedur,
+- dokumentacji,
+- workflow,
+- baz wiedzy,
+- drzewek diagnostycznych,
+- modeli decyzyjnych,
+- standardów operacyjnych,
+- narzędzi wspierających podejmowanie decyzji,
+- materiałów szkoleniowych, jeżeli są one tylko jednym z nośników szerszej infrastruktury.
+
+Celem jest stworzenie trwałego zasobu organizacyjnego, który pozostaje użyteczny niezależnie od obecności pierwotnego eksperta.
+
+Kalibracja 003 doprecyzowała też ważną granicę: kodowanie nie jest tym samym co nauczenie jednej osoby. Nauczanie może być środkiem, ale nie stanowi rdzenia wzorca. Rdzeniem jest utrwalenie mechanizmu tak, aby organizacja mogła go odtworzyć, skalować lub przekazać dalej.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+- identyfikowanie obszarów zależnych od wiedzy pojedynczych osób,
+- prowadzenie rozmów z ekspertami w celu zrozumienia ich sposobu działania,
+- modelowanie procesów i zależności decyzyjnych,
+- tworzenie dokumentacji operacyjnej,
+- budowanie baz wiedzy i repozytoriów informacji,
+- projektowanie procedur oraz workflow,
+- standaryzację sposobu przechowywania i wykorzystywania wiedzy,
+- tworzenie narzędzi pozwalających odtwarzać sposób działania ekspertów,
+- zamianę nieformalnego know-how w zasób możliwy do użycia przez innych.
+
+Efektem jest powstawanie infrastruktury umożliwiającej wykonywanie pracy bez konieczności ciągłego odwoływania się do konkretnej osoby.
+
+# Typowe Rezultaty
+
+## Pozytywne
+
+- zmniejszenie zależności od pojedynczych ekspertów,
+- większa ciągłość działania organizacji,
+- zachowanie wiedzy mimo zmian personalnych,
+- łatwiejsze skalowanie procesów,
+- bardziej przewidywalna jakość działania,
+- szybsze rozpowszechnianie dobrych praktyk,
+- wzrost odporności organizacyjnej,
+- możliwość odtwarzania sposobu działania nawet po czasie.
+
+## Negatywne
+
+- wysoki koszt czasowy formalizacji wiedzy,
+- ryzyko dokumentowania szybciej niż organizacja jest gotowa z tego korzystać,
+- możliwość tworzenia rozbudowanych zasobów o ograniczonym wykorzystaniu,
+- ryzyko nadmiernej formalizacji obszarów wymagających elastyczności i eksperckiego osądu,
+- utrata czasu na kodowanie wiedzy o niskiej wartości przyszłej,
+- budowanie infrastruktury bez realnego wdrożenia.
+
+# Dowody Wspierające
+
+## Stories
+
+- STORY-003
+- STORY-005
+- STORY-006
+- STORY-001
+- STORY-002
+- STORY-004
+- STORY-007
+- STORY-009
+
+## Achievements
+
+- ACH-003
+- ACH-005
+- ACH-006
+- ACH-013
+- ACH-014
+- ACH-P004
+
+## Skills
+
+- SKILL-003
+- SKILL-006
+- SKILL-007
+- SKILL-015
+- SKILL-017
+
+## Development Areas
+
+- DEV-004
+
+## Assessment Data
+
+- AD-GALLUP-2026-06-17
+- AD-AOT-2026-06-18
+- AD-HEXACO-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Przy nadmiernym wykorzystaniu wzorzec może prowadzić do formalizowania wiedzy, która nie wymaga formalizacji albo której wartość nie uzasadnia kosztu kodyfikacji.
+
+Może również powodować tworzenie rozbudowanych struktur wiedzy wyprzedzających realne potrzeby organizacji albo próbę zamiany na procedury obszarów, które nadal wymagają eksperckiego osądu.
+
+Istnieje także ryzyko poświęcania nadmiernej ilości czasu na budowę infrastruktury wiedzy kosztem bieżącej realizacji zadań.
+
+Kalibracja 003 dodała jeszcze jedno ważne ryzyko: mylenie kodowania wiedzy z samym szkoleniem lub prostym przekazywaniem zadania. To, że ktoś potrafi nauczyć jedną osobę, nie oznacza jeszcze, że stworzył trwałą infrastrukturę organizacyjną.
+
+# Ocena
+
+Wzorzec przewiduje silną tendencję do identyfikowania wiedzy ukrytej oraz przekształcania jej w trwałe zasoby organizacyjne.
+
+Osoba postrzega zależność od indywidualnej wiedzy ekspertów jako ograniczenie skalowalności, odporności i ciągłości działania organizacji. Naturalnie dąży więc do wydobywania, strukturyzowania i utrwalania wiedzy w formie umożliwiającej jej wielokrotne wykorzystanie.
+
+W praktyce prowadzi to do budowy procedur, baz wiedzy, modeli decyzyjnych, workflow oraz innych form infrastruktury organizacyjnej, które przechowują i rozpowszechniają wiedzę niezależnie od konkretnych osób.
+
+Kalibracja 003 potwierdziła, że wzorzec ten nie jest jedynie przejawem chęci dokumentowania. Jest to stabilny mechanizm polegający na zamienianiu ukrytej logiki działania w zasób, który organizacja może zachować, rozwijać i skalować.
+
+# Notatki
+
+Wzorzec opisuje proces transformacji wiedzy ukrytej w trwały zasób organizacyjny.
+
+Może wykorzystywać dokumentację, szkolenia, procesy lub narzędzia, jednak żaden z tych artefaktów nie stanowi istoty wzorca. Są one jedynie środkami służącymi realizacji głównego celu: zamiany doświadczenia jednostek w wiedzę możliwą do przechowywania, przekazywania i skalowania.
+
+Najważniejsze doprecyzowanie po Kalibracji 003: wzorzec uruchamia się przede wszystkim wtedy, gdy istnieje ryzyko utraty know-how albo potrzeba odtworzenia działania przez innych. Nie jest to więc zwykła preferencja do pisania dokumentów, lecz mechanizm zabezpieczania wiedzy przed utratą i zamiany jej w infrastrukturę.
+</pre>
+<h2 class="file" id="BP-007">Assessments/Behavioral Patterns/BP-007.md <span class="id-badge">[BP-007]</span></h2>
+<pre>---
+
+id: BP-007
+
+name: Diagnozuj Operacje Za Pomocą Danych
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-004
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
+
+achievements:
+- ACH-004
+- ACH-010
+- ACH-011
+- ACH-012
+- ACH-013
+- ACH-014
+
+skills:
+- SKILL-002
+- SKILL-008
+- SKILL-009
+- SKILL-010
+- SKILL-014
+- SKILL-015
+- SKILL-016
+
+development_areas:
+- DEV-002
+- DEV-004
+
+assessment_data:
+- AD-AOT-2026-06-18
+- AD-CIHS-2026-06-18
+- AD-BFM-2026-06-18
+- AD-HEXACO-2026-06-18
+
+---
+
+# Opis
+
+Osoba ma tendencję do zastępowania operacyjnych domysłów mierzalną rzeczywistością. Gdy działanie systemu jest niejasne, pierwszym odruchem jest określenie obciążenia, zweryfikowanie założeń, wprowadzenie pomiarów oraz wykorzystanie danych do ustalenia, gdzie faktycznie znajduje się ograniczenie systemu.
+
+Celem nie jest samo gromadzenie danych, lecz odkrycie rzeczywistego mechanizmu działania procesu oraz zidentyfikowanie czynników ograniczających jego skuteczność.
+
+# Wyzwalacz
+
+System zaczyna się skalować, proces jest przeciążony lub decyzje podejmowane są głównie na podstawie opinii, intuicji i przypuszczeń zamiast obserwowalnych dowodów.
+
+# Proces Wewnętrzny
+
+Osoba poszukuje elementów, które można policzyć, zmierzyć lub porównać.
+
+Następnie:
+
+1. Definiuje oczekiwany rezultat procesu.
+2. Identyfikuje potencjalne ograniczenia i wąskie gardła.
+3. Sprawdza, czy aktualne przekonania są zgodne z obserwowanymi danymi.
+4. Analizuje przepływ pracy, obciążenie i wydajność.
+5. Wykorzystuje uzyskane wyniki do podejmowania decyzji dotyczących zmian organizacyjnych, optymalizacji procesów lub alokacji zasobów.
+
+Proces ma charakter diagnostyczny — dane służą przede wszystkim do odkrywania operacyjnej prawdy, a nie do potwierdzania wcześniejszych założeń.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* tworzenie i analizowanie wskaźników,
+* przeprowadzanie audytów procesowych,
+* analizę przepustowości i obciążenia,
+* kwestionowanie niezweryfikowanych założeń,
+* poszukiwanie dowodów przed podjęciem decyzji,
+* uzasadnianie zmian na podstawie obserwowanych konsekwencji operacyjnych,
+* częste pytania o dane źródłowe i sposób ich pozyskania.
+
+Osoba wykazuje większe zaufanie do obserwowanego działania systemu niż do deklaracji uczestników procesu.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* lepsza priorytetyzacja działań,
+* ograniczenie martwych punktów i błędnych założeń,
+* bardziej trafne decyzje dotyczące zasobów i procesów,
+* większa odporność na błędy poznawcze,
+* możliwość obrony decyzji na podstawie obiektywnych przesłanek,
+* szybsza identyfikacja rzeczywistych ograniczeń systemu.
+
+### Negatywne
+
+* opóźnianie decyzji w oczekiwaniu na bardziej kompletne dane,
+* poświęcanie dużej ilości czasu na pomiary i analizy,
+* ryzyko niedoceniania jakościowych informacji trudnych do zmierzenia.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-004
+* STORY-006
+* STORY-007
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-004
+* ACH-010
+* ACH-011
+* ACH-012
+* ACH-013
+* ACH-014
+
+## Skills
+
+* SKILL-002
+* SKILL-008
+* SKILL-009
+* SKILL-010
+* SKILL-014
+* SKILL-015
+* SKILL-016
+
+## Development Areas
+
+* DEV-002
+* DEV-004
+
+## Assessment Data
+
+* AD-AOT-2026-06-18
+* AD-CIHS-2026-06-18
+* AD-BFM-2026-06-18
+* AD-HEXACO-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Przy nadmiernym wykorzystywaniu wzorzec może prowadzić do zarządzania nadmiernie opartego na analizie oraz zbyt dużego uzależnienia od wskaźników, które w rzeczywistości są jedynie przybliżeniem prawdziwego problemu.
+
+Może również powodować większy komfort w naprawianiu systemów niż w podejmowaniu decyzji opartych na kompromisach i niepełnych danych, szczególnie w sytuacjach, gdzie nie istnieje możliwość uzyskania wiarygodnego pomiaru.
+
+Istnieje także ryzyko traktowania mierzalnych aspektów problemu jako ważniejszych od czynników jakościowych, kulturowych lub relacyjnych.
+
+# Ocena
+
+Wzorzec przewiduje, że osoba będzie ufała mierzalnej rzeczywistości operacyjnej bardziej niż werbalnym zapewnieniom, szczególnie gdy stawka jest wysoka lub system znajduje się w fazie szybkiego wzrostu.
+
+W sytuacjach niejasności naturalną reakcją będzie próba zrozumienia przepływów, obciążeń, ograniczeń i zależności poprzez dane. Osoba będzie dążyć do odkrycia faktycznego stanu systemu, zanim podejmie decyzję o jego zmianie.
+
+# Notatki
+
+Wzorzec nie opisuje ogólnej analityczności ani zdolności logicznego myślenia. Jego istotą jest wykorzystywanie danych do odkrywania operacyjnej prawdy, identyfikowania ograniczeń wydajnościowych oraz podejmowania decyzji opartych na rzeczywistym funkcjonowaniu systemu.
+</pre>
+<h2 class="file" id="BP-008">Assessments/Behavioral Patterns/BP-008.md <span class="id-badge">[BP-008]</span></h2>
+<pre>---
+
+id: BP-008
+
+name: Prototypuj, Następnie Stabilizuj
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
+
+achievements:
+- ACH-001
+- ACH-003
+- ACH-004
+- ACH-005
+- ACH-006
+- ACH-007
+- ACH-008
+- ACH-011
+- ACH-012
+- ACH-013
+- ACH-014
+
+skills:
+- SKILL-001
+- SKILL-003
+- SKILL-004
+- SKILL-008
+- SKILL-009
+- SKILL-012
+- SKILL-014
+- SKILL-015
+
+development_areas:
+- DEV-003
+- DEV-004
+
+assessment_data:
+- AD-GALLUP-2026-06-17
+- AD-AOT-2026-06-18
+- AD-NFCS-2026-06-18
+
+---
+
+# Opis
+
+Gdy nie istnieje gotowy sposób działania ani sprawdzony wzorzec postępowania, osoba nie czeka na pełną pewność. Zamiast tego tworzy pierwszą działającą wersję rozwiązania, uruchamia ją w rzeczywistych warunkach, obserwuje rezultaty i stopniowo doskonali system, aż osiągnie on wystarczający poziom stabilności operacyjnej.
+
+Istotą wzorca nie jest perfekcyjne planowanie, lecz iteracyjne przechodzenie od pomysłu do rozwiązania działającego w praktyce.
+
+# Wyzwalacz
+
+Nie istnieje precedens, organizacja znajduje się pod presją czasu lub problem jest zbyt złożony, aby dało się go w pełni zamodelować przed rozpoczęciem działania.
+
+# Proces Wewnętrzny
+
+Osoba tworzy wstępną hipotezę dotyczącą rozwiązania problemu.
+
+Następnie:
+
+1. Buduje najmniejszą możliwą wersję systemu zdolną do działania.
+2. Wdraża ją w rzeczywistym środowisku.
+3. Obserwuje rezultaty i identyfikuje błędy.
+4. Analizuje przyczyny niepowodzeń oraz nieoczekiwanych efektów.
+5. Wprowadza poprawki.
+6. Powtarza cykl aż do osiągnięcia stabilnego i użytecznego rozwiązania.
+
+Praktyczna informacja zwrotna jest traktowana jako bardziej wartościowa niż teoretyczne przewidywania.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* iteracyjne projektowanie rozwiązań,
+* szybkie przechodzenie od koncepcji do działającego prototypu,
+* eksperymentowanie w kontrolowanej skali,
+* częste modyfikacje na podstawie doświadczeń z wdrożenia,
+* gotowość do korekty wcześniejszych założeń,
+* stopniowe utwardzanie i formalizowanie rozwiązań po ich sprawdzeniu w praktyce.
+
+Osoba zazwyczaj preferuje sprawdzenie pomysłu w rzeczywistości zamiast długotrwałego modelowania wszystkich możliwych scenariuszy.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* szybsze tworzenie działających systemów,
+* ograniczenie paraliżu wynikającego z niepełnych informacji,
+* wysoka elastyczność w początkowych fazach projektu,
+* możliwość szybkiego uczenia się na podstawie rzeczywistych danych,
+* skuteczniejsze radzenie sobie z niepewnością i nowymi problemami.
+
+### Negatywne
+
+* ryzyko szybkiego zbudowania niewłaściwego rozwiązania,
+* angażowanie zasobów zanim problem zostanie w pełni zrozumiany,
+* możliwość rozwijania systemu przed zweryfikowaniem, czy rzeczywiście istnieje potrzeba biznesowa,
+* potencjalne generowanie dodatkowej pracy wynikającej z późniejszych korekt.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-003
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-007
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-001
+* ACH-003
+* ACH-004
+* ACH-005
+* ACH-006
+* ACH-007
+* ACH-008
+* ACH-011
+* ACH-012
+* ACH-013
+* ACH-014
+
+## Skills
+
+* SKILL-001
+* SKILL-003
+* SKILL-004
+* SKILL-008
+* SKILL-009
+* SKILL-012
+* SKILL-014
+* SKILL-015
+
+## Development Areas
+
+* DEV-003
+* DEV-004
+
+## Assessment Data
+
+* AD-GALLUP-2026-06-17
+* AD-AOT-2026-06-18
+* AD-NFCS-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Największym ryzykiem jest szybkie budowanie rozwiązania dla niewłaściwie zdefiniowanego problemu. Wzorzec może również prowadzić do angażowania czasu i zasobów przed pełnym zrozumieniem potrzeb użytkowników lub organizacji.
+
+Szybka iteracja bywa także sposobem kompensowania niewystarczającej walidacji strategicznej — system może być coraz lepiej dopracowywany, mimo że jego podstawowe założenia nie zostały jeszcze wystarczająco sprawdzone.
+
+# Ocena
+
+Wzorzec przewiduje silną preferencję do praktycznego eksperymentowania i stopniowego stabilizowania rozwiązań, szczególnie w środowiskach niepewnych, dynamicznych lub szybko zmieniających się.
+
+W sytuacjach braku jasnych odpowiedzi osoba będzie prawdopodobnie dążyć do stworzenia pierwszej działającej wersji rozwiązania, zdobycia informacji zwrotnej z rzeczywistości i wykorzystania jej do dalszego doskonalenia systemu.
+
+# Notatki
+
+Wzorzec jest szerszy niż samo uczenie się lub eksperymentowanie. Jego istotą jest charakterystyczna pętla zachowań:
+
+**zbuduj pierwszą wersję → sprawdź ją w praktyce → popraw → ustabilizuj.**
+
+To właśnie ten cykl stanowi powtarzalny mechanizm obserwowany w różnych obszarach działania.
+</pre>
+<h2 class="file" id="BP-009">Assessments/Behavioral Patterns/BP-009.md <span class="id-badge">[BP-009]</span></h2>
+<pre>---
+
+id: BP-009
+
+name: Ucz, Dopóki Inni Nie Potrafią Działać Samodzielnie
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-002
+- STORY-003
+- STORY-005
+- STORY-006
+- STORY-009
+- STORY-001
+
+achievements:
+- ACH-003
+- ACH-004
+- ACH-005
+- ACH-006
+- ACH-012
+- ACH-014
+- ACH-P001
+- ACH-P002
+- ACH-P003
+
+skills:
+- SKILL-003
+- SKILL-006
+- SKILL-007
+- SKILL-013
+- SKILL-017
+
+development_areas:
+- DEV-001
+- DEV-005
+
+assessment_data:
+- AD-GALLUP-2026-06-17
+- AD-HEXACO-2026-06-18
+
+---
+
+# Opis
+
+Powtarzającym się zachowaniem jest doprowadzanie innych ludzi do praktycznej samodzielności, a nie jedynie przekazywanie im informacji.
+
+Osoba nie traktuje procesu jako zakończonego w momencie wyjaśnienia zagadnienia, przeprowadzenia szkolenia lub udostępnienia materiałów. Kontynuuje wsparcie do momentu, w którym odbiorcy potrafią samodzielnie wykonywać zadania, podejmować decyzje oraz rozwiązywać typowe problemy bez ciągłej pomocy eksperta.
+
+Celem nie jest transfer wiedzy, lecz transfer zdolności działania.
+
+# Wyzwalacz
+
+Występuje przynajmniej jeden z poniższych warunków:
+
+* nowy proces wymaga wdrożenia,
+* nowy produkt lub narzędzie wymaga adopcji przez użytkowników,
+* zespół nie posiada jeszcze wymaganych kompetencji,
+* organizacja jest nadmiernie zależna od ekspertów,
+* istnieje potrzeba zwiększenia samodzielności ludzi lub zespołów.
+
+# Proces Wewnętrzny
+
+Osoba zaczyna od zrozumienia:
+
+* czego odbiorcy nie potrafią jeszcze zrobić,
+* jakie błędy najczęściej popełniają,
+* jakie przeszkody utrudniają samodzielne działanie,
+* jaki poziom kompetencji jest faktycznie potrzebny.
+
+Następnie:
+
+1. Dzieli materiał na logiczne etapy rozwoju kompetencji.
+2. Dostosowuje sposób przekazu do odbiorcy.
+3. Tworzy materiały wspierające naukę.
+4. Prowadzi szkolenia, warsztaty lub wdrożenia.
+5. Obserwuje wykorzystanie nowych umiejętności w praktyce.
+6. Usuwa bariery utrudniające samodzielne działanie.
+7. Modyfikuje proces nauki na podstawie obserwowanych rezultatów.
+
+Proces kończy się dopiero wtedy, gdy odbiorcy potrafią osiągać oczekiwane rezultaty bez stałego wsparcia.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* wdrażanie nowych pracowników,
+* prowadzenie szkoleń i warsztatów,
+* organizowanie prezentacji i sesji roboczych,
+* tworzenie materiałów wspierających naukę,
+* odpowiadanie na pytania pojawiające się podczas wdrożenia,
+* monitorowanie postępów uczestników,
+* aktywne wspieranie osób mających trudności z zastosowaniem wiedzy w praktyce,
+* stopniowe ograniczanie wsparcia wraz ze wzrostem samodzielności odbiorców.
+
+Osoba pozostaje zaangażowana do momentu osiągnięcia realnej zdolności działania po stronie uczestników.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* wzrost samodzielności pracowników i zespołów,
+* szybsza adopcja nowych procesów i narzędzi,
+* ograniczenie liczby błędów wynikających z niewłaściwego wdrożenia,
+* zmniejszenie zależności od ekspertów,
+* większa odporność organizacji na zmiany personalne,
+* skuteczniejsze rozwijanie kompetencji w organizacji.
+
+### Negatywne
+
+* wysokie nakłady czasu na działania wdrożeniowe i rozwojowe,
+* angażowanie się w edukację kosztem innych obowiązków,
+* trudność z zaakceptowaniem wolniejszego tempa nauki uczestników,
+* ryzyko zbyt długiego utrzymywania wsparcia zamiast przekazania pełnej odpowiedzialności odbiorcom.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-002
+* STORY-003
+* STORY-005
+* STORY-006
+* STORY-009
+* STORY-001
+
+## Achievements
+
+* ACH-003
+* ACH-004
+* ACH-005
+* ACH-006
+* ACH-012
+* ACH-014
+* ACH-P001
+* ACH-P002
+* ACH-P003
+
+## Skills
+
+* SKILL-003
+* SKILL-006
+* SKILL-007
+* SKILL-013
+* SKILL-017
+
+## Development Areas
+
+* DEV-001
+* DEV-005
+
+## Assessment Data
+
+* AD-GALLUP-2026-06-17
+* AD-HEXACO-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Jeżeli odbiorcy nie są gotowi do przejęcia odpowiedzialności za własny rozwój, osoba może inwestować znaczną ilość czasu i energii przy ograniczonych rezultatach.
+
+Może również pojawić się tendencja do zbyt długiego pozostawania w roli wspierającej, co opóźnia pełne usamodzielnienie uczestników.
+
+W skrajnych przypadkach wzorzec może prowadzić do sytuacji, w której dalsze wsparcie zastępuje naturalny proces samodzielnego uczenia się i rozwiązywania problemów.
+
+# Ocena
+
+Wzorzec przewiduje konsekwentne budowanie samodzielności operacyjnej innych ludzi.
+
+Osoba naturalnie dąży do tworzenia warunków, w których inni są zdolni samodzielnie wykonywać zadania, podejmować decyzje i rozwiązywać problemy bez ciągłego wsparcia eksperta.
+
+W praktyce prowadzi to do aktywnego wdrażania ludzi, rozwijania kompetencji oraz budowania organizacji mniej zależnej od pojedynczych specjalistów.
+
+# Notatki
+
+Wzorzec jest odrębny od BP-006.
+
+BP-006 koncentruje się na przekształcaniu wiedzy ukrytej w trwałą infrastrukturę organizacyjną.
+
+BP-009 koncentruje się na rozwijaniu zdolności działania po stronie konkretnych ludzi lub zespołów.
+
+Dokumentacja, szkolenia, instrukcje i materiały mogą występować w obu wzorcach, jednak pełnią inną funkcję.
+
+W BP-006 są rezultatem procesu kodyfikacji wiedzy.
+
+W BP-009 są narzędziami służącymi osiągnięciu samodzielności odbiorców.
+</pre>
+<h2 class="file" id="BP-010">Assessments/Behavioral Patterns/BP-010.md <span class="id-badge">[BP-010]</span></h2>
+<pre>---
+
+id: BP-010
+
+name: Kwestionuj Logikę, Nie Człowieka
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-002
+- STORY-003
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-008
+- STORY-009
+
+achievements:
+- ACH-001
+- ACH-004
+- ACH-005
+- ACH-006
+- ACH-008
+- ACH-012
+- ACH-014
+
+skills:
+- SKILL-011
+- SKILL-017
+- SKILL-013
+
+development_areas:
+- DEV-005
+
+assessment_data:
+- AD-HEXACO-2026-06-18
+- AD-BFM-2026-06-18
+- AD-MFQ-2026-06-18
+- AD-GALLUP-2026-06-17
+
+---
+
+# Opis
+
+Gdy osoba nie zgadza się z czyimś stanowiskiem, źródłem sprzeciwu jest zazwyczaj argument, model myślowy lub sposób podejmowania decyzji, a nie sam człowiek. Powtarzalny mechanizm polega na zachowaniu szacunku wobec rozmówcy przy jednoczesnym poddawaniu jego rozumowania rygorystycznej analizie.
+
+Celem nie jest wygranie sporu ani podważenie autorytetu drugiej osoby, lecz poprawa jakości rozumowania, decyzji lub procesu.
+
+# Wyzwalacz
+
+Słaba logika argumentacji, niejasne założenia, niesprawiedliwy proces decyzyjny lub wnioski, które nie wytrzymują krytycznej analizy.
+
+# Proces Wewnętrzny
+
+Osoba oddziela człowieka od przedstawionego twierdzenia.
+
+Następnie:
+
+1. Identyfikuje założenia stojące za argumentem.
+2. Sprawdza spójność logiczną rozumowania.
+3. Poszukuje luk, niespójności lub niewspartych założeń.
+4. Formułuje pytania lub kontrargumenty odnoszące się do treści, a nie do osoby.
+5. Dąży do wypracowania lepszego modelu wyjaśniającego lub bardziej uzasadnionej ścieżki decyzyjnej.
+
+Proces jest prowadzony w sposób mający utrzymać konstruktywny charakter interakcji, nawet jeśli sama krytyka jest stanowcza.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* spokojne, ale bezpośrednie kwestionowanie argumentów,
+* częste prośby o doprecyzowanie założeń,
+* silne skupienie na logice i spójności rozumowania,
+* zadawanie pytań prowadzących do ujawnienia luk w argumentacji,
+* poprawianie jakości decyzji bez eskalowania konfliktu personalnego,
+* większe zainteresowanie tym, „czy to ma sens”, niż tym, „kto to powiedział”.
+
+Krytyka jest zazwyczaj kierowana w stronę idei, procesów i sposobów myślenia, a nie osób.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* wyższa jakość podejmowanych decyzji,
+* bardziej rygorystyczna analiza problemów,
+* ograniczenie błędów wynikających z niezweryfikowanych założeń,
+* możliwość prowadzenia trudnych dyskusji bez niszczenia relacji,
+* budowanie kultury opartej na argumentach zamiast hierarchii.
+
+### Negatywne
+
+* odbieranie osoby jako bardziej krytycznej lub wymagającej niż zamierzała być,
+* wzrost napięcia w środowiskach o niskim poziomie zaufania,
+* wydłużanie procesu decyzyjnego w poszukiwaniu lepszego uzasadnienia,
+* ryzyko postrzegania konstruktywnej krytyki jako oporu lub podważania autorytetu.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-002
+* STORY-003
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-008
+* STORY-009
+
+## Achievements
+
+* ACH-001
+* ACH-004
+* ACH-005
+* ACH-006
+* ACH-008
+* ACH-012
+* ACH-014
+
+## Skills
+
+* SKILL-011
+* SKILL-017
+* SKILL-013
+
+## Development Areas
+
+* DEV-005
+
+## Assessment Data
+
+* AD-HEXACO-2026-06-18
+* AD-BFM-2026-06-18
+* AD-MFQ-2026-06-18
+* AD-GALLUP-2026-06-17
+
+# Potencjalne Tryby Niepowodzenia
+
+W środowiskach szczególnie wrażliwych na krytykę bezpośredniość może być odbierana jako podważanie stanowiska, opór lub konfrontacja, nawet jeśli intencją jest poprawa jakości decyzji.
+
+Wzorzec może również prowadzić do nadmiernego analizowania argumentów i opóźniania decyzji, gdy osoba konsekwentnie poszukuje lepiej uzasadnionego rozwiązania.
+
+Dodatkowym ryzykiem jest założenie, że wszyscy uczestnicy dyskusji rozdzielają krytykę argumentu od krytyki osoby w takim samym stopniu jak ona sama.
+
+# Ocena
+
+Wzorzec przewiduje utrzymującą się skłonność do krytycznej oceny słabego rozumowania przy jednoczesnym zachowaniu względnej tolerancji wobec ludzi popełniających błędy.
+
+W praktyce oznacza to częste podważanie założeń, modeli i procesów decyzyjnych, zwłaszcza wtedy, gdy ich jakość wpływa na ważne decyzje. Osoba będzie prawdopodobnie bardziej wymagająca wobec argumentów niż wobec samych ludzi.
+
+# Notatki
+
+Jest to wzorzec zachowania, a nie deklaracja wartości czy przekonań. Nie opisuje tego, w co osoba wierzy, lecz sposób, w jaki prowadzi krytykę i kieruje uwagę podczas niezgody.
+
+Kluczowe znaczenie ma tutaj obiekt krytyki. Wzorzec staje się widoczny nie dlatego, że osoba często się nie zgadza, lecz dlatego, że konsekwentnie kieruje swoją uwagę na logikę, założenia i proces rozumowania zamiast na cechy rozmówcy.
+</pre>
+<h2 class="file" id="BP-011">Assessments/Behavioral Patterns/BP-011.md <span class="id-badge">[BP-011]</span></h2>
+<pre>---
+id: BP-011
+
+name: Chroń Przepustowość, Gdy Rośnie Obciążenie
+
+status: candidate
+
+confidence: medium
+
+derived_from:
+stories:
+  - STORY-008
+  - STORY-009
+  - STORY-002
+  - STORY-001
+  - STORY-004
+  - STORY-005
+  - STORY-006
+
+achievements:
+  - ACH-008
+  - ACH-012
+  - ACH-013
+  - ACH-014
+
+skills:
+  - SKILL-005
+  - SKILL-012
+  - SKILL-015
+  - SKILL-016
+  - SKILL-017
+
+development_areas:
+  - DEV-002
+  - DEV-003
+  - DEV-006
+  - DEV-001
+
+assessment_data:
+  - AD-BFM-2026-06-18
+  - AD-NFCS-2026-06-18
+  - AD-GALLUP-2026-06-17
+---
+
+# Opis
+
+Powtarzającym się zachowaniem jest rozpoznawanie, że czas, uwaga, energia oraz zdolność wykonawcza są zasobami ograniczonymi, które mogą wymagać ochrony.
+
+Gdy obciążenie zaczyna przekraczać realne możliwości wykonawcze, osoba nie próbuje bez końca kompensować tego samym zwiększaniem wysiłku. Zamiast tego zaczyna zwracać uwagę na przepustowość: ogranicza zobowiązania, porządkuje priorytety, redukuje zakres albo wyznacza granice.
+
+Kalibracja 003 doprecyzowała jednak, że wzorzec ten nie działa jako stabilny, dominujący filtr decyzyjny. W praktyce bardzo często przegrywa z:
+- ważnością tematu,
+- hierarchią,
+- poczuciem kompetencyjnego „mogę to ogarnąć”,
+- oraz impulsem, by nie zostawiać problemu bez opieki.
+
+Dlatego rdzeniem wzorca nie jest ogólna ostrożność ani zwykłe priorytetyzowanie. Kluczowym elementem jest rozpoznanie momentu, w którym dalsze dokładanie pracy przestaje poprawiać wynik, a zaczyna zagrażać zdolności do skutecznego działania.
+
+# Wyzwalacz
+
+Wzorzec uruchamia się, gdy występuje przynajmniej jeden z poniższych warunków:
+
+- liczba zobowiązań zbliża się do realnej zdolności ich realizacji,
+- jakość zaczyna spadać mimo wysokiego zaangażowania,
+- pojawiają się opóźnienia lub zaległości,
+- nowe inicjatywy konkurują o te same zasoby,
+- utrzymanie tempa wymaga stałego wysiłku ponad normalny poziom,
+- system zaczyna opierać się na przeciążeniu ludzi zamiast na realnej zdolności wykonawczej,
+- badany widzi, że dalsze dokładanie obowiązków może zaszkodzić długoterminowej skuteczności.
+
+# Proces Wewnętrzny
+
+Osoba początkowo próbuje zwiększyć efektywność poprzez:
+- lepszą organizację,
+- większy wysiłek,
+- usprawnienie współpracy,
+- poprawę planowania,
+- domykanie kolejnych tematów mimo rosnącego obciążenia.
+
+W pewnym momencie zauważa jednak, że dalsze zwiększanie zaangażowania nie poprawia proporcjonalnie rezultatów.
+
+Pojawia się wtedy zmiana perspektywy:
+
+z:
+
+„Jak zrobić więcej?”
+
+na:
+
+„Jak chronić zdolność do skutecznego działania?”
+
+Następnie osoba:
+- identyfikuje główne źródła przeciążenia,
+- ocenia koszt dalszego zwiększania obciążenia,
+- określa priorytety,
+- ogranicza mniej istotne działania,
+- wyznacza granice chroniące kluczowe zasoby.
+
+Kalibracja 003 wskazuje jednak, że ta sekwencja nie zawsze kończy się skutecznym postawieniem granicy. Często pojawia się napięcie między świadomością limitu a gotowością do przyjęcia kolejnego ważnego tematu, zwłaszcza gdy temat ma wysoką stawkę albo pochodzi od osoby o większym wpływie.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+- sygnalizowanie ryzyka przeciążenia,
+- zwracanie uwagi na ograniczoną pojemność wykonawczą,
+- kwestionowanie nierealistycznych oczekiwań,
+- odmawianie przyjmowania kolejnych zobowiązań,
+- redukowanie zakresu prac,
+- ustalanie priorytetów,
+- tworzenie ograniczeń chroniących kluczowe działania,
+- świadome pozostawianie części możliwości niewykorzystanych w celu zachowania rezerwy operacyjnej.
+
+Jednocześnie obserwator może zauważyć, że te zachowania nie zawsze są konsekwentne. W sytuacjach wysokiej ważności, przy silnej hierarchii lub przy poczuciu, że temat „nie może zostać bez opieki”, badany może mimo wszystko przyjąć dodatkowe obciążenie.
+
+Osoba coraz częściej ocenia decyzje nie tylko przez potencjalne korzyści, ale również przez koszt wykorzystania ograniczonych zasobów. Nie oznacza to jednak pełnej stabilności tego wzorca w praktyce.
+
+# Typowe Rezultaty
+
+## Pozytywne
+
+- większa trwałość działania,
+- ograniczenie ryzyka przeciążenia i wypalenia,
+- bardziej stabilna jakość pracy,
+- lepsza przewidywalność realizacji zobowiązań,
+- skuteczniejsza alokacja zasobów,
+- większa odporność na nagłe wzrosty obciążenia,
+- lepsze rozpoznawanie, kiedy nie warto dokładac kolejnego zadania.
+
+## Negatywne
+
+- konflikty z osobami preferującymi agresywny wzrost lub maksymalizację wykorzystania zasobów,
+- postrzeganie działań ochronnych jako zachowawczych,
+- ryzyko odrzucania części wartościowych inicjatyw,
+- możliwość nadmiernego koncentrowania się na ochronie capacity kosztem eksperymentowania,
+- napięcie między deklarowaną ochroną pojemności a faktycznym przyjmowaniem kolejnych zobowiązań,
+- ryzyko przeciążenia mimo świadomości limitu.
+
+# Dowody Wspierające
+
+## Stories
+
+- STORY-008
+- STORY-009
+- STORY-002
+- STORY-001
+- STORY-004
+- STORY-005
+- STORY-006
+
+## Achievements
+
+- ACH-008
+- ACH-012
+- ACH-013
+- ACH-014
+
+## Skills
+
+- SKILL-005
+- SKILL-012
+- SKILL-015
+- SKILL-016
+- SKILL-017
+
+## Development Areas
+
+- DEV-002
+- DEV-003
+- DEV-006
+- DEV-001
+
+## Assessment Data
+
+- AD-BFM-2026-06-18
+- AD-NFCS-2026-06-18
+- AD-GALLUP-2026-06-17
+
+# Potencjalne Tryby Niepowodzenia
+
+Jeżeli granice zostaną postawione zbyt późno, działania ochronne pojawią się dopiero po wystąpieniu przeciążenia, spadku jakości lub kosztów zdrowotnych.
+
+Jeżeli zostaną zastosowane zbyt wcześnie lub zbyt agresywnie, mogą ograniczać wartościowe inicjatywy oraz prowadzić do niewykorzystania dostępnych możliwości.
+
+Istnieje również ryzyko traktowania ochrony przepustowości jako celu samego w sobie zamiast jako środka umożliwiającego długoterminową skuteczność.
+
+Kalibracja 003 dodała jeszcze jedno ważne ryzyko: wzorzec może być mylony z ogólną priorytetyzacją, gdy tymczasem jego potencjalnie odrębny komponent dotyczy rozpoznawania capacity jako ograniczonego zasobu. Jednocześnie sama kalibracja sugeruje, że ten komponent nie jest jeszcze wystarczająco silny, by uznać go za w pełni odrębny Predictor.
+
+# Ocena
+
+Wzorzec przewiduje rosnącą skłonność do postrzegania capacity jako zasobu strategicznego.
+
+Osoba naturalnie analizuje nie tylko cele, zadania i możliwości, ale również koszt wykorzystania ograniczonych zasobów potrzebnych do ich realizacji.
+
+W praktyce prowadzi to do prób świadomego zarządzania obciążeniem, priorytetami oraz granicami w celu utrzymania długoterminowej zdolności działania.
+
+Kalibracja 003 jednak osłabiła interpretację tego wzorca jako stabilnego, dominującego mechanizmu. Obecnie bardziej trafne jest rozumienie go jako warunkowego i częściowo konkurującego z innymi impulsami: ważnością tematu, kompetencyjnością, hierarchią oraz skłonnością do przejmowania odpowiedzialności.
+
+# Notatki
+
+Wzorzec nie opisuje ogólnego system thinking ani optymalizacji procesów.
+
+Jego rdzeniem jest rozpoznawanie, że capacity jest ograniczonym zasobem wykonawczym, oraz próby zarządzania tym zasobem tak, by zachować długoterminową skuteczność.
+
+To właśnie ten element odróżnia BP-011 od wzorców związanych z analizą systemów, organizacją pracy czy budową procesów.
+
+Kalibracja 003 sugeruje, że mechanizm ten może być realny, ale nie jest jeszcze wystarczająco stabilny ani odrębny, by traktować go jako pewny, samodzielny Predictor. Na obecnym etapie lepiej opisywać go jako wzorzec pomocniczy, zależny od kontekstu i konkurujących motywacji.
+</pre>
+<h2 class="file" id="BP-012">Assessments/Behavioral Patterns/BP-012.md <span class="id-badge">[BP-012]</span></h2>
+<pre>---
+
+id: BP-012
+
+name: Ucz Się Poprzez Wejście w Problem
+
+status: candidate
+
+confidence: high
+
+derived_from:
+stories:
+- STORY-001
+- STORY-004
+- STORY-005
+- STORY-006
+- STORY-007
+- STORY-008
+- STORY-009
+- STORY-003
+
+achievements:
+- ACH-007
+- ACH-008
+- ACH-010
+- ACH-011
+- ACH-013
+- ACH-014
+
+skills:
+- SKILL-001
+- SKILL-003
+- SKILL-004
+- SKILL-006
+- SKILL-008
+- SKILL-009
+- SKILL-010
+- SKILL-012
+- SKILL-015
+- SKILL-016
+
+development_areas:
+- DEV-004
+- DEV-003
+
+assessment_data:
+- AD-GALLUP-2026-06-17
+- AD-AOT-2026-06-18
+- AD-HEXACO-2026-06-18
+
+---
+
+# Opis
+
+W obliczu nowej dziedziny, nieznanego narzędzia lub odpowiedzialności, z którą wcześniej nie miał do czynienia, osoba nie czeka, aż stanie się ekspertem. Powtarzalny mechanizm polega na wejściu w problem, zdobywaniu zrozumienia poprzez praktyczne zaangażowanie oraz wykorzystywaniu samej pracy jako głównego akceleratora rozwoju kompetencji.
+
+Nauka nie poprzedza działania — nauka zachodzi w trakcie działania.
+
+# Wyzwalacz
+
+Pojawia się nowa dziedzina wiedzy, nieznane narzędzie, nowy obszar odpowiedzialności lub problem, którego rozwiązanie wymaga kompetencji jeszcze nieposiadanych przez osobę.
+
+# Proces Wewnętrzny
+
+Osoba zdobywa minimalny poziom wiedzy potrzebny do rozpoczęcia działania.
+
+Następnie:
+
+1. Wchodzi w rzeczywisty problem.
+2. Konfrontuje się z jego ograniczeniami i wymaganiami.
+3. Identyfikuje luki we własnej wiedzy.
+4. Uzupełnia wiedzę dokładnie w tych obszarach, które stają się potrzebne.
+5. Wraca do działania z nowym poziomem kompetencji.
+6. Powtarza cykl wraz ze wzrostem złożoności problemu.
+
+Rozwój wiedzy jest sterowany przez rzeczywiste wymagania sytuacji, a nie przez z góry zaplanowany program nauki.
+
+# Obserwowalne Zachowania
+
+Zewnętrzny obserwator zauważy:
+
+* samodzielne zdobywanie wiedzy,
+* szybki rozwój kompetencji w nowych obszarach,
+* gotowość do podejmowania odpowiedzialności mimo braku formalnego doświadczenia,
+* uczenie się poprzez praktykę,
+* częste przechodzenie między różnymi dziedzinami wiedzy,
+* osiąganie użytecznej kompetencji w krótkim czasie.
+
+Osoba często staje się skuteczna w nowym obszarze dzięki rozwiązywaniu rzeczywistych problemów, a nie poprzez izolowane studiowanie teorii.
+
+# Typowe Rezultaty
+
+### Pozytywne
+
+* szybka adaptacja do nowych wyzwań,
+* dynamiczny rozwój kompetencji,
+* zdolność działania w nowych i niejednoznacznych sytuacjach,
+* skuteczność w środowiskach, gdzie formalne szkolenia są niedostępne lub niewystarczające,
+* łatwiejsze przechodzenie między rolami i obszarami odpowiedzialności.
+
+### Negatywne
+
+* możliwość popełniania błędów charakterystycznych dla początkujących,
+* większa ekspozycja na ryzyko wynikające z niepełnego zrozumienia problemu,
+* okresowa nieefektywność związana z równoczesnym działaniem i uczeniem się.
+
+# Dowody Wspierające
+
+## Stories
+
+* STORY-001
+* STORY-004
+* STORY-005
+* STORY-006
+* STORY-007
+* STORY-008
+* STORY-009
+* STORY-003
+
+## Achievements
+
+* ACH-007
+* ACH-008
+* ACH-010
+* ACH-011
+* ACH-013
+* ACH-014
+
+## Skills
+
+* SKILL-001
+* SKILL-003
+* SKILL-004
+* SKILL-006
+* SKILL-008
+* SKILL-009
+* SKILL-010
+* SKILL-012
+* SKILL-015
+* SKILL-016
+
+## Development Areas
+
+* DEV-004
+* DEV-003
+
+## Assessment Data
+
+* AD-GALLUP-2026-06-17
+* AD-AOT-2026-06-18
+* AD-HEXACO-2026-06-18
+
+# Potencjalne Tryby Niepowodzenia
+
+Największym ryzykiem jest rozpoczęcie działania zanim problem zostanie wystarczająco dobrze ograniczony lub zrozumiany. Może to prowadzić do inwestowania czasu i energii w niewłaściwym kierunku albo do konieczności późniejszego korygowania błędnych założeń.
+
+Drugim ryzykiem jest równoczesne uczenie się zbyt wielu nowych dziedzin. W takim przypadku uwaga i zasoby poznawcze mogą zostać rozproszone pomiędzy wiele obszarów, co ogranicza tempo rozwoju w każdym z nich.
+
+# Ocena
+
+Wzorzec przewiduje dalszy rozwój kompetencji przede wszystkim poprzez praktyczne działanie. W sytuacjach wymagających nowych umiejętności osoba będzie raczej szukała sposobu wejścia w problem niż oczekiwała pełnego przygotowania teoretycznego.
+
+Największą skuteczność wzorzec osiąga wtedy, gdy wyzwanie jest konkretne, ma realne konsekwencje i wymaga rozwiązania rzeczywistego problemu. To właśnie presja praktycznego zastosowania staje się głównym mechanizmem przyspieszającym naukę.
+
+# Notatki
+
+Wzorzec różni się od BP-008 „Prototypuj, Następnie Stabilizuj”.
+
+BP-008 opisuje sposób budowania i doskonalenia systemów poprzez iteracje.
+
+BP-012 opisuje sposób rozwijania własnych kompetencji poprzez wejście w nowy obszar działania.
+
+W pierwszym przypadku obiektem uczenia jest system. W drugim obiektem uczenia jest sama osoba. To rozróżnienie jest kluczowe dla poprawnej interpretacji obu wzorców.
+</pre>
+</main>
+<footer class="backlinks">
+  <hr>
+  <nav>
+    <a href="../index.html">← Strona główna</a>
+    <a href="../mapa/index.html">← Mapa Vaultu</a>
+    <a href="https://github.com/Istuification/careervault" target="_blank" rel="noopener">Repozytorium na GitHub</a>
+  </nav>
+</footer>
+</body>
+</html>
