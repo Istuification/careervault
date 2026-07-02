@@ -285,6 +285,25 @@ LANDING_TEMPLATE = """<!DOCTYPE html>
   }
   .about p{ margin: 0 0 0.9rem; color: var(--ink-soft); max-width: 65ch; }
   .about p:last-child{ margin-bottom: 0; }
+  .about.prompts{ border-top: none; padding-top: 0; margin-top: -1.6rem; }
+  .prompt-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .prompt-list li{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.82rem;
+    color: var(--ink);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+    line-height: 1.5;
+  }
 
   footer{
     font-family: "JetBrains Mono", monospace;
@@ -362,6 +381,20 @@ LANDING_TEMPLATE = """<!DOCTYPE html>
       przy każdej aktualizacji repozytorium, więc zawsze odzwierciedla
       aktualny stan wiedzy &mdash; bez ręcznego eksportowania czy kopiowania.
     </p>
+  </div>
+
+  <div class="about prompts">
+    <h3>Spróbuj zapytać</h3>
+    <p style="margin-bottom: 1rem;">
+      Po wklejeniu linku do <code>__VAULT_TXT_NAME__</code> w rozmowie z AI, dobry punkt
+      startowy to jedno z tych pytań:
+    </p>
+    <ul class="prompt-list">
+      <li>Na podstawie tego dokumentu przygotuj krótkie podsumowanie kandydata pod kątem roli [stanowisko].</li>
+      <li>Jakie dowody wspierają twierdzenie, że ta osoba potrafi [konkretna kompetencja]?</li>
+      <li>Porównaj udokumentowane kompetencje z wymaganiami tego ogłoszenia: [wklej ogłoszenie].</li>
+      <li>Jakie pytania rekrutacyjne warto zadać tej osobie na podstawie sekcji Development Areas?</li>
+    </ul>
   </div>
 
   <footer>
