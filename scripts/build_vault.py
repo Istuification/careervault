@@ -66,6 +66,16 @@ REPO_URL = "https://github.com/Istuification/careervault"
 # Publiczny adres GitHub Pages (bez trailing slash na koncu — dodawany osobno).
 SITE_URL = "https://istuification.github.io/careervault"
 
+# Dyrektywa dla robotow wyszukiwarek.
+#   "noindex, follow"  -> strona NIE pojawia sie w Google, ale linki sa sledzone;
+#                         boty AI i osoby z linkiem nadal maja pelny dostep.
+#   "index, follow"    -> normalna indeksacja w wyszukiwarkach.
+ROBOTS_DIRECTIVE = "noindex, follow"
+
+# Czy generowac sitemap.xml i wskazywac ja w robots.txt.
+# Przy noindex trzymaj False — sitemapa zaprasza do indeksacji, ktorej nie chcesz.
+GENERATE_SITEMAP = False
+
 # Kod weryfikacyjny z Google Search Console (Ustawienia -> Weryfikacja -> HTML tag).
 # Wklej tu sam ciag z atrybutu content="...". Pusty = tag nie zostanie dodany.
 GOOGLE_SITE_VERIFICATION = "CGT3gQeHAQC3i1Br876eXIn_R690XbIp7YUSjt2Q5MY"
@@ -248,7 +258,7 @@ CONTENT_PAGE_TMPL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — Career Vault</title>
 <meta name="description" content="{title} — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="{robots}">
 {head_meta}
 <style>
   body{{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
@@ -311,6 +321,7 @@ def render_content_page(slug, title, files, root_prefix, now, commit):
         blocks="\n".join(blocks),
         root_prefix=root_prefix,
         head_meta=meta,
+        robots=ROBOTS_DIRECTIVE,
         now=now, commit=commit, repo_url=REPO_URL,
     )
 
@@ -326,7 +337,7 @@ MAP_PAGE_TMPL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mapa Career Vault — przewodnik dla AI</title>
 <meta name="description" content="Mapa i przewodnik po Career Vault: struktura, identyfikatory rekordów i linki do wszystkich sekcji. Strona przeznaczona dla asystentów AI i rekruterów.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="{robots}">
 {head_meta}
 <style>
   body{{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
@@ -414,6 +425,7 @@ def render_map_page(sections, root_prefix, now, commit):
         guide_blocks="\n".join(guide_blocks),
         root_prefix=root_prefix,
         head_meta=meta,
+        robots=ROBOTS_DIRECTIVE,
         txt_name=VAULT_TXT_NAME,
         now=now, commit=commit, repo_url=REPO_URL,
     )
@@ -430,7 +442,7 @@ LANDING_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Career Vault — evidence-based career record</title>
 <meta name="description" content="Ustrukturyzowana, oparta na dowodach baza wiedzy zawodowej. Przeglądaj repozytorium, pobierz pełny plik dla AI albo wejdź w mapę Vaultu.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="__ROBOTS__">
 __HEAD_META__
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -606,6 +618,7 @@ def build_landing_html(now, commit, file_count):
         "pełny plik dla AI oraz mapa Vaultu.",
     )
     html_out = html_out.replace("__HEAD_META__", meta)
+    html_out = html_out.replace("__ROBOTS__", ROBOTS_DIRECTIVE)
     html_out = html_out.replace("__REPO_URL__", REPO_URL)
     html_out = html_out.replace("__VAULT_TXT_NAME__", VAULT_TXT_NAME)
     html_out = html_out.replace("__NOW__", now)
@@ -643,12 +656,12 @@ def build_sitemap(sections):
 
 
 def build_robots():
-    """robots.txt wskazujacy sitemap i pozwalajacy na pelny crawl."""
-    return (
-        "User-agent: *\n"
-        "Allow: /\n\n"
-        f"Sitemap: {SITE_URL}/sitemap.xml\n"
-    )
+    """robots.txt: przepuszcza wszystkie boty (by mogly przeczytac noindex
+    i by asystenci AI mieli dostep). Sitemape podaje tylko gdy indeksujemy."""
+    lines = ["User-agent: *", "Allow: /"]
+    if GENERATE_SITEMAP:
+        lines += ["", f"Sitemap: {SITE_URL}/sitemap.xml"]
+    return "\n".join(lines) + "\n"
 
 
 def build():
@@ -685,8 +698,9 @@ def build():
     landing = build_landing_html(now, commit, len(all_files))
     write(os.path.join(OUTPUT_DIR, "index.html"), landing)
 
-    # 6) SEO: sitemap.xml + robots.txt
-    write(os.path.join(OUTPUT_DIR, "sitemap.xml"), build_sitemap(sections))
+    # 6) SEO: sitemap.xml (tylko gdy indeksujemy) + robots.txt
+    if GENERATE_SITEMAP:
+        write(os.path.join(OUTPUT_DIR, "sitemap.xml"), build_sitemap(sections))
     write(os.path.join(OUTPUT_DIR, "robots.txt"), build_robots())
 
     # --- Raport spojnosci: czy kazdy plik repo trafil gdzies? ---
