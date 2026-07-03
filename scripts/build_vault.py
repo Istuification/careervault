@@ -68,7 +68,7 @@ SITE_URL = "https://istuification.github.io/careervault"
 
 # Kod weryfikacyjny z Google Search Console (Ustawienia -> Weryfikacja -> HTML tag).
 # Wklej tu sam ciag z atrybutu content="...". Pusty = tag nie zostanie dodany.
-GOOGLE_SITE_VERIFICATION = ""
+GOOGLE_SITE_VERIFICATION = "CGT3gQeHAQC3i1Br876eXIn_R690XbIp7YUSjt2Q5MY"
 
 EXCLUDE_DIRS = {".git", ".github", "dist", "node_modules", ".vscode", "scripts"}
 INCLUDE_EXTENSIONS = {".md", ".yaml", ".yml", ".txt"}
