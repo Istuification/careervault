@@ -63,6 +63,13 @@ OUTPUT_DIR = "dist"
 VAULT_TXT_NAME = "vault-full.txt"
 REPO_URL = "https://github.com/Istuification/careervault"
 
+# Publiczny adres GitHub Pages (bez trailing slash na koncu — dodawany osobno).
+SITE_URL = "https://istuification.github.io/careervault"
+
+# Kod weryfikacyjny z Google Search Console (Ustawienia -> Weryfikacja -> HTML tag).
+# Wklej tu sam ciag z atrybutu content="...". Pusty = tag nie zostanie dodany.
+GOOGLE_SITE_VERIFICATION = ""
+
 EXCLUDE_DIRS = {".git", ".github", "dist", "node_modules", ".vscode", "scripts"}
 INCLUDE_EXTENSIONS = {".md", ".yaml", ".yml", ".txt"}
 
@@ -201,6 +208,36 @@ def build_vault_txt(files, now, commit):
 
 
 # ---------------------------------------------------------------------------
+# HTML: wspolny blok meta (canonical + Open Graph + weryfikacja Google)
+# ---------------------------------------------------------------------------
+
+def head_meta(path, title, description):
+    """Zwraca blok tagow <link rel=canonical> + Open Graph + google-site-verification.
+
+    path: sciezka URL wzgledem SITE_URL, np. "" (root), "skills/", "mapa/".
+    """
+    path = path.strip("/")
+    canonical = SITE_URL + "/" + (path + "/" if path else "")
+    title_esc = html.escape(title, quote=True)
+    desc_esc = html.escape(description, quote=True)
+    parts = [
+        f'<link rel="canonical" href="{canonical}">',
+        f'<meta property="og:type" content="website">',
+        f'<meta property="og:url" content="{canonical}">',
+        f'<meta property="og:title" content="{title_esc}">',
+        f'<meta property="og:description" content="{desc_esc}">',
+        f'<meta property="og:locale" content="pl_PL">',
+        f'<meta name="twitter:card" content="summary">',
+        f'<meta name="twitter:title" content="{title_esc}">',
+        f'<meta name="twitter:description" content="{desc_esc}">',
+    ]
+    if GOOGLE_SITE_VERIFICATION.strip():
+        parts.insert(0, f'<meta name="google-site-verification" '
+                        f'content="{html.escape(GOOGLE_SITE_VERIFICATION.strip(), quote=True)}">')
+    return "\n".join(parts)
+
+
+# ---------------------------------------------------------------------------
 # HTML: strony tresciowe (surowe, pod crawlera)
 # ---------------------------------------------------------------------------
 
@@ -212,6 +249,7 @@ CONTENT_PAGE_TMPL = """<!DOCTYPE html>
 <title>{title} — Career Vault</title>
 <meta name="description" content="{title} — pełna treść sekcji Career Vault. Strona przeznaczona do odczytu przez ludzi oraz asystentów AI.">
 <meta name="robots" content="index, follow">
+{head_meta}
 <style>
   body{{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
        max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.5;
@@ -253,7 +291,7 @@ CONTENT_PAGE_TMPL = """<!DOCTYPE html>
 """
 
 
-def render_content_page(title, files, root_prefix, now, commit):
+def render_content_page(slug, title, files, root_prefix, now, commit):
     blocks = []
     for f in files:
         base = os.path.splitext(os.path.basename(f))[0]
@@ -263,10 +301,16 @@ def render_content_page(title, files, root_prefix, now, commit):
             f'<h2 class="file" id="{html.escape(base)}">{html.escape(f)}{badge}</h2>\n'
             f'<pre>{html.escape(read_file(f))}</pre>'
         )
+    meta = head_meta(
+        slug,
+        f"{title} — Career Vault",
+        f"{title} — pełna treść sekcji Career Vault. Strona dla ludzi i asystentów AI.",
+    )
     return CONTENT_PAGE_TMPL.format(
         title=html.escape(title),
         blocks="\n".join(blocks),
         root_prefix=root_prefix,
+        head_meta=meta,
         now=now, commit=commit, repo_url=REPO_URL,
     )
 
@@ -283,6 +327,7 @@ MAP_PAGE_TMPL = """<!DOCTYPE html>
 <title>Mapa Career Vault — przewodnik dla AI</title>
 <meta name="description" content="Mapa i przewodnik po Career Vault: struktura, identyfikatory rekordów i linki do wszystkich sekcji. Strona przeznaczona dla asystentów AI i rekruterów.">
 <meta name="robots" content="index, follow">
+{head_meta}
 <style>
   body{{font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
        max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; line-height: 1.55;
@@ -359,10 +404,16 @@ def render_map_page(sections, root_prefix, now, commit):
                 f'<h2 class="file" id="{html.escape(base)}">{html.escape(f)}</h2>\n'
                 f'<pre>{html.escape(read_file(f))}</pre>'
             )
+    meta = head_meta(
+        "mapa",
+        "Mapa Career Vault — przewodnik dla AI",
+        "Mapa i przewodnik po Career Vault: struktura, identyfikatory rekordów i linki do sekcji.",
+    )
     return MAP_PAGE_TMPL.format(
         toc_rows="\n    ".join(rows),
         guide_blocks="\n".join(guide_blocks),
         root_prefix=root_prefix,
+        head_meta=meta,
         txt_name=VAULT_TXT_NAME,
         now=now, commit=commit, repo_url=REPO_URL,
     )
@@ -380,6 +431,7 @@ LANDING_TEMPLATE = """<!DOCTYPE html>
 <title>Career Vault — evidence-based career record</title>
 <meta name="description" content="Ustrukturyzowana, oparta na dowodach baza wiedzy zawodowej. Przeglądaj repozytorium, pobierz pełny plik dla AI albo wejdź w mapę Vaultu.">
 <meta name="robots" content="index, follow">
+__HEAD_META__
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -547,6 +599,13 @@ LANDING_TEMPLATE = """<!DOCTYPE html>
 
 def build_landing_html(now, commit, file_count):
     html_out = LANDING_TEMPLATE
+    meta = head_meta(
+        "",
+        "Career Vault — evidence-based career record",
+        "Ustrukturyzowana, oparta na dowodach baza wiedzy zawodowej. Repozytorium, "
+        "pełny plik dla AI oraz mapa Vaultu.",
+    )
+    html_out = html_out.replace("__HEAD_META__", meta)
     html_out = html_out.replace("__REPO_URL__", REPO_URL)
     html_out = html_out.replace("__VAULT_TXT_NAME__", VAULT_TXT_NAME)
     html_out = html_out.replace("__NOW__", now)
@@ -563,6 +622,33 @@ def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
+
+
+def build_sitemap(sections):
+    """Zwraca sitemap.xml pokrywajacy strone glowna, mape i wszystkie sekcje."""
+    today = datetime.date.today().isoformat()
+    urls = [""]                       # strona glowna
+    urls += [f"{slug}/" for slug, _, _ in sections]
+    urls.append("mapa/")
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for path in urls:
+        loc = SITE_URL + "/" + path
+        lines.append("  <url>")
+        lines.append(f"    <loc>{html.escape(loc, quote=True)}</loc>")
+        lines.append(f"    <lastmod>{today}</lastmod>")
+        lines.append("  </url>")
+    lines.append("</urlset>")
+    return "\n".join(lines) + "\n"
+
+
+def build_robots():
+    """robots.txt wskazujacy sitemap i pozwalajacy na pelny crawl."""
+    return (
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        f"Sitemap: {SITE_URL}/sitemap.xml\n"
+    )
 
 
 def build():
@@ -583,7 +669,7 @@ def build():
     # 2) Strony sekcji (URL folderowy: dist/<slug>/index.html, root_prefix="../")
     section_root_prefix = "../"
     for slug, title, files in sections:
-        page = render_content_page(title, files, section_root_prefix, now, commit)
+        page = render_content_page(slug, title, files, section_root_prefix, now, commit)
         write(os.path.join(OUTPUT_DIR, slug, "index.html"), page)
 
     # 3) Mapa (dist/mapa/index.html, root_prefix="../")
@@ -598,6 +684,10 @@ def build():
     # 5) Strona glowna (dist/index.html, root_prefix="")
     landing = build_landing_html(now, commit, len(all_files))
     write(os.path.join(OUTPUT_DIR, "index.html"), landing)
+
+    # 6) SEO: sitemap.xml + robots.txt
+    write(os.path.join(OUTPUT_DIR, "sitemap.xml"), build_sitemap(sections))
+    write(os.path.join(OUTPUT_DIR, "robots.txt"), build_robots())
 
     # --- Raport spojnosci: czy kazdy plik repo trafil gdzies? ---
     covered = set()
