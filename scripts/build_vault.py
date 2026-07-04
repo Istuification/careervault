@@ -233,8 +233,8 @@ def build_vault_txt(files, now, commit):
     header.append("  faktow z pamieci. Rekordy sa self-report: potwierdzaja spojnosc i")
     header.append("  istnienie, nie sa zewnetrzna weryfikacja pracodawcy.")
     header.append("- Priorytet dowodowy: najpierw Achievements (ACH-*) i Stories (STORY-*),")
-    header.append("  potem testy, na koncu model poznawczy. Sekcja Assessment jest obszerna")
-    header.append("  i lezy przed Stories — skacz do ACH-* i STORY-* wg numerow linii ponizej.")
+    header.append("  potem testy, na koncu model poznawczy. Pliki w tym pliku sa juz ulozone")
+    header.append("  wg tego priorytetu — twarde dowody na poczatku, psychometria na koncu.")
     header.append("")
     header.append("=" * 70)
     header.append("")
@@ -743,6 +743,47 @@ def build_robots():
     return "\n".join(lines) + "\n"
 
 
+def vault_sort_key(f):
+    """Klucz sortowania plikow do vault-full.txt wg priorytetu czytania.
+
+    Kolejnosc grup (najwazniejsze fizycznie pierwsze, bo agent moze sie urwac):
+      0. AI Interpretation Guide
+      1. About
+      2. Identity
+      3. Experience
+      4. Cognitive model
+      5. Context Entries (CTX)
+      6. Achievements (ACH)
+      7. Skills (SKILL)
+      8. Stories (STORY)
+      9. reszta (Assessment Data, Behavioral Patterns, Calibrations, Predictors,
+         Development Areas, wszystkie README itd.)
+    W obrebie grupy sortujemy alfabetycznie/naturalnie po nazwie.
+    """
+    low = f.replace("\\", "/").lower()
+    if low == "ai interpretation guide.md":
+        group = 0
+    elif low == "about.md":
+        group = 1
+    elif low == "identity.md":
+        group = 2
+    elif low == "experience.md":
+        group = 3
+    elif low == "assessments/cognitive model.md":
+        group = 4
+    elif low.startswith("context entries/"):
+        group = 5
+    elif low.startswith("achievements/"):
+        group = 6
+    elif low.startswith("skills/"):
+        group = 7
+    elif low.startswith("stories/"):
+        group = 8
+    else:
+        group = 9
+    return (group, low)
+
+
 def build():
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M")
     try:
@@ -755,7 +796,7 @@ def build():
     # 1) Pelny plik .txt — jedyna sciezka tresci dla LLM (do pobrania i wklejenia).
     #    Skanuje cale repo niezaleznie od podzialu na sekcje.
     all_files = collect_all_files()
-    vault_text = build_vault_txt(sorted(all_files, key=str.lower), now, commit)
+    vault_text = build_vault_txt(sorted(all_files, key=vault_sort_key), now, commit)
     write(os.path.join(OUTPUT_DIR, VAULT_TXT_NAME), vault_text)
 
     # 2) Strona glowna — jedyna strona HTML, dla czlowieka.
