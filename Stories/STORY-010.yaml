@@ -1,0 +1,105 @@
+id: STORY-010
+
+title: Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
+
+summary: >
+  Zaprojektowałem i wdrożyłem od zera system identyfikacji urządzeń
+  sprzedawanych pod marką własną: standard kodyfikacji numerów seryjnych,
+  narzędzie do generowania i druku tabliczek znamionowych oraz bazę około
+  60 000 kart produktów w CRM, spiętą z formularzami gwarancyjnymi.
+  Porządkowanie danych historycznych ujawniło ukryty waste produkcyjny
+  (blisko 20% zestawów przepakowywanych), a powstały "paszport produktu"
+  dał serwisowi natychmiastowy wgląd w historię każdego urządzenia
+  i umożliwił uruchomienie promocji sprzedażowej niewykonalnej bez
+  kontroli nad tymi danymi.
+
+competencies:
+  - Data Structuring
+  - Operational Analysis
+  - Process Design
+  - Product Management
+  - Systems Thinking
+  - Root Cause Analysis
+  - AI Tooling
+
+behavioral_signals:
+  - ownership
+  - solution_orientation
+  - accountability
+  - transparency
+  - constructive_challenge
+
+situation: >
+  Firma sprzedaje urządzenia grzewcze pod marką własną, a ich fizyczną
+  produkcję realizują podwykonawcy OEM - mniej zorganizowani procesowo.
+  Odpowiedzialność prawna za urządzenia spoczywa na naszej marce.
+
+  Numery seryjne istniały, ale nie pełniły funkcji identyfikacyjnej.
+  Jedyna ewidencja pochodziła z listy pakowania prowadzonej przez
+  produkcję: numer zapisywano po to, by wiedzieć, kto i co zapakował
+  do paczki. Nikt nigdy nie zaprojektował numeracji pod identyfikację
+  urządzeń w polu.
+
+problem: >
+  Te same numery seryjne powtarzały się dwa-trzy razy w ciągu roku,
+  część numerów zaginęła (nie wiadomo, czy urządzenia powstały),
+  a dane o produktach były rozproszone w wieloletnich, niespójnych
+  arkuszach. Dział Serwisu nie miał wiarygodnego źródła informacji
+  o urządzeniu, które zgłaszał klient. Firma nie była w stanie
+  jednoznacznie powiedzieć, jaki produkt, kiedy i dla kogo wytworzyła -
+  przy pełnej odpowiedzialności prawnej za każdy egzemplarz.
+
+constraints:
+  - brak systemu ERP, numerów partii i jakiegokolwiek traceability
+  - CRM (Bitrix24) niededykowany do ewidencji produktowej
+  - limit importu narzucony przez zewnętrzną wtyczkę (50 kart na raz)
+  - dane historyczne możliwe do odzyskania wyłącznie z arkuszy pakowania
+  - brak wzorca w organizacji - nikt wcześniej nie robił tego porządnie
+
+goal: >
+  Jednoznaczna identyfikacja każdego urządzenia wprowadzonego na rynek
+  oraz dostępna od ręki historia produktu dla działu serwisu.
+
+actions:
+  - przeanalizowałem historyczne numery seryjne z arkuszy poprzednich lat i udokumentowałem skalę chaosu, w tym odkrycie, że blisko 20% zestawów było przepakowywanych
+  - zaprojektowałem standard kodyfikacji numerów seryjnych (rok, typ urządzenia, producent, dostawca, numer jednostkowy)
+  - podjąłem decyzję architektoniczną "numer seryjny jako klucz, wiedza w bazie" - tabliczka znamionowa niesie prawne minimum, pełne dane żyją w systemie
+  - dobrałem naklejki plombowe (ślad po zerwaniu) ograniczające ryzyko nadużyć przy znakowaniu urządzeń
+  - zbudowałem narzędzie Excel (makra) + Publisher (korespondencja seryjna) rezerwujące wolne numery i drukujące serie tabliczek, z formatkami rocznymi i instrukcją odtwarzania
+  - wyczyściłem i ustrukturyzowałem dane historyczne, po czym zaimportowałem około 60 000 kart produktów do Bitrix24
+  - gdy dostawca wtyczki ograniczył import do 50 kart na raz, zaprojektowałem prompt dla agenta AI, który klikał importy paczek CSV za mnie
+  - spiąłem karty produktów z formularzami gwarancyjnymi, tak by uruchomienia, rejestracje, przeglądy i zgłoszenia budowały historię urządzenia
+
+challenges:
+  - konieczność sparowania wewnętrznych oznaczeń kooperantów z naszą numeracją bez zmieniania ich metod pracy
+  - odtwarzanie stanu faktycznego z danych, które nigdy nie miały służyć identyfikacji
+  - zmiana ograniczeń narzędzia w trakcie projektu (limit importu) wymagająca improwizacji
+
+results:
+  - spójny "paszport produktu" w CRM - serwis po wpisaniu numeru seryjnego widzi ad hoc pełną historię urządzenia
+  - fundament danych umożliwił promocję sprzedażową "Pierwsze uruchomienie" (płatność dla instalatora za poprawne uruchomienie) - wartość niewykonalna bez kontroli tej informacji
+  - system stał się osią, na której oparto szerszy model serwisowy i ofertę dla instalatorów
+  - walidacja rynkowa post factum - przegląd dedykowanych systemów serwisowych wykazał, że samodzielnie wypracowana architektura odpowiada standardowi branżowemu
+
+evidence:
+  - standard kodyfikacji numerów seryjnych
+  - generator SN i tabliczek (Excel + Publisher, formatki roczne z instrukcją)
+  - baza ok. 60 000 kart produktów w Bitrix24 spięta z formularzami gwarancyjnymi
+  - prompty agenta AI do importu paczek CSV
+
+lessons_learned:
+  - porządek w danych podstawowych (master data) jest warunkiem koniecznym działań sprzedażowych - promocje i oferty można budować dopiero na danych, którym się ufa
+  - nośnik fizyczny powinien nieść klucz, nie wiedzę - minimalizm tabliczki plus bogata baza okazały się odporniejsze niż próba zapisania wszystkiego na naklejce
+  - porządkowanie danych to darmowa diagnostyka - ukryte koszty (20% przepakowań) wyszły na jaw bez osobnego audytu
+  - benchmark przed budową - samodzielne dojście do standardu branżowego potwierdziło jakość myślenia, ale wcześniejsze sprawdzenie gotowych rozwiązań oszczędziłoby część drogi
+
+interview_angles:
+  - projektowanie architektury informacji w warunkach braku ERP
+  - diagnoza na danych i ujawnianie ukrytych kosztów operacyjnych
+  - praktyczne użycie agentów AI do obchodzenia ograniczeń narzędzi
+  - enablement sprzedaży przez infrastrukturę danych
+
+cv_bullets:
+  - Zaprojektowałem standard identyfikacji produktów i zbudowałem bazę ok. 60 000 kart produktów w CRM, dając serwisowi natychmiastowy wgląd w historię każdego urządzenia
+  - Porządkując dane historyczne, ujawniłem ukryty waste produkcyjny (ok. 20% zestawów przepakowywanych)
+  - Stworzony fundament danych umożliwił uruchomienie promocji sprzedażowej "Pierwsze uruchomienie"
