@@ -14,7 +14,7 @@ Szczegóły dotyczące rezultatów, projektów i sukcesów znajdują się w fold
 
 Od początku kariery rozwijam się od ról technicznych w środowisku przemysłowym i instalacyjnym w kierunku ról operacyjnych, organizacyjnych oraz produktowych.
 
-Moje doświadczenie obejmuje energetykę odnawialną, HVAC, produkcję, serwis techniczny oraz rozwój produktów technicznych.
+Moje doświadczenie obejmuje energetykę odnawialną, HVAC, produkcję, serwis techniczny oraz rozwój produktów technicznych i rozwiązań cyfrowych.
 
 W kolejnych rolach przejmowałem coraz większą odpowiedzialność za procesy, zespoły, wiedzę organizacyjną oraz rozwój produktów.
 
@@ -47,7 +47,10 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 **Domeny:**
 
 * Product Management
+* Business Analysis
 * Warranty Systems
+* Master Data & Traceability
+* OEM Cooperation
 * Technical Documentation
 * Partner Enablement
 * Product Development
@@ -55,7 +58,11 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 **Kluczowe obszary odpowiedzialności:**
 
 * zarządzanie cyklem życia produktu
+* paszportyzacja produktów i porządkowanie danych podstawowych (master data)
+* analiza wymagań i architektura ekosystemu rozwiązań cyfrowych
+* stabilizacja i formalizacja współpracy z podwykonawcami OEM
 * rozwój procesów gwarancyjnych
+* projektowanie i wdrażanie procesów sprzedażowych w CRM
 * systemy dokumentacji technicznej
 * wsparcie i rozwój sieci instalatorów
 * zarządzanie wiedzą produktową
@@ -66,6 +73,10 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 * ACH-005
 * ACH-006
 * ACH-014
+* ACH-015
+* ACH-016
+* ACH-017
+* ACH-018
 
 ---
 
@@ -269,12 +280,16 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 
 ### 2025–obecnie
 
-**Odpowiedzialność produktowa**
+**Odpowiedzialność produktowa i analityczna**
 
 * rozwój produktów
+* analiza biznesowa i architektura rozwiązań cyfrowych
+* paszportyzacja i dane produktowe
+* stabilizacja współpracy z podwykonawcami OEM
 * systemy gwarancyjne
 * dokumentacja techniczna
 * współpraca z instalatorami
+* automatyzacje wspierane AI
 * rozwój organizacji produktowej
 
 ---
@@ -297,6 +312,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 ## Obszary rozwijane
 
 * Product Strategy
+* Business Analysis & Requirements Engineering
 * Artificial Intelligence
 * Product Operations
 
