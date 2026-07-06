@@ -1,0 +1,51 @@
+id: ACH-018
+
+title: Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego
+
+company: KIPI
+
+period:
+  start: 2025-11
+  end: 2026-06
+
+roles:
+  - product-manager
+  - internal-consultant
+
+skills:
+  - crm-automation
+  - process-design
+  - implementation
+  - training
+  - cross-functional-coordination
+
+themes:
+  - sales-enablement
+  - workflow
+  - adoption
+  - digitalization
+
+situation: >
+  Dział handlowy potrzebował powtarzalnych procesów dla harmonogramów i umów
+  bonusowych z klientami. Istniała koncepcja procesu naszkicowana przez dyrektora
+  sprzedaży, ale bez przełożenia na to, jak ludzie mają na niej realnie pracować -
+  umowy wymagały fizycznych dojazdów do klientów w celu podpisania.
+
+actions:
+  - przełożenie szkicu koncepcji na działające lejki w Bitrix24 (pola, dokumenty, automatyzacje)
+  - urealnienie procesu od strony pracy handlowców (kto, co, kiedy klika - perspektywa użytkownika, nie schematu)
+  - wdrożenie podpisu elektronicznego dokumentów bezpośrednio z CRM
+  - przeprowadzenie szkoleń handlowców z pracy na lejkach
+  - iteracje po feedbacku z realnego użycia
+
+impact:
+  - dwa powtarzalne procesy (harmonogram, umowy bonusowe) w codziennym użyciu handlowców
+  - eliminacja dojazdów do klientów w celu podpisywania umów - podpis elektroniczny z poziomu CRM
+  - adopcja narzędzia przez dział, który wcześniej nie pracował procesowo w CRM
+
+importance: 7
+
+evidence:
+  - lejki harmonogram i umowy bonusowe w Bitrix24
+  - skonfigurowany obieg dokumentów z e-podpisem
+  - przeprowadzone szkolenia handlowców
