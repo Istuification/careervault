@@ -1,6 +1,6 @@
 id: ACH-009
 
-title: Reorganizacja infrastruktury magazynowej
+title: Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP
 
 company: KIPI
 
@@ -13,6 +13,8 @@ roles:
 
 skills:
   - warehouse-management
+  - erp-implementation
+  - master-data-management
   - process-design
   - operational-organization
   - logistics
@@ -23,35 +25,42 @@ themes:
   - organization
   - process-improvement
   - logistics
+  - erp
+  - codification
 
 situation: >
-  Magazyn rozwijał się wraz ze wzrostem skali
-  działalności działu Instal/Solar. Brakowało
-  spójnego systemu oznaczeń oraz standardów
-  organizacji przestrzeni magazynowej.
+  Magazyn rozwijał się wraz ze wzrostem skali działalności działu
+  Instal/Solar - brakowało spójnego systemu oznaczeń i standardów
+  organizacji przestrzeni. Równolegle firma migrowała z Subiekta na
+  Comarch ERP XL, a dział miał około miesiąca na operacyjne wejście
+  do nowego systemu; wdrożeniowiec wspierał konfigurację programu,
+  natomiast całą zawartość merytoryczną trzeba było zbudować po
+  stronie użytkownika.
 
 actions:
-  - uporządkowanie magazynu
-  - stworzenie systemu oznaczeń
-  - wdrożenie kodów kreskowych
-  - opisanie regałów
-  - standaryzacja organizacji magazynowej
+  - uporządkowanie magazynu, stworzenie systemu oznaczeń, wdrożenie kodów kreskowych i opisanie regałów
+  - standaryzacja organizacji przestrzeni magazynowej
+  - założenie i zróżnicowanie ~250 kartotek działu w Comarch ERP XL wraz ze stanami minimalnymi i lokalizacjami
+  - samodzielne przekodowanie wszystkich ~250 indeksów według ogólnofirmowego standardu kodyfikacji (2023)
+  - zaprojektowanie obiegu dokumentów WZ/ZS/ZZ/RW w obrębie działu
+  - wykorzystanie odkrytej możliwości importu ZS z Excela do zaprojektowania automatyzacji zamówień - geneza kalkulatora PV (ACH-011)
 
 impact:
-  - poprawa identyfikacji materiałów
-  - skrócenie czasu wyszukiwania komponentów
-  - zwiększenie przejrzystości organizacji magazynu
-  - ograniczenie błędów logistycznych
+  - poprawa identyfikacji materiałów i skrócenie czasu wyszukiwania komponentów
+  - zwiększenie przejrzystości organizacji magazynu i ograniczenie błędów logistycznych
+  - dział operacyjnie pracujący w ERP w ciągu miesiąca od migracji
+  - spójna kodyfikacja wszystkich indeksów działu według standardu firmowego
+  - import Excel-ZS wyeliminował ręczne wprowadzanie pozycji zamówień i stał się fundamentem kalkulatora PV (ACH-011)
+  - doświadczenie pracy z danymi podstawowymi w ERP wykorzystane później przy paszportyzacji produktów (ACH-015) i architekturze indeksów (ACH-019)
 
-importance: 6
+importance: 7
 
 evidence:
-  - system oznaczeń
-  - kody kreskowe
-  - opisane regały
-  - standardy magazynowe
+  - system oznaczeń, kody kreskowe, opisane regały, standardy magazynowe
+  - ~250 przekodowanych kartotek w Comarch ERP XL
+  - obieg dokumentów WZ/ZS/ZZ działu
 
 star_candidates:
   - process-improvement
   - operational-organization
-  - logistics
+  - master-data
