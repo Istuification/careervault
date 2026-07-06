@@ -1,0 +1,45 @@
+id: SKILL-019
+
+name: Business Analysis & Requirements Engineering
+
+category: Product & Business
+
+importance: 8
+
+level: Advanced
+
+summary: >
+  Przekładanie rozproszonych, często sprzecznych potrzeb interesariuszy
+  na spójne wymagania biznesowe i architekturę rozwiązania. Obejmuje
+  prowadzenie wywiadów i zbieranie wymagań od działów, identyfikację
+  konfliktów i luk między wizjami, projektowanie zakresu rozwiązania,
+  tworzenie specyfikacji zrozumiałych zarówno dla biznesu, jak i dla
+  wykonawców technicznych, oraz doprowadzanie od wizji do wybranego
+  i zakontraktowanego wykonawcy.
+
+capabilities:
+  - requirements-gathering
+  - stakeholder-interviews
+  - scope-definition
+  - solution-architecture-design
+  - specification-writing
+  - vendor-selection
+  - gap-analysis
+  - business-case-framing
+
+methods:
+  - wywiady z interesariuszami
+  - warsztaty wymagań
+  - benchmarking rozwiązań rynkowych
+  - projektowanie modułowe (MVP + rozszerzenia)
+
+tools:
+  - Bitrix24
+  - Excel
+  - narzędzia diagramowe (BPMN 2.0)
+
+evidence:
+  - ACH-016
+  - ACH-005
+  - ACH-011
+  - ACH-015
