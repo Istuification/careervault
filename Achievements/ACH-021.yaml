@@ -1,0 +1,51 @@
+id: ACH-021
+
+title: Hybrydowy model współpracy z podwykonawcami montażowymi
+
+company: KIPI
+
+period:
+  start: 2021-10
+  end: 2023-09
+
+roles:
+  - installation-coordinator
+
+skills:
+  - vendor-management
+  - operating-model-design
+  - risk-management
+  - quality-control
+  - contract-management
+
+themes:
+  - subcontractor-network
+  - scaling
+  - safety
+  - quality-assurance
+
+situation: >
+  Popyt na montaże przekraczał przepustowość zespołu własnego. Klasyczne
+  rozwiązania miały wady: rozbudowa etatów była kosztowna i powolna, a pełny
+  outsourcing oznaczał utratę kontroli nad jakością oraz ryzyko prawne
+  i BHP przy pracach na wysokości.
+
+actions:
+  - zaprojektowanie modelu hybrydowego - własny elektryk dowodzi każdym montażem i odpowiada za część elektryczną, a zewnętrzne ekipy dekarskie wykonują prace na dachu, co daje kontrolę jakości, ogranicza ekspozycję zespołu na prace wysokościowe i eliminuje koszty dodatkowych badań
+  - pozyskanie i utrzymanie sieci 6 ekip podwykonawczych (3 pracujące równolegle)
+  - przerobienie umów o podwykonawstwo na wersje edytowalne i wpisanie do nich wytycznych jakościowych jako zobowiązań umownych
+  - system kontroli jakości - odbiory, checklisty, protokoły montażowe i dokumentacja zdjęciowa
+  - wydzielona przestrzeń współpracy (zadania i dysk w Bitrix24) dla podwykonawców
+  - bieżące rozliczenia i koordynacja ekip
+
+impact:
+  - skalowanie do ~30 montaży miesięcznie bez proporcjonalnej rozbudowy zespołu etatowego
+  - żadna współpraca nie zakończyła się z powodu jakości - wymagania umowne plus kontrola odbiorowa działały prewencyjnie
+  - ograniczenie ryzyka BHP zespołu własnego przy zachowaniu pełnej kontroli nad krytyczną (elektryczną) częścią montażu
+
+importance: 6
+
+evidence:
+  - umowy o podwykonawstwo z wytycznymi jakościowymi
+  - checklisty i protokoły odbiorowe z dokumentacją zdjęciową
+  - przestrzeń współpracy z podwykonawcami w Bitrix24
