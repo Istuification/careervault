@@ -1,0 +1,55 @@
+id: ACH-015
+
+title: Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych
+
+company: KIPI
+
+period:
+  start: 2025-04
+  end: current
+
+roles:
+  - product-manager
+
+skills:
+  - product-management
+  - process-design
+  - data-structuring
+  - crm-automation
+  - operational-analysis
+  - ai-tooling
+
+themes:
+  - traceability
+  - data-structuring
+  - digital-transformation
+  - process-standardization
+
+situation: >
+  Numery seryjne urządzeń OEM sprzedawanych pod marką własną powtarzały się
+  (te same numery 2-3 razy w roku), część zaginęła, a jedyna ewidencja służyła
+  logistyce pakowania, nie identyfikacji produktu. Porządkowanie danych ujawniło,
+  że blisko 20% zestawów było przepakowywanych — ukryty dotąd waste produkcyjny.
+  Dział Serwisu nie miał wiarygodnych danych o urządzeniach w polu.
+
+actions:
+  - zaprojektowanie standardu kodyfikacji numerów seryjnych (rok, typ, producent, dostawca, numer jednostkowy)
+  - decyzja architektoniczna "numer seryjny jako klucz, dane w bazie" zamiast przeładowanej tabliczki znamionowej
+  - zbudowanie narzędzia Excel (makra) + Publisher (korespondencja seryjna) do rezerwacji wolnych numerów i masowego druku tabliczek
+  - dobór naklejek plombowych (ślad po zerwaniu) ograniczających ryzyko nadużyć przy odpowiedzialności prawnej marki
+  - oczyszczenie i strukturyzacja danych historycznych, import ok. 60 000 kart produktów do Bitrix24
+  - obejście limitu importu (50 kart/raz) przez zaprojektowanie promptów dla agenta AI klikającego import paczek CSV
+  - spięcie kart produktów z formularzami gwarancyjnymi (uruchomienia, rejestracje, przeglądy, zgłoszenia)
+
+impact:
+  - spójny "paszport produktu" w CRM - serwis po wpisaniu numeru seryjnego widzi ad hoc pełną historię urządzenia
+  - fundament danych umożliwił uruchomienie promocji sprzedażowej "Pierwsze uruchomienie" (płatność dla instalatora za poprawne uruchomienie) - wartość sprzedażowa niemożliwa bez kontroli tej informacji
+  - projekt zweryfikowany rynkowo post factum - przegląd dedykowanych systemów serwisowych wykazał, że samodzielnie wypracowana architektura odpowiada standardowi branżowemu
+
+importance: 9
+
+evidence:
+  - standard kodyfikacji numerów seryjnych
+  - generator SN i tabliczek (Excel + Publisher, formatki roczne z instrukcją)
+  - baza kart produktów w Bitrix24 połączona z formularzami gwarancyjnymi
+  - prompty agenta AI do importu paczek CSV
