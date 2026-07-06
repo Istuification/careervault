@@ -1,0 +1,45 @@
+id: SKILL-020
+
+name: AI Tooling & Automation
+
+category: Systems
+
+importance: 8
+
+level: Advanced
+
+summary: >
+  Praktyczne wykorzystywanie modeli językowych i agentów AI do
+  automatyzacji realnych zadań biznesowych - tam, gdzie klasyczne
+  narzędzia mają ograniczenia. Obejmuje projektowanie promptów
+  i przepływów pracy z LLM, orkiestrację agentów wykonujących
+  czynności w interfejsach, przygotowanie danych pod przetwarzanie
+  przez AI oraz ocenę, kiedy AI jest właściwym narzędziem, a kiedy
+  nie. Kompetencja aplikacyjna (zastosowanie), nie inżynierska
+  (budowa modeli). Stosowana również poza pracą etatową, m.in.
+  do zbudowania własnego systemu aplikacyjno-rekrutacyjnego
+  opartego o LLM (Career Vault i pipeline dokumentów).
+
+capabilities:
+  - prompt-engineering
+  - ai-agent-orchestration
+  - llm-workflow-design
+  - data-preparation-for-ai
+  - ai-tool-selection
+  - ai-adoption
+
+methods:
+  - iteracyjne projektowanie promptów
+  - dekompozycja zadań pod ograniczenia narzędzi (np. paczkowanie danych)
+  - weryfikacja wyników AI przed użyciem produkcyjnym
+
+tools:
+  - ChatGPT (tryb agenta)
+  - Claude
+  - Gemini
+  - Excel / CSV jako format wymiany
+
+evidence:
+  - ACH-015
+  - certyfikat Umiejętności Jutra AI 3.0
+  - Career Vault (repozytorium w którym jest ten plik)
