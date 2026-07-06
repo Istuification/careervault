@@ -1,0 +1,56 @@
+id: ACH-020
+
+title: Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról technicznych
+
+company: KIPI
+
+period:
+  start: 2022-08
+  end: current
+
+roles:
+  - installation-coordinator
+  - acting-service-manager
+
+skills:
+  - recruitment-and-selection
+  - competency-assessment-design
+  - interviewing
+  - onboarding
+  - cross-functional-collaboration
+
+themes:
+  - talent-acquisition
+  - assessment-design
+  - candidate-experience
+  - team-building
+
+situation: >
+  Firma rosła szybciej niż jej struktura - do 2023 roku nie istniał dział HR 
+  (poza jedną kadrową), a rynek nie oferował gotowych specjalistów do ról 
+  technicznych (monterzy PV, serwisanci urządzeń grzewczych). Rekrutację 
+  do własnego obszaru trzeba było zbudować od zera: od ogłoszenia po wdrożenie 
+  zatrudnionego.
+
+actions:
+  - prowadzenie pełnego cyklu rekrutacji - ogłoszenia, selekcja CV, rozmowy pierwszego i drugiego etapu, decyzje o zaproszeniach
+  - zaprojektowanie pisemnego testu kompetencji (5 pytań o rosnącej trudności - czytanie ze zrozumieniem i znajomość branży), z ostatnim pytaniem celowo wyszukiwalnym w internecie - kandydata zostawiano samego z dostępnym telefonem, a test mierzył zaradność, nie pamięć
+  - zaprojektowanie drugiego etapu rekrutacji serwisantów pod kandydatów bez doświadczenia branżowego - selekcja pod motywację, dopasowanie kulturowe i potencjał rozwoju (praca z systemem, rozmowa z klientem, predyspozycje techniczne), w tym pytania o prywatne styczności z branżą, których kandydaci często nie byli świadomi
+  - telefoniczny feedback do odrzuconych kandydatów z własnej inicjatywy - przed powstaniem działu HR
+  - tworzenie briefingów rekrutacyjnych dla ról: Product Manager, asystent PM, serwisant, szkoleniowiec - również na potrzeby innych kierowników
+  - po powstaniu HR (2023) - podział ról, w którym HR prowadzi logistykę procesu, a ja część ekspercką rozmów i decyzje o przejściach między etapami
+  - wdrażanie zatrudnionych osób do pracy
+
+impact:
+  - 8-9 osób zatrudnionych w osobiście prowadzonych procesach (monterzy, serwisanci PV, serwisanci KIPI)
+  - model selekcji pod potencjał rozwoju umożliwił zatrudnianie osób spoza branży do ról technicznych
+  - jedna z osób wyselekcjonowanych pod potencjał rozwoju pełni dziś funkcję koordynatora działu szkoleń (rozwój to zasługa jej i jej przełożonego - selekcja okazała się trafna)
+  - praktyka informacji zwrotnej do kandydatów wprowadzona zanim pojawił się dział HR
+  - rola ewoluowała w ekspercką - obecnie na prośbę dyrekcji pełnię funkcję ciała doradczego przy rekrutacjach (m.in. nowego Product Managera)
+
+importance: 7
+
+evidence:
+  - test kompetencji BTI-Solar (5 pytań, w tym test zaradności)
+  - struktura drugiego etapu rekrutacji serwisantów
+  - briefingi rekrutacyjne (PM, asystent PM, serwisant, szkoleniowiec)
