@@ -1,0 +1,54 @@
+id: ACH-016
+
+title: Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami
+
+company: KIPI
+
+period:
+  start: 2025-12
+  end: current
+
+roles:
+  - product-manager
+  - business-analyst
+
+skills:
+  - business-analysis
+  - stakeholder-management
+  - systems-thinking
+  - cross-functional-coordination
+  - requirements-engineering
+
+themes:
+  - systems-architecture
+  - cost-optimization
+  - requirements-gathering
+  - digital-transformation
+
+situation: >
+  Działy niezależnie rozwijały silosowe wizje cyfrowe: dedykowana aplikacja
+  serwisowa, forum społecznościowe dla instalatorów, voicebot AI oparty na bazie
+  procedur oraz brandowanie chmury rozwijanej przez partnera technologicznego.
+  Ryzyko: przepalenie budżetu na niekompatybilne rozwiązania i rozproszenie
+  doświadczenia użytkownika.
+
+actions:
+  - przejęcie rozproszonych inicjatyw, które niezależnie trafiały do mnie, i połączenie ich w jeden projekt
+  - zebranie wymagań biznesowych od interesariuszy wszystkich działów
+  - zaprojektowanie zunifikowanej architektury modułowej (hub serwisowy, czat wzajemnej pomocy instalatorów, docelowo czat AI i integracja API z chmurą partnera)
+  - oparcie koncepcji UX na benchmarkach z własnego doświadczenia instalatorskiego (aplikacje prowadzące klienta przez uruchomienie instalacji)
+  - przeprowadzenie cyklu analitycznego od wizji do wyboru wykonawcy zewnętrznego i uzgodnienia zakresu
+
+impact:
+  - projekt powierzony mi przez właścicieli firmy jako strategiczny
+  - zabezpieczenie organizacji przed długiem technologicznym trzech niekompatybilnych rozwiązań
+  - konsolidacja budżetu wokół jednego, rozszerzalnego ekosystemu (moduły dokładane etapami zamiast osobnych aplikacji)
+  - zaakceptowana wizualizacja docelowego rozwiązania od wykonawcy; umowa w trakcie podpisywania  # DO ZMIANY W PRZYSZŁOŚĆI
+
+importance: 9
+
+evidence:
+  - architektura modułowa ekosystemu aplikacji
+  - specyfikacja wymagań biznesowych
+  - wizualizacja rozwiązania od wykonawcy zewnętrznego
+  - umowa z wykonawcą (w trakcie podpisywania)  # DO ZMIANY W PRZYSZŁOŚĆI
