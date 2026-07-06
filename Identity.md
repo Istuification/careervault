@@ -2,7 +2,7 @@
 
 ## Professional Identity
 
-Product Manager oraz specjalista operacyjno-procesowy z doświadczeniem w branży HVAC, energetyce odnawialnej oraz środowiskach technicznych. Specjalizuję się w projektowaniu procesów, zarządzaniu wiedzą, organizacji działów technicznych oraz wdrażaniu systemów wspierających skalowanie organizacji.
+Product Manager oraz specjalista operacyjno-procesowy z doświadczeniem w branży HVAC, energetyce odnawialnej oraz środowiskach technicznych. Specjalizuję się w projektowaniu procesów, analizie biznesowej i inżynierii wymagań, zarządzaniu wiedzą, organizacji działów technicznych oraz wdrażaniu systemów wspierających skalowanie organizacji.
 
 Łączę kompetencje techniczne, organizacyjne i analityczne. Największą wartość dostarczam w sytuacjach wymagających uporządkowania złożonych procesów, budowy struktur organizacyjnych, standaryzacji wiedzy oraz wdrażania nowych produktów i usług.
 
@@ -80,6 +80,15 @@ W codziennej pracy kieruję się następującymi zasadami:
 * dokumentacja produktowa
 * współpraca międzydziałowa
 
+### Business Analysis & Requirements Engineering
+
+* zbieranie i analiza wymagań od interesariuszy
+* projektowanie architektury rozwiązań i zakresu
+* konsolidacja rozproszonych inicjatyw cyfrowych
+* tworzenie specyfikacji dla wykonawców
+* wybór i kontraktowanie dostawców rozwiązań
+* porządkowanie danych podstawowych (master data)
+
 ### Operations Management
 
 * projektowanie procesów operacyjnych
@@ -103,6 +112,7 @@ W codziennej pracy kieruję się następującymi zasadami:
 * Bitrix24
 * workflow automation
 * CRM
+* automatyzacje wspierane AI (LLM, agenci)
 * administracja systemami operacyjnymi
 * projektowanie procesów cyfrowych
 * integracja narzędzi
@@ -162,6 +172,7 @@ Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w
 
 - Projektowanie i usprawnianie procesów operacyjnych.
 - Myślenie systemowe i analiza zależności pomiędzy procesami.
+- Analiza biznesowa i przekładanie potrzeb interesariuszy na architekturę rozwiązań.
 - Zarządzanie wiedzą oraz dokumentacją organizacyjną.
 - Koordynacja współpracy między działami i interesariuszami.
 - Podejmowanie decyzji w oparciu o dane i mierzalne wskaźniki.
@@ -169,11 +180,11 @@ Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w
 - Samodzielne zdobywanie wiedzy i szybkie rozwijanie nowych kompetencji.
 
 Powiązane obszary Skills:
-Product Management, Operations Management, Knowledge Management, Business Systems, Technical Communication.
+Product Management, Business Analysis & Requirements Engineering, Operations Management, Knowledge Management, Business Systems, Technical Communication.
 
 Potwierdzenie:
-ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014  
-STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009
+ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014, ACH-015, ACH-016, ACH-018  
+STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009, STORY-010
 
 ### Najsilniejsze Obszary Postawy
 
@@ -182,14 +193,15 @@ STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009
 - Konstruktywne podważanie status quo w oparciu o argumenty i dane.
 - Otwartość na informację zwrotną i inne perspektywy.
 - Transparentna komunikacja problemów, ryzyk i błędów.
+- Wyciąganie i dokumentowanie wniosków również z niepełnych sukcesów.
 - Budowanie poczucia bezpieczeństwa i przewidywalności we współpracy.
 
 Powiązane obszary Skills:
 Operations Management, Knowledge Management, Technical Communication, Business Systems.
 
 Potwierdzenie:
-ACH-001, ACH-003, ACH-005, ACH-012  
-STORY-002, STORY-003, STORY-004, STORY-005, STORY-009
+ACH-001, ACH-003, ACH-005, ACH-012, ACH-017  
+STORY-002, STORY-003, STORY-004, STORY-005, STORY-009, STORY-011
 
 ### Najbardziej Charakterystyczne Wzorce
 
@@ -200,8 +212,8 @@ STORY-002, STORY-003, STORY-004, STORY-005, STORY-009
 - Wysoka skłonność do dzielenia się wiedzą i tworzenia struktur, które mogą działać bez ciągłej zależności od jednej osoby.
 
 Potwierdzenie:
-ACH-001, ACH-003, ACH-010, ACH-012, ACH-013, ACH-014  
-STORY-001, STORY-004, STORY-005, STORY-008, STORY-009
+ACH-001, ACH-003, ACH-010, ACH-012, ACH-013, ACH-014, ACH-015, ACH-017  
+STORY-001, STORY-004, STORY-005, STORY-008, STORY-009, STORY-010, STORY-011
 
 ---
 
@@ -260,6 +272,7 @@ Powiązane obszary rozwoju zawodowego zostały opisane w module Development Area
 ### Professional
 
 * Product Management
+* Business Analysis
 * Process Design
 * Knowledge Management
 * Artificial Intelligence
