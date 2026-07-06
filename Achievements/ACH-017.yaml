@@ -1,0 +1,51 @@
+id: ACH-017
+
+title: Stabilizacja kooperacji OEM i operacyjny business enablement
+
+company: KIPI
+
+period:
+  start: 2025-03
+  end: 2025-09
+
+roles:
+  - product-manager
+
+skills:
+  - operations-management
+  - process-design
+  - stakeholder-management
+  - negotiation
+  - crisis-management
+
+themes:
+  - risk-management
+  - operational-excellence
+  - standardization
+  - supply-chain
+
+situation: >
+  Współpraca z podwykonawcami OEM opierała się na ustaleniach ad hoc i decyzjach
+  opartych na opiniach, co generowało ciągłe problemy operacyjne: braki sprzętowe,
+  gubiące się zamówienia, rosnące reklamacje oraz ryzyko nadużyć przy znakowaniu
+  urządzeń objętych odpowiedzialnością prawną marki.
+
+actions:
+  - przeprojektowanie i doprowadzenie do podpisania dwóch umów o kooperacji z konkretnymi zapisami operacyjnymi
+  - zaprojektowanie obiegu dokumentów i ustandaryzowanych formularzy zamówień
+  - wdrożenie znakowania sprzętu naklejkami plombowymi powiązanego z systemem numerów seryjnych
+  - bieżące gaszenie pożarów operacyjnych na styku produkcji i kooperantów, buforowanie chaotycznych zmian decyzji
+  - przekazanie całości tematu nowemu PM-owi po ok. 3 miesiącach prowadzenia
+
+impact:
+  - ustabilizowanie współpracy z kooperantami w stopniu umożliwiającym znaczne zwiększenie wolumenu produkcji o ok. 20%
+  - udane wypuszczenie urządzeń na rynek
+  - płynne przekazanie obszaru nowemu pracownikowi po 3 miesiącach
+  - lekcja systemowa - stabilizacja oparta na ustaleniach między ludźmi, bez udokumentowanego procesu, zdegradowała się po odejściu kluczowej osoby po stronie operacyjnej; wniosek "proces > ustalenia personalne" stosuję od tamtej pory jako kryterium domknięcia wdrożenia
+
+importance: 8
+
+evidence:
+  - dwie podpisane umowy o kooperacji
+  - obieg dokumentów produkcyjnych i formularze zamówień
+  - system znakowania sprzętu (naklejki plombowe + numery seryjne)
