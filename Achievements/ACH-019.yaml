@@ -1,0 +1,68 @@
+id: ACH-019
+
+title: Architektura procesu życia produktu - projekt modelu operacyjnego firmy produktowej
+
+company: KIPI
+
+period:
+  start: 2025-09
+  end: 2026-02
+
+roles:
+  - product-manager
+  - business-analyst
+
+skills:
+  - process-design
+  - business-analysis
+  - knowledge-management
+  - root-cause-analysis
+  - organizational-design
+
+themes:
+  - process-architecture
+  - master-data
+  - standardization
+  - organizational-diagnosis
+  - change-management
+
+situation: >
+  Zarządzanie cyklem życia produktu okazało się niemożliwe bez opisanego
+  głównego procesu firmy: nikt nie wiedział, jakie dokumenty powstają na
+  których etapach, jak przepływają informacje i czy nie giną po drodze,
+  a nomenklatura rozjeżdżała się między działami - te same pojęcia znaczyły
+  co innego w różnych zespołach. Firma nie posiadała systemu ERP.
+
+actions:
+  - eskalacja problemu do dyrekcji, zainicjowanie projektu i przeprowadzenie kick-offu
+  - postawienie diagnozy przeramowującej problem - to nie jest cykl życia produktu, lecz nieopisany główny proces firmy, którego PM-owie są beneficjentami
+  - opracowanie bazy 65 definicji w strukturze "czym jest / czym nie jest", z typologią pojęć (etap, dokument, wydarzenie, narzędzie) - wersjonowanej i iterowanej (v2.1)
+  - zaprojektowanie macierzy RACI dla ok. 40 typów dokumentów w 9 rolach, z przypisanym źródłem prawdy (SoT) i planowaną liczbą uczestników spotkań decyzyjnych per dokument
+  - zaprojektowanie architektury obiegu dokumentów przez etapy Business Case - Kickoff - Alfa - Beta (łańcuchy DTR Alfa/Beta/v1.0, SIP, FAI, Seria 0, rejestr dokumentów produktu)
+  - zaprojektowanie 7-poziomowej architektury indeksów produktowych (od surowców po produkt sprzedażowy) z kierunkami złożeń i odpowiedzialnością za definiowanie i zakładanie indeksów - warstwa master data klasy ERP zaprojektowana przed wdrożeniem ERP
+  - współtworzenie z zespołem PM mapy procesu end-to-end z bramkami jakości (MVP, certyfikacja, Seria 0), pętlami feedbacku z 8 funkcji po wejściu na rynek oraz procesem wycofania produktu
+  - wdrożenie uproszczonego procesu ECR/ECO rejestrującego zmiany produktowe
+  - zgłoszenie gotowości przejęcia ułożenia głównego procesu po znalezieniu zastępstwa w roli PM
+
+impact:
+  - kompletny pakiet projektowy modelu operacyjnego (proces, dokumenty, dane, odpowiedzialności) gotowy do wdrożenia
+  - warstwa danych architektury zrealizowana produkcyjnie poprzez system paszportyzacji i numerów seryjnych (ACH-015)
+  - proces ECR/ECO działa jako rejestr zmian produktowych, wykorzystany m.in. przy wdrażaniu nowego PM-a
+  - wspólny słownik pojęć ujednolicił nomenklaturę między działami
+  - diagnoza zmieniła sposób rozmowy o problemie w organizacji - z "narzędzia dla PM-ów" na "główny proces firmy do ułożenia"
+  - pełne wdrożenie procesu wstrzymane decyzją priorytetową; temat otwarty wraz z moją zgłoszoną gotowością do jego przejęcia
+
+importance: 7
+
+evidence:
+  - baza 65 definicji "czym jest / czym nie jest" (dokument wersjonowany, v2.1)
+  - macierz RACI dokumentów z przypisaniem SoT (arkusz, ok. 40 dokumentów x 9 ról)
+  - diagram obiegu dokumentów przez etapy procesu (koncepcja własna)
+  - diagram architektury indeksów i odpowiedzialności (koncepcja własna)
+  - mapa procesu życia produktu end-to-end (współtworzona z zespołem PM)
+  - proces ECR/ECO w Bitrix24
+
+attribution: >
+  Mapa procesu end-to-end współtworzona z pozostałymi PM-ami. Architektura
+  obiegu dokumentów, architektura indeksów, baza definicji i macierz RACI -
+  koncepcja własna z poprawkami zespołu.
