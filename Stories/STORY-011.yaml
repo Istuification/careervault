@@ -1,0 +1,99 @@
+id: STORY-011
+
+title: Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
+
+summary: >
+  Przejąłem chaotyczną współpracę z podwykonawcami OEM produkującymi
+  urządzenia pod naszą marką: doprowadziłem do podpisania dwóch
+  przeprojektowanych umów o kooperacji, zaprojektowałem obieg dokumentów
+  i formularze zamówień oraz wdrożyłem znakowanie plombowe spięte
+  z systemem numerów seryjnych. Współpraca ustabilizowała się na tyle,
+  że produkcja znacząco wzrosła, urządzenia trafiły na rynek, a po
+  trzech miesiącach przekazałem obszar nowemu PM-owi. Historia ma jednak
+  drugi akt: stabilizacja opierała się częściowo na ustaleniach między
+  ludźmi, nie na udokumentowanym procesie - i zdegradowała się po
+  odejściu kluczowej osoby operacyjnej. To najcenniejsza lekcja tego
+  projektu.
+
+competencies:
+  - Change Management
+  - Process Design
+  - Stakeholder Management
+  - Operations Management
+  - Negotiation
+  - Risk Management
+
+behavioral_signals:
+  - ownership
+  - accountability
+  - solution_orientation
+  - transparency
+  - feedback_receptiveness
+
+situation: >
+  Urządzenia sprzedawane pod marką własną fizycznie produkowali
+  podwykonawcy OEM - firmy znacznie mniej zorganizowane procesowo.
+  Odpowiedzialność prawna i wizerunkowa za produkt spoczywała na naszej
+  marce. Współpraca opierała się na ustaleniach ad hoc, a część decyzji
+  w organizacji zapadała na podstawie opinii i deklaracji, nie faktów -
+  zobowiązania terminowe składane klientom potrafiły wyprzedzać
+  rzeczywistą gotowość produktu.
+
+problem: >
+  Ciągłe problemy operacyjne: braki sprzętowe, gubiące się zamówienia,
+  rosnące reklamacje oraz ryzyko nadużyć przy znakowaniu urządzeń
+  (naklejki znamionowe z odpowiedzialnością prawną marki). Nie istniał
+  sformalizowany model współpracy określający, kto, co, kiedy i na jakiej
+  podstawie dostarcza. Firma gasiła skutki, nie przyczyny.
+
+constraints:
+  - tryb ciągłego gaszenia pożarów - brak przestrzeni na spokojne ułożenie procesu
+  - ograniczona decyzyjność strategiczna po mojej stronie (rola wykonawczo-projektowa)
+  - kooperanci z własnymi, nienaruszalnymi metodami pracy
+  - presja terminów rynkowych na wypuszczenie urządzeń
+
+goal: >
+  Ustabilizować współpracę z kooperantami na tyle, by produkcja stała się
+  przewidywalna, urządzenia trafiły na rynek na czas, a odpowiedzialność
+  stron była jednoznaczna.
+
+actions:
+  - przeprojektowałem istniejącą umowę o kooperacji i doprowadziłem do podpisania dwóch umów z konkretnymi zapisami operacyjnymi
+  - zaprojektowałem obieg dokumentów oraz ustandaryzowane formularze zamówień, tak by zamówienia przestały się gubić
+  - wdrożyłem znakowanie urządzeń naklejkami plombowymi powiązane ze standardem numerów seryjnych
+  - wynegocjowałem model bieżącej współpracy między kooperantami a osobą operacyjną po naszej stronie
+  - buforowałem produkcję przed skutkami chaotycznych zmian decyzji, czyszcząc problemy na bieżąco
+  - po około trzech miesiącach przekazałem całość obszaru nowemu PM-owi wraz z omówieniem tematów
+
+challenges:
+  - równoległość ról - stabilizowanie kooperacji obok pozostałych obowiązków PM
+  - praca na styku trzech organizacji o różnej kulturze operacyjnej
+  - decyzje produktowe zapadające pod presją zobowiązań handlowych, których skutki trafiały do mnie do wyczyszczenia
+
+results:
+  - współpraca ustabilizowana w stopniu umożliwiającym znaczne zwiększenie wolumenu produkcji
+  - udane wypuszczenie urządzeń na rynek
+  - płynne przekazanie obszaru nowemu pracownikowi po trzech miesiącach
+  - akt drugi - po odejściu kluczowej osoby operacyjnej model współpracy się zdegradował, ponieważ opierał się na ustaleniach personalnych, których nikt nie ułożył w udokumentowany proces
+
+evidence:
+  - dwie podpisane umowy o kooperacji
+  - obieg dokumentów produkcyjnych i formularze zamówień
+  - system znakowania sprzętu (naklejki plombowe + numery seryjne)
+
+lessons_learned:
+  - proces jest ważniejszy niż ustalenia personalne - stabilizacja oparta na ludziach działa dokładnie tak długo, jak długo ci ludzie są na miejscu
+  - "działa" to nie to samo co "ułożone" - dopóki rozwiązanie działało, nikt nie widział potrzeby jego dokumentowania; potrzeba ujawniła się dopiero przy rotacji
+  - kryterium domknięcia wdrożenia, które od tamtej pory stosuję - wdrożenie jest skończone, gdy proces przeżyje odejście dowolnej pojedynczej osoby
+  - procesy międzydziałowe i międzyfirmowe bez jawnego właściciela degradują się z definicji - ktoś musi być odpowiedzialny za proces, nie tylko za jego efekty
+
+interview_angles:
+  - zarządzanie zmianą w relacji z partnerami zewnętrznymi o odmiennej kulturze pracy
+  - różnica między ugaszeniem pożaru a systemowym wdrożeniem - z uczciwym przykładem własnym
+  - zarządzanie ryzykiem dostawców przy odpowiedzialności prawnej marki
+  - dojrzałość operacyjna - wyciąganie wniosków z niepełnego sukcesu
+
+cv_bullets:
+  - Ustabilizowałem współpracę z podwykonawcami OEM (dwie przeprojektowane i podpisane umowy, obieg dokumentów, znakowanie plombowe), umożliwiając znaczny wzrost wolumenu produkcji
+  - Po trzech miesiącach przekazałem uporządkowany obszar nowemu PM-owi
+  - Z degradacji modelu po rotacji personalnej wyprowadziłem stosowane do dziś kryterium domknięcia wdrożenia - proces musi przeżyć odejście każdej pojedynczej osoby
