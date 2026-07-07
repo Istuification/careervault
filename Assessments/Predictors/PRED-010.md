@@ -78,3 +78,116 @@ Predyktor przewiduje, że badany będzie:
 - analizował istniejące procesy przed ich zmianą,
 - szukał przyczyn stojących za obecnym stanem rzeczy,
 - identyfikował ukryte funkcje istniejących rozwiązań,
+- rekonstruował logikę istniejącego rozwiązania przed zaproponowaniem zmian,
+- szukał kompromisów ukrytych w obecnym projekcie,
+- oddzielał zrozumienie systemu od decyzji o jego przebudowie,
+- podchodził sceptycznie zarówno do bezrefleksyjnego utrzymywania status quo, jak i do zmian dla samej zmiany,
+- proponował usprawnienia dopiero po zrozumieniu istniejącego systemu,
+- uwzględniał koszt wdrożenia zmian podczas oceny ich opłacalności,
+- **w nowych domenach zaczynał od benchmarkingu i mapowania na istniejące wzorce**,
+- **wymagał zrozumienia mechanizmu wzorca przed jego adaptacją**.
+
+---
+
+# Zachowania Nieobjęte Predyktorem
+Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
+- zamienianie wiedzy ukrytej w trwałą infrastrukturę organizacyjną,
+- budowanie baz wiedzy,
+- tworzenie dokumentacji jako celu samego w sobie,
+- przejmowanie odpowiedzialności za problem,
+- internalizacja odpowiedzialności za rezultat,
+- ochrona przepustowości organizacji,
+- wyznaczanie granic dotyczących własnego obciążenia.
+
+Jeżeli zachowania te występują regularnie, powinny być wyjaśniane przez inne Predictory lub Behavioral Patterns.
+
+---
+
+# Zachowania Przeczące
+Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
+- odrzucanie istniejących rozwiązań bez próby ich zrozumienia,
+- wprowadzanie zmian wyłącznie dlatego, że są nowe,
+- przywiązanie do tradycji pomimo oczywistych problemów,
+- ignorowanie skutków ubocznych proponowanych usprawnień,
+- przebudowywanie systemów bez wcześniejszego modelowania ich logiki,
+- **powtarzające się budowanie własnych rozwiązań w znanych domenach, gdzie istnieją sprawdzone wzorce branżowe**.
+
+---
+
+# Dowody Potwierdzające
+Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
+- STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
+- STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
+- STORY-003 — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu (3; silne wsparcie)
+- STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
+- STORY-007 — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV (3; silne wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania operacji PV (3; silne wsparcie)
+- STORY-004 — Projektowanie modelu działania serwisu przy braku danych historycznych (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności (2; umiarkowane wsparcie)
+- STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (2; umiarkowane wsparcie)
+- STORY-010 — Paszportyzacja produktów (dowód na błąd w nieznanej domenie oraz instalację korekty; walidacja post factum przez przegląd systemów branżowych wykazała, że samodzielnie wypracowana architektura odpowiada standardowi rynkowemu).
+
+---
+
+# Dowody Przeczące
+Brak.
+Oczekuje na dalsze kalibracje.
+
+---
+
+# Historia Kalibracji
+## CAL-001 — Predictor ↔ Story Mapping Review (2026-06-22)
+- Zweryfikowano przypisania Stories w matrycy.
+- Zaktualizowano confidence, status i poziom walidacji zgodnie z kalibracją.
+## CAL-002 — Behavioral Pattern ↔ Predictor Calibration (2026-06-23)
+- Doprecyzowano granicę pomiędzy optymalizacją istniejących systemów a ochroną przepustowości.
+- Potwierdzono, że Predictor opisuje preferencję zrozumienia systemu przed jego zmianą.
+- Ograniczono interpretacje związane z zarządzaniem capacity.
+## CAL-003 — Deep Calibration (2026-06-25)
+- Potwierdzono, że Predictor opisuje sposób rozumienia istniejących systemów przed ich zmianą.
+- Doprecyzowano granicę pomiędzy analizą istniejącego systemu a budową nowej infrastruktury wiedzy.
+- Potwierdzono, że tworzenie dokumentacji, repozytoriów wiedzy i procedur nie jest wyjaśniane przez ten Predictor, lecz przez BP-006.
+- Wyraźniej oddzielono Predictor od mechanizmów związanych z internalizacją odpowiedzialności oraz ochroną przepustowości.
+## CAL-004 — Post-Expansion Recalibration (2026-07-07)
+- **Dodano warunek domenowy:** w znanej domenie optymalizuje sprawdzone rozwiązania, w nieznanej domenie odruchowo projektuje własne (błąd poznawczy).
+- **Udokumentowano zainstalowaną korektę:** mapa problemu -> benchmarking rynkowy -> adaptacja.
+- **Dodano warunek brzegowy:** wymóg zrozumienia mechanizmu wzorca przed jego użyciem.
+- Potwierdzono na przykładzie paszportyzacji produktów (STORY-010): samodzielnie wypracowana architektura master data okazała się post factum zgodna ze standardem branżowym, co waliduje jakość myślenia, ale potwierdza potrzebę wcześniejszego benchmarkingu.
+
+---
+
+# Ocena
+## Pewność
+Wysoka
+## Siła Źródeł Psychometrycznych
+Średnia
+## Siła Źródeł Behawioralnych
+Bardzo wysoka
+## Poziom Walidacji
+Bardzo wysoki
+
+Predyktor należy do rdzenia modelu i jest wielokrotnie wspierany przez Stories oraz kalibracje.
+Kalibracja 003 dodatkowo wzmocniła interpretację, że rdzeniem mechanizmu jest modelowanie i zrozumienie istniejącego systemu, a nie sama optymalizacja.
+Kalibracja 004 dodała kluczowe doprecyzowanie: mechanizm jest **warunkowy domenowo**, a badany posiada **świadomą, zainstalowaną korektę** dla przypadku wejścia w nieznane domeny.
+
+---
+
+# Notatki
+Predyktor nie opisuje przywiązania do tradycji.
+Nie opisuje również potrzeby ciągłej optymalizacji.
+
+Najbardziej prawdopodobny wzorzec działania można opisać jako:
+1. Zrozum istniejący system.
+2. Odtwórz logikę jego działania.
+3. Zidentyfikuj ograniczenia oraz kompromisy.
+4. Oceń koszt zmiany.
+5. Zmień system tylko wtedy, gdy nowy model lepiej wyjaśnia rzeczywistość i przynosi większą wartość.
+6. **W nowej domenie: najpierw zmapuj na znane frameworki, znajdź wzorce rynkowe, zrozum mechanizm, dopiero potem adaptuj.**
+
+Predyktor opisuje sposób uczenia się z istniejących rozwiązań.
+Nie opisuje potrzeby tworzenia dokumentacji.
+Nie opisuje zamiany wiedzy ukrytej w infrastrukturę organizacyjną.
+Nie opisuje również przejmowania odpowiedzialności za rezultat.
+
+CAL-003 znacząco zwiększył rozdzielczość tego Predictora poprzez wyraźne oddzielenie go od BP-006 oraz BP-005.
+CAL-004 dodatkowo wzbogaciła model o wymiar domenowy oraz udokumentowaną ścieżkę korekty poznawczej.
