@@ -1,18 +1,22 @@
-# Stories
+# Skills
 
 ## Cel
 
-Folder **Stories** zawiera historie zawodowe zbudowane na podstawie osiągnięć zgromadzonych w Career Vault.
+Folder **Skills** zawiera kompetencje zidentyfikowane na podstawie doświadczenia, osiągnięć oraz projektów zgromadzonych w Career Vault.
 
-Story jest narracyjną warstwą systemu: przekształca fakty i rezultaty zapisane w Achievementach w spójną opowieść o problemie, decyzjach, działaniach i wnioskach.
+Skills nie są listą deklarowanych umiejętności.
 
-Stories odpowiadają na pytanie:
+Każda kompetencja powinna być poparta konkretnymi dowodami w postaci Achievementów, Stories oraz innych elementów Career Vault.
 
-> Jak opowiadać o tych doświadczeniach?
+Skills pełnią rolę warstwy kompetencyjnej całego systemu wiedzy.
+
+Odpowiadają na pytanie:
+
+> Co potrafię udowodnić poprzez swoje doświadczenia i osiągnięcia?
 
 ---
 
-# Rola Stories w Career Vault
+# Rola Skills w Career Vault
 
 Career Vault przechowuje wiedzę na wielu poziomach abstrakcji.
 
@@ -42,53 +46,59 @@ Identity
 Kim jestem jako profesjonalista?
 ```
 
-Stories nie są źródłem faktów.
+Skills stanowią warstwę interpretacyjną pomiędzy osiągnięciami a wyższymi poziomami modelu wiedzy.
 
-Źródłem faktów są Achievements.
-
-Story nadaje faktom strukturę narracyjną potrzebną podczas rozmów rekrutacyjnych, prezentacji doświadczenia oraz analizy wzorców zachowań.
+To właśnie Skills pozwalają przekształcić pojedyncze osiągnięcia w spójny obraz kompetencji zawodowych.
 
 ---
 
-# Czym jest Story?
+# Czym jest Skill?
 
-Story opisuje pełny łuk narracyjny: sytuację wyjściową, problem, ograniczenia, cel, podjęte decyzje i działania, napotkane trudności, rezultaty oraz wyciągnięte wnioski.
+Skill opisuje kompetencję możliwą do zaobserwowania poprzez działania, decyzje oraz rezultaty.
 
-Struktura rozszerza klasyczny model STAR (Situation, Task, Action, Result) o ograniczenia, wyzwania, lekcje oraz gotowe kąty rozmowy.
+Skill nie opisuje technologii.
 
-Dobra Story:
+Skill nie opisuje narzędzia.
 
-* opiera się na co najmniej jednym Achievemencie,
-* zawiera decyzje i ich uzasadnienia, nie tylko czynności,
-* pokazuje napięcie: ograniczenia, opór, trudności,
-* kończy się rezultatem oraz wnioskiem,
-* da się opowiedzieć w kilka minut podczas rozmowy.
+Skill nie opisuje certyfikatu.
+
+Skill opisuje zdolność do osiągania określonych rezultatów.
 
 ---
 
-# Kiedy tworzyć Story?
+## Przykład
 
-Nie każde osiągnięcie zasługuje na osobną historię.
+❌ BPMN 2.0
 
-Story powstaje wtedy, gdy istnieje łuk narracyjny: decyzje, napięcie, zwrot akcji lub dojrzała lekcja.
+To metoda.
 
-❌ Story jako lustrzane odbicie każdego Achievementu.
+✅ Process Design
 
-To rozwadnia moduł i tworzy szum.
-
-✅ Story tam, gdzie fakty układają się w opowieść z wnioskiem.
-
-Jeżeli Achievement broni się samodzielnie listą działań i rezultatów, nie potrzebuje Story.
+To kompetencja.
 
 ---
 
-# Historie o niepełnych sukcesach
+## Przykład
 
-Story może dokumentować projekt, który nie zakończył się pełnym sukcesem.
+❌ Bitrix24
 
-Historia z drugim aktem — w której rozwiązanie zdegradowało się, projekt wstrzymano lub założenia okazały się błędne — bywa cenniejsza niż historia triumfu, pod warunkiem że kończy się konkretną, stosowaną od tamtej pory lekcją.
+To narzędzie.
 
-Warunek: przebieg wydarzeń opisujemy faktograficznie i neutralnie, bez oceniania osób.
+✅ Workflow Automation
+
+To kompetencja.
+
+---
+
+## Przykład
+
+❌ Excel
+
+To narzędzie.
+
+✅ Data Analysis
+
+To kompetencja.
 
 ---
 
@@ -98,60 +108,116 @@ Najważniejsza zasada Career Vault:
 
 > Fakty ponad deklaracje.
 
-Każda liczba, metryka i twierdzenie w Story musi mieć pokrycie w Achievementach lub materiałach źródłowych.
-
-Story nie może twierdzić więcej, niż potwierdzają dowody.
-
-Zasada szczególna: wyceny finansowe nigdy nie znajdują się w Stories. Blok `fin` żyje wyłącznie w Achievementach, a Story odsyła do niego identyfikatorem.
+Każdy Skill powinien posiadać dowody potwierdzające jego praktyczne wykorzystanie.
 
 Przykład:
 
 ```yaml
-results:
-  quantitative:
-    - Odzyskana produktywność wdrożonej kohorty oszacowana na 140-180 tys. PLN (metodologia: ACH-003, blok fin / FIN-003).
+name: Process Design
+
+evidence:
+  achievements:
+    - ACH-001
+    - ACH-003
+    - ACH-005
 ```
+
+Jeżeli nie istnieją dowody potwierdzające daną kompetencję, prawdopodobnie nie powinna ona jeszcze znajdować się w Career Vault.
+
+---
+
+# Evidence-Based Skills
+
+Career Vault wykorzystuje podejście Evidence-Based Skills.
+
+Skill nie opisuje tego:
+
+> czego się nauczyłem.
+
+Skill opisuje:
+
+> co wielokrotnie udowodniłem w praktyce.
+
+Dlatego kompetencje powinny wynikać z doświadczeń, projektów oraz osiągniętych rezultatów.
+
+Nie odwrotnie.
+
+---
+
+# Rodzaje kompetencji
+
+## Kompetencje rdzeniowe
+
+Najsilniej definiują profil zawodowy.
+
+Przykłady:
+
+* Systems Thinking
+* Process Design
+* Knowledge Management
+* Operations Management
+
+---
+
+## Kompetencje wspierające
+
+Regularnie wykorzystywane obszary wspierające kompetencje rdzeniowe.
+
+Przykłady:
+
+* Product Management
+* Leadership
+* Workflow Automation
+* Technical Communication
+
+---
+
+## Kompetencje rozwijane
+
+Obszary znajdujące się w trakcie aktywnego rozwoju.
+
+Przykłady:
+
+* Product Strategy
+* AI Systems
+* Commercial Discovery
 
 ---
 
 # Schemat rekordu
 
-Każda Story powinna być zapisana jako osobny plik YAML.
+Każdy Skill powinien być zapisany jako osobny plik YAML.
 
 ```yaml
 id:
 
-title:
+name:
+
+category:
+
+importance:
+
+level:
 
 summary:
 
-competencies:
+capabilities:
 
-behavioral_signals:
+methods:
 
-situation:
-
-problem:
-
-constraints:
-
-goal:
-
-actions:
-
-challenges:
-
-results:
-
-org:            # opcjonalne
+tools:
 
 evidence:
 
-lessons_learned:
+experience:
+  first_used:
+  years:
 
-interview_angles:
+career_relevance:
 
-cv_bullets:
+keywords:
+
+related_skills:
 ```
 
 ---
@@ -160,276 +226,297 @@ cv_bullets:
 
 ## id
 
-Unikalny identyfikator historii.
+Unikalny identyfikator kompetencji.
 
 Przykłady:
 
 ```text
-STORY-001
-STORY-010
+SKILL-001
+SKILL-010
+SKILL-018
 ```
 
 Identyfikator powinien pozostać niezmienny przez cały czas życia repozytorium.
 
 ---
 
-## title
+## name
 
-Tytuł historii.
+Nazwa kompetencji.
 
-Powinien zapowiadać oś narracji, nie tylko temat.
+Przykłady:
 
-Przykład:
-
-```yaml
-title: Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
+```text
+Process Design
+Product Management
+Leadership
+Knowledge Management
 ```
+
+---
+
+## category
+
+Główna kategoria kompetencji.
+
+Przykłady:
+
+```text
+Operations
+Product
+Management
+Knowledge
+Systems
+Analytics
+Communication
+```
+
+---
+
+## importance
+
+Określa, jak bardzo dana kompetencja definiuje profil zawodowy.
+
+Nie określa poziomu umiejętności.
+
+### 10
+
+Kompetencja rdzeniowa.
+
+### 8–9
+
+Bardzo ważna kompetencja wspierająca.
+
+### 6–7
+
+Kompetencja specjalistyczna.
+
+### 1–5
+
+Kompetencja pomocnicza.
+
+---
+
+## level
+
+Poziom kompetencji.
+
+Dopuszczalne wartości:
+
+```text
+Expert
+Advanced
+Intermediate
+Basic
+```
+
+### Expert
+
+Kompetencja wykorzystywana regularnie przez wiele lat i potwierdzona licznymi dowodami.
+
+### Advanced
+
+Kompetencja wykorzystywana samodzielnie w praktyce i potwierdzona wieloma przykładami.
+
+### Intermediate
+
+Kompetencja wykorzystywana okazjonalnie lub w ograniczonym zakresie.
+
+### Basic
+
+Podstawowa znajomość obszaru.
 
 ---
 
 ## summary
 
-Skrót całej historii w kilku zdaniach.
+Krótki opis kompetencji.
 
-Powinien pozwolić czytelnikowi zdecydować, czy chce poznać szczegóły — łącznie z zapowiedzią zwrotu akcji, jeżeli historia go zawiera.
+Powinien odpowiadać na pytanie:
+
+> Na czym polega ta kompetencja?
 
 ---
 
-## competencies
+## capabilities
 
-Kompetencje demonstrowane w historii.
-
-Wartości powinny odpowiadać nazwom kompetencji z modułu `Skills`.
+Lista zdolności składających się na daną kompetencję.
 
 Przykład:
 
 ```yaml
-competencies:
-  - Change Management
-  - Process Design
-  - Stakeholder Management
+capabilities:
+  - workflow-design
+  - process-mapping
+  - process-optimization
 ```
 
 ---
 
-## behavioral_signals
+## methods
 
-Sygnały postawy i zachowań widoczne w historii.
-
-Stosowany słownik:
-
-```text
-ownership
-accountability
-transparency
-solution_orientation
-constructive_challenge
-feedback_receptiveness
-feedback_giving
-perspective_taking
-psychological_safety
-```
-
-Słownik można rozszerzać, ale nowe sygnały powinny być używane konsekwentnie w całym repozytorium.
-
----
-
-## situation
-
-Kontekst wyjściowy: stan organizacji, otoczenie, moje umiejscowienie w strukturze.
-
-Opisuje świat przed historią.
-
----
-
-## problem
-
-Sedno problemu do rozwiązania.
-
-Odpowiada na pytanie:
-
-> Co dokładnie nie działało i dlaczego miało to znaczenie?
-
----
-
-## constraints
-
-Ograniczenia, w których działałem.
+Metody wykorzystywane podczas pracy.
 
 Przykład:
 
 ```yaml
-constraints:
-  - Ograniczone zasoby kadrowe
-  - Brak formalnie zdefiniowanych procesów
-  - Presja terminów rynkowych
+methods:
+  - BPMN 2.0
+  - Root Cause Analysis
+  - Continuous Improvement
 ```
 
 ---
 
-## goal
+## tools
 
-Cel działania sformułowany z perspektywy momentu startu.
+Narzędzia wykorzystywane podczas pracy.
 
----
-
-## actions
-
-Podjęte działania i decyzje wraz z uzasadnieniami.
-
-Odpowiada na pytanie:
-
-> Co zrobiłem i dlaczego właśnie tak?
-
-Działania opisujemy w pierwszej osobie, z zachowaniem uczciwej atrybucji pracy zespołowej.
-
----
-
-## challenges
-
-Trudności napotkane po drodze: opór, zmiany warunków, konflikty priorytetów.
-
-To pole buduje wiarygodność historii — opowieść bez trudności brzmi jak laurka.
-
----
-
-## results
-
-Rezultaty historii.
-
-Forma rekomendowana — z podziałem:
+Przykład:
 
 ```yaml
-results:
-  quantitative:
-    - Skrócono czas osiągnięcia samodzielności z 8-9 do 2-3 miesięcy.
-  qualitative:
-    - Zmniejszono zależność od pojedynczych osób.
+tools:
+  - Bitrix24
+  - Excel
+  - Wiki.js
 ```
-
-Dla krótszych historii dopuszczalna jest płaska lista.
-
-Rezultatem może być również uczciwie opisany drugi akt (degradacja rozwiązania, wstrzymanie projektu), jeżeli prowadzi do lekcji.
-
----
-
-## org
-
-Pole opcjonalne.
-
-Opisuje zmianę zdolności organizacji, którą opowiada historia. Stosowane tylko tam, gdzie zmiana modelu działania jest wartością samą w sobie, niezależną od wyceny finansowej — nie jako pole obowiązkowe każdej Story.
-
-Dopuszczalne formy:
-
-```yaml
-org:
-  operational:
-    - przejście z zarządzania intuicyjnego na oparte na danych
-    - stworzenie pierwszego systemu KPI dla serwisu
-  strategic:
-    - poprawa retencji specjalistów
-    - odejście od liniowego skalowania kosztów
-```
-
-lub
-
-```yaml
-org:
-  capability:
-    from: organizacja zależna od ludzi (people-dependent)
-    to: organizacja zależna od systemu (system-dependent)
-```
-
-Wyceny finansowe nigdy nie trafiają do `org` — blok `fin` żyje wyłącznie w Achievementach.
 
 ---
 
 ## evidence
 
-Powiązanie historii z dowodami.
+Najważniejsze pole całego rekordu.
+
+Opisuje źródła potwierdzające kompetencję.
 
 Przykład:
 
 ```yaml
 evidence:
-  achievement_ids:
+  achievements:
+    - ACH-001
     - ACH-003
-  supporting_materials:
-    - Workflow serwisowe
-    - Materiały onboardingowe
+
+  stories:
+    - STORY-001
+    - STORY-005
+
+  development_areas:
+    - DEV-002
 ```
-
-### achievement_ids
-
-Identyfikatory Achievementów, na których opiera się historia.
-
-Każda Story powinna wskazywać co najmniej jeden Achievement.
-
-### supporting_materials
-
-Artefakty wspierające: dokumentacja, diagramy, materiały szkoleniowe.
 
 ---
 
-## lessons_learned
+## experience
 
-Wnioski wyciągnięte z historii.
-
-Najcenniejsze są lekcje:
-
-* stosowane od tamtej pory w praktyce,
-* wynikające również z błędów i niepełnych sukcesów,
-* sformułowane jako zasady, nie ogólniki.
+Opis historii wykorzystania kompetencji.
 
 Przykład:
 
 ```yaml
-lessons_learned:
-  - Wdrożenie jest skończone, gdy proces przeżyje odejście dowolnej pojedynczej osoby.
+experience:
+  first_used: 2020
+  years: 5
 ```
+
+### first_used
+
+Pierwszy znany moment praktycznego wykorzystania kompetencji.
+
+### years
+
+Przybliżona liczba lat praktycznego doświadczenia.
 
 ---
 
-## interview_angles
+## career_relevance
 
-Kąty, pod jakimi historia może być opowiadana podczas rozmów.
+Ocena przydatności kompetencji dla określonych ścieżek zawodowych.
 
 Przykład:
 
 ```yaml
-interview_angles:
-  - Change Management
-  - Process decoupling - rozdzielanie zależnych procesów
-  - Dojrzałość operacyjna - wnioski z niepełnego sukcesu
+career_relevance:
+  product_manager: 8
+  operations_manager: 10
+  process_manager: 10
 ```
 
-Jedna historia zwykle obsługuje kilka różnych pytań rekrutacyjnych.
+Skala:
+
+```text
+1 = niska przydatność
+10 = kluczowa kompetencja
+```
 
 ---
 
-## cv_bullets
+## keywords
 
-Gotowe punkty do wykorzystania w CV lub aplikacjach.
+Słowa kluczowe wspierające wyszukiwanie.
 
 Przykład:
 
 ```yaml
-cv_bullets:
-  - Przejąłem odpowiedzialność za dział serwisu i przeprowadziłem jego stabilizację organizacyjną.
+keywords:
+  - process design
+  - workflow
+  - operations
 ```
-
-Punkty powinny być zgodne z liczbami zapisanymi w Achievementach.
 
 ---
 
-# Zasady anonimizacji
+## related_skills
 
-Career Vault jest repozytorium publicznym.
+Powiązane kompetencje.
 
-1. Osoby opisujemy przez role i funkcje, nie przez nazwiska.
-2. Partnerów, kooperantów i klientów opisujemy rodzajowo (np. "podwykonawca OEM", "partner technologiczny").
-3. Nie publikujemy danych wrażliwych organizacji: cen, marż, danych klientów, treści umów.
-4. Przebieg konfliktów i trudności opisujemy faktograficznie, bez oceniania osób i ich intencji.
+Przykład:
+
+```yaml
+related_skills:
+  - SKILL-002
+  - SKILL-012
+```
+
+---
+
+# Kompetencje, metody i narzędzia
+
+## Skills
+
+Opisują kompetencje.
+
+Przykłady:
+
+* Process Design
+* Leadership
+* Product Management
+* Knowledge Management
+
+---
+
+## Methods
+
+Opisują sposoby pracy.
+
+Przykłady:
+
+* BPMN 2.0
+* Root Cause Analysis
+* Continuous Improvement
+
+---
+
+## Tools
+
+Opisują narzędzia.
+
+Przykłady:
+
+* Bitrix24
+* Excel
+* Wiki.js
+* Power BI
 
 ---
 
@@ -437,49 +524,49 @@ Career Vault jest repozytorium publicznym.
 
 ## Experience
 
-Dostarcza kontekstu kariery.
+Dostarcza kontekstu zawodowego.
 
 ## Achievements
 
-Stanowią źródło faktów, liczb i wycen (blok `fin`).
+Stanowią główne źródło dowodów.
 
 ## Skills
 
-Historie pokazują kompetencje w praktyce; pole `competencies` odwołuje się do nazw Skills.
+Grupują osiągnięcia w kompetencje.
 
 ## Stories
 
-Przekształcają fakty w narrację gotową do opowiedzenia.
+Pokazują wykorzystanie kompetencji w praktyce.
 
 ## Development Areas
 
-Historie — zwłaszcza ich lekcje i drugie akty — stanowią materiał źródłowy dla wzorców rozwojowych.
+Pokazują wzorce rozwojowe wynikające z wykorzystania kompetencji.
 
 ## Identity
 
-Stanowi syntezę narracji, kompetencji i doświadczeń zgromadzonych w Career Vault.
+Stanowi syntezę wszystkich kompetencji oraz doświadczeń zgromadzonych w Career Vault.
 
 ---
 
 # Zasady utrzymania
 
-1. Każda Story opiera się na co najmniej jednym Achievemencie.
-2. Story nie twierdzi więcej, niż potwierdzają dowody.
-3. Nie twórz Story dla każdego Achievementu — tylko tam, gdzie istnieje łuk narracyjny.
-4. Liczby w Story muszą być zgodne z liczbami w Achievementach.
-5. Wyceny finansowe wyłącznie przez odesłanie do bloku `fin` w Achievementach.
-6. Sekcję `org` stosuj oszczędnie — tam, gdzie zmiana zdolności organizacji jest sednem historii.
-7. Zachowuj uczciwą atrybucję pracy zespołowej.
-8. Dokumentuj również niepełne sukcesy, jeżeli niosą lekcję.
-9. Przestrzegaj zasad anonimizacji.
-10. Aktualizuj historie, gdy Achievementy źródłowe zyskują nowe fakty.
+1. Każdy Skill powinien posiadać dowody potwierdzające jego wykorzystanie.
+2. Nie twórz Skills dla pojedynczych narzędzi.
+3. Nie twórz Skills dla pojedynczych technologii.
+4. Preferuj kompetencje zamiast technologii.
+5. Łącz Skills z Achievementami.
+6. Łącz Skills ze Stories.
+7. Łącz Skills z Development Areas.
+8. Łącz Skills z innymi Skills.
+9. Aktualizuj kompetencje wraz z rozwojem Career Vault.
+10. Dodawaj nowe Skills dopiero wtedy, gdy istnieją dowody ich praktycznego wykorzystania.
 
 ---
 
 # Najważniejsza zasada
 
-Story nie tworzy faktów.
+Skill nie opisuje tego, czego się nauczyłem.
 
-Story nadaje faktom strukturę opowieści.
+Skill opisuje to, co potrafię udowodnić poprzez doświadczenie, osiągnięcia oraz powtarzalne rezultaty.
 
-Jeżeli historia potrzebuje faktu, którego nie ma w Achievementach — najpierw uzupełnij Achievement, dopiero potem opowiadaj.
+Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career Vault.
