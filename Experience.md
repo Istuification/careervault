@@ -77,6 +77,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 * ACH-016
 * ACH-017
 * ACH-018
+* ACH-019
 
 ---
 
@@ -109,6 +110,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 * ACH-007
 * ACH-010
 * ACH-012
+* ACH-020
 
 ---
 
@@ -143,6 +145,8 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 * ACH-009
 * ACH-011
 * ACH-013
+* ACH-020
+* ACH-021
 
 ---
 
