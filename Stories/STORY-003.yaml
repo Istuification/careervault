@@ -127,6 +127,9 @@ results:
     - Skrócenie czasu rozpatrywania reklamacji z około 4–5 dni do około 2 dni.
     - Skrócenie czasu podejmowania decyzji serwisowych o około 95%.
     - Utrzymanie kosztów obsługi pomimo wzrostu liczby urządzeń na rynku.
+    - Średni czas rozwiązania problemu klienta krótszy o ok. 3 dni dzięki rozdzieleniu naprawy od rozliczenia.
+    - Obowiązkowy system przyjęty przez ok. 300 instalatorów i 3 producentów - instalatorzy, którzy wcześniej omijali system, sami chcą z niego korzystać.
+    - Warstwa finansowa i strategiczna oszacowana w ACH-005 (blok fin / FIN-005).
   qualitative:
     - Ujednolicenie zasad współpracy między uczestnikami procesu.
     - Zmniejszenie liczby sporów interpretacyjnych.
@@ -176,6 +179,7 @@ interview_angles:
   - Systems Thinking
   - Change Leadership
   - Facilitation
+  - Process decoupling - rozdzielanie zależnych procesów (naprawa niezależna od rozliczenia)
 
 cv_bullets:
   - Współtworzyłem kompleksowy system gwarancyjny obejmujący producentów, instalatorów, dystrybutorów i użytkowników końcowych.
