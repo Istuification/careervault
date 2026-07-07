@@ -1,6 +1,6 @@
 id: ACH-008
 
-title: Koordynacja wdrożenia produktu PV Stand
+title: Koordynacja wdrożenia produktów PV Stand i PV-Box
 
 company: KIPI
 
@@ -18,6 +18,7 @@ skills:
   - technical-documentation
   - cross-functional-collaboration
   - process-design
+  - quality-assurance
 
 themes:
   - product-launch
@@ -27,36 +28,44 @@ themes:
   - product-management
 
 situation: >
-  Firma przygotowywała wdrożenie nowego produktu
-  typu DIY przeznaczonego dla rynku fotowoltaicznego.
+  Firma przygotowywała wdrożenie dwóch powiązanych produktów
+  typu DIY przeznaczonych dla rynku fotowoltaicznego.
   Konieczne było skoordynowanie działań wielu działów
   oraz przygotowanie kompletnej dokumentacji
-  wspierającej wdrożenie.
+  wspierającej wdrożenie - od produkcji po sprzedaż.
 
 actions:
-  - koordynacja procesu wdrożenia produktu
-  - organizacja współpracy między działami
-  - monitorowanie przepływu informacji
+  - koordynacja procesu wdrożenia produktów
+  - organizacja współpracy między działami i monitorowanie przepływu informacji
   - standaryzacja procesu wdrożeniowego
-  - przygotowanie dokumentacji technicznej
-  - przygotowanie instrukcji montażu
-  - przygotowanie dokumentacji jakościowej
-  - przygotowanie dokumentacji DTR
+  - przygotowanie dokumentacji technicznej, instrukcji montażu i dokumentacji DTR
+  - opracowanie tabliczki znamionowej oraz BOM-u montażowego i BOM-u akcesoriów
+  - przygotowanie kart kontroli produkcyjnej i kart gwarancji
+  - opracowanie warunków gwarancji i przekazanie ich do weryfikacji prawnej
+  - przygotowanie części i koordynacja realizacji serii 0
+  - zbudowanie własnego stanowiska pomiarowego (PVB-Test) do testowania produktu przed wydaniem
+  - rozpoznanie wymagań norm, w tym komunikacji po porcie RS-485
+  - przeprowadzenie szkolenia produktowego dla zespołów
+  - utworzenie formularza CRM oraz wsparcie marketingu (film produktowy, landing page)
+  - zgrupowanie wiedzy produktowej w bazie wiedzy
 
 impact:
-  - przygotowanie organizacji do wdrożenia nowego produktu
-  - zapewnienie kompletnej dokumentacji wdrożeniowej
-  - usprawnienie komunikacji między działami
-  - standaryzacja procesu wprowadzania produktu
+  - przygotowanie organizacji do wdrożenia nowych produktów
+  - zapewnienie kompletnej dokumentacji wdrożeniowej - od produkcji po gwarancje
+  - realizacja serii 0 z weryfikacją jakościową przed wejściem na rynek
+  - własne stanowisko testowe (PVB-Test) umożliwiło kontrolę jakości produktu przed wydaniem
+  - usprawnienie komunikacji między działami i standaryzacja procesu wprowadzania produktu
+  - znajomość pełnego pakietu wdrożeniowego pozwoliła mi później sprawnie przejmować i prowadzić tematy dokumentacji technicznej kolejnych produktów (DTR tworzone poza mną)
 
 importance: 7
 
 evidence:
   - instrukcja montażu
-  - dokumentacja jakościowa
-  - dokumentacja DTR
-  - workflow wdrożeniowy
-  - koordynacja międzydziałowa
+  - dokumentacja jakościowa i dokumentacja DTR
+  - tabliczka znamionowa, BOM montażowy i BOM akcesoriów
+  - karty kontroli produkcyjnej i karty gwarancji
+  - stanowisko testowe PVB-Test
+  - workflow wdrożeniowy i szkolenie produktowe
 
 related_tools:
   - Bitrix24
