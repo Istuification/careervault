@@ -407,7 +407,21 @@ category: leadership
 ```yaml
 category: product
 ```
+### fin (opcjonalne)
 
+Lista analiz finansowych rekordu. Każda analiza zawiera: `id` (FIN-XXX),
+`value_type` (Capacity Release / Cost Avoidance / Reduced Lead Time /
+Strategic Enablement), wycenę (`estimated_value`, `quantified` lub
+`unit_value_pln`), `calculation` (jawny wzór), `assumptions` (wszystkie
+założenia), `confidence` oraz obowiązkową notę: "Szacunek własny metodą X;
+nie są to dane księgowe firmy". Wartości podajemy w widełkach,
+zaokrąglając konserwatywnie. Nie sumujemy nakładających się oszczędności.
+
+### org (opcjonalne)
+
+Sekcja opisująca zmianę zdolności organizacji: `operational` / `strategic`
+lub `capability: from -> to`. Stosowana tam, gdzie zmiana modelu działania
+jest wartością samą w sobie, niezależną od wyceny finansowej.
 ---
 
 ### evidence
