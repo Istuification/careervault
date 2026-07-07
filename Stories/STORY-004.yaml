@@ -114,6 +114,8 @@ results:
     - Rozbudowano strukturę działu przy zachowaniu kluczowych kompetencji eksperckich.
     - W kolejnym sezonie średni czas rozmowy spadł o około 36%.
     - Na podstawie analizy danych opracowano około 15 priorytetowych procedur diagnostycznych.
+    - Zespół ustabilizowany na 5 specjalistach i kierowniku zamiast zakładanych wcześniej ok. 8 etatów, z dobrą retencją i delegowaniem części czasu ekspertów do wsparcia R&D.
+    - Unikniecie co najmniej jednego dodatkowego etatu oszacowane na 85-120 tys. PLN rocznie (metodologia: ACH-010, blok fin / FIN-010).
   qualitative:
     - Zastąpiono decyzje oparte na opiniach decyzjami opartymi na danych.
     - Obalono trzy kluczowe założenia funkcjonujące w organizacji.
@@ -124,6 +126,18 @@ results:
     - Wpłynięto na strategię obsługi klienta funkcjonującą w organizacji przez kolejne lata.
     - Potwierdzono, że problem wymagał zmian systemowych, a nie wyłącznie zwiększania zatrudnienia.
     - Zbudowano kulturę podejmowania decyzji opartą na danych zamiast intuicji i przypuszczeniach.
+
+org:
+  operational:
+    - przejście z zarządzania intuicyjnego na zarządzanie oparte na danych
+    - stworzenie pierwszego systemu KPI dla serwisu
+    - identyfikacja rzeczywistych przyczyn przeciążenia
+    - zaprojektowanie modelu skalowania serwisu
+  strategic:
+    - utrzymanie jakości obsługi przy wzroście liczby urządzeń ok. 20% rocznie
+    - poprawa retencji specjalistów
+    - uwolnienie części kompetencji technicznych na wsparcie R&D
+    - odejście od liniowego skalowania kosztów wraz ze wzrostem liczby zgłoszeń
 
 evidence:
   achievement_ids:
