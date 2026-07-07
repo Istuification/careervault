@@ -1,5 +1,7 @@
 id: DEV-007
+
 title: Samoocena i wycena własnej pracy (Asymetryczne Kryterium Funkcyjne)
+
 summary: >
   Stosuję spójne, funkcyjne kryterium ukończenia ("zrobione = spełnia swoją funkcję"),
   jednak robię to w sposób skrajnie asymetryczny. Wobec współpracowników uwzględniam
@@ -7,50 +9,63 @@ summary: >
   siebie wymagam wyłącznie dowiezionego, użytecznego rezultatu. Prowadzi to do
   systematycznego niedoceniania własnej pracy (szczególnie faz badawczych i
   architektonicznych) oraz trudności w rynkowej wycenie własnej wartości.
+  
 category: Self Management
+
 status: Active Development (Fresh Awareness)
+
 sources:
   stories:
     - STORY-010
     - STORY-011
+    
   achievements:
     - ACH-015
     - ACH-016
     - ACH-019
+    
   skills:
     - SKILL-001
     - SKILL-019
     - SKILL-004
+    
   calibrations:
     - CAL-004
+    
 observed_pattern:
   - Stosowanie binarnego, funkcyjnego kryterium ukończenia: praca ma wartość tylko wtedy, gdy spełnia swoją funkcję.
   - Asymetria w ocenie: wobec innych jestem empatyczny (uwzględniam intencje, wysiłek i proces), wobec siebie jestem bezwzględny (liczy się tylko ostateczny, działający rezultat).
   - Pomijanie w samoocenie "kosztów wytworzenia", "pracy u podstaw" oraz "procesu badawczego" - jeśli system wymagał ogromnego wysiłku architektonicznego, ale ostateczna funkcja jest dopiero budowana lub wydaje mi się "oczywista", nie przypisuję sobie za to zasług.
   - Traktowanie zaawansowanych projektów koncepcyjnych (np. architektura master data, modelowanie procesów) jako "zwykłego porządkowania" lub "oczywistych kroków".
+
 strengths:
   - Ekstremalnie wysoka rzetelność i orientacja na dowożenie realnej wartości (brak "sprzedawania powietrza").
   - Empatia i wspierający styl oceny współpracowników (budowanie bezpieczeństwa psychologicznego).
   - Brak skłonności do inflacji autoprezentacji i "kreatywnego" opisywania rzeczywistości (zgodność z PRED-013 i PRED-003).
   - Skupienie na użyteczności i funkcjonalności tworzonych systemów.
   - Zgodność między deklaracjami a faktycznymi dowodami (epistemologia Vaulta).
+
 risks:
   - Systematyczne niedocenianie własnej pracy i wkładu.
   - Trudność w obronie własnej wartości w negocjacjach finansowych i biznesowych.
   - Ryzyko zaniżania własnych stawek (wynagrodzenia, kontraktów B2B).
   - Niewidoczność "kosztów badawczych" i "pracy u podstaw", które są fundamentem, ale nie mają natychmiastowej "funkcji" dla biznesu.
   - Wypalenie wynikające z braku wewnętrznego i zewnętrznego docenienia za sam proces i wysiłek.
+
 evidence:
   - CAL-004 (Obserwacja 1): Falsyfikacja hipotezy "Binary Completion Bias" na rzecz "Asymetrycznego Kryterium Funkcyjnego".
   - Brak poczucia "zrobienia czegoś wielkiego" przy projektach takich jak ACH-015 (Paszportyzacja) czy ACH-019 (Architektura procesu życia produktu) - traktowanie ich jako oczywistych kroków, mimo że są to zaawansowane architektury biznesowe.
   - Deklaracja podmiotu: "mam empiryczne dowody na konkretne zdolności", ale historyczna trudność w przeliczeniu tego na stawkę rynkową.
   - Zewnętrzne potwierdzenie wartości: projekty tworzone "od zera" (np. paszportyzacja) okazują się post factum zgodne z najlepszymi standardami rynkowymi, co dowodzi wysokiej wartości fazy badawczej, której sam podmiot sobie nie przypisuje.
+
 root_cause_analysis:
+ 
   assumption: >
     Praca jest warta tyle, ile wynosi jej ostateczny, użyteczny rezultat dla odbiorcy.
     Proces, wysiłek i intencje to "koszty własne", którymi nie należy obciążać
     otoczenia ani nie należy za nie oczekiwać nagrody. Skoro wymagam twardych
     dowodów od rzeczywistości, wobec siebie stosuję ten sam, bezwzględny próg.
+ 
   psychometric_drivers: >
     Połączenie wysokiej Uczciwości i Pokory (HEXACO Honesty-Humility), niskiej
     motywacji statusowej (PRED-007) oraz rygorystycznej epistemologii ("fakty
@@ -58,27 +73,32 @@ root_cause_analysis:
     wyniku traktuję jako bazowy obowiązek, a nie powód do dumy. PRED-013
     (Context-Adaptive Self-Presentation) tworzy "twardą podłogę uczciwości" -
     brak inflacji w górę, co w połączeniu z asymetrią oceny generuje dryf w dół.
+ 
   reality: >
     W pracy koncepcyjnej, architektonicznej i procesowej (np. tworzenie master
     data, projektowanie ekosystemów), sam "proces" i "badanie" mają ogromną
     wartość rynkową, nawet jeśli ostateczna funkcja jest dopiero budowana.
     Zaniżanie tej fazy prowadzi do eksploatacji, utraty wartości i zniechęcenia.
+
 key_realizations:
   - Moje kryterium "zrobione" jest funkcyjne i asymetryczne.
   - Mam empiryczne dowody na swoje zdolności (Career Vault), co uzasadnia rewizję samooceny.
   - Obrona własnej wartości rynkowej nie jest "zawyżaniem" (inflacją), lecz rzetelnym wycenianiem kosztów badawczych, architektonicznych i procesowych.
   - Muszę zacząć uwzględniać u siebie to, co uwzględniam u innych: intencje, złożoność kontekstu i sam proces tworzenia.
+
 current_approach:
   - Świadoma rewizja samooceny w oparciu o zgromadzone dowody (Vault).
   - Deklarowana gotowość do obrony własnej wartości w nadchodzących negocjacjach.
   - Próba rozdzielenia "wartości funkcjonalnej" od "wartości badawczo-architektonicznej" w wycenie własnej pracy.
   - Obserwacja behawioralna (3-6 miesięcy): weryfikacja, czy deklarowana obrona wartości wystąpi w praktyce (np. podczas rozmów o wynagrodzeniu).
+
 development_goal: >
   Zinternalizować sprawiedliwe (symetryczne) kryteria oceny własnej pracy.
   Nauczyć się wyceniać i bronić wartości fazy badawczej, projektowej i
   "porządkowania chaosu", a nie tylko ostatecznego, dowiezionego rezultatu.
   Przełożyć świeżą świadomość na konkretne zachowania behawioralne w
   negocjacjach biznesowych i finansowych.
+
 interview_usage:
   strengths_questions:
     - Jak oceniasz jakość swojej pracy?
