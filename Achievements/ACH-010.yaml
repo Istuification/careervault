@@ -43,6 +43,8 @@ impact:
   - wsparcie decyzji kadrowych
   - przygotowanie skalowalnej struktury organizacyjnej
   - identyfikacja kluczowych wąskich gardeł
+  - przejście serwisu z zarządzania intuicyjnego na oparte na danych - pierwszy system KPI działu
+  - zespół ustabilizowany na 5 specjalistach i kierowniku zamiast zakładanych wcześniej ok. 8 etatów, z dobrą retencją i delegowaniem części czasu ekspertów do wsparcia R&D
 
 importance: 8
 
@@ -57,3 +59,25 @@ star_candidates:
   - organizational-design
   - scaling
   - decision-making
+
+fin:
+  - id: FIN-010
+    value_type: Cost Avoidance
+    estimated_value:
+      annual_pln: 85000-120000
+    calculation: >
+      1 uniknięty etat specjalisty serwisu
+      × orientacyjny koszt pracodawcy 7000-10000 PLN/mies.
+      × 12 miesięcy
+    assumptions:
+      - wzrost liczby obsługiwanych urządzeń ok. 20% rocznie
+      - przed projektem serwis utracił większość doświadczonego zespołu z powodu przeciążenia
+      - bez przebudowy modelu działania dalsze skalowanie wymagałoby zwiększania zatrudnienia
+      - projekt zwiększył przepustowość organizacyjną bez proporcjonalnego wzrostu liczby specjalistów
+      - wycena obejmuje wyłącznie konserwatywny scenariusz uniknięcia jednego dodatkowego etatu (argumentowalne 2-3)
+      - nie obejmuje kosztów rekrutacji, wdrożenia, rotacji ani utraconej produktywności nowych pracowników
+      - nie obejmuje wartości pracy ekspertów uwolnionej na działania R&D
+    confidence: medium
+    note: >
+      Szacunek własny metodą Cost Avoidance;
+      nie są to dane księgowe firmy.
