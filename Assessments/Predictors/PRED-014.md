@@ -1,18 +1,13 @@
 ---
 id: PRED-014
-
 name: Supportive Facilitation Orientation
-
 status: validated
-
-confidence: high
-
+confidence: very high
 created_from:
 - Gallup
 - Schwartz
 - VIA
 - Wywiad jakościowy
-
 supporting_stories:
 - STORY-001
 - STORY-002
@@ -23,40 +18,33 @@ supporting_stories:
 - STORY-006
 - STORY-008
 - STORY-007
-
+- STORY-011
 conflicting_stories: []
-
 related_hypotheses: []
-
 related_calibrations:
 - CAL-001
 - CAL-002
 - CAL-003
-
-last_updated: 2026-06-25
-
-version: 1.3
-
+- CAL-004
+last_updated: 2026-07-07
+version: 1.4
 ---
 
 # Opis
-
 Badany wykazuje silną tendencję do zwiększania skuteczności działania innych ludzi poprzez usuwanie przeszkód, porządkowanie informacji, ułatwianie współpracy oraz wspieranie procesu podejmowania decyzji.
-
 Głównym źródłem satysfakcji nie wydaje się bezpośrednie zarządzanie ludźmi, kontrolowanie ich działań ani zajmowanie formalnej pozycji kierowniczej.
-
 Znacznie bardziej prawdopodobna jest orientacja na tworzenie warunków umożliwiających innym skuteczniejsze i bardziej samodzielne działanie.
 
 Predyktor opisuje mechanizm **enablementu** — zwiększania zdolności działania innych ludzi poprzez facylitację, koordynację, porządkowanie informacji oraz usuwanie barier.
 
 Kalibracja 003 doprecyzowała, że mechanizm ten kończy się w momencie, gdy druga osoba odzyskuje zdolność samodzielnego działania. Sam Predictor nie opisuje przejmowania odpowiedzialności za rezultat ani zastępowania właściciela problemu.
 
+Kalibracja 004 wzmocniła predyktor o **strategiczny wariant enablementu**: projektowanie sytuacji, w których kompetencje innej osoby stają się widoczne dla decydenta, połączone z **celową rezygnacją z własnej widoczności** na rzecz rozwoju współpracownika.
+
 ---
 
 # Źródła
-
 ## Evidence Sources
-
 - Gallup (Developer)
 - Gallup (Harmony)
 - Gallup (Relator)
@@ -67,7 +55,6 @@ Kalibracja 003 doprecyzowała, że mechanizm ten kończy się w momencie, gdy dr
 - VIA (Social Intelligence)
 
 ## Analiza Jakościowa
-
 - Badany opisuje swoją rolę zawodową jako wspieranie i facylitowanie.
 - Widoczna jest tendencja do pomagania innym w rozwiązywaniu problemów.
 - W rozmowach częściej pojawia się język współpracy niż kontroli.
@@ -78,28 +65,23 @@ Kalibracja 003 doprecyzowała, że mechanizm ten kończy się w momencie, gdy dr
 ---
 
 # Mechanizm
-
 Najbardziej prawdopodobny przebieg działania wygląda następująco:
-
 1. Zidentyfikuj przeszkodę utrudniającą skuteczne działanie.
 2. Zrozum czego potrzebują zaangażowane osoby.
 3. Uporządkuj informacje, komunikację lub proces.
 4. Usuń bariery ograniczające skuteczność.
 5. Przekaż możliwość dalszego działania właścicielowi.
 6. Wycofaj się z roli centralnego wykonawcy.
+7. **(Wariant strategiczny z CAL-004):** Zaprojektuj sytuację, w której kompetencje współpracownika stają się widoczne dla decydenta, celowo rezygnując z własnej widoczności.
 
 Mechanizm zakłada, że wartość powstaje poprzez zwiększenie zdolności działania innych ludzi, a nie poprzez wykonywanie pracy za nich.
-
 Jeżeli druga osoba odzyskuje sprawczość, Predictor osiągnął swój cel.
-
 Jeżeli badany przejmuje odpowiedzialność za wynik mimo istnienia właściciela, zachowanie nie jest już wyjaśniane przez ten Predictor.
 
 ---
 
 # Zachowania Przewidywane
-
 Predyktor przewiduje, że badany będzie:
-
 - pomagał innym rozwiązywać problemy,
 - porządkował informacje dla zespołu,
 - łączył ludzi z odpowiednimi zasobami lub wiedzą,
@@ -109,14 +91,14 @@ Predyktor przewiduje, że badany będzie:
 - budował warunki umożliwiające samodzielne działanie innych,
 - działał jako nieformalny konsultant,
 - działał jako facylitator,
-- działał jako mentor lub coach, jeżeli zwiększa to samodzielność drugiej osoby.
+- działał jako mentor lub coach, jeżeli zwiększa to samodzielność drugiej osoby,
+- **projektował zadania eksponujące kompetencje współpracowników przed decydentami**,
+- **rezygnował z własnej widoczności, gdy służy to rozwojowi innej osoby lub długoterminowemu dobru systemu**.
 
 ---
 
 # Zachowania Nieobjęte Predyktorem
-
 Poniższe zachowania mogą współwystępować z tym Predictorem, ale nie są przez niego wyjaśniane:
-
 - przejmowanie odpowiedzialności za problem bez formalnego mandatu,
 - absorbowanie odpowiedzialności za rezultat,
 - pełnienie roli nieformalnego właściciela problemu,
@@ -129,104 +111,90 @@ Jeżeli takie zachowania występują regularnie, powinny być wyjaśniane przez 
 ---
 
 # Zachowania Przeczące
-
 Predyktor zostałby osłabiony przez regularne występowanie zachowań takich jak:
-
 - świadome utrudnianie współpracy,
 - gromadzenie wiedzy wyłącznie dla własnej przewagi,
 - unikanie wspierania innych ludzi,
 - preferowanie rywalizacji nad współpracę,
 - świadome tworzenie zależności od własnej wiedzy lub pozycji,
-- systematyczne odbieranie ludziom sprawczości zamiast jej wzmacniania.
+- systematyczne odbieranie ludziom sprawczości zamiast jej wzmacniania,
+- **przechwytywanie zasług i widoczności współpracowników**.
 
 ---
 
 # Dowody Potwierdzające
-
 Matryca Predictor ↔ Story wskazuje następujące Stories wspierające ten Predictor:
-
 - STORY-001 — Transformacja organizacji pracy działu Instal/Solar (3; silne wsparcie)
 - STORY-002 — Restrukturyzacja i stabilizacja działu serwisu (3; silne wsparcie)
 - STORY-005 — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej (3; silne wsparcie)
 - STORY-009 — Budowa zespołu serwisowego po kryzysie kadrowym (3; silne wsparcie)
-- STORY-003 — Projekt systemu gwarancyjnego (2)
-- STORY-004 — Projektowanie modelu serwisu (2)
-- STORY-006 — Wprowadzenie produktu PV (2)
-- STORY-008 — Zatrzymanie niekontrolowanego skalowania PV (2)
-- STORY-007 — Standaryzacja ofertowania (1)
+- STORY-003 — Projekt systemu gwarancyjnego (2; umiarkowane wsparcie)
+- STORY-004 — Projektowanie modelu serwisu (2; umiarkowane wsparcie)
+- STORY-006 — Wprowadzenie produktu PV (2; umiarkowane wsparcie)
+- STORY-008 — Zatrzymanie niekontrolowanego skalowania PV (2; umiarkowane wsparcie)
+- STORY-007 — Standaryzacja ofertowania (1; słaby sygnał pomocniczy)
+- STORY-011 — Stabilizacja kooperacji OEM i przekazanie obszaru nowemu PM-owi (2; umiarkowane wsparcie)
+
+## Nowy dowód behawioralny (CAL-004, Obserwacja 10)
+- **Przypadek asystentki PM:** Badany świadomie zaprojektował zadanie w taki sposób, aby kompetencje asystentki PM stały się widoczne dla decydenta (właściciela firmy). Skutkiem było jej awans na Junior PM po 3 miesiącach. Zdarzenie łączy w sobie trzy mechanizmy w jednym akcie:
+  - PRED-014 (strategic enablement),
+  - PRED-007 (instrumentalna rezygnacja z uznania),
+  - BP-009 (Ucz, Dopóki Inni Nie Potrafią Działać Samodzielnie).
 
 ---
 
 # Dowody Przeczące
-
 Brak.
-
 Kalibracja 003 nie osłabiła Predictora.
-
 Przeciwnie — doprecyzowała jego granice interpretacyjne.
+Kalibracja 004 wzmocniła Predictor silnym dowodem behawioralnym.
 
 ---
 
 # Historia Kalibracji
-
-## CAL-001
-
+## CAL-001 (2026-06-22)
 Zweryfikowano mapowanie Predictor ↔ Story.
-
-## CAL-002
-
+## CAL-002 (2026-06-23)
 Oddzielono facylitację od ownershipu.
-
-## CAL-003
-
+## CAL-003 (2026-06-25)
 Znacząco doprecyzowano granicę między:
-
 - pomaganiem,
 - coachingiem,
 - enablementem,
 - a przejęciem odpowiedzialności.
-
 Potwierdzono, że Predictor opisuje zwiększanie sprawczości innych ludzi.
-
 Nie opisuje sytuacji, w której badany sam staje się właścicielem problemu.
+## CAL-004 (2026-07-07)
+**Predyktor wzmocniony nowym dowodem behawioralnym:** przypadek asystentki PM jako przykład strategicznego enablementu połączonego z rezygnacją z własnej widoczności. Podniesiono confidence do `very high`.
 
 ---
 
 # Ocena
-
 ## Pewność
-
-Wysoka
-
-## Siła Źródeł Psychometrycznych
-
-Średnia
-
-## Siła Źródeł Behawioralnych
-
 Bardzo wysoka
-
+## Siła Źródeł Psychometrycznych
+Średnia
+## Siła Źródeł Behawioralnych
+Bardzo wysoka
 ## Poziom Walidacji
-
 Bardzo wysoki
 
 CAL-003 nie zmieniła istoty Predictora.
-
 Doprecyzowała jedynie jego granice oraz zwiększyła rozdzielczość pomiędzy facylitacją a internalizacją odpowiedzialności.
+CAL-004 dodatkowo wzmocniła Predictor silnym dowodem behawioralnym wariantu strategicznego enablementu.
 
 ---
 
 # Notatki
-
 Najbardziej prawdopodobny wzorzec działania można opisać jako:
-
 1. Zidentyfikuj przeszkodę.
 2. Ułatw innym jej usunięcie.
 3. Zwiększ ich zdolność działania.
 4. Oddaj im sprawczość.
 5. Wycofaj się z roli centralnego wykonawcy.
+6. **W wariancie strategicznym: Zaprojektuj sytuację, która uwidoczni kompetencje drugiej osoby przed decydentem.**
 
 Najważniejszym odkryciem CAL-003 było to, że pomoc kończy się tam, gdzie druga osoba odzyskuje możliwość samodzielnego działania.
-
 Jeżeli badany przejmuje odpowiedzialność za rezultat mimo istnienia właściciela, nie jest to już zachowanie wyjaśniane przez ten Predictor, lecz przez odrębny mechanizm opisany w Behavioral Patterns.
-```
+
+Kluczowym odkryciem CAL-004 jest to, że enablement nie zawsze jest reaktywny (usuwanie przeszkód) - bywa również **strategiczny i proaktywny**: badany aktywnie projektuje sytuacje, w których inni mogą zabłysnąć, kosztem własnej widoczności. Jest to zachowanie silnie powiązane z PRED-007 (Low Status Motivation - instrumentalna rezygnacja z uznania) oraz z BP-013 (Modelowanie Ludzi Przez Testy Zachowań - projektowanie zadań eksponujących).
