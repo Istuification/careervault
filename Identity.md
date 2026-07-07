@@ -183,7 +183,7 @@ Powiązane obszary Skills:
 Product Management, Business Analysis & Requirements Engineering, Operations Management, Knowledge Management, Business Systems, Technical Communication.
 
 Potwierdzenie:
-ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014, ACH-015, ACH-016, ACH-018  
+ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014, ACH-015, ACH-016, ACH-018, ACH-019, ACH-020  
 STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009, STORY-010
 
 ### Najsilniejsze Obszary Postawy
@@ -200,7 +200,7 @@ Powiązane obszary Skills:
 Operations Management, Knowledge Management, Technical Communication, Business Systems.
 
 Potwierdzenie:
-ACH-001, ACH-003, ACH-005, ACH-012, ACH-017  
+ACH-001, ACH-003, ACH-005, ACH-012, ACH-017, ACH-021  
 STORY-002, STORY-003, STORY-004, STORY-005, STORY-009, STORY-011
 
 ### Najbardziej Charakterystyczne Wzorce
