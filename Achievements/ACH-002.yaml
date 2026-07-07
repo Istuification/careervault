@@ -1,6 +1,6 @@
 id: ACH-002
 
-title: Wdrożenie workflow operacyjnych w Bitrix24
+title: Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji
 
 company: KIPI
 
@@ -12,41 +12,47 @@ roles:
   - installation-coordinator
 
 skills:
-  - bitrix24
+  - self-directed-learning
   - crm
   - workflow-design
   - automation
-  - process-management
-
-themes:
-  - digitalization
-  - automation
-  - process-design
   - systems-thinking
 
+themes:
+  - learning-agility
+  - digitalization
+  - automation
+  - self-development
+
 situation: >
-  Rosnąca liczba realizacji wymagała odejścia od
-  zarządzania zadaniami przez komunikację ad-hoc.
+  Firma wdrażała Bitrix24 bez działu IT, bez wsparcia wdrożeniowego
+  i bez nikogo, kto znałby platformę. Miałem wykształcenie techniczne
+  (elektryk), zero doświadczenia z systemami klasy enterprise
+  i rosnący dział, który potrzebował narzędzia natychmiast.
 
 actions:
-  - wdrożenie CRM Bitrix24
-  - budowa lejków procesowych
-  - stworzenie szablonów zadań
-  - wdrożenie Smart Process Automation (SPA)
-  - automatyzacja przepływu informacji
-  - wdrożenie formularzy komunikacyjnych
+  - samodzielna nauka platformy od zera - dokumentacja, eksperymenty na żywym organizmie, iteracje na własnych błędach
+  - stopniowe przechodzenie od podstawowych funkcji CRM do projektowania lejków procesowych i szablonów zadań
+  - opanowanie i wdrożenie Smart Process Automation (SPA) - automatyzacji przepływu informacji między procesami
+  - projektowanie formularzy komunikacyjnych i integracji między obszarami
+  - budowanie kompetencji do poziomu, w którym inni użytkownicy zaczęli zgłaszać się do mnie po pomoc
 
 impact:
-  - standaryzacja procesów operacyjnych
-  - zwiększenie przejrzystości realizacji
-  - ograniczenie ręcznego zarządzania informacją
-  - stworzenie podstaw do dalszego skalowania działu
+  - w pełni samodzielne dojście od zera do projektowania automatyzacji klasy enterprise - bez szkoleń, wdrożeniowca i zaplecza IT
+  - kompetencja stała się fundamentem transformacji działu (ACH-001), a docelowo administracji ekosystemu systemów całej organizacji (ACH-013)
+  - wzorzec samodzielnego opanowywania systemów powtórzony później przy kolejnych technologiach (BPMN, VOIP, ERP, narzędzia AI)
+  - dowód, że brak formalnego backgroundu IT nie ogranicza zdolności do budowy rozwiązań systemowych
 
 importance: 9
 
 evidence:
-  - CRM
-  - SPA
-  - workflow
+  - lejki procesowe, szablony zadań, automatyzacje SPA
   - formularze CRM
-  - automatyzacje
+  - rola pierwszego kontaktu dla użytkowników platformy
+
+notes: >
+  Granice rekordu: ACH-001 opisuje transformację biznesową działu
+  zrealizowaną na tej platformie; ACH-013 opisuje późniejszą
+  administrację ekosystemu systemów organizacji. Ten rekord dokumentuje
+  samą drogę nauki - zdolność samodzielnego opanowania złożonego
+  systemu informatycznego od zera.
