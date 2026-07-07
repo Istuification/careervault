@@ -47,7 +47,8 @@ impact:
   - utworzenie około 120 procedur diagnostycznych
   - stworzenie centralnej bazy wiedzy serwisowej
   - standaryzacja procesu diagnostyki
-  - usprawnienie onboardingu nowych pracowników
+  - skrócenie czasu osiągnięcia samodzielności operacyjnej nowych serwisantów z 8-9 do 2-3 miesięcy
+  - w horyzoncie 6-9 miesięcy nowa osoba osiąga poziom ekspercki - przed wdrożeniem w porównywalnym czasie powstawał dopiero samodzielny junior
   - ograniczenie zależności od wiedzy pojedynczych ekspertów
   - stworzenie skalowalnego systemu transferu wiedzy
 
@@ -73,3 +74,25 @@ star_candidates:
   - process-design
   - documentation
   - organizational-scaling
+
+fin:
+  - id: FIN-003
+    value_type: Capacity Release (Productivity Recovery)
+    estimated_value:
+      total_pln: 140000-180000
+    calculation: >
+      skrócenie czasu do samodzielności z 8-9 do 2-3 miesięcy
+      = 5,5-6,5 miesiąca odzyskanej produktywności na osobę;
+      konserwatywnie 5 miesięcy × 4 skutecznie wdrożone osoby
+      = 20 osobomiesięcy × 7000-9000 PLN kosztu etatu
+    assumptions:
+      - przed wdrożeniem samodzielność operacyjna wymagała 8-9 miesięcy
+      - po wdrożeniu ok. 2-3 miesięcy (dla osób z odpowiednimi kompetencjami wejściowymi)
+      - 5 osób wdrożonych, 4 pozostały w organizacji - do wyceny liczone tylko 4
+      - konserwatywnie przyjęto 5 miesięcy odzyskanej produktywności na osobę
+      - wartość łączna dla wdrożonej kohorty, nie wartość roczna
+      - nie obejmuje kosztów rekrutacji, rotacji, mentoringu ani wartości pracy ekspertów uwolnionej na R&D
+    confidence: medium-high
+    note: >
+      Szacunek własny metodą Productivity Recovery;
+      nie są to dane księgowe firmy.
