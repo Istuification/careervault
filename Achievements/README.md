@@ -201,6 +201,7 @@ importance:
 category:
 evidence:
 metrics:
+fin:
 related_tools:
 star_candidates:
 notes:
@@ -407,21 +408,7 @@ category: leadership
 ```yaml
 category: product
 ```
-### fin (opcjonalne)
 
-Lista analiz finansowych rekordu. Każda analiza zawiera: `id` (FIN-XXX),
-`value_type` (Capacity Release / Cost Avoidance / Reduced Lead Time /
-Strategic Enablement), wycenę (`estimated_value`, `quantified` lub
-`unit_value_pln`), `calculation` (jawny wzór), `assumptions` (wszystkie
-założenia), `confidence` oraz obowiązkową notę: "Szacunek własny metodą X;
-nie są to dane księgowe firmy". Wartości podajemy w widełkach,
-zaokrąglając konserwatywnie. Nie sumujemy nakładających się oszczędności.
-
-### org (opcjonalne)
-
-Sekcja opisująca zmianę zdolności organizacji: `operational` / `strategic`
-lub `capability: from -> to`. Stosowana tam, gdzie zmiana modelu działania
-jest wartością samą w sobie, niezależną od wyceny finansowej.
 ---
 
 ### evidence
@@ -467,6 +454,53 @@ metrics:
 
 ---
 
+### fin
+
+Lista analiz finansowych rekordu.
+
+Zasada nadrzędna: blok `fin` występuje **wyłącznie w Achievementach**
+(single source of truth). Stories i pozostałe moduły odsyłają do niego
+identyfikatorem (np. "metodologia: ACH-001, blok fin / FIN-001A"),
+nigdy nie duplikują wyceny.
+
+Każda analiza zawiera:
+
+* `id` — identyfikator w formacie FIN-XXX (litera przy wielu analizach
+  jednego rekordu, np. FIN-001A, FIN-001B),
+* `value_type` — typ wartości: Capacity Release / Cost Avoidance /
+  Reduced Lead Time / Strategic Enablement,
+* wycenę — `estimated_value`, `quantified` lub `unit_value_pln`,
+* `calculation` — jawny wzór,
+* `assumptions` — wszystkie przyjęte założenia,
+* `confidence` — poziom pewności,
+* `note` — obowiązkową notę: "Szacunek własny metodą X;
+  nie są to dane księgowe firmy".
+
+Zasady rzetelności: wartości w widełkach, zaokrąglanie konserwatywne
+(w dół), zakaz sumowania nakładających się oszczędności, brakujące dane
+wejściowe oznaczane jawnie zamiast zgadywane.
+
+Przykład:
+
+```yaml
+fin:
+  - id: FIN-001A
+    value_type: Capacity Release
+    estimated_value:
+      annual_pln: 100000-160000
+    calculation: >
+      (11 h - 1,5 h) × 18-20 montaży/mies. × 50-70 PLN/h × 12 mies.
+    assumptions:
+      - czas przed wdrożeniem ok. 11 h, po wdrożeniu ok. 1,5 h
+      - konserwatywny koszt organizacyjny pracy 50-70 PLN/h
+    confidence: medium-high
+    note: >
+      Szacunek własny metodą Time Savings × Capacity Cost;
+      nie są to dane księgowe firmy.
+```
+
+---
+
 ### related_tools
 
 Narzędzia wykorzystane podczas realizacji.
@@ -502,8 +536,6 @@ star_candidates:
 Dodatkowe informacje pomocnicze.
 
 Pole nie powinno zawierać kluczowych danych, które powinny znaleźć się w polach głównych.
-
----
 
 ---
 
@@ -557,4 +589,3 @@ Achievement nie opisuje tego, za co odpowiadałem.
 Achievement opisuje to, co udało mi się osiągnąć.
 
 Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno stanowić podstawy do budowania kompetencji, narracji ani wniosków rozwojowych.
-
