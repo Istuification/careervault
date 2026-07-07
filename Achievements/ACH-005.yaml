@@ -50,6 +50,8 @@ impact:
   - automatyzacja obsługi zgłoszeń
   - ujednolicenie dokumentacji gwarancyjnej
   - wdrożenie procesu u partnerów handlowych
+  - skrócenie średniego czasu rozwiązania problemu klienta o ok. 3 dni dzięki rozdzieleniu naprawy od rozliczenia (process decoupling)
+  - adopcja obowiązkowego systemu przez ok. 300 instalatorów i 3 producentów - instalatorzy, którzy wcześniej omijali system, sami chcą z niego korzystać
 
 importance: 10
 
@@ -68,3 +70,27 @@ star_candidates:
   - process-design
   - product-management
   - change-management
+
+fin:
+  - id: FIN-005
+    value_type:
+      - Capacity Release
+      - Reduced Lead Time
+      - Strategic Enablement
+    quantified:
+      annual_capacity_pln: 3000-5000
+      lead_time: średni czas rozwiązania zgłoszenia klienta krótszy o ok. 3 dni
+      strategic_effect: >
+        obowiązkowy system przyjęty przez ok. 300 instalatorów
+        i 3 producentów; pełna widoczność zgłoszeń gwarancyjnych;
+        eliminacja zależności między logistyką a obsługą klienta
+    calculation: >
+      20 zgłoszeń/mies. × ok. 10 przypadków wymagających kontaktu
+      × 30 min = ok. 5 h/mies. × 50-70 PLN/h × 12 mies.
+    confidence:
+      capacity: medium
+      lead_time: high
+      strategic_effect: high
+    note: >
+      Szacunek własny metodą Time Saving × Labour Cost;
+      nie są to dane księgowe firmy.
