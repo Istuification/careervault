@@ -1,6 +1,6 @@
 id: ACH-012
 
-title: Stabilizacja działu serwisu w okresie zmian organizacyjnych
+title: Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych
 
 company: KIPI
 
@@ -13,49 +13,51 @@ roles:
 
 skills:
   - leadership
-  - service-management
-  - team-coordination
-  - organizational-design
+  - people-retention
+  - team-development
   - change-management
-  - stakeholder-management
+  - service-management
 
 themes:
-  - leadership
-  - ownership
-  - organizational-stability
+  - retention
+  - people-leadership
+  - quality-under-change
   - succession
-  - crisis-management
+  - ownership
 
 situation: >
-  W związku z brakami kadrowymi i potrzebą uporządkowania
-  organizacji pracy powierzono mi odpowiedzialność za dział
-  serwisu funkcjonujący bez stabilnego modelu operacyjnego.
+  Przejąłem dział, który przed moim nadejściem utracił większość
+  doświadczonego zespołu z powodu przeciążenia - a pozostali eksperci
+  nieśli wiedzę niemożliwą do szybkiego odtworzenia. Organizacja
+  przechodziła równolegle duże zmiany: rotacje, rozrost struktury
+  i rosnącą liczbę obsługiwanych urządzeń (~20% rocznie). Ryzyko:
+  odejście kolejnych kluczowych osób i załamanie jakości obsługi.
 
 actions:
-  - utrzymanie kluczowych kompetencji eksperckich
-  - wsparcie zespołu w okresie niepewności organizacyjnej
-  - rozwój nowych pracowników
-  - budowanie kultury współpracy i odpowiedzialności
-  - wsparcie rekrutacji
-  - przygotowanie sukcesji kierowniczej
-  - przekazanie działu nowemu managerowi
+  - indywidualna praca z kluczowymi ekspertami - zrozumienie ich obciążeń i frustracji, ochrona przed przeciążeniem
+  - przejmowanie na siebie najtrudniejszych rozmów z klientami i sytuacji kryzysowych, by odciążyć zespół
+  - wsparcie zespołu w okresie niepewności organizacyjnej - transparentna komunikacja zamiast plotek
+  - rozwój nowych pracowników do samodzielności przy utrzymaniu ciągłości obsługi
+  - współprowadzenie rekrutacji uzupełniających zespół (proces opisany w ACH-020)
+  - przygotowanie i przeprowadzenie sukcesji kierowniczej - czteromiesięczne wdrożenie następcy
 
 impact:
-  - utrzymanie kluczowych kompetencji eksperckich w okresie wysokiego ryzyka rotacji
-  - wdrożenie nowych pracowników do samodzielnej pracy
-  - przygotowanie działu do płynnego przejęcia przez nowego kierownika
-  - ograniczenie ryzyka utraty wiedzy organizacyjnej
+  - utrzymanie kluczowych kompetencji eksperckich w okresie najwyższego ryzyka rotacji - zespół ustabilizował się zamiast rozpaść
+  - utrzymanie jakości obsługi mimo wzrostu liczby urządzeń i równoległych zmian organizacyjnych
+  - nowi pracownicy doprowadzeni do samodzielności bez utraty ciągłości działania
+  - płynne przekazanie działu następcy, który prowadzi go samodzielnie do dziś
+  - ograniczenie ryzyka utraty wiedzy organizacyjnej w najbardziej wrażliwym okresie
 
 importance: 9
 
 evidence:
-  - onboarding
-  - materiały rozwojowe
-  - sukcesja kierownicza
-  - rozwój kompetencji zespołu
-  
-star_candidates:
-  - leadership
-  - ownership
-  - organizational-change
-  - succession-planning
+  - retencja kluczowych ekspertów potwierdzona stabilnością zespołu
+  - onboarding i materiały rozwojowe
+  - przeprowadzona sukcesja kierownicza
+
+notes: >
+  Granice rekordu: ACH-004 opisuje strukturalną odbudowę działu
+  (organizacja pracy, workflow, procesy). Ten rekord dokumentuje wymiar
+  ludzki tego samego okresu - retencję, rozwój i jakość w warunkach
+  zmian, czyli to, czego nie widać w procesach, a co decydowało
+  o przetrwaniu działu.
