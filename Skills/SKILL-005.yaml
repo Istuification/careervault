@@ -4,48 +4,48 @@ name: Leadership
 
 category: Management
 
-importance: 10
+importance: 8
+# UWAGA: obniżone z 10. Wg definicji importance (jak bardzo kompetencja
+# definiuje profil) przywództwo jest u mnie bardzo ważną kompetencją
+# wspierającą, nie rdzeniową - profil definiują systemy, procesy i wiedza.
+# Jeśli się nie zgadzasz, przywróć 10 - pozostałe zmiany są niezależne.
 
 level: Advanced
 
 summary: >
-  Przejmowanie odpowiedzialności za zespoły,
-  projekty i obszary organizacyjne wymagające
-  uporządkowania, stabilizacji lub rozwoju.
-  Obejmuje zarządzanie zmianą, koordynację ludzi
-  oraz budowanie środowiska umożliwiającego
-  skuteczną realizację celów.
+  Prowadzenie ludzi i zespołów: przejmowanie odpowiedzialności za
+  obszary wymagające stabilizacji, rozwijanie pracowników do
+  samodzielności, ochrona zespołu w okresach zmian oraz planowanie
+  i przeprowadzanie sukcesji. Przywództwo budowane na wiedzy
+  i zaufaniu, nie na formalnej władzy.
 
 capabilities:
   - team-coordination
   - delegation
-  - organizational-development
-  - decision-making
   - mentoring
-  - conflict-resolution
-  - change-leadership
-  - stakeholder-alignment
-  - leadership-without-authority
   - team-development
+  - people-retention
+  - succession-planning
+  - conflict-resolution
+  - decision-making
+  - leadership-without-authority
 
 methods:
   - Coaching
   - Feedback-Based Development
-  - Change Management
   - Delegation and Empowerment
 
 tools:
   - Bitrix24
   - Wiki.js
-  - BPMN 2.0
 
 evidence:
   - ACH-001
   - ACH-004
-  - ACH-005
   - ACH-006
   - ACH-010
   - ACH-012
+  - ACH-020
   - ACH-P001
   - ACH-P002
   - ACH-P003
@@ -53,22 +53,3 @@ evidence:
 experience:
   first_used: 2020
   years: 5
-
-career_relevance:
-    product_manager: 9
-    operations_manager: 10
-    process_manager: 8
-    service_manager: 10
-
-keywords:
-  - leadership
-  - team management
-  - organizational leadership
-  - people management
-  - coordination
-  - change management
-
-related_skills:
-  - SKILL-002
-  - SKILL-011
-  - SKILL-012
