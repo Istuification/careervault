@@ -47,8 +47,8 @@ actions:
 impact:
   - organizacja montażu skrócona z 1-2 dni do 2-3 godzin
   - redukcja błędów operacyjnych o około 70%
-  - skalowanie działu do około 30 montaży miesięcznie
-  - dział w szczycie liczył 12 osób (5 technicznych - pod moją opieką, w tym ja, 1 administracyjna, 5 handlowców, kierownik handlowy, właściciel)
+  - wzrost przepustowości procesu z ok. 8 do ok. 20 montaży miesięcznie (w piku ok. 30) bez proporcjonalnego zwiększania nakładów organizacyjnych
+  - dział w szczycie liczył 12 osób (5 technicznych, 1 administracyjna, 5 handlowców, kierownik handlowy, właściciel)
   - systemy działu (rozliczenia, standardy, cennik, protokoły) działają do dziś - ponad 5 lat od powstania, jedynie z naturalnymi korektami cen
   - po moim przejściu do serwisu KIPI (2023) zachowany nadzór nad zmianami oferty działu
   - zaplecze magazynowe i dane w ERP udokumentowane osobno w ACH-009
@@ -60,3 +60,34 @@ evidence:
   - protokoły rozpoczęcia i zakończenia prac montażowych
   - system rozliczeń z księgowością i ewidencje premii
   - cennik serwisowy, regulamin serwisu, standardy montaży
+
+fin:
+  - id: FIN-001A
+    value_type: Capacity Release (uwolniona przepustowość)
+    estimated_value:
+      annual_pln: 100000-160000
+    calculation: >
+      (11 h - 1,5 h) × 18-20 montaży/mies. × 50-70 PLN/h × 12 mies.
+    assumptions:
+      - średni czas organizacji montażu przed wdrożeniem ok. 11 h (ustalenia 6 h, planowanie 0,5 h, rozpisanie części 1,5 h, zamówienia 1 h, rozkładanie 1 h, kompletowanie 1 h)
+      - po wdrożeniu ok. 1,5 h (konserwatywnie zaokrąglone z ok. 1 h 10 min)
+      - średnio 18-20 montaży miesięcznie (pik 30 nieuwzględniony w wycenie)
+      - konserwatywny pełny koszt organizacyjny pracy 50-70 PLN/h
+      - wycena obejmuje wyłącznie uwolnioną przepustowość administracyjną
+      - nie obejmuje dodatkowego przychodu ze wzrostu liczby montaży ani oszczędności z redukcji błędów (FIN-001B)
+    confidence: medium-high
+    note: >
+      Szacunek własny metodą Time Savings × Capacity Cost;
+      nie są to dane księgowe firmy.
+  - id: FIN-001B
+    value_type: Cost Avoidance (redukcja błędów operacyjnych o ~70%)
+    unit_value_pln: >
+      1500-2500 za typowy błąd wymagający powrotu ekipy;
+      skrajne przypadki 4000-6000
+    calculation: >
+      dniówka 4-osobowej ekipy (4 × 8 h × 50-70 PLN/h)
+      + dojazd + części (setki PLN)
+    annualization: do uzupełnienia  # DO WERYFIKACJI: liczba błędów miesięcznie przed zmianą
+    confidence: medium
+    note: >
+      Szacunek własny kosztu jednostkowego; nie są to dane księgowe firmy.
