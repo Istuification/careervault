@@ -161,6 +161,11 @@ results:
     - BPMN został później zaadaptowany do opisu innych procesów organizacyjnych.
     - Inni managerowie korzystali z wypracowanych standardów i szkoleń.
 
+org:
+  capability:
+    from: organizacja zależna od ludzi (people-dependent) - wiedza w głowach ekspertów
+    to: organizacja zależna od systemu (system-dependent) - wiedza w procedurach, system produkcji ekspertów
+
 evidence:
   achievement_ids:
     - ACH-003
@@ -197,6 +202,7 @@ interview_angles:
   - Continuous Improvement
   - Knowledge Engineering
   - Enablement
+  - System produkcji ekspertów / knowledge scalability
 
 cv_bullets:
   - Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN i Wiki.js obejmujący 120 schematów diagnostycznych.
