@@ -330,5 +330,6 @@ Pomaga AI dopasować go do pytań o:
 * DEV-004 — Commercial Discovery
 * DEV-005 — Assertiveness and Difficult Conversations
 * DEV-006 — Boundary Management
+* DEV-007 - Asymmetric Self-Valuation
 
 Lista może być rozwijana, ale tylko wtedy, gdy pojawi się nowy, powtarzalny wzorzec potwierdzony w Career Vault.
