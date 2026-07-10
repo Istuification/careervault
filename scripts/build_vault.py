@@ -495,7 +495,7 @@ __HEAD_META__
   body{ margin:0; background:var(--paper); color:var(--ink);
         font-family:"IBM Plex Sans", system-ui, sans-serif; line-height:1.55;
         -webkit-font-smoothing: antialiased; }
-  .wrap{ max-width:880px; margin:0 auto; padding:4.5rem 1.5rem 3rem; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:4.5rem 2rem 3rem; }
   .eyebrow{ font-family:"JetBrains Mono", monospace; font-size:0.78rem;
             letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-soft);
             margin:0 0 1.1rem; }
@@ -506,8 +506,7 @@ __HEAD_META__
       font-size:clamp(2rem, 5vw, 3rem); line-height:1.12; letter-spacing:-0.01em; margin:0 0 1.1rem; }
   .lede{ font-size:1.05rem; color:var(--ink-soft); max-width:60ch; margin:0 0 2.75rem; }
   .lede strong{ color:var(--ink); font-weight:600; }
-  .paths{ display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; margin-bottom:2rem; }
-  @media (max-width:680px){ .paths{ grid-template-columns:1fr; } }
+  .paths{ display:grid; grid-template-columns:1fr; gap:1.5rem; margin-bottom:2rem; }
   .card{ border:1px solid var(--line); border-radius:var(--radius); background:var(--card);
          display:flex; flex-direction:column; overflow:hidden; }
   .card-tab{ display:flex; align-items:center; gap:0.55rem; padding:0.7rem 1.1rem;
