@@ -70,11 +70,11 @@ SITE_URL = "https://istuification.github.io/careervault"
 #   "noindex, follow"  -> strona NIE pojawia sie w Google, ale linki sa sledzone;
 #                         boty AI i osoby z linkiem nadal maja pelny dostep.
 #   "index, follow"    -> normalna indeksacja w wyszukiwarkach.
-ROBOTS_DIRECTIVE = "noindex, follow"
+ROBOTS_DIRECTIVE = "index, follow"
 
 # Czy generowac sitemap.xml i wskazywac ja w robots.txt.
 # Przy noindex trzymaj False — sitemapa zaprasza do indeksacji, ktorej nie chcesz.
-GENERATE_SITEMAP = False
+GENERATE_SITEMAP = True
 
 # Kod weryfikacyjny z Google Search Console (Ustawienia -> Weryfikacja -> HTML tag).
 # Wklej tu sam ciag z atrybutu content="...". Pusty = tag nie zostanie dodany.
@@ -714,29 +714,30 @@ def build_llms_txt_minimal():
 
 
 def build_sitemap_minimal():
-    """sitemap.xml z jednym URL-em (strona glowna). Uzywane tylko gdy GENERATE_SITEMAP."""
+    """sitemap.xml ze strona glowna i plikiem txt."""
     today = datetime.date.today().isoformat()
-    loc = SITE_URL + "/"
+    urls = [
+        SITE_URL + "/",
+        f"{SITE_URL}/{VAULT_TXT_NAME}"
+    ]
+    
+    url_entries = []
+    for loc in urls:
+        url_entries.append(
+            f'  <url>\n    <loc>{html.escape(loc, quote=True)}</loc>\n'
+            f'    <lastmod>{today}</lastmod>\n  </url>'
+        )
+        
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f'  <url>\n    <loc>{html.escape(loc, quote=True)}</loc>\n'
-        f'    <lastmod>{today}</lastmod>\n  </url>\n'
+        + "\n".join(url_entries) + '\n'
         '</urlset>\n'
     )
 
 
 def build_robots():
     """robots.txt: przepuszcza wszystkie boty. Sitemape podaje tylko gdy indeksujemy."""
-    lines = ["User-agent: *", "Allow: /"]
-    if GENERATE_SITEMAP:
-        lines += ["", f"Sitemap: {SITE_URL}/sitemap.xml"]
-    return "\n".join(lines) + "\n"
-
-
-def build_robots():
-    """robots.txt: przepuszcza wszystkie boty (by mogly przeczytac noindex
-    i by asystenci AI mieli dostep). Sitemape podaje tylko gdy indeksujemy."""
     lines = ["User-agent: *", "Allow: /"]
     if GENERATE_SITEMAP:
         lines += ["", f"Sitemap: {SITE_URL}/sitemap.xml"]
