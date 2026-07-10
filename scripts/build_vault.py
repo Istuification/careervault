@@ -504,9 +504,10 @@ __HEAD_META__
                     vertical-align:middle; }
   h1{ font-family:"Fraunces", Georgia, serif; font-optical-sizing:auto; font-weight:500;
       font-size:clamp(2rem, 5vw, 3rem); line-height:1.12; letter-spacing:-0.01em; margin:0 0 1.1rem; }
-  .lede{ font-size:1.05rem; color:var(--ink-soft); max-width:60ch; margin:0 0 2.75rem; }
+  .lede{ font-size:1.05rem; color:var(--ink-soft); margin:0 0 2.75rem; }
   .lede strong{ color:var(--ink); font-weight:600; }
-  .paths{ display:grid; grid-template-columns:1fr; gap:1.5rem; margin-bottom:2rem; }
+  .paths{ display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:2rem; }
+  @media (max-width:768px){ .paths{ grid-template-columns:1fr; } }
   .card{ border:1px solid var(--line); border-radius:var(--radius); background:var(--card);
          display:flex; flex-direction:column; overflow:hidden; }
   .card-tab{ display:flex; align-items:center; gap:0.55rem; padding:0.7rem 1.1rem;
@@ -535,7 +536,7 @@ __HEAD_META__
   .about{ border-top:1px solid var(--line); padding-top:2rem; margin-bottom:2.5rem; }
   .about h3{ font-family:"JetBrains Mono", monospace; font-size:0.78rem; letter-spacing:0.1em;
              text-transform:uppercase; color:var(--ink-soft); margin:0 0 0.9rem; }
-  .about p{ margin:0 0 0.9rem; color:var(--ink-soft); max-width:65ch; }
+  .about p{ margin:0 0 0.9rem; color:var(--ink-soft); }
   .about p:last-child{ margin-bottom:0; }
   .about.prompts{ border-top:none; padding-top:0; margin-top:-1.6rem; }
   .prompt-list{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
