@@ -1,0 +1,175 @@
+id: ACH-P006
+
+title: >
+  VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych
+  pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie
+  strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych
+  kompetencji analityczno-systemowych
+
+category: personal
+
+period:
+  start: 2026-06
+  end: current
+
+roles:
+  - system-designer
+  - ai-workflow-architect
+  - prompt-engineer
+  - recruitment-strategist
+
+skills:
+  - ai-tooling-orchestration
+  - workflow-automation
+  - prompt-engineering
+  - process-design
+  - requirements-analysis
+  - knowledge-structuring
+  - systems-thinking
+  - market-analysis
+
+themes:
+  - ai-augmentation
+  - automation
+  - human-in-the-loop
+  - evidence-based-design
+  - process-optimization
+  - recruitment-strategy
+  - personal-branding
+  - competitive-positioning
+
+situation: >
+  Aplikując na role analityczne i procesowe bez formalnych twardych kwalifikacji
+  (dyplom kierunkowy, certyfikaty branżowe), stanąłem przed strukturalnym problemem
+  rynku rekrutacyjnego 2026. Zdiagnozowałem jego mechanikę: (1) dedykowane CV pod każdą
+  ofertę jest wymogiem, nie opcją; (2) jego uczciwe, ręczne przygotowanie zajmuje
+  ok. 1,5-2 h, co przy testowaniu rynku na skalę jest nie do utrzymania; (3) alternatywa
+  w postaci generycznego CV z darmowego chatbota jest szybsza, ale produkuje treść
+  naciąganą, z halucynacjami niemożliwymi do obrony na rozmowie; (4) brak twardych
+  kwalifikacji na papierze wymaga zmiany waluty rozliczenia — z "co mam w rubrykach"
+  na "co udowodniłem, że zrobiłem". Zamiast wybierać między wolnym-a-uczciwym
+  i szybkim-a-naciąganym, zaprojektowałem trzecią drogę: szybką i uczciwą zarazem.
+
+actions:
+  - zbudowanie ustrukturyzowanej, weryfikowalnej bazy dowodów kompetencji (Career Vault) jako źródła prawdy
+  - zaprojektowanie czterofazowego systemu — analiza oferty > dobór dowodów z Vaulta > selekcja > złożenie
+  - zdefiniowanie ścisłych budżetów znaków dla każdego pola CV, wymuszających bezwzględną selekcję dowodów
+  - implementacja reguły dowodowej — każde twierdzenie ma referencję do rekordu w bazie, co czyni halucynację niemożliwą
+  - zaprojektowanie architektury pod trzech czytelników naraz — ATS (słowa kluczowe), rekruter-człowiek (dowód z liczbą jako "wow"), oraz AI hiring managera (Vault jako symulator, z którym można "porozmawiać")
+  - zaprojektowanie kaskady ATS (upychanie słów kluczowych od najważniejszego pola w dół, lista fallback na końcu)
+  - rozegranie braku twardych kwalifikacji przez uczciwe przyznanie luk w liście motywacyjnym, budujące wiarygodność pod zaproszenie do weryfikacji (asymetria: tylko kandydat z realną bazą dowodów może wiarygodnie zaprosić do sprawdzenia)
+  - utrzymanie human-in-the-loop jako cechy projektowej — system wykonuje w zdefiniowanych przeze mnie ramach, ja zatwierdzam każdy wynik
+  - walidacja empiryczna na realnych ofertach i iteracyjna kalibracja skilli na podstawie testów (m.in. wychwycenie "pułapek" ofert, w których tytuł myli co do rzeczywistej profesji)
+  - uczynienie systemu jawnym (publiczne repozytorium, tag na CV) — dowód i demonstracja stają się tym samym obiektem
+
+impact:
+  - skrócenie czasu przygotowania dopasowanej aplikacji z ~1,5-2 h do ~5-6 min (redukcja ~94%)
+  - system ~8x szybszy nawet od wariantu "na skróty" (naciągane CV z darmowego AI) — przy zachowaniu pełnej uczciwości, co znosi klasyczny kompromis szybkość-kontra-jakość
+  - pełna dowodowość — każda kompetencja w CV poparta konkretnym, weryfikowalnym rekordem; zero halucynacji na poziomie architektury
+  - odporność jakości na skalę i zmęczenie — setne CV ma dokładnie ten sam rygor budżetów, kaskady ATS i trójkąta dowodowego co pierwsze
+  - eliminacja subiektywizmu w doborze dowodów — obiektywna reguła zamiast pamięci i preferencji (neutralizacja tendencji do zaniżania własnej wartości)
+  - zaprojektowanie pod czytelnika, którego rynek jeszcze nie obsługuje (AI hiring managera) — wyprzedzenie rynku o jeden ruch
+  - jawny tag systemu na każdym CV jako wabik rekrutacyjny — rekruter trzyma w rękach produkt systemu, o którym czyta, co tworzy powód do kontaktu niezależny od dopasowania do oferty
+  - meta-dowód kompetencji — sam system jest wykonaną na żywo demonstracją zdolności "wziąć chaos, zdiagnozować jego mechanikę, zaprojektować mierzalny system i wdrożyć go z pomiarem", czyli dokładnie tej kompetencji, którą aplikacje deklarują
+
+importance: 9
+
+evidence:
+  - działający system oparty na skillach (ocena ofert + generowanie CV), przetestowany na realnych ofertach z pracuj.pl
+  - zmierzona redukcja czasu ~94% vs uczciwe CV ręczne oraz ~88% vs naciągane CV z darmowego AI
+  - udokumentowana baza porównawcza z rozbiciem na etapy i widełkami czasowymi (patrz sekcja fin)
+  - Career Vault jako publiczne, weryfikowalne repozytorium dowodów, przygotowane również pod odczyt przez LLM
+  - czas budowy całości — ok. miesiąc od pierwszej wersji Vaulta (6.06.2026)
+  - human-in-the-loop utrzymany i jawnie komunikowany na każdej wygenerowanej aplikacji
+
+metrics:
+  time_manual_honest_min: "76-140"
+  time_free_ai_stretched_min: "34-64"
+  time_system_min: "4-8"
+  reduction_vs_manual: "~94%"
+  reduction_vs_free_ai: "~88%"
+  speedup_vs_manual: "~18x"
+  speedup_vs_free_ai: "~8x"
+  build_time: "~1 miesiąc od pierwszej wersji Vaulta"
+  readers_targeted: 3
+  human_in_the_loop: true
+
+fin:
+  cel_pomiaru: >
+    Zmierzenie realnej oszczędności czasu na przygotowanie jednej dopasowanej aplikacji,
+    na uczciwej i konserwatywnej bazie porównawczej (raczej zaniżonej niż zawyżonej),
+    tak aby metryka była odporna na podważenie przez rekrutera.
+  definicja_zadania: >
+    To samo zadanie w każdym wariancie — przeczytać ofertę, ułożyć dopasowane CV
+    (nie przeklejone, nie generyczne), sformatować, przygotować do wysłania.
+    Jakość docelowa w wariancie ręcznym (A) i systemowym (C) jest ta sama: uczciwe,
+    dopasowane, dowodowe CV. Wariant B (darmowe AI) celowo idzie na skróty jakościowe.
+    Osoba w wariantach A i B — sprawna, kompetentna, robiąca to nie pierwszy raz.
+
+  scenariusz_A_bez_ai_uczciwe:
+    opis: człowiek bez AI, wiedza w głowie, formatka Word, uczciwe dopasowane CV
+    etapy_min:
+      przeczytanie_oferty: "4-7"
+      research_firmy_i_roli: "6-12"
+      wybor_3_kompetencji: "5-10"
+      przypomnienie_dowodow_z_liczbami: "8-15"
+      napisanie_profilu: "6-12"
+      napisanie_3_blokow_kompetencji: "10-18"
+      napisanie_listu_motywacyjnego: "20-35"
+      dorzucenie_slow_ats: "4-7"
+      formatowanie_i_dociecie: "8-15"
+      korekta: "5-9"
+    razem_min: "76-140"
+    razem_h: "1,3-2,3 (śr. ~1,8)"
+
+  scenariusz_B_darmowe_ai_naciagane:
+    opis: człowiek z darmowym chatbotem, CV naciągane, szybka korekta
+    etapy_min:
+      przeczytanie_oferty_pobieznie: "3-5"
+      wklejenie_oferty_i_cv_prompt: "3-6"
+      czekanie_i_przeczytanie: "3-6"
+      iteracje_promptu: "6-12"
+      korekta_ogolnikow_i_bledow: "8-15"
+      wklejenie_do_word_formatowanie: "8-14"
+      szybkie_przejrzenie: "3-6"
+    razem_min: "34-64"
+    razem_h: "0,6-1,1 (śr. ~50 min)"
+    uwaga_jakosciowa: >
+      Krótszy czas okupiony ryzykiem — halucynacje faktów niewychwycone przy pobieżnej
+      korekcie, generyczność wyczuwalna przez rekrutera, oraz brak możliwości wiarygodnego
+      zaproszenia do weryfikacji (naciągane CV nie zniesie sprawdzenia).
+
+  scenariusz_C_system_vaultshot:
+    opis: system VaultShot CV (skill + Vault), link do oferty > YAML > wklejenie
+    etapy_min:
+      wklejenie_linku: "0-1"
+      faza1_analiza_oferty_automat: "1-2"
+      wgranie_vault: "0-1"
+      fazy2_4_dobor_dowodow_i_yaml_automat: "1-2"
+      wklejenie_yaml_i_korekta_2_3_slow: "1-2"
+    razem_min: "4-8"
+    razem_h: "śr. ~6 min"
+
+  wynik:
+    C_vs_A: "~18x szybciej, redukcja ~94% (vs uczciwe CV ręczne)"
+    C_vs_B: "~8x szybciej, redukcja ~88% (vs naciągane CV z darmowego AI)"
+  dlaczego_wiarygodne:
+    - baza A (~1,8 h) jest konserwatywna — uczciwe dopasowane CV z listem realnie zajmuje 1,5-2 h
+    - osoba w bazie jest sprawna, nie nieudolna — porównanie fair
+    - jakość docelowa A równa jakości C — porównujemy do dobrego CV ręcznego, nie byle jakiego
+    - system bije nawet wariant "na skróty" (B) ~8x — prędkość nie jest kupiona kosztem jakości
+
+star_candidates:
+  - ai-tooling-orchestration
+  - workflow-automation
+  - evidence-based-design
+  - process-optimization
+  - systems-thinking
+
+notes:
+  - rekord prywatny — projekt własny
+  - nazwa systemu — VaultShot CV
+  - human-in-the-loop jest cechą projektową, nie ograniczeniem — odróżnia system od "AI napisało mi CV"
+  - transparentność metody jest świadoma — przewaga leży w Vaulcie i wykonaniu, nie w tajności metody; repozytorium jest publiczne
+  - system łączy warstwę operacyjną (metryka czasu) ze strategiczną (odczytanie mechaniki rynku) i meta-poziomem (sam jest dowodem deklarowanej kompetencji)
+  - dowód rezultatu rynkowego (konwersja odzewu z aplikacji) w toku pomiaru przez lejek rekrutacyjny — do dopisania jako druga metryka po zebraniu danych
