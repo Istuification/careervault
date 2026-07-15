@@ -592,9 +592,11 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 
 ---
 
+---
+
 # Indeks rekordów
 
-> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `797aedf`, 2026-07-15).
 > Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
 
 Łącznie: **27** rekordów — 21 zawodowych, 6 prywatnych.
@@ -640,7 +642,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 
 # Encje powiązane
 
-> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `797aedf`, 2026-07-15).
 > Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
 
 Źródła powiązań (single source of truth — powiązania nie są duplikowane w rekordach ACH):
@@ -654,22 +656,22 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 | ID | Tytuł | Skills | Stories | Development Areas |
 | --- | --- | --- | --- | --- |
 | `ACH-001` | Transformacja działu Instal/Solar | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-003` — Knowledge Management<br>`SKILL-005` — Leadership<br>`SKILL-006` — Technical Documentation<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-001` — Transformacja organizacji pracy działu Instal/Solar | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
-| `ACH-002` | Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji | `SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation | — | — |
-| `ACH-003` | Stworzenie bazy wiedzy serwisowej BPMN 2.0 | `SKILL-001` — Process Design<br>`SKILL-003` — Knowledge Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement<br>`SKILL-010` — Service Operations<br>`SKILL-012` — Change Management<br>`SKILL-015` — Organizational Design | `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej | — |
+| `ACH-002` | Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji | `SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-021` — Systems Thinking | — | — |
+| `ACH-003` | Stworzenie bazy wiedzy serwisowej BPMN 2.0 | `SKILL-001` — Process Design<br>`SKILL-003` — Knowledge Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement<br>`SKILL-010` — Service Operations<br>`SKILL-012` — Change Management<br>`SKILL-015` — Organizational Design<br>`SKILL-021` — Systems Thinking | `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej | — |
 | `ACH-004` | Restrukturyzacja i stabilizacja działu serwisu | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-002` — Restrukturyzacja i stabilizacja działu serwisu<br>`STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych<br>`STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `ACH-005` | Zaprojektowanie i wdrożenie systemu gwarancyjnego | `SKILL-001` — Process Design<br>`SKILL-003` — Knowledge Management<br>`SKILL-004` — Product Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation<br>`SKILL-019` — Business Analysis & Requirements Engineering | `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu | — |
 | `ACH-006` | Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów | `SKILL-003` — Knowledge Management<br>`SKILL-004` — Product Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-011` — Stakeholder Management<br>`SKILL-013` — Public Speaking<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `ACH-007` | Samodzielne wdrożenie systemu VOIP i infolinii | `SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-010` — Service Operations | — | — |
 | `ACH-008` | Koordynacja wdrożenia produktów PV Stand i PV-Box | `SKILL-002` — Operations Management<br>`SKILL-004` — Product Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-017` — Cross-Functional Facilitation | — | `DEV-004` — Commercial Discovery<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `ACH-009` | Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP | `SKILL-002` — Operations Management<br>`SKILL-008` — Business Systems | `STORY-006` — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności | — |
-| `ACH-010` | Projektowanie organizacji na podstawie analizy danych operacyjnych | `SKILL-002` — Operations Management<br>`SKILL-004` — Product Management<br>`SKILL-005` — Leadership<br>`SKILL-010` — Service Operations<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `ACH-010` | Projektowanie organizacji na podstawie analizy danych operacyjnych | `SKILL-002` — Operations Management<br>`SKILL-004` — Product Management<br>`SKILL-005` — Leadership<br>`SKILL-010` — Service Operations<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation<br>`SKILL-021` — Systems Thinking | `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `ACH-011` | Stworzenie systemu kalkulacji komponentów dla działu handlowego | `SKILL-001` — Process Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-019` — Business Analysis & Requirements Engineering | `STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV | `DEV-004` — Commercial Discovery |
 | `ACH-012` | Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych | `SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV<br>`STORY-009` — Budowa zespołu serwisowego po kryzysie kadrowym | `DEV-001` — Leadership Through Accountability<br>`DEV-002` — Personal Capacity Management |
 | `ACH-013` | Rozwój i administracja ekosystemu systemów operacyjnych organizacji | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-004` — Product Management<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu | `DEV-004` — Commercial Discovery<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `ACH-014` | Budowa standardów dokumentacyjnych wspierających rozwój organizacji | `SKILL-001` — Process Design<br>`SKILL-003` — Knowledge Management<br>`SKILL-004` — Product Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-017` — Cross-Functional Facilitation | `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu | `DEV-004` — Commercial Discovery<br>`DEV-006` — Boundary Management |
-| `ACH-015` | Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych | `SKILL-001` — Process Design<br>`SKILL-004` — Product Management<br>`SKILL-009` — Workflow Automation<br>`SKILL-016` — Operational Analysis<br>`SKILL-019` — Business Analysis & Requirements Engineering<br>`SKILL-020` — AI Tooling & Automation | — | `DEV-007` — Asymmetric Self-Valuation |
-| `ACH-016` | Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami | `SKILL-004` — Product Management<br>`SKILL-011` — Stakeholder Management<br>`SKILL-019` — Business Analysis & Requirements Engineering | — | `DEV-007` — Asymmetric Self-Valuation |
-| `ACH-017` | Stabilizacja kooperacji OEM i operacyjny business enablement | `SKILL-001` — Process Design<br>`SKILL-004` — Product Management<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management | — | — |
+| `ACH-015` | Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych | `SKILL-001` — Process Design<br>`SKILL-004` — Product Management<br>`SKILL-009` — Workflow Automation<br>`SKILL-016` — Operational Analysis<br>`SKILL-019` — Business Analysis & Requirements Engineering<br>`SKILL-020` — AI Tooling & Automation | `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży | `DEV-007` — Asymmetric Self-Valuation |
+| `ACH-016` | Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami | `SKILL-004` — Product Management<br>`SKILL-011` — Stakeholder Management<br>`SKILL-019` — Business Analysis & Requirements Engineering<br>`SKILL-021` — Systems Thinking | — | `DEV-007` — Asymmetric Self-Valuation |
+| `ACH-017` | Stabilizacja kooperacji OEM i operacyjny business enablement | `SKILL-001` — Process Design<br>`SKILL-004` — Product Management<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management | `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu | — |
 | `ACH-018` | Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego | `SKILL-001` — Process Design<br>`SKILL-004` — Product Management<br>`SKILL-007` — Training & Enablement<br>`SKILL-009` — Workflow Automation<br>`SKILL-012` — Change Management | — | — |
 | `ACH-019` | Architektura procesu życia produktu - projekt modelu operacyjnego firmy produktowej | `SKILL-001` — Process Design<br>`SKILL-019` — Business Analysis & Requirements Engineering | — | `DEV-007` — Asymmetric Self-Valuation |
 | `ACH-020` | Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról technicznych | `SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement | — | — |
@@ -677,9 +679,9 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 | `ACH-P001` | Regularne prowadzenie wystąpień publicznych i koordynacja społeczności | `SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-013` — Public Speaking<br>`SKILL-017` — Cross-Functional Facilitation | — | — |
 | `ACH-P002` | Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych | `SKILL-005` — Leadership<br>`SKILL-011` — Stakeholder Management<br>`SKILL-013` — Public Speaking<br>`SKILL-014` — Project Management | — | — |
 | `ACH-P003` | Kompleksowa organizacja zaręczyn, wesela i oprawy wydarzenia | `SKILL-005` — Leadership<br>`SKILL-013` — Public Speaking<br>`SKILL-014` — Project Management | — | — |
-| `ACH-P004` | Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-003` — Knowledge Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | — | — |
+| `ACH-P004` | Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-003` — Knowledge Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation<br>`SKILL-021` — Systems Thinking | — | — |
 | `ACH-P005` | Wieloletni wolontariat kaznodziejski — komunikacja perswazyjna w terenie i rezyliencja psychologiczna | `SKILL-007` — Training & Enablement<br>`SKILL-018` — Persuasive Communication | — | — |
-| `ACH-P006` | VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych | — | — | — |
+| `ACH-P006` | VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych | `SKILL-003` — Knowledge Management<br>`SKILL-009` — Workflow Automation<br>`SKILL-020` — AI Tooling & Automation<br>`SKILL-021` — Systems Thinking | — | — |
 
 ## Rozwinięcie per rekord
 
@@ -709,6 +711,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 * **Skills:**
   - `SKILL-008` — Business Systems
   - `SKILL-009` — Workflow Automation
+  - `SKILL-021` — Systems Thinking
 * **Stories:**
   - _brak_
 * **Development Areas:**
@@ -724,6 +727,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
   - `SKILL-010` — Service Operations
   - `SKILL-012` — Change Management
   - `SKILL-015` — Organizational Design
+  - `SKILL-021` — Systems Thinking
 * **Stories:**
   - `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
 * **Development Areas:**
@@ -839,6 +843,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
   - `SKILL-015` — Organizational Design
   - `SKILL-016` — Operational Analysis
   - `SKILL-017` — Cross-Functional Facilitation
+  - `SKILL-021` — Systems Thinking
 * **Stories:**
   - `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych
 * **Development Areas:**
@@ -915,7 +920,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
   - `SKILL-019` — Business Analysis & Requirements Engineering
   - `SKILL-020` — AI Tooling & Automation
 * **Stories:**
-  - _brak_
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
 * **Development Areas:**
   - `DEV-007` — Asymmetric Self-Valuation
 
@@ -925,6 +930,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
   - `SKILL-004` — Product Management
   - `SKILL-011` — Stakeholder Management
   - `SKILL-019` — Business Analysis & Requirements Engineering
+  - `SKILL-021` — Systems Thinking
 * **Stories:**
   - _brak_
 * **Development Areas:**
@@ -938,7 +944,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
   - `SKILL-011` — Stakeholder Management
   - `SKILL-012` — Change Management
 * **Stories:**
-  - _brak_
+  - `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
 * **Development Areas:**
   - _brak_
 
@@ -1028,6 +1034,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
   - `SKILL-015` — Organizational Design
   - `SKILL-016` — Operational Analysis
   - `SKILL-017` — Cross-Functional Facilitation
+  - `SKILL-021` — Systems Thinking
 * **Stories:**
   - _brak_
 * **Development Areas:**
@@ -1046,7 +1053,10 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 ### `ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych
 
 * **Skills:**
-  - _brak_
+  - `SKILL-003` — Knowledge Management
+  - `SKILL-009` — Workflow Automation
+  - `SKILL-020` — AI Tooling & Automation
+  - `SKILL-021` — Systems Thinking
 * **Stories:**
   - _brak_
 * **Development Areas:**
@@ -1056,7 +1066,7 @@ Jeżeli czegoś nie można powiązać z konkretnym osiągnięciem, nie powinno s
 
 # Luki w powiązaniach
 
-> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `797aedf`, 2026-07-15).
 > Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
 
 ## Achievementy bez Story
@@ -1066,9 +1076,7 @@ Nie jest to błąd — Story powstaje tylko tam, gdzie istnieje łuk narracyjny.
 * `ACH-002` — Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji
 * `ACH-007` — Samodzielne wdrożenie systemu VOIP i infolinii
 * `ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box
-* `ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych
 * `ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami
-* `ACH-017` — Stabilizacja kooperacji OEM i operacyjny business enablement
 * `ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego
 * `ACH-019` — Architektura procesu życia produktu - projekt modelu operacyjnego firmy produktowej
 * `ACH-020` — Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról technicznych
@@ -1084,4 +1092,4 @@ Nie jest to błąd — Story powstaje tylko tam, gdzie istnieje łuk narracyjny.
 
 Achievement bez kompetencji nie jest wykorzystywany jako dowód w module Skills:
 
-* `ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych
+_Brak — każdy Achievement jest dowodem co najmniej jednej kompetencji._
