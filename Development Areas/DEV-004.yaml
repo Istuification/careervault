@@ -25,10 +25,10 @@ sources:
     - ACH-014
 
   skills:
-    - product-management
-    - stakeholder-management
-    - operations-management
-    - process-design
+    - SKILL-004   # Product Management      (product-management)
+    - SKILL-011   # Stakeholder Management  (stakeholder-management)
+    - SKILL-002   # Operations Management   (operations-management)
+    - SKILL-001   # Process Design          (process-design)
 
 observed_pattern:
 
