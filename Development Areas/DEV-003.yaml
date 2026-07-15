@@ -24,10 +24,8 @@ sources:
     - STORY-008
 
   skills:
-    - Process Design
-    - Systems Thinking
-    - Knowledge Management
-    - Operational Leadership
+    - SKILL-001   # Process Design
+    - SKILL-003   # Knowledge Management
 
 observed_pattern: >
 
