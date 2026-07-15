@@ -1,0 +1,78 @@
+id: SKILL-021
+
+name: Systems Thinking
+
+category: Systems
+
+importance: 10
+
+level: Expert
+
+summary: >
+  Analizowanie organizacji, procesów i problemów jako połączonych
+  systemów zamiast odizolowanych zdarzeń. Obejmuje mapowanie
+  zależności między elementami, docieranie do przyczyny źródłowej
+  zamiast do objawu, przeramowanie problemu, gdy postawiona
+  diagnoza dotyczy skutku, oraz projektowanie rozwiązań
+  odpornych na zmianę warunków i rotację ludzi. Kompetencja
+  przekrojowa - stanowi warstwę myślenia poprzedzającą projektowanie
+  procesu, architektury informacji i modelu organizacyjnego,
+  dlatego jej dowody pochodzą z różnych domen: systemów
+  operacyjnych, baz wiedzy, architektury aplikacji i projektów
+  własnych.
+
+capabilities:
+  - systems-mapping
+  - dependency-analysis
+  - root-cause-analysis
+  - problem-reframing
+  - information-architecture
+  - data-modeling
+  - systems-design
+
+methods:
+  - Root Cause Analysis
+  - BPMN 2.0
+  - Organizational Diagnostics
+  - Business Process Analysis
+
+tools:
+  - Bitrix24
+  - Wiki.js
+  - diagrams.net
+  - Excel
+
+evidence:
+  - ACH-002
+  - ACH-003
+  - ACH-010
+  - ACH-016
+  - ACH-P004
+  - ACH-P006
+
+experience:
+  first_used: 2019
+  years: 7
+
+career_relevance:
+  product_manager: 9
+  operations_manager: 9
+  process_manager: 10
+  service_manager: 8
+  internal_consultant: 10
+
+keywords:
+  - systems thinking
+  - systems architecture
+  - root cause analysis
+  - dependency analysis
+  - information architecture
+  - process architecture
+  - systems design
+
+related_skills:
+  - SKILL-001
+  - SKILL-008
+  - SKILL-015
+  - SKILL-016
+  - SKILL-019
