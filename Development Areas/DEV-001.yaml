@@ -24,10 +24,8 @@ sources:
     - ACH-012
 
   skills:
-    - Leadership
-    - Team Management
-    - Conflict Resolution
-    - Stakeholder Management
+    - SKILL-005   # Leadership
+    - SKILL-011   # Stakeholder Management
 
 observed_pattern: >
 
