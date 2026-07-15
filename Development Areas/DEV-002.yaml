@@ -27,10 +27,7 @@ sources:
     - ACH-012
 
   skills:
-    - Ownership
-    - Problem Solving
-    - Operations Management
-    - Organizational Analysis
+    - SKILL-002   # Operations Management
 
 observed_pattern: >
 
