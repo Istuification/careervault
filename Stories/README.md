@@ -483,3 +483,279 @@ Story nie tworzy faktów.
 Story nadaje faktom strukturę opowieści.
 
 Jeżeli historia potrzebuje faktu, którego nie ma w Achievementach — najpierw uzupełnij Achievement, dopiero potem opowiadaj.
+
+---
+
+# Indeks rekordów
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
+
+Łącznie: **11** historii.
+
+| ID | Tytuł | Achievementy źródłowe |
+| --- | --- | --- |
+| `STORY-001` | Transformacja organizacji pracy działu Instal/Solar | `ACH-001` |
+| `STORY-002` | Restrukturyzacja i stabilizacja działu serwisu | `ACH-004` |
+| `STORY-003` | Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu | `ACH-005`, `ACH-006`, `ACH-014`, `ACH-013` |
+| `STORY-004` | Projektowanie modelu działania serwisu przy braku danych historycznych | `ACH-004`, `ACH-010` |
+| `STORY-005` | Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej | `ACH-003`, `ACH-004` |
+| `STORY-006` | Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności | `ACH-009` |
+| `STORY-007` | Standaryzacja ofertowania i kalkulacji rentowności instalacji PV | `ACH-011` |
+| `STORY-008` | Zatrzymanie niekontrolowanego skalowania operacji PV | `ACH-012` |
+| `STORY-009` | Budowa zespołu serwisowego po kryzysie kadrowym | `ACH-012` |
+| `STORY-010` | Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży | — |
+| `STORY-011` | Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu | — |
+
+---
+
+# Encje powiązane
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
+
+Źródła powiązań:
+
+* **Achievements** — pole `evidence.achievement_ids` rekordu `STORY-*` (powiązanie bezpośrednie),
+* **Development Areas** — pole `sources.stories` w rekordach `DEV-*`,
+* **Skills** — powiązanie **wyliczone**: kompetencje, których pole `evidence` wskazuje Achievement źródłowy tej historii.
+  Nie należy mylić z polem `competencies` w rekordzie Story, które jest listą etykiet narracyjnych.
+
+## Tabela zbiorcza
+
+| ID | Tytuł | Achievements | Skills (wyliczone) | Development Areas |
+| --- | --- | --- | --- | --- |
+| `STORY-001` | Transformacja organizacji pracy działu Instal/Solar | `ACH-001` — Transformacja działu Instal/Solar | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-003` — Knowledge Management<br>`SKILL-005` — Leadership<br>`SKILL-006` — Technical Documentation<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-017` — Cross-Functional Facilitation | `DEV-002` — Personal Capacity Management<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `STORY-002` | Restrukturyzacja i stabilizacja działu serwisu | `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `STORY-003` | Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu | `ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-003` — Knowledge Management<br>`SKILL-004` — Product Management<br>`SKILL-005` — Leadership<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-013` — Public Speaking<br>`SKILL-014` — Project Management<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation<br>`SKILL-019` — Business Analysis & Requirements Engineering | — |
+| `STORY-004` | Projektowanie modelu działania serwisu przy braku danych historycznych | `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-004` — Product Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `DEV-002` — Personal Capacity Management<br>`DEV-003` — Delegation and Leverage<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `STORY-005` | Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej | `ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-003` — Knowledge Management<br>`SKILL-005` — Leadership<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement<br>`SKILL-008` — Business Systems<br>`SKILL-009` — Workflow Automation<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-014` — Project Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `DEV-002` — Personal Capacity Management<br>`DEV-003` — Delegation and Leverage<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `STORY-006` | Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności | `ACH-009` — Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP | `SKILL-002` — Operations Management<br>`SKILL-008` — Business Systems | `DEV-003` — Delegation and Leverage<br>`DEV-004` — Commercial Discovery<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `STORY-007` | Standaryzacja ofertowania i kalkulacji rentowności instalacji PV | `ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego | `SKILL-001` — Process Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-019` — Business Analysis & Requirements Engineering | `DEV-002` — Personal Capacity Management<br>`DEV-003` — Delegation and Leverage |
+| `STORY-008` | Zatrzymanie niekontrolowanego skalowania operacji PV | `ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych | `SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `DEV-002` — Personal Capacity Management<br>`DEV-003` — Delegation and Leverage |
+| `STORY-009` | Budowa zespołu serwisowego po kryzysie kadrowym | `ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych | `SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-010` — Service Operations<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-017` — Cross-Functional Facilitation | `DEV-001` — Leadership Through Accountability |
+| `STORY-010` | Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży | — | — | `DEV-007` — Asymmetric Self-Valuation |
+| `STORY-011` | Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu | — | — | `DEV-007` — Asymmetric Self-Valuation |
+
+## Rozwinięcie per rekord
+
+### `STORY-001` — Transformacja organizacji pracy działu Instal/Solar
+
+* **Achievements (źródło faktów):**
+  - `ACH-001` — Transformacja działu Instal/Solar
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-001` — Process Design
+  - `SKILL-002` — Operations Management
+  - `SKILL-003` — Knowledge Management
+  - `SKILL-005` — Leadership
+  - `SKILL-006` — Technical Documentation
+  - `SKILL-008` — Business Systems
+  - `SKILL-009` — Workflow Automation
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-014` — Project Management
+  - `SKILL-015` — Organizational Design
+  - `SKILL-017` — Cross-Functional Facilitation
+* **Development Areas:**
+  - `DEV-002` — Personal Capacity Management
+  - `DEV-005` — Assertiveness and Difficult Conversations
+  - `DEV-006` — Boundary Management
+
+### `STORY-002` — Restrukturyzacja i stabilizacja działu serwisu
+
+* **Achievements (źródło faktów):**
+  - `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-001` — Process Design
+  - `SKILL-002` — Operations Management
+  - `SKILL-005` — Leadership
+  - `SKILL-007` — Training & Enablement
+  - `SKILL-008` — Business Systems
+  - `SKILL-009` — Workflow Automation
+  - `SKILL-010` — Service Operations
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-014` — Project Management
+  - `SKILL-015` — Organizational Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-017` — Cross-Functional Facilitation
+* **Development Areas:**
+  - `DEV-005` — Assertiveness and Difficult Conversations
+  - `DEV-006` — Boundary Management
+
+### `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
+
+* **Achievements (źródło faktów):**
+  - `ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego
+  - `ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów
+  - `ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji
+  - `ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-001` — Process Design
+  - `SKILL-002` — Operations Management
+  - `SKILL-003` — Knowledge Management
+  - `SKILL-004` — Product Management
+  - `SKILL-005` — Leadership
+  - `SKILL-006` — Technical Documentation
+  - `SKILL-007` — Training & Enablement
+  - `SKILL-008` — Business Systems
+  - `SKILL-009` — Workflow Automation
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-013` — Public Speaking
+  - `SKILL-014` — Project Management
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-017` — Cross-Functional Facilitation
+  - `SKILL-019` — Business Analysis & Requirements Engineering
+* **Development Areas:**
+  - _brak_
+
+### `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych
+
+* **Achievements (źródło faktów):**
+  - `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu
+  - `ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-001` — Process Design
+  - `SKILL-002` — Operations Management
+  - `SKILL-004` — Product Management
+  - `SKILL-005` — Leadership
+  - `SKILL-007` — Training & Enablement
+  - `SKILL-008` — Business Systems
+  - `SKILL-009` — Workflow Automation
+  - `SKILL-010` — Service Operations
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-014` — Project Management
+  - `SKILL-015` — Organizational Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-017` — Cross-Functional Facilitation
+* **Development Areas:**
+  - `DEV-002` — Personal Capacity Management
+  - `DEV-003` — Delegation and Leverage
+  - `DEV-005` — Assertiveness and Difficult Conversations
+  - `DEV-006` — Boundary Management
+
+### `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
+
+* **Achievements (źródło faktów):**
+  - `ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0
+  - `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-001` — Process Design
+  - `SKILL-002` — Operations Management
+  - `SKILL-003` — Knowledge Management
+  - `SKILL-005` — Leadership
+  - `SKILL-006` — Technical Documentation
+  - `SKILL-007` — Training & Enablement
+  - `SKILL-008` — Business Systems
+  - `SKILL-009` — Workflow Automation
+  - `SKILL-010` — Service Operations
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-014` — Project Management
+  - `SKILL-015` — Organizational Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-017` — Cross-Functional Facilitation
+* **Development Areas:**
+  - `DEV-002` — Personal Capacity Management
+  - `DEV-003` — Delegation and Leverage
+  - `DEV-005` — Assertiveness and Difficult Conversations
+  - `DEV-006` — Boundary Management
+
+### `STORY-006` — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności
+
+* **Achievements (źródło faktów):**
+  - `ACH-009` — Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-002` — Operations Management
+  - `SKILL-008` — Business Systems
+* **Development Areas:**
+  - `DEV-003` — Delegation and Leverage
+  - `DEV-004` — Commercial Discovery
+  - `DEV-005` — Assertiveness and Difficult Conversations
+  - `DEV-006` — Boundary Management
+
+### `STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
+
+* **Achievements (źródło faktów):**
+  - `ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-001` — Process Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-019` — Business Analysis & Requirements Engineering
+* **Development Areas:**
+  - `DEV-002` — Personal Capacity Management
+  - `DEV-003` — Delegation and Leverage
+
+### `STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV
+
+* **Achievements (źródło faktów):**
+  - `ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-002` — Operations Management
+  - `SKILL-005` — Leadership
+  - `SKILL-007` — Training & Enablement
+  - `SKILL-010` — Service Operations
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-015` — Organizational Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-017` — Cross-Functional Facilitation
+* **Development Areas:**
+  - `DEV-002` — Personal Capacity Management
+  - `DEV-003` — Delegation and Leverage
+
+### `STORY-009` — Budowa zespołu serwisowego po kryzysie kadrowym
+
+* **Achievements (źródło faktów):**
+  - `ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych
+* **Skills (wyliczone przez ACH):**
+  - `SKILL-002` — Operations Management
+  - `SKILL-005` — Leadership
+  - `SKILL-007` — Training & Enablement
+  - `SKILL-010` — Service Operations
+  - `SKILL-011` — Stakeholder Management
+  - `SKILL-012` — Change Management
+  - `SKILL-015` — Organizational Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-017` — Cross-Functional Facilitation
+* **Development Areas:**
+  - `DEV-001` — Leadership Through Accountability
+
+### `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
+
+* **Achievements (źródło faktów):**
+  - _brak_
+* **Skills (wyliczone przez ACH):**
+  - _brak_
+* **Development Areas:**
+  - `DEV-007` — Asymmetric Self-Valuation
+
+### `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
+
+* **Achievements (źródło faktów):**
+  - _brak_
+* **Skills (wyliczone przez ACH):**
+  - _brak_
+* **Development Areas:**
+  - `DEV-007` — Asymmetric Self-Valuation
+
+---
+
+# Luki w powiązaniach
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
+
+## Historie bez `evidence.achievement_ids`
+
+Zasada utrzymania nr 1 mówi: każda Story opiera się na co najmniej jednym Achievemencie.
+W poniższych rekordach pole `evidence` jest płaską listą materiałów zamiast struktury
+`achievement_ids` + `supporting_materials`, przez co historia nie jest policzalna jako powiązana:
+
+* `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
+* `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
+
+Dla obu rekordów `DEV-007` wskazuje w `sources` powiązanie ze zbiorem `ACH-015`, `ACH-016`, `ACH-019`,
+ale nie jest to powiązanie zadeklarowane po stronie Story — nie zostało tu policzone.
