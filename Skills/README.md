@@ -573,24 +573,26 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
 
 ---
 
+---
+
 # Indeks rekordów
 
-> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `797aedf`, 2026-07-15).
 > Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
 
-Łącznie: **20** kompetencji.
+Łącznie: **21** kompetencji.
 
 | ID | Nazwa | Kategoria | Poziom | Waga | Dowody (ACH) |
 | --- | --- | --- | --- | --- | --- |
 | `SKILL-001` | Process Design | Operations | Expert | 10 | 12 |
 | `SKILL-002` | Operations Management | Operations | Advanced | 10 | 7 |
-| `SKILL-003` | Knowledge Management | Knowledge | Expert | 10 | 6 |
+| `SKILL-003` | Knowledge Management | Knowledge | Expert | 10 | 7 |
 | `SKILL-004` | Product Management | Product | Advanced | 10 | 10 |
 | `SKILL-005` | Leadership | Management | Advanced | 8 | 9 |
 | `SKILL-006` | Technical Documentation | Knowledge | Expert | 9 | 6 |
 | `SKILL-007` | Training & Enablement | Knowledge | Advanced | 9 | 9 |
 | `SKILL-008` | Business Systems | Systems | Advanced | 9 | 7 |
-| `SKILL-009` | Workflow Automation | Systems | Advanced | 9 | 8 |
+| `SKILL-009` | Workflow Automation | Systems | Advanced | 9 | 9 |
 | `SKILL-010` | Service Operations | Operations | Advanced | 9 | 5 |
 | `SKILL-011` | Stakeholder Management | Management | Advanced | 9 | 10 |
 | `SKILL-012` | Change Management | Management | Advanced | 10 | 8 |
@@ -601,13 +603,14 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
 | `SKILL-017` | Cross-Functional Facilitation | Communication | Advanced | 8 | 11 |
 | `SKILL-018` | Persuasive Communication | Communication | Advanced | 8 | 1 |
 | `SKILL-019` | Business Analysis & Requirements Engineering | Product & Business | Advanced | 8 | 5 |
-| `SKILL-020` | AI Tooling & Automation | Systems | Advanced | 8 | 1 |
+| `SKILL-020` | AI Tooling & Automation | Systems | Advanced | 8 | 2 |
+| `SKILL-021` | Systems Thinking | Systems | Expert | 10 | 6 |
 
 ---
 
 # Encje powiązane
 
-> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `797aedf`, 2026-07-15).
 > Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
 
 Źródła powiązań:
@@ -623,24 +626,25 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
 | --- | --- | --- | --- | --- |
 | `SKILL-001` | Process Design | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-017` — Stabilizacja kooperacji OEM i operacyjny business enablement<br>`ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego<br>`ACH-019` — Architektura procesu życia produktu - projekt modelu operacyjnego firmy produktowej<br>`ACH-021` — Hybrydowy model współpracy z podwykonawcami montażowymi | `SKILL-002` — Operations Management<br>`SKILL-003` — Knowledge Management<br>`SKILL-005` — Leadership | `DEV-003` — Delegation and Leverage<br>`DEV-004` — Commercial Discovery<br>`DEV-007` — Asymmetric Self-Valuation |
 | `SKILL-002` | Operations Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-009` — Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji | `SKILL-001` — Process Design<br>`SKILL-005` — Leadership<br>`SKILL-011` — Stakeholder Management | `DEV-002` — Personal Capacity Management<br>`DEV-004` — Commercial Discovery |
-| `SKILL-003` | Knowledge Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-001` — Process Design<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement | `DEV-003` — Delegation and Leverage<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
+| `SKILL-003` | Knowledge Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych<br>`ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych | `SKILL-001` — Process Design<br>`SKILL-006` — Technical Documentation<br>`SKILL-007` — Training & Enablement | `DEV-003` — Delegation and Leverage<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `SKILL-004` | Product Management | `ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami<br>`ACH-017` — Stabilizacja kooperacji OEM i operacyjny business enablement<br>`ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego | `SKILL-001` — Process Design<br>`SKILL-006` — Technical Documentation<br>`SKILL-011` — Stakeholder Management | `DEV-004` — Commercial Discovery<br>`DEV-007` — Asymmetric Self-Valuation |
 | `SKILL-005` | Leadership | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-020` — Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról technicznych<br>`ACH-P001` — Regularne prowadzenie wystąpień publicznych i koordynacja społeczności<br>`ACH-P002` — Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych<br>`ACH-P003` — Kompleksowa organizacja zaręczyn, wesela i oprawy wydarzenia | — | `DEV-001` — Leadership Through Accountability<br>`DEV-006` — Boundary Management |
 | `SKILL-006` | Technical Documentation | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-003` — Knowledge Management<br>`SKILL-004` — Product Management<br>`SKILL-007` — Training & Enablement | — |
 | `SKILL-007` | Training & Enablement | `ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego<br>`ACH-020` — Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról technicznych<br>`ACH-P001` — Regularne prowadzenie wystąpień publicznych i koordynacja społeczności<br>`ACH-P005` — Wieloletni wolontariat kaznodziejski — komunikacja perswazyjna w terenie i rezyliencja psychologiczna | `SKILL-003` — Knowledge Management<br>`SKILL-006` — Technical Documentation<br>`SKILL-013` — Public Speaking | — |
 | `SKILL-008` | Business Systems | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-002` — Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-007` — Samodzielne wdrożenie systemu VOIP i infolinii<br>`ACH-009` — Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji | `SKILL-001` — Process Design<br>`SKILL-009` — Workflow Automation<br>`SKILL-010` — Service Operations | — |
-| `SKILL-009` | Workflow Automation | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-002` — Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-007` — Samodzielne wdrożenie systemu VOIP i infolinii<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-008` — Business Systems | — |
+| `SKILL-009` | Workflow Automation | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-002` — Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-007` — Samodzielne wdrożenie systemu VOIP i infolinii<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego<br>`ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-008` — Business Systems | — |
 | `SKILL-010` | Service Operations | `ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-007` — Samodzielne wdrożenie systemu VOIP i infolinii<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-012` — Change Management | — |
 | `SKILL-011` | Stakeholder Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami<br>`ACH-017` — Stabilizacja kooperacji OEM i operacyjny business enablement<br>`ACH-021` — Hybrydowy model współpracy z podwykonawcami montażowymi<br>`ACH-P002` — Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych | `SKILL-004` — Product Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement | `DEV-001` — Leadership Through Accountability<br>`DEV-004` — Commercial Discovery<br>`DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `SKILL-012` | Change Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-017` — Stabilizacja kooperacji OEM i operacyjny business enablement<br>`ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-015` — Organizational Design | — |
 | `SKILL-013` | Public Speaking | `ACH-P001` — Regularne prowadzenie wystąpień publicznych i koordynacja społeczności<br>`ACH-P002` — Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych<br>`ACH-P003` — Kompleksowa organizacja zaręczyn, wesela i oprawy wydarzenia<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów | `SKILL-007` — Training & Enablement<br>`SKILL-011` — Stakeholder Management | — |
 | `SKILL-014` | Project Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-P002` — Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych<br>`ACH-P003` — Kompleksowa organizacja zaręczyn, wesela i oprawy wydarzenia | `SKILL-005` — Leadership<br>`SKILL-011` — Stakeholder Management<br>`SKILL-012` — Change Management | — |
-| `SKILL-015` | Organizational Design | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-012` — Change Management | — |
-| `SKILL-016` | Operational Analysis | `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-015` — Organizational Design | — |
+| `SKILL-015` | Organizational Design | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-002` — Operations Management<br>`SKILL-005` — Leadership<br>`SKILL-012` — Change Management<br>`SKILL-021` — Systems Thinking | — |
+| `SKILL-016` | Operational Analysis | `ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-001` — Process Design<br>`SKILL-002` — Operations Management<br>`SKILL-015` — Organizational Design<br>`SKILL-021` — Systems Thinking | — |
 | `SKILL-017` | Cross-Functional Facilitation | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji<br>`ACH-P001` — Regularne prowadzenie wystąpień publicznych i koordynacja społeczności<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych | `SKILL-003` — Knowledge Management<br>`SKILL-005` — Leadership<br>`SKILL-007` — Training & Enablement<br>`SKILL-011` — Stakeholder Management<br>`SKILL-015` — Organizational Design | `DEV-005` — Assertiveness and Difficult Conversations<br>`DEV-006` — Boundary Management |
 | `SKILL-018` | Persuasive Communication | `ACH-P005` — Wieloletni wolontariat kaznodziejski — komunikacja perswazyjna w terenie i rezyliencja psychologiczna | `SKILL-013` — Public Speaking<br>`SKILL-011` — Stakeholder Management<br>`SKILL-017` — Cross-Functional Facilitation | — |
 | `SKILL-019` | Business Analysis & Requirements Engineering | `ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami<br>`ACH-005` — Zaprojektowanie i wdrożenie systemu gwarancyjnego<br>`ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego<br>`ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-019` — Architektura procesu życia produktu - projekt modelu operacyjnego firmy produktowej | — | `DEV-007` — Asymmetric Self-Valuation |
-| `SKILL-020` | AI Tooling & Automation | `ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych | — | — |
+| `SKILL-020` | AI Tooling & Automation | `ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych<br>`ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych | — | — |
+| `SKILL-021` | Systems Thinking | `ACH-002` — Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji<br>`ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami<br>`ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych<br>`ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych | `SKILL-001` — Process Design<br>`SKILL-008` — Business Systems<br>`SKILL-015` — Organizational Design<br>`SKILL-016` — Operational Analysis<br>`SKILL-019` — Business Analysis & Requirements Engineering | `DEV-003` — Delegation and Leverage |
 
 ## Rozwinięcie per rekord
 
@@ -670,6 +674,8 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych
   - `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
   - `STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
+  - `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
 * **Development Areas:**
   - `DEV-003` — Delegation and Leverage
   - `DEV-004` — Commercial Discovery
@@ -711,6 +717,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów
   - `ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji
   - `ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych
+  - `ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych
 * **Related skills:**
   - `SKILL-001` — Process Design
   - `SKILL-006` — Technical Documentation
@@ -744,6 +751,8 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
 * **Stories (wyliczone przez ACH):**
   - `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
   - `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
+  - `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
 * **Development Areas:**
   - `DEV-004` — Commercial Discovery
   - `DEV-007` — Asymmetric Self-Valuation
@@ -855,6 +864,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji
   - `ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych
   - `ACH-018` — Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego
+  - `ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych
 * **Related skills:**
   - `SKILL-001` — Process Design
   - `SKILL-002` — Operations Management
@@ -865,6 +875,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
   - `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych
   - `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
 * **Development Areas:**
   - _brak_
 
@@ -914,6 +925,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
   - `STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV
   - `STORY-009` — Budowa zespołu serwisowego po kryzysie kadrowym
+  - `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
 * **Development Areas:**
   - `DEV-001` — Leadership Through Accountability
   - `DEV-004` — Commercial Discovery
@@ -944,6 +956,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
   - `STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV
   - `STORY-009` — Budowa zespołu serwisowego po kryzysie kadrowym
+  - `STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu
 * **Development Areas:**
   - _brak_
 
@@ -998,6 +1011,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `SKILL-002` — Operations Management
   - `SKILL-005` — Leadership
   - `SKILL-012` — Change Management
+  - `SKILL-021` — Systems Thinking
 * **Stories (wyliczone przez ACH):**
   - `STORY-001` — Transformacja organizacji pracy działu Instal/Solar
   - `STORY-002` — Restrukturyzacja i stabilizacja działu serwisu
@@ -1022,6 +1036,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `SKILL-001` — Process Design
   - `SKILL-002` — Operations Management
   - `SKILL-015` — Organizational Design
+  - `SKILL-021` — Systems Thinking
 * **Stories (wyliczone przez ACH):**
   - `STORY-002` — Restrukturyzacja i stabilizacja działu serwisu
   - `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
@@ -1030,6 +1045,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
   - `STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
   - `STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV
   - `STORY-009` — Budowa zespołu serwisowego po kryzysie kadrowym
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
 * **Development Areas:**
   - _brak_
 
@@ -1091,6 +1107,7 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
 * **Stories (wyliczone przez ACH):**
   - `STORY-003` — Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu
   - `STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
 * **Development Areas:**
   - `DEV-007` — Asymmetric Self-Valuation
 
@@ -1098,44 +1115,60 @@ Jeżeli kompetencja nie posiada dowodów, nie powinna stanowić części Career 
 
 * **Achievements (dowody):**
   - `ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych
+  - `ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych
 * **Pozostałe dowody (spoza modułu Achievements):**
-  - certyfikat Umiejętności Jutra AI 3.0
   - Career Vault (repozytorium w którym jest ten plik)
 * **Related skills:**
   - _brak_
 * **Stories (wyliczone przez ACH):**
-  - _brak_
+  - `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży
 * **Development Areas:**
   - _brak_
+
+### `SKILL-021` — Systems Thinking
+
+* **Achievements (dowody):**
+  - `ACH-002` — Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji
+  - `ACH-003` — Stworzenie bazy wiedzy serwisowej BPMN 2.0
+  - `ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych
+  - `ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami
+  - `ACH-P004` — Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych
+  - `ACH-P006` — VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych
+* **Related skills:**
+  - `SKILL-001` — Process Design
+  - `SKILL-008` — Business Systems
+  - `SKILL-015` — Organizational Design
+  - `SKILL-016` — Operational Analysis
+  - `SKILL-019` — Business Analysis & Requirements Engineering
+* **Stories (wyliczone przez ACH):**
+  - `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych
+  - `STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej
+* **Development Areas:**
+  - `DEV-003` — Delegation and Leverage
 
 ---
 
 # Luki w powiązaniach
 
-> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `ac0d179`, 2026-07-11).
+> **Sekcja generowana automatycznie** ze stanu Vaulta (commit `797aedf`, 2026-07-15).
 > Po dodaniu lub zmianie rekordu należy ją przegenerować — nie edytuj list ręcznie.
 
 ## Dowody spoza modułu Achievements
 
 Pole `evidence` powinno wskazywać identyfikatory `ACH-*`. Wpisy opisowe nie są policzalne jako dowód:
 
-* `SKILL-020` (AI Tooling & Automation) — "certyfikat Umiejętności Jutra AI 3.0"
 * `SKILL-020` (AI Tooling & Automation) — "Career Vault (repozytorium w którym jest ten plik)"
 
 ## Etykiety w `DEV-*.sources.skills` bez rekordu SKILL
 
 Nazwy użyte w Development Areas, którym nie odpowiada żadna kompetencja w tym module — do ujednolicenia (mapowanie na istniejące `SKILL-*` albo utworzenie rekordu):
 
-* "Team Management" — użyte w `DEV-001`
-* "Conflict Resolution" — użyte w `DEV-001`
-* "Ownership" — użyte w `DEV-002`
-* "Problem Solving" — użyte w `DEV-002`
-* "Organizational Analysis" — użyte w `DEV-002`
-* "Systems Thinking" — użyte w `DEV-003`
-* "Operational Leadership" — użyte w `DEV-003`
+_Brak — wszystkie rekordy `DEV-*` wskazują kompetencje identyfikatorami._
 
-## Niespójność formatu referencji
+## Autoreferencje w `related_skills`
 
-Rekordy `DEV-001` – `DEV-004` wskazują kompetencje nazwami (np. "Leadership", "product-management"),
+Kompetencja wskazująca samą siebie jako powiązaną — wpis bez znaczenia informacyjnego, pominięty w listach powyżej:
+
+* `SKILL-001` (Process Design) wskazuje `SKILL-001`
 a `DEV-005` – `DEV-007` identyfikatorami (`SKILL-017`). Powiązania powyżej dopasowano po obu formach —
 docelowo warto ujednolicić do identyfikatorów.
