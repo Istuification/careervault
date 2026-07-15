@@ -77,9 +77,12 @@ results:
   - akt drugi - po odejściu kluczowej osoby operacyjnej model współpracy się zdegradował, ponieważ opierał się na ustaleniach personalnych, których nikt nie ułożył w udokumentowany proces
 
 evidence:
-  - dwie podpisane umowy o kooperacji
-  - obieg dokumentów produkcyjnych i formularze zamówień
-  - system znakowania sprzętu (naklejki plombowe + numery seryjne)
+  achievement_ids:
+    - ACH-017
+  supporting_materials:
+    - dwie podpisane umowy o kooperacji
+    - obieg dokumentów produkcyjnych i formularze zamówień
+    - system znakowania sprzętu (naklejki plombowe + numery seryjne)
 
 lessons_learned:
   - proces jest ważniejszy niż ustalenia personalne - stabilizacja oparta na ludziach działa dokładnie tak długo, jak długo ci ludzie są na miejscu
