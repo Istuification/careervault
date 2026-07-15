@@ -26,6 +26,7 @@ sources:
   skills:
     - SKILL-001   # Process Design
     - SKILL-003   # Knowledge Management
+    - SKILL-021   # Systems Thinking
 
 observed_pattern: >
 
