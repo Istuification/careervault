@@ -63,36 +63,36 @@ def build_index_md(model, now, commit):
     W("# VaultShot — Indeks Generatora CV")
     W("")
     W("> **Plik generowany automatycznie** przez `scripts/build_index.py`.")
-    W("> Nie edytuj recznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.")
+    W("> Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.")
     W(f"> Stan: {now} UTC · commit `{commit}`")
     W("")
-    W("Przeznaczenie: **wylaczne zrodlo danych dla skilla `/generuj-cv`**.")
-    W("Nie zastepuje README sekcji — te pozostaja dokumentacja dla czlowieka.")
+    W("Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.")
+    W("Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.")
     W("")
-    W(f"Zakres: **{len(prof)}** achievementow zawodowych, **{len(priv)}** prywatnych, "
+    W(f"Zakres: **{len(prof)}** achievementów zawodowych, **{len(priv)}** prywatnych, "
       f"**{len(model.skill)}** kompetencji, **{len(model.story)}** historii.")
     W("")
     W("---")
     W("")
 
     # -- instrukcja ------------------------------------------------------
-    W("## Jak czytac ten plik")
+    W("## Jak czytać ten plik")
     W("")
-    W("**Tabela A** to jedyne miejsce, z ktorego dobiera sie dowody. Jeden wiersz =")
+    W("**Tabela A** to jedyne miejsce, z którego dobiera się dowody. Jeden wiersz =")
     W("jeden achievement = jeden potencjalny bullet w CV. Kolumna `Skills` jest")
-    W("**pelna i zamknieta** lista kompetencji, do ktorych ten achievement wolno")
-    W("przypisac — para spoza tej listy jest bledem walidacji, nie kwestia oceny.")
+    W("**pełną i zamkniętą** listą kompetencji, do których ten achievement wolno")
+    W("przypisać — para spoza tej listy jest błędem walidacji, nie kwestią oceny.")
     W("")
-    W("**Tabela B** sluzy fazie dopasowania oferty i paskowi kompetencji w CV.")
-    W("Kryterium glownym jest dopasowanie do oferty, nie waga ani liczba dowodow.")
+    W("**Tabela B** służy fazie dopasowania oferty i paskowi kompetencji w CV.")
+    W("Kryterium głównym jest dopasowanie do oferty, nie waga ani liczba dowodów.")
     W("")
-    W("**Sekcja C** zawiera gotowe bullety. Wybierz jeden albo zloz wlasny")
-    W("**wylacznie z faktow w danym bloku** — nie dopisuj niczego z pamieci.")
-    W("**Sekcja D** to material dla achievementow bez historii.")
+    W("**Sekcja C** zawiera gotowe bullety. Wybierz jeden albo złóż własny")
+    W("**wyłącznie z faktów w danym bloku** — nie dopisuj niczego z pamięci.")
+    W("**Sekcja D** to materiał dla achievementów bez historii.")
     W("")
 
     # -- role ------------------------------------------------------------
-    W("**Kody rol** (do rozlozenia bulletow na stanowiska w CV):")
+    W("**Kody ról** (do rozłożenia bulletów na stanowiska w CV):")
     W("")
     W("| Kod | Stanowisko | Okres | #ACH |")
     W("| --- | --- | --- | --- |")
@@ -100,9 +100,9 @@ def build_index_md(model, now, commit):
         W(f"| `{code}` | {label} | {period} | {len(achs)} |")
     W("")
     quota = " / ".join(f"{k} {v}" for k, v in ROLE_QUOTA.items())
-    W(f"Docelowy rozklad bulletow: **{quota}**. Przypisanie ACH do roli pochodzi")
-    W("z `Experience.md` (sekcje `### <Rola>`), nie z dat — achievementy ciagle")
-    W("naleza do roli, w ktorej powstaly.")
+    W(f"Docelowy rozkład bulletów: **{quota}**. Przypisanie ACH do roli pochodzi")
+    W("z `Experience.md` (sekcje `### <Rola>`), nie z dat — achievementy ciągłe")
+    W("należą do roli, w której powstały.")
     W("")
     W("---")
     W("")
@@ -110,7 +110,7 @@ def build_index_md(model, now, commit):
     # -- A ----------------------------------------------------------------
     W("## A. Achievementy — dowody, relacje, rola")
     W("")
-    W("| ACH | Tytul | Rola | Okres | W | Skills (zamknieta lista) | Stories |")
+    W("| ACH | Tytuł | Rola | Okres | W | Skills (zamknięta lista) | Stories |")
     W("| --- | --- | --- | --- | --- | --- | --- |")
     for a in prof:
         x = model.ach[a]
@@ -122,9 +122,9 @@ def build_index_md(model, now, commit):
     W("")
 
     if priv:
-        W("### Prywatne — uzycie wyjatkowe, tylko gdy oferta wprost tego dotyczy")
+        W("### Prywatne — użycie wyjątkowe, tylko gdy oferta wprost tego dotyczy")
         W("")
-        W("| ACH | Tytul | Okres | W | Skills | Stories |")
+        W("| ACH | Tytuł | Okres | W | Skills | Stories |")
         W("| --- | --- | --- | --- | --- | --- |")
         for a in priv:
             x = model.ach[a]
@@ -140,10 +140,10 @@ def build_index_md(model, now, commit):
     # -- B ----------------------------------------------------------------
     W("## B. Kompetencje — dopasowanie do oferty")
     W("")
-    W("`#ACH` = liczba dowodow. Skille bez slow kluczowych dopasowuj po nazwie")
-    W("i po kolumnie `Nazwa` — brak keywords nie oznacza slabszej kompetencji.")
+    W("`#ACH` = liczba dowodów. Skille bez słów kluczowych dopasowuj po nazwie")
+    W("i po kolumnie `Nazwa` — brak keywords nie oznacza słabszej kompetencji.")
     W("")
-    W("| SKILL | Nazwa | Kategoria | Poziom | W | #ACH | Slowa kluczowe |")
+    W("| SKILL | Nazwa | Kategoria | Poziom | W | #ACH | Słowa kluczowe |")
     W("| --- | --- | --- | --- | --- | --- | --- |")
     for sid in sorted(model.skill):
         s = model.skill[sid]
@@ -155,10 +155,10 @@ def build_index_md(model, now, commit):
     W("")
 
     # -- C ----------------------------------------------------------------
-    W("## C. Bullety CV — gotowe sformulowania")
+    W("## C. Bullety CV — gotowe sformułowania")
     W("")
-    W(f"Liczba w nawiasie to dlugosc. Limit szablonu: **{BULLET_LIMIT} znakow** —")
-    W("dluzsze skracaj zachowujac liczby, nie dopisuj nowych faktow.")
+    W(f"Liczba w nawiasie to długość. Limit szablonu: **{BULLET_LIMIT} znaków** —")
+    W("dłuższe skracaj zachowując liczby, nie dopisuj nowych faktów.")
     W("")
     for stid in sorted(model.story):
         s = model.story[stid]
@@ -166,11 +166,11 @@ def build_index_md(model, now, commit):
         W(f"_{trim(s['title'], 90)}_")
         W("")
         if not s["bullets"]:
-            W("_(brak `cv_bullets` w rekordzie — uzyj sekcji D dla powiazanych ACH)_")
+            W("_(brak `cv_bullets` w rekordzie — użyj sekcji D dla powiązanych ACH)_")
             W("")
             continue
         for b in s["bullets"]:
-            flag = "" if len(b) <= BULLET_LIMIT else " **⚠ skroc**"
+            flag = "" if len(b) <= BULLET_LIMIT else " **⚠ skróć**"
             W(f"- `[{len(b)}]` {b}{flag}")
         W("")
 
@@ -178,14 +178,14 @@ def build_index_md(model, now, commit):
     W("")
 
     # -- D ----------------------------------------------------------------
-    W("## D. Achievementy bez Story — material na bullet")
+    W("## D. Achievementy bez Story — materiał na bullet")
     W("")
-    W("Brak gotowych sformulowan. Ponizsze fakty (pole `impact`) sa **jedynym**")
-    W("dopuszczalnym materialem — przenos liczby doslownie.")
+    W("Brak gotowych sformułowań. Poniższe fakty (pole `impact`) są **jedynym**")
+    W("dopuszczalnym materiałem — przenoś liczby dosłownie.")
     W("")
     orphan = [a for a in prof if a not in model.a2st]
     if not orphan:
-        W("_Brak — kazdy achievement zawodowy ma powiazana historie._")
+        W("_Brak — każdy achievement zawodowy ma powiązaną historię._")
         W("")
     for a in orphan:
         W(f"### `{a}` · {trim(model.ach[a]['title'], 75)}")
@@ -203,16 +203,16 @@ def build_index_md(model, now, commit):
     # -- E ----------------------------------------------------------------
     W("## E. Walidacja przed oddaniem YAML")
     W("")
-    W("Testy binarne, wszystkie sprawdzalne w tym pliku bez siegania do Vaulta:")
+    W("Testy binarne, wszystkie sprawdzalne w tym pliku bez sięgania do Vaulta:")
     W("")
     W("1. **Para SKILL–ACH** — czy `SKILL-XXX` figuruje w kolumnie Skills wiersza")
-    W("   `ACH-YYY` w tabeli A? Jesli nie, para jest bledna.")
+    W("   `ACH-YYY` w tabeli A? Jeśli nie, para jest błędna.")
     W("2. **Para ACH–STORY** — czy `STORY-ZZZ` figuruje w kolumnie Stories wiersza")
     W("   `ACH-YYY` w tabeli A?")
-    W(f"3. **Dlugosc bulletu** — czy tresc miesci sie w {BULLET_LIMIT} znakach?")
+    W(f"3. **Długość bulletu** — czy treść mieści się w {BULLET_LIMIT} znakach?")
     W("")
-    W("Dodatkowo: brak powtorzonych ACH, brak powtorzonych SKILL, rozklad")
-    W(f"bulletow na role zgodny z kwota ({quota}).")
+    W("Dodatkowo: brak powtórzonych ACH, brak powtórzonych SKILL, rozkład")
+    W(f"bulletów na role zgodny z kwotą ({quota}).")
     W("")
     W("---")
     W("")
