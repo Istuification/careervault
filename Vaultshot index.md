@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj recznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-23 12:06 UTC · commit `unknown`
+> Stan: 2026-07-23 12:12 UTC · commit `bb1346e`
 
 Przeznaczenie: **wylaczne zrodlo danych dla skilla `/generuj-cv`**.
 Nie zastepuje README sekcji — te pozostaja dokumentacja dla czlowieka.
@@ -280,4 +280,4 @@ bulletow na role zgodny z kwota (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-23 12:06 UTC z commita `unknown`._
+_Wygenerowano 2026-07-23 12:12 UTC z commita `bb1346e`._
