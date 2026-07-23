@@ -1,31 +1,31 @@
 # VaultShot — Indeks Generatora CV
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
-> Nie edytuj recznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-23 12:12 UTC · commit `bb1346e`
+> Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
+> Stan: 2026-07-23 12:20 UTC · commit `f8a7019`
 
-Przeznaczenie: **wylaczne zrodlo danych dla skilla `/generuj-cv`**.
-Nie zastepuje README sekcji — te pozostaja dokumentacja dla czlowieka.
+Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
+Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
 
-Zakres: **21** achievementow zawodowych, **6** prywatnych, **21** kompetencji, **11** historii.
+Zakres: **21** achievementów zawodowych, **6** prywatnych, **21** kompetencji, **11** historii.
 
 ---
 
-## Jak czytac ten plik
+## Jak czytać ten plik
 
-**Tabela A** to jedyne miejsce, z ktorego dobiera sie dowody. Jeden wiersz =
+**Tabela A** to jedyne miejsce, z którego dobiera się dowody. Jeden wiersz =
 jeden achievement = jeden potencjalny bullet w CV. Kolumna `Skills` jest
-**pelna i zamknieta** lista kompetencji, do ktorych ten achievement wolno
-przypisac — para spoza tej listy jest bledem walidacji, nie kwestia oceny.
+**pełną i zamkniętą** listą kompetencji, do których ten achievement wolno
+przypisać — para spoza tej listy jest błędem walidacji, nie kwestią oceny.
 
-**Tabela B** sluzy fazie dopasowania oferty i paskowi kompetencji w CV.
-Kryterium glownym jest dopasowanie do oferty, nie waga ani liczba dowodow.
+**Tabela B** służy fazie dopasowania oferty i paskowi kompetencji w CV.
+Kryterium głównym jest dopasowanie do oferty, nie waga ani liczba dowodów.
 
-**Sekcja C** zawiera gotowe bullety. Wybierz jeden albo zloz wlasny
-**wylacznie z faktow w danym bloku** — nie dopisuj niczego z pamieci.
-**Sekcja D** to material dla achievementow bez historii.
+**Sekcja C** zawiera gotowe bullety. Wybierz jeden albo złóż własny
+**wyłącznie z faktów w danym bloku** — nie dopisuj niczego z pamięci.
+**Sekcja D** to materiał dla achievementów bez historii.
 
-**Kody rol** (do rozlozenia bulletow na stanowiska w CV):
+**Kody ról** (do rozłożenia bulletów na stanowiska w CV):
 
 | Kod | Stanowisko | Okres | #ACH |
 | --- | --- | --- | --- |
@@ -33,15 +33,15 @@ Kryterium glownym jest dopasowanie do oferty, nie waga ani liczba dowodow.
 | `KIER` | p.o. Kierownika Serwisu | 2023-09 – 2025-01 | 6 |
 | `PM` | Product Manager / Business Analyst | 2025-01 – obecnie | 8 |
 
-Docelowy rozklad bulletow: **PM 3 / KIER 2 / KOOR 1**. Przypisanie ACH do roli pochodzi
-z `Experience.md` (sekcje `### <Rola>`), nie z dat — achievementy ciagle
-naleza do roli, w ktorej powstaly.
+Docelowy rozkład bulletów: **PM 3 / KIER 2 / KOOR 1**. Przypisanie ACH do roli pochodzi
+z `Experience.md` (sekcje `### <Rola>`), nie z dat — achievementy ciągłe
+należą do roli, w której powstały.
 
 ---
 
 ## A. Achievementy — dowody, relacje, rola
 
-| ACH | Tytul | Rola | Okres | W | Skills (zamknieta lista) | Stories |
+| ACH | Tytuł | Rola | Okres | W | Skills (zamknięta lista) | Stories |
 | --- | --- | --- | --- | --- | --- | --- |
 | `ACH-001` | Transformacja działu Instal/Solar | KOOR | 2020-09→2023-09 | 10 | SKILL-001 SKILL-002 SKILL-003 SKILL-005 SKILL-006 SKILL-008 SKILL-009 SKILL-011 SKILL-012 SKILL-014 SKILL-015 SKILL-017 | STORY-001 |
 | `ACH-002` | Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta… | — | 2020-09→2023-09 | 9 | SKILL-008 SKILL-009 SKILL-021 | — |
@@ -65,9 +65,9 @@ naleza do roli, w ktorej powstaly.
 | `ACH-020` | Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról techniczny… | KOOR | 2022-08→teraz | 7 | SKILL-005 SKILL-007 | — |
 | `ACH-021` | Hybrydowy model współpracy z podwykonawcami montażowymi | KOOR | 2021-10→2023-09 | 6 | SKILL-001 SKILL-011 | — |
 
-### Prywatne — uzycie wyjatkowe, tylko gdy oferta wprost tego dotyczy
+### Prywatne — użycie wyjątkowe, tylko gdy oferta wprost tego dotyczy
 
-| ACH | Tytul | Okres | W | Skills | Stories |
+| ACH | Tytuł | Okres | W | Skills | Stories |
 | --- | --- | --- | --- | --- | --- |
 | `ACH-P001` | Regularne prowadzenie wystąpień publicznych i koordynacja społeczno… | 2019→teraz | 8 | SKILL-005 SKILL-007 SKILL-013 SKILL-017 | — |
 | `ACH-P002` | Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji t… | 2019→teraz | 8 | SKILL-005 SKILL-011 SKILL-013 SKILL-014 | — |
@@ -80,10 +80,10 @@ naleza do roli, w ktorej powstaly.
 
 ## B. Kompetencje — dopasowanie do oferty
 
-`#ACH` = liczba dowodow. Skille bez slow kluczowych dopasowuj po nazwie
-i po kolumnie `Nazwa` — brak keywords nie oznacza slabszej kompetencji.
+`#ACH` = liczba dowodów. Skille bez słów kluczowych dopasowuj po nazwie
+i po kolumnie `Nazwa` — brak keywords nie oznacza słabszej kompetencji.
 
-| SKILL | Nazwa | Kategoria | Poziom | W | #ACH | Slowa kluczowe |
+| SKILL | Nazwa | Kategoria | Poziom | W | #ACH | Słowa kluczowe |
 | --- | --- | --- | --- | --- | --- | --- |
 | `SKILL-001` | Process Design | Operations | Expert | 10 | 12 | process design, workflow design, process optimization, business process management, bpm… |
 | `SKILL-002` | Operations Management | Operations | Advanced | 10 | 7 | operations, service operations, organizational scaling, logistics, operational excellence |
@@ -109,10 +109,10 @@ i po kolumnie `Nazwa` — brak keywords nie oznacza slabszej kompetencji.
 
 ---
 
-## C. Bullety CV — gotowe sformulowania
+## C. Bullety CV — gotowe sformułowania
 
-Liczba w nawiasie to dlugosc. Limit szablonu: **130 znakow** —
-dluzsze skracaj zachowujac liczby, nie dopisuj nowych faktow.
+Liczba w nawiasie to długość. Limit szablonu: **130 znaków** —
+dłuższe skracaj zachowując liczby, nie dopisuj nowych faktów.
 
 ### `STORY-001` → ACH-001
 _Transformacja organizacji pracy działu Instal/Solar_
@@ -135,15 +135,15 @@ _Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentó
 
 - `[123]` Współtworzyłem kompleksowy system gwarancyjny obejmujący producentów, instalatorów, dystrybutorów i użytkowników końcowych.
 - `[120]` Skróciłem czas uzyskania gwarancji z 7–8 dni do około 3 dni oraz czas rozpatrywania reklamacji z 4–5 dni do około 2 dni.
-- `[151]` Zaprojektowałem procesy, workflowy oraz system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając przewidywalność i skalowalność obsługi. **⚠ skroc**
+- `[151]` Zaprojektowałem procesy, workflowy oraz system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając przewidywalność i skalowalność obsługi. **⚠ skróć**
 - `[130]` Przeprowadziłem wieloetapowy proces zbierania wymagań i uzgadniania rozwiązań między interesariuszami o sprzecznych oczekiwaniach.
 
 ### `STORY-004` → ACH-004 ACH-010
 _Projektowanie modelu działania serwisu przy braku danych historycznych_
 
-- `[131]` Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy niemal całkowitym braku danych historycznych. **⚠ skroc**
-- `[148]` Obaliłem kluczowe założenia organizacyjne i zidentyfikowałem rzeczywiste przyczyny przeciążenia działu obsługującego kilkadziesiąt tysięcy urządzeń. **⚠ skroc**
-- `[136]` Zaprojektowałem model działania serwisu wspierający dynamiczny wzrost skali działalności bez utraty kluczowych kompetencji technicznych. **⚠ skroc**
+- `[131]` Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy niemal całkowitym braku danych historycznych. **⚠ skróć**
+- `[148]` Obaliłem kluczowe założenia organizacyjne i zidentyfikowałem rzeczywiste przyczyny przeciążenia działu obsługującego kilkadziesiąt tysięcy urządzeń. **⚠ skróć**
+- `[136]` Zaprojektowałem model działania serwisu wspierający dynamiczny wzrost skali działalności bez utraty kluczowych kompetencji technicznych. **⚠ skróć**
 - `[89]` Wdrożyłem metryki i model zarządzania wykorzystywane przez kolejnych kierowników serwisu.
 
 ### `STORY-005` → ACH-003 ACH-004
@@ -157,55 +157,55 @@ _Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej_
 ### `STORY-006` → ACH-009
 _Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności_
 
-- `[142]` Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując współpracę wielu działów organizacji. **⚠ skroc**
-- `[161]` Stworzyłem kompletną dokumentację produkcyjną, jakościową i użytkową pomimo braku wcześniejszego doświadczenia w obszarach FMEA, DTR i dokumentacji produkcyjnej. **⚠ skroc**
+- `[142]` Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując współpracę wielu działów organizacji. **⚠ skróć**
+- `[161]` Stworzyłem kompletną dokumentację produkcyjną, jakościową i użytkową pomimo braku wcześniejszego doświadczenia w obszarach FMEA, DTR i dokumentacji produkcyjnej. **⚠ skróć**
 - `[115]` Zaprojektowałem proces jakościowy oraz instrukcję montażową wysoko ocenioną przez produkcję i kierownictwo zakładu.
 - `[113]` Dostarczyłem gotowy do produkcji produkt w krótkim oknie rynkowym wynikającym ze zmian regulacyjnych na rynku PV.
 
 ### `STORY-007` → ACH-011
 _Standaryzacja ofertowania i kalkulacji rentowności instalacji PV_
 
-- `[186]` Zaprojektowałem system wspierający wycenę, kalkulację rentowności i przygotowanie list materiałowych dla instalacji PV, redukując czas przygotowania ofert z 2–6 godzin do około 10 minut. **⚠ skroc**
-- `[151]` Przekształciłem wiedzę ekspercką z obszaru PV, elektryki i kosztorysowania w skalowalny system wykorzystywany przez sprzedaż, technikę i administrację. **⚠ skroc**
-- `[137]` Stworzyłem rozwiązanie stanowiące przez około 4 lata podstawę procesu ofertowania i przygotowania realizacji instalacji fotowoltaicznych. **⚠ skroc**
+- `[186]` Zaprojektowałem system wspierający wycenę, kalkulację rentowności i przygotowanie list materiałowych dla instalacji PV, redukując czas przygotowania ofert z 2–6 godzin do około 10 minut. **⚠ skróć**
+- `[151]` Przekształciłem wiedzę ekspercką z obszaru PV, elektryki i kosztorysowania w skalowalny system wykorzystywany przez sprzedaż, technikę i administrację. **⚠ skróć**
+- `[137]` Stworzyłem rozwiązanie stanowiące przez około 4 lata podstawę procesu ofertowania i przygotowania realizacji instalacji fotowoltaicznych. **⚠ skróć**
 - `[107]` Umożliwiłem skalowanie procesu sprzedaży bez proporcjonalnego zwiększania liczby specjalistów technicznych.
 
 ### `STORY-008` → ACH-012
 _Zatrzymanie niekontrolowanego skalowania operacji PV_
 
-- `[153]` Zidentyfikowałem ograniczenia operacyjne organizacji podczas gwałtownego wzrostu rynku PV i doprowadziłem do zmiany podejścia do skalowania działalności. **⚠ skroc**
-- `[131]` Zarządzałem realizacją kilkadziesiąt instalacji w krótkim okresie, koordynując logistykę, planowanie i wsparcie techniczne zespołu. **⚠ skroc**
-- `[134]` Eskalowałem ryzyka jakościowe i bezpieczeństwa wynikające z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych. **⚠ skroc**
-- `[131]` Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia operacyjne. **⚠ skroc**
+- `[153]` Zidentyfikowałem ograniczenia operacyjne organizacji podczas gwałtownego wzrostu rynku PV i doprowadziłem do zmiany podejścia do skalowania działalności. **⚠ skróć**
+- `[131]` Zarządzałem realizacją kilkadziesiąt instalacji w krótkim okresie, koordynując logistykę, planowanie i wsparcie techniczne zespołu. **⚠ skróć**
+- `[134]` Eskalowałem ryzyka jakościowe i bezpieczeństwa wynikające z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych. **⚠ skróć**
+- `[131]` Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia operacyjne. **⚠ skróć**
 
 ### `STORY-009` → ACH-012
 _Budowa zespołu serwisowego po kryzysie kadrowym_
 
-- `[135]` Przejąłem dział serwisu po odejściu kierownika i części zespołu, stabilizując jego funkcjonowanie oraz utrzymując kluczowych ekspertów. **⚠ skroc**
+- `[135]` Przejąłem dział serwisu po odejściu kierownika i części zespołu, stabilizując jego funkcjonowanie oraz utrzymując kluczowych ekspertów. **⚠ skróć**
 - `[119]` Wdrożyłem model współpracy Tier 1 / Tier 2 wspierający transfer wiedzy i efektywne wykorzystanie kompetencji ekspertów.
 - `[92]` Zbudowałem kulturę współpracy opartą na odpowiedzialności, wsparciu i orientacji na klienta.
-- `[143]` Przeprowadziłem trudne decyzje personalne oraz wypracowałem bardziej dojrzałe podejście do równoważenia zaufania, odpowiedzialności i kontroli. **⚠ skroc**
+- `[143]` Przeprowadziłem trudne decyzje personalne oraz wypracowałem bardziej dojrzałe podejście do równoważenia zaufania, odpowiedzialności i kontroli. **⚠ skróć**
 
 ### `STORY-010` → ACH-015
 _Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i…_
 
-- `[166]` Zaprojektowałem standard identyfikacji produktów i zbudowałem bazę ok. 60 000 kart produktów w CRM, dając serwisowi natychmiastowy wgląd w historię każdego urządzenia **⚠ skroc**
+- `[166]` Zaprojektowałem standard identyfikacji produktów i zbudowałem bazę ok. 60 000 kart produktów w CRM, dając serwisowi natychmiastowy wgląd w historię każdego urządzenia **⚠ skróć**
 - `[100]` Porządkując dane historyczne, ujawniłem ukryty waste produkcyjny (ok. 20% zestawów przepakowywanych)
 - `[95]` Stworzony fundament danych umożliwił uruchomienie promocji sprzedażowej "Pierwsze uruchomienie"
 
 ### `STORY-011` → ACH-017
 _Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu_
 
-- `[176]` Ustabilizowałem współpracę z podwykonawcami OEM (dwie przeprojektowane i podpisane umowy, obieg dokumentów, znakowanie plombowe), umożliwiając znaczny wzrost wolumenu produkcji **⚠ skroc**
+- `[176]` Ustabilizowałem współpracę z podwykonawcami OEM (dwie przeprojektowane i podpisane umowy, obieg dokumentów, znakowanie plombowe), umożliwiając znaczny wzrost wolumenu produkcji **⚠ skróć**
 - `[67]` Po trzech miesiącach przekazałem uporządkowany obszar nowemu PM-owi
-- `[161]` Z degradacji modelu po rotacji personalnej wyprowadziłem stosowane do dziś kryterium domknięcia wdrożenia - proces musi przeżyć odejście każdej pojedynczej osoby **⚠ skroc**
+- `[161]` Z degradacji modelu po rotacji personalnej wyprowadziłem stosowane do dziś kryterium domknięcia wdrożenia - proces musi przeżyć odejście każdej pojedynczej osoby **⚠ skróć**
 
 ---
 
-## D. Achievementy bez Story — material na bullet
+## D. Achievementy bez Story — materiał na bullet
 
-Brak gotowych sformulowan. Ponizsze fakty (pole `impact`) sa **jedynym**
-dopuszczalnym materialem — przenos liczby doslownie.
+Brak gotowych sformułowań. Poniższe fakty (pole `impact`) są **jedynym**
+dopuszczalnym materiałem — przenoś liczby dosłownie.
 
 ### `ACH-002` · Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automat…
 Rola: `—` · waga 9
@@ -267,17 +267,17 @@ Rola: `KOOR` · waga 6
 
 ## E. Walidacja przed oddaniem YAML
 
-Testy binarne, wszystkie sprawdzalne w tym pliku bez siegania do Vaulta:
+Testy binarne, wszystkie sprawdzalne w tym pliku bez sięgania do Vaulta:
 
 1. **Para SKILL–ACH** — czy `SKILL-XXX` figuruje w kolumnie Skills wiersza
-   `ACH-YYY` w tabeli A? Jesli nie, para jest bledna.
+   `ACH-YYY` w tabeli A? Jeśli nie, para jest błędna.
 2. **Para ACH–STORY** — czy `STORY-ZZZ` figuruje w kolumnie Stories wiersza
    `ACH-YYY` w tabeli A?
-3. **Dlugosc bulletu** — czy tresc miesci sie w 130 znakach?
+3. **Długość bulletu** — czy treść mieści się w 130 znakach?
 
-Dodatkowo: brak powtorzonych ACH, brak powtorzonych SKILL, rozklad
-bulletow na role zgodny z kwota (PM 3 / KIER 2 / KOOR 1).
+Dodatkowo: brak powtórzonych ACH, brak powtórzonych SKILL, rozkład
+bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-23 12:12 UTC z commita `bb1346e`._
+_Wygenerowano 2026-07-23 12:20 UTC z commita `f8a7019`._
