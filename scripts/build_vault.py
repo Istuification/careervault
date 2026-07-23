@@ -49,6 +49,13 @@ GOOGLE_SITE_VERIFICATION = "CGT3gQeHAQC3i1Br876eXIn_R690XbIp7YUSjt2Q5MY"
 EXCLUDE_DIRS = {".git", ".github", "dist", "node_modules", ".vscode", "scripts"}
 INCLUDE_EXTENSIONS = {".md", ".yaml", ".yml", ".txt"}
 
+# Indeks generatora CV. Powstaje w build_index.py, ktory MUSI byc uruchomiony
+# przed tym skryptem. Trafia do plikow zbiorczych jawnie, przez blok CORE_*
+# (zaraz po AI Interpretation Guide), a nie przez automatyczne zbieranie --
+# stad wykluczenie ponizej. Bez niego wpadlby drugi raz, posortowany na koniec.
+INDEX_FILENAME = "Vaultshot index.md"
+EXCLUDE_FILES = {INDEX_FILENAME.lower()}
+
 
 # ---------------------------------------------------------------------------
 # DEFINICJA WARIANTOW PLIKU TEKSTOWEGO
@@ -60,6 +67,7 @@ INCLUDE_EXTENSIONS = {".md", ".yaml", ".yml", ".txt"}
 #
 # Kolejnosc jest swiadoma:
 #   1. AI Interpretation Guide  -- jak czytac cala reszte
+#   1a. Vaultshot index         -- skondensowana mapa relacji ACH/SKILL/STORY
 #   2. About / Identity / Experience -- kim jest kandydat, w jakim kontekscie
 #   3. Cognitive model          -- jak podejmuje decyzje
 #   4. Context Entries          -- w jakich warunkach powstawaly dowody
@@ -69,6 +77,7 @@ INCLUDE_EXTENSIONS = {".md", ".yaml", ".yml", ".txt"}
 
 CORE_EVIDENCE = [
     "AI Interpretation Guide.md",
+    INDEX_FILENAME,
     "About.md",
     "Identity.md",
     "Experience.md",
@@ -87,6 +96,7 @@ CORE_EVIDENCE = [
 # bez Context Entries; za to z README warstwy interpretacyjnej.
 CORE_ASSESSMENTS = [
     "AI Interpretation Guide.md",
+    INDEX_FILENAME,
     "About.md",
     "Identity.md",
     "Experience.md",
@@ -115,6 +125,7 @@ VARIANTS = {
             "Assessment Data — surowe wyniki testów",
             "Behavioral Patterns (BP-*), Calibrations (CAL-*), Predictors (PRED-*)",
             "Cognitive model, About, Identity, Experience, AI Interpretation Guide",
+            "VaultShot index — mapa relacji ACH/SKILL/STORY + gotowe bullety CV",
         ],
         "scope_no": [],
         "elsewhere": [],
@@ -132,6 +143,7 @@ VARIANTS = {
             "Development Areas (DEV-*) — obszary rozwojowe i luki",
             "Context Entries (CTX-*) — kontekst organizacyjny",
             "Cognitive model, About, Identity, Experience, AI Interpretation Guide",
+            "VaultShot index — mapa relacji ACH/SKILL/STORY + gotowe bullety CV",
         ],
         "scope_no": [
             "Assessment Data — surowe wyniki testów psychometrycznych",
@@ -153,6 +165,7 @@ VARIANTS = {
             "Calibrations (CAL-*) — kalibracje samooceny",
             "Predictors (PRED-*) — predyktory dopasowania do ról",
             "Cognitive model, About, Identity, Experience, AI Interpretation Guide",
+            "VaultShot index — mapa relacji ACH/SKILL/STORY + gotowe bullety CV",
         ],
         "scope_no": [
             "Achievements (ACH-*) — udokumentowane osiągnięcia",
@@ -190,6 +203,8 @@ def collect_all_files():
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS and not d.startswith(".")]
         for fname in filenames:
+            if fname.lower() in EXCLUDE_FILES:
+                continue
             if os.path.splitext(fname)[1].lower() in INCLUDE_EXTENSIONS:
                 collected.append(os.path.relpath(os.path.join(dirpath, fname), ROOT))
     return collected
@@ -311,6 +326,10 @@ def build_protocol(variant_key):
     out.append("  Przeczytaj go, zanim zaczniesz oceniac surowe rekordy YAML.")
     out.append("- Priorytet dowodowy: najpierw Achievements (ACH-*) i Stories (STORY-*),")
     out.append("  potem testy, na koncu model poznawczy.")
+    out.append("- JESLI GENERUJESZ CV: nie czytaj calego pliku. Sekcja")
+    out.append(f"  '{INDEX_FILENAME}' zaraz na poczatku zawiera komplet relacji")
+    out.append("  miedzy ACH, SKILL i STORY oraz gotowe bullety. To wystarczy.")
+    out.append(f"  Ten sam material stoi osobno pod {SITE_URL}/vaultshot-index.md")
     out.append("")
     return out
 
@@ -693,6 +712,15 @@ def build_llms_txt():
         f"({base}{VARIANTS[DEFAULT_VARIANT]['filename']}) — zawiera warstwe dowodowa,",
         "czyli material potrzebny do oceny dopasowania do stanowiska.",
         "",
+        "## Generowanie CV / analiza dopasowania do oferty",
+        "",
+        f"- [vaultshot-index.md]({base}vaultshot-index.md) — skondensowana mapa relacji",
+        "  miedzy osiagnieciami, kompetencjami i historiami + gotowe sformulowania",
+        "  do CV. Okolo 6 tys. tokenow. Jesli Twoim zadaniem jest zlozenie CV albo",
+        "  ocena dopasowania do konkretnego ogloszenia, zacznij i skoncz na tym pliku",
+        "  -- zawiera komplet potrzebnych relacji. Ta sama tresc jest tez wbudowana",
+        "  w kazdy z trzech plikow powyzej, zaraz po przewodniku interpretacyjnym.",
+        "",
         "## Zasady czytania",
         "",
         "- Kazdy plik zaczyna sie naglowkiem ZAKRES: wprost wymienia, co zawiera",
@@ -716,6 +744,7 @@ def build_sitemap():
     urls = [SITE_URL + "/"]
     for key in VARIANT_ORDER:
         urls.append(f"{SITE_URL}/{VARIANTS[key]['filename']}")
+    urls.append(f"{SITE_URL}/vaultshot-index.md")
 
     url_entries = []
     for loc in urls:
@@ -790,11 +819,22 @@ def build():
     # 4) llms.txt
     write(os.path.join(OUTPUT_DIR, "llms.txt"), build_llms_txt())
 
+    # 5) Indeks generatora CV jako samodzielny plik.
+    # Ta sama tresc jest juz w srodku trzech plikow zbiorczych (blok CORE),
+    # ale skill /generuj-cv pobiera wylacznie ten plik -- 6 tys. tokenow
+    # zamiast 129 tys.
+    index_src = os.path.join(ROOT, INDEX_FILENAME)
+    if os.path.isfile(index_src):
+        write(os.path.join(OUTPUT_DIR, "vaultshot-index.md"), read_file(INDEX_FILENAME))
+    else:
+        print(f"UWAGA — brak {INDEX_FILENAME}. "
+              f"Uruchom `python scripts/build_index.py` przed tym skryptem.")
+
     print(f"Zbudowano ({len(all_files)} plikow zrodlowych):")
     for key, nfiles, nchars in stats:
         print(f"  {VARIANTS[key]['filename']:24} {nfiles:3} plikow, "
               f"{nchars:7} znakow (~{nchars // 3.5:.0f} tokenow)")
-    print("  index.html, robots.txt, sitemap.xml, llms.txt")
+    print("  index.html, robots.txt, sitemap.xml, llms.txt, vaultshot-index.md")
 
 
 if __name__ == "__main__":
