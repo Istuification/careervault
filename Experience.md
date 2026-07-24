@@ -310,8 +310,8 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 ## Motywy wspierające
 
 * Operations Management
-* Organizational Scaling
-* Technical Communication
+* Organizational Design
+* Technical Documentation
 * Workflow Automation
 
 ## Obszary rozwijane
