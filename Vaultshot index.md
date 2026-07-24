@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 07:00 UTC · commit `be3edc6`
+> Stan: 2026-07-24 07:00 UTC · commit `7745e7b`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -196,9 +196,9 @@ _Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych d
 ### `STORY-011` → ACH-017
 _Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu_
 
-- `[176]` Ustabilizowałem współpracę z podwykonawcami OEM (dwie przeprojektowane i podpisane umowy, obieg dokumentów, znakowanie plombowe), umożliwiając znaczny wzrost wolumenu produkcji **⚠ skróć**
-- `[67]` Po trzech miesiącach przekazałem uporządkowany obszar nowemu PM-owi
-- `[161]` Z degradacji modelu po rotacji personalnej wyprowadziłem stosowane do dziś kryterium domknięcia wdrożenia - proces musi przeżyć odejście każdej pojedynczej osoby **⚠ skróć**
+- `[123]` Ustabilizowałem współpracę z podwykonawcami OEM (dwie nowe umowy, obieg dokumentów, plomby), umożliwiając wzrost produkcji.
+- `[68]` Po trzech miesiącach przekazałem uporządkowany obszar nowemu PM-owi.
+- `[119]` Wyprowadziłem z degradacji modelu po rotacji kryterium domknięcia wdrożenia: proces musi przeżyć odejście każdej osoby.
 
 ---
 
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 07:00 UTC z commita `be3edc6`._
+_Wygenerowano 2026-07-24 07:00 UTC z commita `7745e7b`._
