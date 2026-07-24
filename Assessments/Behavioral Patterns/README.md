@@ -401,3 +401,72 @@ Ich rolą jest dokumentowanie powtarzalnych zachowań obserwowanych w rzeczywist
 Behavioral Patterns stanowią główną warstwę dowodową Career Vault, łączącą dane źródłowe z modelami interpretacyjnymi.
 
 Dzięki temu Cognitive Model może być budowany na podstawie obserwowalnych zachowań, a nie wyłącznie deklaracji, testów psychometrycznych lub subiektywnych interpretacji.
+
+---
+
+<!-- VAULT:GENERATED:START -->
+# Indeks rekordów
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (`scripts/render_readmes.py`).
+> Nie edytuj recznie — zmiany wprowadzaj w rekordach i przegeneruj.
+
+Łącznie: **13** wzorców zachowań.
+
+| ID | Nazwa | Status | Pewność | #STORY | #ACH |
+| --- | --- | --- | --- | --- | --- |
+| `BP-001` | Od Chaosu do Modelu Operacyjnego | validated | very high | 11 | 20 |
+| `BP-002` | Usprawniaj To, Co Istnieje, Zanim To Zastąpisz | validated | very high | 11 | 15 |
+| `BP-003` | Zamknij Szybko, Otwórz Ponownie Przy Nowych Dowodach | candidate | medium | 4 | 6 |
+| `BP-004` | Tłumacz Między Funkcjami | validated | very high | 10 | 15 |
+| `BP-005` | Bierz Problem Na Siebie | validated | very high | 11 | 19 |
+| `BP-006` | Zamieniaj Wiedzę Ukrytą w Wspólną Infrastrukturę | validated | very high | 9 | 10 |
+| `BP-007` | Diagnozuj Operacje Za Pomocą Danych | validated | very high | 7 | 7 |
+| `BP-008` | Prototypuj, Następnie Stabilizuj | validated | very high | 10 | 13 |
+| `BP-009` | Ucz, Dopóki Inni Nie Potrafią Działać Samodzielnie | validated | very high | 6 | 11 |
+| `BP-010` | Kwestionuj Logikę, Nie Człowieka | validated | very high | 8 | 7 |
+| `BP-011` | Warunkowa Absorpcja Z Jawnym Trade-offem | candidate | high | 7 | 6 |
+| `BP-012` | Ucz Się Poprzez Wejście w Problem | validated | very high | 8 | 6 |
+| `BP-013` | Modelowanie Ludzi Przez Testy Zachowań | candidate | medium-high | 0 | 1 |
+
+---
+
+# Encje powiązane
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (`scripts/render_readmes.py`).
+> Nie edytuj recznie — zmiany wprowadzaj w rekordach i przegeneruj.
+
+Źródłem powiązań jest pole `derived_from` rekordu `BP-*`. Wzorzec opisuje zachowanie obserwowane w wielu niezależnych sytuacjach — liczba źródeł jest miarą jego powtarzalności.
+
+| ID | Nazwa | Stories | Achievements |
+| --- | --- | --- | --- |
+| `BP-001` | Od Chaosu do Modelu Operacyjnego | `STORY-001` `STORY-002` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-007` `STORY-008` `STORY-009` `STORY-010` `STORY-011` | `ACH-001` `ACH-002` `ACH-003` `ACH-004` `ACH-005` `ACH-007` `ACH-008` `ACH-009` `ACH-010` `ACH-011` `ACH-012` `ACH-013` `ACH-014` `ACH-015` `ACH-017` `ACH-019` `ACH-P001` `ACH-P002` `ACH-P003` `ACH-P004` |
+| `BP-002` | Usprawniaj To, Co Istnieje, Zanim To Zastąpisz | `STORY-001` `STORY-002` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-007` `STORY-008` `STORY-009` `STORY-010` `STORY-011` | `ACH-001` `ACH-002` `ACH-003` `ACH-004` `ACH-005` `ACH-007` `ACH-008` `ACH-010` `ACH-011` `ACH-012` `ACH-013` `ACH-014` `ACH-015` `ACH-017` `ACH-019` |
+| `BP-003` | Zamknij Szybko, Otwórz Ponownie Przy Nowych Dowod… | `STORY-001` `STORY-004` `STORY-006` `STORY-008` | `ACH-004` `ACH-010` `ACH-011` `ACH-012` `ACH-013` `ACH-016` |
+| `BP-004` | Tłumacz Między Funkcjami | `STORY-001` `STORY-002` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-008` `STORY-009` `STORY-010` `STORY-011` | `ACH-001` `ACH-004` `ACH-005` `ACH-006` `ACH-008` `ACH-012` `ACH-013` `ACH-014` `ACH-016` `ACH-017` `ACH-019` `ACH-P001` `ACH-P002` `ACH-P003` `ACH-P004` |
+| `BP-005` | Bierz Problem Na Siebie | `STORY-001` `STORY-002` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-007` `STORY-008` `STORY-009` `STORY-010` `STORY-011` | `ACH-001` `ACH-002` `ACH-003` `ACH-004` `ACH-005` `ACH-007` `ACH-008` `ACH-010` `ACH-011` `ACH-012` `ACH-013` `ACH-014` `ACH-015` `ACH-017` `ACH-019` `ACH-P001` `ACH-P002` `ACH-P003` `ACH-P004` |
+| `BP-006` | Zamieniaj Wiedzę Ukrytą w Wspólną Infrastrukturę | `STORY-001` `STORY-002` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-007` `STORY-009` `STORY-011` | `ACH-003` `ACH-005` `ACH-006` `ACH-009` `ACH-013` `ACH-014` `ACH-015` `ACH-017` `ACH-019` `ACH-P004` |
+| `BP-007` | Diagnozuj Operacje Za Pomocą Danych | `STORY-001` `STORY-004` `STORY-006` `STORY-007` `STORY-008` `STORY-009` `STORY-010` | `ACH-004` `ACH-010` `ACH-011` `ACH-012` `ACH-013` `ACH-014` `ACH-015` |
+| `BP-008` | Prototypuj, Następnie Stabilizuj | `STORY-001` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-007` `STORY-008` `STORY-009` `STORY-010` `STORY-011` | `ACH-001` `ACH-003` `ACH-004` `ACH-005` `ACH-006` `ACH-007` `ACH-008` `ACH-011` `ACH-012` `ACH-013` `ACH-014` `ACH-015` `ACH-018` |
+| `BP-009` | Ucz, Dopóki Inni Nie Potrafią Działać Samodzielnie | `STORY-002` `STORY-003` `STORY-005` `STORY-006` `STORY-009` `STORY-001` | `ACH-003` `ACH-004` `ACH-005` `ACH-006` `ACH-009` `ACH-012` `ACH-014` `ACH-020` `ACH-P001` `ACH-P002` `ACH-P003` |
+| `BP-010` | Kwestionuj Logikę, Nie Człowieka | `STORY-001` `STORY-002` `STORY-003` `STORY-004` `STORY-005` `STORY-006` `STORY-008` `STORY-009` | `ACH-001` `ACH-004` `ACH-005` `ACH-006` `ACH-008` `ACH-012` `ACH-014` |
+| `BP-011` | Warunkowa Absorpcja Z Jawnym Trade-offem | `STORY-011` `STORY-008` `STORY-002` `STORY-001` `STORY-004` `STORY-005` `STORY-006` | `ACH-017` `ACH-020` `ACH-008` `ACH-012` `ACH-013` `ACH-014` |
+| `BP-012` | Ucz Się Poprzez Wejście w Problem | `STORY-001` `STORY-004` `STORY-005` `STORY-006` `STORY-007` `STORY-008` `STORY-009` `STORY-003` | `ACH-007` `ACH-008` `ACH-010` `ACH-011` `ACH-013` `ACH-014` |
+| `BP-013` | Modelowanie Ludzi Przez Testy Zachowań | — | `ACH-020` |
+
+---
+
+# Luki w powiązaniach
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (`scripts/render_readmes.py`).
+> Nie edytuj recznie — zmiany wprowadzaj w rekordach i przegeneruj.
+
+## Wzorce bez źródeł
+
+_Brak — każdy wzorzec wskazuje źródła w `derived_from`._
+
+## Wzorce oparte na pojedynczym źródle
+
+Jedno źródło nie wystarcza, by mówić o wzorcu powtarzalnym:
+
+* `BP-013` — Modelowanie Ludzi Przez Testy Zachowań
+<!-- VAULT:GENERATED:END -->
