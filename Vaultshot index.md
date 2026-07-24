@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 06:56 UTC · commit `41248c0`
+> Stan: 2026-07-24 07:00 UTC · commit `be3edc6`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -189,9 +189,9 @@ _Budowa zespołu serwisowego po kryzysie kadrowym_
 ### `STORY-010` → ACH-015
 _Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i…_
 
-- `[166]` Zaprojektowałem standard identyfikacji produktów i zbudowałem bazę ok. 60 000 kart produktów w CRM, dając serwisowi natychmiastowy wgląd w historię każdego urządzenia **⚠ skróć**
-- `[100]` Porządkując dane historyczne, ujawniłem ukryty waste produkcyjny (ok. 20% zestawów przepakowywanych)
-- `[95]` Stworzony fundament danych umożliwił uruchomienie promocji sprzedażowej "Pierwsze uruchomienie"
+- `[121]` Zaprojektowałem standard identyfikacji produktów i bazę ok. 60 000 kart w CRM, dając serwisowi wgląd w historię urządzeń.
+- `[101]` Porządkując dane historyczne, ujawniłem ukryty waste produkcyjny (ok. 20% zestawów przepakowywanych).
+- `[96]` Stworzony fundament danych umożliwił uruchomienie promocji sprzedażowej "Pierwsze uruchomienie".
 
 ### `STORY-011` → ACH-017
 _Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu_
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 06:56 UTC z commita `41248c0`._
+_Wygenerowano 2026-07-24 07:00 UTC z commita `be3edc6`._
