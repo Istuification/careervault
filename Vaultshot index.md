@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 06:51 UTC · commit `32dbc62`
+> Stan: 2026-07-24 06:51 UTC · commit `36ae9a8`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -157,8 +157,8 @@ _Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej_
 ### `STORY-006` → ACH-009
 _Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności_
 
-- `[142]` Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując współpracę wielu działów organizacji. **⚠ skróć**
-- `[161]` Stworzyłem kompletną dokumentację produkcyjną, jakościową i użytkową pomimo braku wcześniejszego doświadczenia w obszarach FMEA, DTR i dokumentacji produkcyjnej. **⚠ skróć**
+- `[119]` Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując wiele działów.
+- `[105]` Stworzyłem dokumentację produkcyjną, jakościową i użytkową bez wcześniejszego doświadczenia w FMEA i DTR.
 - `[115]` Zaprojektowałem proces jakościowy oraz instrukcję montażową wysoko ocenioną przez produkcję i kierownictwo zakładu.
 - `[113]` Dostarczyłem gotowy do produkcji produkt w krótkim oknie rynkowym wynikającym ze zmian regulacyjnych na rynku PV.
 
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 06:51 UTC z commita `32dbc62`._
+_Wygenerowano 2026-07-24 06:51 UTC z commita `36ae9a8`._
