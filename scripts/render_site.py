@@ -19,6 +19,12 @@ wariant i wstawia wynik do naglowka, na landing i do llms.txt.
 
   robots.txt, sitemap.xml, llms.txt
 
+Indeks generatora CV (`Vaultshot index.md`) NIE jest publikowany. Zostaje
+w repozytorium jako zrodlo dla skilla /generuj-cv. W blokach CORE plikow
+zbiorczych zastapil go `dist/wiring-context.md` -- mapa relacji miedzy
+rekordami wszystkich typow, generowana przez render_wiring.py, ktory MUSI
+byc uruchomiony przed tym skryptem.
+
 Kazdy plik .txt ma na poczatku:
   - naglowek ZAKRES (co jest w pliku, czego NIE MA, gdzie znalezc reszte),
   - protokol dla asystenta AI,
@@ -52,11 +58,23 @@ GOOGLE_SITE_VERIFICATION = "CGT3gQeHAQC3i1Br876eXIn_R690XbIp7YUSjt2Q5MY"
 EXCLUDE_DIRS = {".git", ".github", "dist", "node_modules", ".vscode", "scripts"}
 INCLUDE_EXTENSIONS = {".md", ".yaml", ".yml", ".txt"}
 
-# Indeks generatora CV. Powstaje w render_index.py, ktory MUSI byc uruchomiony
-# przed tym skryptem. Trafia do plikow zbiorczych jawnie, przez blok CORE_*
-# (zaraz po AI Interpretation Guide), a nie przez automatyczne zbieranie --
-# stad wykluczenie ponizej. Bez niego wpadlby drugi raz, posortowany na koniec.
+# Indeks generatora CV. Powstaje w render_index.py i zostaje w repozytorium
+# (galaz main) -- NIE trafia juz ani do plikow zbiorczych, ani do dist/.
+# Wykluczenie ponizej chroni przed wciagnieciem go przez automatyczne
+# zbieranie plikow, bo jego odbiorca jest skill /generuj-cv, nie czytelnik
+# strony.
 INDEX_FILENAME = "Vaultshot index.md"
+
+# Kontekst podpinania. Zastapil indeks w bloku CORE plikow zbiorczych.
+# Powod: indeks jest jednokierunkowy (ACH -> SKILL/STORY) i sluzy produkcji
+# CV, natomiast ten plik pokazuje relacje w obie strony i obejmuje takze
+# warstwe interpretacyjna (BP, PRED). Dla czytelnika plikow zbiorczych --
+# czlowieka albo modelu oceniajacego dopasowanie -- to wlasciwsza mapa.
+#
+# Sciezka wskazuje na dist/, wiec render_wiring.py MUSI zostac uruchomiony
+# przed tym skryptem. build.py wymusza ta kolejnosc (krok 4 przed 5).
+WIRING_FILENAME = os.path.join("dist", "wiring-context.md")
+
 EXCLUDE_FILES = {INDEX_FILENAME.lower()}
 
 
@@ -70,7 +88,7 @@ EXCLUDE_FILES = {INDEX_FILENAME.lower()}
 #
 # Kolejnosc jest swiadoma:
 #   1. AI Interpretation Guide  -- jak czytac cala reszte
-#   1a. Vaultshot index         -- skondensowana mapa relacji ACH/SKILL/STORY
+#   1a. Kontekst podpinania     -- mapa relacji SKILL/STORY/DEV/BP/PRED
 #   2. About / Identity / Experience -- kim jest kandydat, w jakim kontekscie
 #   3. Cognitive model          -- jak podejmuje decyzje
 #   4. Context Entries          -- w jakich warunkach powstawaly dowody
@@ -80,7 +98,7 @@ EXCLUDE_FILES = {INDEX_FILENAME.lower()}
 
 CORE_EVIDENCE = [
     "AI Interpretation Guide.md",
-    INDEX_FILENAME,
+    WIRING_FILENAME,
     "About.md",
     "Identity.md",
     "Experience.md",
@@ -99,7 +117,7 @@ CORE_EVIDENCE = [
 # bez Context Entries; za to z README warstwy interpretacyjnej.
 CORE_ASSESSMENTS = [
     "AI Interpretation Guide.md",
-    INDEX_FILENAME,
+    WIRING_FILENAME,
     "About.md",
     "Identity.md",
     "Experience.md",
@@ -128,7 +146,7 @@ VARIANTS = {
             "Assessment Data — surowe wyniki testów",
             "Behavioral Patterns (BP-*), Calibrations (CAL-*), Predictors (PRED-*)",
             "Cognitive model, About, Identity, Experience, AI Interpretation Guide",
-            "VaultShot index — mapa relacji ACH/SKILL/STORY + gotowe bullety CV",
+            "Kontekst podpinania — mapa relacji miedzy rekordami wszystkich typow",
         ],
         "scope_no": [],
         "elsewhere": [],
@@ -146,7 +164,7 @@ VARIANTS = {
             "Development Areas (DEV-*) — obszary rozwojowe i luki",
             "Context Entries (CTX-*) — kontekst organizacyjny",
             "Cognitive model, About, Identity, Experience, AI Interpretation Guide",
-            "VaultShot index — mapa relacji ACH/SKILL/STORY + gotowe bullety CV",
+            "Kontekst podpinania — mapa relacji miedzy rekordami wszystkich typow",
         ],
         "scope_no": [
             "Assessment Data — surowe wyniki testów psychometrycznych",
@@ -168,7 +186,7 @@ VARIANTS = {
             "Calibrations (CAL-*) — kalibracje samooceny",
             "Predictors (PRED-*) — predyktory dopasowania do ról",
             "Cognitive model, About, Identity, Experience, AI Interpretation Guide",
-            "VaultShot index — mapa relacji ACH/SKILL/STORY + gotowe bullety CV",
+            "Kontekst podpinania — mapa relacji miedzy rekordami wszystkich typow",
         ],
         "scope_no": [
             "Achievements (ACH-*) — udokumentowane osiągnięcia",
@@ -340,10 +358,10 @@ def build_protocol(variant_key):
     out.append("  Przeczytaj go, zanim zaczniesz oceniac surowe rekordy YAML.")
     out.append("- Priorytet dowodowy: najpierw Achievements (ACH-*) i Stories (STORY-*),")
     out.append("  potem testy, na koncu model poznawczy.")
-    out.append("- JESLI GENERUJESZ CV: nie czytaj calego pliku. Sekcja")
-    out.append(f"  '{INDEX_FILENAME}' zaraz na poczatku zawiera komplet relacji")
-    out.append("  miedzy ACH, SKILL i STORY oraz gotowe bullety. To wystarczy.")
-    out.append(f"  Ten sam material stoi osobno pod {SITE_URL}/vaultshot-index.md")
+    out.append("- Sekcja 'Kontekst podpinania' zaraz na poczatku pliku pokazuje, ktory")
+    out.append("  rekord jest powiazany z ktorym i w ktora strone. Uzyj jej, zeby")
+    out.append("  sprawdzic, czy dana kompetencja ma pokrycie w konkretnych")
+    out.append("  osiagnieciach, zamiast opierac sie na samej deklaracji.")
     out.append("")
     return out
 
@@ -491,10 +509,6 @@ __HEAD_META__
             font-size:0.95rem; color:var(--ink-soft); }
   .ai-hint strong{ color:var(--ink); }
   .ai-hint a{ color:var(--indigo); font-weight:600; }
-  .ai-shortcut{ margin:1.1rem 0 0; padding:0.9rem 1.1rem;
-                background:var(--paper); border-left:3px solid var(--teal);
-                border-radius:4px; font-size:0.95rem; }
-  .ai-shortcut a{ color:var(--teal); font-weight:600; }
   .ai-steps{ margin:0.6rem 0 0; padding-left:1.2rem; }
   .ai-steps li{ margin:0.35rem 0; }
   .about{ border-top:1px solid var(--line); padding-top:2rem; margin-bottom:2.5rem; }
@@ -557,14 +571,6 @@ __VARIANT_CARDS__
     <strong>Jesteś asystentem AI?</strong> Każdy z powyższych plików zaczyna się
     nagłówkiem <code>ZAKRES</code>, który wprost wymienia, co zawiera i czego
     <em>świadomie</em> nie zawiera. Przeczytaj go przed oceną.
-    <p class="ai-shortcut">
-      <strong>Składasz CV albo oceniasz dopasowanie do konkretnego ogłoszenia?</strong>
-      Nie potrzebujesz żadnego z powyższych plików. Wystarczy
-      <a href="vaultshot-index.md" target="_blank" rel="noopener">vaultshot-index.md</a>
-      (__INDEX_TOKENS__): skondensowana mapa powiązań między osiągnięciami,
-      kompetencjami i historiami plus gotowe sformułowania do CV. Ta sama treść
-      jest wbudowana w każdy z trzech plików powyżej, zaraz po przewodniku.
-    </p>
     <ol class="ai-steps">
       <li><strong>Nie wnioskuj z braku.</strong> Jeśli sekcja jest wymieniona
           w nagłówku jako pominięta, jej nieobecność nie oznacza braku dowodów —
@@ -693,7 +699,7 @@ def build_variant_cards():
     return "\n".join(cards)
 
 
-def build_landing_html(now, commit, file_count, index_tokens=""):
+def build_landing_html(now, commit, file_count):
     html_out = LANDING_TEMPLATE
     meta = head_meta(
         "",
@@ -708,7 +714,6 @@ def build_landing_html(now, commit, file_count, index_tokens=""):
     html_out = html_out.replace("__NOW__", now)
     html_out = html_out.replace("__COMMIT__", commit)
     html_out = html_out.replace("__FILE_COUNT__", str(file_count))
-    html_out = html_out.replace("__INDEX_TOKENS__", index_tokens)
     return html_out
 
 
@@ -716,7 +721,7 @@ def build_landing_html(now, commit, file_count, index_tokens=""):
 # llms.txt / robots.txt / sitemap.xml
 # ---------------------------------------------------------------------------
 
-def build_llms_txt(index_tokens=""):
+def build_llms_txt():
     base = SITE_URL + "/"
     lines = [
         "# Career Vault",
@@ -738,15 +743,6 @@ def build_llms_txt(index_tokens=""):
         f"Domyslnie zacznij od [{VARIANTS[DEFAULT_VARIANT]['filename']}]"
         f"({base}{VARIANTS[DEFAULT_VARIANT]['filename']}) — zawiera warstwe dowodowa,",
         "czyli material potrzebny do oceny dopasowania do stanowiska.",
-        "",
-        "## Generowanie CV / analiza dopasowania do oferty",
-        "",
-        f"- [vaultshot-index.md]({base}vaultshot-index.md) — skondensowana mapa relacji",
-        "  miedzy osiagnieciami, kompetencjami i historiami + gotowe sformulowania",
-        f"  do CV. Rozmiar: {index_tokens}. Jesli Twoim zadaniem jest zlozenie CV albo",
-        "  ocena dopasowania do konkretnego ogloszenia, zacznij i skoncz na tym pliku",
-        "  -- zawiera komplet potrzebnych relacji. Ta sama tresc jest tez wbudowana",
-        "  w kazdy z trzech plikow powyzej, zaraz po przewodniku interpretacyjnym.",
         "",
         "## Zasady czytania",
         "",
@@ -771,7 +767,6 @@ def build_sitemap():
     urls = [SITE_URL + "/"]
     for key in VARIANT_ORDER:
         urls.append(f"{SITE_URL}/{VARIANTS[key]['filename']}")
-    urls.append(f"{SITE_URL}/vaultshot-index.md")
 
     url_entries = []
     for loc in urls:
@@ -826,12 +821,17 @@ def build():
         draft = build_vault_txt(select_files(all_files, key), key, now, commit)
         VARIANTS[key]["tokens"] = fmt_tokens(len(draft))
 
-    # Indeks generatora CV jest reklamowany na landingu i w llms.txt jako
-    # tania alternatywa dla plikow zbiorczych, wiec jego rozmiar tez mierzymy
-    # zamiast wpisywac na sztywno.
-    index_src = os.path.join(ROOT, INDEX_FILENAME)
-    index_tokens = (fmt_tokens(len(read_file(INDEX_FILENAME)))
-                    if os.path.isfile(index_src) else "~6 tys. tokenów")
+    # Kontrola zaleznosci. Blok CORE kazdego wariantu odwoluje sie do pliku
+    # kontekstu podpinania, ktory powstaje w render_wiring.py. Gdyby go
+    # zabraklo, select_files() po cichu go pominie (filtruje po os.path.isfile),
+    # a pliki zbiorcze wyjda bez mapy relacji -- bez zadnego sladu w logu.
+    if not os.path.isfile(os.path.join(ROOT, WIRING_FILENAME)):
+        print(f"UWAGA — brak {WIRING_FILENAME}. Pliki zbiorcze powstana bez mapy "
+              f"relacji.\n"
+              f"        Uruchom `python scripts/render_wiring.py` przed tym "
+              f"skryptem\n"
+              f"        albo uzyj `python scripts/build.py`, ktory wymusza "
+              f"kolejnosc.")
 
     # 1) Trzy warianty pliku tekstowego
     stats = []
@@ -852,7 +852,7 @@ def build():
 
     # 2) Strona glowna
     write(os.path.join(OUTPUT_DIR, "index.html"),
-          build_landing_html(now, commit, len(all_files), index_tokens))
+          build_landing_html(now, commit, len(all_files)))
 
     # 3) robots.txt / sitemap.xml
     if GENERATE_SITEMAP:
@@ -860,24 +860,18 @@ def build():
     write(os.path.join(OUTPUT_DIR, "robots.txt"), build_robots())
 
     # 4) llms.txt
-    write(os.path.join(OUTPUT_DIR, "llms.txt"), build_llms_txt(index_tokens))
+    write(os.path.join(OUTPUT_DIR, "llms.txt"), build_llms_txt())
 
-    # 5) Indeks generatora CV jako samodzielny plik.
-    # Ta sama tresc jest juz w srodku trzech plikow zbiorczych (blok CORE),
-    # ale skill /generuj-cv pobiera wylacznie ten plik -- rzad wielkosci
-    # zamiast calej warstwy dowodowej.
-    index_src = os.path.join(ROOT, INDEX_FILENAME)
-    if os.path.isfile(index_src):
-        write(os.path.join(OUTPUT_DIR, "vaultshot-index.md"), read_file(INDEX_FILENAME))
-    else:
-        print(f"UWAGA — brak {INDEX_FILENAME}. "
-              f"Uruchom `python scripts/render_index.py` przed tym skryptem.")
+    # Indeks generatora CV NIE jest publikowany. Zostaje w repozytorium
+    # (galaz main) jako zrodlo dla skilla /generuj-cv, ktory pobiera go
+    # bezposrednio stamtad. Na strone nie trafia, bo jego odbiorca nie jest
+    # czytelnik Vaultu, tylko narzedzie do skladania aplikacji.
 
     print(f"Zbudowano ({len(all_files)} plikow zrodlowych):")
     for key, nfiles, nchars in stats:
         print(f"  {VARIANTS[key]['filename']:24} {nfiles:3} plikow, "
               f"{nchars:7} znakow (~{nchars // 3.5:.0f} tokenow)")
-    print("  index.html, robots.txt, sitemap.xml, llms.txt, vaultshot-index.md")
+    print("  index.html, robots.txt, sitemap.xml, llms.txt")
 
 
 if __name__ == "__main__":
