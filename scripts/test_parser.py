@@ -23,7 +23,9 @@ Kody wyjscia:
 """
 
 import os
+import re
 import sys
+import json
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -194,10 +196,56 @@ def test_against_pyyaml(root):
           + (f", pominieto {skipped} rekordow bez poprawnego YAML-a" if skipped else ""))
 
 
+def test_json_completeness(root):
+    """vault.json nie moze skracac zadnej listy.
+
+    Regresja, przed ktora to chroni: ktos siega po `_fmt(..., limit=N)`
+    z render_wiring przy budowie JSON-a albo dokłada limit tutaj. Skutek
+    jest cichy -- walidacja binarna oparta na przycietej liscie `evidence`
+    odrzuca poprawna pare ACH<->SKILL, ktorej w niej nie ma, i nie zglasza
+    bledu. Test porownuje JSON z modelem, ktory jest zrodlem prawdy.
+    """
+    print("\n— vault.json: kompletnosc —")
+
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from vault_model import VaultModel
+    import render_json
+
+    model = VaultModel(root)
+    data = render_json.build(model, "test", "test")
+    raw = json.dumps(data, ensure_ascii=False)
+
+    if re.search(r"\(\+\d+\)", raw):
+        FAILED.append("vault.json.truncation_marker")
+        print("  BLAD  vault.json zawiera marker obciecia (+N)")
+
+    checked = 0
+    for sid, s in model.skill.items():
+        out = data["skills"][sid]
+        if sorted(s["evidence"]) != out["evidence"]:
+            FAILED.append(f"vault.json.{sid}.evidence")
+            print(f"  BLAD  {sid}.evidence: model {len(s['evidence'])}, "
+                  f"json {len(out['evidence'])}")
+        if out["evidence_count"] != len(out["evidence"]):
+            FAILED.append(f"vault.json.{sid}.evidence_count")
+            print(f"  BLAD  {sid}.evidence_count niespojny")
+        checked += 1
+
+    for aid, sids in model.a2s.items():
+        if data["relations"]["ach_to_skills"].get(aid) != sorted(sids):
+            FAILED.append(f"vault.json.a2s.{aid}")
+            print(f"  BLAD  ach_to_skills[{aid}] rozjezdza sie z modelem")
+        checked += 1
+
+    pairs = sum(len(s["evidence"]) for s in data["skills"].values())
+    print(f"  ok    sprawdzono {checked} list, {pairs} par ACH<->SKILL w calosci")
+
+
 def main():
     root = os.getcwd()
     test_primitives()
     test_against_pyyaml(root)
+    test_json_completeness(root)
 
     print()
     if FAILED:
