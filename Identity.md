@@ -117,12 +117,24 @@ W codziennej pracy kieruję się następującymi zasadami:
 * projektowanie procesów cyfrowych
 * integracja narzędzi
 
-### Technical Communication
+### Technical Documentation
+
+* tworzenie dokumentacji technicznej
+* standaryzacja dokumentacji operacyjnej i produktowej
+* procedury i instrukcje techniczne
+* architektura informacji
+
+### Training & Enablement
 
 * szkolenia techniczne
-* wystąpienia publiczne
-* tworzenie dokumentacji technicznej
 * przygotowanie materiałów szkoleniowych
+* transfer wiedzy do partnerów i instalatorów
+* onboarding pracowników
+
+### Public Speaking
+
+* wystąpienia publiczne
+* prowadzenie prezentacji i warsztatów
 * współpraca z partnerami biznesowymi
 
 ---
@@ -180,7 +192,7 @@ Przedstawiona tożsamość zawodowa wynika z powtarzalnych wzorców widocznych w
 - Samodzielne zdobywanie wiedzy i szybkie rozwijanie nowych kompetencji.
 
 Powiązane obszary Skills:
-Product Management, Business Analysis & Requirements Engineering, Operations Management, Knowledge Management, Business Systems, Technical Communication.
+Product Management, Business Analysis & Requirements Engineering, Operations Management, Knowledge Management, Business Systems, Technical Documentation.
 
 Potwierdzenie:
 ACH-001, ACH-003, ACH-005, ACH-010, ACH-012, ACH-013, ACH-014, ACH-015, ACH-016, ACH-018, ACH-019, ACH-020  
@@ -197,7 +209,7 @@ STORY-001, STORY-002, STORY-003, STORY-004, STORY-005, STORY-008, STORY-009, STO
 - Budowanie poczucia bezpieczeństwa i przewidywalności we współpracy.
 
 Powiązane obszary Skills:
-Operations Management, Knowledge Management, Technical Communication, Business Systems.
+Operations Management, Knowledge Management, Cross-Functional Facilitation, Business Systems.
 
 Potwierdzenie:
 ACH-001, ACH-003, ACH-005, ACH-012, ACH-017, ACH-021  
@@ -219,7 +231,7 @@ STORY-001, STORY-004, STORY-005, STORY-008, STORY-009, STORY-010, STORY-011
 
 ## Development Areas
 
-Obecny rozwój zawodowy koncentruje się przede wszystkim na zwiększaniu skuteczności liderskiej oraz wpływu organizacyjnego, a nie na poszerzaniu kompetencji technicznych.
+Obecny rozwój zawodowy koncentruje się przede wszystkim na zwiększaniu skuteczności liderskiej, wpływu organizacyjnego oraz zarządzania sobą, a nie na poszerzaniu kompetencji technicznych.
 
 Najważniejsze obszary rozwoju obejmują:
 
@@ -229,6 +241,7 @@ Najważniejsze obszary rozwoju obejmują:
 - Delegowanie odpowiedzialności oraz budowanie odpowiedzialności po stronie współpracowników.
 - Egzekwowanie ustalonych standardów i zobowiązań z większą konsekwencją.
 - Rozwijanie umiejętności przywództwa poprzez wpływ, coaching i wspieranie rozwoju innych.
+- Urealnienie oceny własnej pracy — stosowanie wobec siebie tego samego kryterium, które stosuję wobec współpracowników, w tym docenianie faz badawczych i architektonicznych.
 
 Powiązane obszary rozwoju zawodowego zostały opisane w module Development Areas:
 
@@ -238,6 +251,7 @@ Powiązane obszary rozwoju zawodowego zostały opisane w module Development Area
 * DEV-004 — Commercial Discovery
 * DEV-005 — Assertiveness and Difficult Conversations
 * DEV-006 — Boundary Management
+* DEV-007 — Asymmetric Self-Valuation
 
 ---
 
