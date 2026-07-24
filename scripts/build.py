@@ -11,10 +11,11 @@ Kolejnosc ma znaczenie:
     1. VaultModel        wczytanie i walidacja rekordow   (raz, wspolne)
     2. render_readmes    sekcje w README modulow
     3. render_index      Vaultshot index.md
-    4. render_site       dist/ (pliki zbiorcze + strona)
+    4. render_wiring     dist/wiring-context.md
+    5. render_site       dist/ (pliki zbiorcze + strona)
 
-Krok 3 musi poprzedzac 4, bo render_site wciaga gotowy indeks do plikow
-zbiorczych i kopiuje go do dist/. Kroki 2 i 3 sa niezalezne.
+Krok 3 musi poprzedzac 5, bo render_site wciaga gotowy indeks do plikow
+zbiorczych i kopiuje go do dist/. Kroki 2, 3 i 4 sa niezalezne.
 
 Model jest budowany RAZ i przekazywany do wszystkich rendererow. Wczesniej
 kazdy skrypt parsowal Vault od nowa -- przy trzech rendererach oznaczaloby
@@ -112,15 +113,18 @@ def main():
             if not l.startswith("> Stan:") and not l.startswith("_Wygenerowano")
         )
 
+    # Zapis TYLKO przy realnej zmianie tresci. Stopka niesie znacznik czasu
+    # i hash commita, wiec zapis bezwarunkowy dawal nowy plik przy kazdym
+    # uruchomieniu -- a w CI `git diff --staged --quiet` zawsze widzial
+    # zmiane i dokladal commit "regenerate" nawet gdy Vault stal w miejscu.
     if body(old) != body(content):
         stale.append(render_index.INDEX_FILENAME)
         print("  nieaktualny" if check else "  zaktualizowano")
+        if not check:
+            with open(idx_path, "w", encoding="utf-8") as fh:
+                fh.write(content)
     else:
         print("  bez zmian")
-
-    if not check:
-        with open(idx_path, "w", encoding="utf-8") as fh:
-            fh.write(content)
 
     # -- 4. Kontekst podpinania ------------------------------------------
     # Niezalezny od dist/ (krok 5), wiec generowany takze przy --skip-site:
