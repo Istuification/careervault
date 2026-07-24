@@ -12,10 +12,11 @@ Kolejnosc ma znaczenie:
     2. render_readmes    sekcje w README modulow
     3. render_index      Vaultshot index.md
     4. render_wiring     dist/wiring-context.md
-    5. render_site       dist/ (pliki zbiorcze + strona)
+    5. render_json       dist/vault.json  (wejscie maszynowe)
+    6. render_site       dist/ (pliki zbiorcze + strona)
 
-Krok 3 musi poprzedzac 5, bo render_site wciaga gotowy indeks do plikow
-zbiorczych i kopiuje go do dist/. Kroki 2, 3 i 4 sa niezalezne.
+Krok 3 musi poprzedzac 6, bo render_site wciaga gotowy indeks do plikow
+zbiorczych i kopiuje go do dist/. Kroki 2, 3, 4 i 5 sa niezalezne.
 
 Model jest budowany RAZ i przekazywany do wszystkich rendererow. Wczesniej
 kazdy skrypt parsowal Vault od nowa -- przy trzech rendererach oznaczaloby
@@ -137,7 +138,19 @@ def main():
         render_wiring.run(root, model, now, commit)
         print(f"  {render_wiring.OUT_DIR}/{render_wiring.OUT_FILENAME}")
 
-    # -- 5. Strona -------------------------------------------------------
+    # -- 5. Wejscie maszynowe --------------------------------------------
+    # Tak jak wiring-context: niezalezne od dist/ jako strony, wiec
+    # generowane takze przy --skip-site. To jedyny artefakt, ktory wolno
+    # parsowac -- markdowny sa dla czytelnika i skracaja dlugie listy.
+    hr("vault.json")
+    import render_json  # noqa: E402
+    if check:
+        print("  pominieto (--check)")
+    else:
+        render_json.run(root, model, now, commit)
+        print(f"  {render_json.OUT_DIR}/{render_json.OUT_FILENAME}")
+
+    # -- 6. Strona -------------------------------------------------------
     if skip_site:
         hr("dist/")
         print("  pominieto (--skip-site)")
