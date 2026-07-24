@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 06:54 UTC · commit `1a97cfd`
+> Stan: 2026-07-24 06:55 UTC · commit `a01aa11`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -173,10 +173,10 @@ _Standaryzacja ofertowania i kalkulacji rentowności instalacji PV_
 ### `STORY-008` → ACH-012
 _Zatrzymanie niekontrolowanego skalowania operacji PV_
 
-- `[153]` Zidentyfikowałem ograniczenia operacyjne organizacji podczas gwałtownego wzrostu rynku PV i doprowadziłem do zmiany podejścia do skalowania działalności. **⚠ skróć**
-- `[131]` Zarządzałem realizacją kilkadziesiąt instalacji w krótkim okresie, koordynując logistykę, planowanie i wsparcie techniczne zespołu. **⚠ skróć**
-- `[134]` Eskalowałem ryzyka jakościowe i bezpieczeństwa wynikające z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych. **⚠ skróć**
-- `[131]` Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia operacyjne. **⚠ skróć**
+- `[125]` Zidentyfikowałem ograniczenia operacyjne przy gwałtownym wzroście rynku PV i doprowadziłem do zmiany podejścia do skalowania.
+- `[125]` Zarządzałem realizacją kilkudziesięciu instalacji w krótkim okresie, koordynując logistykę, planowanie i wsparcie techniczne.
+- `[123]` Eskalowałem ryzyka jakościowe i bezpieczeństwa z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych.
+- `[120]` Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia.
 
 ### `STORY-009` → ACH-012
 _Budowa zespołu serwisowego po kryzysie kadrowym_
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 06:54 UTC z commita `1a97cfd`._
+_Wygenerowano 2026-07-24 06:55 UTC z commita `a01aa11`._
