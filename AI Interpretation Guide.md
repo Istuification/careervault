@@ -30,7 +30,7 @@ Summaries always have higher priority than assumptions.
 
 # Repository Philosophy
 
-Career Vault is built on two complementary layers.
+Career Vault is built on two complementary layers, plus a separate contextual annex.
 
 ## Evidence Layer
 
@@ -72,6 +72,20 @@ Assessment should always be interpreted as an evolving explanatory model rather 
 
 ---
 
+## Context Layer
+
+Context Entries sit outside both layers above.
+
+They contain:
+
+* Context Entries (CTX-*)
+
+This layer documents **what is deliberately undocumented** — periods that generated no evidence.
+
+It supports neither factual claims nor explanatory models. Its sole function is timeline continuity. See "Sources Outside the Hierarchy" below for the full reading rules.
+
+---
+
 # Recommended Analysis Order
 
 Whenever comprehensive understanding is required, analyze the repository in the following order.
@@ -109,6 +123,8 @@ Purpose:
 Verify whether observable evidence supports the interpretation proposed by the Assessment module.
 
 Whenever possible, trace every important conclusion back to multiple independent sources.
+
+Do **not** read Context Entries at this step. They cannot validate or weaken any conclusion. If a period appears empty, check Context Entries only to learn *why* it is empty — never to fill the gap with inferred capability.
 
 ---
 
@@ -160,6 +176,40 @@ Higher layers explain lower layers.
 Lower layers validate higher layers.
 
 Whenever conflicts appear, prioritize observable evidence.
+
+---
+
+## Sources Outside the Hierarchy
+
+**Context Entries (CTX-*)** are deliberately absent from the ranking above.
+
+They are not a weaker form of evidence — they are **not evidence at all**.
+
+Context Entries document career periods that produced no Achievements: execution-level roles, early-career stages, short episodes, adaptation periods. Their only purpose is to preserve timeline continuity without assigning those periods significance they do not have.
+
+Every record ends with the field:
+
+```yaml
+do_not_use_as: evidence
+```
+
+This is an interpretation rule, not a technical annotation.
+
+When reading Context Entries, do **not**:
+
+* infer competencies from them,
+* use them to support or strengthen a Predictor,
+* use them to support a Behavioral Pattern or the Cognitive Model,
+* treat them as Achievements or Stories,
+* use them to assess effectiveness.
+
+You **may** use them to:
+
+* explain why a given period contains no Achievements,
+* preserve chronological continuity of the career,
+* provide conversational context.
+
+Context Entries record what the author remembers, explicitly separating remembered facts from observations, interpretations and uncertainty. Where the author was unsure, that uncertainty is preserved on purpose. Do not resolve it by inference.
 
 ---
 
@@ -286,6 +336,18 @@ Do not treat certifications as primary evidence of competence.
 Certifications complement evidence.
 
 They rarely constitute evidence by themselves.
+
+---
+
+## Timeline Gap Bias
+
+Do not interpret a period without Achievements as a weak, idle or unproductive stage of the career.
+
+Achievements document results that exceeded ordinary duties. Many legitimate career periods — execution roles, early-career stages, adaptation phases — produce no such results by design.
+
+Their absence is a deliberate documentation decision, not a gap in capability.
+
+Context Entries exist precisely to make this explicit. Read them to understand why a period is undocumented, then move on. Do not convert that context into either a positive or a negative inference.
 
 ---
 
