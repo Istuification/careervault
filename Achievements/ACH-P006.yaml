@@ -53,6 +53,7 @@ situation: >
 actions:
   - zbudowanie ustrukturyzowanej, weryfikowalnej bazy dowodów kompetencji (Career Vault) jako źródła prawdy
   - zaprojektowanie czterofazowego systemu — analiza oferty > dobór dowodów z Vaulta > selekcja > złożenie
+  - zbudowanie warstwy indeksu (Vaultshot index.md) — generowanej automatycznie, skondensowanej mapy relacji ACH/SKILL/STORY z gotowymi bulletami, odcinającej generator od czytania całego Vaulta (~6 tys. tokenów zamiast ~137 tys.)
   - zdefiniowanie ścisłych budżetów znaków dla każdego pola CV, wymuszających bezwzględną selekcję dowodów
   - implementacja reguły dowodowej — każde twierdzenie ma referencję do rekordu w bazie, co czyni halucynację niemożliwą
   - zaprojektowanie architektury pod trzech czytelników naraz — ATS (słowa kluczowe), rekruter-człowiek (dowód z liczbą jako "wow"), oraz AI hiring managera (Vault jako symulator, z którym można "porozmawiać")
@@ -79,6 +80,7 @@ evidence:
   - zmierzona redukcja czasu ~94% vs uczciwe CV ręczne oraz ~88% vs naciągane CV z darmowego AI
   - udokumentowana baza porównawcza z rozbiciem na etapy i widełkami czasowymi (patrz sekcja fin)
   - Career Vault jako publiczne, weryfikowalne repozytorium dowodów, przygotowane również pod odczyt przez LLM
+  - Vaultshot index.md — indeks generatora CV budowany automatycznie przez scripts/build_index.py, z wbudowanymi testami walidacyjnymi pary SKILL-ACH, pary ACH-STORY i długości bulletu
   - czas budowy całości — ok. miesiąc od pierwszej wersji Vaulta (6.06.2026)
   - human-in-the-loop utrzymany i jawnie komunikowany na każdej wygenerowanej aplikacji
 
@@ -169,6 +171,7 @@ star_candidates:
 notes:
   - rekord prywatny — projekt własny
   - nazwa systemu — VaultShot CV
+  - Vaultshot index.md jest artefaktem generowanym, nie pisanym ręcznie — źródłem prawdy pozostają rekordy Vaulta, indeks jest ich skondensowaną projekcją pod jeden konkretny odczyt (generowanie CV)
   - human-in-the-loop jest cechą projektową, nie ograniczeniem — odróżnia system od "AI napisało mi CV"
   - transparentność metody jest świadoma — przewaga leży w Vaulcie i wykonaniu, nie w tajności metody; repozytorium jest publiczne
   - system łączy warstwę operacyjną (metryka czasu) ze strategiczną (odczytanie mechaniki rynku) i meta-poziomem (sam jest dowodem deklarowanej kompetencji)
