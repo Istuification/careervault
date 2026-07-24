@@ -112,15 +112,18 @@ def main():
             if not l.startswith("> Stan:") and not l.startswith("_Wygenerowano")
         )
 
+    # Zapis TYLKO przy realnej zmianie tresci. Stopka niesie znacznik czasu
+    # i hash commita, wiec zapis bezwarunkowy dawal nowy plik przy kazdym
+    # uruchomieniu -- a w CI `git diff --staged --quiet` zawsze widzial
+    # zmiane i dokladal commit "regenerate" nawet gdy Vault stal w miejscu.
     if body(old) != body(content):
         stale.append(render_index.INDEX_FILENAME)
         print("  nieaktualny" if check else "  zaktualizowano")
+        if not check:
+            with open(idx_path, "w", encoding="utf-8") as fh:
+                fh.write(content)
     else:
         print("  bez zmian")
-
-    if not check:
-        with open(idx_path, "w", encoding="utf-8") as fh:
-            fh.write(content)
 
     # -- 4. Strona -------------------------------------------------------
     if skip_site:
