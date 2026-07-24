@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 07:00 UTC · commit `7745e7b`
+> Stan: 2026-07-24 07:02 UTC · commit `f646726`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -29,7 +29,7 @@ Kryterium głównym jest dopasowanie do oferty, nie waga ani liczba dowodów.
 
 | Kod | Stanowisko | Okres | #ACH |
 | --- | --- | --- | --- |
-| `KOOR` | Koordynator ds. Montaży | 2020-09 – 2023-09 | 7 |
+| `KOOR` | Koordynator ds. Montaży | 2020-09 – 2023-09 | 8 |
 | `KIER` | p.o. Kierownika Serwisu | 2023-09 – 2025-01 | 6 |
 | `PM` | Product Manager / Business Analyst | 2025-01 – obecnie | 8 |
 
@@ -44,7 +44,7 @@ należą do roli, w której powstały.
 | ACH | Tytuł | Rola | Okres | W | Skills (zamknięta lista) | Stories |
 | --- | --- | --- | --- | --- | --- | --- |
 | `ACH-001` | Transformacja działu Instal/Solar | KOOR | 2020-09→2023-09 | 10 | SKILL-001 SKILL-002 SKILL-003 SKILL-005 SKILL-006 SKILL-008 SKILL-009 SKILL-011 SKILL-012 SKILL-014 SKILL-015 SKILL-017 | STORY-001 |
-| `ACH-002` | Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta… | — | 2020-09→2023-09 | 9 | SKILL-008 SKILL-009 SKILL-021 | — |
+| `ACH-002` | Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta… | KOOR | 2020-09→2023-09 | 9 | SKILL-008 SKILL-009 SKILL-021 | — |
 | `ACH-003` | Stworzenie bazy wiedzy serwisowej BPMN 2.0 | KIER | 2023-09→2025-01 | 10 | SKILL-001 SKILL-003 SKILL-006 SKILL-007 SKILL-010 SKILL-012 SKILL-015 SKILL-021 | STORY-005 |
 | `ACH-004` | Restrukturyzacja i stabilizacja działu serwisu | KIER | 2023-09→2025-01 | 10 | SKILL-001 SKILL-002 SKILL-005 SKILL-007 SKILL-008 SKILL-009 SKILL-010 SKILL-011 SKILL-012 SKILL-014 SKILL-015 SKILL-016 SKILL-017 | STORY-002 STORY-004 STORY-005 |
 | `ACH-005` | Zaprojektowanie i wdrożenie systemu gwarancyjnego | PM | 2025-01→teraz | 10 | SKILL-001 SKILL-003 SKILL-004 SKILL-006 SKILL-007 SKILL-008 SKILL-009 SKILL-011 SKILL-012 SKILL-014 SKILL-016 SKILL-017 SKILL-019 | STORY-003 |
@@ -208,7 +208,7 @@ Brak gotowych sformułowań. Poniższe fakty (pole `impact`) są **jedynym**
 dopuszczalnym materiałem — przenoś liczby dosłownie.
 
 ### `ACH-002` · Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automat…
-Rola: `—` · waga 9
+Rola: `KOOR` · waga 9
 
 - w pełni samodzielne dojście od zera do projektowania automatyzacji klasy enterprise - bez szkoleń, wdrożeniowca i zaplecza IT
 - kompetencja stała się fundamentem transformacji działu (ACH-001), a docelowo administracji ekosystemu systemów całej organizacji (ACH-013)
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 07:00 UTC z commita `7745e7b`._
+_Wygenerowano 2026-07-24 07:02 UTC z commita `f646726`._
