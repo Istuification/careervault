@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 07:04 UTC · commit `03c1ab6`
+> Stan: 2026-07-24 07:14 UTC · commit `59042d9`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -141,8 +141,8 @@ _Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentó
 ### `STORY-004` → ACH-004 ACH-010
 _Projektowanie modelu działania serwisu przy braku danych historycznych_
 
-- `[114]` Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy braku danych historycznych..
-- `[119]` Obaliłem założenia i wskazałem rzeczywiste przyczyny przeciążenia działu obsługującego kilkadziesiąt tysięcy urządzeń..
+- `[113]` Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy braku danych historycznych.
+- `[118]` Obaliłem założenia i wskazałem rzeczywiste przyczyny przeciążenia działu obsługującego kilkadziesiąt tysięcy urządzeń.
 - `[114]` Zaprojektowałem model działania serwisu wspierający wzrost skali działalności bez utraty kompetencji technicznych.
 - `[89]` Wdrożyłem metryki i model zarządzania wykorzystywane przez kolejnych kierowników serwisu.
 
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 07:04 UTC z commita `03c1ab6`._
+_Wygenerowano 2026-07-24 07:14 UTC z commita `59042d9`._
