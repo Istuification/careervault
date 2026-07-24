@@ -24,22 +24,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Indeks MUSI powstac przed build_vault.py -- tamten wciaga go
-      # do plikow zbiorczych i kopiuje do dist/.
-      - name: Build VaultShot index
-        run: python scripts/build_index.py
+      # Jeden krok zamiast trzech. build.py wczytuje Vault raz, waliduje go,
+      # a nastepnie po kolei generuje: sekcje README, Vaultshot index i dist/.
+      # Kolejnosc jest wymuszona wewnatrz skryptu -- indeks musi powstac przed
+      # strona, bo trafia do plikow zbiorczych.
+      - name: Build Vault (README + index + dist/)
+        run: python scripts/build.py
 
-      - name: Build site (dist/)
-        run: python scripts/build_vault.py
-
-      # Indeks jest artefaktem generowanym, ale trzymamy go w repo, zeby byl
-      # widoczny na GitHubie bez wchodzenia na Pages. Commit tylko gdy sie zmienil.
-      - name: Commit regenerated index
+      # Artefakty generowane trzymamy w repo, zeby byly czytelne na GitHubie
+      # bez wchodzenia na Pages. Commit tylko gdy cos sie realnie zmienilo.
+      - name: Commit regenerated artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "Vaultshot index.md"
-          git diff --staged --quiet || git commit -m "chore: regenerate VaultShot index [skip ci]"
+          git add "Vaultshot index.md" \
+                  "Achievements/README.md" \
+                  "Skills/README.md" \
+                  "Stories/README.md" \
+                  "Development Areas/README.md" \
+                  "Assessments/Predictors/README.md" \
+                  "Assessments/Behavioral Patterns/README.md"
+          git diff --staged --quiet || git commit -m "chore: regenerate Vault artifacts [skip ci]"
           git push
 
       - name: Ensure .nojekyll
