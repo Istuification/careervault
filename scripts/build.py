@@ -112,20 +112,28 @@ def main():
             if not l.startswith("> Stan:") and not l.startswith("_Wygenerowano")
         )
 
-    # Zapis TYLKO przy realnej zmianie tresci. Stopka niesie znacznik czasu
-    # i hash commita, wiec zapis bezwarunkowy dawal nowy plik przy kazdym
-    # uruchomieniu -- a w CI `git diff --staged --quiet` zawsze widzial
-    # zmiane i dokladal commit "regenerate" nawet gdy Vault stal w miejscu.
     if body(old) != body(content):
         stale.append(render_index.INDEX_FILENAME)
         print("  nieaktualny" if check else "  zaktualizowano")
-        if not check:
-            with open(idx_path, "w", encoding="utf-8") as fh:
-                fh.write(content)
     else:
         print("  bez zmian")
 
-    # -- 4. Strona -------------------------------------------------------
+    if not check:
+        with open(idx_path, "w", encoding="utf-8") as fh:
+            fh.write(content)
+
+    # -- 4. Kontekst podpinania ------------------------------------------
+    # Niezalezny od dist/ (krok 5), wiec generowany takze przy --skip-site:
+    # to wlasnie przy edycji rekordow jest najczesciej potrzebny.
+    hr("Kontekst podpinania")
+    import render_wiring  # noqa: E402
+    if check:
+        print("  pominieto (--check)")
+    else:
+        render_wiring.run(root, model, now, commit)
+        print(f"  {render_wiring.OUT_DIR}/{render_wiring.OUT_FILENAME}")
+
+    # -- 5. Strona -------------------------------------------------------
     if skip_site:
         hr("dist/")
         print("  pominieto (--skip-site)")
