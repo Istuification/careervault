@@ -141,6 +141,7 @@ Powtarzającym się motywem mojej kariery jest przekształcanie chaotycznych, ni
 **Powiązane Achievementy:**
 
 * ACH-001
+* ACH-002
 * ACH-008
 * ACH-009
 * ACH-011
