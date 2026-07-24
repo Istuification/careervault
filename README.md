@@ -50,7 +50,8 @@ Przykładowo:
 * osiągnięcia należą do Achievements,
 * kompetencje należą do Skills,
 * narracje należą do Stories,
-* obszary rozwoju należą do Development Areas.
+* obszary rozwoju należą do Development Areas,
+* okresy bez udokumentowanych osiągnięć należą do Context Entries.
 
 Należy unikać duplikowania informacji pomiędzy modułami.
 
@@ -190,10 +191,20 @@ CareerVault/
 │   ├── STORY-001.yaml
 │   └── ...
 │
-└── Development Areas/
-    ├── README.md
-    ├── DEV-001.yaml
-    └── ...
+├── Development Areas/
+│   ├── README.md
+│   ├── DEV-001.yaml
+│   └── ...
+│
+├── Context Entries/
+│   ├── README.md
+│   ├── CTX-001.yaml
+│   └── ...
+│
+└── scripts/
+    ├── vault_model.py
+    ├── build_index.py
+    └── build_vault.py
 ```
 
 ---
@@ -320,6 +331,24 @@ Stanowią uporządkowany zapis doświadczeń rozwojowych wynikających z analizy
 
 ---
 
+## Context Entries
+
+Odpowiadają na pytanie:
+
+> Dlaczego ten okres kariery nie posiada udokumentowanych Achievementów?
+
+Context Entries opisują etapy kariery, które świadomie nie wygenerowały materiału dowodowego — role wykonawcze, początki kariery, krótkie epizody zawodowe, okresy adaptacji.
+
+Ich zadaniem jest zachowanie ciągłości osi czasu bez przypisywania tym okresom znaczenia, którego nie posiadają.
+
+Context Entry nie jest źródłem dowodów.
+
+Nie służy do wyprowadzania kompetencji, uzasadniania Predictorów, Behavioral Patterns ani Cognitive Model. Zapisuje wyłącznie to, co autor pamięta, oddzielając fakty od interpretacji i zachowując niepewność tam, gdzie ona występuje.
+
+Każdy rekord kończy się polem `do_not_use_as: evidence`, które stanowi podstawową zasadę interpretacji całego artefaktu.
+
+---
+
 ## AI Interpretation Guide
 
 Odpowiada na pytanie:
@@ -383,6 +412,8 @@ Achievements pozostają głównym źródłem dowodów.
 
 Pozostałe moduły dostarczają interpretacji, kontekstu lub sposobu prezentacji informacji.
 
+Context Entries świadomie znajdują się poza tą hierarchią. Nie są źródłem dowodów i nie należy wykorzystywać ich do wyprowadzania kompetencji ani wniosków — pełnią wyłącznie funkcję kontekstu chronologicznego.
+
 ---
 
 # Współpraca z AI
@@ -418,7 +449,8 @@ Podczas analizy repozytorium zaleca się następującą kolejność:
 3. W razie potrzeby przeanalizuj moduł **Assessment**, aby zrozumieć model poznawczy i mechanizmy decyzyjne.
 4. Zweryfikuj wnioski na podstawie **Achievements**, **Stories**, **Skills** oraz **Experience**.
 5. Uwzględnij **Development Areas**, aby zachować pełny i zrównoważony obraz.
-6. Dopiero na tej podstawie generuj odpowiedzi, rekomendacje lub dokumenty.
+6. W razie potrzeby sięgnij po **Context Entries**, aby wyjaśnić luki w osi czasu — wyłącznie jako kontekst, nigdy jako dowód.
+7. Dopiero na tej podstawie generuj odpowiedzi, rekomendacje lub dokumenty.
 
 Przykładowe zastosowania obejmują:
 
@@ -507,5 +539,7 @@ Stories pokazują, jak o doświadczeniach opowiadać.
 Development Areas pokazują, jakie wzorce rozwojowe wynikają z doświadczeń.
 
 Identity opisuje profesjonalną tożsamość wynikającą z całości zgromadzonej wiedzy.
+
+Context Entries zachowują pamięć o okresach, które nie wygenerowały dowodów — bez udawania, że je posiadają.
 
 Najważniejszym źródłem prawdy pozostają Achievementy.
