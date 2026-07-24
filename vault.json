@@ -1,0 +1,3326 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-24 12:25",
+  "commit": "6f00043",
+  "scope": {
+    "complete": "Wszystkie identyfikatory i relacje. Zadna lista nie jest skracana.",
+    "omitted": "Tresci opisowe rekordow (situation, actions, impact, observed_pattern). Ich brak tutaj nie oznacza braku w Vaulcie."
+  },
+  "counts": {
+    "achievements": 27,
+    "skills": 21,
+    "stories": 11,
+    "development_areas": 7,
+    "predictors": 14,
+    "behavioral_patterns": 13,
+    "roles": 3
+  },
+  "achievements": {
+    "ACH-001": {
+      "id": "ACH-001",
+      "title": "Transformacja działu Instal/Solar",
+      "company": "KIPI",
+      "start": "2020-09",
+      "end": "2023-09",
+      "importance": "10",
+      "impact": [
+        "organizacja montażu skrócona z 1-2 dni do 2-3 godzin",
+        "redukcja błędów operacyjnych o około 70%",
+        "wzrost przepustowości procesu z ok. 8 do ok. 20 montaży miesięcznie (w piku ok. 30) bez proporcjonalnego zwiększania nakładów organizacyjnych",
+        "dział w szczycie liczył 12 osób (5 technicznych, 1 administracyjna, 5 handlowców, kierownik handlowy, właściciel)",
+        "systemy działu (rozliczenia, standardy, cennik, protokoły) działają do dziś - ponad 5 lat od powstania, jedynie z naturalnymi korektami cen",
+        "po moim przejściu do serwisu KIPI (2023) zachowany nadzór nad zmianami oferty działu",
+        "zaplecze magazynowe i dane w ERP udokumentowane osobno w ACH-009"
+      ],
+      "roles": [
+        "installation-coordinator"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-003",
+        "SKILL-005",
+        "SKILL-006",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-015",
+        "SKILL-017"
+      ],
+      "stories": [
+        "STORY-001"
+      ],
+      "development_areas": [
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "ACH-002": {
+      "id": "ACH-002",
+      "title": "Samodzielne opanowanie platformy Bitrix24 - od zera do projektanta automatyzacji",
+      "company": "KIPI",
+      "start": "2020-09",
+      "end": "2023-09",
+      "importance": "9",
+      "impact": [
+        "w pełni samodzielne dojście od zera do projektowania automatyzacji klasy enterprise - bez szkoleń, wdrożeniowca i zaplecza IT",
+        "kompetencja stała się fundamentem transformacji działu (ACH-001), a docelowo administracji ekosystemu systemów całej organizacji (ACH-013)",
+        "wzorzec samodzielnego opanowywania systemów powtórzony później przy kolejnych technologiach (BPMN, VOIP, ERP, narzędzia AI)",
+        "dowód, że brak formalnego backgroundu IT nie ogranicza zdolności do budowy rozwiązań systemowych"
+      ],
+      "roles": [
+        "installation-coordinator"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-021"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-003": {
+      "id": "ACH-003",
+      "title": "Stworzenie bazy wiedzy serwisowej BPMN 2.0",
+      "company": "KIPI",
+      "start": "2023-09",
+      "end": "2025-01",
+      "importance": "10",
+      "impact": [
+        "utworzenie około 120 procedur diagnostycznych",
+        "stworzenie centralnej bazy wiedzy serwisowej",
+        "standaryzacja procesu diagnostyki",
+        "skrócenie czasu osiągnięcia samodzielności operacyjnej nowych serwisantów z 8-9 do 2-3 miesięcy",
+        "w horyzoncie 6-9 miesięcy nowa osoba osiąga poziom ekspercki - przed wdrożeniem w porównywalnym czasie powstawał dopiero samodzielny junior",
+        "ograniczenie zależności od wiedzy pojedynczych ekspertów",
+        "stworzenie skalowalnego systemu transferu wiedzy"
+      ],
+      "roles": [
+        "acting-service-manager"
+      ],
+      "role_code": "KIER",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-006",
+        "SKILL-007",
+        "SKILL-010",
+        "SKILL-012",
+        "SKILL-015",
+        "SKILL-021"
+      ],
+      "stories": [
+        "STORY-005"
+      ],
+      "development_areas": []
+    },
+    "ACH-004": {
+      "id": "ACH-004",
+      "title": "Restrukturyzacja i stabilizacja działu serwisu",
+      "company": "KIPI",
+      "start": "2023-09",
+      "end": "2025-01",
+      "importance": "10",
+      "impact": [
+        "uporządkowanie procesów serwisowych",
+        "poprawa organizacji pracy działu",
+        "stworzenie skalowalnej struktury operacyjnej",
+        "usprawnienie wdrażania nowych pracowników",
+        "skuteczne przekazanie działu nowemu kierownikowi"
+      ],
+      "roles": [
+        "acting-service-manager"
+      ],
+      "role_code": "KIER",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-010",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017"
+      ],
+      "stories": [
+        "STORY-002",
+        "STORY-004",
+        "STORY-005"
+      ],
+      "development_areas": [
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "ACH-005": {
+      "id": "ACH-005",
+      "title": "Zaprojektowanie i wdrożenie systemu gwarancyjnego",
+      "company": "KIPI",
+      "start": "2025-01",
+      "end": "current",
+      "importance": "10",
+      "impact": [
+        "stworzenie spójnego systemu gwarancyjnego",
+        "standaryzacja procesu obsługi gwarancji",
+        "automatyzacja obsługi zgłoszeń",
+        "ujednolicenie dokumentacji gwarancyjnej",
+        "wdrożenie procesu u partnerów handlowych",
+        "skrócenie średniego czasu rozwiązania problemu klienta o ok. 3 dni dzięki rozdzieleniu naprawy od rozliczenia (process decoupling)",
+        "adopcja obowiązkowego systemu przez ok. 300 instalatorów i 3 producentów - instalatorzy, którzy wcześniej omijali system, sami chcą z niego korzystać"
+      ],
+      "roles": [
+        "product-manager"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-006",
+        "SKILL-007",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-016",
+        "SKILL-017",
+        "SKILL-019"
+      ],
+      "stories": [
+        "STORY-003"
+      ],
+      "development_areas": []
+    },
+    "ACH-006": {
+      "id": "ACH-006",
+      "title": "Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów",
+      "company": "KIPI",
+      "start": "2025-01",
+      "end": "2025-12",
+      "importance": "9",
+      "impact": [
+        "przeszkolenie około 250 osób",
+        "realizacja około 20-30 segmentów szkoleniowych",
+        "zwiększenie znajomości procedur gwarancyjnych",
+        "ujednolicenie zasad współpracy z partnerami",
+        "ograniczenie błędów wynikających z nieznajomości procedur"
+      ],
+      "roles": [
+        "product-manager"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-011",
+        "SKILL-013",
+        "SKILL-017"
+      ],
+      "stories": [
+        "STORY-003"
+      ],
+      "development_areas": [
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "ACH-007": {
+      "id": "ACH-007",
+      "title": "Samodzielne wdrożenie systemu VOIP i infolinii",
+      "company": "KIPI",
+      "start": "2023-09",
+      "end": "2025-01",
+      "importance": "8",
+      "impact": [
+        "uporządkowanie obsługi połączeń przychodzących",
+        "usprawnienie kierowania zgłoszeń do właściwych osób",
+        "integracja komunikacji telefonicznej z procesami operacyjnymi",
+        "stworzenie rozwiązania możliwego do skalowania w organizacji",
+        "wdrożenie rozwiązania również w BOK i dziale Instal"
+      ],
+      "roles": [
+        "acting-service-manager"
+      ],
+      "role_code": "KIER",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-010"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-008": {
+      "id": "ACH-008",
+      "title": "Koordynacja wdrożenia produktów PV Stand i PV-Box",
+      "company": "KIPI",
+      "start": "2022",
+      "end": "2023",
+      "importance": "7",
+      "impact": [
+        "przygotowanie organizacji do wdrożenia nowych produktów",
+        "zapewnienie kompletnej dokumentacji wdrożeniowej - od produkcji po gwarancje",
+        "realizacja serii 0 z weryfikacją jakościową przed wejściem na rynek",
+        "własne stanowisko testowe (PVB-Test) umożliwiło kontrolę jakości produktu przed wydaniem",
+        "usprawnienie komunikacji między działami i standaryzacja procesu wprowadzania produktu",
+        "znajomość pełnego pakietu wdrożeniowego pozwoliła mi później sprawnie przejmować i prowadzić tematy dokumentacji technicznej kolejnych produktów (DTR tworzone poza mną)"
+      ],
+      "roles": [
+        "project-manager"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-006",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-015",
+        "SKILL-017"
+      ],
+      "stories": [],
+      "development_areas": [
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "ACH-009": {
+      "id": "ACH-009",
+      "title": "Reorganizacja infrastruktury magazynowej i danych magazynowych w ERP",
+      "company": "KIPI",
+      "start": "2020",
+      "end": "2023",
+      "importance": "7",
+      "impact": [
+        "poprawa identyfikacji materiałów i skrócenie czasu wyszukiwania komponentów",
+        "zwiększenie przejrzystości organizacji magazynu i ograniczenie błędów logistycznych",
+        "dział operacyjnie pracujący w ERP w ciągu miesiąca od migracji",
+        "spójna kodyfikacja wszystkich indeksów działu według standardu firmowego",
+        "import Excel-ZS wyeliminował ręczne wprowadzanie pozycji zamówień i stał się fundamentem kalkulatora PV (ACH-011)",
+        "doświadczenie pracy z danymi podstawowymi w ERP wykorzystane później przy paszportyzacji produktów (ACH-015) i architekturze indeksów (ACH-019)"
+      ],
+      "roles": [
+        "installation-coordinator"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-002",
+        "SKILL-008"
+      ],
+      "stories": [
+        "STORY-006"
+      ],
+      "development_areas": []
+    },
+    "ACH-010": {
+      "id": "ACH-010",
+      "title": "Projektowanie organizacji na podstawie analizy danych operacyjnych",
+      "company": "KIPI",
+      "start": "2023-09",
+      "end": "2025-01",
+      "importance": "8",
+      "impact": [
+        "lepsze zrozumienie obciążenia działu",
+        "wsparcie decyzji kadrowych",
+        "przygotowanie skalowalnej struktury organizacyjnej",
+        "identyfikacja kluczowych wąskich gardeł",
+        "przejście serwisu z zarządzania intuicyjnego na oparte na danych - pierwszy system KPI działu",
+        "zespół ustabilizowany na 5 specjalistach i kierowniku zamiast zakładanych wcześniej ok. 8 etatów, z dobrą retencją i delegowaniem części czasu ekspertów do wsparcia R&D"
+      ],
+      "roles": [
+        "acting-service-manager"
+      ],
+      "role_code": "KIER",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-005",
+        "SKILL-010",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017",
+        "SKILL-021"
+      ],
+      "stories": [
+        "STORY-004"
+      ],
+      "development_areas": [
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "ACH-011": {
+      "id": "ACH-011",
+      "title": "Stworzenie systemu kalkulacji komponentów dla działu handlowego",
+      "company": "KIPI",
+      "start": "2020",
+      "end": "2023",
+      "importance": "7",
+      "impact": [
+        "skrócenie czasu przygotowania wyceny i list materiałowych z około 2–6 godzin do około 10 minut",
+        "wsparcie procesu obsługującego około 60–80 ofert miesięcznie",
+        "ograniczenie ręcznych obliczeń i ryzyka błędów kalkulacyjnych",
+        "standaryzacja procesu doboru komponentów i przygotowania realizacji",
+        "utrzymanie rozwiązania w aktywnym wykorzystaniu przez około 4 lata"
+      ],
+      "roles": [
+        "installation-coordinator"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-016",
+        "SKILL-019"
+      ],
+      "stories": [
+        "STORY-007"
+      ],
+      "development_areas": [
+        "DEV-004"
+      ]
+    },
+    "ACH-012": {
+      "id": "ACH-012",
+      "title": "Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zmian organizacyjnych",
+      "company": "KIPI",
+      "start": "2023-09",
+      "end": "2025-01",
+      "importance": "9",
+      "impact": [
+        "utrzymanie kluczowych kompetencji eksperckich w okresie najwyższego ryzyka rotacji - zespół ustabilizował się zamiast rozpaść",
+        "utrzymanie jakości obsługi mimo wzrostu liczby urządzeń i równoległych zmian organizacyjnych",
+        "nowi pracownicy doprowadzeni do samodzielności bez utraty ciągłości działania",
+        "płynne przekazanie działu następcy, który prowadzi go samodzielnie do dziś",
+        "ograniczenie ryzyka utraty wiedzy organizacyjnej w najbardziej wrażliwym okresie"
+      ],
+      "roles": [
+        "acting-service-manager"
+      ],
+      "role_code": "KIER",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-002",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-010",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017"
+      ],
+      "stories": [
+        "STORY-008",
+        "STORY-009"
+      ],
+      "development_areas": [
+        "DEV-001",
+        "DEV-002"
+      ]
+    },
+    "ACH-013": {
+      "id": "ACH-013",
+      "title": "Rozwój i administracja ekosystemu systemów operacyjnych organizacji",
+      "company": "KIPI",
+      "start": "2020-09",
+      "end": "current",
+      "importance": "8",
+      "impact": [
+        "wsparcie operacyjne wielu działów organizacji",
+        "rozwój środowiska wykorzystywanego przez sprzedaż, serwis, instalacje i administrację",
+        "utrzymanie spójności procesów pomimo wzrostu organizacji",
+        "ograniczenie liczby procesów realizowanych poza systemem"
+      ],
+      "roles": [
+        "installation-coordinator",
+        "acting-service-manager",
+        "product-manager"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-017"
+      ],
+      "stories": [
+        "STORY-003"
+      ],
+      "development_areas": [
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "ACH-014": {
+      "id": "ACH-014",
+      "title": "Budowa standardów dokumentacyjnych wspierających rozwój organizacji",
+      "company": "KIPI",
+      "start": "2020-09",
+      "end": "current",
+      "importance": "8",
+      "impact": [
+        "stworzenie jednolitych standardów dokumentacyjnych wspierających wiele obszarów organizacji",
+        "ograniczenie ryzyka błędnych interpretacji procedur i zasad współpracy",
+        "usprawnienie wdrażania nowych produktów, procesów i partnerów",
+        "zwiększenie spójności komunikacji pomiędzy organizacją, klientami i partnerami",
+        "wsparcie skalowania organizacji poprzez formalizację wiedzy operacyjnej i produktowej"
+      ],
+      "roles": [
+        "installation-coordinator",
+        "acting-service-manager",
+        "product-manager"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-006",
+        "SKILL-017"
+      ],
+      "stories": [
+        "STORY-003"
+      ],
+      "development_areas": [
+        "DEV-004",
+        "DEV-006"
+      ]
+    },
+    "ACH-015": {
+      "id": "ACH-015",
+      "title": "Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów seryjnych",
+      "company": "KIPI",
+      "start": "2025-04",
+      "end": "current",
+      "importance": "9",
+      "impact": [
+        "spójny \"paszport produktu\" w CRM - serwis po wpisaniu numeru seryjnego widzi ad hoc pełną historię urządzenia",
+        "fundament danych umożliwił uruchomienie promocji sprzedażowej \"Pierwsze uruchomienie\" (płatność dla instalatora za poprawne uruchomienie) - wartość sprzedażowa niemożliwa bez kontroli tej informacji",
+        "projekt zweryfikowany rynkowo post factum - przegląd dedykowanych systemów serwisowych wykazał, że samodzielnie wypracowana architektura odpowiada standardowi branżowemu"
+      ],
+      "roles": [
+        "product-manager"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-009",
+        "SKILL-016",
+        "SKILL-019",
+        "SKILL-020"
+      ],
+      "stories": [
+        "STORY-010"
+      ],
+      "development_areas": [
+        "DEV-007"
+      ]
+    },
+    "ACH-016": {
+      "id": "ACH-016",
+      "title": "Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymaganiami",
+      "company": "KIPI",
+      "start": "2025-12",
+      "end": "current",
+      "importance": "9",
+      "impact": [
+        "projekt powierzony mi przez właścicieli firmy jako strategiczny",
+        "zabezpieczenie organizacji przed długiem technologicznym trzech niekompatybilnych rozwiązań",
+        "konsolidacja budżetu wokół jednego, rozszerzalnego ekosystemu (moduły dokładane etapami zamiast osobnych aplikacji)",
+        "zaakceptowana wizualizacja docelowego rozwiązania od wykonawcy; umowa w trakcie podpisywania"
+      ],
+      "roles": [
+        "product-manager",
+        "business-analyst"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-004",
+        "SKILL-011",
+        "SKILL-019",
+        "SKILL-021"
+      ],
+      "stories": [],
+      "development_areas": [
+        "DEV-007"
+      ]
+    },
+    "ACH-017": {
+      "id": "ACH-017",
+      "title": "Stabilizacja kooperacji OEM i operacyjny business enablement",
+      "company": "KIPI",
+      "start": "2025-03",
+      "end": "2025-09",
+      "importance": "8",
+      "impact": [
+        "ustabilizowanie współpracy z kooperantami w stopniu umożliwiającym znaczne zwiększenie wolumenu produkcji o ok. 20%",
+        "udane wypuszczenie urządzeń na rynek",
+        "płynne przekazanie obszaru nowemu pracownikowi po 3 miesiącach",
+        "lekcja systemowa - stabilizacja oparta na ustaleniach między ludźmi, bez udokumentowanego procesu, zdegradowała się po odejściu kluczowej osoby po stronie operacyjnej; wniosek \"proces > ustalenia personalne\" stosuję od tamtej pory jako kryterium domknięcia wdrożenia"
+      ],
+      "roles": [
+        "product-manager"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-011",
+        "SKILL-012"
+      ],
+      "stories": [
+        "STORY-011"
+      ],
+      "development_areas": []
+    },
+    "ACH-018": {
+      "id": "ACH-018",
+      "title": "Wdrożenie lejków sprzedażowych z e-podpisem dla działu handlowego",
+      "company": "KIPI",
+      "start": "2025-11",
+      "end": "2026-06",
+      "importance": "7",
+      "impact": [
+        "dwa powtarzalne procesy (harmonogram, umowy bonusowe) w codziennym użyciu handlowców",
+        "eliminacja dojazdów do klientów w celu podpisywania umów - podpis elektroniczny z poziomu CRM",
+        "adopcja narzędzia przez dział, który wcześniej nie pracował procesowo w CRM"
+      ],
+      "roles": [
+        "product-manager",
+        "internal-consultant"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-007",
+        "SKILL-009",
+        "SKILL-012"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-019": {
+      "id": "ACH-019",
+      "title": "Architektura procesu życia produktu - projekt modelu operacyjnego firmy produktowej",
+      "company": "KIPI",
+      "start": "2025-09",
+      "end": "2026-02",
+      "importance": "7",
+      "impact": [
+        "kompletny pakiet projektowy modelu operacyjnego (proces, dokumenty, dane, odpowiedzialności) gotowy do wdrożenia",
+        "warstwa danych architektury zrealizowana produkcyjnie poprzez system paszportyzacji i numerów seryjnych (ACH-015)",
+        "proces ECR/ECO działa jako rejestr zmian produktowych, wykorzystany m.in. przy wdrażaniu nowego PM-a",
+        "wspólny słownik pojęć ujednolicił nomenklaturę między działami",
+        "diagnoza zmieniła sposób rozmowy o problemie w organizacji - z \"narzędzia dla PM-ów\" na \"główny proces firmy do ułożenia\"",
+        "pełne wdrożenie procesu wstrzymane decyzją priorytetową; temat otwarty wraz z moją zgłoszoną gotowością do jego przejęcia"
+      ],
+      "roles": [
+        "product-manager",
+        "business-analyst"
+      ],
+      "role_code": "PM",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-019"
+      ],
+      "stories": [],
+      "development_areas": [
+        "DEV-007"
+      ]
+    },
+    "ACH-020": {
+      "id": "ACH-020",
+      "title": "Zbudowanie i prowadzenie procesów rekrutacyjnych dla ról technicznych",
+      "company": "KIPI",
+      "start": "2022-08",
+      "end": "current",
+      "importance": "7",
+      "impact": [
+        "8-9 osób zatrudnionych w osobiście prowadzonych procesach (monterzy, serwisanci PV, serwisanci KIPI)",
+        "model selekcji pod potencjał rozwoju umożliwił zatrudnianie osób spoza branży do ról technicznych",
+        "jedna z osób wyselekcjonowanych pod potencjał rozwoju pełni dziś funkcję koordynatora działu szkoleń (rozwój to zasługa jej i jej przełożonego - selekcja okazała się trafna)",
+        "praktyka informacji zwrotnej do kandydatów wprowadzona zanim pojawił się dział HR",
+        "rola ewoluowała w ekspercką - obecnie na prośbę dyrekcji pełnię funkcję ciała doradczego przy rekrutacjach (m.in. nowego Product Managera)"
+      ],
+      "roles": [
+        "installation-coordinator",
+        "acting-service-manager"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-005",
+        "SKILL-007"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-021": {
+      "id": "ACH-021",
+      "title": "Hybrydowy model współpracy z podwykonawcami montażowymi",
+      "company": "KIPI",
+      "start": "2021-10",
+      "end": "2023-09",
+      "importance": "6",
+      "impact": [
+        "skalowanie do ~30 montaży miesięcznie bez proporcjonalnej rozbudowy zespołu etatowego",
+        "żadna współpraca nie zakończyła się z powodu jakości - wymagania umowne plus kontrola odbiorowa działały prewencyjnie",
+        "ograniczenie ryzyka BHP zespołu własnego przy zachowaniu pełnej kontroli nad krytyczną (elektryczną) częścią montażu"
+      ],
+      "roles": [
+        "installation-coordinator"
+      ],
+      "role_code": "KOOR",
+      "visibility": "professional",
+      "skills": [
+        "SKILL-001",
+        "SKILL-011"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-P001": {
+      "id": "ACH-P001",
+      "title": "Regularne prowadzenie wystąpień publicznych i koordynacja społeczności",
+      "company": "",
+      "start": "2019",
+      "end": "current",
+      "importance": "8",
+      "impact": [
+        "regularne wystąpienia dla grup około 60-120 osób",
+        "rozwój umiejętności prezentacyjnych i komunikacyjnych",
+        "wsparcie organizacji licznych wydarzeń społecznościowych",
+        "budowanie zaangażowania i przepływu informacji w społeczności"
+      ],
+      "roles": [],
+      "role_code": null,
+      "visibility": "private",
+      "skills": [
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-013",
+        "SKILL-017"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-P002": {
+      "id": "ACH-P002",
+      "title": "Organizacja wielodniowych wydarzeń społecznościowych i ekspedycji terenowych",
+      "company": "",
+      "start": "2019",
+      "end": "current",
+      "importance": "8",
+      "impact": [
+        "organizacja cyklicznych, czterodniowych wydarzeń dla 20–30 uczestników",
+        "koordynacja logistyki obejmującej transport, noclegi i działania terenowe",
+        "stworzenie powtarzalnego procesu organizacyjnego wykorzystywanego przez kolejne lata",
+        "przygotowanie procedur ograniczających ryzyko organizacyjne i bezpieczeństwa",
+        "budowanie zaangażowanej społeczności liczącej łącznie ponad 140 uczestników na przestrzeni kilku lat"
+      ],
+      "roles": [
+        "event-organizer",
+        "project-coordinator",
+        "community-leader"
+      ],
+      "role_code": null,
+      "visibility": "private",
+      "skills": [
+        "SKILL-005",
+        "SKILL-011",
+        "SKILL-013",
+        "SKILL-014"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-P003": {
+      "id": "ACH-P003",
+      "title": "Kompleksowa organizacja zaręczyn, wesela i oprawy wydarzenia",
+      "company": "",
+      "start": "2023-05",
+      "end": "2024-05",
+      "importance": "6",
+      "impact": [
+        "przeprowadzenie dwóch złożonych wydarzeń rodzinnych w sposób uporządkowany",
+        "ograniczenie chaosu organizacyjnego poprzez jasny podział ról",
+        "stworzenie budżetu i kontroli kosztów dla wesela",
+        "przygotowanie spójnej oprawy muzycznej i rozrywkowej",
+        "zaprojektowanie atrakcji, które można było łatwo uruchomić podczas wydarzenia",
+        "zwiększenie przewidywalności i bezpieczeństwa całego procesu"
+      ],
+      "roles": [
+        "event-organizer",
+        "budget-owner",
+        "project-coordinator",
+        "entertainment-designer"
+      ],
+      "role_code": null,
+      "visibility": "private",
+      "skills": [
+        "SKILL-005",
+        "SKILL-013",
+        "SKILL-014"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-P004": {
+      "id": "ACH-P004",
+      "title": "Projektowanie systemów organizacyjnych, baz wiedzy i narzędzi informacyjnych",
+      "company": "",
+      "start": "2019",
+      "end": "current",
+      "importance": "10",
+      "impact": [
+        "stworzenie wielu niezależnych systemów organizacyjnych i baz wiedzy wykorzystywanych w projektach prywatnych",
+        "uporządkowanie złożonych zbiorów informacji poprzez projektowanie struktur danych, dokumentacji i workflow",
+        "zwiększenie możliwości skalowania projektów wymagających koordynacji ludzi, wiedzy i zasobów",
+        "wypracowanie własnych metod organizacji informacji i podejmowania decyzji",
+        "rozwój kompetencji systemowego rozwiązywania problemów poprzez wieloletnią praktykę"
+      ],
+      "roles": [
+        "system-designer",
+        "knowledge-manager",
+        "process-designer"
+      ],
+      "role_code": null,
+      "visibility": "private",
+      "skills": [
+        "SKILL-003",
+        "SKILL-006",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017",
+        "SKILL-021"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-P005": {
+      "id": "ACH-P005",
+      "title": "Wieloletni wolontariat kaznodziejski — komunikacja perswazyjna w terenie i rezyliencja psychologiczna",
+      "company": "",
+      "start": "2013",
+      "end": "current",
+      "importance": "8",
+      "impact": [
+        "szacunkowo ponad 2000 godzin bezpośrednich interakcji z obcymi osobami",
+        "biegłość w inicjowaniu kontaktu i budowaniu rapport w ciągu kilkudziesięciu sekund",
+        "wysoce rozwinięta odporność na seryjne odrzucenie bez utraty motywacji i sprawności",
+        "opanowanie technik zarządzania obiekcjami bez wywoływania oporu rozmówcy",
+        "zdolność do szybkiej diagnozy profilu psychologicznego i emocjonalnego nieznajomego",
+        "wysoka elastyczność komunikacyjna w warunkach nieprzewidywalnych i niejednorodnych społecznie"
+      ],
+      "roles": [
+        "field-communicator",
+        "volunteer-educator"
+      ],
+      "role_code": null,
+      "visibility": "private",
+      "skills": [
+        "SKILL-007",
+        "SKILL-018"
+      ],
+      "stories": [],
+      "development_areas": []
+    },
+    "ACH-P006": {
+      "id": "ACH-P006",
+      "title": "VaultShot CV — zaprojektowanie i wdrożenie systemu generowania aplikacji dopasowanych pod ofertę (redukcja czasu ~94% przy pełnej dowodowości), będącego jednocześnie strategiczną odpowiedzią na mechanikę rynku rekrutacyjnego i meta-dowodem własnych kompetencji analityczno-systemowych",
+      "company": "",
+      "start": "2026-06",
+      "end": "current",
+      "importance": "9",
+      "impact": [
+        "skrócenie czasu przygotowania dopasowanej aplikacji z ~1,5-2 h do ~5-6 min (redukcja ~94%)",
+        "system ~8x szybszy nawet od wariantu \"na skróty\" (naciągane CV z darmowego AI) — przy zachowaniu pełnej uczciwości, co znosi klasyczny kompromis szybkość-kontra-jakość",
+        "pełna dowodowość — każda kompetencja w CV poparta konkretnym, weryfikowalnym rekordem; zero halucynacji na poziomie architektury",
+        "odporność jakości na skalę i zmęczenie — setne CV ma dokładnie ten sam rygor budżetów, kaskady ATS i trójkąta dowodowego co pierwsze",
+        "eliminacja subiektywizmu w doborze dowodów — obiektywna reguła zamiast pamięci i preferencji (neutralizacja tendencji do zaniżania własnej wartości)",
+        "zaprojektowanie pod czytelnika, którego rynek jeszcze nie obsługuje (AI hiring managera) — wyprzedzenie rynku o jeden ruch",
+        "jawny tag systemu na każdym CV jako wabik rekrutacyjny — rekruter trzyma w rękach produkt systemu, o którym czyta, co tworzy powód do kontaktu niezależny od dopasowania do oferty",
+        "meta-dowód kompetencji — sam system jest wykonaną na żywo demonstracją zdolności \"wziąć chaos, zdiagnozować jego mechanikę, zaprojektować mierzalny system i wdrożyć go z pomiarem\", czyli dokładnie tej kompetencji, którą aplikacje deklarują"
+      ],
+      "roles": [
+        "system-designer",
+        "ai-workflow-architect",
+        "prompt-engineer",
+        "recruitment-strategist"
+      ],
+      "role_code": null,
+      "visibility": "private",
+      "skills": [
+        "SKILL-003",
+        "SKILL-009",
+        "SKILL-020",
+        "SKILL-021"
+      ],
+      "stories": [],
+      "development_areas": []
+    }
+  },
+  "skills": {
+    "SKILL-001": {
+      "id": "SKILL-001",
+      "name": "Process Design",
+      "category": "Operations",
+      "level": "Expert",
+      "importance": "10",
+      "keywords": [
+        "process design",
+        "workflow design",
+        "process optimization",
+        "business process management",
+        "bpm",
+        "workflow"
+      ],
+      "capabilities": [
+        "process-mapping",
+        "workflow-design",
+        "process-optimization",
+        "process-standardization",
+        "process-documentation",
+        "bpm",
+        "organizational-workflows"
+      ],
+      "related_skills": [
+        "SKILL-002",
+        "SKILL-003",
+        "SKILL-005",
+        "SKILL-001"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-011",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-017",
+        "ACH-018",
+        "ACH-019",
+        "ACH-021"
+      ],
+      "evidence_count": 12,
+      "evidence_other": []
+    },
+    "SKILL-002": {
+      "id": "SKILL-002",
+      "name": "Operations Management",
+      "category": "Operations",
+      "level": "Advanced",
+      "importance": "10",
+      "keywords": [
+        "operations",
+        "service operations",
+        "organizational scaling",
+        "logistics",
+        "operational excellence"
+      ],
+      "capabilities": [
+        "operational-planning",
+        "workflow-management",
+        "team-coordination",
+        "capacity-planning",
+        "service-operations",
+        "logistics",
+        "operational-analysis",
+        "resource-planning"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-005",
+        "SKILL-011"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-008",
+        "ACH-009",
+        "ACH-010",
+        "ACH-012",
+        "ACH-013"
+      ],
+      "evidence_count": 7,
+      "evidence_other": []
+    },
+    "SKILL-003": {
+      "id": "SKILL-003",
+      "name": "Knowledge Management",
+      "category": "Knowledge",
+      "level": "Expert",
+      "importance": "10",
+      "keywords": [
+        "knowledge management",
+        "documentation",
+        "onboarding",
+        "knowledge base",
+        "information architecture",
+        "knowledge transfer"
+      ],
+      "capabilities": [
+        "knowledge-capture",
+        "knowledge-organization",
+        "documentation-design",
+        "onboarding-design",
+        "knowledge-transfer",
+        "information-architecture",
+        "technical-documentation"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-006",
+        "SKILL-007"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-003",
+        "ACH-005",
+        "ACH-006",
+        "ACH-014",
+        "ACH-P004",
+        "ACH-P006"
+      ],
+      "evidence_count": 7,
+      "evidence_other": []
+    },
+    "SKILL-004": {
+      "id": "SKILL-004",
+      "name": "Product Management",
+      "category": "Product",
+      "level": "Advanced",
+      "importance": "10",
+      "keywords": [
+        "product management",
+        "product development",
+        "product launch",
+        "warranty systems",
+        "technical products",
+        "stakeholder management"
+      ],
+      "capabilities": [
+        "product-development",
+        "product-introduction",
+        "stakeholder-management",
+        "product-documentation",
+        "warranty-management",
+        "partner-enablement",
+        "product-lifecycle-management",
+        "requirements-gathering",
+        "service-design"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-006",
+        "SKILL-011"
+      ],
+      "evidence": [
+        "ACH-005",
+        "ACH-006",
+        "ACH-008",
+        "ACH-010",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-016",
+        "ACH-017",
+        "ACH-018"
+      ],
+      "evidence_count": 10,
+      "evidence_other": []
+    },
+    "SKILL-005": {
+      "id": "SKILL-005",
+      "name": "Leadership",
+      "category": "Management",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "leadership",
+        "team leadership",
+        "people management",
+        "mentoring",
+        "team development",
+        "succession planning"
+      ],
+      "capabilities": [
+        "team-coordination",
+        "delegation",
+        "mentoring",
+        "team-development",
+        "people-retention",
+        "succession-planning",
+        "conflict-resolution",
+        "decision-making",
+        "leadership-without-authority"
+      ],
+      "related_skills": [],
+      "evidence": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-006",
+        "ACH-010",
+        "ACH-012",
+        "ACH-020",
+        "ACH-P001",
+        "ACH-P002",
+        "ACH-P003"
+      ],
+      "evidence_count": 9,
+      "evidence_other": []
+    },
+    "SKILL-006": {
+      "id": "SKILL-006",
+      "name": "Technical Documentation",
+      "category": "Knowledge",
+      "level": "Expert",
+      "importance": "9",
+      "keywords": [
+        "technical documentation",
+        "technical writing",
+        "procedures",
+        "instructions",
+        "documentation management",
+        "knowledge base"
+      ],
+      "capabilities": [
+        "technical-writing",
+        "procedure-design",
+        "documentation-standardization",
+        "technical-instructions",
+        "warranty-documentation",
+        "process-documentation",
+        "knowledge-documentation",
+        "information-architecture",
+        "information-architecture"
+      ],
+      "related_skills": [
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-007"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-003",
+        "ACH-005",
+        "ACH-008",
+        "ACH-014",
+        "ACH-P004"
+      ],
+      "evidence_count": 6,
+      "evidence_other": []
+    },
+    "SKILL-007": {
+      "id": "SKILL-007",
+      "name": "Training & Enablement",
+      "category": "Knowledge",
+      "level": "Advanced",
+      "importance": "9",
+      "keywords": [
+        "training",
+        "onboarding",
+        "enablement",
+        "knowledge transfer",
+        "technical training",
+        "partner education"
+      ],
+      "capabilities": [
+        "training-design",
+        "onboarding-design",
+        "knowledge-transfer",
+        "workshop-facilitation",
+        "partner-enablement",
+        "technical-training",
+        "curriculum-development",
+        "presentation-delivery",
+        "instructional-design"
+      ],
+      "related_skills": [
+        "SKILL-003",
+        "SKILL-006",
+        "SKILL-013"
+      ],
+      "evidence": [
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-012",
+        "ACH-018",
+        "ACH-020",
+        "ACH-P001",
+        "ACH-P005"
+      ],
+      "evidence_count": 9,
+      "evidence_other": []
+    },
+    "SKILL-008": {
+      "id": "SKILL-008",
+      "name": "Business Systems",
+      "category": "Systems",
+      "level": "Advanced",
+      "importance": "9",
+      "keywords": [
+        "business systems",
+        "crm",
+        "systems integration",
+        "digital transformation",
+        "operations systems",
+        "process support"
+      ],
+      "capabilities": [
+        "business-systems-design",
+        "crm-management",
+        "systems-integration",
+        "systems-administration",
+        "requirements-analysis",
+        "digitalization",
+        "operational-systems",
+        "workflow-automation",
+        "process-to-system-design"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-009",
+        "SKILL-010"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-002",
+        "ACH-004",
+        "ACH-005",
+        "ACH-007",
+        "ACH-009",
+        "ACH-013"
+      ],
+      "evidence_count": 7,
+      "evidence_other": []
+    },
+    "SKILL-009": {
+      "id": "SKILL-009",
+      "name": "Workflow Automation",
+      "category": "Systems",
+      "level": "Advanced",
+      "importance": "9",
+      "keywords": [
+        "workflow automation",
+        "process automation",
+        "workflow",
+        "automation",
+        "process optimization",
+        "operational efficiency"
+      ],
+      "capabilities": [
+        "workflow-design",
+        "process-automation",
+        "business-rules-design",
+        "task-automation",
+        "information-flow-design",
+        "operational-automation",
+        "workflow-optimization"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-008"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-002",
+        "ACH-004",
+        "ACH-005",
+        "ACH-007",
+        "ACH-013",
+        "ACH-015",
+        "ACH-018",
+        "ACH-P006"
+      ],
+      "evidence_count": 9,
+      "evidence_other": []
+    },
+    "SKILL-010": {
+      "id": "SKILL-010",
+      "name": "Service Operations",
+      "category": "Operations",
+      "level": "Advanced",
+      "importance": "9",
+      "keywords": [
+        "service operations",
+        "service management",
+        "technical service",
+        "workflow management",
+        "service processes",
+        "operational excellence"
+      ],
+      "capabilities": [
+        "service-process-design",
+        "service-workflow-management",
+        "ticket-management",
+        "service-coordination",
+        "service-scaling",
+        "service-analysis",
+        "service-standardization",
+        "workforce-planning",
+        "service-knowledge-management"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-012"
+      ],
+      "evidence": [
+        "ACH-003",
+        "ACH-004",
+        "ACH-007",
+        "ACH-010",
+        "ACH-012"
+      ],
+      "evidence_count": 5,
+      "evidence_other": []
+    },
+    "SKILL-011": {
+      "id": "SKILL-011",
+      "name": "Stakeholder Management",
+      "category": "Management",
+      "level": "Advanced",
+      "importance": "9",
+      "keywords": [
+        "stakeholder management",
+        "communication",
+        "partner management",
+        "cross-functional collaboration",
+        "coordination",
+        "relationship management"
+      ],
+      "capabilities": [
+        "stakeholder-alignment",
+        "cross-functional-coordination",
+        "partner-management",
+        "customer-communication",
+        "conflict-resolution",
+        "expectation-management",
+        "relationship-building",
+        "requirements-facilitation",
+        "influence-without-authority"
+      ],
+      "related_skills": [
+        "SKILL-004",
+        "SKILL-005",
+        "SKILL-007"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-008",
+        "ACH-012",
+        "ACH-016",
+        "ACH-017",
+        "ACH-021",
+        "ACH-P002"
+      ],
+      "evidence_count": 10,
+      "evidence_other": []
+    },
+    "SKILL-012": {
+      "id": "SKILL-012",
+      "name": "Change Management",
+      "category": "Management",
+      "level": "Advanced",
+      "importance": "10",
+      "keywords": [
+        "change management",
+        "transformation",
+        "organizational change",
+        "process transformation",
+        "organizational development",
+        "change leadership"
+      ],
+      "capabilities": [
+        "organizational-transformation",
+        "process-transformation",
+        "change-planning",
+        "communication-planning",
+        "adoption-support",
+        "organizational-stabilization",
+        "change-implementation",
+        "stakeholder-alignment",
+        "resistance-management"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-005",
+        "SKILL-015"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-008",
+        "ACH-012",
+        "ACH-017",
+        "ACH-018"
+      ],
+      "evidence_count": 8,
+      "evidence_other": []
+    },
+    "SKILL-013": {
+      "id": "SKILL-013",
+      "name": "Public Speaking",
+      "category": "Communication",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "public speaking",
+        "presentations",
+        "communication",
+        "facilitation",
+        "training",
+        "audience engagement"
+      ],
+      "capabilities": [
+        "public-speaking",
+        "presentation-design",
+        "audience-engagement",
+        "facilitation",
+        "verbal-communication",
+        "knowledge-sharing",
+        "event-speaking",
+        "training-delivery",
+        "group-facilitation"
+      ],
+      "related_skills": [
+        "SKILL-007",
+        "SKILL-011"
+      ],
+      "evidence": [
+        "ACH-006",
+        "ACH-P001",
+        "ACH-P002",
+        "ACH-P003"
+      ],
+      "evidence_count": 4,
+      "evidence_other": []
+    },
+    "SKILL-014": {
+      "id": "SKILL-014",
+      "name": "Project Management",
+      "category": "Management",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "project management",
+        "planning",
+        "execution",
+        "coordination",
+        "scheduling",
+        "risk management"
+      ],
+      "capabilities": [
+        "project-planning",
+        "scheduling",
+        "risk-management",
+        "resource-coordination",
+        "project-execution",
+        "milestone-management",
+        "project-documentation",
+        "stakeholder-alignment",
+        "stakeholder-alignment",
+        "ambiguity-management"
+      ],
+      "related_skills": [
+        "SKILL-005",
+        "SKILL-011",
+        "SKILL-012"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-005",
+        "ACH-008",
+        "ACH-P002",
+        "ACH-P003"
+      ],
+      "evidence_count": 6,
+      "evidence_other": []
+    },
+    "SKILL-015": {
+      "id": "SKILL-015",
+      "name": "Organizational Design",
+      "category": "Operations",
+      "level": "Advanced",
+      "importance": "9",
+      "keywords": [
+        "organizational design",
+        "organizational development",
+        "workforce planning",
+        "organizational structure",
+        "governance",
+        "scaling"
+      ],
+      "capabilities": [
+        "organizational-analysis",
+        "role-design",
+        "responsibility-mapping",
+        "information-flow-design",
+        "workforce-planning",
+        "organizational-scaling",
+        "governance-design",
+        "knowledge-system-design",
+        "operating-model-design"
+      ],
+      "related_skills": [
+        "SKILL-002",
+        "SKILL-005",
+        "SKILL-012",
+        "SKILL-021"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-003",
+        "ACH-004",
+        "ACH-008",
+        "ACH-010",
+        "ACH-012",
+        "ACH-P004"
+      ],
+      "evidence_count": 7,
+      "evidence_other": []
+    },
+    "SKILL-016": {
+      "id": "SKILL-016",
+      "name": "Operational Analysis",
+      "category": "Analytics",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "data analysis",
+        "analytics",
+        "reporting",
+        "kpi",
+        "root cause analysis",
+        "decision making"
+      ],
+      "capabilities": [
+        "operational-analysis",
+        "trend-analysis",
+        "root-cause-analysis",
+        "reporting",
+        "decision-support",
+        "process-metrics",
+        "workforce-analysis",
+        "hypothesis-testing",
+        "metrics-design"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-015",
+        "SKILL-021"
+      ],
+      "evidence": [
+        "ACH-004",
+        "ACH-005",
+        "ACH-010",
+        "ACH-011",
+        "ACH-012",
+        "ACH-015",
+        "ACH-P004"
+      ],
+      "evidence_count": 7,
+      "evidence_other": []
+    },
+    "SKILL-017": {
+      "id": "SKILL-017",
+      "name": "Cross-Functional Facilitation",
+      "category": "Communication",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "cross-functional facilitation",
+        "context translation",
+        "internal advisory",
+        "problem framing",
+        "organizational communication",
+        "perspective taking",
+        "mediation"
+      ],
+      "capabilities": [
+        "context-framing",
+        "cross-functional-translation",
+        "problem-reframing",
+        "informal-advisory",
+        "perspective-mediation",
+        "trust-building",
+        "decision-support",
+        "stakeholder-alignment",
+        "ambiguity-reduction"
+      ],
+      "related_skills": [
+        "SKILL-003",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-011",
+        "SKILL-015"
+      ],
+      "evidence": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-008",
+        "ACH-010",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-P001",
+        "ACH-P004"
+      ],
+      "evidence_count": 11,
+      "evidence_other": []
+    },
+    "SKILL-018": {
+      "id": "SKILL-018",
+      "name": "Persuasive Communication",
+      "category": "Communication",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "persuasive communication",
+        "objection handling",
+        "cold outreach",
+        "rapport building",
+        "rejection resilience",
+        "active listening",
+        "needs discovery",
+        "cognitive reframing",
+        "influence"
+      ],
+      "capabilities": [
+        "cold-outreach",
+        "rapport-building",
+        "needs-discovery",
+        "objection-handling",
+        "cognitive-reframing",
+        "socratic-persuasion",
+        "rejection-resilience",
+        "active-listening",
+        "pacing-and-leading",
+        "emotional-deescalation",
+        "graceful-disarming"
+      ],
+      "related_skills": [
+        "SKILL-013",
+        "SKILL-011",
+        "SKILL-017"
+      ],
+      "evidence": [
+        "ACH-P005"
+      ],
+      "evidence_count": 1,
+      "evidence_other": []
+    },
+    "SKILL-019": {
+      "id": "SKILL-019",
+      "name": "Business Analysis & Requirements Engineering",
+      "category": "Product & Business",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "business analysis",
+        "requirements engineering",
+        "requirements gathering",
+        "stakeholder workshops",
+        "functional specification",
+        "gap analysis"
+      ],
+      "capabilities": [
+        "requirements-gathering",
+        "stakeholder-interviews",
+        "scope-definition",
+        "solution-architecture-design",
+        "specification-writing",
+        "vendor-selection",
+        "gap-analysis",
+        "business-case-framing"
+      ],
+      "related_skills": [],
+      "evidence": [
+        "ACH-005",
+        "ACH-011",
+        "ACH-015",
+        "ACH-016",
+        "ACH-019"
+      ],
+      "evidence_count": 5,
+      "evidence_other": []
+    },
+    "SKILL-020": {
+      "id": "SKILL-020",
+      "name": "AI Tooling & Automation",
+      "category": "Systems",
+      "level": "Advanced",
+      "importance": "8",
+      "keywords": [
+        "ai tooling",
+        "prompt engineering",
+        "generative ai",
+        "llm",
+        "ai automation",
+        "ai agents"
+      ],
+      "capabilities": [
+        "prompt-engineering",
+        "ai-agent-orchestration",
+        "llm-workflow-design",
+        "data-preparation-for-ai",
+        "ai-tool-selection",
+        "ai-adoption"
+      ],
+      "related_skills": [],
+      "evidence": [
+        "ACH-015",
+        "ACH-P006"
+      ],
+      "evidence_count": 2,
+      "evidence_other": [
+        "Career Vault (repozytorium w którym jest ten plik)"
+      ]
+    },
+    "SKILL-021": {
+      "id": "SKILL-021",
+      "name": "Systems Thinking",
+      "category": "Systems",
+      "level": "Expert",
+      "importance": "10",
+      "keywords": [
+        "systems thinking",
+        "systems architecture",
+        "root cause analysis",
+        "dependency analysis",
+        "information architecture",
+        "process architecture",
+        "systems design"
+      ],
+      "capabilities": [
+        "systems-mapping",
+        "dependency-analysis",
+        "root-cause-analysis",
+        "problem-reframing",
+        "information-architecture",
+        "data-modeling",
+        "systems-design"
+      ],
+      "related_skills": [
+        "SKILL-001",
+        "SKILL-008",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-019"
+      ],
+      "evidence": [
+        "ACH-002",
+        "ACH-003",
+        "ACH-010",
+        "ACH-016",
+        "ACH-P004",
+        "ACH-P006"
+      ],
+      "evidence_count": 6,
+      "evidence_other": []
+    }
+  },
+  "stories": {
+    "STORY-001": {
+      "id": "STORY-001",
+      "title": "Transformacja organizacji pracy działu Instal/Solar",
+      "achievements": [
+        "ACH-001"
+      ],
+      "cv_bullets": [
+        "Przekształciłem dział montażowy z modelu opartego na komunikacji ad-hoc w uporządkowany workflow wspierany przez Bitrix24.",
+        "Skróciłem czas organizacji montaży z 1–2 dni do około 2–3 godzin oraz ograniczyłem liczbę błędów operacyjnych o około 70%.",
+        "Zaprojektowałem procesy i standardy informacyjne umożliwiające skalowanie działu do około 30 realizacji miesięcznie."
+      ],
+      "development_areas": [
+        "DEV-002",
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "STORY-002": {
+      "id": "STORY-002",
+      "title": "Restrukturyzacja i stabilizacja działu serwisu",
+      "achievements": [
+        "ACH-004"
+      ],
+      "cv_bullets": [
+        "Przejąłem odpowiedzialność za dział serwisu i przeprowadziłem jego stabilizację organizacyjną.",
+        "Zaprojektowałem workflow oraz model pracy wspierający codzienną obsługę klientów.",
+        "Koordynowałem zespół serwisowy i wdrażałem nowych pracowników.",
+        "Zbudowałem kulturę współodpowiedzialności i rozwiązywania problemów bez szukania winnych.",
+        "Przygotowałem dział do przekazania i przez cztery miesiące wdrożyłem nowego kierownika, który prowadzi go samodzielnie do dziś."
+      ],
+      "development_areas": [
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "STORY-003": {
+      "id": "STORY-003",
+      "title": "Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentów, instalatorów i serwisu",
+      "achievements": [
+        "ACH-005",
+        "ACH-006",
+        "ACH-013",
+        "ACH-014"
+      ],
+      "cv_bullets": [
+        "Współtworzyłem kompleksowy system gwarancyjny obejmujący producentów, instalatorów, dystrybutorów i użytkowników końcowych.",
+        "Skróciłem czas uzyskania gwarancji z 7–8 dni do około 3 dni oraz czas rozpatrywania reklamacji z 4–5 dni do około 2 dni.",
+        "Zaprojektowałem procesy, workflowy i system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając skalowalność.",
+        "Przeprowadziłem wieloetapowy proces zbierania wymagań i uzgadniania rozwiązań między interesariuszami o sprzecznych oczekiwaniach."
+      ],
+      "development_areas": []
+    },
+    "STORY-004": {
+      "id": "STORY-004",
+      "title": "Projektowanie modelu działania serwisu przy braku danych historycznych",
+      "achievements": [
+        "ACH-004",
+        "ACH-010"
+      ],
+      "cv_bullets": [
+        "Stworzyłem system analizy operacyjnej serwisu umożliwiający podejmowanie decyzji przy braku danych historycznych.",
+        "Obaliłem założenia i wskazałem rzeczywiste przyczyny przeciążenia działu obsługującego kilkadziesiąt tysięcy urządzeń.",
+        "Zaprojektowałem model działania serwisu wspierający wzrost skali działalności bez utraty kompetencji technicznych.",
+        "Wdrożyłem metryki i model zarządzania wykorzystywane przez kolejnych kierowników serwisu."
+      ],
+      "development_areas": [
+        "DEV-002",
+        "DEV-003",
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "STORY-005": {
+      "id": "STORY-005",
+      "title": "Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej",
+      "achievements": [
+        "ACH-003",
+        "ACH-004"
+      ],
+      "cv_bullets": [
+        "Zaprojektowałem i wdrożyłem system knowledge management oparty na BPMN i Wiki.js obejmujący 120 schematów diagnostycznych.",
+        "Skróciłem czas osiągnięcia samodzielności operacyjnej nowych serwisantów z 8–9 miesięcy do 2–3 miesięcy.",
+        "Przechwyciłem i ustrukturyzowałem wiedzę ekspercką krytyczną dla funkcjonowania serwisu.",
+        "Stworzyłem standard dokumentowania wiedzy technicznej wykorzystywany do dziś w procesie onboardingu."
+      ],
+      "development_areas": [
+        "DEV-002",
+        "DEV-003",
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "STORY-006": {
+      "id": "STORY-006",
+      "title": "Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności",
+      "achievements": [
+        "ACH-009"
+      ],
+      "cv_bullets": [
+        "Poprowadziłem wdrożenie nowego produktu fotowoltaicznego od koncepcji do gotowości rynkowej, koordynując wiele działów.",
+        "Stworzyłem dokumentację produkcyjną, jakościową i użytkową bez wcześniejszego doświadczenia w FMEA i DTR.",
+        "Zaprojektowałem proces jakościowy oraz instrukcję montażową wysoko ocenioną przez produkcję i kierownictwo zakładu.",
+        "Dostarczyłem gotowy do produkcji produkt w krótkim oknie rynkowym wynikającym ze zmian regulacyjnych na rynku PV."
+      ],
+      "development_areas": [
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ]
+    },
+    "STORY-007": {
+      "id": "STORY-007",
+      "title": "Standaryzacja ofertowania i kalkulacji rentowności instalacji PV",
+      "achievements": [
+        "ACH-011"
+      ],
+      "cv_bullets": [
+        "Zaprojektowałem system wyceny, rentowności i list materiałowych PV, skracając przygotowanie oferty z 2–6 godzin do ok. 10 minut.",
+        "Przekształciłem wiedzę ekspercką z PV, elektryki i kosztorysowania w system używany przez sprzedaż, technikę i administrację.",
+        "Stworzyłem rozwiązanie, które przez ok. 4 lata było podstawą ofertowania i przygotowania realizacji instalacji PV.",
+        "Umożliwiłem skalowanie procesu sprzedaży bez proporcjonalnego zwiększania liczby specjalistów technicznych."
+      ],
+      "development_areas": [
+        "DEV-002",
+        "DEV-003"
+      ]
+    },
+    "STORY-008": {
+      "id": "STORY-008",
+      "title": "Zatrzymanie niekontrolowanego skalowania operacji PV",
+      "achievements": [
+        "ACH-012"
+      ],
+      "cv_bullets": [
+        "Zidentyfikowałem ograniczenia operacyjne przy gwałtownym wzroście rynku PV i doprowadziłem do zmiany podejścia do skalowania.",
+        "Zarządzałem realizacją kilkudziesięciu instalacji w krótkim okresie, koordynując logistykę, planowanie i wsparcie techniczne.",
+        "Eskalowałem ryzyka jakościowe i bezpieczeństwa z przeciążenia organizacji, inicjując zwiększenie zasobów administracyjnych.",
+        "Współtworzyłem przejście z modelu opartego na wysiłku pojedynczych osób do modelu wspieranego przez procesy i narzędzia."
+      ],
+      "development_areas": [
+        "DEV-002",
+        "DEV-003"
+      ]
+    },
+    "STORY-009": {
+      "id": "STORY-009",
+      "title": "Budowa zespołu serwisowego po kryzysie kadrowym",
+      "achievements": [
+        "ACH-012"
+      ],
+      "cv_bullets": [
+        "Przejąłem dział serwisu po odejściu kierownika i części zespołu, stabilizując funkcjonowanie i utrzymując kluczowych ekspertów.",
+        "Wdrożyłem model współpracy Tier 1 / Tier 2 wspierający transfer wiedzy i efektywne wykorzystanie kompetencji ekspertów.",
+        "Zbudowałem kulturę współpracy opartą na odpowiedzialności, wsparciu i orientacji na klienta.",
+        "Podjąłem trudne decyzje personalne i wypracowałem dojrzalsze podejście do równoważenia zaufania, odpowiedzialności i kontroli."
+      ],
+      "development_areas": [
+        "DEV-001"
+      ]
+    },
+    "STORY-010": {
+      "id": "STORY-010",
+      "title": "Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i sprzedaży",
+      "achievements": [
+        "ACH-015"
+      ],
+      "cv_bullets": [
+        "Zaprojektowałem standard identyfikacji produktów i bazę ok. 60 000 kart w CRM, dając serwisowi wgląd w historię urządzeń.",
+        "Porządkując dane historyczne, ujawniłem ukryty waste produkcyjny (ok. 20% zestawów przepakowywanych).",
+        "Stworzony fundament danych umożliwił uruchomienie promocji sprzedażowej \"Pierwsze uruchomienie\"."
+      ],
+      "development_areas": [
+        "DEV-007"
+      ]
+    },
+    "STORY-011": {
+      "id": "STORY-011",
+      "title": "Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułożeniem procesu",
+      "achievements": [
+        "ACH-017"
+      ],
+      "cv_bullets": [
+        "Ustabilizowałem współpracę z podwykonawcami OEM (dwie nowe umowy, obieg dokumentów, plomby), umożliwiając wzrost produkcji.",
+        "Po trzech miesiącach przekazałem uporządkowany obszar nowemu PM-owi.",
+        "Wyprowadziłem z degradacji modelu po rotacji kryterium domknięcia wdrożenia: proces musi przeżyć odejście każdej osoby."
+      ],
+      "development_areas": [
+        "DEV-007"
+      ]
+    }
+  },
+  "development_areas": {
+    "DEV-001": {
+      "id": "DEV-001",
+      "title": "Leadership Through Accountability",
+      "category": "Leadership",
+      "status": "Active Development",
+      "achievements": [
+        "ACH-012"
+      ],
+      "stories": [
+        "STORY-009"
+      ],
+      "skills": [
+        "SKILL-005",
+        "SKILL-011"
+      ]
+    },
+    "DEV-002": {
+      "id": "DEV-002",
+      "title": "Personal Capacity Management",
+      "category": "Self Management",
+      "status": "Active Development",
+      "achievements": [
+        "ACH-012"
+      ],
+      "stories": [
+        "STORY-001",
+        "STORY-004",
+        "STORY-005",
+        "STORY-007",
+        "STORY-008"
+      ],
+      "skills": [
+        "SKILL-002"
+      ]
+    },
+    "DEV-003": {
+      "id": "DEV-003",
+      "title": "Delegation and Leverage",
+      "category": "Leadership",
+      "status": "Active Development",
+      "achievements": [],
+      "stories": [
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008"
+      ],
+      "skills": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-021"
+      ]
+    },
+    "DEV-004": {
+      "id": "DEV-004",
+      "title": "Commercial Discovery",
+      "category": "Product & Business",
+      "status": "Emerging Development Area",
+      "achievements": [
+        "ACH-008",
+        "ACH-011",
+        "ACH-013",
+        "ACH-014"
+      ],
+      "stories": [
+        "STORY-006"
+      ],
+      "skills": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-011"
+      ]
+    },
+    "DEV-005": {
+      "id": "DEV-005",
+      "title": "Assertiveness and Difficult Conversations",
+      "category": "Communication",
+      "status": "Active Development",
+      "achievements": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-006",
+        "ACH-008",
+        "ACH-010",
+        "ACH-013"
+      ],
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006"
+      ],
+      "skills": [
+        "SKILL-003",
+        "SKILL-011",
+        "SKILL-017"
+      ]
+    },
+    "DEV-006": {
+      "id": "DEV-006",
+      "title": "Boundary Management",
+      "category": "Self Management",
+      "status": "Active Development",
+      "achievements": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-006",
+        "ACH-008",
+        "ACH-010",
+        "ACH-013",
+        "ACH-014"
+      ],
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006"
+      ],
+      "skills": [
+        "SKILL-003",
+        "SKILL-005",
+        "SKILL-011",
+        "SKILL-017"
+      ]
+    },
+    "DEV-007": {
+      "id": "DEV-007",
+      "title": "Asymmetric Self-Valuation",
+      "category": "Self Management",
+      "status": "Active Development (Fresh Awareness)",
+      "achievements": [
+        "ACH-015",
+        "ACH-016",
+        "ACH-019"
+      ],
+      "stories": [
+        "STORY-010",
+        "STORY-011"
+      ],
+      "skills": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-019"
+      ]
+    }
+  },
+  "predictors": {
+    "PRED-001": {
+      "id": "PRED-001",
+      "name": "Model-Centric Decision Making",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.2",
+      "last_updated": "2026-06-23",
+      "created_from": [
+        "HEXACO",
+        "VIA",
+        "NFC",
+        "AOT",
+        "CIHS",
+        "Gallup"
+      ],
+      "supporting_stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-004",
+        "STORY-006",
+        "STORY-008",
+        "STORY-003",
+        "STORY-005",
+        "STORY-007",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-002": {
+      "id": "PRED-002",
+      "name": "Evidence-Driven Belief Updating",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.1",
+      "last_updated": "2026-06-23",
+      "created_from": [
+        "AOT",
+        "CIHS",
+        "NFC",
+        "VIA"
+      ],
+      "supporting_stories": [
+        "STORY-004",
+        "STORY-006",
+        "STORY-008",
+        "STORY-003",
+        "STORY-005",
+        "STORY-007",
+        "STORY-009",
+        "STORY-001",
+        "STORY-002"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-003": {
+      "id": "PRED-003",
+      "name": "Fairness-Oriented Evaluation",
+      "status": "validated",
+      "confidence": "high",
+      "version": "1.2",
+      "last_updated": "2026-07-07",
+      "created_from": [
+        "HEXACO",
+        "Schwartz",
+        "Moral Foundations Theory",
+        "VIA"
+      ],
+      "supporting_stories": [
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-008",
+        "STORY-009",
+        "STORY-001",
+        "STORY-006",
+        "STORY-007"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-004"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-004": {
+      "id": "PRED-004",
+      "name": "Principle-Based Decision Making",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.1",
+      "last_updated": "2026-06-23",
+      "created_from": [
+        "HEXACO",
+        "Schwartz",
+        "Moral Foundations Theory",
+        "VIA",
+        "Gallup"
+      ],
+      "supporting_stories": [
+        "STORY-003",
+        "STORY-008",
+        "STORY-009",
+        "STORY-001",
+        "STORY-002",
+        "STORY-004",
+        "STORY-007",
+        "STORY-005",
+        "STORY-006"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-005": {
+      "id": "PRED-005",
+      "name": "Learning-Oriented Exploration",
+      "status": "candidate",
+      "confidence": "high",
+      "version": "1.2",
+      "last_updated": "2026-06-25",
+      "created_from": [
+        "Gallup",
+        "HEXACO",
+        "VIA",
+        "NFC"
+      ],
+      "supporting_stories": [
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-003"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-006": {
+      "id": "PRED-006",
+      "name": "Systemic Problem Structuring",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.3",
+      "last_updated": "2026-06-25",
+      "created_from": [
+        "Gallup",
+        "HEXACO",
+        "NFC",
+        "AOT"
+      ],
+      "supporting_stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-002",
+        "CAL-003"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-007": {
+      "id": "PRED-007",
+      "name": "Low Status Motivation",
+      "status": "validated",
+      "confidence": "high",
+      "version": "1.2",
+      "last_updated": "2026-07-07",
+      "created_from": [
+        "Schwartz",
+        "HEXACO",
+        "VIA",
+        "Gallup"
+      ],
+      "supporting_stories": [
+        "STORY-011",
+        "STORY-002",
+        "STORY-005",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-004"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-008": {
+      "id": "PRED-008",
+      "name": "Selective Cognitive Reopening",
+      "status": "candidate",
+      "confidence": "medium",
+      "version": "1.2",
+      "last_updated": "2026-07-07",
+      "created_from": [
+        "AOT",
+        "CIHS",
+        "NFCS",
+        "Wywiad jakościowy"
+      ],
+      "supporting_stories": [
+        "STORY-004",
+        "STORY-008",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-004"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-009": {
+      "id": "PRED-009",
+      "name": "Expert-over-Manager Preference",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.2",
+      "last_updated": "2026-06-25",
+      "created_from": [
+        "Gallup",
+        "VIA",
+        "Schwartz",
+        "Wywiad jakościowy"
+      ],
+      "supporting_stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-003"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-010": {
+      "id": "PRED-010",
+      "name": "Proven-System Optimization",
+      "status": "validated",
+      "confidence": "high",
+      "version": "1.4",
+      "last_updated": "2026-07-07",
+      "created_from": [
+        "Schwartz",
+        "AOT",
+        "CIHS",
+        "Wywiad jakościowy"
+      ],
+      "supporting_stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-005",
+        "STORY-007",
+        "STORY-008",
+        "STORY-004",
+        "STORY-006",
+        "STORY-009",
+        "STORY-010"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-002",
+        "CAL-003",
+        "CAL-004"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-011": {
+      "id": "PRED-011",
+      "name": "Stakes-Adjusted Evidence Threshold",
+      "status": "validated",
+      "confidence": "high",
+      "version": "1.2",
+      "last_updated": "2026-06-25",
+      "created_from": [
+        "AOT",
+        "CIHS",
+        "NFCS",
+        "Wywiad jakościowy"
+      ],
+      "supporting_stories": [
+        "STORY-004",
+        "STORY-006",
+        "STORY-008",
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-007",
+        "STORY-005",
+        "STORY-009"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-003"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-012": {
+      "id": "PRED-012",
+      "name": "Tolerance for People vs Cognitive Errors",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.1",
+      "last_updated": "2026-06-23",
+      "created_from": [
+        "HEXACO",
+        "Big Five",
+        "VIA",
+        "Schwartz",
+        "MFQ",
+        "AOT",
+        "Wywiad jakościowy"
+      ],
+      "supporting_stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-005",
+        "STORY-009",
+        "STORY-004",
+        "STORY-006",
+        "STORY-008",
+        "STORY-007"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-013": {
+      "id": "PRED-013",
+      "name": "Context-Adaptive Self-Presentation",
+      "status": "validated",
+      "confidence": "high",
+      "version": "1.2",
+      "last_updated": "2026-07-07",
+      "created_from": [
+        "Wywiad jakościowy",
+        "Obserwacje behawioralne (CAL-004)"
+      ],
+      "supporting_stories": [
+        "STORY-010",
+        "STORY-011"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-004"
+      ],
+      "related_behavioral_patterns": []
+    },
+    "PRED-014": {
+      "id": "PRED-014",
+      "name": "Supportive Facilitation Orientation",
+      "status": "validated",
+      "confidence": "very high",
+      "version": "1.4",
+      "last_updated": "2026-07-07",
+      "created_from": [
+        "Gallup",
+        "Schwartz",
+        "VIA",
+        "Wywiad jakościowy"
+      ],
+      "supporting_stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-005",
+        "STORY-009",
+        "STORY-003",
+        "STORY-004",
+        "STORY-006",
+        "STORY-008",
+        "STORY-007",
+        "STORY-011"
+      ],
+      "conflicting_stories": [],
+      "related_calibrations": [
+        "CAL-001",
+        "CAL-002",
+        "CAL-003",
+        "CAL-004"
+      ],
+      "related_behavioral_patterns": []
+    }
+  },
+  "behavioral_patterns": {
+    "BP-001": {
+      "id": "BP-001",
+      "name": "Od Chaosu do Modelu Operacyjnego",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009",
+        "STORY-010",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-001",
+        "ACH-002",
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-007",
+        "ACH-008",
+        "ACH-009",
+        "ACH-010",
+        "ACH-011",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-017",
+        "ACH-019",
+        "ACH-P001",
+        "ACH-P002",
+        "ACH-P003",
+        "ACH-P004"
+      ]
+    },
+    "BP-002": {
+      "id": "BP-002",
+      "name": "Usprawniaj To, Co Istnieje, Zanim To Zastąpisz",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009",
+        "STORY-010",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-001",
+        "ACH-002",
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-007",
+        "ACH-008",
+        "ACH-010",
+        "ACH-011",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-017",
+        "ACH-019"
+      ]
+    },
+    "BP-003": {
+      "id": "BP-003",
+      "name": "Zamknij Szybko, Otwórz Ponownie Przy Nowych Dowodach",
+      "status": "candidate",
+      "confidence": "medium",
+      "stories": [
+        "STORY-001",
+        "STORY-004",
+        "STORY-006",
+        "STORY-008"
+      ],
+      "achievements": [
+        "ACH-004",
+        "ACH-010",
+        "ACH-011",
+        "ACH-012",
+        "ACH-013",
+        "ACH-016"
+      ]
+    },
+    "BP-004": {
+      "id": "BP-004",
+      "name": "Tłumacz Między Funkcjami",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-008",
+        "STORY-009",
+        "STORY-010",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-008",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-016",
+        "ACH-017",
+        "ACH-019",
+        "ACH-P001",
+        "ACH-P002",
+        "ACH-P003",
+        "ACH-P004"
+      ]
+    },
+    "BP-005": {
+      "id": "BP-005",
+      "name": "Bierz Problem Na Siebie",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009",
+        "STORY-010",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-001",
+        "ACH-002",
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-007",
+        "ACH-008",
+        "ACH-010",
+        "ACH-011",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-017",
+        "ACH-019",
+        "ACH-P001",
+        "ACH-P002",
+        "ACH-P003",
+        "ACH-P004"
+      ]
+    },
+    "BP-006": {
+      "id": "BP-006",
+      "name": "Zamieniaj Wiedzę Ukrytą w Wspólną Infrastrukturę",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-009",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-003",
+        "ACH-005",
+        "ACH-006",
+        "ACH-009",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-017",
+        "ACH-019",
+        "ACH-P004"
+      ]
+    },
+    "BP-007": {
+      "id": "BP-007",
+      "name": "Diagnozuj Operacje Za Pomocą Danych",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-004",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009",
+        "STORY-010"
+      ],
+      "achievements": [
+        "ACH-004",
+        "ACH-010",
+        "ACH-011",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015"
+      ]
+    },
+    "BP-008": {
+      "id": "BP-008",
+      "name": "Prototypuj, Następnie Stabilizuj",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009",
+        "STORY-010",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-001",
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-007",
+        "ACH-008",
+        "ACH-011",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-015",
+        "ACH-018"
+      ]
+    },
+    "BP-009": {
+      "id": "BP-009",
+      "name": "Ucz, Dopóki Inni Nie Potrafią Działać Samodzielnie",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-005",
+        "STORY-006",
+        "STORY-009"
+      ],
+      "achievements": [
+        "ACH-003",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-009",
+        "ACH-012",
+        "ACH-014",
+        "ACH-020",
+        "ACH-P001",
+        "ACH-P002",
+        "ACH-P003"
+      ]
+    },
+    "BP-010": {
+      "id": "BP-010",
+      "name": "Kwestionuj Logikę, Nie Człowieka",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-008",
+        "STORY-009"
+      ],
+      "achievements": [
+        "ACH-001",
+        "ACH-004",
+        "ACH-005",
+        "ACH-006",
+        "ACH-008",
+        "ACH-012",
+        "ACH-014"
+      ]
+    },
+    "BP-011": {
+      "id": "BP-011",
+      "name": "Warunkowa Absorpcja Z Jawnym Trade-offem",
+      "status": "candidate",
+      "confidence": "high",
+      "stories": [
+        "STORY-001",
+        "STORY-002",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-008",
+        "STORY-011"
+      ],
+      "achievements": [
+        "ACH-008",
+        "ACH-012",
+        "ACH-013",
+        "ACH-014",
+        "ACH-017",
+        "ACH-020"
+      ]
+    },
+    "BP-012": {
+      "id": "BP-012",
+      "name": "Ucz Się Poprzez Wejście w Problem",
+      "status": "validated",
+      "confidence": "very high",
+      "stories": [
+        "STORY-001",
+        "STORY-003",
+        "STORY-004",
+        "STORY-005",
+        "STORY-006",
+        "STORY-007",
+        "STORY-008",
+        "STORY-009"
+      ],
+      "achievements": [
+        "ACH-007",
+        "ACH-008",
+        "ACH-010",
+        "ACH-011",
+        "ACH-013",
+        "ACH-014"
+      ]
+    },
+    "BP-013": {
+      "id": "BP-013",
+      "name": "Modelowanie Ludzi Przez Testy Zachowań",
+      "status": "candidate",
+      "confidence": "medium-high",
+      "stories": [],
+      "achievements": [
+        "ACH-020"
+      ]
+    }
+  },
+  "roles": [
+    {
+      "code": "KOOR",
+      "label": "Koordynator ds. Montaży",
+      "period": "2020-09 – 2023-09",
+      "achievements": [
+        "ACH-001",
+        "ACH-002",
+        "ACH-008",
+        "ACH-009",
+        "ACH-011",
+        "ACH-013",
+        "ACH-020",
+        "ACH-021"
+      ]
+    },
+    {
+      "code": "KIER",
+      "label": "p.o. Kierownika Serwisu",
+      "period": "2023-09 – 2025-01",
+      "achievements": [
+        "ACH-003",
+        "ACH-004",
+        "ACH-007",
+        "ACH-010",
+        "ACH-012",
+        "ACH-020"
+      ]
+    },
+    {
+      "code": "PM",
+      "label": "Product Manager / Business Analyst",
+      "period": "2025-01 – obecnie",
+      "achievements": [
+        "ACH-005",
+        "ACH-006",
+        "ACH-014",
+        "ACH-015",
+        "ACH-016",
+        "ACH-017",
+        "ACH-018",
+        "ACH-019"
+      ]
+    }
+  ],
+  "relations": {
+    "ach_to_skills": {
+      "ACH-001": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-003",
+        "SKILL-005",
+        "SKILL-006",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-015",
+        "SKILL-017"
+      ],
+      "ACH-002": [
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-021"
+      ],
+      "ACH-003": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-006",
+        "SKILL-007",
+        "SKILL-010",
+        "SKILL-012",
+        "SKILL-015",
+        "SKILL-021"
+      ],
+      "ACH-004": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-010",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017"
+      ],
+      "ACH-005": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-006",
+        "SKILL-007",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-016",
+        "SKILL-017",
+        "SKILL-019"
+      ],
+      "ACH-006": [
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-011",
+        "SKILL-013",
+        "SKILL-017"
+      ],
+      "ACH-007": [
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-010"
+      ],
+      "ACH-008": [
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-006",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-014",
+        "SKILL-015",
+        "SKILL-017"
+      ],
+      "ACH-009": [
+        "SKILL-002",
+        "SKILL-008"
+      ],
+      "ACH-010": [
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-005",
+        "SKILL-010",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017",
+        "SKILL-021"
+      ],
+      "ACH-011": [
+        "SKILL-001",
+        "SKILL-016",
+        "SKILL-019"
+      ],
+      "ACH-012": [
+        "SKILL-002",
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-010",
+        "SKILL-011",
+        "SKILL-012",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017"
+      ],
+      "ACH-013": [
+        "SKILL-001",
+        "SKILL-002",
+        "SKILL-004",
+        "SKILL-008",
+        "SKILL-009",
+        "SKILL-017"
+      ],
+      "ACH-014": [
+        "SKILL-001",
+        "SKILL-003",
+        "SKILL-004",
+        "SKILL-006",
+        "SKILL-017"
+      ],
+      "ACH-015": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-009",
+        "SKILL-016",
+        "SKILL-019",
+        "SKILL-020"
+      ],
+      "ACH-016": [
+        "SKILL-004",
+        "SKILL-011",
+        "SKILL-019",
+        "SKILL-021"
+      ],
+      "ACH-017": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-011",
+        "SKILL-012"
+      ],
+      "ACH-018": [
+        "SKILL-001",
+        "SKILL-004",
+        "SKILL-007",
+        "SKILL-009",
+        "SKILL-012"
+      ],
+      "ACH-019": [
+        "SKILL-001",
+        "SKILL-019"
+      ],
+      "ACH-020": [
+        "SKILL-005",
+        "SKILL-007"
+      ],
+      "ACH-021": [
+        "SKILL-001",
+        "SKILL-011"
+      ],
+      "ACH-P001": [
+        "SKILL-005",
+        "SKILL-007",
+        "SKILL-013",
+        "SKILL-017"
+      ],
+      "ACH-P002": [
+        "SKILL-005",
+        "SKILL-011",
+        "SKILL-013",
+        "SKILL-014"
+      ],
+      "ACH-P003": [
+        "SKILL-005",
+        "SKILL-013",
+        "SKILL-014"
+      ],
+      "ACH-P004": [
+        "SKILL-003",
+        "SKILL-006",
+        "SKILL-015",
+        "SKILL-016",
+        "SKILL-017",
+        "SKILL-021"
+      ],
+      "ACH-P005": [
+        "SKILL-007",
+        "SKILL-018"
+      ],
+      "ACH-P006": [
+        "SKILL-003",
+        "SKILL-009",
+        "SKILL-020",
+        "SKILL-021"
+      ]
+    },
+    "ach_to_stories": {
+      "ACH-001": [
+        "STORY-001"
+      ],
+      "ACH-003": [
+        "STORY-005"
+      ],
+      "ACH-004": [
+        "STORY-002",
+        "STORY-004",
+        "STORY-005"
+      ],
+      "ACH-005": [
+        "STORY-003"
+      ],
+      "ACH-006": [
+        "STORY-003"
+      ],
+      "ACH-009": [
+        "STORY-006"
+      ],
+      "ACH-010": [
+        "STORY-004"
+      ],
+      "ACH-011": [
+        "STORY-007"
+      ],
+      "ACH-012": [
+        "STORY-008",
+        "STORY-009"
+      ],
+      "ACH-013": [
+        "STORY-003"
+      ],
+      "ACH-014": [
+        "STORY-003"
+      ],
+      "ACH-015": [
+        "STORY-010"
+      ],
+      "ACH-017": [
+        "STORY-011"
+      ]
+    },
+    "ach_to_development": {
+      "ACH-001": [
+        "DEV-005",
+        "DEV-006"
+      ],
+      "ACH-004": [
+        "DEV-005",
+        "DEV-006"
+      ],
+      "ACH-006": [
+        "DEV-005",
+        "DEV-006"
+      ],
+      "ACH-008": [
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ],
+      "ACH-010": [
+        "DEV-005",
+        "DEV-006"
+      ],
+      "ACH-011": [
+        "DEV-004"
+      ],
+      "ACH-012": [
+        "DEV-001",
+        "DEV-002"
+      ],
+      "ACH-013": [
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ],
+      "ACH-014": [
+        "DEV-004",
+        "DEV-006"
+      ],
+      "ACH-015": [
+        "DEV-007"
+      ],
+      "ACH-016": [
+        "DEV-007"
+      ],
+      "ACH-019": [
+        "DEV-007"
+      ]
+    },
+    "story_to_development": {
+      "STORY-001": [
+        "DEV-002",
+        "DEV-005",
+        "DEV-006"
+      ],
+      "STORY-002": [
+        "DEV-005",
+        "DEV-006"
+      ],
+      "STORY-004": [
+        "DEV-002",
+        "DEV-003",
+        "DEV-005",
+        "DEV-006"
+      ],
+      "STORY-005": [
+        "DEV-002",
+        "DEV-003",
+        "DEV-005",
+        "DEV-006"
+      ],
+      "STORY-006": [
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ],
+      "STORY-007": [
+        "DEV-002",
+        "DEV-003"
+      ],
+      "STORY-008": [
+        "DEV-002",
+        "DEV-003"
+      ],
+      "STORY-009": [
+        "DEV-001"
+      ],
+      "STORY-010": [
+        "DEV-007"
+      ],
+      "STORY-011": [
+        "DEV-007"
+      ]
+    },
+    "ach_to_role": {
+      "ACH-001": "KOOR",
+      "ACH-002": "KOOR",
+      "ACH-003": "KIER",
+      "ACH-004": "KIER",
+      "ACH-005": "PM",
+      "ACH-006": "PM",
+      "ACH-007": "KIER",
+      "ACH-008": "KOOR",
+      "ACH-009": "KOOR",
+      "ACH-010": "KIER",
+      "ACH-011": "KOOR",
+      "ACH-012": "KIER",
+      "ACH-013": "KOOR",
+      "ACH-014": "PM",
+      "ACH-015": "PM",
+      "ACH-016": "PM",
+      "ACH-017": "PM",
+      "ACH-018": "PM",
+      "ACH-019": "PM",
+      "ACH-020": "KOOR",
+      "ACH-021": "KOOR"
+    }
+  }
+}

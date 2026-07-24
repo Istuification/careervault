@@ -1,0 +1,26 @@
+# Career Vault
+
+> Profil zawodowy oparty na dowodach — ustrukturyzowany zbior osiagniec, kompetencji, ocen i historii zawodowej. Tresc jest dostepna w trzech wariantach pliku tekstowego, roznacych sie zakresem.
+
+## Ktory plik wybrac (dla asystenta AI)
+
+- [vault-evidence.txt](https://istuification.github.io/careervault/vault-evidence.txt) — Osiągnięcia i kompetencje. ~133 tys. tokenów. Warstwa dowodowa: osiągnięcia, kompetencje, historie zawodowe, obszary rozwojowe i kontekst organizacyjny. To wystarczy, żeby ocenić dopasowanie do konkretnego ogłoszenia. Bez psychometrii.
+- [vault-assessments.txt](https://istuification.github.io/careervault/vault-assessments.txt) — Profil psychometryczny. ~118 tys. tokenów. Warstwa interpretacyjna: wyniki testów, wzorce zachowań, kalibracje samooceny i predyktory dopasowania do ról. Przydatne, gdy pytasz o styl pracy i współpracy, nie o dorobek.
+- [vault-full.txt](https://istuification.github.io/careervault/vault-full.txt) — Wszystko naraz. ~224 tys. tokenów. Obie warstwy w jednym pliku — kompletna zawartość repozytorium. Duży: część modeli go nie udźwignie albo utnie w połowie. Wybierz, jeśli świadomie chcesz całość.
+
+Domyslnie zacznij od [vault-evidence.txt](https://istuification.github.io/careervault/vault-evidence.txt) — zawiera warstwe dowodowa,
+czyli material potrzebny do oceny dopasowania do stanowiska.
+
+## Zasady czytania
+
+- Kazdy plik zaczyna sie naglowkiem ZAKRES: wprost wymienia, co zawiera
+  i czego swiadomie nie zawiera. Przeczytaj go przed ocena.
+- NIE WNIOSKUJ Z BRAKU. Jesli sekcja jest wymieniona jako pominieta,
+  jej nieobecnosc nie oznacza braku dowodow — oznacza inny plik.
+- Pliki sa duze i agenci przegladajacy strony czesto ucinaja je w polowie.
+  Jesli nie masz pewnosci, ze wczytales calosc (patrz spis linii w naglowku),
+  NIE oceniaj tresci — popros czlowieka o pobranie i wklejenie pliku.
+- Kolejnosc plikow w srodku jest celowa: przewodnik interpretacyjny,
+  About, Identity, Experience, model poznawczy i README sekcji ida pierwsze,
+  bo buduja ramy dla surowych rekordow. Czytaj od gory.
+- Nie uzupelniaj brakujacych faktow z pamieci. Rekordy sa self-report.
