@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 07:04 UTC · commit `64f41c7`
+> Stan: 2026-07-24 07:04 UTC · commit `12f8a2b`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -103,7 +103,7 @@ i po kolumnie `Nazwa` — brak keywords nie oznacza słabszej kompetencji.
 | `SKILL-016` | Operational Analysis | Analytics | Advanced | 8 | 7 | data analysis, analytics, reporting, kpi, root cause analysis, decision making |
 | `SKILL-017` | Cross-Functional Facilitation | Communication | Advanced | 8 | 11 | cross-functional facilitation, context translation, internal advisory, problem framing, o… |
 | `SKILL-018` | Persuasive Communication | Communication | Advanced | 8 | 1 | persuasive communication, objection handling, cold outreach, rapport building, rejection… |
-| `SKILL-019` | Business Analysis & Requirements Engineering | Product & Business | Advanced | 8 | 5 | _(brak)_ |
+| `SKILL-019` | Business Analysis & Requirements Engineering | Product & Business | Advanced | 8 | 5 | business analysis, requirements engineering, requirements gathering, stakeholder workshop… |
 | `SKILL-020` | AI Tooling & Automation | Systems | Advanced | 8 | 2 | _(brak)_ |
 | `SKILL-021` | Systems Thinking | Systems | Expert | 10 | 6 | systems thinking, systems architecture, root cause analysis, dependency analysis, informa… |
 
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 07:04 UTC z commita `64f41c7`._
+_Wygenerowano 2026-07-24 07:04 UTC z commita `12f8a2b`._
