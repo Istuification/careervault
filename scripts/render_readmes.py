@@ -82,14 +82,13 @@ def link(ids, titles=None, sep="<br>"):
 def render_achievements(m):
     W = []
     a = W.append
-    ach_t = {k: v["title"] for k, v in m.ach.items()}
     skill_t = {k: v["name"] for k, v in m.skill.items()}
     story_t = {k: v["title"] for k, v in m.story.items()}
     dev_t = {k: v["title"] for k, v in m.dev.items()}
 
     prof, priv = m.prof_ids(), m.priv_ids()
 
-    a("# Indeks rekordow".replace("Indeks rekordow", "Indeks rekordów"))
+    a("# Indeks rekordów")
     a("")
     a(STAMP_NOTE)
     a("")
@@ -483,8 +482,6 @@ def render_pred(m):
 def render_bp(m):
     W = []
     a = W.append
-    ach_t = {k: v["title"] for k, v in m.ach.items()}
-    story_t = {k: v["title"] for k, v in m.story.items()}
     ids = sorted(m.bp)
 
     a("# Indeks rekordów")
@@ -588,8 +585,17 @@ def run(root, check_only=False, model=None):
     for rel, renderer in TARGETS:
         path = os.path.join(root, rel)
         if not os.path.isfile(path):
-            print(f"  POMINIETO {rel} — brak pliku")
-            continue
+            # Blad, nie pominiecie. TARGETS to zamknieta lista modulow --
+            # brak pliku oznacza zmiane nazwy albo skasowanie, a nie
+            # sytuacje dopuszczalna. Wczesniej build przechodzil na zielono
+            # z cala sekcja indeksu wypadnieta z README.
+            raise SystemExit(
+                f"BLAD: brak pliku {rel}.\n"
+                f"       Modul jest na liscie TARGETS, wiec jego README musi "
+                f"istniec.\n"
+                f"       Przywroc plik albo usun wpis z TARGETS "
+                f"w scripts/render_readmes.py."
+            )
         new, diff = splice(path, renderer(m))
         if diff:
             changed.append(rel)
