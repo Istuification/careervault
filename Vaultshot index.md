@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 06:55 UTC · commit `a01aa11`
+> Stan: 2026-07-24 06:56 UTC · commit `41248c0`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -181,10 +181,10 @@ _Zatrzymanie niekontrolowanego skalowania operacji PV_
 ### `STORY-009` → ACH-012
 _Budowa zespołu serwisowego po kryzysie kadrowym_
 
-- `[135]` Przejąłem dział serwisu po odejściu kierownika i części zespołu, stabilizując jego funkcjonowanie oraz utrzymując kluczowych ekspertów. **⚠ skróć**
+- `[127]` Przejąłem dział serwisu po odejściu kierownika i części zespołu, stabilizując funkcjonowanie i utrzymując kluczowych ekspertów.
 - `[119]` Wdrożyłem model współpracy Tier 1 / Tier 2 wspierający transfer wiedzy i efektywne wykorzystanie kompetencji ekspertów.
 - `[92]` Zbudowałem kulturę współpracy opartą na odpowiedzialności, wsparciu i orientacji na klienta.
-- `[143]` Przeprowadziłem trudne decyzje personalne oraz wypracowałem bardziej dojrzałe podejście do równoważenia zaufania, odpowiedzialności i kontroli. **⚠ skróć**
+- `[126]` Podjąłem trudne decyzje personalne i wypracowałem dojrzalsze podejście do równoważenia zaufania, odpowiedzialności i kontroli.
 
 ### `STORY-010` → ACH-015
 _Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu danych dla serwisu i…_
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 06:55 UTC z commita `a01aa11`._
+_Wygenerowano 2026-07-24 06:56 UTC z commita `41248c0`._
