@@ -24,6 +24,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Test prymitywow parsera. Dziala na czystej bibliotece standardowej,
+      # wiec nie wymaga instalacji niczego. Chroni przed regresja, w ktorej
+      # parser po cichu przestaje czytac jakies formatowanie i rekordy
+      # znikaja z indeksu bez sladu w logu.
+      - name: Test parsera
+        run: python scripts/test_parser.py
+
       # Jeden krok zamiast trzech. build.py wczytuje Vault raz, waliduje go,
       # a nastepnie po kolei generuje: sekcje README, Vaultshot index i dist/.
       # Kolejnosc jest wymuszona wewnatrz skryptu -- indeks musi powstac przed
