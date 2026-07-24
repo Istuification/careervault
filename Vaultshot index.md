@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 06:51 UTC · commit `36ae9a8`
+> Stan: 2026-07-24 06:54 UTC · commit `1a97cfd`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -165,9 +165,9 @@ _Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewności_
 ### `STORY-007` → ACH-011
 _Standaryzacja ofertowania i kalkulacji rentowności instalacji PV_
 
-- `[186]` Zaprojektowałem system wspierający wycenę, kalkulację rentowności i przygotowanie list materiałowych dla instalacji PV, redukując czas przygotowania ofert z 2–6 godzin do około 10 minut. **⚠ skróć**
-- `[151]` Przekształciłem wiedzę ekspercką z obszaru PV, elektryki i kosztorysowania w skalowalny system wykorzystywany przez sprzedaż, technikę i administrację. **⚠ skróć**
-- `[137]` Stworzyłem rozwiązanie stanowiące przez około 4 lata podstawę procesu ofertowania i przygotowania realizacji instalacji fotowoltaicznych. **⚠ skróć**
+- `[128]` Zaprojektowałem system wyceny, rentowności i list materiałowych PV, skracając przygotowanie oferty z 2–6 godzin do ok. 10 minut.
+- `[125]` Przekształciłem wiedzę ekspercką z PV, elektryki i kosztorysowania w system używany przez sprzedaż, technikę i administrację.
+- `[114]` Stworzyłem rozwiązanie, które przez ok. 4 lata było podstawą ofertowania i przygotowania realizacji instalacji PV.
 - `[107]` Umożliwiłem skalowanie procesu sprzedaży bez proporcjonalnego zwiększania liczby specjalistów technicznych.
 
 ### `STORY-008` → ACH-012
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 06:51 UTC z commita `36ae9a8`._
+_Wygenerowano 2026-07-24 06:54 UTC z commita `1a97cfd`._
