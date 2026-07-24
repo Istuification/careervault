@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-23 12:20 UTC · commit `3e94d73`
+> Stan: 2026-07-24 06:48 UTC · commit `0b0e2b9`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -135,7 +135,7 @@ _Projekt i wdrożenie systemu gwarancyjnego opartego na współpracy producentó
 
 - `[123]` Współtworzyłem kompleksowy system gwarancyjny obejmujący producentów, instalatorów, dystrybutorów i użytkowników końcowych.
 - `[120]` Skróciłem czas uzyskania gwarancji z 7–8 dni do około 3 dni oraz czas rozpatrywania reklamacji z 4–5 dni do około 2 dni.
-- `[151]` Zaprojektowałem procesy, workflowy oraz system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając przewidywalność i skalowalność obsługi. **⚠ skróć**
+- `[122]` Zaprojektowałem procesy, workflowy i system identyfikacji urządzeń oparty na numerach seryjnych, zwiększając skalowalność.
 - `[130]` Przeprowadziłem wieloetapowy proces zbierania wymagań i uzgadniania rozwiązań między interesariuszami o sprzecznych oczekiwaniach.
 
 ### `STORY-004` → ACH-004 ACH-010
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-23 12:20 UTC z commita `3e94d73`._
+_Wygenerowano 2026-07-24 06:48 UTC z commita `0b0e2b9`._
