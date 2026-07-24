@@ -320,16 +320,55 @@ Pomaga AI dopasować go do pytań o:
 7. Zapisuj zarówno mocne strony, jak i ryzyka.
 8. Preferuj jakość nad liczbę.
 
+Lista Development Areas może być rozwijana, ale tylko wtedy, gdy pojawi się nowy, powtarzalny wzorzec potwierdzony w Career Vault.
+
 ---
 
-## Aktualne Development Areas
+<!-- VAULT:GENERATED:START -->
+# Indeks rekordów
 
-* DEV-001 — Leadership Through Accountability
-* DEV-002 — Personal Capacity Management
-* DEV-003 — Delegation and Leverage
-* DEV-004 — Commercial Discovery
-* DEV-005 — Assertiveness and Difficult Conversations
-* DEV-006 — Boundary Management
-* DEV-007 - Asymmetric Self-Valuation
+> **Sekcja generowana automatycznie** ze stanu Vaulta (`scripts/render_readmes.py`).
+> Nie edytuj recznie — zmiany wprowadzaj w rekordach i przegeneruj.
 
-Lista może być rozwijana, ale tylko wtedy, gdy pojawi się nowy, powtarzalny wzorzec potwierdzony w Career Vault.
+Łącznie: **7** obszarów rozwoju.
+
+| ID | Tytuł | Kategoria | Status |
+| --- | --- | --- | --- |
+| `DEV-001` | Leadership Through Accountability | Leadership | Active Development |
+| `DEV-002` | Personal Capacity Management | Self Management | Active Development |
+| `DEV-003` | Delegation and Leverage | Leadership | Active Development |
+| `DEV-004` | Commercial Discovery | Product & Business | Emerging Development Area |
+| `DEV-005` | Assertiveness and Difficult Conversations | Communication | Active Development |
+| `DEV-006` | Boundary Management | Self Management | Active Development |
+| `DEV-007` | Asymmetric Self-Valuation | Self Management | Active Development (Fresh Awareness) |
+
+---
+
+# Encje powiązane
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (`scripts/render_readmes.py`).
+> Nie edytuj recznie — zmiany wprowadzaj w rekordach i przegeneruj.
+
+Źródłem powiązań jest pole `sources` rekordu `DEV-*`. Development Area bez źródeł nie powinien istnieć.
+
+| ID | Tytuł | Achievements | Stories | Skills |
+| --- | --- | --- | --- | --- |
+| `DEV-001` | Leadership Through Accountability | `ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zm… | `STORY-009` — Budowa zespołu serwisowego po kryzysie kadrowym | `SKILL-005` — Leadership<br>`SKILL-011` — Stakeholder Management |
+| `DEV-002` | Personal Capacity Management | `ACH-012` — Utrzymanie kluczowych ekspertów i jakości obsługi w okresie dużych zm… | `STORY-001` — Transformacja organizacji pracy działu Instal/Solar<br>`STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych<br>`STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej<br>`STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV<br>`STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV | `SKILL-002` — Operations Management |
+| `DEV-003` | Delegation and Leverage | — | `STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych<br>`STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej<br>`STORY-006` — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewn…<br>`STORY-007` — Standaryzacja ofertowania i kalkulacji rentowności instalacji PV<br>`STORY-008` — Zatrzymanie niekontrolowanego skalowania operacji PV | `SKILL-001` — Process Design<br>`SKILL-003` — Knowledge Management<br>`SKILL-021` — Systems Thinking |
+| `DEV-004` | Commercial Discovery | `ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-011` — Stworzenie systemu kalkulacji komponentów dla działu handlowego<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji | `STORY-006` — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewn… | `SKILL-004` — Product Management<br>`SKILL-011` — Stakeholder Management<br>`SKILL-002` — Operations Management<br>`SKILL-001` — Process Design |
+| `DEV-005` | Assertiveness and Difficult Conversations | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji | `STORY-001` — Transformacja organizacji pracy działu Instal/Solar<br>`STORY-002` — Restrukturyzacja i stabilizacja działu serwisu<br>`STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych<br>`STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej<br>`STORY-006` — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewn… | `SKILL-017` — Cross-Functional Facilitation<br>`SKILL-011` — Stakeholder Management<br>`SKILL-003` — Knowledge Management |
+| `DEV-006` | Boundary Management | `ACH-001` — Transformacja działu Instal/Solar<br>`ACH-004` — Restrukturyzacja i stabilizacja działu serwisu<br>`ACH-006` — Stworzenie i przeprowadzenie programu szkoleń dla partnerów i klientów<br>`ACH-008` — Koordynacja wdrożenia produktów PV Stand i PV-Box<br>`ACH-010` — Projektowanie organizacji na podstawie analizy danych operacyjnych<br>`ACH-013` — Rozwój i administracja ekosystemu systemów operacyjnych organizacji<br>`ACH-014` — Budowa standardów dokumentacyjnych wspierających rozwój organizacji | `STORY-001` — Transformacja organizacji pracy działu Instal/Solar<br>`STORY-002` — Restrukturyzacja i stabilizacja działu serwisu<br>`STORY-004` — Projektowanie modelu działania serwisu przy braku danych historycznych<br>`STORY-005` — Stworzenie systemu przechwytywania i skalowania wiedzy eksperckiej<br>`STORY-006` — Wprowadzenie nowego produktu PV na rynek w warunkach wysokiej niepewn… | `SKILL-017` — Cross-Functional Facilitation<br>`SKILL-003` — Knowledge Management<br>`SKILL-005` — Leadership<br>`SKILL-011` — Stakeholder Management |
+| `DEV-007` | Asymmetric Self-Valuation | `ACH-015` — Wdrożenie systemu paszportyzacji produktów i kodyfikacji numerów sery…<br>`ACH-016` — Zunifikowanie architektury ekosystemu aplikacji i zarządzanie wymagan…<br>`ACH-019` — Architektura procesu życia produktu - projekt modelu operacyjnego fir… | `STORY-010` — Paszportyzacja produktów - od chaosu numerów seryjnych do fundamentu…<br>`STORY-011` — Stabilizacja kooperacji OEM i granica między ugaszeniem pożaru a ułoż… | `SKILL-001` — Process Design<br>`SKILL-019` — Business Analysis & Requirements Engineering<br>`SKILL-004` — Product Management |
+
+---
+
+# Luki w powiązaniach
+
+> **Sekcja generowana automatycznie** ze stanu Vaulta (`scripts/render_readmes.py`).
+> Nie edytuj recznie — zmiany wprowadzaj w rekordach i przegeneruj.
+
+## Obszary bez źródeł dowodowych
+
+_Brak — każdy obszar wskazuje Achievement lub Story._
+<!-- VAULT:GENERATED:END -->
