@@ -1,8 +1,8 @@
 # VaultShot — Indeks Generatora CV
 
-> **Plik generowany automatycznie** przez `scripts/build_index.py`.
+> **Plik generowany automatycznie** przez `scripts/render_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 08:31 UTC · commit `2d1b627`
+> Stan: 2026-07-24 08:48 UTC · commit `unknown`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 08:31 UTC z commita `2d1b627`._
+_Wygenerowano 2026-07-24 08:48 UTC z commita `unknown`._
