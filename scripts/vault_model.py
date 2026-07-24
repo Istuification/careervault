@@ -49,6 +49,41 @@ ROLE_FALLBACK = "—"
 
 
 # ---------------------------------------------------------------------------
+# POLA PILNOWANE PRZED CICHYM ZGUBIENIEM
+# ---------------------------------------------------------------------------
+#
+# (pole w rekordzie, klucz w YAML, blok nadrzedny albo None,
+#  prefiks pozycji liczonych albo None)
+#
+# Parser regexowy nie rzuca wyjatkow -- gdy czegos nie rozpozna, zwraca
+# pusta liste. Ta tabela pozwala walidacji porownac "klucz jest w pliku"
+# z "pole wyszlo puste" i zamienic ciche zgubienie w ostrzezenie.
+# ---------------------------------------------------------------------------
+
+WATCHED = {
+    "ACH-": [("impact", "impact", None, None),
+             ("roles", "roles", None, None)],
+    # `evidence` w SKILL-* celowo dopuszcza wpisy opisowe, ktore parser
+    # odrzuca -- liczymy wiec wylacznie pozycje `ACH-*`.
+    "SKILL-": [("keywords", "keywords", None, None),
+               ("capabilities", "capabilities", None, None),
+               ("related", "related_skills", None, None),
+               ("evidence", "evidence", None, "ACH-")],
+    "STORY-": [("ach", "achievement_ids", "evidence", None),
+               ("bullets", "cv_bullets", None, None)],
+    "DEV-": [("ach", "achievements", "sources", None),
+             ("stories", "stories", "sources", None),
+             ("skills", "skills", "sources", None)],
+    "PRED-": [("created_from", "created_from", None, None),
+              ("stories", "supporting_stories", None, None),
+              ("conflicting", "conflicting_stories", None, None),
+              ("cal", "related_calibrations", None, None)],
+    "BP-": [("stories", "stories", "derived_from", None),
+            ("ach", "achievements", "derived_from", None)],
+}
+
+
+# ---------------------------------------------------------------------------
 # PRYMITYWY PARSERA
 # ---------------------------------------------------------------------------
 
@@ -81,14 +116,104 @@ def _clean(value):
     """Czysci pojedyncza wartosc listy YAML.
 
     Usuwa komentarz inline (` # ...`) oraz otaczajace cudzyslowy.
-    Komentarz rozpoznajemy tylko po bialym znaku przed `#`, zeby nie
-    ucinac wartosci, w ktorych `#` jest czescia tresci.
+
+    Kolejnosc ma znaczenie. Wersja wczesniejsza sprawdzala tylko, czy
+    wartosc zaczyna sie i konczy cudzyslowem -- przez co `"tekst" # opis`
+    (cudzyslow zamkniety, po nim komentarz) wracal razem z cudzyslowami.
+    Teraz szukamy domkniecia cudzyslowu i sprawdzamy, co po nim zostaje:
+    tylko pusty ogon albo komentarz oznacza prawidlowy skalar cytowany.
+
+    Ucinanie tresci po ` #` jest zgodne ze specyfikacja YAML (PyYAML robi
+    dokladnie to samo), wiec zostaje bez zmian. Sygnalizowaniem takich
+    przypadkow zajmuje sie walidacja, nie parser.
     """
     v = value.strip()
-    if v[:1] in ("'", '"') and v[-1:] == v[:1] and len(v) > 1:
-        return v[1:-1].strip()
+
+    if v[:1] in ("'", '"'):
+        q = v[0]
+        end = v.find(q, 1)
+        if end != -1:
+            rest = v[end + 1:].strip()
+            if rest == "" or rest.startswith("#"):
+                return v[1:end].strip()
+        # Cudzyslow niedomkniety albo tresc za nim -- to nie jest skalar
+        # cytowany, tylko zwykly tekst zaczynajacy sie od cudzyslowu.
+
     v = re.split(r"\s+#", v, maxsplit=1)[0]
     return v.strip()
+
+
+def _items(lines, start):
+    """Pozycje listy YAML (`- x`) zaczynajac od indeksu `start`.
+
+    Puste linie i linie komentarza wewnatrz bloku sa pomijane -- YAML je
+    dopuszcza, a wersja regexowa konczyla na nich zbieranie i cicho
+    zwracala pusta liste. Zatrzymujemy sie na pierwszej linii, ktora nie
+    jest ani pozycja listy, ani pusta, ani komentarzem (czyli na kolejnym
+    kluczu).
+    """
+    out = []
+    for line in lines[start:]:
+        s = line.strip()
+        if s == "" or s.startswith("#"):
+            continue
+        m = re.match(r"^[ \t]*-[ \t]+(.*)$", line)
+        if not m:
+            break
+        v = _clean(m.group(1))
+        if v:
+            out.append(v)
+    return out
+
+
+def _count_items(scope, key, item_prefix=None):
+    """Liczba linii `- x` widocznych pod kluczem `key`.
+
+    Skan niezalezny od `_items` -- sluzy wylacznie walidacji. Sens ma to,
+    ze jest napisany inaczej niz parser: gdy parser przestanie sobie
+    radzic z jakims formatowaniem, ten licznik nadal poda liczbe z pliku
+    i roznica ujawni strate.
+    """
+    lines = scope.split("\n")
+    for i, line in enumerate(lines):
+        m = re.match(rf"^[ \t]*{re.escape(key)}:[ \t]*(.*)$", line)
+        if not m:
+            continue
+        if m.group(1).strip():      # `key: []` albo `key: wartosc`
+            return 0
+        n = 0
+        for nxt in lines[i + 1:]:
+            s = nxt.strip()
+            if s == "" or s.startswith("#"):
+                continue
+            if s.startswith("- "):
+                if item_prefix is None or _clean(s[2:]).startswith(item_prefix):
+                    n += 1
+                continue
+            break                   # kolejny klucz konczy liste
+        return n
+    return 0
+
+
+def _block(text, key):
+    """Blok podrzedny klucza najwyzszego poziomu.
+
+    Zwraca linie nalezace do `key:` -- wciete albo puste -- i konczy na
+    pierwszej linii bez wciecia. Dzieki temu wyszukiwanie podkluczy nie
+    wychodzi poza rodzica.
+    """
+    m = re.search(rf"^{re.escape(key)}:[ \t]*$", text, re.M)
+    if not m:
+        return ""
+    out = []
+    for line in text[m.end():].split("\n")[1:]:
+        if line.strip() == "":
+            out.append(line)
+            continue
+        if not line.startswith((" ", "\t")):
+            break
+        out.append(line)
+    return "\n".join(out)
 
 
 def _list(text, key):
@@ -97,32 +222,29 @@ def _list(text, key):
     Wciecie przed myslnikiem jest opcjonalne -- czesc rekordow zapisuje
     listy bez wciecia (dopuszczalne w YAML).
     """
-    m = re.search(rf"^{re.escape(key)}:[ \t]*\n((?:[ \t]*-[ \t]+.*\n?)+)", text, re.M)
-    if not m:
-        return []
-    out = []
-    for line in m.group(1).rstrip("\n").split("\n"):
-        v = _clean(re.sub(r"^[ \t]*-[ \t]+", "", line))
-        if v:
-            out.append(v)
-    return out
+    lines = text.split("\n")
+    for i, line in enumerate(lines):
+        if re.match(rf"^{re.escape(key)}:[ \t]*$", line):
+            return _items(lines, i + 1)
+    return []
 
 
 def _nested_list(text, parent, child):
-    """Lista zagniezdzona: `parent:` -> `  child:` -> `    - x`."""
-    m = re.search(
-        rf"^{re.escape(parent)}:[ \t]*\n(?:.*\n)*?[ \t]+{re.escape(child)}:[ \t]*\n"
-        rf"((?:[ \t]+-[ \t]+.*\n?)+)",
-        text, re.M,
-    )
-    if not m:
+    """Lista zagniezdzona: `parent:` -> `  child:` -> `    - x`.
+
+    Szukamy `child` wylacznie wewnatrz bloku `parent`. Poprzednia wersja
+    uzywala wzorca `(?:.*\\n)*?`, ktory nie konczyl sie na bloku rodzica --
+    gdy `sources:` nie mial `skills:`, parser bral pierwszy `skills:`
+    napotkany gdziekolwiek dalej w pliku i cicho podstawial cudze dane.
+    """
+    block = _block(text, parent)
+    if not block:
         return []
-    out = []
-    for line in m.group(1).rstrip("\n").split("\n"):
-        v = _clean(re.sub(r"^[ \t]+-[ \t]+", "", line))
-        if v:
-            out.append(v)
-    return out
+    lines = block.split("\n")
+    for i, line in enumerate(lines):
+        if re.match(rf"^[ \t]+{re.escape(child)}:[ \t]*$", line):
+            return _items(lines, i + 1)
+    return []
 
 
 def _frontmatter(text):
@@ -147,11 +269,21 @@ def _frontmatter(text):
 
 
 def _period(text):
-    m = re.search(r"^period:[ \t]*\n[ \t]+start:[ \t]*(\S+)[ \t]*\n[ \t]+end:[ \t]*(\S+)",
-                  text, re.M)
-    if not m:
+    """Para (start, end) z bloku `period:`.
+
+    Kazdy klucz czytany osobno. Wersja wczesniejsza wymagala `start`
+    bezposrednio przed `end` -- odwrotna kolejnosc albo dodatkowy klucz
+    miedzy nimi dawal cicho ("", "") i pusta kolumne okresu w tabeli.
+    """
+    block = _block(text, "period")
+    if not block:
         return ("", "")
-    return (m.group(1).strip(), m.group(2).strip())
+
+    def field(name):
+        m = re.search(rf"^[ \t]+{name}:[ \t]*(\S+)", block, re.M)
+        return m.group(1).strip() if m else ""
+
+    return (field("start"), field("end"))
 
 
 # ---------------------------------------------------------------------------
@@ -189,6 +321,31 @@ class VaultModel:
         with open(path, "r", encoding="utf-8", errors="replace") as fh:
             return fh.read()
 
+    def _check_lost_items(self, label, text, prefix, rec):
+        """Porownuje liczbe pozycji w zrodle z liczba pozycji po parsowaniu.
+
+        Parser regexowy nie rzuca wyjatkow -- gdy formatowania nie rozpozna,
+        po cichu zwraca krotsza (czesto pusta) liste, a rekord znika z
+        indeksu bez sladu. To jedyne miejsce, w ktorym taka strata jest
+        wykrywalna: liczymy linie `- x` bezposrednio pod kluczem prostym,
+        niezaleznym skanem i porownujemy z wynikiem.
+
+        Pole jawnie puste (`key: []`) daje zero po obu stronach, wiec nie
+        generuje halasu.
+        """
+        for field, key, parent, item_prefix in WATCHED.get(prefix, []):
+            scope = _block(text, parent) if parent else text
+            if not scope:
+                continue
+            raw = _count_items(scope, key, item_prefix)
+            got = len(rec.get(field) or [])
+            if raw > got:
+                where = f"{parent}.{key}" if parent else key
+                self.problems.append(
+                    ("WARN", f"{label}: `{where}` — w pliku {raw} pozycji, "
+                             f"sparsowano {got}; sprawdz formatowanie listy")
+                )
+
     def _load_records(self):
         for folder, prefix, target, parser in (
             ("Achievements", "ACH-", self.ach, self._parse_ach),
@@ -216,6 +373,7 @@ class VaultModel:
                         ("WARN", f"{folder}/{fname}: `id: {rid}` != nazwa pliku")
                     )
                 target[rid] = parser(text)
+                self._check_lost_items(f"{folder}/{fname}", text, prefix, target[rid])
 
     def _parse_ach(self, t):
         start, end = _period(t)
@@ -239,6 +397,10 @@ class VaultModel:
             "capabilities": _list(t, "capabilities"),
             "related": _list(t, "related_skills"),
             "evidence": [x for x in _list(t, "evidence") if x.startswith("ACH-")],
+            # Wpisy opisowe zamiast identyfikatorow -- nie trafiaja do
+            # indeksu, ale warto o nich wiedziec.
+            "evidence_other": [x for x in _list(t, "evidence")
+                               if not x.startswith("ACH-")],
         }
 
     def _parse_story(self, t):
@@ -290,6 +452,7 @@ class VaultModel:
                         ("WARN", f"{folder}/{fname}: `id: {rid}` != nazwa pliku")
                     )
                 target[rid] = parser(fm)
+                self._check_lost_items(f"{folder}/{fname}", fm, prefix, target[rid])
 
     def _parse_pred(self, fm):
         return {
@@ -387,6 +550,9 @@ class VaultModel:
                     P(("ERROR", f"{sid}.evidence wskazuje na nieistniejacy {a}"))
             if not s["evidence"]:
                 P(("WARN", f"{sid} nie ma zadnego dowodu (`evidence` puste)"))
+            for x in s["evidence_other"]:
+                P(("WARN", f"{sid}.evidence: '{x}' nie jest identyfikatorem ACH "
+                           f"— pozycja pomijana w indeksie"))
             if not s["keywords"]:
                 P(("WARN", f"{sid} ({s['name']}) nie ma `keywords` — "
                            f"dopasowanie oferty oprze sie na samej nazwie"))
