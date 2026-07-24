@@ -168,7 +168,7 @@ Przykłady:
 * Product Management
 * Leadership
 * Workflow Automation
-* Technical Communication
+* Technical Documentation
 
 ---
 
