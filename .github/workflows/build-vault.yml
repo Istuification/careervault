@@ -38,6 +38,33 @@ jobs:
       - name: Build Vault (README + index + dist/)
         run: python scripts/build.py
 
+      # Bramka na regresje obcinania. dist/vault.json jest jedynym
+      # artefaktem, ktory wolno parsowac maszynowo, wiec musi byc kompletny.
+      # Marker "(+N)" oznaczalby, ze ktoras lista przeszla przez _fmt()
+      # z limitem -- czyli ze wrocilo ciche zawezanie doboru rekordow.
+      - name: Kontrola kompletnosci vault.json
+        run: |
+          python - <<'PY'
+          import json, re, sys
+          raw = open("dist/vault.json", encoding="utf-8").read()
+          data = json.loads(raw)
+
+          if re.search(r"\(\+\d+\)", raw):
+              sys.exit("vault.json zawiera marker obciecia (+N) — lista zostala przycieta.")
+
+          for sid, s in data["skills"].items():
+              if s["evidence_count"] != len(s["evidence"]):
+                  sys.exit(f"{sid}: evidence_count={s['evidence_count']} != {len(s['evidence'])}")
+
+          a2s = data["relations"]["ach_to_skills"]
+          for sid, s in data["skills"].items():
+              for a in s["evidence"]:
+                  if sid not in a2s.get(a, []):
+                      sys.exit(f"Relacja niespojna: {sid} ma {a}, brak w ach_to_skills.")
+
+          print(f"vault.json OK — schema {data['schema_version']}, {data['counts']}")
+          PY
+
       # Artefakty generowane trzymamy w repo, zeby byly czytelne na GitHubie
       # bez wchodzenia na Pages. Commit tylko gdy cos sie realnie zmienilo.
       - name: Commit regenerated artifacts
