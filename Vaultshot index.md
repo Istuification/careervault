@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/build_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 07:02 UTC · commit `f646726`
+> Stan: 2026-07-24 07:04 UTC · commit `64f41c7`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -89,7 +89,7 @@ i po kolumnie `Nazwa` — brak keywords nie oznacza słabszej kompetencji.
 | `SKILL-002` | Operations Management | Operations | Advanced | 10 | 7 | operations, service operations, organizational scaling, logistics, operational excellence |
 | `SKILL-003` | Knowledge Management | Knowledge | Expert | 10 | 7 | knowledge management, documentation, onboarding, knowledge base, information architecture… |
 | `SKILL-004` | Product Management | Product | Advanced | 10 | 10 | product management, product development, product launch, warranty systems, technical prod… |
-| `SKILL-005` | Leadership | Management | Advanced | 8 | 9 | _(brak)_ |
+| `SKILL-005` | Leadership | Management | Advanced | 8 | 9 | leadership, team leadership, people management, mentoring, team development, succession p… |
 | `SKILL-006` | Technical Documentation | Knowledge | Expert | 9 | 6 | technical documentation, technical writing, procedures, instructions, documentation manag… |
 | `SKILL-007` | Training & Enablement | Knowledge | Advanced | 9 | 9 | training, onboarding, enablement, knowledge transfer, technical training, partner educati… |
 | `SKILL-008` | Business Systems | Systems | Advanced | 9 | 7 | business systems, crm, systems integration, digital transformation, operations systems, p… |
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 07:02 UTC z commita `f646726`._
+_Wygenerowano 2026-07-24 07:04 UTC z commita `64f41c7`._
