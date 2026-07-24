@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/render_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-07-24 09:00 UTC · commit `8b46209`
+> Stan: 2026-07-24 09:30 UTC · commit `70615fd`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -280,4 +280,4 @@ bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
 
 ---
 
-_Wygenerowano 2026-07-24 09:00 UTC z commita `8b46209`._
+_Wygenerowano 2026-07-24 09:30 UTC z commita `70615fd`._
