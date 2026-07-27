@@ -47,7 +47,7 @@ Mój naturalny styl działania charakteryzuje się strategiczno-analitycznym pod
 ### Collaboration Style: Cross-Functional Harmonizer
 *   **Talenty Gallup (Budowanie Relacji):** Współzależność (#4), Bliskość (#7), Indywidualizacja (#8), Rozwijanie Innych (#9)
 *   **Wielka Piątka (IPIP, 1–5):** Ugodowość 2,18
-*   **HEXACO (znormalizowane, średnia próby 5,00):** Ugodowość 6,61; Uczciwość-Pokora 7,10; Łagodność 7,10
+*   **HEXACO (znormalizowane, średnia próby 5,00):** Agreeableness 6,61; Honesty-Humility 7,10; Gentleness 7,10
 *   **Manifestacja:** Postrzegam organizację jako nierozerwalny ekosystem naczyń połączonych. Buduję mosty komunikacyjne i dążę do łagodzenia napięć międzyfunkcyjnych poprzez głębokie zrozumienie perspektyw i ograniczeń innych działów. W relacjach unikam polityki hierarchicznej – preferuję mentoring, partnerskie zaufanie oraz stwarzanie zespołom warunków do samodzielnego rozwoju i sukcesu.
 
 ---
