@@ -198,11 +198,14 @@ Odpowiedzi na te pytania powstają dopiero na poziomie Cognitive Model.
 
 | Pole                   | Wartość    |
 | ---------------------- | ---------- |
-| Typ Modelu             | Osobowość  |
-| Wiarygodność Naukowa   | 10 / 10    |
-| Przydatność dla Modelu | TBD        |
-| Data Badania           | 2026-06-18 |
-| Status                 | Aktywny    |
+| Typ Modelu                 | Osobowość                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------- |
+| Narzędzie                  | IPIP NEO-PI-R (openpsychometrics.org)                                                          |
+| `wiarygodnosc_modelu`      | 10 / 10                                                                                         |
+| `wiarygodnosc_narzedzia`   | nieustalona — wersja IPIP, próba samoselekcyjna, raport zawiera błąd wyświetlania (zob. nota) |
+| Przydatność dla Modelu     | TBD                                                                                             |
+| Data Badania               | 2026-06-18                                                                                      |
+| Status                     | Aktywny                                                                                         |
 
 ---
 
@@ -226,11 +229,24 @@ Model nie opisuje zdolności, inteligencji ani kompetencji. Jego celem jest opis
 
 | Czynnik                               | Wynik    |
 | ------------------------------------- | -------- |
-| Neurotyczność (Neuroticism)           | 3.53 / 5 |
-| Ekstrawersja (Extraversion)           | 3.30 / 5 |
-| Ugodowość (Agreeableness)             | 2.40 / 5 |
-| Otwartość na Doświadczenia (Openness) | 2.80 / 5 |
-| Sumienność (Conscientiousness)        | 2.80 / 5 |
+| Neurotyczność (Neuroticism)           | 3.03 / 5 |
+| Ekstrawersja (Extraversion)           | 3.53 / 5 |
+| Ugodowość (Agreeableness)             | 2.18 / 5 |
+| Otwartość na Doświadczenia (Openness) | 2.27 / 5 |
+| Sumienność (Conscientiousness)        | 2.38 / 5 |
+
+Każda wartość domenowa jest średnią arytmetyczną sześciu własnych facetów wymienionych poniżej. Wartości przed korektą wynosiły 3.53 / 3.30 / 2.40 / 2.80 / 2.80 i żadna z nich nie równała się średniej własnej tabeli facetów. Pochodzenie wartości 3.53 ustalono (zob. nota poniżej); pochodzenie pozostałych czterech jest nieustalone.
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | wartości podane w tabelach powyżej i poniżej są wartościami surowymi |
+| `skala` | surowe średnie pozycji, zakres 1–5, nieznormalizowane |
+| `odniesienie` | brak użytecznego odniesienia — raport źródłowy podaje percentyl 45 przy każdym wyniku niezależnie od jego wartości (zweryfikowano 2026-07-27); próba samoselekcyjna (openpsychometrics.org) |
+
 
 ### Facety
 
@@ -238,7 +254,7 @@ Model nie opisuje zdolności, inteligencji ani kompetencji. Jego celem jest opis
 
 | Faceta                                        | Wynik |
 | --------------------------------------------- | ----- |
-| Lęk (Anxiety)                                 | 3.9   |
+| Lęk (Anxiety)                                 | 2.2   |
 | Wrogość (Angry Hostility)                     | 3.5   |
 | Depresyjność (Depression)                     | 2.9   |
 | Samoświadomość społeczna (Self-Consciousness) | 2.7   |
@@ -276,7 +292,7 @@ Model nie opisuje zdolności, inteligencji ani kompetencji. Jego celem jest opis
 | Uczucia (Feelings)    | 1.9   |
 | Działania (Actions)   | 2.4   |
 | Idee (Ideas)          | 2.5   |
-| Wartości (Values)     | 2.5   |
+| Wartości (Values)     | 2.2   |
 
 #### Sumienność
 
@@ -291,6 +307,41 @@ Model nie opisuje zdolności, inteligencji ani kompetencji. Jego celem jest opis
 
 ---
 
+## Nota o błędzie wyświetlania w raporcie źródłowym
+
+Ustalenie CAL-005, sekcja A1.
+
+Z parametru `r=` w URL-u wyników odtworzono 30 wartości facetowych w kolejności wyświetlania. Pozycje 7–30 zgadzają się z zapisem w Assessment Data co do przecinka. Pozycje 1–6 nie.
+
+Dowód arytmetyczny: średnia facetów Ekstrawersji z URL-a wynosi (3,9 + 3,9 + 3,5 + 3,3 + 2,8 + 3,8) / 6 = **3,5333**. Raport wyświetla „You score for Neuroticism was 3.5333333333333/5". Zgodność do czterech miejsc po przecinku wyklucza przypadek. Analogicznie wyświetlone „Anxiety 3.9" jest pierwszą wartością bloku Ekstrawersji (Ciepło interpersonalne), nie Lękiem.
+
+Konsekwencje przyjęte do zapisu:
+
+1. Lęk wynosi **2,2**, nie 3,9.
+2. Najwyższą domeną Wielkiej Piątki jest **Ekstrawersja (3,53)**, napędzana Ciepłem 3,9 i Towarzyskością 3,9 — dwoma najwyższymi facetami profilu po Impulsywności.
+
+Wszystkie pięć wartości domenowych przeliczono ze średnich własnych facetów.
+
+### Weryfikacja przy znanym wektorze wejściowym (2026-07-27)
+
+Raport otwarto ponownie z wektorem `r=` odpowiadającym wartościom prawdziwym i zdekodowano szerokości słupków. Skala kodowania: `szerokość = (wynik − 1) × 31,25`, maksimum 125 px; metodę potwierdzają dwie wartości, które raport wypisuje słownie (3,5333 i 3,9).
+
+Wynik dekodowania:
+
+| Slot na stronie | Zawartość faktyczna |
+| --- | --- |
+| Neuroticism (domena + 6 facetów) | 3,5333 / 3,9 / 3,9 / 3,5 / 3,3 / 2,8 / 3,8 — **cały blok Ekstrawersji** |
+| Extraversion (domena + 6 facetów) | 3,0333 / 2,2 / 3,5 / 2,9 / 2,7 / 4,2 / 2,7 — **cały blok Neurotyczności** |
+| Agreeableness, Openness, Conscientiousness | domena 5,0 (słupek maksymalny), pierwszy facet 2,6, pozostałe puste |
+
+Mechanizmem jest **zamiana bloków 1 i 2 w całości**, wraz z wartościami domenowymi — nie przesunięcie o sześć pozycji. Ustalenie A1 z CAL-005 potwierdzone i doprecyzowane.
+
+Bloki Ugodowości, Otwartości i Sumienności nie renderują się: wszystkie trzy domeny pokazują wartość maksymalną, pierwsze facety identyczne 2,6, pozostałe pola są puste. Wartości 2,40 / 2,80 / 2,80 zapisane wcześniej w Vaulcie nie mogły pochodzić z tego ekranu.
+
+Percentyle: raport podaje 45 przy wyniku domenowym i 45 przy facecie, a przy pustym wejściu 45 przy każdej pozycji, w tym przy wyniku 0/5. Percentyli tego narzędzia nie da się użyć.
+
+---
+
 ## Opis Wyników
 
 ### Neurotyczność — umiarkowana
@@ -299,11 +350,13 @@ Wynik wskazuje na przeciętną podatność na stres i negatywne emocje. Badany n
 
 Najbardziej wyróżnia się podwyższona impulsywność przy jednocześnie umiarkowanej podatności na stres.
 
-### Ekstrawersja — umiarkowana
+### Ekstrawersja — najwyższa domena profilu
 
-Profil wskazuje na zdolność do funkcjonowania społecznego bez wyraźnej dominacji cech introwertycznych lub ekstrawertycznych.
+Po korekcie z CAL-005 Ekstrawersja (3,53) jest najwyższą domeną Wielkiej Piątki, napędzaną Ciepłem interpersonalnym 3,9 i Towarzyskością 3,9.
 
-Badany nie poszukuje intensywnej stymulacji społecznej, ale potrafi funkcjonować komfortowo w relacjach i sytuacjach grupowych.
+Badany nie poszukuje intensywnej stymulacji społecznej (Poszukiwanie stymulacji 2,8) — jest to najniższy facet tej domeny.
+
+Zapis Vaultu opisujący analityka o niskim afekcie interpersonalnym nie ma potwierdzenia w tym pomiarze.
 
 ### Ugodowość — niska
 
@@ -311,13 +364,13 @@ Wynik sugeruje ograniczoną skłonność do automatycznego zaufania, podporządk
 
 Nie musi oznaczać konfliktowości. Może oznaczać niezależność ocen, sceptycyzm wobec cudzych opinii oraz preferowanie własnych standardów oceny sytuacji.
 
-### Otwartość na Doświadczenia — umiarkowanie niska
+### Otwartość na Doświadczenia — niska
 
 Wynik nie wskazuje na szczególnie wysokie zainteresowanie doświadczeniami estetycznymi, emocjonalnymi lub fantazyjnymi.
 
 Model sugeruje raczej praktyczne niż eksploracyjne podejście do nowych doświadczeń.
 
-### Sumienność — umiarkowanie niska
+### Sumienność — niska
 
 Wynik wskazuje na ograniczoną potrzebę utrzymywania stałego porządku, rutyn i dyscypliny.
 
@@ -335,7 +388,7 @@ Najbardziej charakterystycznymi cechami profilu są:
 * ograniczone zaufanie domyślne,
 * relatywnie niski poziom organizacji codziennej,
 * umiarkowana rozwaga decyzyjna,
-* przeciętna potrzeba kontaktów społecznych.
+* najwyższa domena profilu to Ekstrawersja (3,53), napędzana Ciepłem 3,9 i Towarzyskością 3,9.
 
 Wyniki nie wskazują na osobę szczególnie napędzaną statusem społecznym, popularnością lub potrzebą aprobaty.
 
@@ -383,8 +436,11 @@ TBD
 
 | Pole                   | Wartość         |
 | ---------------------- | --------------- |
-| Typ Modelu             | Osobowość       |
-| Wiarygodność Naukowa   | 9.5 / 10        |
+| Typ Modelu               | Osobowość                                                          |
+| ------------------------ | ------------------------------------------------------------------ |
+| Narzędzie                | HEXACO-PI-R, wersja oryginalna (University of Calgary)             |
+| `wiarygodnosc_modelu`    | 9.5 / 10                                                            |
+| `wiarygodnosc_narzedzia` | nieustalona — instrument oryginalny, nie wersja IPIP               |
 | Przydatność dla Modelu | W trakcie oceny |
 | Data Badania           | 2026-06-18      |
 | Status                 | Aktywny         |
@@ -412,15 +468,27 @@ Dodatkowo model zawiera skalę Altruizmu.
 
 ## Wyniki
 
-| Czynnik                | Wynik |
-| ---------------------- | ----- |
-| Honesty-Humility       | 7.10  |
-| Emotionality           | 3.33  |
-| Extraversion           | 4.60  |
-| Agreeableness          | 6.61  |
-| Conscientiousness      | 5.24  |
-| Openness to Experience | 5.59  |
-| Altruism               | 4.88  |
+| Czynnik                | Wynik | Percentyl (szacowany) |
+| ---------------------- | ----- | --------------------- |
+| Honesty-Humility       | 7.10  | 98                    |
+| Emotionality           | 3.33  | 5                     |
+| Extraversion           | 4.60  | 34                    |
+| Agreeableness          | 6.61  | 95                    |
+| Conscientiousness      | 5.24  | 59                    |
+| Openness to Experience | 5.59  | 72                    |
+| Altruism               | 4.88  | 45                    |
+
+**Percentyle są wartościami szacowanymi, nie odczytanymi z raportu.** Sposób wyliczenia: przybliżenie normalne przy średniej próby 5,00 i odchyleniu standardowym 1,00, gdzie SD wyprowadzono ze zdania „ok. 2/3 próby w przedziale 4,00–6,00" (CAL-005, A2). Metodę zweryfikowano na pięciu percentylach podanych niezależnie w CAL-005 — Social Self-Esteem, Sincerity, Honesty-Humility, Emotionality, Altruism — i odtworzyła wszystkie pięć. Wartości należy traktować jako oszacowania rzędu wielkości; zdjęcie kwalifikatora „szacowany" wymaga tabeli norm z University of Calgary.
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | wartości w tabelach są wynikami znormalizowanymi; wartości surowe nieprzeniesione do Vaultu |
+| `skala` | znormalizowana, średnia próby 5,00; ok. 2/3 próby w przedziale 4,00–6,00 |
+| `odniesienie` | grupa odniesienia: studenci uniwersytetów kanadyjskich — ograniczenie stosowalności percentyli (CAL-005, R-08) |
 
 ---
 
@@ -428,57 +496,57 @@ Dodatkowo model zawiera skalę Altruizmu.
 
 ### Uczciwość i Pokora (Honesty-Humility)
 
-| Faceta          | Wynik |
-| --------------- | ----- |
-| Sincerity       | 6.04  |
-| Fairness        | 6.76  |
-| Greed Avoidance | 7.00  |
-| Modesty         | 5.62  |
+| Faceta          | Wynik | Percentyl (szac.) |
+| --------------- | ----- | ----------------- |
+| Sincerity       | 6.04  | 85 |
+| Fairness        | 6.76  | 96 |
+| Greed Avoidance | 7.00  | 98 |
+| Modesty         | 5.62  | 73 |
 
 ### Emocjonalność (Emotionality)
 
-| Faceta         | Wynik |
-| -------------- | ----- |
-| Fearfulness    | 3.74  |
-| Anxiety        | 3.20  |
-| Dependence     | 3.86  |
-| Sentimentality | 4.69  |
+| Faceta         | Wynik | Percentyl (szac.) |
+| -------------- | ----- | ----------------- |
+| Fearfulness    | 3.74  | 10 |
+| Anxiety        | 3.20  | 4  |
+| Dependence     | 3.86  | 13 |
+| Sentimentality | 4.69  | 38 |
 
 ### Ekstrawersja (Extraversion)
 
-| Faceta             | Wynik |
-| ------------------ | ----- |
-| Social Self-Esteem | 3.80  |
-| Social Boldness    | 5.84  |
-| Sociability        | 4.59  |
-| Liveliness         | 4.32  |
+| Faceta             | Wynik | Percentyl (szac.) |
+| ------------------ | ----- | ----------------- |
+| Social Self-Esteem | 3.80  | 12 |
+| Social Boldness    | 5.84  | 80 |
+| Sociability        | 4.59  | 34 |
+| Liveliness         | 4.32  | 25 |
 
 ### Ugodowość (Agreeableness)
 
-| Faceta      | Wynik |
-| ----------- | ----- |
-| Forgiveness | 6.80  |
-| Gentleness  | 7.10  |
-| Flexibility | 4.60  |
-| Patience    | 6.21  |
+| Faceta      | Wynik | Percentyl (szac.) |
+| ----------- | ----- | ----------------- |
+| Forgiveness | 6.80  | 96 |
+| Gentleness  | 7.10  | 98 |
+| Flexibility | 4.60  | 34 |
+| Patience    | 6.21  | 89 |
 
 ### Sumienność (Conscientiousness)
 
-| Faceta        | Wynik |
-| ------------- | ----- |
-| Organization  | 5.24  |
-| Diligence     | 5.34  |
-| Perfectionism | 4.36  |
-| Prudence      | 6.09  |
+| Faceta        | Wynik | Percentyl (szac.) |
+| ------------- | ----- | ----------------- |
+| Organization  | 5.24  | 59 |
+| Diligence     | 5.34  | 63 |
+| Perfectionism | 4.36  | 26 |
+| Prudence      | 6.09  | 86 |
 
 ### Otwartość na Doświadczenia (Openness)
 
-| Faceta                 | Wynik |
-| ---------------------- | ----- |
-| Aesthetic Appreciation | 3.34  |
-| Inquisitiveness        | 6.53  |
-| Creativity             | 6.09  |
-| Unconventionality      | 5.91  |
+| Faceta                 | Wynik | Percentyl (szac.) |
+| ---------------------- | ----- | ----------------- |
+| Aesthetic Appreciation | 3.34  | 5  |
+| Inquisitiveness        | 6.53  | 94 |
+| Creativity             | 6.09  | 86 |
+| Unconventionality      | 5.91  | 82 |
 
 ---
 
@@ -624,6 +692,35 @@ Model składa się z dziesięciu podstawowych wartości, które można dodatkowo
 | Hedonism (Hedonizm)              | 2.00  |
 | Power (Władza)                   | 2.00  |
 
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | wartości podane w tabelach są wartościami surowymi |
+| `skala` | surowe, przeznaczone do analizy ipsatywnej; zakres skali nieustalony [DO WERYFIKACJI] |
+| `odniesienie` | ipsatywne — brak norm zewnętrznych; punktem odniesienia jest średnia własna 3,567 |
+
+---
+
+### Ipsatyzacja — odchylenia od średniej własnej
+
+Średnia własna dziesięciu wartości podstawowych: **3,567**. Ustalenie CAL-005, sekcja C3.
+
+| Wartość | Surowo | Odchylenie |
+| --- | --- | --- |
+| Życzliwość | 5,50 | +1,93 |
+| Konformizm | 4,75 | +1,18 |
+| Tradycja | 4,75 | +1,18 |
+| Uniwersalizm | 4,50 | +0,93 |
+| Samostanowienie | 4,00 | +0,43 |
+| Bezpieczeństwo | 3,00 | −0,57 |
+| Stymulacja | 2,67 | −0,90 |
+| Osiągnięcia | 2,50 | −1,07 |
+| Hedonizm | 2,00 | −1,57 |
+| Władza | 2,00 | −1,57 |
+
 ---
 
 ### Wartości Nadrzędne
@@ -755,7 +852,7 @@ Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie histor
 
 ---
 
-# Moral Foundations Theory Questionnaire (MFQ)
+# Moral Foundations Theory Questionnaire (MFQ-2)
 
 ## Metadane
 
@@ -789,6 +886,16 @@ Model nie mierzy moralności jako takiej. Mierzy raczej wrażliwość na określ
 | Care (Troska)                      | 62.54     |
 | Proportionality (Proporcjonalność) | 44.96     |
 | Loyalty (Lojalność Grupowa)        | 21.47     |
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | wartości surowe nieprzeniesione do Vaultu; w tabeli podano percentyle |
+| `skala` | percentyle, zakres 0–100 |
+| `odniesienie` | próba normalizacyjna instrumentu — jedyny instrument w zbiorze podający percentyle |
 
 ---
 
@@ -983,6 +1090,18 @@ Siły charakteru pogrupowane są w sześć głównych cnót:
 | 23      | Poczucie Sensu (Spirituality / Meaning)                                  |
 | 24      | Zdolności Przywódcze (Leadership)                                        |
 
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | instrument nie podaje wartości bezwzględnych; wynikiem jest pozycja w rankingu 1–24 |
+| `skala` | rangowa 1–24, ipsatywna |
+| `odniesienie` | ipsatywne — porównanie wyłącznie wewnątrzosobowe; brak wartości bezwzględnych i norm zewnętrznych |
+
+Ranking jest ipsatywny: opisuje kolejność sił w obrębie profilu badanego. Pozycji nie można przeliczać na poziom bezwzględny ani porównywać wprost z wynikami instrumentów podających wartości lub percentyle (CAL-005, A2 i R-10).
+
 ---
 
 ## Opis Wyników
@@ -1131,41 +1250,37 @@ Osoby z wysokim NFC częściej podejmują decyzje na podstawie analizy argument�
 | ------------------ | ------- |
 | Need for Cognition | 4.2 / 5 |
 
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | 4,2 |
+| `skala` | surowa średnia, zakres 1–5, nieznormalizowana |
+| `odniesienie` | średnia grupy wiekowej 30–44 = 4,1; średnia mężczyzn = 4,1; próba samoselekcyjna (openpsychometrics.org) |
+
 ---
 
 ## Opis Wyników
 
-### Need for Cognition — wysoki
+### Need for Cognition — na średniej próby, cecha nieróżnicująca
 
-Wynik wskazuje na ponadprzeciętną skłonność do angażowania się w złożone procesy myślowe.
+Ustalenie CAL-005, sekcja C1.
 
-Badany prawdopodobnie:
+NFC = 4,2 przy średniej grupy wiekowej 30–44 = 4,1 i średniej mężczyzn = 4,1. Wynik nie odbiega od średniej próby.
 
-* odczuwa satysfakcję z analizowania problemów,
-* preferuje zrozumienie mechanizmu działania zamiast zapamiętywania gotowych odpowiedzi,
-* częściej poszukuje przyczyn niż objawów,
-* wykazuje zainteresowanie modelami, zależnościami i strukturami.
+Zastrzeżenie w drugą stronę: próba openpsychometrics jest samoselekcyjna, złożona z osób dobrowolnie wykonujących testy psychologiczne, czyli grupy wzbogaconej w wysokie NFC. Poziom bezwzględny jest zapewne powyżej populacji ogólnej; narzędzie nie pozwala ustalić o ile.
 
-Wysoki wynik nie oznacza większej inteligencji.
-
-Oznacza natomiast większą motywację do korzystania z posiadanych zdolności poznawczych.
+Twierdzenie o bardzo wysokiej potrzebie poznania nie ma pokrycia w tym pomiarze. Wcześniejszy zapis odczytujący ten wynik jako cechę wyróżniającą zapisano w Historii Wersji.
 
 ---
 
 ## Interpretacja
 
-Profil wskazuje na osobę, która traktuje myślenie jako aktywność wartościową samą w sobie.
+Wynik jest przeciętny w obrębie próby samoselekcyjnej i nie różnicuje badanego względem tej próby. Nie stanowi podstawy do wyprowadzania twierdzeń o preferencji poznawczej.
 
-Rozwiązywanie problemów nie wydaje się być wyłącznie narzędziem prowadzącym do celu.
-
-Sam proces analizy może stanowić źródło satysfakcji i zaangażowania.
-
-W praktyce może przejawiać się to poprzez:
-
-* budowanie modeli rzeczywistości,
-* potrzebę rozumienia zależności,
-* zadawanie pytań wykraczających poza bezpośredni problem,
-* preferowanie głębokiego zrozumienia nad szybkim działaniem.
+Wcześniejsza interpretacja opisująca myślenie jako aktywność wartościową samą w sobie została wycofana wraz z podstawą pomiarową i zapisana w Historii Wersji.
 
 ---
 
@@ -1252,38 +1367,41 @@ Osoby z niskim wynikiem częściej tolerują niejednoznaczność, utrzymują wie
 
 | Skala            | Wynik   |
 | ---------------- | ------- |
-| Need for Closure | 3.0 / 6 |
+| Need for Closure | 3.05 / 6 |
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | 3,05 |
+| `skala` | surowa średnia, zakres 1–6, nieznormalizowana |
+| `odniesienie` | średnia grupy wiekowej 30–44 = 2,85; średnia ogólna ≈ 2,88 |
+
+Wartość przed korektą: 3,0. Skorygowano do 3,05 zgodnie z CAL-005, sekcja C2.
 
 ---
 
 ## Opis Wyników
 
-### Need for Closure — umiarkowany
+### Need for Closure — przeciętna potrzeba domknięcia, cecha nieróżnicująca
 
-Wynik znajduje się blisko środka skali.
+Ustalenie CAL-005, sekcja C2.
 
-Nie wskazuje ani na silną potrzebę szybkiego domykania problemów, ani na szczególnie wysoką tolerancję niepewności.
+NFCS = 3,05 przy średniej grupy wiekowej 30–44 = 2,85 i średniej ogólnej ≈ 2,88. Wynik jest **nieznacznie powyżej** średniej.
 
-Profil sugeruje zdolność funkcjonowania zarówno w trybie eksploracji, jak i w trybie decyzyjnym.
+Wcześniejszy zapis odczytywał ten wynik jako wysoką tolerancję niepewności. Jest to kierunek odwrotny do pomiaru, a różnica względem średniej jest nieistotna.
 
-Badany wydaje się zdolny do utrzymywania niejednoznaczności przez pewien czas, ale jednocześnie nie wykazuje tendencji do niekończącej się analizy.
+Poprawna treść: przeciętna potrzeba domknięcia; cecha nieróżnicująca.
 
 ---
 
 ## Interpretacja
 
-Profil sugeruje równowagę pomiędzy eksploracją a domknięciem poznawczym.
+Wynik nie różnicuje badanego i nie stanowi podstawy do wyprowadzania twierdzeń o tolerancji niepewności w żadną stronę.
 
-W praktyce może oznaczać:
-
-* gotowość do zbierania dodatkowych informacji przed podjęciem decyzji,
-* brak potrzeby natychmiastowego formułowania opinii,
-* zdolność do funkcjonowania przy częściowej niepewności,
-* jednoczesną gotowość do zakończenia analizy po osiągnięciu satysfakcjonującego poziomu zrozumienia.
-
-Wynik jest szczególnie interesujący w zestawieniu z wysokim Need for Cognition.
-
-Sugeruje on, że analiza nie jest napędzana potrzebą redukcji niepewności, lecz autentyczną potrzebą zrozumienia problemu.
+Zestawienie z Need for Cognition traci podstawę: oba wyniki mieszczą się w okolicach średnich swoich prób odniesienia (CAL-005, C1 i C2). Wcześniejsza interpretacja została wycofana i zapisana w Historii Wersji.
 
 ---
 
@@ -1323,13 +1441,7 @@ Model wykazuje wysoką zgodność z wynikami:
 * Comprehensive Intellectual Humility Scale (CIHS),
 * VIA (Judgment i Prudence).
 
-Szczególnie istotne może być wyjaśnienie relacji pomiędzy:
-
-* wysoką potrzebą analizy,
-* wysoką otwartością poznawczą,
-* umiarkowaną potrzebą domknięcia.
-
-Połączenie tych cech może odgrywać istotną rolę w sposobie podejmowania decyzji przez badanego.
+Zapis o relacji pomiędzy „wysoką potrzebą analizy", „wysoką otwartością poznawczą" a „umiarkowaną potrzebą domknięcia" został wycofany: dwa z trzech członów utraciły podstawę pomiarową (CAL-005, C1 i C2). NFCS 3,05 i NFC 4,2 mieszczą się w okolicach średnich swoich prób odniesienia i nie różnicują badanego.
 
 Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
 
@@ -1386,6 +1498,22 @@ Interpretacja ogólna: **wysoki poziom pokory intelektualnej**.
 | Respect for Others' Viewpoints       | 4.17 / 5 |
 | Lack of Intellectual Overconfidence  | 2.33 / 5 |
 
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | 81/110 (wynik ogólny); średnie podskal jak w tabeli powyżej |
+| `skala` | suma 22 pozycji, zakres 22–110; podskale jako średnie pozycji 1–5 |
+| `odniesienie` | brak norm |
+
+### Status źródła
+
+Plik źródłowy `CIHS_Wyniki.docx` jest artefaktem przechowywanym **poza repozytorium** i nie jest dostępny do wglądu w Vaulcie.
+
+Zawarty w nim tekst interpretacyjny — w tym zdania odnoszące wynik do rezultatów innych badań badanego — został wygenerowany przez model językowy i **nie stanowi danych pomiarowych**. Do Vaultu przeniesiono wyłącznie wartości liczbowe, które zweryfikowano jako zgodne ze strukturą instrumentu (CAL-005, A5 i R-07).
+
 ---
 
 ## Opis Wyników
@@ -1416,11 +1544,20 @@ Profil sugeruje gotowość do wysłuchania argumentów oraz próbę zrozumienia 
 
 Najniższy wynik w całym profilu.
 
-Nie oznacza zamknięcia na argumenty.
+Ustalenie CAL-005, sekcja C4. Odczyt „nadmierna pewność" został **wycofany**.
 
-Wskazuje natomiast na dużą pewność własnych ocen oraz wysoki próg dowodowy wymagany do zmiany stanowiska.
+Cztery niezależne pomiary wskazują wysoką pokorę intelektualną: CIHS Openness to Revising One's Viewpoint 4,40; Intellectual Humility Quiz (Berkeley) 47/55 z oceną „strong"; AOT 64/75 (4,27); VIA Rozsądek #1 z 24. Jedna podskala wskazuje przeciwnie. Vault potraktował tę jedną jako ustalenie.
 
-Profil sugeruje osobę, która jest gotowa zmienić zdanie, ale oczekuje silnych argumentów i wysokiej jakości uzasadnienia.
+**Co zostaje z wyniku 2,33:** nie nadmierna pewność, lecz **wysoki próg zmiany zdania przy zachowanej otwartości**.
+
+Podział domenowy:
+
+| Domena | Status |
+| --- | --- |
+| Procesy, narzędzia, rozwiązania | otwartość **potwierdzona** — trzy udokumentowane przypadki zmiany zdania z imionami i konkretnymi argumentami |
+| Model własnej osoby, samoocena, interpretacja własnych zachowań | **nieustalona**; jedyny sygnał w tej domenie (transkrypt A8) jest negatywny |
+
+Koszt interpersonalny jest realny i potwierdzony.
 
 ---
 
@@ -1535,6 +1672,22 @@ Opisuje natomiast jakość procesu poznawczego wykorzystywanego podczas rozwiąz
 | Średnia                       | 4.27 / 5 |
 
 Interpretacja ogólna: **wysoki poziom aktywnie otwartego myślenia**.
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | 64/75 (wynik ogólny); średnia pozycji 4,27 |
+| `skala` | suma pozycji, maksimum 75; średnia pozycji w zakresie 1–5 |
+| `odniesienie` | brak norm |
+
+### Status źródła
+
+Plik źródłowy `AOT_Wyniki.docx` jest artefaktem przechowywanym **poza repozytorium** i nie jest dostępny do wglądu w Vaulcie.
+
+Zawarty w nim tekst interpretacyjny — w tym zdania odnoszące wynik do rezultatów innych badań badanego — został wygenerowany przez model językowy i **nie stanowi danych pomiarowych**. Do Vaultu przeniesiono wyłącznie wartości liczbowe, które zweryfikowano jako zgodne ze strukturą instrumentu (CAL-005, A5 i R-07).
 
 ---
 
@@ -1725,6 +1878,18 @@ Najsilniejszą domeną profilu jest Myślenie Strategiczne.
 | 33      | Integrator (Includer)                |
 | 34      | Dowodzenie (Command)                 |
 
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | instrument nie podaje wartości bezwzględnych; wynikiem jest pozycja w rankingu 1–34 |
+| `skala` | rangowa 1–34, ipsatywna |
+| `odniesienie` | ipsatywne — porównanie wyłącznie wewnątrzosobowe; brak wartości bezwzględnych i norm zewnętrznych |
+
+Ranking jest ipsatywny: opisuje kolejność talentów w obrębie profilu badanego. Pozycji nie można przeliczać na poziom bezwzględny ani porównywać wprost z wynikami instrumentów podających wartości lub percentyle (CAL-005, A2 i R-10).
+
 ---
 
 ## Opis Wyników
@@ -1880,234 +2045,194 @@ Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie histor
 
 ---
 
-# CliftonStrengths (Gallup)
+# Modele Uzupełniające
+
+Sekcja utworzona przy wdrożeniu CAL-005 (R-09). Obejmuje instrumenty, których wyniki były cytowane w kalibracjach, a które nie miały własnego zapisu w Assessment Data. Nazwa grupy jest wyłącznie porządkowa i nie stanowi klasyfikacji merytorycznej.
+
+---
+
+# Intellectual Humility Quiz (Greater Good, Berkeley)
 
 ## Metadane
 
-| Pole                   | Wartość                                 |
-| ---------------------- | --------------------------------------- |
-| Typ Modelu             | Talenty i preferowane sposoby działania |
-| Wiarygodność Naukowa   | 5.5 / 10                                |
-| Przydatność dla Modelu | Wysoka                                  |
-| Data Badania           | 2026-06-17                              |
-| Status                 | Aktywny                                 |
+| Pole                   | Wartość                      |
+| ---------------------- | ---------------------------- |
+| Typ Modelu             | Styl myślenia                |
+| Narzędzie              | Intellectual Humility Quiz (Greater Good Science Center, UC Berkeley) |
+| Wiarygodność Naukowa   | nieustalona                  |
+| Przydatność dla Modelu | TBD                          |
+| Data Badania           | nieustalona [DO WERYFIKACJI] |
+| Status                 | Aktywny                      |
 
 ---
 
 ## Opis
 
-CliftonStrengths (dawniej StrengthsFinder) jest modelem identyfikującym naturalne talenty oraz preferowane sposoby działania.
-
-Model nie mierzy osobowości, inteligencji, wiedzy ani kompetencji.
-
-Jego celem jest określenie wzorców myślenia, odczuwania i działania, które pojawiają się spontanicznie oraz mogą zostać rozwinięte w mocne strony.
-
-Gallup zakłada, że największy potencjał rozwoju wynika z rozwijania naturalnych talentów, a nie wyłącznie z eliminowania słabości.
+Krótki kwestionariusz samoopisowy mierzący pokorę intelektualną rozumianą jako gotowość do uznania ograniczeń własnej wiedzy. Wynikiem jest suma punktów wraz z jakościowym pasmem opisowym generowanym przez narzędzie.
 
 ---
 
 ## Wyniki
 
-### Dominująca Domena
+| Skala                 | Wynik   |
+| --------------------- | ------- |
+| Intellectual Humility | 47 / 55 |
 
-**Myślenie Strategiczne (Strategic Thinking)**
+Pasmo opisowe podane przez narzędzie: **strong**.
 
-Najsilniejszą domeną profilu jest Myślenie Strategiczne.
+### Charakterystyka pomiaru
 
----
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
 
-### Ranking Talentów
-
-| Pozycja | Talent                               |
-| ------- | ------------------------------------ |
-| 1       | Uczenie się (Learner)                |
-| 2       | Pryncypialność (Belief)              |
-| 3       | Strateg (Strategic)                  |
-| 4       | Współzależność (Connectedness)       |
-| 5       | Analityk (Analytical)                |
-| 6       | Odpowiedzialność (Responsibility)    |
-| 7       | Bliskość (Relator)                   |
-| 8       | Indywidualizacja (Individualization) |
-| 9       | Rozwijanie Innych (Developer)        |
-| 10      | Intelekt (Intellection)              |
-| 11      | Dyscyplina (Discipline)              |
-| 12      | Bezstronność (Consistency)           |
-| 13      | Organizator (Arranger)               |
-| 14      | Naprawianie (Restorative)            |
-| 15      | Empatia (Empathy)                    |
-| 16      | Osiąganie (Achiever)                 |
-| 17      | Maksymalista (Maximizer)             |
-| 18      | Kontekst (Context)                   |
-| 19      | Zgodność (Harmony)                   |
-| 20      | Zbieranie (Input)                    |
-| 21      | Wiara w Siebie (Self-Assurance)      |
-| 22      | Optymista (Positivity)               |
-| 23      | Wizjoner (Futuristic)                |
-| 24      | Ukierunkowanie (Focus)               |
-| 25      | Komunikatywność (Communication)      |
-| 26      | Odkrywczość (Ideation)               |
-| 27      | Rozwaga (Deliberative)               |
-| 28      | Elastyczność (Adaptability)          |
-| 29      | Aktywator (Activator)                |
-| 30      | CZAR (Woo)                           |
-| 31      | Rywalizacja (Competition)            |
-| 32      | Poważanie (Significance)             |
-| 33      | Integrator (Includer)                |
-| 34      | Dowodzenie (Command)                 |
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | 47/55 |
+| `skala` | suma pozycji, maksimum 55 |
+| `odniesienie` | brak norm |
 
 ---
 
 ## Opis Wyników
 
-### Top 5 Talentów
-
-#### Uczenie się (#1)
-
-Najsilniejszy talent w profilu.
-
-Wskazuje na motywację do zdobywania wiedzy, rozwijania kompetencji i pogłębiania zrozumienia. Satysfakcję przynosi nie tylko rezultat, ale również sam proces uczenia się.
-
-#### Pryncypialność (#2)
-
-Silna orientacja na wartości, zasady i poczucie celu.
-
-Decyzje często oceniane są przez pryzmat zgodności z wewnętrznym systemem wartości.
-
-#### Strateg (#3)
-
-Naturalna zdolność dostrzegania możliwych ścieżek działania, scenariuszy i alternatywnych rozwiązań.
-
-Talent ten wspiera podejmowanie decyzji w warunkach niepewności.
-
-#### Współzależność (#4)
-
-Skłonność do dostrzegania zależności pomiędzy ludźmi, wydarzeniami i systemami.
-
-Wysoka potrzeba rozumienia szerszego kontekstu sytuacji.
-
-#### Analityk (#5)
-
-Naturalna potrzeba rozumienia przyczyn, zależności i mechanizmów.
-
-Silna orientacja na logikę, dowody oraz analizę danych.
-
----
-
-### Pozostałe Talenty z Top 10
-
-#### Odpowiedzialność (#6)
-
-Silne poczucie zobowiązania wobec podjętych deklaracji i obowiązków.
-
-#### Bliskość (#7)
-
-Preferencja budowania głębokich relacji opartych na zaufaniu zamiast szerokiej sieci powierzchownych kontaktów.
-
-#### Indywidualizacja (#8)
-
-Naturalna zdolność dostrzegania indywidualnych różnic pomiędzy ludźmi.
-
-#### Rozwijanie Innych (#9)
-
-Skłonność do dostrzegania potencjału innych osób i wspierania ich rozwoju.
-
-#### Intelekt (#10)
-
-Potrzeba refleksji, analizowania oraz prowadzenia pogłębionych procesów myślowych.
-
----
-
-## Interpretacja
-
-Profil Gallupa wskazuje na dominację talentów związanych z:
-
-* uczeniem się,
-* analizą,
-* budowaniem modeli,
-* rozumieniem zależności,
-* podejmowaniem decyzji,
-* wspieraniem rozwoju innych ludzi.
-
-Najsilniejsza domena — Myślenie Strategiczne — pojawia się konsekwentnie w całym profilu.
-
-Wysokie pozycje talentów takich jak:
-
-* Uczenie się,
-* Strateg,
-* Analityk,
-* Intelekt,
-
-sugerują preferencję dla pracy koncepcyjnej, analitycznej i systemowej.
-
-Jednocześnie wysokie pozycje:
-
-* Pryncypialności,
-* Odpowiedzialności,
-* Bliskości,
-* Rozwijania Innych,
-
-wskazują na silny komponent wartościowy i relacyjny.
-
-Profil nie wskazuje na naturalną potrzebę dominacji, rywalizacji ani zdobywania statusu społecznego.
-
-Najniżej sklasyfikowane zostały:
-
-* Dowodzenie,
-* Poważanie,
-* Rywalizacja,
-* CZAR.
-
-Może to sugerować preferowanie wpływu poprzez wiedzę, argumentację i relacje zamiast formalnego autorytetu lub pozycji.
-
----
-
-## Notatki Badanego
-
-TBD
+Nieustalone. Zapis wprowadzony przez CAL-005 (R-09) obejmuje wyłącznie wartość pomiaru.
 
 ---
 
 ## Ograniczenia Modelu
 
-* Model nie mierzy osobowości.
-* Model nie mierzy inteligencji.
-* Model nie mierzy kompetencji.
-* Model nie przewiduje skuteczności zawodowej.
-* Wyniki opierają się na autodeklaracji.
-* Gallup posiada ograniczone wsparcie naukowe w porównaniu do modeli takich jak Big Five lub HEXACO.
-* Talenty opisują preferowane sposoby działania, a nie rzeczywiste zachowania.
+* Wynik opiera się na samoopisie badanego.
+* Instrument nie podaje norm zewnętrznych ani percentyli.
+* Pasmo opisowe jest wytworem narzędzia, nie odrębnym pomiarem.
 
 ---
 
 ## Przydatność dla Modelu
 
-### Ocena Wstępna
+TBD
 
-**Wysoka**
+---
 
-Model dostarcza wartościowych informacji o naturalnych preferencjach poznawczych i behawioralnych badanego.
+# Free Will Scale
 
-Szczególnie istotne dla budowy Cognitive Model wydają się talenty:
+## Metadane
 
-* Uczenie się,
-* Strateg,
-* Analityk,
-* Pryncypialność,
-* Intelekt.
+| Pole                   | Wartość                      |
+| ---------------------- | ---------------------------- |
+| Typ Modelu             | Przekonania                  |
+| Narzędzie              | Free Will Scale              |
+| Wiarygodność Naukowa   | nieustalona                  |
+| Przydatność dla Modelu | TBD                          |
+| Data Badania           | nieustalona [DO WERYFIKACJI] |
+| Status                 | Aktywny                      |
 
-Profil jest spójny z wynikami:
+---
 
-* HEXACO,
-* VIA,
-* Need for Cognition,
-* Actively Open-Minded Thinking,
-* Comprehensive Intellectual Humility Scale,
-* Schwartz Value Theory.
+## Opis
 
-Gallup może stanowić istotne źródło danych przy identyfikacji predyktorów dotyczących sposobu uczenia się, analizowania problemów, podejmowania decyzji oraz rozwoju innych ludzi.
+Kwestionariusz samoopisowy mierzący przekonania dotyczące determinacji zdarzeń i sprawczości. Obejmuje cztery niezależne podskale: Fate (przeznaczenie), Scientific Causation (przyczynowość naukowa), Randomness (przypadek) oraz Free Will (wolna wola). Podskale nie sumują się do wyniku ogólnego.
 
-Ostateczna ocena przydatności modelu zostanie przeprowadzona po analizie historii i dowodów behawioralnych.
+---
 
+## Wyniki
+
+| Podskala                        | Wynik |
+| ------------------------------- | ----- |
+| Fate (Przeznaczenie)            | 1.70  |
+| Scientific Causation (Przyczynowość naukowa) | 3.00  |
+| Randomness (Przypadek)          | 4.28  |
+| Free Will (Wolna wola)          | 3.14  |
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | 1,70 / 3,00 / 4,28 / 3,14 |
+| `skala` | surowe średnie; zakres skali nieustalony [DO WERYFIKACJI] |
+| `odniesienie` | brak norm |
+
+---
+
+## Opis Wyników
+
+Nieustalone. Zapis wprowadzony przez CAL-005 (R-09) obejmuje wyłącznie wartości pomiaru.
+
+---
+
+## Ograniczenia Modelu
+
+* Wyniki opierają się na samoopisie badanego.
+* Instrument nie podaje norm zewnętrznych ani percentyli.
+* Zakres skali nie został ustalony przy wdrożeniu; wartości przepisano dosłownie za CAL-005.
+
+---
+
+## Przydatność dla Modelu
+
+TBD
+
+---
+
+# Systems & Feelings (EQ/SQ)
+
+## Metadane
+
+| Pole                   | Wartość                            |
+| ---------------------- | ---------------------------------- |
+| Typ Modelu             | Styl poznawczy                     |
+| Narzędzie              | Systems & Feelings (EQ/SQ, Baron-Cohen) |
+| Wiarygodność Naukowa   | nieustalona                        |
+| Przydatność dla Modelu | TBD                                |
+| Data Badania           | nieustalona [DO WERYFIKACJI]       |
+| Status                 | Aktywny                            |
+
+---
+
+## Opis
+
+Instrument samoopisowy mierzący dwa niezależne wymiary: systematyzowanie (Systemizing, SQ) — skłonność do analizowania i konstruowania układów rządzonych regułami — oraz empatyzowanie (Empathizing, EQ) — skłonność do rozpoznawania stanów innych osób i reagowania na nie.
+
+Wynik jest przeznaczony do porównania wewnątrzosobowego obu wymiarów, nie do porównań międzyosobowych.
+
+---
+
+## Wyniki
+
+| Wymiar                   | Wynik   |
+| ------------------------ | ------- |
+| Systemizing (SQ)         | 3.0 / 4 |
+| Empathizing (EQ)         | 3.3 / 4 |
+
+### Charakterystyka pomiaru
+
+Poniższe pola dotyczą **każdego** wyniku w tej sekcji (CAL-005, R-05).
+
+| Pole | Wartość |
+| ---- | ------- |
+| `wartosc_surowa` | S 3,0; E 3,3 |
+| `skala` | surowe średnie, zakres 1–4 |
+| `odniesienie` | porównanie wewnątrzosobowe S kontra E; brak norm zewnętrznych |
+
+---
+
+## Opis Wyników
+
+Nieustalone. Zapis wprowadzony przez CAL-005 (R-09) obejmuje wyłącznie wartości pomiaru.
+
+---
+
+## Ograniczenia Modelu
+
+* Wyniki opierają się na samoopisie badanego.
+* Instrument nie podaje norm zewnętrznych ani percentyli.
+* Porównywanie wartości bezwzględnych z wynikami innych instrumentów jest nieuprawnione.
+
+---
+
+## Przydatność dla Modelu
+
+TBD
 
 ---
 
@@ -2138,7 +2263,7 @@ Wszystkie wnioski zawarte w tej sekcji mają charakter roboczy i mogą zostać z
 | ------------------------------------------------ | ------------- | --------------- |
 | HEXACO                                           | Bardzo wysoka | Bardzo wysoka   |
 | Schwartz Value Theory                            | Bardzo wysoka | Wysoka          |
-| Need for Cognition (NFC)                         | Wysoka        | Bardzo wysoka   |
+| Need for Cognition (NFC)                         | Wysoka        | Niska — wynik nieróżnicujący (CAL-005, C1) |
 | Actively Open-Minded Thinking (AOT)              | Wysoka        | Bardzo wysoka   |
 | Comprehensive Intellectual Humility Scale (CIHS) | Wysoka        | Bardzo wysoka   |
 
@@ -2161,7 +2286,6 @@ Wszystkie wnioski zawarte w tej sekcji mają charakter roboczy i mogą zostać z
 
 ### Źródła
 
-* Need for Cognition
 * AOT
 * CIHS
 * HEXACO
@@ -2176,9 +2300,11 @@ Wszystkie wnioski zawarte w tej sekcji mają charakter roboczy i mogą zostać z
 * zainteresowanie zależnościami przyczynowo-skutkowymi,
 * satysfakcja płynąca z procesu uczenia się.
 
+Need for Cognition wycofany z podstawy dowodowej tej sekcji: wynik 4,2 nie odbiega od średniej próby odniesienia i nie różnicuje badanego (CAL-005, C1).
+
 ### Pewność
 
-**Bardzo wysoka**
+**Wysoka** — obniżona z „Bardzo wysoka" po wycofaniu jednego z sześciu instrumentów źródłowych.
 
 ---
 
@@ -2189,7 +2315,6 @@ Wszystkie wnioski zawarte w tej sekcji mają charakter roboczy i mogą zostać z
 * VIA (Judgment)
 * AOT
 * CIHS
-* NFC
 * HEXACO (Prudence)
 * Gallup (Strategic, Analytical)
 
@@ -2201,9 +2326,11 @@ Wszystkie wnioski zawarte w tej sekcji mają charakter roboczy i mogą zostać z
 * ocena jakości argumentów,
 * preferencja rozwiązań opartych na zrozumieniu problemu.
 
+Need for Cognition wycofany z podstawy dowodowej tej sekcji (CAL-005, C1).
+
 ### Pewność
 
-**Bardzo wysoka**
+**Wysoka** — obniżona z „Bardzo wysoka" po wycofaniu jednego z sześciu instrumentów źródłowych.
 
 ---
 
@@ -2277,6 +2404,44 @@ Badany nie deklaruje częstej zmiany zdania, jednak opisuje szybkie aktualizowan
 
 ---
 
+# Ustalenia Zbieżne — CAL-005
+
+Sekcja wprowadzona przez CAL-005 (R-16). Zawiera ustalenia B1–B4 kalibracji adwersarialnej. W odróżnieniu od pozostałych sekcji Analizy Międzymodelowej opiera się na wynikach po korekcie skalowania oraz na dowodach z transkryptu odpowiedzi głosowych, który pozostaje poza repozytorium.
+
+## B1. Przywództwo liniowe — najsilniejsza zbieżność w zbiorze
+
+VIA Zdolności przywódcze **#24 z 24**. CliftonStrengths Dowodzenie **#34 z 34**. Dwa niezależne narzędzia, obie pozycje ostatnie.
+
+Potwierdzenie behawioralne: przyznana porażka zarządcza z kosztem przeniesionym na następcę (transkrypt, C4).
+
+## B2. Niepromowanie siebie — pięć instrumentów i cztery dowody behawioralne
+
+VIA Skromność **#2 z 24**; CliftonStrengths Poważanie **#32**; HEXACO Social Self-Esteem 3,80 (~12. percentyl); Schwartz Self-Enhancement 2,17 przy Self-Transcendence 5,00; Władza 2,00.
+
+Dowody behawioralne z transkryptu: F4, F5, F2, F3.
+
+## B3. Rozpoczynanie kontra domykanie — cztery instrumenty i pięć dowodów
+
+CliftonStrengths Uczenie się **#1**; VIA Pasja zdobywania wiedzy **#19 z 24**.
+
+Nie jest to sprzeczność. VIA rozdziela Ciekawość (u badanego **#7**) od Pasji zdobywania wiedzy, definiowanej jako celowa chęć systematycznego poszerzania wiedzy z danego zakresu. Raport Gallupa formułuje to samo ostrzeżenie przy talencie Uczenie się.
+
+Zbieżne: VIA Samoregulacja #18; CliftonStrengths Ukierunkowanie #24; IPIP Samodyscyplina 1,4.
+
+Dowody behawioralne z transkryptu: E3, E4, D4, D2.
+
+## B4. Rozwaga kontra samokontrola
+
+Impulsywność 4,2 jest najwyższym facetem profilu IPIP i pozornie kłóci się z Prudence 6,09 oraz VIA Roztropność **#8**.
+
+Facet Impulsiveness w modelu NEO nie mierzy działania bez namysłu, lecz nieodporność na własne zachcianki. Prudence mierzy rozważanie konsekwencji przed decyzją. Konstrukty rozłączne; oba mogą być wysokie.
+
+Przekład operacyjny: **rozważa starannie, co należy zrobić, i robi to, na co ma ochotę.**
+
+Zbieżne: Samodyscyplina 1,4; VIA Samoregulacja #18. Dowody behawioralne z transkryptu: E5, E2.
+
+---
+
 # Obszary Umiarkowanej Zgodności
 
 ## 1. Rozwijanie Innych Ludzi
@@ -2305,12 +2470,32 @@ Pojawia się tendencja do wspierania rozwoju innych ludzi, jednak obecnie brakuj
 * Gallup (Strategic)
 * Gallup (Analytical)
 * HEXACO (Inquisitiveness)
+* Free Will Scale
 
 ### Obserwacja
 
 Badany wykazuje tendencję do postrzegania problemów jako elementów większych systemów oraz do analizowania wzajemnych zależności.
 
 Wymaga dalszej walidacji na podstawie rzeczywistych historii.
+
+### Rozdzielenie talentu Współzależność od przekonania o braku przypadku
+
+Ustalenie CAL-005, sekcja C7.
+
+Opis talentu Współzależność (#4) w raporcie Gallupa zawiera zdanie: badany wierzy, że wszystko jest ze sobą powiązane i że niewiele rzeczy dzieje się przypadkiem. Pomiar przekonań przeczy drugiej części tego opisu.
+
+| Podskala Free Will Scale | Wynik |
+| --- | --- |
+| Fate (Przeznaczenie) | 1,70 |
+| Scientific Causation (Przyczynowość naukowa) | 3,00 |
+| Randomness (Przypadek) | 4,28 |
+| Free Will (Wolna wola) | 3,14 |
+
+Randomness 4,28 to silne przekonanie, że przypadek odgrywa realną rolę; Fate 1,70 to wyraźne odrzucenie predeterminacji.
+
+Talent wyszedł wysoko prawdopodobnie na treści religijnej i relacyjnej (Czystość 84. percentyl), nie na przekonaniu o braku przypadku. Wysokiej pozycji talentu Współzależność nie wolno cytować jako dowodu na przekonanie o powiązaniu zdarzeń.
+
+Ustalenie poboczne: Fate 1,70 oznacza silne przekonanie o zmienialności własnej sytuacji.
 
 ### Pewność
 
@@ -2432,9 +2617,11 @@ Nie zaś:
 
 ### Obserwacja
 
-Największa rozbieżność pomiędzy modelami występuje w obszarze sumienności.
+**Korekta po CAL-005.** Rozbieżność między modelami w obszarze sumienności jest w znacznej części tym samym artefaktem skalowania, który opisano przy ugodowości: IPIP podaje surowe średnie w zakresie 1–5 (Sumienność 2,38), HEXACO wynik znormalizowany o średniej próby 5,00 (Sumienność 5,24, ~59. percentyl szacowany). Po uwzględnieniu skal jeden instrument wskazuje poziom poniżej środka skali, drugi przeciętny — nie jest to największa rozbieżność w zbiorze i nie wymaga wyjaśnienia mechanizmem psychologicznym.
 
-Big Five sugeruje umiarkowanie niski poziom sumienności, szczególnie w zakresie:
+Poniższa hipoteza o selektywnej aktywacji zasobów opiera się na wywiadzie jakościowym i notatkach badanego, nie na rozbieżności międzymodelowej, i w tym zakresie pozostaje w mocy.
+
+Big Five sugeruje poziom sumienności poniżej środka skali, szczególnie w zakresie:
 
 - samodyscypliny,
 - porządku,
@@ -2501,79 +2688,47 @@ w innych.
 
 ---
 
-## 2. Ugodowość a Tolerancja Błędów Poznawczych
+## 2. Ugodowość — podział na kanały
 
 ### Źródła
 
-- Big Five Personality Model
+- Big Five Personality Model (IPIP NEO-PI-R)
 - HEXACO Personality Inventory
-- VIA Character Strengths
+- Systems & Feelings (EQ/SQ)
 - Schwartz Value Theory
-- Moral Foundations Theory
-- Wywiad jakościowy
+- Moral Foundations Theory Questionnaire (MFQ-2)
+- VIA Character Strengths
 
-### Obserwacja
+### Ustalenie
 
-Wyniki modeli osobowościowych przedstawiają częściowo odmienne obrazy ugodowości.
+Ustalenie CAL-005, sekcja C5.
 
-Big Five sugeruje umiarkowanie niski poziom ugodowości.
+Wcześniejszy zapis opisywał rozbieżność wyników ugodowości jako paradoks wymagający wyjaśnienia mechanizmem psychologicznym. Rozbieżność była w znacznej części artefaktem skalowania: IPIP podaje surowe średnie w zakresie 1–5, HEXACO wyniki znormalizowane o średniej próby 5,00. Wycofany fragment zapisano w Historii Wersji.
 
-Jednocześnie HEXACO wskazuje na wysokie wyniki w obszarach:
+Systems & Feelings: Systemizing 3,0; Empathizing 3,3. Empatyzowanie przewyższa systematyzowanie.
 
-- Forgiveness,
-- Gentleness,
-- Patience.
+| Kanał | Poziom | Podstawa |
+| --- | --- | --- |
+| Odczytywanie i troska o innych | przeciętny do wysokiego | EQ 3,3; Życzliwość 5,50; Care 62. pct |
+| Unikanie krzywdzenia | wysoki | Gentleness 7,10; HEXACO Altruizm 4,88; H-H 7,10 |
+| Dostęp do własnych emocji | niski | Uczucia 1,9; Emotionality 3,33 (~5. pct) |
+| Przywiązanie sentymentalne, potrzeba wsparcia | niski | Sentimentality 4,69; Dependence 3,86 |
+| Odruch pomocowy | bardzo niski — **wartość odstająca** | IPIP Altruizm 1,5 |
 
-Podobny obraz pojawia się w:
+Niska Emocjonalność nie oznacza niskiej empatii, lecz brak zarażania się cudzym stanem. W połączeniu z wysoką Życzliwością daje profil pomagacza stabilnego, nie kruchego.
 
-- Benevolence (Schwartz),
-- Care (MFQ),
-- Forgiveness (VIA),
-- Humility (VIA).
+### Nota o różnicy konstruktów — Altruizm
 
-Analiza jakościowa wskazuje dodatkowo, że badany jest częściej postrzegany jako osoba życzliwa niż konfliktowa.
+Ustalenie CAL-005, sekcja A3.
 
-Jednocześnie deklaruje bardzo niski poziom tolerancji wobec:
+HEXACO Altruizm 4,88 przy średniej znormalizowanej 5,00 to wynik przeciętny, w okolicy 45. percentyla. Nie zachodzi rozjazd 1,5 kontra 4,88; jeden instrument wskazuje poziom niski, drugi przeciętny.
 
-- błędów logicznych,
-- niespójności argumentacyjnych,
-- błędnych modeli rzeczywistości,
-- nieuzasadnionych założeń.
-
-### Hipoteza
-
-Rozbieżność może wynikać z faktu, że badany oddziela ocenę człowieka od oceny jego argumentów, decyzji lub sposobu rozumowania.
-
-Krytyka kierowana jest najczęściej wobec:
-
-- modelu,
-- procesu,
-- założenia,
-- argumentacji,
-
-a nie wobec osoby.
-
-W efekcie zachowanie może być odbierane jako wymagające lub konfrontacyjne pomimo braku negatywnych intencji interpersonalnych.
-
-### Wstępna Interpretacja
-
-Najbardziej prawdopodobna interpretacja wskazuje na połączenie:
-
-- wysokiej tolerancji wobec ludzi,
-- wysokiej cierpliwości,
-- wysokiej skłonności do wybaczania,
-
-przy jednocześnie:
-
-- niskiej tolerancji dla błędów poznawczych,
-- niskiej tolerancji dla słabej argumentacji,
-- wysokich wymaganiach wobec jakości rozumowania.
-
-Może to wyjaśniać rozbieżności pomiędzy wynikami Big Five i HEXACO.
+Skala Altruizmu w HEXACO jest skalą interstycjalną powiązaną z trzema czynnikami (Uczciwość-Pokora, Emocjonalność, Ugodowość) i mierzy współczucie oraz unikanie krzywdzenia. Facet Altruizmu w NEO mierzy aktywne pomaganie i poświęcanie się jako składnik Ugodowości. Są to różne konstrukty o tej samej nazwie; zestawianie ich wartości wprost jest nieuprawnione.
 
 ### Status
 
-**Wymaga dalszej walidacji na podstawie historii, relacji zawodowych oraz rzeczywistych sytuacji konfliktowych.**
+**Ustalone (CAL-005, C5).** Hipoteza o degradacji zachowań prospołecznych pod obciążeniem poznawczym została wycofana jako pozbawiona podstaw.
+
 
 ---
 
@@ -2598,6 +2753,23 @@ Modele wskazują jednocześnie na:
 Jednocześnie badany deklaruje, że stosunkowo rzadko doświadcza sytuacji, w których inni ludzie przekonują go do zmiany stanowiska.
 
 Dodatkowo podskala Lack of Intellectual Overconfidence w CIHS uzyskała najniższy wynik spośród wszystkich podskal.
+
+### Ustalenie (CAL-005, C4)
+
+Ustalenie CAL-005, sekcja C4. Odczyt „nadmierna pewność" został **wycofany**.
+
+Cztery niezależne pomiary wskazują wysoką pokorę intelektualną: CIHS Openness to Revising One's Viewpoint 4,40; Intellectual Humility Quiz (Berkeley) 47/55 z oceną „strong"; AOT 64/75 (4,27); VIA Rozsądek #1 z 24. Jedna podskala wskazuje przeciwnie. Vault potraktował tę jedną jako ustalenie.
+
+**Co zostaje z wyniku 2,33:** nie nadmierna pewność, lecz **wysoki próg zmiany zdania przy zachowanej otwartości**.
+
+Podział domenowy:
+
+| Domena | Status |
+| --- | --- |
+| Procesy, narzędzia, rozwiązania | otwartość **potwierdzona** — trzy udokumentowane przypadki zmiany zdania z imionami i konkretnymi argumentami |
+| Model własnej osoby, samoocena, interpretacja własnych zachowań | **nieustalona**; jedyny sygnał w tej domenie (transkrypt A8) jest negatywny |
+
+Koszt interpersonalny jest realny i potwierdzony.
 
 ### Hipoteza
 
@@ -2745,9 +2917,8 @@ Są kandydatami do dalszej analizy.
 9. Expert-over-Manager Preference
 10. Proven-System Optimization
 11. Stakes-Adjusted Evidence Threshold
-12. Tolerance for People vs Cognitive Errors
-13. Strategic Self-Presentation / Attention Management
-14. Supportive Facilitation Orientation
+12. Strategic Self-Presentation / Attention Management
+13. Supportive Facilitation Orientation
 
 ---
 
@@ -2778,6 +2949,182 @@ Analiza wskazuje, że kolejnym etapem projektu powinno być przejście od opisu 
 
 # Historia Wersji
 
+## v1.2
+
+Wdrożenie kalibracji CAL-005 z 2026-07-27 (kalibracja adwersarialna). Zakres: R-01…R-17.
+
+### Instrumenty dodane
+
+* Intellectual Humility Quiz (Greater Good, Berkeley)
+* Free Will Scale
+* Systems & Feelings (EQ/SQ)
+
+Sekcję „Moral Foundations Theory Questionnaire (MFQ)" przemianowano na „Moral Foundations Theory Questionnaire (MFQ-2)".
+
+### Fragmenty wycofane
+
+Poniższe fragmenty usunięto z dokumentu. Zapisano je w całości, dosłownie, w blokach tekstu — bloki służą wyłącznie temu, żeby wycofana treść nie mieszała się ze strukturą nagłówków dokumentu.
+
+---
+
+#### 1. Paradoks ugodowości — sekcja „Ugodowość a Tolerancja Błędów Poznawczych"
+
+**Powód wycofania:** rozbieżność między Big Five a HEXACO w obszarze ugodowości była w znacznej części artefaktem skalowania (IPIP: surowe średnie 1–5; HEXACO: wyniki znormalizowane o średniej 5,00), a nie zjawiskiem psychologicznym wymagającym wyjaśnienia. Zastąpiono ustaleniem C5 z CAL-005 — tabelą kanałów. Hipoteza o degradacji zachowań prospołecznych pod obciążeniem poznawczym wycofana jako pozbawiona podstaw (CAL-005, R-12 i R-13).
+
+```text
+## 2. Ugodowość a Tolerancja Błędów Poznawczych
+### Źródła
+
+- Big Five Personality Model
+- HEXACO Personality Inventory
+- VIA Character Strengths
+- Schwartz Value Theory
+- Moral Foundations Theory
+- Wywiad jakościowy
+
+### Obserwacja
+
+Wyniki modeli osobowościowych przedstawiają częściowo odmienne obrazy ugodowości.
+
+Big Five sugeruje umiarkowanie niski poziom ugodowości.
+
+Jednocześnie HEXACO wskazuje na wysokie wyniki w obszarach:
+
+- Forgiveness,
+- Gentleness,
+- Patience.
+
+Podobny obraz pojawia się w:
+
+- Benevolence (Schwartz),
+- Care (MFQ),
+- Forgiveness (VIA),
+- Humility (VIA).
+
+Analiza jakościowa wskazuje dodatkowo, że badany jest częściej postrzegany jako osoba życzliwa niż konfliktowa.
+
+Jednocześnie deklaruje bardzo niski poziom tolerancji wobec:
+
+- błędów logicznych,
+- niespójności argumentacyjnych,
+- błędnych modeli rzeczywistości,
+- nieuzasadnionych założeń.
+
+### Hipoteza
+
+Rozbieżność może wynikać z faktu, że badany oddziela ocenę człowieka od oceny jego argumentów, decyzji lub sposobu rozumowania.
+
+Krytyka kierowana jest najczęściej wobec:
+
+- modelu,
+- procesu,
+- założenia,
+- argumentacji,
+
+a nie wobec osoby.
+
+W efekcie zachowanie może być odbierane jako wymagające lub konfrontacyjne pomimo braku negatywnych intencji interpersonalnych.
+
+### Wstępna Interpretacja
+
+Najbardziej prawdopodobna interpretacja wskazuje na połączenie:
+
+- wysokiej tolerancji wobec ludzi,
+- wysokiej cierpliwości,
+- wysokiej skłonności do wybaczania,
+
+przy jednocześnie:
+
+- niskiej tolerancji dla błędów poznawczych,
+- niskiej tolerancji dla słabej argumentacji,
+- wysokich wymaganiach wobec jakości rozumowania.
+
+Może to wyjaśniać rozbieżności pomiędzy wynikami Big Five i HEXACO.
+
+### Status
+
+**Wymaga dalszej walidacji na podstawie historii, relacji zawodowych oraz rzeczywistych sytuacji konfliktowych.**
+```
+
+---
+
+#### 2. Odczyt NFC jako cechy wyróżniającej
+
+**Powód wycofania:** NFC = 4,2 przy średniej grupy wiekowej 30–44 = 4,1. Wynik nie odbiega od średniej próby odniesienia i nie różnicuje badanego. Twierdzenie o bardzo wysokiej potrzebie poznania nie ma pokrycia w pomiarze (CAL-005, C1 i R-15).
+
+```text
+### Need for Cognition — wysoki
+
+Wynik wskazuje na ponadprzeciętną skłonność do angażowania się w złożone procesy myślowe.
+
+Badany prawdopodobnie:
+
+* odczuwa satysfakcję z analizowania problemów,
+* preferuje zrozumienie mechanizmu działania zamiast zapamiętywania gotowych odpowiedzi,
+* częściej poszukuje przyczyn niż objawów,
+* wykazuje zainteresowanie modelami, zależnościami i strukturami.
+
+Wysoki wynik nie oznacza większej inteligencji.
+
+Oznacza natomiast większą motywację do korzystania z posiadanych zdolności poznawczych.
+
+## Interpretacja
+
+Profil wskazuje na osobę, która traktuje myślenie jako aktywność wartościową samą w sobie.
+
+Rozwiązywanie problemów nie wydaje się być wyłącznie narzędziem prowadzącym do celu.
+
+Sam proces analizy może stanowić źródło satysfakcji i zaangażowania.
+
+W praktyce może przejawiać się to poprzez:
+
+* budowanie modeli rzeczywistości,
+* potrzebę rozumienia zależności,
+* zadawanie pytań wykraczających poza bezpośredni problem,
+* preferowanie głębokiego zrozumienia nad szybkim działaniem.
+
+---
+
+## Notatki Badanego
+
+Wynik jest postrzegany jako trafny.
+```
+
+---
+
+#### 3. Odczyt NFCS jako wysokiej tolerancji niepewności
+
+**Powód wycofania:** NFCS = 3,05 przy średniej grupy wiekowej 30–44 = 2,85. Wynik jest nieznacznie **powyżej** średniej, czyli wskazuje kierunek odwrotny do zapisanego; różnica jest nieistotna. Vault odczytywał wynik przeciwnie do jego treści (CAL-005, C2 i R-14).
+
+```text
+### Need for Closure — umiarkowany
+
+Wynik znajduje się blisko środka skali.
+
+Nie wskazuje ani na silną potrzebę szybkiego domykania problemów, ani na szczególnie wysoką tolerancję niepewności.
+
+Profil sugeruje zdolność funkcjonowania zarówno w trybie eksploracji, jak i w trybie decyzyjnym.
+
+Badany wydaje się zdolny do utrzymywania niejednoznaczności przez pewien czas, ale jednocześnie nie wykazuje tendencji do niekończącej się analizy.
+
+## Interpretacja
+
+Profil sugeruje równowagę pomiędzy eksploracją a domknięciem poznawczym.
+
+W praktyce może oznaczać:
+
+* gotowość do zbierania dodatkowych informacji przed podjęciem decyzji,
+* brak potrzeby natychmiastowego formułowania opinii,
+* zdolność do funkcjonowania przy częściowej niepewności,
+* jednoczesną gotowość do zakończenia analizy po osiągnięciu satysfakcjonującego poziomu zrozumienia.
+
+Wynik jest szczególnie interesujący w zestawieniu z wysokim Need for Cognition.
+
+Sugeruje on, że analiza nie jest napędzana potrzebą redukcji niepewności, lecz autentyczną potrzebą zrozumienia problemu.
+```
+
+---
+
 ## v1.1
 
 Pierwsza wersja repozytorium źródeł dowodowych dla Cognitive Model.
@@ -2802,3 +3149,16 @@ Model jest wykorzystywany wyłącznie jako źródło danych.
 Nie stanowi samodzielnej podstawy do budowy Predictorów ani Cognitive Model.
 
 Wnioski mogą zostać wykorzystane dopiero po zestawieniu z historiami zawodowymi oraz pozostałymi źródłami danych.
+
+---
+
+# Ślad zmian
+
+zmieniono: CAL-005, R-01, R-02, R-03, R-04, R-05, R-06, R-07, R-08, R-09, R-10, R-11, R-12, R-13, R-14, R-15, R-16, R-17, R-22, 2026-07-27
+
+Zmiany spoza numeracji R, wprowadzone na wyraźne polecenie MK z 2026-07-27:
+
+* facet Wartości (Values) w Big Five: 2,5 → 2,2, zgodnie z wartością podaną w CAL-005 A1 (bez tej korekty średnia domenowa Otwartości nie równa się 2,27 wymaganemu przez R-01);
+* usunięto zduplikowaną sekcję CliftonStrengths (drugie, niemal identyczne wystąpienie) jako błąd pliku;
+* Need for Closure: 3,0 → 3,05, zgodnie z wartością podaną w CAL-005 C2;
+* HEXACO: dopisano percentyle szacowane dla sześciu czynników, skali Altruizmu i 24 facetów (przybliżenie normalne M=5,00, SD=1,00) — rozszerzenie R-05 i R-08 na polecenie MK z 2026-07-27; CAL-005 podaje wprost tylko pięć z tych wartości.
