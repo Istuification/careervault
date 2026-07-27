@@ -32,21 +32,22 @@ Buduję struktury wiedzy, dokumentację i procesy umożliwiające organizacji sk
 
 ## Behavioral & Psychometric Framework
 
-Mój naturalny styl działania charakteryzuje się strategiczno-analitycznym podejściem do problemów, silnym kręgosłupem wartości oraz zorientowaniem na współpracę opartą na zaufaniu i harmonii międzydziałowej. Powyższy profil behawioralny został zestawiony z badaniami CliftonStrengths (Gallup) oraz IPIP NEO-PI-R (Wielka Piątka). **Zastrzeżenie (CAL-005):** raport IPIP zawierał błąd wyświetlania, a wartości domenowe przeliczono ponownie ze średnich facetowych. Wyniki Wielkiej Piątki podane niżej pochodzą z poprawionych Assessment Data i są surowymi średnimi na skali 1–5, w której środek skali wynosi 3,0.
+Mój naturalny styl działania charakteryzuje się strategiczno-analitycznym podejściem do problemów, silnym kręgosłupem wartości oraz zorientowaniem na współpracę opartą na zaufaniu i harmonii międzydziałowej. Powyższy profil behawioralny został zestawiony z badaniami CliftonStrengths (Gallup) oraz IPIP NEO-PI-R (Wielka Piątka). Wyniki Wielkiej Piątki podane niżej są surowymi średnimi na skali 1–5, w której środek skali wynosi 3,0.
 
 ### Cognitive Style: Strategic Exploration
 *   **Talenty Gallup (Myślenie Strategiczne):** Uczenie się (#1), Strateg (#3), Analityk (#5), Intelekt (#10)
-*   **Wielka Piątka (IPIP, surowe 1–5):** Otwartość na Doświadczenia **2,27** — poniżej środka skali. Poszukiwanie Doznań (Excitement-Seeking) **2,8** — najniższy facet Ekstrawersji. Wcześniejszy zapis o wysokiej Otwartości i ekstremalnie wysokim Poszukiwaniu Doznań był niezgodny z Assessment Data i został skorygowany (CAL-005, R-27).
+*   **Wielka Piątka (IPIP, 1–5):** Otwartość na Doświadczenia 2,27; Poszukiwanie Doznań (Excitement-Seeking) 2,8
 *   **Manifestacja:** Potrzeba stymulacji intelektualnej i poszukiwanie "adrenaliny" w rozwiązywaniu złożonych, unikalnych problemów biznesowych. Nie akceptuję stagnacji i rutyny operacyjnej. Wykorzystuję logiczne modelowanie procesów oraz rozkładanie skomplikowanych mechanizmów na części elementarne w celu znajdowania unikalnych zależności i wzorców.
 
 ### Execution Engine: Principled Delivery
 *   **Talenty Gallup (Wykonywanie):** Pryncypialność (#2), Odpowiedzialność (#6)
-*   **Wielka Piątka (IPIP, surowe 1–5):** Sumienność **2,38** — poniżej środka skali; Samodyscyplina 1,4 jest najniższym facetem całego profilu. Wcześniejszy zapis o wysokiej Sumienności był niezgodny z Assessment Data i został skorygowany (CAL-005, R-27).
+*   **Wielka Piątka (IPIP, 1–5):** Sumienność 2,38; Samodyscyplina 1,4; Rozwaga 3,3
 *   **Manifestacja:** Biorę całkowitą psychologiczną odpowiedzialność za realizowane zobowiązania. Buduję kulturę rzetelności zawodowej, u której podstaw leżą twarde dowody, transparencja oraz "źródła prawdy" (Evidence-Based Management). Moje zaangażowanie wynika z poczucia głębszego celu i misji, a nie wyłącznie z KPI czy korzyści finansowych.
 
 ### Collaboration Style: Cross-Functional Harmonizer
 *   **Talenty Gallup (Budowanie Relacji):** Współzależność (#4), Bliskość (#7), Indywidualizacja (#8), Rozwijanie Innych (#9)
-*   **Wielka Piątka (IPIP, surowe 1–5):** Ugodowość **2,18** — poniżej środka skali. Wcześniejszy zapis o bardzo wysokiej Ugodowości był niezgodny z Assessment Data i został skorygowany (CAL-005, R-27). HEXACO podaje dla Ugodowości 6,61 na skali znormalizowanej o średniej 5,00; obu wartości nie wolno zestawiać wprost — to inne skale i częściowo inne konstrukty (CAL-005, A2 i C5).
+*   **Wielka Piątka (IPIP, 1–5):** Ugodowość 2,18
+*   **HEXACO (znormalizowane, średnia próby 5,00):** Ugodowość 6,61; Uczciwość-Pokora 7,10; Łagodność 7,10
 *   **Manifestacja:** Postrzegam organizację jako nierozerwalny ekosystem naczyń połączonych. Buduję mosty komunikacyjne i dążę do łagodzenia napięć międzyfunkcyjnych poprzez głębokie zrozumienie perspektyw i ograniczeń innych działów. W relacjach unikam polityki hierarchicznej – preferuję mentoring, partnerskie zaufanie oraz stwarzanie zespołom warunków do samodzielnego rozwoju i sukcesu.
 
 ---
