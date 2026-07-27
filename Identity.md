@@ -32,21 +32,21 @@ Buduję struktury wiedzy, dokumentację i procesy umożliwiające organizacji sk
 
 ## Behavioral & Psychometric Framework
 
-Mój naturalny styl działania charakteryzuje się strategiczno-analitycznym podejściem do problemów, silnym kręgosłupem wartości oraz zorientowaniem na współpracę opartą na zaufaniu i harmonii międzydziałowej. Powyższy profil behawioralny został zwalidowany badaniami CliftonStrengths (Gallup) oraz IPIP-NEO-PI-R (Wielka Piątka).
+Mój naturalny styl działania charakteryzuje się strategiczno-analitycznym podejściem do problemów, silnym kręgosłupem wartości oraz zorientowaniem na współpracę opartą na zaufaniu i harmonii międzydziałowej. Powyższy profil behawioralny został zestawiony z badaniami CliftonStrengths (Gallup) oraz IPIP NEO-PI-R (Wielka Piątka). **Zastrzeżenie (CAL-005):** raport IPIP zawierał błąd wyświetlania, a wartości domenowe przeliczono ponownie ze średnich facetowych. Wyniki Wielkiej Piątki podane niżej pochodzą z poprawionych Assessment Data i są surowymi średnimi na skali 1–5, w której środek skali wynosi 3,0.
 
 ### Cognitive Style: Strategic Exploration
 *   **Talenty Gallup (Myślenie Strategiczne):** Uczenie się (#1), Strateg (#3), Analityk (#5), Intelekt (#10)
-*   **Wielka Piątka:** Wysoka Otwartość na Doświadczenia, Ekstremalnie wysokie Poszukiwanie Doznań (Excitement-Seeking)
+*   **Wielka Piątka (IPIP, surowe 1–5):** Otwartość na Doświadczenia **2,27** — poniżej środka skali. Poszukiwanie Doznań (Excitement-Seeking) **2,8** — najniższy facet Ekstrawersji. Wcześniejszy zapis o wysokiej Otwartości i ekstremalnie wysokim Poszukiwaniu Doznań był niezgodny z Assessment Data i został skorygowany (CAL-005, R-27).
 *   **Manifestacja:** Potrzeba stymulacji intelektualnej i poszukiwanie "adrenaliny" w rozwiązywaniu złożonych, unikalnych problemów biznesowych. Nie akceptuję stagnacji i rutyny operacyjnej. Wykorzystuję logiczne modelowanie procesów oraz rozkładanie skomplikowanych mechanizmów na części elementarne w celu znajdowania unikalnych zależności i wzorców.
 
 ### Execution Engine: Principled Delivery
 *   **Talenty Gallup (Wykonywanie):** Pryncypialność (#2), Odpowiedzialność (#6)
-*   **Wielka Piątka:** Wysoka Sumienność
+*   **Wielka Piątka (IPIP, surowe 1–5):** Sumienność **2,38** — poniżej środka skali; Samodyscyplina 1,4 jest najniższym facetem całego profilu. Wcześniejszy zapis o wysokiej Sumienności był niezgodny z Assessment Data i został skorygowany (CAL-005, R-27).
 *   **Manifestacja:** Biorę całkowitą psychologiczną odpowiedzialność za realizowane zobowiązania. Buduję kulturę rzetelności zawodowej, u której podstaw leżą twarde dowody, transparencja oraz "źródła prawdy" (Evidence-Based Management). Moje zaangażowanie wynika z poczucia głębszego celu i misji, a nie wyłącznie z KPI czy korzyści finansowych.
 
 ### Collaboration Style: Cross-Functional Harmonizer
 *   **Talenty Gallup (Budowanie Relacji):** Współzależność (#4), Bliskość (#7), Indywidualizacja (#8), Rozwijanie Innych (#9)
-*   **Wielka Piątka:** Bardzo wysoka Ugodowość (Agreeableness)
+*   **Wielka Piątka (IPIP, surowe 1–5):** Ugodowość **2,18** — poniżej środka skali. Wcześniejszy zapis o bardzo wysokiej Ugodowości był niezgodny z Assessment Data i został skorygowany (CAL-005, R-27). HEXACO podaje dla Ugodowości 6,61 na skali znormalizowanej o średniej 5,00; obu wartości nie wolno zestawiać wprost — to inne skale i częściowo inne konstrukty (CAL-005, A2 i C5).
 *   **Manifestacja:** Postrzegam organizację jako nierozerwalny ekosystem naczyń połączonych. Buduję mosty komunikacyjne i dążę do łagodzenia napięć międzyfunkcyjnych poprzez głębokie zrozumienie perspektyw i ograniczeń innych działów. W relacjach unikam polityki hierarchicznej – preferuję mentoring, partnerskie zaufanie oraz stwarzanie zespołom warunków do samodzielnego rozwoju i sukcesu.
 
 ---
@@ -310,3 +310,7 @@ Powiązane obszary rozwoju zawodowego zostały opisane w module Development Area
 Pomagam organizacjom przekształcać wiedzę, doświadczenie i dobre praktyki w skalowalne systemy działania, które zwiększają efektywność, ograniczają zależność od pojedynczych ekspertów oraz umożliwiają dalszy rozwój organizacji.
 
 Największą satysfakcję daje mi budowanie struktur, które pozostają użyteczne i skuteczne również wtedy, gdy nie wymagają już mojego bezpośredniego zaangażowania.
+
+---
+
+zmieniono: CAL-005, R-27, 2026-07-27
