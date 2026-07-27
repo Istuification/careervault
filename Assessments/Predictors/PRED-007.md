@@ -3,6 +3,7 @@ id: PRED-007
 name: Low Status Motivation
 status: validated
 confidence: high
+rodzaj_dowodu: self-report
 created_from:
 - Schwartz
 - HEXACO
@@ -26,7 +27,9 @@ version: 1.2
 Badany wykazuje relatywnie niską motywację związaną ze statusem społecznym, prestiżem, dominacją oraz formalną pozycją w hierarchii.
 Pozycja, tytuł lub widoczność społeczna nie wydają się stanowić celu samego w sobie.
 Znacznie większe znaczenie mają: wpływ na jakość decyzji, możliwość rozwiązywania problemów, sprawczość organizacyjna oraz rozwój kompetencji.
-**Kluczowe doprecyzowanie (CAL-004):** To nie jest bierny brak motywacji statusowej, lecz **instrumentalna obojętność z aktywnym unikaniem uznania tam, gdzie uznanie zagraża autonomii**. Badany unika statusu, by nie zostać "uwięzionym" w roli (np. PM), w której organizacja chciałaby go zatrzymać ze względu na jego widoczność, a nie strategiczny wpływ.
+**Kluczowe doprecyzowanie (CAL-004) — częściowo niepotwierdzone (CAL-005, R-18):** Zapis brzmiał: „to nie jest bierny brak motywacji statusowej, lecz instrumentalna obojętność z aktywnym unikaniem uznania tam, gdzie uznanie zagraża autonomii". Badany miał unikać statusu, by nie zostać „uwięzionym" w roli, w której organizacja chciałaby go zatrzymać ze względu na widoczność, a nie strategiczny wpływ.
+
+**Część o niskiej motywacji statusowej pozostaje potwierdzona mocno.** Część opisująca to jako instrumentalną ochronę autonomii jest **niepotwierdzona** i nie ma pokrycia w pomiarze wartości (CAL-005, C3): Samostanowienie 4,00 jest piąte z dziesięciu i po ipsatyzacji leży zaledwie +0,43 powyżej średniej własnej 3,567. Trzy wartości czołowe to Życzliwość 5,50, Konformizm 4,75 i Tradycja 4,75 — profil wspólnotowo-zachowawczy, nie autonomiczny.
 
 # Źródła
 ## Evidence Sources
@@ -38,8 +41,8 @@ Znacznie większe znaczenie mają: wpływ na jakość decyzji, możliwość rozw
 ## Analiza Jakościowa
 - **Test rozróżniający (wpływ vs. uznanie):** Natychmiastowa odpowiedź preferująca "wpływ bez uznania". Motywacja opiera się na budowaniu systemów i ikon (które działają niezależnie od autora), a nie na byciu ikoną.
 - **Aktywne oddawanie zasług:** Celowe wycofywanie się z autorstwa, niekiedy z prośbą o jego nieujawnianie. Wstrzymywanie własnych rozwiązań do czasu pojawienia się osoby, której można je przekazać, by zbudować jej pozycję (np. przypadek asystentki PM).
-- **Wariant instrumentalny:** Elementy pozornie statusowe są traktowane czysto narzędziowo. Np. żądanie wysokiej stawki finansowej nie wynika z chęci prestiżu, lecz z taktyki dźwigni ("później mogę żądać wyżej, bo robię coś, czego inni nie potrafią"). Publiczność Career Vaulta ma charakter wyłącznie funkcjonalny ("wysyłałbym załącznikiem, gdyby się dało").
-- **Unikanie pułapki statusu:** Świadome oddawanie zasług i unikanie tytułów, by nie dawać organizacji argumentów do zatrzymania badanego w roli operacyjnej zamiast pozwolić mu na rozwój w stronę strategiczną.
+- **Wariant instrumentalny** *(niepotwierdzony w części dotyczącej autonomii — CAL-005, C3)***:** Elementy pozornie statusowe są traktowane czysto narzędziowo. Np. żądanie wysokiej stawki finansowej nie wynika z chęci prestiżu, lecz z taktyki dźwigni ("później mogę żądać wyżej, bo robię coś, czego inni nie potrafią"). Publiczność Career Vaulta ma charakter wyłącznie funkcjonalny ("wysyłałbym załącznikiem, gdyby się dało").
+- **Unikanie pułapki statusu** *(niepotwierdzone — CAL-005, C3)***:** Świadome oddawanie zasług i unikanie tytułów, by nie dawać organizacji argumentów do zatrzymania badanego w roli operacyjnej zamiast pozwolić mu na rozwój w stronę strategiczną. Motyw ochrony autonomii nie znajduje oparcia w profilu wartości.
 
 # Zachowania Przewidywane
 Predyktor przewiduje, że badany będzie:
@@ -75,4 +78,11 @@ Wysoka
 Wysoki
 
 # Notatki
-Predyktor nie oznacza braku ambicji. Ambicja badanego jest skierowana na sprawczość, autonomię i wpływ na system, a nie na miejsce w hierarchii. Status bywa wręcz postrzegany jako zagrożenie dla elastyczności i możliwości samodzielnego decydowania o kierunku własnej pracy.
+Predyktor nie oznacza braku ambicji.
+
+Zapis o ambicji skierowanej na autonomię oraz o postrzeganiu statusu jako zagrożenia dla samodzielnego decydowania został oznaczony jako **niepotwierdzony** (CAL-005, C3). Pomiar wartości nie wskazuje autonomii jako wartości wiodącej. Status jako niska motywacja pozostaje potwierdzony przez pięć niezależnych pomiarów (CAL-005, B2).
+
+---
+
+zmieniono: CAL-005, R-18, 2026-07-27
+zmieniono: CAL-005, R-30, 2026-07-27
