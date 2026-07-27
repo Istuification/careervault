@@ -221,6 +221,43 @@ Celem jest zrozumienie mechanizmów prowadzących do określonych decyzji i zach
 
 ---
 
+## Kontrola spójności wartości liczbowych
+
+Wprowadzona przez CAL-005 (R-28). Skrypt: `scripts/check_consistency.py`.
+
+Powód: wartości domenowe IPIP zapisane w Assessment Data nie równały się średnim własnych tabel facetowych, a Identity.md zawierał opisy niezgodne z tymi wartościami. Błąd przeszedł przez cztery kolejne kalibracje, bo nikt nie sprawdził arytmetyki.
+
+Kontrola obejmuje dwa poziomy:
+
+1. **Spójność wewnętrzna** — każda wartość domenowa Wielkiej Piątki musi równać się średniej arytmetycznej sześciu własnych facetów.
+2. **Spójność pochodna** — każda liczba przypisana nazwanemu wynikowi w Identity.md, Cognitive Model, Predictorach, Behavioral Patterns i Development Areas musi zgadzać się z Assessment Data.
+
+Skrypt zwraca kod wyjścia 1 przy wykryciu rozbieżności, więc nadaje się do wpięcia w `.github/workflows/build-vault.yml` jako krok blokujący build. Wpięcie wymaga osobnej decyzji.
+
+Uruchomienie ręczne:
+
+```
+python3 scripts/check_consistency.py
+```
+
+## Sekcja adwersarialna jest obowiązkowa w każdej kalibracji
+
+Wprowadzone przez CAL-005 (R-31).
+
+Kalibracje CAL-001…CAL-004 pytały, co się potwierdza. Nie pytały, co się nie zgadza. Audyt zewnętrzny wykazał, że siedem na siedem napięć między pomiarem a interpretacją rozstrzygnęło się w nich na korzyść podmiotu. Bilans tej wielkości nie jest wiarygodnym wynikiem uczciwego procesu.
+
+Diagnoza CAL-005: jednokierunkowość wynikała z **braku pytań falsyfikujących w instrumentach**, nie z autoprezentacji podmiotu. Poprawka polega na trwałym wpisaniu sekcji falsyfikującej do każdej kalibracji, nie na nieufności wobec podmiotu.
+
+Każda kolejna kalibracja zawiera obowiązkowo:
+
+* **pytania falsyfikujące** — sformułowane tak, by mogły uszkodzić model w miejscach, w których jest podejrzanie mocny, a nie go potwierdzić;
+* **predykcje sformułowane przed zebraniem odpowiedzi** — tak, aby możliwe było obalenie także tez samej kalibracji, wraz z jawnym rozliczeniem, które się potwierdziły, a które upadły;
+* **rejestr luk obserwacyjnych** — wykaz miejsc, w których odpowiedzią było „nie wiem”. Kalibracja bez ani jednego „nie wiem” jest podejrzana;
+* **rejestr racjonalizacji** — wykaz miejsc, w których podmiot odrzucił przesłankę pytania, zwinął rozróżnienie albo sformułował twierdzenie na własną korzyść bez zdarzenia na poparcie;
+* **kontrolę kierunku** — odpowiedź na pytanie, czy rozstrzygnięcia niejednoznaczności wypadły systematycznie na korzyść podmiotu.
+
+Kalibracja bez tych pięciu elementów nie jest kalibracją i nie może zmieniać statusów ani poziomów `confidence`.
+
 ## Model rozwija się wraz z doświadczeniem
 
 Każde nowe doświadczenie może dostarczyć informacji, które zwiększą dokładność modelu.
@@ -286,3 +323,7 @@ Assessment wspiera między innymi:
 Nie jest to dokument diagnostyczny ani psychologiczny.
 
 Jest to **evidence-based cognitive model**, którego celem jest możliwie wierne opisanie sposobu mojego myślenia oraz podejmowania decyzji na podstawie rzeczywistych danych i doświadczeń.
+
+---
+
+zmieniono: CAL-005, R-31, 2026-07-27
