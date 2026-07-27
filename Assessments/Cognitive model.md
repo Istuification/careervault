@@ -4,7 +4,6 @@ name: Systemic Architect & Empirical Harmonizer
 status: active
 confidence: very high
 rodzaj_dowodu: self-report
-zmieniono: CAL-005, R-19, R-20, R-21, R-30, 2026-07-27
 created_from:
 - Predictors
 - Behavioral Patterns
