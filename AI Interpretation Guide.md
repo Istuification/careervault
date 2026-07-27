@@ -14,19 +14,22 @@ Whenever possible, derive your own conclusions from the available evidence inste
 
 ---
 
-# Core Interpretation Principle
+---
 
-The repository follows a single overarching principle:
+# Podział przewodnika
 
-> **Facts before interpretations.**
+Wprowadzony przez CAL-005 (R-29). Przewodnik został rozdzielony na dwie części, ponieważ mieszał instrukcje o tym, **jak czytać repozytorium**, z instrukcjami o tym, **co z niego wnioskować**. Czytelnik nie miał sposobu odróżnić reguły technicznej od tezy merytorycznej.
 
-Every meaningful conclusion should be traceable back to observable evidence.
+Kryterium podziału — zastosowane przy wdrożeniu, ponieważ CAL-005 go nie podaje:
 
-Evidence always has higher priority than summaries.
+* **Część I (techniczna)** — struktura repozytorium, kolejność czytania, hierarchia źródeł, oczekiwana forma odpowiedzi. Treść niezależna od tego, co repozytorium zawiera.
+* **Część II (merytoryczna)** — reguły wnioskowania o podmiocie, sposób czytania wyników badań i kalibracji, znane błędy interpretacyjne. Treść zależna od ustaleń kalibracji i podlegająca rewizji razem z nimi.
 
-Summaries always have higher priority than assumptions.
+Treść obu części pozostaje bez zmian względem wersji sprzed podziału; zmieniono wyłącznie kolejność i przypisanie sekcji.
 
 ---
+
+# CZĘŚĆ I — TECHNICZNA
 
 # Repository Philosophy
 
@@ -85,7 +88,6 @@ This layer documents **what is deliberately undocumented** — periods that gene
 It supports neither factual claims nor explanatory models. Its sole function is timeline continuity. See "Sources Outside the Hierarchy" below for the full reading rules.
 
 ---
-
 # Recommended Analysis Order
 
 Whenever comprehensive understanding is required, analyze the repository in the following order.
@@ -153,7 +155,6 @@ Only after understanding both evidence and interpretation should outputs such as
 be generated.
 
 ---
-
 # Evidence Hierarchy
 
 Not all sources should be treated equally.
@@ -212,7 +213,55 @@ You **may** use them to:
 Context Entries record what the author remembers, explicitly separating remembered facts from observations, interpretations and uncertainty. Where the author was unsure, that uncertainty is preserved on purpose. Do not resolve it by inference.
 
 ---
+# Expected Reasoning Style
 
+When generating conclusions, prefer reasoning similar to the following process:
+
+1. Identify observable evidence.
+2. Find recurring patterns.
+3. Validate patterns across independent sources.
+4. Consult Assessment for explanatory mechanisms.
+5. Check whether Calibration supports those mechanisms.
+6. Generate conclusions proportional to the available evidence.
+7. Clearly distinguish facts from interpretations.
+
+Whenever uncertainty exists, communicate uncertainty explicitly.
+
+---
+# Desired Output Characteristics
+
+Generated analyses should:
+
+* distinguish facts from hypotheses,
+* explicitly state confidence,
+* explain reasoning,
+* reference supporting evidence,
+* avoid unsupported assumptions,
+* acknowledge uncertainty where appropriate.
+
+Whenever possible, explain **why** a conclusion is justified.
+
+---
+
+---
+
+# CZĘŚĆ II — MERYTORYCZNA
+
+Poniższe sekcje zależą od ustaleń kalibracji. Przy każdej rewizji modelu należy sprawdzić, czy nadal obowiązują.
+
+# Core Interpretation Principle
+
+The repository follows a single overarching principle:
+
+> **Facts before interpretations.**
+
+Every meaningful conclusion should be traceable back to observable evidence.
+
+Evidence always has higher priority than summaries.
+
+Summaries always have higher priority than assumptions.
+
+---
 # How Competencies Should Be Inferred
 
 Do **not** infer competencies from:
@@ -233,7 +282,6 @@ Competencies become significantly more reliable when supported simultaneously by
 * Predictors supported through Calibration.
 
 ---
-
 # How Assessment Should Be Interpreted
 
 Assessment is **not** a personality report.
@@ -251,7 +299,6 @@ The Cognitive Model integrates those hypotheses into a coherent explanation.
 Confidence represents the current strength of available evidence rather than certainty.
 
 ---
-
 # How Calibration Should Be Interpreted
 
 Calibration is the repository's knowledge validation process.
@@ -269,7 +316,6 @@ Calibration Records should be interpreted similarly to version history for knowl
 Later Calibration Records generally supersede earlier interpretations while preserving historical reasoning.
 
 ---
-
 # What To Prioritize
 
 When analyzing this repository, prioritize:
@@ -284,7 +330,6 @@ When analyzing this repository, prioritize:
 Look for recurring structures rather than individual achievements.
 
 ---
-
 # Common Interpretation Mistakes
 
 Avoid the following assumptions.
@@ -350,38 +395,6 @@ Their absence is a deliberate documentation decision, not a gap in capability.
 Context Entries exist precisely to make this explicit. Read them to understand why a period is undocumented, then move on. Do not convert that context into either a positive or a negative inference.
 
 ---
-
-# Expected Reasoning Style
-
-When generating conclusions, prefer reasoning similar to the following process:
-
-1. Identify observable evidence.
-2. Find recurring patterns.
-3. Validate patterns across independent sources.
-4. Consult Assessment for explanatory mechanisms.
-5. Check whether Calibration supports those mechanisms.
-6. Generate conclusions proportional to the available evidence.
-7. Clearly distinguish facts from interpretations.
-
-Whenever uncertainty exists, communicate uncertainty explicitly.
-
----
-
-# Desired Output Characteristics
-
-Generated analyses should:
-
-* distinguish facts from hypotheses,
-* explicitly state confidence,
-* explain reasoning,
-* reference supporting evidence,
-* avoid unsupported assumptions,
-* acknowledge uncertainty where appropriate.
-
-Whenever possible, explain **why** a conclusion is justified.
-
----
-
 # What This Repository Ultimately Represents
 
 Career Vault should not be interpreted as a static record of employment.
@@ -403,3 +416,7 @@ through competencies, behavioral patterns and transferable skills.
 through Assessment, Calibration and the Cognitive Model.
 
 Every future contribution should strengthen one or more of these three layers while preserving traceability back to observable evidence.
+
+---
+
+zmieniono: CAL-005, R-29, 2026-07-27
