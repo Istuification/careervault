@@ -14,22 +14,16 @@ Whenever possible, derive your own conclusions from the available evidence inste
 
 ---
 
----
+## How This Guide Is Organised
 
-# Podział przewodnika
+This guide is split into two parts. Read Part I before Part II.
 
-Wprowadzony przez CAL-005 (R-29). Przewodnik został rozdzielony na dwie części, ponieważ mieszał instrukcje o tym, **jak czytać repozytorium**, z instrukcjami o tym, **co z niego wnioskować**. Czytelnik nie miał sposobu odróżnić reguły technicznej od tezy merytorycznej.
-
-Kryterium podziału — zastosowane przy wdrożeniu, ponieważ CAL-005 go nie podaje:
-
-* **Część I (techniczna)** — struktura repozytorium, kolejność czytania, hierarchia źródeł, oczekiwana forma odpowiedzi. Treść niezależna od tego, co repozytorium zawiera.
-* **Część II (merytoryczna)** — reguły wnioskowania o podmiocie, sposób czytania wyników badań i kalibracji, znane błędy interpretacyjne. Treść zależna od ustaleń kalibracji i podlegająca rewizji razem z nimi.
-
-Treść obu części pozostaje bez zmian względem wersji sprzed podziału; zmieniono wyłącznie kolejność i przypisanie sekcji.
+* **Part I — Technical.** Repository structure, reading order, hierarchy of sources, and the expected shape of your answer. Independent of what the repository currently contains.
+* **Part II — Substantive.** Rules for reasoning about the subject, how to read assessment results and calibrations, and known interpretation errors. Dependent on calibration findings and revised alongside them.
 
 ---
 
-# CZĘŚĆ I — TECHNICZNA
+# PART I — TECHNICAL
 
 # Repository Philosophy
 
@@ -245,9 +239,9 @@ Whenever possible, explain **why** a conclusion is justified.
 
 ---
 
-# CZĘŚĆ II — MERYTORYCZNA
+# PART II — SUBSTANTIVE
 
-Poniższe sekcje zależą od ustaleń kalibracji. Przy każdej rewizji modelu należy sprawdzić, czy nadal obowiązują.
+The sections below depend on calibration findings. Whenever the model is revised, verify that they still hold.
 
 # Core Interpretation Principle
 
