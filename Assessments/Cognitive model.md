@@ -3,6 +3,7 @@ id: COG-001
 name: Systemic Architect & Empirical Harmonizer
 status: active
 confidence: very high
+rodzaj_dowodu: self-report
 created_from:
 - Predictors
 - Behavioral Patterns
@@ -58,6 +59,12 @@ System poznawczy badanego opiera się na ciągłym modelowaniu i strukturyzowani
 
 **Warunki aktywacji:** Uruchamia się w kontakcie z chaosem informacyjnym, brakiem spisanych procedur oraz koniecznością podjęcia decyzji bez danych historycznych (STORY-001, STORY-004). Działanie jest blokowane przez środowiska o sztywnym mikrozarządzaniu.
 
+**Warunek wyzwalający (CAL-005, R-19 i W10):** Budowanie systemów jest wyzwalane **zdarzeniem niepożądanym**. Własne określenie badanego: „działanie kompensujące". Silnik nie uruchamia się w próżni; poprzedza go zdarzenie, które badany uznaje za wymagające naprawy.
+
+**Podstawa pomiarowa — korekta (CAL-005, R-19 i C1):** Potrzeba poznania (NFC) **nie stanowi podstawy tego silnika** i została z niej usunięta. NFC = 4,2 przy średniej grupy wiekowej 30–44 = 4,1; wynik nie różnicuje badanego. Twierdzenie o bardzo wysokiej potrzebie poznania jako fundamencie Structural Modeling Engine nie miało pokrycia w pomiarze.
+
+**Spór nierozstrzygnięty:** Czy silnik jest preferencją poznawczą, czy działaniem kompensującym, pozostaje **nierozstrzygnięte i niefalsyfikowalne w obecnym ujęciu**. Kryterium rozstrzygające nie zostało podane (luka obserwacyjna L-7, A8).
+
 **Wspierające źródła:** PRED-001, PRED-006, STORY-001, STORY-004, STORY-005, STORY-007, BP-003, BP-008
 
 ### Empirical Calibration Engine
@@ -71,6 +78,8 @@ System poznawczy badanego opiera się na ciągłym modelowaniu i strukturyzowani
 
 ### Enablement & Harmonization Engine
 **Mechanizm działania:** W relacjach społecznych system operuje poprzez facylitację i usuwanie barier dla innych (PRED-014). Wpływ organizacyjny jest wywierany przez tłumaczenie perspektyw i budowanie procesów obniżających temperaturę konfliktów (STORY-006). System ściśle oddziela ocenę człowieka (gdzie wykazuje dużą życzliwość) od oceny jego argumentów (gdzie wykazuje niską tolerancję na błędy poznawcze) (PRED-012).
+
+**Podstawa — aktualizacja (CAL-005, R-20 i C5):** Silnik opiera się na **zobowiązaniu wartościowym przy przeciętnym empatyzowaniu**, nie na empatii afektywnej. Życzliwość 5,50 jest wartością numer jeden w profilu Schwartza; empatyzowanie mieści się w normie (EQ 3,3 wobec SQ 3,0 na skali 1–4); dostęp do własnych emocji jest niski (Uczucia 1,9; Emotionality 3,33, ~5. percentyl szacowany). Niska Emocjonalność nie oznacza niskiej empatii, lecz brak zarażania się cudzym stanem.
 
 **Strategiczny Enablement (v1.1):** W wariancie zaawansowanym mechanizm ten przyjmuje formę proaktywną. Badany projektuje sytuacje i zadania w taki sposób, aby kompetencje współpracowników stały się widoczne dla decydentów, świadomie rezygnując z własnej widoczności na rzecz rozwoju drugiej osoby i długoterminowego dobra systemu (np. przypadek awansu asystentki PM).
 
@@ -105,7 +114,7 @@ Mechanizmy te pozycjonują badanego w roli "wewnętrznego konsultanta" lub archi
 
 *   **Conditional Absorption with Explicit Trade-off (Zrewidowany BP-011):** Zamiast bezwarunkowego przyjmowania cudzych problemów (co było wcześniejszą, sfalsyfikowaną hipotezą), badany wyewoluował w kierunku warunkowej absorpcji. Świadomie kalkuluje koszt przełączania kontekstu i formułuje jawne trade-offy ("Jeśli przejmę X, efektywność Y spadnie. Odpowiedzialność za ten wybór leży po stronie decydenta"). *Rezydualna podatność:* Mechanizm wciąż zawodzi w relacjach z osobami, które badany bardzo lubi, oraz przy tematach subiektywnie uznanych za "systemowo konieczne".
 
-*   **Delayed Confrontation (Gradient i Zasób):** Odkładanie trudnych rozmów nie jest jednolite. Odkryto **gradient asertywności**: granica przebiega w emocjach i relacji, a nie w logice. W konfrontacjach logicznych (np. modelowa deeskalacja konsultingowa ze sceptycznym klientem: uznanie sceptycyzmu -> uniwersalia -> eksperyment -> dowody) badany wykazuje wysoki **ZASÓB** konfrontacji eksperckiej. Opóźnienia dotyczą głównie sytuacji, gdzie rozmówca działa emocjonalnie, a badany obawia się zranienia lubianej osoby. W hierarchii, przy braku dźwigni, następuje jawne ustąpienie z pozostawieniem odpowiedzialności decydentowi.
+*   **Delayed Confrontation (Waga skutku dla drugiej strony):** Odkładanie trudnych rozmów nie jest jednolite. Mechanizm przemianowany przez CAL-005 (R-21): dotychczasowa nazwa „gradient asertywności" sugerowała deficyt asertywności, którego pomiar nie potwierdza. Mechanizmem jest **waga skutku dla drugiej strony** — przedmiotem obawy jest konsekwencja dla rozmówcy, nie sama konfrontacja (CAL-005, predykcja P-4: potwierdzona co do istnienia, obalona co do treści). Granica przebiega w emocjach i relacji, a nie w logice. W konfrontacjach logicznych (np. modelowa deeskalacja konsultingowa ze sceptycznym klientem: uznanie sceptycyzmu -> uniwersalia -> eksperyment -> dowody) badany wykazuje wysoki **ZASÓB** konfrontacji eksperckiej. Opóźnienia dotyczą głównie sytuacji, gdzie rozmówca działa emocjonalnie, a badany obawia się zranienia lubianej osoby. W hierarchii, przy braku dźwigni, następuje jawne ustąpienie z pozostawieniem odpowiedzialności decydentowi.
 
 *   **The Builder's Bottleneck (Zjawisko opóźnionego delegowania):** Satysfakcja z eksploracji poznawczej i rozkładania problemu na czynniki pierwsze (Learner) opóźnia decyzję o delegowaniu (DEV-003). Badany woli zbudować idealny model samemu, niż szybciej przekazać "półprodukt". *Doprecyzowanie granicy delegacji (CAL-004):* Przypadek użycia agenta AI do importu CSV *nie* jest manifestacją tego failure mode. Decyzja była racjonalnie bramkowana (ryzyko uprawnień, 6 iteracji, obserwowalność). Zainstalowana granica delegacji: zadania ustrukturyzowane i powtarzalne -> LLM z weryfikacją; preferowany model: człowiek + LLM.
 
@@ -140,7 +149,7 @@ System wchłania nową wiedzę jako narzędzie służące stabilizacji rzeczywis
 
     2.  *BP-013 (Modelowanie ludzi):* Czy projektowanie testów zachowań generuje koszty relacyjne w dłuższym horyzoncie (wpływ na zaufanie i bezpieczeństwo psychologiczne w zespole)?
 
-    3.  *Gradient asertywności:* Czy odkładana rozmowa z przełożonym (naturalny test asertywności relacyjnej) potwierdzi tezę o granicy przebiegającej w emocjach, a nie w logice?
+    3.  *Waga skutku dla drugiej strony (dawniej: gradient asertywności — przemianowane przez CAL-005, R-21):* Czy odkładana rozmowa z przełożonym potwierdzi tezę o granicy przebiegającej w emocjach, a nie w logice?
 
     4.  *BP-011 (Wersja zrewidowana):* Czy mechanizm warunkowej absorpcji z trade-offem awansuje do `validated` przy braku kontrprzykładów w następnej kalibracji?
 
@@ -148,3 +157,8 @@ System wchłania nową wiedzę jako narzędzie służące stabilizacji rzeczywis
 *   **v1.0 (2026-06-25):** Initial draft. Model zbudowany na podstawie CAL-001 (Mapowanie Predictor-Story), CAL-002 (BP-Predictor Calibration) oraz CAL-003 (Deep Calibration: Responsibility, Tacit Knowledge, Capacity). Zdefiniowano trzy główne silniki poznawcze oraz początkowe Failure Modes.
 
 *   **v1.1 (2026-07-08):** Post-Expansion Recalibration (CAL-004). Zrewidowano BP-011 (odrzucono hipotezę bezwarunkowego przeciążenia na rzecz dojrzałego trade-offu). Dodano BP-013 (modelowanie ludzi) oraz DEV-007 (asymetryczne kryterium funkcyjne). Doprecyzowano PRED-007 (wariant instrumentalny), PRED-008 (koszt interpersonalny), PRED-010 (zainstalowana korekta domenowa), PRED-013 (podłoga uczciwości) oraz PRED-014 (strategiczny enablement). Zaktualizowano Failure Modes o gradient asertywności oraz zweryfikowano behawioralnie PRED-007, zamykając otwarte pytanie z v1.0.
+
+---
+
+zmieniono: CAL-005, R-19, R-20, R-21, 2026-07-27
+zmieniono: CAL-005, R-30, 2026-07-27
