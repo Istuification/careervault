@@ -21,7 +21,7 @@ capabilities:
   - process-optimization
   - process-standardization
   - process-documentation
-  - bpm
+  - bpmn
   - organizational-workflows
 
 methods:
@@ -65,6 +65,7 @@ keywords:
   - business process management
   - bpm
   - workflow
+  - process improvement
 
 related_skills:
   - SKILL-002
