@@ -1,0 +1,1115 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-07T15:32:54Z",
+  "commit_sha": null,
+  "terms": [
+    {
+      "term": "Process Design",
+      "level": "Expert",
+      "level_source": "explicit",
+      "frequency": 12,
+      "skill_id": "SKILL-001",
+      "category": "Operations",
+      "capabilities": [
+        "process-mapping",
+        "workflow-design",
+        "process-optimization",
+        "process-standardization",
+        "process-documentation",
+        "bpmn",
+        "organizational-workflows"
+      ],
+      "methods": [
+        "BPMN 2.0",
+        "Root Cause Analysis",
+        "Continuous Improvement"
+      ],
+      "tools": [
+        "Bitrix24",
+        "diagrams.net",
+        "Wiki.js"
+      ],
+      "keywords": [
+        "process design",
+        "workflow design",
+        "process optimization",
+        "business process management",
+        "bpm",
+        "workflow",
+        "process improvement"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Operations Management",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 7,
+      "skill_id": "SKILL-002",
+      "category": "Operations",
+      "capabilities": [
+        "operational-planning",
+        "workflow-management",
+        "team-coordination",
+        "capacity-planning",
+        "service-operations",
+        "logistics",
+        "operational-analysis",
+        "resource-planning"
+      ],
+      "methods": [
+        "KPI Analysis",
+        "Capacity Planning",
+        "Continuous Improvement"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Excel",
+        "Google Sheets"
+      ],
+      "keywords": [
+        "operations",
+        "service operations",
+        "organizational scaling",
+        "logistics",
+        "operational excellence"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Knowledge Management",
+      "level": "Expert",
+      "level_source": "explicit",
+      "frequency": 7,
+      "skill_id": "SKILL-003",
+      "category": "Knowledge",
+      "capabilities": [
+        "knowledge-capture",
+        "knowledge-organization",
+        "documentation-design",
+        "onboarding-design",
+        "knowledge-transfer",
+        "information-architecture",
+        "technical-documentation"
+      ],
+      "methods": [
+        "BPMN 2.0",
+        "Documentation Driven Development",
+        "Knowledge Base Design"
+      ],
+      "tools": [
+        "Wiki.js",
+        "Bitrix24",
+        "diagrams.net",
+        "Markdown"
+      ],
+      "keywords": [
+        "knowledge management",
+        "documentation",
+        "onboarding",
+        "knowledge base",
+        "information architecture",
+        "knowledge transfer"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Product Management",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 10,
+      "skill_id": "SKILL-004",
+      "category": "Product",
+      "capabilities": [
+        "product-development",
+        "product-introduction",
+        "stakeholder-management",
+        "product-documentation",
+        "warranty-management",
+        "partner-enablement",
+        "product-lifecycle-management",
+        "requirements-gathering",
+        "service-design"
+      ],
+      "methods": [
+        "Product Discovery",
+        "Product Lifecycle Management",
+        "Continuous Improvement"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Excel",
+        "PowerPoint"
+      ],
+      "keywords": [
+        "product management",
+        "product development",
+        "product launch",
+        "warranty systems",
+        "technical products",
+        "stakeholder management",
+        "service design"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Leadership",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 9,
+      "skill_id": "SKILL-005",
+      "category": "Management",
+      "capabilities": [
+        "team-coordination",
+        "delegation",
+        "mentoring",
+        "team-development",
+        "people-retention",
+        "succession-planning",
+        "conflict-resolution",
+        "decision-making",
+        "leadership-without-authority"
+      ],
+      "methods": [
+        "Coaching",
+        "Feedback-Based Development",
+        "Delegation and Empowerment"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Wiki.js"
+      ],
+      "keywords": [
+        "leadership",
+        "team leadership",
+        "people management",
+        "mentoring",
+        "team development",
+        "succession planning",
+        "escalation management",
+        "conflict management"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Technical Documentation",
+      "level": "Expert",
+      "level_source": "explicit",
+      "frequency": 6,
+      "skill_id": "SKILL-006",
+      "category": "Knowledge",
+      "capabilities": [
+        "technical-writing",
+        "procedure-design",
+        "documentation-standardization",
+        "technical-instructions",
+        "warranty-documentation",
+        "process-documentation",
+        "knowledge-documentation",
+        "information-architecture",
+        "information-architecture"
+      ],
+      "methods": [
+        "BPMN 2.0",
+        "Documentation Driven Development",
+        "Knowledge Base Design"
+      ],
+      "tools": [
+        "Markdown",
+        "Wiki.js",
+        "Word",
+        "PowerPoint",
+        "diagrams.net"
+      ],
+      "keywords": [
+        "technical documentation",
+        "technical writing",
+        "procedures",
+        "instructions",
+        "documentation management",
+        "knowledge base"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Training & Enablement",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 9,
+      "skill_id": "SKILL-007",
+      "category": "Knowledge",
+      "capabilities": [
+        "training-design",
+        "onboarding-design",
+        "knowledge-transfer",
+        "workshop-facilitation",
+        "partner-enablement",
+        "technical-training",
+        "curriculum-development",
+        "presentation-delivery",
+        "instructional-design"
+      ],
+      "methods": [
+        "Onboarding Design",
+        "Documentation Driven Training",
+        "Structured Knowledge Transfer"
+      ],
+      "tools": [
+        "PowerPoint",
+        "Bitrix24",
+        "Wiki.js",
+        "Zoom"
+      ],
+      "keywords": [
+        "training",
+        "onboarding",
+        "enablement",
+        "knowledge transfer",
+        "technical training",
+        "partner education"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Business Systems",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 7,
+      "skill_id": "SKILL-008",
+      "category": "Systems",
+      "capabilities": [
+        "business-systems-design",
+        "crm-management",
+        "systems-integration",
+        "systems-administration",
+        "requirements-analysis",
+        "digitalization",
+        "operational-systems",
+        "workflow-automation",
+        "process-to-system-design"
+      ],
+      "methods": [
+        "Business Process Analysis",
+        "Continuous Improvement"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Zadarma",
+        "Wiki.js",
+        "Excel"
+      ],
+      "keywords": [
+        "business systems",
+        "crm",
+        "systems integration",
+        "digital transformation",
+        "operations systems",
+        "process support",
+        "crm automation"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Workflow Automation",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 9,
+      "skill_id": "SKILL-009",
+      "category": "Systems",
+      "capabilities": [
+        "workflow-design",
+        "process-automation",
+        "business-rules-design",
+        "task-automation",
+        "information-flow-design",
+        "operational-automation",
+        "workflow-optimization"
+      ],
+      "methods": [
+        "BPMN 2.0",
+        "Process Mapping",
+        "Continuous Improvement"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Smart Process Automation",
+        "Zadarma"
+      ],
+      "keywords": [
+        "workflow automation",
+        "process automation",
+        "workflow",
+        "automation",
+        "process optimization",
+        "operational efficiency"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Service Operations",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 5,
+      "skill_id": "SKILL-010",
+      "category": "Operations",
+      "capabilities": [
+        "service-process-design",
+        "service-workflow-management",
+        "ticket-management",
+        "service-coordination",
+        "service-scaling",
+        "service-analysis",
+        "service-standardization",
+        "workforce-planning",
+        "service-knowledge-management"
+      ],
+      "methods": [
+        "BPMN 2.0",
+        "Root Cause Analysis",
+        "Continuous Improvement"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Wiki.js",
+        "Zadarma"
+      ],
+      "keywords": [
+        "service operations",
+        "service management",
+        "technical service",
+        "workflow management",
+        "service processes",
+        "operational excellence"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Stakeholder Management",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 10,
+      "skill_id": "SKILL-011",
+      "category": "Management",
+      "capabilities": [
+        "stakeholder-alignment",
+        "cross-functional-coordination",
+        "partner-management",
+        "customer-communication",
+        "conflict-resolution",
+        "expectation-management",
+        "relationship-building",
+        "requirements-facilitation",
+        "influence-without-authority"
+      ],
+      "methods": [
+        "Active Listening",
+        "Facilitation",
+        "Consensus Building"
+      ],
+      "tools": [
+        "Bitrix24",
+        "PowerPoint",
+        "Excel"
+      ],
+      "keywords": [
+        "stakeholder management",
+        "communication",
+        "partner management",
+        "cross-functional collaboration",
+        "coordination",
+        "relationship management",
+        "project coordination"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Change Management",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 8,
+      "skill_id": "SKILL-012",
+      "category": "Management",
+      "capabilities": [
+        "organizational-transformation",
+        "process-transformation",
+        "change-planning",
+        "communication-planning",
+        "adoption-support",
+        "organizational-stabilization",
+        "change-implementation",
+        "stakeholder-alignment",
+        "resistance-management"
+      ],
+      "methods": [
+        "Continuous Improvement",
+        "Incremental Change",
+        "Organizational Diagnostics",
+        "Feedback Loops",
+        "Stakeholder Analysis"
+      ],
+      "tools": [
+        "BPMN 2.0",
+        "Bitrix24",
+        "Wiki.js"
+      ],
+      "keywords": [
+        "change management",
+        "transformation",
+        "organizational change",
+        "process transformation",
+        "organizational development",
+        "change leadership"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Public Speaking",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 4,
+      "skill_id": "SKILL-013",
+      "category": "Communication",
+      "capabilities": [
+        "public-speaking",
+        "presentation-design",
+        "audience-engagement",
+        "facilitation",
+        "verbal-communication",
+        "knowledge-sharing",
+        "event-speaking",
+        "training-delivery",
+        "group-facilitation"
+      ],
+      "methods": [
+        "Storytelling",
+        "Audience Adaptation",
+        "Structured Presentation Design"
+      ],
+      "tools": [
+        "PowerPoint",
+        "Canva",
+        "Microphone Systems"
+      ],
+      "keywords": [
+        "public speaking",
+        "presentations",
+        "communication",
+        "facilitation",
+        "training",
+        "audience engagement"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Project Management",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 6,
+      "skill_id": "SKILL-014",
+      "category": "Management",
+      "capabilities": [
+        "project-planning",
+        "scheduling",
+        "risk-management",
+        "resource-coordination",
+        "project-execution",
+        "milestone-management",
+        "project-documentation",
+        "stakeholder-alignment",
+        "stakeholder-alignment",
+        "ambiguity-management"
+      ],
+      "methods": [
+        "Iterative Planning",
+        "Stakeholder Analysis",
+        "Risk Management",
+        "Incremental Delivery"
+      ],
+      "tools": [
+        "Excel",
+        "Google Sheets"
+      ],
+      "keywords": [
+        "project management",
+        "planning",
+        "execution",
+        "coordination",
+        "scheduling",
+        "risk management"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Organizational Design",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 7,
+      "skill_id": "SKILL-015",
+      "category": "Operations",
+      "capabilities": [
+        "organizational-analysis",
+        "role-design",
+        "responsibility-mapping",
+        "information-flow-design",
+        "workforce-planning",
+        "organizational-scaling",
+        "governance-design",
+        "knowledge-system-design",
+        "operating-model-design"
+      ],
+      "methods": [
+        "Organizational Diagnostics",
+        "Responsibility Mapping",
+        "Capacity Planning",
+        "Root Cause Analysis"
+      ],
+      "tools": [
+        "BPMN 2.0",
+        "Excel",
+        "diagrams.net"
+      ],
+      "keywords": [
+        "organizational design",
+        "organizational development",
+        "workforce planning",
+        "organizational structure",
+        "governance",
+        "scaling",
+        "organizational culture",
+        "organizational learning"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Operational Analysis",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 7,
+      "skill_id": "SKILL-016",
+      "category": "Analytics",
+      "capabilities": [
+        "operational-analysis",
+        "trend-analysis",
+        "root-cause-analysis",
+        "reporting",
+        "decision-support",
+        "process-metrics",
+        "workforce-analysis",
+        "hypothesis-testing",
+        "metrics-design"
+      ],
+      "methods": [
+        "Root Cause Analysis",
+        "KPI Analysis",
+        "Data-Driven Decision Making",
+        "Hypothesis-Driven Analysis",
+        "Trend Analysis"
+      ],
+      "tools": [
+        "Excel",
+        "Google Sheets"
+      ],
+      "keywords": [
+        "data analysis",
+        "analytics",
+        "reporting",
+        "kpi",
+        "root cause analysis",
+        "decision making"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Cross-Functional Facilitation",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 11,
+      "skill_id": "SKILL-017",
+      "category": "Communication",
+      "capabilities": [
+        "context-framing",
+        "cross-functional-translation",
+        "problem-reframing",
+        "informal-advisory",
+        "perspective-mediation",
+        "trust-building",
+        "decision-support",
+        "stakeholder-alignment",
+        "ambiguity-reduction"
+      ],
+      "methods": [
+        "Active Listening",
+        "Root Cause Analysis",
+        "Perspective Taking",
+        "Facilitation",
+        "Socratic Questioning"
+      ],
+      "tools": [
+        "1:1 conversations",
+        "workshops",
+        "documentation",
+        "process maps",
+        "Bitrix24"
+      ],
+      "keywords": [
+        "cross-functional facilitation",
+        "context translation",
+        "internal advisory",
+        "problem framing",
+        "organizational communication",
+        "perspective taking",
+        "mediation"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Persuasive Communication",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 1,
+      "skill_id": "SKILL-018",
+      "category": "Communication",
+      "capabilities": [
+        "cold-outreach",
+        "rapport-building",
+        "needs-discovery",
+        "objection-handling",
+        "cognitive-reframing",
+        "socratic-persuasion",
+        "rejection-resilience",
+        "active-listening",
+        "pacing-and-leading",
+        "emotional-deescalation",
+        "graceful-disarming"
+      ],
+      "methods": [
+        "LAER (Listen, Acknowledge, Explore, Respond)",
+        "Feel-Felt-Found",
+        "Socratic Questioning",
+        "Pacing and Leading (NLP)",
+        "Cognitive Reframing",
+        "Deliberate Practice / Rejection Desensitization"
+      ],
+      "tools": [],
+      "keywords": [
+        "persuasive communication",
+        "objection handling",
+        "cold outreach",
+        "rapport building",
+        "rejection resilience",
+        "active listening",
+        "needs discovery",
+        "cognitive reframing",
+        "influence"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Business Analysis & Requirements Engineering",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 5,
+      "skill_id": "SKILL-019",
+      "category": "Product & Business",
+      "capabilities": [
+        "requirements-gathering",
+        "stakeholder-interviews",
+        "scope-definition",
+        "solution-architecture-design",
+        "specification-writing",
+        "vendor-selection",
+        "gap-analysis",
+        "business-case-framing"
+      ],
+      "methods": [
+        "wywiady z interesariuszami",
+        "warsztaty wymagań",
+        "benchmarking rozwiązań rynkowych",
+        "projektowanie modułowe (MVP + rozszerzenia)"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Excel",
+        "narzędzia diagramowe (BPMN 2.0)"
+      ],
+      "keywords": [
+        "business analysis",
+        "requirements engineering",
+        "requirements gathering",
+        "stakeholder workshops",
+        "functional specification",
+        "gap analysis"
+      ],
+      "variants": null
+    },
+    {
+      "term": "AI Tooling & Automation",
+      "level": "Advanced",
+      "level_source": "explicit",
+      "frequency": 2,
+      "skill_id": "SKILL-020",
+      "category": "Systems",
+      "capabilities": [
+        "prompt-engineering",
+        "ai-agent-orchestration",
+        "llm-workflow-design",
+        "data-preparation-for-ai",
+        "ai-tool-selection",
+        "ai-adoption"
+      ],
+      "methods": [
+        "iteracyjne projektowanie promptów",
+        "dekompozycja zadań pod ograniczenia narzędzi (np. paczkowanie danych)",
+        "weryfikacja wyników AI przed użyciem produkcyjnym"
+      ],
+      "tools": [
+        "ChatGPT (tryb agenta)",
+        "Claude",
+        "Gemini",
+        "Excel / CSV jako format wymiany"
+      ],
+      "keywords": [
+        "ai tooling",
+        "prompt engineering",
+        "generative ai",
+        "llm",
+        "ai automation",
+        "ai agents",
+        "ai orchestration",
+        "ai augmentation",
+        "human in the loop"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Systems Thinking",
+      "level": "Expert",
+      "level_source": "explicit",
+      "frequency": 6,
+      "skill_id": "SKILL-021",
+      "category": "Systems",
+      "capabilities": [
+        "systems-mapping",
+        "dependency-analysis",
+        "root-cause-analysis",
+        "problem-reframing",
+        "information-architecture",
+        "data-modeling",
+        "systems-design"
+      ],
+      "methods": [
+        "Root Cause Analysis",
+        "BPMN 2.0",
+        "Organizational Diagnostics",
+        "Business Process Analysis"
+      ],
+      "tools": [
+        "Bitrix24",
+        "Wiki.js",
+        "diagrams.net",
+        "Excel"
+      ],
+      "keywords": [
+        "systems thinking",
+        "systems architecture",
+        "root cause analysis",
+        "dependency analysis",
+        "information architecture",
+        "process architecture",
+        "systems design"
+      ],
+      "variants": null
+    },
+    {
+      "term": "Ownership & Accountability",
+      "level": "frequent",
+      "level_source": "inferred_frequency",
+      "frequency": 21,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "ownership",
+        "Accountability",
+        "Innovation",
+        "Psychological Safety",
+        "Boundary Setting",
+        "Self-Awareness",
+        "Initiative",
+        "Feedback Receptiveness",
+        "Feedback Culture",
+        "Constructive Challenge",
+        "resilience",
+        "self-development"
+      ]
+    },
+    {
+      "term": "Decision-Making Under Uncertainty",
+      "level": "frequent",
+      "level_source": "inferred_frequency",
+      "frequency": 13,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "problem-solving",
+        "Decision Support Systems",
+        "Decision Making Under Pressure",
+        "Decision Making Under Uncertainty",
+        "Zarzadzanie niepewnoscia",
+        "Evidence-Based Decision Making",
+        "evidence-based-design",
+        "Evidence-Based Management",
+        "Podejmowanie Decyzji Przy Niepelnych Danych",
+        "technical-problem-solving"
+      ]
+    },
+    {
+      "term": "Quality & Safety",
+      "level": "frequent",
+      "level_source": "inferred_frequency",
+      "frequency": 10,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "quality-assurance",
+        "quality",
+        "Quality Management",
+        "Zarzadzanie jakoscia",
+        "quality-control",
+        "quality-under-change",
+        "Quality and Safety",
+        "safety",
+        "Safety Awareness"
+      ]
+    },
+    {
+      "term": "People Ops",
+      "level": "recurring",
+      "level_source": "inferred_frequency",
+      "frequency": 7,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "Difficult Personnel Decisions",
+        "talent-acquisition",
+        "recruitment-and-selection",
+        "recruitment-strategy",
+        "candidate-experience",
+        "Performance Management"
+      ]
+    },
+    {
+      "term": "Master Data & Data Structuring",
+      "level": "recurring",
+      "level_source": "inferred_frequency",
+      "frequency": 5,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "data-structuring",
+        "master-data",
+        "master-data-management"
+      ]
+    },
+    {
+      "term": "Budgeting",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 3,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "budgeting"
+      ]
+    },
+    {
+      "term": "ERP Implementation",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 2,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "erp",
+        "erp-implementation"
+      ]
+    },
+    {
+      "term": "Competitive Positioning",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "competitive-positioning"
+      ]
+    },
+    {
+      "term": "Contract Management",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "contract-management"
+      ]
+    },
+    {
+      "term": "Interviewing",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "interviewing"
+      ]
+    },
+    {
+      "term": "Market Analysis",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "market-analysis"
+      ]
+    },
+    {
+      "term": "Personal Branding",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "personal-branding"
+      ]
+    },
+    {
+      "term": "Subcontractor Network",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "subcontractor-network"
+      ]
+    },
+    {
+      "term": "Supply Chain",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "supply-chain"
+      ]
+    },
+    {
+      "term": "UX Design",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "UX Design"
+      ]
+    },
+    {
+      "term": "Vendor Management",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "vendor-management"
+      ]
+    },
+    {
+      "term": "Warehouse Management",
+      "level": "occasional",
+      "level_source": "inferred_frequency",
+      "frequency": 1,
+      "skill_id": null,
+      "category": null,
+      "capabilities": null,
+      "methods": null,
+      "tools": null,
+      "keywords": null,
+      "variants": [
+        "warehouse-management"
+      ]
+    }
+  ]
+}
