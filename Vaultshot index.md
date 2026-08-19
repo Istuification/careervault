@@ -2,7 +2,7 @@
 
 > **Plik generowany automatycznie** przez `scripts/render_index.py`.
 > Nie edytuj ręcznie — zmiany wprowadzaj w rekordach Vaulta i przegeneruj.
-> Stan: 2026-08-07 15:30 UTC · commit `3db379b`
+> Stan: 2026-08-19 08:35 UTC · commit `774b944`
 
 Przeznaczenie: **wyłączne źródło danych dla skilla `/generuj-cv`**.
 Nie zastępuje README sekcji — te pozostają dokumentacją dla człowieka.
@@ -25,7 +25,9 @@ Kryterium głównym jest dopasowanie do oferty, nie waga ani liczba dowodów.
 **wyłącznie z faktów w danym bloku** — nie dopisuj niczego z pamięci.
 **Sekcja D** to materiał dla achievementów bez historii.
 
-**Kody ról** (do rozłożenia bulletów na stanowiska w CV):
+**Kody ról** (metadana informacyjna na bullecie, nie kwota doboru —
+rozkład bulletów na role wynika z dopasowania do oferty, każda rola tyle
+ile realnie pasuje):
 
 | Kod | Stanowisko | Okres | #ACH |
 | --- | --- | --- | --- |
@@ -33,9 +35,8 @@ Kryterium głównym jest dopasowanie do oferty, nie waga ani liczba dowodów.
 | `KIER` | p.o. Kierownika Serwisu | 2023-09 – 2025-01 | 6 |
 | `PM` | Product Manager / Business Analyst | 2025-01 – obecnie | 8 |
 
-Docelowy rozkład bulletów: **PM 3 / KIER 2 / KOOR 1**. Przypisanie ACH do roli pochodzi
-z `Experience.md` (sekcje `### <Rola>`), nie z dat — achievementy ciągłe
-należą do roli, w której powstały.
+Przypisanie ACH do roli pochodzi z `Experience.md` (sekcje `### <Rola>`),
+nie z dat — achievementy ciągłe należą do roli, w której powstały.
 
 ---
 
@@ -275,9 +276,8 @@ Testy binarne, wszystkie sprawdzalne w tym pliku bez sięgania do Vaulta:
    `ACH-YYY` w tabeli A?
 3. **Długość bulletu** — czy treść mieści się w 130 znakach?
 
-Dodatkowo: brak powtórzonych ACH, brak powtórzonych SKILL, rozkład
-bulletów na role zgodny z kwotą (PM 3 / KIER 2 / KOOR 1).
+Dodatkowo: brak powtórzonych ACH, brak powtórzonych SKILL.
 
 ---
 
-_Wygenerowano 2026-08-07 15:30 UTC z commita `3db379b`._
+_Wygenerowano 2026-08-19 08:35 UTC z commita `774b944`._
