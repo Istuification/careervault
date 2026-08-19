@@ -100,6 +100,10 @@ def main():
     # -- 3. Indeks generatora CV -----------------------------------------
     hr("Vaultshot index")
     content = render_index.build_index_md(model, now, commit)
+    if content is None:
+        print("  Błąd: build_index_md zwrócił None")
+        return 1
+
     idx_path = os.path.join(root, render_index.INDEX_FILENAME)
     old = ""
     if os.path.isfile(idx_path):
