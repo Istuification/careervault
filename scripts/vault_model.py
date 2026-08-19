@@ -1,3 +1,453 @@
+#!/usr/bin/env python3
+"""
+vault_model.py
+
+Parser rekordow Career Vault + budowa relacji miedzy nimi.
+
+Modul nie generuje zadnych plikow. Dostarcza jeden obiekt `VaultModel`,
+z ktorego korzystaja:
+  - render_index.py   (render Vaultshot index.md)
+  - render_site.py   (wstawienie indeksu do plikow zbiorczych)
+
+CELOWO BEZ ZALEZNOSCI ZEWNETRZNYCH.
+Rekordy Vaulta maja plaska, przewidywalna strukture YAML (klucz na poziomie
+zerowym, listy jako "  - wartosc"), wiec parser regexowy wystarcza. Brak
+PyYAML oznacza brak `pip install` w GitHub Actions i brak ryzyka, ze build
+padnie po aktualizacji biblioteki. Jesli format kiedys sie skomplikuje,
+podmienia sie wylacznie ten plik.
+
+ZRODLA PRAWDY (single source of truth):
+  - SKILL-*.evidence          -> ktore ACH dowodza kompetencji
+  - STORY-*.evidence.achievement_ids -> ktore ACH opisuje historia
+  - Experience.md, sekcje "### <Rola>" -> ktore ACH powstaly na ktorym stanowisku
+
+Relacje NIE sa duplikowane w rekordach ACH. Mapy odwrotne (ACH -> SKILL,
+ACH -> STORY) buduje ten modul.
+"""
+
+import os
+import re
+
+
+# ---------------------------------------------------------------------------
+# KONFIGURACJA MAPOWANIA ROL
+# ---------------------------------------------------------------------------
+#
+# Klucz  = naglowek "### <nazwa>" w Experience.md (dopasowanie po fragmencie)
+# Wartosc = (kod do tabeli indeksu, etykieta w CV)
+#
+# Kolejnosc ma znaczenie: uzywana do sortowania chronologicznego w indeksie.
+# ---------------------------------------------------------------------------
+
+ROLE_MAP = [
+    ("Installation Coordinator", "KOOR", "Koordynator ds. Montaży"),
+    ("Acting Service Manager", "KIER", "p.o. Kierownika Serwisu"),
+    ("Product Manager", "PM", "Product Manager / Business Analyst"),
+]
+
+ROLE_FALLBACK = "—"
+
+
+# ---------------------------------------------------------------------------
+# POLA PILNOWANE PRZED CICHYM ZGUBIENIEM
+# ---------------------------------------------------------------------------
+#
+# (pole w rekordzie, klucz w YAML, blok nadrzedny albo None,
+#  prefiks pozycji liczonych albo None)
+#
+# Parser regexowy nie rzuca wyjatkow -- gdy czegos nie rozpozna, zwraca
+# pusta liste. Ta tabela pozwala walidacji porownac "klucz jest w pliku"
+# z "pole wyszlo puste" i zamienic ciche zgubienie w ostrzezenie.
+# ---------------------------------------------------------------------------
+
+WATCHED = {
+    "ACH-": [("impact", "impact", None, None),
+             ("roles", "roles", None, None)],
+    # `evidence` w SKILL-* celowo dopuszcza wpisy opisowe, ktore parser
+    # odrzuca -- liczymy wiec wylacznie pozycje `ACH-*`.
+    "SKILL-": [("keywords", "keywords", None, None),
+               ("capabilities", "capabilities", None, None),
+               ("related", "related_skills", None, None),
+               ("evidence", "evidence", None, "ACH-")],
+    "STORY-": [("ach", "achievement_ids", "evidence", None),
+               ("bullets", "cv_bullets", None, None)],
+    "DEV-": [("ach", "achievements", "sources", None),
+             ("stories", "stories", "sources", None),
+             ("skills", "skills", "sources", None)],
+    "PRED-": [("created_from", "created_from", None, None),
+              ("stories", "supporting_stories", None, None),
+              ("conflicting", "conflicting_stories", None, None),
+              ("cal", "related_calibrations", None, None)],
+    "BP-": [("stories", "stories", "derived_from", None),
+            ("ach", "achievements", "derived_from", None)],
+}
+
+
+# ---------------------------------------------------------------------------
+# PRYMITYWY PARSERA
+# ---------------------------------------------------------------------------
+
+def _scalar(text, key):
+    """Wartosc skalarna klucza najwyzszego poziomu.
+
+    Obsluguje `key: wartosc` oraz `key: >` z blokiem wcietym ponizej.
+    """
+    m = re.search(rf"^{re.escape(key)}:[ \t]*(.*)$", text, re.M)
+    if not m:
+        return ""
+    val = m.group(1).strip()
+    if val in (">", "|", ">-", "|-"):
+        # blok wielolinijkowy: zbierz wciete linie az do pustej + niewcietej
+        start = m.end()
+        lines = []
+        for line in text[start:].split("\n")[1:]:
+            if line.strip() == "":
+                if lines:
+                    break
+                continue
+            if not line.startswith((" ", "\t")):
+                break
+            lines.append(line.strip())
+        return " ".join(lines)
+    return val
+
+
+def _clean(value):
+    """Czysci pojedyncza wartosc listy YAML.
+
+    Usuwa komentarz inline (` # ...`) oraz otaczajace cudzyslowy.
+
+    Kolejnosc ma znaczenie. Wersja wczesniejsza sprawdzala tylko, czy
+    wartosc zaczyna sie i konczy cudzyslowem -- przez co `"tekst" # opis`
+    (cudzyslow zamkniety, po nim komentarz) wracal razem z cudzyslowami.
+    Teraz szukamy domkniecia cudzyslowu i sprawdzamy, co po nim zostaje:
+    tylko pusty ogon albo komentarz oznacza prawidlowy skalar cytowany.
+
+    Ucinanie tresci po ` #` jest zgodne ze specyfikacja YAML (PyYAML robi
+    dokladnie to samo), wiec zostaje bez zmian. Sygnalizowaniem takich
+    przypadkow zajmuje sie walidacja, nie parser.
+    """
+    v = value.strip()
+
+    if v[:1] in ("'", '"'):
+        q = v[0]
+        end = v.find(q, 1)
+        if end != -1:
+            rest = v[end + 1:].strip()
+            if rest == "" or rest.startswith("#"):
+                return v[1:end].strip()
+        # Cudzyslow niedomkniety albo tresc za nim -- to nie jest skalar
+        # cytowany, tylko zwykly tekst zaczynajacy sie od cudzyslowu.
+
+    v = re.split(r"\s+#", v, maxsplit=1)[0]
+    return v.strip()
+
+
+def _items(lines, start):
+    """Pozycje listy YAML (`- x`) zaczynajac od indeksu `start`.
+
+    Puste linie i linie komentarza wewnatrz bloku sa pomijane -- YAML je
+    dopuszcza, a wersja regexowa konczyla na nich zbieranie i cicho
+    zwracala pusta liste. Zatrzymujemy sie na pierwszej linii, ktora nie
+    jest ani pozycja listy, ani pusta, ani komentarzem (czyli na kolejnym
+    kluczu).
+    """
+    out = []
+    for line in lines[start:]:
+        s = line.strip()
+        if s == "" or s.startswith("#"):
+            continue
+        m = re.match(r"^[ \t]*-[ \t]+(.*)$", line)
+        if not m:
+            break
+        v = _clean(m.group(1))
+        if v:
+            out.append(v)
+    return out
+
+
+def _count_items(scope, key, item_prefix=None):
+    """Liczba linii `- x` widocznych pod kluczem `key`.
+
+    Skan niezalezny od `_items` -- sluzy wylacznie walidacji. Sens ma to,
+    ze jest napisany inaczej niz parser: gdy parser przestanie sobie
+    radzic z jakims formatowaniem, ten licznik nadal poda liczbe z pliku
+    i roznica ujawni strate.
+    """
+    lines = scope.split("\n")
+    for i, line in enumerate(lines):
+        m = re.match(rf"^[ \t]*{re.escape(key)}:[ \t]*(.*)$", line)
+        if not m:
+            continue
+        if m.group(1).strip():      # `key: []` albo `key: wartosc`
+            return 0
+        n = 0
+        for nxt in lines[i + 1:]:
+            s = nxt.strip()
+            if s == "" or s.startswith("#"):
+                continue
+            if s.startswith("- "):
+                if item_prefix is None or _clean(s[2:]).startswith(item_prefix):
+                    n += 1
+                continue
+            break                   # kolejny klucz konczy liste
+        return n
+    return 0
+
+
+def _block(text, key):
+    """Blok podrzedny klucza najwyzszego poziomu.
+
+    Zwraca linie nalezace do `key:` -- wciete albo puste -- i konczy na
+    pierwszej linii bez wciecia. Dzieki temu wyszukiwanie podkluczy nie
+    wychodzi poza rodzica.
+    """
+    m = re.search(rf"^{re.escape(key)}:[ \t]*$", text, re.M)
+    if not m:
+        return ""
+    out = []
+    for line in text[m.end():].split("\n")[1:]:
+        if line.strip() == "":
+            out.append(line)
+            continue
+        if not line.startswith((" ", "\t")):
+            break
+        out.append(line)
+    return "\n".join(out)
+
+
+def _list(text, key):
+    """Lista wartosci klucza najwyzszego poziomu (`key:` + linie `- x`).
+
+    Wciecie przed myslnikiem jest opcjonalne -- czesc rekordow zapisuje
+    listy bez wciecia (dopuszczalne w YAML).
+    """
+    lines = text.split("\n")
+    for i, line in enumerate(lines):
+        if re.match(rf"^{re.escape(key)}:[ \t]*$", line):
+            return _items(lines, i + 1)
+    return []
+
+
+def _nested_list(text, parent, child):
+    """Lista zagniezdzona: `parent:` -> `  child:` -> `    - x`.
+
+    Szukamy `child` wylacznie wewnatrz bloku `parent`. Poprzednia wersja
+    uzywala wzorca `(?:.*\\n)*?`, ktory nie konczyl sie na bloku rodzica --
+    gdy `sources:` nie mial `skills:`, parser bral pierwszy `skills:`
+    napotkany gdziekolwiek dalej w pliku i cicho podstawial cudze dane.
+    """
+    block = _block(text, parent)
+    if not block:
+        return []
+    lines = block.split("\n")
+    for i, line in enumerate(lines):
+        if re.match(rf"^[ \t]+{re.escape(child)}:[ \t]*$", line):
+            return _items(lines, i + 1)
+    return []
+
+
+def _frontmatter(text):
+    """Zwraca blok frontmattera jako tekst YAML (bez ograniczników).
+
+    Obsluguje dwa warianty spotykane w Assessments:
+      1. `---` na samej gorze pliku, zamkniete `---`,
+      2. frontmatter owiniety w blok ```yaml (tak jest w CAL-001).
+
+    Gdy nie znajdzie zadnego, zwraca pusty string -- wolajacy dostanie
+    puste pola zamiast wyjatku.
+    """
+    stripped = text.lstrip()
+    if stripped.startswith("---"):
+        m = re.match(r"^---[ \t]*\n(.*?)\n---[ \t]*(?:\n|$)", stripped, re.S)
+        if m:
+            return m.group(1)
+    m = re.search(r"```yaml[ \t]*\n(.*?)```", text, re.S)
+    if m:
+        return re.sub(r"^---[ \t]*$", "", m.group(1), flags=re.M)
+    return ""
+
+
+def _period(text):
+    """Para (start, end) z bloku `period:`.
+
+    Kazdy klucz czytany osobno. Wersja wczesniejsza wymagala `start`
+    bezposrednio przed `end` -- odwrotna kolejnosc albo dodatkowy klucz
+    miedzy nimi dawal cicho ("", "") i pusta kolumne okresu w tabeli.
+    """
+    block = _block(text, "period")
+    if not block:
+        return ("", "")
+
+    def field(name):
+        m = re.search(rf"^[ \t]+{name}:[ \t]*(\S+)", block, re.M)
+        return m.group(1).strip() if m else ""
+
+    return (field("start"), field("end"))
+
+
+# ---------------------------------------------------------------------------
+# MODEL
+# ---------------------------------------------------------------------------
+
+class VaultModel:
+    """Wczytany Vault: rekordy + relacje + wynik walidacji."""
+
+    def __init__(self, root):
+        self.root = root
+        self.ach = {}      # ACH-xxx -> dict
+        self.skill = {}    # SKILL-xxx -> dict
+        self.story = {}    # STORY-xxx -> dict
+        self.dev = {}      # DEV-xxx -> dict
+        self.pred = {}     # PRED-xxx -> dict
+        self.bp = {}       # BP-xxx -> dict
+        self.roles = []    # [(kod, etykieta, okres, [ACH...])] chronologicznie
+        self.ach_role = {} # ACH-xxx -> kod roli
+        self.a2s = {}      # ACH-xxx -> [SKILL-xxx]
+        self.a2st = {}     # ACH-xxx -> [STORY-xxx]
+        self.a2dev = {}    # ACH-xxx -> [DEV-xxx]
+        self.st2dev = {}   # STORY-xxx -> [DEV-xxx]
+        self.problems = [] # [(poziom, komunikat)]
+
+        self._load_records()
+        self._load_assessments()
+        self._load_experience()
+        self._build_relations()
+        self._validate()
+
+    # -- wczytywanie ------------------------------------------------------
+
+    def _read(self, path):
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            return fh.read()
+
+    def _check_lost_items(self, label, text, prefix, rec):
+        """Porownuje liczbe pozycji w zrodle z liczba pozycji po parsowaniu.
+
+        Parser regexowy nie rzuca wyjatkow -- gdy formatowania nie rozpozna,
+        po cichu zwraca krotsza (czesto pusta) liste, a rekord znika z
+        indeksu bez sladu. To jedyne miejsce, w ktorym taka strata jest
+        wykrywalna: liczymy linie `- x` bezposrednio pod kluczem prostym,
+        niezaleznym skanem i porownujemy z wynikiem.
+
+        Pole jawnie puste (`key: []`) daje zero po obu stronach, wiec nie
+        generuje halasu.
+        """
+        for field, key, parent, item_prefix in WATCHED.get(prefix, []):
+            scope = _block(text, parent) if parent else text
+            if not scope:
+                continue
+            raw = _count_items(scope, key, item_prefix)
+            got = len(rec.get(field) or [])
+            if raw > got:
+                where = f"{parent}.{key}" if parent else key
+                self.problems.append(
+                    ("WARN", f"{label}: `{where}` — w pliku {raw} pozycji, "
+                             f"sparsowano {got}; sprawdz formatowanie listy")
+                )
+
+    def _load_records(self):
+        for folder, prefix, target, parser in (
+            ("Achievements", "ACH-", self.ach, self._parse_ach),
+            ("Skills", "SKILL-", self.skill, self._parse_skill),
+            ("Stories", "STORY-", self.story, self._parse_story),
+            ("Development Areas", "DEV-", self.dev, self._parse_dev),
+        ):
+            d = os.path.join(self.root, folder)
+            if not os.path.isdir(d):
+                self.problems.append(("ERROR", f"Brak katalogu {folder}/"))
+                continue
+            for fname in sorted(os.listdir(d)):
+                if not fname.lower().endswith((".yaml", ".yml")):
+                    continue
+                if not fname.startswith(prefix):
+                    continue
+                text = self._read(os.path.join(d, fname))
+                rid = _scalar(text, "id")
+                if not rid:
+                    self.problems.append(("ERROR", f"{folder}/{fname}: brak pola `id`"))
+                    continue
+                expected = os.path.splitext(fname)[0]
+                if rid != expected:
+                    self.problems.append(
+                        ("WARN", f"{folder}/{fname}: `id: {rid}` != nazwa pliku")
+                    )
+                target[rid] = parser(text)
+                self._check_lost_items(f"{folder}/{fname}", text, prefix, target[rid])
+
+    def _parse_ach(self, t):
+        start, end = _period(t)
+        return {
+            "title": _scalar(t, "title"),
+            "company": _scalar(t, "company"),
+            "start": start,
+            "end": end,
+            "importance": _scalar(t, "importance"),
+            "impact": _list(t, "impact"),
+            "roles": _list(t, "roles"),
+            # Pole opcjonalne. Puste = brak jawnego ustalenia w rekordzie;
+            # konsument (render_json.py) pada wtedy z powrotem na prefiks
+            # ACH-P jako domyslne zachowanie, wiec istniejace rekordy bez
+            # tego pola dzialaja bez zmian.
+            "visibility": _scalar(t, "visibility"),
+        }
+
+    def _parse_skill(self, t):
+        return {
+            "name": _scalar(t, "name"),
+            "category": _scalar(t, "category"),
+            "level": _scalar(t, "level"),
+            "importance": _scalar(t, "importance"),
+            "keywords": _list(t, "keywords"),
+            "capabilities": _list(t, "capabilities"),
+            "related": _list(t, "related_skills"),
+            "evidence": [x for x in _list(t, "evidence") if x.startswith("ACH-")],
+            # Wpisy opisowe zamiast identyfikatorow -- nie trafiaja do
+            # indeksu, ale warto o nich wiedziec.
+            "evidence_other": [x for x in _list(t, "evidence")
+                               if not x.startswith("ACH-")],
+        }
+
+    def _parse_story(self, t):
+        return {
+            "title": _scalar(t, "title"),
+            "ach": _nested_list(t, "evidence", "achievement_ids"),
+            "bullets": _list(t, "cv_bullets"),
+        }
+
+    def _parse_dev(self, t):
+        return {
+            "title": _scalar(t, "title"),
+            "category": _scalar(t, "category"),
+            "status": _scalar(t, "status"),
+            "ach": _nested_list(t, "sources", "achievements"),
+            "stories": _nested_list(t, "sources", "stories"),
+            "skills": _nested_list(t, "sources", "skills"),
+        }
+
+    def _load_assessments(self):
+        """Wczytuje PRED-* i BP-* z frontmattera YAML na gorze pliku .md.
+
+        CAL-* celowo pominiete: kalibracje to wersjonowane dokumenty opisowe,
+        ktorych indeks pozostaje w README pisany recznie.
+        """
+        for folder, prefix, target, parser in (
+            (os.path.join("Assessments", "Predictors"), "PRED-", self.pred, self._parse_pred),
+            (os.path.join("Assessments", "Behavioral Patterns"), "BP-", self.bp, self._parse_bp),
+        ):
+            d = os.path.join(self.root, folder)
+            if not os.path.isdir(d):
+                self.problems.append(("ERROR", f"Brak katalogu {folder}/"))
+                continue
+            for fname in sorted(os.listdir(d)):
+                if not fname.lower().endswith(".md"):
+                    continue
+                if not fname.startswith(prefix):
+                    continue
+                fm = _frontmatter(self._read(os.path.join(d, fname)))
+                rid = _scalar(fm, "id")
+                if not rid:
+                    self.problems.append(
                         ("ERROR", f"{folder}/{fname}: brak pola `id` we frontmatterze")
                     )
                     continue
